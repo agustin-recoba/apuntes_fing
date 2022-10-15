@@ -1,7 +1,8 @@
-# Transferencia de archivos: FTP
+## Transferencia de archivos
+
 ![[Pasted image 20221005143325.png|400]]
 
-Protocolo de transferencia de archivos que se ejecuta sobre TCP. Utiliza dos conexiones TCP paralelas para transferir un archivo, una **conexión de control** y una **conexión de datos**, por lo cual se dice que envía su información de control **fuera de banda**. La conexión de control permanece abierta mientras que dure la sesión de usuario, pero se crea una nueva conexión de datos para cada archivo transferido dentro de la sesión (es decir, las conexiones de datos no son persistentes). El servidor FTP tiene que mantener un **estado** del usuario.
+Protocolo de transferencia de archivos que se ejecuta sobre **TCP**. Utiliza **dos** conexiones TCP paralelas para transferir un archivo, una **conexión de control** y una **conexión de datos**, por lo cual se dice que envía su información de control **fuera de banda**. La conexión de control permanece abierta mientras que dure la sesión de usuario, pero se crea una nueva conexión de datos **para cada archivo** transferido dentro de la sesión (es decir, las conexiones de datos no son persistentes). El servidor FTP tiene que mantener un **estado** del usuario.
 
 ![[Pasted image 20221005143402.png|400]]
 

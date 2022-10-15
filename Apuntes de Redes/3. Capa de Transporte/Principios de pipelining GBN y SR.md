@@ -26,16 +26,20 @@ El emisor del protocolo GBN tiene que responder a:
 El receptor descarta los paquetes que no están en orden y envía un mensaje de reconocimiento para el número de secuencia del último mensaje que recibió en orden. Por tanto, mientras el emisor tiene que mantener los límites inferior y superior de su ventana y la posición de `signumsec` dentro de esa ventana, el único fragmento de información que el receptor debe mantener es el número de secuencia del siguiente paquete en orden.
 
 ![[Pasted image 20221006201929.png]]
-```ad-seealso
-title: Emisor
-collapse: closed
-![[Pasted image 20221006202108.png]]
-```
 
-```ad-seealso
-title: Receptor
+```ad-hint
+title: Maquinas de estado
 collapse: closed
-![[Pasted image 20221006202220.png]]
+
+
+### Emisor
+![[Pasted image 20221006202108.png|500]]
+
+
+
+### Receptor
+![[Pasted image 20221006202220.png|500]]
+
 ```
 
 ### Descarte de paquetes

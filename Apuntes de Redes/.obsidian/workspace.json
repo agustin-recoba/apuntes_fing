@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Puertos bien conocidos.md",
+                "file": "2. Capa de Aplicación/Servicios de transporte.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Puertos bien conocidos.md",
+                "file": "2. Capa de Aplicación/Servicios de transporte.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Puertos bien conocidos.md",
+                "file": "2. Capa de Aplicación/Servicios de transporte.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Puertos bien conocidos.md"
+                "file": "2. Capa de Aplicación/Servicios de transporte.md"
               }
             }
           },
@@ -150,15 +150,15 @@
   },
   "active": "db225215b4a161aa",
   "lastOpenFiles": [
-    "1. Introduccion/Internet.md",
-    "1. Introducción a las Redes de Computadoras.md",
-    "3. Capa de Transporte/Principios de pipelining GBN y SR.md",
-    "1. Introduccion/traceroute.md",
-    "1. Introduccion/Retardo, pérdidas y “throughput” en redes de conmutación de paquetes.md",
-    "Puertos bien conocidos.md",
-    "2. Capa de Aplicación.md",
-    "Capa.md",
-    "Hola.md",
-    "2. Capa de Aplicación/La Web y HTTP.md"
+    "2. Capa de Aplicación/Protocolos.md",
+    "2. Capa de Aplicación/Procesos.md",
+    "2. Capa de Aplicación/P2P y Bitorrent.md",
+    "2. Capa de Aplicación/La Web y HTTP.md",
+    "2. Capa de Aplicación/FTP.md",
+    "2. Capa de Aplicación/DNS.md",
+    "2. Capa de Aplicación/Correo electronico.md",
+    "2. Capa de Aplicación/Arquitecturas.md",
+    "3. Capa de Transporte/TCP, control de flujo.md",
+    "3. Capa de Transporte/RDT, un servicio de transferencia de datos fiable.md"
   ]
 }

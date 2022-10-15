@@ -1,16 +1,15 @@
-## Servicios de transporte disponibles para aplicaciones
+## Servicios disponibles para aplicaciones
 
-
-### - **Transferencia de datos fiable**: 
+- ### Transferencia de datos fiable: 
 Un protocolo proporciona un servicio de entrega de datos garantizado. Si un protocolo no proporciona una transferencia de datos fiable, los datos enviados por el proceso emisor pueden no llegar nunca al proceso de recepción. Esto puede ser aceptable para aplicaciones tolerantes a pérdidas.
 
-### - Tasa de transferencia: 
+- ### Tasa de transferencia: 
 Disponible garantizada a una cierta velocidad especificada. Aplicaciones sensibles al ancho de banda: aplicaciones con requisitos de tasa de transferencia. Aplicaciones elásticas: pueden hacer uso de la tasa de transferencia que haya disponible.
 
-### - Temporización: 
+- ### Temporización: 
 Atractivo para aplicaciones en tiempo real.
 
-### - Seguridad:
+- ### Seguridad:
 Confidencialidad entre los procesos, garantizar la integridad de los datos y mecanismos de autenticación en el punto terminal.
 
 

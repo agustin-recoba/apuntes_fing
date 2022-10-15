@@ -1,6 +1,3 @@
-### Protocolos de la capa de aplicación
-
-
 Define cómo los procesos de una aplicación, que se ejecutan en distintos sistemas
 terminales, se pasan los mensajes entre sí. Define:
 - Tipo de mensajes intercambiados (petición, respuesta, etc.)

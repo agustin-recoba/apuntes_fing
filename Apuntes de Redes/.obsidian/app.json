@@ -18,7 +18,9 @@
     "tracker",
     "demultiplexar",
     "proxy",
-    "switch"
+    "switch",
+    "threads",
+    "P2P"
   ],
   "pdfExportSettings": {
     "includeName": true,

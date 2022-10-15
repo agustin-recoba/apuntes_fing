@@ -1,6 +1,6 @@
-# Aplicaciones P2P
+## Aplicaciones P2P
 
-Con este tipo de arquitectura no se depende de que exista una infraestructura de servidores siempre activos. En su lugar, una serie de parejas de hosts conectados de forma intermitente, denominados pares o _peers_, se comunican directamente entre sí. Los pares no son propiedad de un proveedor de servicios, sino que son computadoras de escritorio o portátiles controlados por los clientes.
+Con este tipo de arquitectura no se depende de que exista una infraestructura de servidores siempre activos. En su lugar, una serie de parejas de hosts conectados de forma **intermitente**, denominados pares o _peers_, se comunican directamente entre sí. Los pares **no son propiedad de un proveedor de servicios**, sino que son computadoras de escritorio o portátiles controlados por los clientes.
 
 ## Distribución de Archivos: Cliente Servidor vs P2P
 
@@ -12,7 +12,7 @@ El servidor envía secuencialmente $N$ copias de $F$, en un tiempo de $N \times 
 $d_{cs} = max\{N \times F/u_s,\: F/min_i(d_i)\}$
 
 
-##### Bitorrent
+### Bitorrent
 
 Es un popular protocolo P2P para la distribución de archivos.
 **Torrente**: todos los pares que participan en la distribución de un determinado archivo.
