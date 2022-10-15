@@ -1,7 +1,6 @@
-# traceroute
 Aplicación que permite determinar el camino de ida (a ser recorrido por los paquetes en un momento dado) entre un origen y un destino.
 
-Implementado sobre ICMP o UDP
+Implementado sobre ICMP o UDP.
 
 ## Funcionamiento del traceroute sobre ICMP
 

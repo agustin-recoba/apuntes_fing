@@ -16,6 +16,15 @@
     "autoritativa",
     "query",
     "tracker",
-    "demultiplexar"
-  ]
+    "demultiplexar",
+    "proxy",
+    "switch"
+  ],
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

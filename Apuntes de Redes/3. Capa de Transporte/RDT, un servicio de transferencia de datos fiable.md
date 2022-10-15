@@ -43,6 +43,10 @@ Una solución sencilla consiste en añadir un nuevo campo al paquete de datos, y
 Tiene la misma funcionalidad que el rdt 2.1, pero **utilizando únicamente ACKs**. En lugar de un NAK, el receptor envía un ACK para el último para el último paquete recibido correctamente, por lo que se debe indicar explícitamente el número de secuencia del paquete al cual corresponde el ACK. Un ACK duplicado en el emisor resulta en la misma acción de un NAK, retransmitir el paquete actual.
 
 ![[Pasted image 20221006200618.png]]
+Reetransmisión cuando:
+- ACK con nro_sec distinto al esperado
+- Paquete recibido corrupto (no se puede saber si era ACK 0 o 1)
+
 
 ## Transferencia de datos fiable sobre un canal con pérdidas y errores de bit: rdt3.0
 

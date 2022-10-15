@@ -14,25 +14,53 @@ Se pueden establecer varias conexiones TCP en paralelo para la misma aplicación
 **RTT** (Round-Trip Time): “tiempo de ida y vuelta”, es el tiempo que tarda un paquete pequeño en viajar desde el cliente al servidor y volver de nuevo al cliente.
 
 Los problemas del HTTP no persistente son: 
-- Requiere 2RTT por objeto
+- Requiere `2*RTT` por objeto
 - Overhead del SO para cada conexión TCP
 - Los navegadores generalmente abren conexiones TCP paralelas para poder recuperar los objetos referenciados
+```ad-faq
+title: Nota
+collapse: closed
+
+El header "Connection" con valor "keep-alive" indica que la conexión se debe manetener abierta (de ser posible).
+```
+
 
 ### Mensajes HTTP
 
 #### Solicitud
 ![[Pasted image 20221005142036.png]]
-- **GET**:
-	La inmensa mayoría de los mensajes de solicitud HTTP utilizan el método GET. Este método se emplea cuando el navegador solicita un objeto, identificándose dicho objeto en el campo URL. 
-- **POST**:
-	A menudo, un cliente HTTP utiliza el método POST cuando el usuario completa un formulario; por ejemplo, cuando especifica términos para realizar una búsqueda utilizando un motor de búsqueda. Con un mensaje POST, el usuario solicita también una página web al servidor, pero el contenido concreto de la misma dependerá de lo que el usuario haya escrito en los campos del formulario. Si el valor del campo de método es POST, entonces el cuerpo de la entidad contendrá lo que el usuario haya introducido en los campos del formulario. 
-	No podemos dejar de mencionar que una solicitud generada con un formulario no necesariamente utiliza el método POST. En su lugar, a menudo los formularios HTML emplean el método GET e incluyen los datos de entrada (especificados en los campos del formulario) en el URL solicitado.
-- **HEAD**:
-	El método HEAD es similar al método GET. Cuando un servidor recibe una solicitud con el método HEAD, responde con un mensaje HTTP, pero excluye el objeto solicitado. Los desarrolladores de aplicaciones a menudo utilizan el método HEAD para labores de depuración.
-- **PUT**:
-	El método PUT suele utilizarse junto con herramientas de publicación web. Esto permite a un usuario cargar un objeto en una ruta específica (directorio) en un servidor web determinado. Las aplicaciones que necesitan cargar objetos en servidores web también emplean el método PUT.
-- **DELETE**:
-	El método DELETE permite a un usuario o a una aplicación borrar un objeto de un servidor web.
+
+```ad-important
+title: GET
+collapse: closed
+
+La inmensa mayoría de los mensajes de solicitud HTTP utilizan el método GET. Este método se emplea cuando el navegador solicita un objeto, identificándose dicho objeto en el campo URL. 
+```
+```ad-important
+title: POST
+collapse: closed
+
+A menudo, un cliente HTTP utiliza el método POST cuando el usuario completa un formulario; por ejemplo, cuando especifica términos para realizar una búsqueda utilizando un motor de búsqueda. Con un mensaje POST, el usuario solicita también una página web al servidor, pero el contenido concreto de la misma dependerá de lo que el usuario haya escrito en los campos del formulario. Si el valor del campo de método es POST, entonces el cuerpo de la entidad contendrá lo que el usuario haya introducido en los campos del formulario. 
+No podemos dejar de mencionar que una solicitud generada con un formulario no necesariamente utiliza el método POST. En su lugar, a menudo los formularios HTML emplean el método GET e incluyen los datos de entrada (especificados en los campos del formulario) en el URL solicitado.
+```
+```ad-important
+title: HEAD
+collapse: closed
+
+El método HEAD es similar al método GET. Cuando un servidor recibe una solicitud con el método HEAD, responde con un mensaje HTTP, pero excluye el objeto solicitado. Los desarrolladores de aplicaciones a menudo utilizan el método HEAD para labores de depuración.
+```
+```ad-important
+title: PUT
+collapse: closed
+
+El método PUT suele utilizarse junto con herramientas de publicación web. Esto permite a un usuario cargar un objeto en una ruta específica (directorio) en un servidor web determinado. Las aplicaciones que necesitan cargar objetos en servidores web también emplean el método PUT.
+```
+```ad-important
+title: DELETE
+collapse: closed
+
+El método DELETE permite a un usuario o a una aplicación borrar un objeto de un servidor web.
+```
 
 
 #### Respuesta
@@ -45,9 +73,9 @@ Donde el código de estado aparece en la primera línea en los mensajes de respu
 - **404 Not Found:** El documento solicitado no existe en este servidor.
 - **505 HTTP Version Not Supported:** La versión de protocolo HTTP solicitada no es soportada por el servidor.
 
-##### Cookies
+### Cookies
 
-Permiten identificar y almacenar información de los usuarios. La primera vez que un usuario visita un sitio, este puede proporcionar una identificación del mismo, así en las sesiones posteriores el navegador pasa una cabecera de cookie al servidor, identificando al usuario ante el servidor. Las cookies pueden por tanto utilizarse para crear una capa de sesión por encima del protocolo HTTP sin memoria del estado de la conexión 
+Permiten identificar y almacenar información de los usuarios. La primera vez que un usuario visita un sitio, este puede proporcionar una identificación del mismo, así en las sesiones posteriores el navegador pasa una cabecera de cookie al servidor, identificando al usuario ante el servidor. Las cookies pueden, por tanto, utilizarse para crear una capa de sesión por encima del protocolo HTTP sin memoria del estado de la conexión 
 
 Utiliza cuatro componentes:
 1. una línea de cabecera de la cookie en el mensaje de respuesta HTTP
@@ -59,9 +87,9 @@ Utiliza cuatro componentes:
 
 ![[Pasted image 20221005142304.png|500]]
 
-##### Almacenamiento Caché
+### Almacenamiento Caché
 
-un caché web, también denominado servidor proxy, es una entidad de red que satisface
+Un caché web, también denominado servidor proxy, es una entidad de red que satisface
 solicitudes HTTP en nombre de un servidor web de origen. La caché web dispone de su
 propio almacenamiento en disco y mantiene en él copias de los objetos solicitados
 recientemente.
@@ -71,7 +99,7 @@ recientemente.
 2. La caché web comprueba si tiene una copia del objeto almacenada localmente. Si la
     tiene, la caché web devuelve el objeto dentro de un mensaje de respuesta HTTP al
     navegador del cliente.
-3. Si la caché in tiene el objeto, abre una conexión TCP con el servidor de origen y
+3. Si la caché no tiene el objeto, abre una conexión TCP con el servidor de origen y
     envía una solicitud HTTP para obtener el objeto a través de la conexión TCP
     caché-servidor. Después de recibir esta solicitud, el servidor de origen envía el
     objeto dentro de un mensaje de respuesta HTTP a la caché web.
@@ -80,13 +108,9 @@ recientemente.
     al navegador del cliente.
 
 
-Una caché es a la vez un servidor y un cliente. Habitualmente es un ISP quién adquiere e
-instala una caché web. Una caché web puede reducir sustancialmente el tiempo de
-respuesta a la solicitud de un cliente y reducir el tráfico en el enlace de acceso a Internet de
-una institución. También pueden reducir el tráfico web global en Internet, mejorando en
-consecuencia el rendimiento de todas las aplicaciones.
+Una caché es a la vez un servidor y un cliente. Habitualmente es un ISP quién adquiere e instala una caché web. Una caché web puede reducir sustancialmente el tiempo de respuesta a la solicitud de un cliente y reducir el tráfico en el enlace de acceso a Internet de una institución. También pueden reducir el tráfico web global en Internet, mejorando en consecuencia el rendimiento de todas las aplicaciones.
 
-##### GET condicional
+#### GET condicional
 
 El objetivo es no enviar el objeto si la cache tiene una versión “cacheada” actualizada. La cache especifica la fecha de la copia almacenada en una solicitud HTTP: **If-Modified-Since: 'date'**. La respuesta del servidor no contiene un objeto si la copia cacheada está actualizada: HTTP/1.0 304 Not Modified.
 

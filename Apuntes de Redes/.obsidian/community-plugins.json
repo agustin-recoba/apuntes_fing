@@ -4,5 +4,7 @@
   "obsidian-languagetool-plugin",
   "obsidian-pandoc",
   "emoji-shortcodes",
-  "quick-latex"
+  "quick-latex",
+  "obsidian-admonition",
+  "obsidian-excalidraw-plugin"
 ]

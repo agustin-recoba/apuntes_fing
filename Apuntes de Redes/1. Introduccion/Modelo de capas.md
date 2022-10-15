@@ -28,6 +28,12 @@ Transferencia proceso a proceso de los datos (TCP, UDP).
 ### Red:
 Rutea los datagramas de la fuente hasta el destino (IP, protocolos de enrutamiento).
 
+Las dos funciones fundamentales de la capa de red son las de **reenvío** y **enrutamiento**. 
+- El reenvío (**forwarding**) refiere a cuando un paquete llega al enlace de entrada de un router, y éste tiene que pasar el paquete al enlace de salida apropiado. 
+- Mientras que enrutamiento (**routing**) refiere a que la capa de red tiene que determinar la ruta o camino que deben seguir los paquetes a medida que fluyen de un emisor a un receptor. Los algoritmos que calculan estas rutas se conocen como algoritmos de enrutamiento. 
+
+El reenvío hace referencia entonces a la acción local que realiza **un** router al transferir un paquete desde una interfaz de un enlace de entrada a una interfaz del enlace de salida apropiada. Y el enrutamiento, al proceso que realiza la red en conjunto para **determinar las rutas terminal a terminal** que los paquetes siguen desde el origen al destino. Para que la capa de red cumpla su función (transportar paquetes desde un host emisor a un host receptor) estas funciones se relacionan mediante la tabla de forwarding. Cuando un router recibe mensajes del protocolo de enrutamiento utiliza esta información para configurar su tabla de reenvío, la cual es consultada por la función de reenvío para realizar su función.
+
 ### Enlace: 
 Transfiere los datos entre elementos de red vecinos (Ethernet, 802.111 (Wifi), PPP).
 
