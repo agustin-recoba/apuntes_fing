@@ -35,3 +35,7 @@ El valor de ventanaCongestion es aproximadamente igual a la mitad de su valor en
 
 El valor de ventanaCongestion se incrementa en 1 MSS por cada ACK duplicado recibido correspondiente al segmento que falta y que ha causado que TCP entre en el estado de recuperación rápida.
 Si se produce un fin de temporización, el mecanismo de recuperación rápida efectúa una transición al estado de arranque lento después de realizar las mismas acciones que en los modos de arranque lento y evitación de la congestión: el valor de ventanaCongestion se establece en 1 MSS y el valor de umbral se hace igual a la mitad del valor que tenía ventanaCongestion cuando tuvo lugar el suceso de pérdida.
+
+![[Pasted image 20221025144456.png]]
+
+![[Pasted image 20221025144505.png|600]]

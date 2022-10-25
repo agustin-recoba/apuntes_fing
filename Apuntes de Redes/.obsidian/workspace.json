@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Capa de Transporte/TCP, control de flujo.md",
+                "file": "1. Introducción a las Redes de Computadoras.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Capa de Transporte/TCP, control de flujo.md",
+                "file": "1. Introducción a las Redes de Computadoras.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. Capa de Transporte/TCP, control de flujo.md",
+                "file": "1. Introducción a las Redes de Computadoras.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Capa de Transporte/TCP, control de flujo.md"
+                "file": "1. Introducción a las Redes de Computadoras.md"
               }
             }
           },
@@ -148,17 +148,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "2a2f2ca58c80a1a4",
+  "active": "1641994aea0dd7e5",
   "lastOpenFiles": [
-    "4. Capa de Red/Untitled.md",
     "resto del curso.md",
-    "2. Capa de Aplicación/FTP.md",
     "Puertos bien conocidos.md",
+    "3. Capa de Transporte/TCP, control de congestión.md",
     "3. Capa de Transporte.md",
-    "2. Capa de Aplicación.md",
-    "1. Introducción a las Redes de Computadoras.md",
-    "1. Introduccion/traceroute.md",
     "2. Capa de Aplicación/Servicios de transporte.md",
-    "2. Capa de Aplicación/Protocolos.md"
+    "2. Capa de Aplicación/Protocolos.md",
+    "2. Capa de Aplicación/Procesos.md",
+    "2. Capa de Aplicación/P2P y Bitorrent.md",
+    "2. Capa de Aplicación/La Web y HTTP.md",
+    "2. Capa de Aplicación/FTP.md"
   ]
 }
