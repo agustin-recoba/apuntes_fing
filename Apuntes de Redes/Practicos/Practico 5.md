@@ -153,5 +153,123 @@ collapse: closed
 ```
 Ignorando las direcciones de la figura:
 ## Parte *a*
+- A:
+	250 + red + broadcast
+	8 bits
+	214.97.253.0/24
+- B:
+	120 + red + broadcast
+	7 bits
+	214.97.252.0/25
+- C: 
+	120 + red + broadcast
+	7 bits
+	214.97.252.128/25
+- D: 
+	2 + red + broadcast
+	2 bits
+	214.97.254.0/30
+- E: 
+	2 + red + broadcast
+	2 bits
+	214.97.254.4/30
+- F: 
+	2 + red + broadcast
+	2 bits
+	214.97.254.16/30
+## Parte *b*
+...
+
+# Ej. 9
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026192656.png]]
+```
+
+2400 bytes ⇾  20 bytes cabecera IP + 2380 bytes de datos
+
+Se particionan los datos en fragmentos de largo máximo 680 bytes.
+
+Fragmento 1:
+	id: 422
+	largo: 700
+	indicador de fin: 1 (quedan paquetes)
+	desplazamiento dentro del datagrama original: 0
+Fragmento 2:
+	id: 422
+	largo: 700
+	indicador de fin: 
+	desplazamiento dentro del datagrama original: 1 * 680
+Fragmento 3:
+	id: 422
+	largo: 700
+	indicador de fin: 1
+	desplazamiento dentro del datagrama original: 2 * 680
+Fragmento 4:
+	id: 422
+	largo: 360 
+	indicador de fin: 0 (ultimo)
+	desplazamiento dentro del datagrama original: 3 * 680
+
+# Ej. 10
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026193649.png]]
+```
+
+5 millones en paquetes de (1500-20): 3379 datagramas
+
+# Ej. 11
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026193910.png]]
+```
+
+## Parte *a*
+- Router: 192.168.1.1
+- H1: 192.168.1.2
+- H2: 192.168.1.3
+- H3: 192.168.1.4
 
 ## Parte *b*
+| Lado WAN            | Lado LAN        |
+| ------------------- | --------------- |
+| 24.34.112.235:50011 | 192.168.1.2:501 |
+| 24.34.112.235:50012 | 192.168.1.2:502 |
+| 24.34.112.235:50021 | 192.168.1.3:501 |
+| 24.34.112.235:50022 | 192.168.1.3:502 |
+| 24.34.112.235:50031 | 192.168.1.4:501 |
+| 24.34.112.235:50032 | 192.168.1.4:502 |
+
+# Ej. 12
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026194858.png]]
+![[Pasted image 20221026194850.png]]
+![[Pasted image 20221026194838.png]]
+```
+
+```ad-danger
+title: Dominio de broadcast
+Todas las IP alcanzables por el broadcast de la sub-red.
+```
+## Parte *a*:
+- Subred 1
+- Subred 2
+- 190.1.1.2/29
+
+## Parte *b*
+- S1
+	30 hosts + router + red + broadcast = 33
+	6 bits ⇾ /26
+	192.168.1.0/26
+- S2
+	125 hosts + router + red + broadcast = 128 bits
+	7 bits ⇾ /25
+	10.1.2.0/25
+
+

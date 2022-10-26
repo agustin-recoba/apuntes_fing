@@ -20,7 +20,8 @@
     "proxy",
     "switch",
     "threads",
-    "P2P"
+    "P2P",
+    "broadcast"
   ],
   "pdfExportSettings": {
     "includeName": true,
