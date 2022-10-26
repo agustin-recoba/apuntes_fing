@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "05622d96b779f9df",
+        "id": "e5c93fb4e4da0887",
         "type": "tabs",
         "children": [
           {
-            "id": "a867034c35b91759",
+            "id": "7bc5e49c4de08f15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Practicos/Practico 5.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b32f2adcb7e24f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Plano de Control.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5026054382324
+    "width": 200
   },
   "right": {
     "id": "b806b4a23c110f14",
@@ -150,27 +138,27 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "a867034c35b91759",
+  "active": "7bc5e49c4de08f15",
   "lastOpenFiles": [
+    "media/Pasted image 20221026182630.png",
+    "Practicos/Practico 5.md",
+    "Excalidraw/Drawing 2022-10-26 18.15.54.excalidraw.md",
+    "Excalidraw/Drawing 2022-10-26 17.49.49.excalidraw.md",
     "4. Capa de Red/Introduccion.md",
     "Plano de Control.md",
-    "Practicos/Practico 5.md",
     "1. Introducción a las Redes de Computadoras.md",
     "resto del curso.md",
     "Puertos bien conocidos.md",
-    "3. Capa de Transporte/TCP, control de congestión.md",
-    "3. Capa de Transporte.md",
-    "2. Capa de Aplicación/Servicios de transporte.md",
-    "2. Capa de Aplicación/Protocolos.md"
+    "3. Capa de Transporte/TCP, control de congestión.md"
   ]
 }
