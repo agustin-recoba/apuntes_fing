@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "f555f3bcf9d2bd33",
+        "id": "05622d96b779f9df",
         "type": "tabs",
         "children": [
           {
-            "id": "2a2f2ca58c80a1a4",
+            "id": "a867034c35b91759",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Introducción a las Redes de Computadoras.md",
+                "file": "Practicos/Practico 5.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9b32f2adcb7e24f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Plano de Control.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. Introducción a las Redes de Computadoras.md",
+                "file": "Practicos/Practico 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. Introducción a las Redes de Computadoras.md",
+                "file": "Practicos/Practico 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Introducción a las Redes de Computadoras.md"
+                "file": "Practicos/Practico 5.md"
               }
             }
           },
@@ -148,17 +160,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "1641994aea0dd7e5",
+  "active": "a867034c35b91759",
   "lastOpenFiles": [
+    "4. Capa de Red/Introduccion.md",
+    "Plano de Control.md",
+    "Practicos/Practico 5.md",
+    "1. Introducción a las Redes de Computadoras.md",
     "resto del curso.md",
     "Puertos bien conocidos.md",
     "3. Capa de Transporte/TCP, control de congestión.md",
     "3. Capa de Transporte.md",
     "2. Capa de Aplicación/Servicios de transporte.md",
-    "2. Capa de Aplicación/Protocolos.md",
-    "2. Capa de Aplicación/Procesos.md",
-    "2. Capa de Aplicación/P2P y Bitorrent.md",
-    "2. Capa de Aplicación/La Web y HTTP.md",
-    "2. Capa de Aplicación/FTP.md"
+    "2. Capa de Aplicación/Protocolos.md"
   ]
 }
