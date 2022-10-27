@@ -262,14 +262,44 @@ Todas las IP alcanzables por el broadcast de la sub-red.
 - Subred 2
 - 190.1.1.2/29
 
-## Parte *b*
-- S1
+## Parte *b* y *c*
+- Subred 1
 	30 hosts + router + red + broadcast = 33
-	6 bits ⇾ /26
-	192.168.1.0/26
-- S2
-	125 hosts + router + red + broadcast = 128 bits
-	7 bits ⇾ /25
-	10.1.2.0/25
+	6 bits ⇾ /25
+	192.168.1.0/25
+	
+	Dispositivos:
+	- R1: 192.168.1.1
+	- A1: 192.168.1.2
+	- B1: 192.168.1.3
 
+- Subred 2
+	125 hosts + router + red + broadcast = 128 bits
+	7 bits ⇾ /26
+	10.1.2.0/26
+	
+	Dispositivos:
+	- R1: 10.1.2.1
+	- A2: 10.1.2.2
+	- B2: 10.1.2.3
+
+## Parte *d*
+
+| Dispositivo | Prefijo        | Interfaz de salida | Next_hop                    |
+| ----------- | -------------- | ------------------ | --------------------------- |
+| A1          | 192.168.1.0/25 | eth0               | DC (directamente conectado) |
+| A1          | 0.0.0.0/0      | eth0               | 192.168.1.1                 |
+|             |                |                    |                             |
+|             |                |                    |                             |
+| A2          | 10.1.2.0/26    | eth0               | DC (directamente conectado) |
+| A2          | 0.0.0.0/0      | eth0               | 10.1.2.1                    |
+|             |                |                    |                             |
+|             |                |                    |                             |
+| R1          | 10.1.2.0/26    | eth2               | DC                          |
+| R1          | 192.168.1.0/25 | eth1               | DC                          |
+| R1          | 190.1.1.0/29   | eth0               | DC                          |
+| R1          | 0.0.0.0/0      | eth0               | 190.1.1.2                   |
+
+## Parte *e*
+Esto se puede lograr con redes virtuales.
 
