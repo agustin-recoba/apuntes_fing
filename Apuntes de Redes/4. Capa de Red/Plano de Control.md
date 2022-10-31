@@ -1,84 +1,54 @@
 
 
-### Algoritmos de enrutamiento
+# Algoritmos de enrutamiento
 
-Enrutamiento: determinar buenas rutas desde los emisores hasta los receptores a través de
-la red de routers.
-Dado un conjunto de routers, con enlaces que conectan dichos routers, un algoritmo de
-enrutamiento determina una “buena” ruta desde el router de origen al router de destino.
+Enrutamiento: determinar buenas rutas desde los emisores hasta los receptores a través de la red de routers.
+Dado un conjunto de routers, con enlaces que conectan dichos routers, un algoritmo de enrutamiento determina una “buena” ruta desde el router de origen al router de destino.
 Normalmente, una buena ruta es aquella que tiene el coste mínimo.
-- Un algoritmo de enrutamiento global calcula la ruta de coste mínimo entre un
-origen y un destino utilizando el conocimiento global y completo acerca de la red.
-- En un algoritmo de enrutamiento descentralizado , el cálculo de la ruta de coste
-mínimo se realiza de manera iterativa y distribuida. Ningún nodo tiene toda la
-información acerca del coste de todos los enlaces de la red. En lugar de ello, al
-principio, cada nodo sólo conoce los costes de sus propios enlaces directamente
-conectados.
-- En los algoritmos de enrutamiento estático , las rutas cambian muy lentamente
-con el tiempo, con frecuencia como resultado de una intervención humana.
-- Los algoritmos de enrutamiento dinámico modifican los caminos de enrutamiento
-a medida que la carga de tráfico o la topología de la red cambian. Un algoritmo
-dinámico puede ejecutarse periódicamente o como respuesta directa a cambios en
-la topología o en el coste de los enlaces.
-- En un algoritmo sensible a la carga , los costes de enlace varían de forma dinámica
-para reflejar el nivel actual de congestión en el enlace subyacente. Si se asocia un
-coste alto con un enlace que actualmente esté congestionado.
+- Un algoritmo de enrutamiento global calcula la ruta de coste mínimo entre un origen y un destino utilizando el conocimiento global y completo acerca de la red.
+- En un algoritmo de enrutamiento descentralizado , el cálculo de la ruta de coste mínimo se realiza de manera iterativa y distribuida. Ningún nodo tiene toda la información acerca del coste de todos los enlaces de la red. En lugar de ello, al principio, cada nodo sólo conoce los costes de sus propios enlaces directamente conectados.
+- En los algoritmos de enrutamiento estático , las rutas cambian muy lentamente con el tiempo, con frecuencia como resultado de una intervención humana.
+- Los algoritmos de enrutamiento dinámico modifican los caminos de enrutamiento a medida que la carga de tráfico o la topología de la red cambian. Un algoritmo dinámico puede ejecutarse periódicamente o como respuesta directa a cambios en la topología o en el coste de los enlaces.
+- En un algoritmo sensible a la carga , los costes de enlace varían de forma dinámica para reflejar el nivel actual de congestión en el enlace subyacente. Si se asocia un coste alto con un enlace que actualmente esté congestionado.
 
-#### Algoritmo de enrutamiento de estado de enlaces (LS)
+## Algoritmo de enrutamiento de estado de enlaces (LS)
 
+En un algoritmo de estado de enlaces, la topología de la red y el coste de todos los enlaces son conocidos; es decir, están disponibles como entradas para el algoritmo LS. En la práctica, esto se consigue haciendo que cada nodo difunda paquetes del estado de los enlaces a todos los demás nodos de la red, con cada paquete de estado de enlace conteniendo las identidades y los costes de sus enlaces conectados.
+El resultado de difundir la información de los nodos es que todos los nodos tienen una visión completa e idéntica de la red. Cada nodo puede entonces ejecutar el algoritmo LS y calcular el mismo conjunto de rutas de coste mínimo que cualquier otro nodo. 
+El algoritmo de Dijkstra calcula la ruta de coste mínimo desde un nodo (el origen, al que denominaremos u) hasta todos los demás nodos de la red.
 
-En un algoritmo de estado de enlaces, la topología de la red y el coste de todos los enlaces
-son conocidos; es decir, están disponibles como entradas para el algoritmo LS. En la
-práctica, esto se consigue haciendo que cada nodo difunda paquetes del estado de los
-enlaces a todos los demás nodos de la red, con cada paquete de estado de enlace
-conteniendo las identidades y los costes de sus enlaces conectados.
-El resultado de difundir la información de los nodos es que todos los nodos tienen una visión
-completa e idéntica de la red. Cada nodo puede entonces ejecutar el algoritmo LS y calcular
-el mismo conjunto de rutas de coste mínimo que cualquier otro nodo.
-El algoritmo de Dijkstra calcula la ruta de coste mínimo desde un nodo (el origen, al que
-denominaremos u) hasta todos los demás nodos de la red.
-Inicialización:
+```python
+# inicialización:
 N’ = {u}
-
-
 for todo nodo v
-if v es un vecino de u
-then D(v) = c(u,v)
-else D(v) = ∞
-Bucle
-encontrar w no perteneciente a N’ tal que D(w) sea un mínimo
-sumar w a N’
-actualizar D(v) para cada vecino v de w, que no pertenezca a N’:
-D(v) = min( D(v), D(w) + c(w,v) )
-/* el nuevo coste a v es o bien el antiguo coste a v o el coste de
-la ruta de coste mínimo a w más el coste desde w a v */
-until N’= N
-Cuando el algoritmo LS termina, tenemos para cada nodo su predecesor a lo largo de la
-ruta de coste mínimo desde el nodo de origen. Para cada predecesor, también tenemos su
-predecesor, y así de este modo podemos construir la ruta completa desde el origen a todos
-los destinos.
-El número total de nodos a través de los que tenemos que buscar teniendo en cuenta todas
-las iteraciones es igual a n(n + 1)/2 y, por tanto, decimos que la implementación anterior del
-algoritmo LS tiene, en el caso peor, una complejidad de orden n al cuadrado: O(n^2 ).
+	if v es un vecino de u:
+		D(v) = c(u,v)
+	else:
+		D(v) = ∞
+do
+	encontrar w no perteneciente a N’ tal que D(w) sea un mínimo
+	agregar w a N’
+	actualizar D(v) para cada vecino v de w, que no pertenezca a N’:
+		D(v) = min( D(v), D(w) + c(w,v) )
+	# el nuevo coste a v es o bien el antiguo coste a v o el coste de
+	# la ruta de coste mínimo a w más el coste desde w a v
+until N’ = N
+```
 
-#### Algoritmo de enrutamiento por vector de distancias (DV)
+Cuando el algoritmo LS termina, tenemos para cada nodo su predecesor a lo largo de la ruta de coste mínimo desde el nodo de origen. Para cada predecesor, también tenemos su predecesor, y así de este modo podemos construir la ruta completa desde el origen a todos los destinos.
+El número total de nodos a través de los que tenemos que buscar teniendo en cuenta todas las iteraciones es igual a n(n + 1)/2 y, por tanto, decimos que la implementación anterior del algoritmo LS tiene, en el caso peor, una complejidad de orden n al cuadrado: O(n^2 ).
 
-El algoritmo por vector de distancias (DV) es iterativo, asíncrono y distribuido. Es distribuido
-en el sentido de que cada nodo recibe información de uno o más de sus vecinos
-directamente conectados, realiza un cálculo y luego distribuye los resultados de su cálculo
-de vuelta a sus vecinos. Es iterativo porque este proceso continúa hasta que no hay
-disponible más información para ser intercambiada entre los vecinos.
-El algoritmo es asíncrono, en el sentido de que no requiere que todos los nodos operen
-sincronizados entre sí.
-Los costes mínimos de una ruta está relacionados mediante la ecuación Bellman-Ford:
-_dx_ ( _y_ ) = _minv_ { _c_ ( _x_ , _v_ ) + _dv_ ( _y_ )}
-En el algoritmo, de vez en cuando, cada nodo envía una copia de su vector de distancias a
-cada uno de sus vecinos. Cuando un nodo x recibe un nuevo vector de distancias
-procedente de cualquiera de sus vecinos v, guarda dicho vector de v y luego utiliza la
-ecuación de Bellman-Ford para actualizar su propio vector de distancias.
-Si el vector de distancias del nodo x ha cambiado como resultado de este paso de
-actualización, entonces el nodo x enviará su vector de distancias actualizado a cada uno de
-sus vecinos, lo que puede a su vez actualizar sus propios vectores distancia.
+## Algoritmo de enrutamiento por vector de distancias (DV)
+
+El algoritmo por vector de distancias (DV) es iterativo, asíncrono y distribuido. Es distribuido en el sentido de que cada nodo recibe información de uno o más de sus vecinos directamente conectados, realiza un cálculo y luego distribuye los resultados de su cálculo de vuelta a sus vecinos. Es iterativo porque este proceso continúa hasta que no hay disponible más información para ser intercambiada entre los vecinos.
+El algoritmo es asíncrono, en el sentido de que no requiere que todos los nodos operen sincronizados entre sí.
+Los costes mínimos de una ruta están relacionados mediante la ecuación Bellman-Ford:
+	$d_x (y) = min_{v} \{c(x, v) + d_v(y)\}$
+En el algoritmo, de vez en cuando, cada nodo envía una copia de su vector de distancias a cada uno de sus vecinos. Cuando un nodo x recibe un nuevo vector de distancias procedente de cualquiera de sus vecinos v, guarda dicho vector de v y luego utiliza la ecuación de Bellman-Ford para actualizar su propio vector de distancias.
+Si el vector de distancias del nodo x ha cambiado como resultado de este paso de actualización, entonces el nodo x enviará su vector de distancias actualizado a cada uno de sus vecinos, lo que puede a su vez actualizar sus propios vectores distancia.
+
+```
+
 Inicialización:
 for todos los destinos y pertenecientes a N:
 Dx(y) = c(x,y) /* si y no es un vecino, entonces c(x,y) = ∞
@@ -98,36 +68,19 @@ Dx(y) = minv{c(x,v) + Dv(y)}
 if Dx(y) varía para cualquier destino y enviar vector de distancia
 Dx = [Dx(y): y perteneciente N] a todos los vecinos
 forever
-El proceso de recibir vectores distancia actualizados de los vecinos, recalcular las entradas
-de la tabla de enrutamiento e informar a los vecinos de los costes modificados de la ruta de
-coste mínimo hacia un destino continúa hasta que ya no se envían mensajes de
-actualización. El algoritmo se encuentra en estado de reposo.
+```
+
+El proceso de recibir vectores distancia actualizados de los vecinos, recalcular las entradas de la tabla de enrutamiento e informar a los vecinos de los costes modificados de la ruta de coste mínimo hacia un destino continúa hasta que ya no se envían mensajes de actualización. El algoritmo se encuentra en estado de reposo.
 
 ##### Reversa envenenada
 
-Técnica que resuelve los bucles de enrutamiento infinito, si un nodo x enruta a z a través de
-un nodo y, entonces en su vector distancia pondra como valor de Dx(z) = ∞, simulando que
-no tiene ningún enlace hacia z.
+Técnica que resuelve los bucles de enrutamiento infinito, si un nodo x enruta a z a través de un nodo y, entonces en su vector distancia pondra como valor de Dx(z) = ∞, simulando que no tiene ningún enlace hacia z.
 
 ##### Comparación LS y DV
 
-
-- Complejidad del mensaje: LS requiere que cada nodo conozca el coste de cada
-enlace de la red. Además, cuando el coste del enlace cambia, el nuevo coste tiene
-que enviarse a todos los nodos. El algoritmo de vector de distancias (DV) requiere
-intercambios de mensajes entre los vecinos directamente conectados en cada
-iteración. Cuando los costos de los enlaces cambian, el algoritmo de vector de
-distancias propagara los resultados del coste del enlace que ha cambiado solo si el
-nuevo coste de enlace da lugar a una ruta de coste mínimo distinta para no de los
-nodos conectados a dicho enlace.
-- Velocidad de convergencia : la implementación del algoritmo de estados de
-enlaces es un algoritmo O(N^2 ) que requiera enviar O(N*E) mensajes. El algoritmo de
-vector de distancias puede converger lentamente y pueden aparecer bucles de
-enrutamiento mientras está convergiendo. Este algoritmo también sufre el problema
-de la cuenta hasta infinito.
-- Robustez : LS proporcionando un mayor grado de robustez .Con el algoritmo de
-vector de distancias, un nodo puede anunciar rutas de coste mínimo incorrectas o
-cualquiera o a todos los destinos. Con el algoritmo de vector de distancias, un
+- Complejidad del mensaje: LS requiere que cada nodo conozca el coste de cada enlace de la red. Además, cuando el coste del enlace cambia, el nuevo coste tiene que enviarse a todos los nodos. El algoritmo de vector de distancias (DV) requiere intercambios de mensajes entre los vecinos directamente conectados en cada iteración. Cuando los costos de los enlaces cambian, el algoritmo de vector de distancias propagara los resultados del coste del enlace que ha cambiado solo si el nuevo coste de enlace da lugar a una ruta de coste mínimo distinta para no de los nodos conectados a dicho enlace.
+- Velocidad de convergencia : la implementación del algoritmo de estados de enlaces es un algoritmo O(N^2 ) que requiera enviar O(N*E) mensajes. El algoritmo de vector de distancias puede converger lentamente y pueden aparecer bucles de enrutamiento mientras está convergiendo. Este algoritmo también sufre el problema de la cuenta hasta infinito.
+- Robustez : LS proporcionando un mayor grado de robustez .Con el algoritmo de vector de distancias, un nodo puede anunciar rutas de coste mínimo incorrectas o cualquiera o a todos los destinos. Con el algoritmo de vector de distancias, un
 
 
 
