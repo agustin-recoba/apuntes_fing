@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "e5c93fb4e4da0887",
+        "id": "7b05ed16a7fc5eba",
         "type": "tabs",
         "children": [
           {
-            "id": "7bc5e49c4de08f15",
+            "id": "db7c582835370198",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4. Capa de Red/Plano de Control.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "73f244b4990d22e4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practicos/Practico 6.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,13 +61,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 314,
-    "collapsed": true
+    "width": 314
   },
   "right": {
     "id": "b806b4a23c110f14",
@@ -100,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practicos/Practico 6.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practicos/Practico 6.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Practicos/Practico 6.md"
-              }
+              "state": {}
             }
           },
           {
@@ -159,17 +136,17 @@
     "direction": "horizontal",
     "width": 200
   },
-  "active": "73f244b4990d22e4",
+  "active": "db7c582835370198",
   "lastOpenFiles": [
-    "4. Capa de Red/Plano de Control.md",
-    "Practicos/Practico 6.md",
     "4. Capa de Red/Capa de Red.md",
-    "Practicos/Practico 5.md",
-    "media/Pasted image 20221026182630.png",
-    "Excalidraw/Drawing 2022-10-26 18.15.54.excalidraw.md",
-    "Excalidraw/Drawing 2022-10-26 17.49.49.excalidraw.md",
-    "1. Introducción a las Redes de Computadoras.md",
+    "4. Capa de Red/Plano de Control.md",
     "resto del curso.md",
-    "Puertos bien conocidos.md"
+    "Puertos bien conocidos.md",
+    "3. Capa de Transporte.md",
+    "2. Capa de Aplicación.md",
+    "1. Introducción a las Redes de Computadoras.md",
+    "6. Capa de enlace/Capa de Enlace y Redes de área local.md",
+    "Practicos/Practico 6.md",
+    "Practicos/Practico 5.md"
   ]
 }

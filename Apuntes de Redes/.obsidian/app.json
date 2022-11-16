@@ -21,7 +21,8 @@
     "switch",
     "threads",
     "P2P",
-    "broadcast"
+    "broadcast",
+    "info"
   ],
   "pdfExportSettings": {
     "includeName": true,
