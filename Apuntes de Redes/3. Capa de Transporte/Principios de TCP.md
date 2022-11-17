@@ -1,6 +1,6 @@
 Para proporcionar una transferencia de datos fiable, TCP confía en muchos de los principios básicos, incluyendo los **mecanismos de detección de errores**, las **retransmisiones**, los **reconocimientos acumulativos,** los **temporizadores** y los campos de cabecera para los **números de secuencia y de reconocimiento**.
 
-Se dice que TCP está **orientado a la conexión** porque antes de que un proceso de la capa aplicación pueda comenzar a enviar datos a otro, los dos procesos deben primero **“establecer una comunicación”** entre ellos; es decir, tienen que enviarse ciertos segmentos preliminares para definir los parámetros de la transferencia de datos que van a llevar a cabo a continuación. Como parte del proceso de establecimiento de la conexión TCP, ambos lados de la misma iniciarán muchas variables de estado TCP asociadas con la conexión TCP.
+Se dice que TCP está **orientado a la conexión** porque antes de que un proceso de la capa de aplicación pueda comenzar a enviar datos a otro, los dos procesos deben primero **“establecer una comunicación”** entre ellos; es decir, tienen que enviarse ciertos segmentos preliminares para definir los parámetros de la transferencia de datos que van a llevar a cabo a continuación. Como parte del proceso de establecimiento de la conexión TCP, ambos lados de la misma iniciarán muchas variables de estado TCP asociadas con la conexión TCP.
 
 Dado que el protocolo **TCP se ejecuta únicamente en los sistemas terminales** y no en los elementos intermedios de la red (routers y switches de la capa de enlace), los elementos intermedios de la red no mantienen el estado de la conexión TCP; los routers ven los datagramas, no las conexiones.
 
@@ -8,7 +8,7 @@ Proporciona un servicio **full-duplex** (flujo de datos en ambas direcciones en 
 
 ![[Pasted image 20221006213600.png]]
 
-De vez en cuando TCP tomará fragmentos de datos del buffer de emisión. La cantidad máxima de datos que pueden tomarse y colocarse en un segmento de la capa de red, está limitada por el tamaño máximo de segmento (MSS).
+De vez en cuando, TCP tomará fragmentos de datos del buffer de emisión. La cantidad máxima de datos que pueden tomarse y colocarse en un segmento de la capa de red, está limitada por el tamaño máximo de segmento (MSS).
 TCP empareja cada segmento de datos del cliente con una cabecera TCP, formando los segmentos TCP.
 Cuando TCP recibe un segmento en el otro extremo, los datos se colocan en el buffer de recepción.
 En conclusión, **TCP consta de buffers, variables y un socket de conexión a un proceso en cada host** perteneciente a la conexión.
@@ -29,7 +29,7 @@ El segmento TCP consta de campos de cabecera y un campo de datos. El campo de da
 ![[Pasted image 20221006213622.png|600]]
 
 El número de puerto de origen y destino, se usan para multiplexar y demultiplexar los datos.
-Al igual que en UDP se usa un campo de suma de comprobación (**checksum**). 
+Al igual que en UDP, se usa un campo de suma de comprobación (**checksum**). 
 También incluye un campo número de secuencia (32 bits) y el número de reconocimiento (32 bits) usados para el servicio de transferencia de datos fiable.
 El campo ventana de recepción (16 bits) se usa por el control de flujo. 
 El campo longitud de cabecera (4 bits), la cabecera puede tener una longitud variable. 
@@ -105,6 +105,9 @@ title: En resumen
 title: En resumen
 1. C: FIN
 2. S: ACK
-3. S: FIN
-4. C: ACK
+
+-- S puede seguir enviando datos --
+
+4. S: FIN
+5. C: ACK
 ```

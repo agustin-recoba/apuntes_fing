@@ -1,0 +1,17 @@
+### Switches:
+##### Pros:
+- Dispositivos plug-and-play
+- Ofrecen tasas de filtrado y reenvío relativamente altas (trabajan hasta capa 2)
+##### Contras:
+- La topología activa de una red conmutada está restringida a un árbol de recubrimiento.
+- Una red conmutada grande requerirá tablas ARP grandes en los nodos y generará una cantidad de procesamiento y tráfico ARP sustancial.
+- No ofrecen ninguna protección frente a las tormentas de difusión.
+
+### Routers
+##### Pros:
+- Normalmente los paquetes no seguirán ciclos a través de los routers inclusocuando la red tenga rutas redundantes. Los paquetes no están restringidos a un árbol de recubrimiento y pueden utilizar la mejor ruta entre el origen y el destino
+- Proporcionan protección mediante cortafuegos frente a las tormentas de difusión de la capa 2.
+##### Contra:
+- no son dispositivos plug-and-play
+- los routers suelen tener un tiempo de procesamiento por paquete mayor que los conmutadores (trabajan hasta capa 3)
+

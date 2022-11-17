@@ -1,0 +1,55 @@
+Es la tecnología cableada LAN dominante, por varias razones:
+- Una tarjeta de red es barata.
+- Primera tecnología LAN utilizada ampliamente.
+- Más simple y barata que token LAN y ATM.
+- Permite velocidades entre 10Mbps – 10Gbps
+ 
+### Estructura de la trama o frame Ethernet
+
+![[Pasted image 20221116135951.png]]
+
+- **Campo de datos:** transporta el datagrama IP. La unidad máxima de transmisión (MTU) de Ethernet es 1.500 bytes, lo que quiere decir que si el datagrama IP excede de 1.500 bytes, entonces el host tiene que fragmentar el datagrama. El tamaño mínimo del campo de datos es 46 bytes, lo que significa que si el datagrama IP tiene menos de 46 bytes, el campo de datos tiene ser rellenado hasta los 46 bytes (después se utiliza el campo “longitud de cabecera” para eliminar el relleno).
+- **Dirección de destino:** contiene la dirección MAC del adaptador de destino. Cuando un adaptador recibe una trama Ethernet cuya dirección de destino coincide con **la suya o la dirección MAC de difusión**, pasa el contenido del campo de datos de la trama a la capa de red, en caso contrario, lo descarta.
+- **Dirección de origen:** Este campo contiene la dirección MAC del adaptador que transmite la trama hacia la LAN. 
+- **Campo de tipo:** Protocolo de Red. Los hosts pueden utilizar otros protocolos de la capa de red, además de IP. Es similar al campo de tipo de IP y el puerto en la capa de transporte.
+- **Comprobación de redundancia cíclica (CRC):**  su propósito es permitir que el adaptador receptor detecte errores de bit de la trama. Si hay error, se descarta el frame.
+- **Preámbulo:**  8 bytes. Cada uno de los siete primeros bytes tiene el valor 10101010 y el último byte tiene el valor 10101011. Los siete primeros bytes sirven para “despertar” a los adaptadores de recepción y sincronizar sus relojes con el reloj del emisor. Los últimos 2 bits del octavo byte del preámbulo (los dos primeros 1s consecutivos) alertan al adaptador de que va a llegar “información importante”.
+
+Ethernet utiliza la transmisión en banda base; es decir, el adaptador envía una señal digital directamente al canal de difusión. También utilizan la codificación Manchester, cada bit contiene una transición; un 1 indica una transición del nivel alto al nivel bajo, mientras que un 0 indica una transición del nivel bajo al nivel alto. Al incluir una transición a mitad de cada bit, el host receptor puede sincronizar su reloj con el del host emisor.
+
+
+### Servicio sin conexión y no confiable
+
+No se establece ninguna conexión entre adaptadores. Cuando una trama llega al adaptador destino, se hace una comprobación CRC, pero no se envía ni un mensaje de reconocimiento positivo cuando pasa la comprobación, ni uno negativo cuando no la pasa.
+Esta responsabilidad es de protocolos de capas superiores.
+
+### Unslotted CSMA/CD: protocolo de acceso múltiple de Ethernet
+
+#### Algoritmo: 
+1. NIC recibe un datagrama de la capa de red y crea un frame. 
+2. Si la NIC siente un canal ocioso, comienza la transmisión. Si la NIC siente un canal ocupado, espera hasta que el canal quede ocioso y luego transmite. 
+3. Si la NIC transmite el frame entero sin detectar otra transmisión, entonces la NIC completó su trabajo para ese frame. 
+4. Si la NIC detecta otra transmisión mientras está transmitiendo, aborta y envía una señal de atasco. 
+5. Luego de abortar, la NIC entra a Exponential Backoff: luego de la n-ésima colisión, la NIC elige $K$ de forma aleatoria en $\{0,1,2, … , 2n - 1\}$. Luego la NIC espera $512 * K$ $bit$ $times$ y regresa al paso 2.
+
+**Señal de atasco:** asegura que todos los otros transmisores están al tanto de la colisión. Son 48 bits.
+
+**Bit time:** $0.1 ms$ para Ethernet de $10Mbps$; para $K=1023$, la espera de tiempo es de alrededor de $50ms$.
+
+**Exponential Backoff:** 
+- La idea es adaptar los intentos de retransmisión a la carga actual estimada.
+	- Una carga pesada implica que la espera aleatoria será más larga.
+- Primera colisión:
+	- Elige $K$ entre $\{0,1\}$, por lo que el retraso es $K*512$ $bit$ $transmission$ $times$.
+- Luego de la segunda colisión:
+	- Elige $K$ entre $\{0,1,2,3\}$.
+- Luego de 10 colisiones:
+	- Elige $K$ entre $\{0,1,2, … ,1023\}$.
+
+```ad-note
+title: Eficiencia
+collapse: closed
+![[Pasted image 20221116141154.png]]
+```
+
+
