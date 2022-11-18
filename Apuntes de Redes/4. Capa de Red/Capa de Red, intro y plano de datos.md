@@ -414,9 +414,34 @@ collapse: closed
 ### Transición de IPv4 a IPv6
 
 No se puede hacer una actualización de todos los routers simultáneamente, o sea hacer un “dia D”.
-La forma más directa es la **pila dual**, donde todos los nodos de la red tengan una implementación para IPV4 e IPV6.
+
+La forma más directa es la **pila dual** (dual stack), donde todos los nodos de la red tengan una implementación para IPV4 e IPV6.
 
 Otra opción es la **tunelización,** consiste en tomar el datagrama IPv6 completo como el campo de datos de un datagrama IPv4, el cual se envía normalmente por una red IPv4, permitiendo recuperar el datagrama IPv6 original en el receptor. El concepto se puede aplicar a múltiples protocolos “tunelizados” por otros.
 
+Una última opción sería que se haga traducción entre IPv6 y IPv4 cuando sea necesario.
 
-El mecanismo más simple es el descrito, normalmente denominado 6in4; el mecanismo 6to4 es similar pero permite usar servidores de pasarela o relays. Entre otras posibilidades, se puede implementar la tunelización con transporte UDP, denominado Teredo; en este caso se facilita la tunelización a través de un router NAT.
+#### Dual Stack
+IPv6 puede ser agregado a cualquier dispositivo que hable IPv4. 
+Los protocolos son multiplexados y de-multiplexados sobre los mismos enlaces (i.e. IEEE 802 family) utilizando diferentes números de protocolo en una misma posición del frame.
+Misma técnica a la utilizada para mezclar IPX, Appletalk, TCP, etc. 
+Es un problema de la aplicación elegir cuál protocolo utilizar (i.e. si una respuesta a una consulta DNS contiene registros AAAA, entonces preferir TCP sobre IPv6 como transporte).
+Esto habilita una transición paulatina, permitiendo a los desarrolladores actualizar gradualmente sus aplicaciones. 
+Lenguajes como Java permiten la utilización de objetos de tipo InetAddress, generalizaciones de Inet4Address e Inet6Address, haciendo su manejo independiente del protocolo.
+
+#### Tunelización
+Utilizamos el tunneling para “ocultar” tráfico IPv6 dentro de tráfico IPv4. De esta forma podemos cruzar secciones de Internet que nos son IPv6 Ready aún.
+Los paquetes IPv6 se encapsulan en paquetes IPv4, que pueden tratarse como tráfico IPv4 standard. 
+Conceptualmente, puede pensarse como:
+- IPv6 utilizando IPv4 como una capa de enlace virtual
+- Una VPN IPv6 configurada sobre la Internet IPv4
+
+![[Pasted image 20221118100642.png]]
+
+Hay distintas formas de poner IPv6 en IPv4:
+
+![[Pasted image 20221118100657.png]]
+
+
+
+

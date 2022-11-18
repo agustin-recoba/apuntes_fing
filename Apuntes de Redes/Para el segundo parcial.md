@@ -4,7 +4,7 @@
 ### 3. [[TCP, control de congestión]]
 
 # Capa de red
-### 1. [[Capa de Red]]
+### 1. [[Capa de Red, intro y plano de datos]]
 ### 2. [[Plano de Control]]
 
 # Capa de enlace
