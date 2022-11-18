@@ -1,5 +1,6 @@
 {
   "baseFontSize": 18,
   "translucency": false,
-  "accentColor": ""
+  "accentColor": "",
+  "cssTheme": ""
 }

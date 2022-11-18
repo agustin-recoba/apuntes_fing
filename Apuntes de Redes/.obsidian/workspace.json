@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "10642111848f771b",
+        "id": "190a2af5303dd34c",
         "type": "tabs",
         "children": [
           {
-            "id": "78513ba08c4a56b4",
+            "id": "ad6a1e24a437033c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Capa de Transporte/TCP, control de flujo.md",
+                "file": "4. Capa de Red/Capa de Red.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314
+    "width": 314,
+    "collapsed": true
   },
   "right": {
     "id": "b806b4a23c110f14",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "3. Capa de Transporte/TCP, control de flujo.md",
+                "file": "4. Capa de Red/Capa de Red.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "3. Capa de Transporte/TCP, control de flujo.md",
+                "file": "4. Capa de Red/Capa de Red.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Capa de Transporte/TCP, control de flujo.md"
+                "file": "4. Capa de Red/Capa de Red.md"
               }
             }
           },
@@ -144,17 +145,17 @@
     "direction": "horizontal",
     "width": 200
   },
-  "active": "78513ba08c4a56b4",
+  "active": "1641994aea0dd7e5",
   "lastOpenFiles": [
-    "Para el segundo parcial.md",
-    "3. Capa de Transporte/Principios de TCP.md",
     "4. Capa de Red/Capa de Red.md",
     "6. Capa de enlace/6. Capa de Enlace.md",
+    "Para el segundo parcial.md",
+    "3. Capa de Transporte/TCP, control de congestión.md",
+    "3. Capa de Transporte/TCP, control de flujo.md",
+    "3. Capa de Transporte/Principios de TCP.md",
     "6. Capa de enlace/PPP, Protocolo punto a punto.md",
     "6. Capa de enlace/Redes de área local virtuales  (VLAN).md",
     "6. Capa de enlace/Switch vs Router.md",
-    "6. Capa de enlace/Conmutadores de la capa de enlace.md",
-    "6. Capa de enlace/Dominios de colisión y de broadcast.md",
-    "6. Capa de enlace/Ethernet.md"
+    "6. Capa de enlace/Conmutadores de la capa de enlace.md"
   ]
 }
