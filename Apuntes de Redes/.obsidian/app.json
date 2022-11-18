@@ -23,7 +23,9 @@
     "P2P",
     "broadcast",
     "info",
-    "Forwarding"
+    "Forwarding",
+    "Broadcast",
+    "multicasting"
   ],
   "pdfExportSettings": {
     "includeName": true,

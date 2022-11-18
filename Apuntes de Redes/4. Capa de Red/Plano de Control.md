@@ -209,79 +209,133 @@ Varios elementos:
 
 ### Enrutamiento entre sistemas autónomos: BGP
 
-BGP es un protocolo de enrutamientos entre sistemas autónomos que proporciona a cada
-sistema autónomo mecanismos para:
-- Obtener información acerca de la alcanzabilidad de las subredes de los sistemas
-autónomos vecinos
-- Propagar la información de alcanzabilidada a todos los routers internos del sistema
-autónomo.
-- Determinar buenas rutas de subredes, basándose en la información de
-alcanzabilidad y en la política del sistema autónomo.
-Lo más importante es que BGP permite a cada subred anunciar su existencia al resto de
-Internet.
-Para cada conexión TCP, los dos routers situados en los extremos de la conexión se
-denominan **pares BGP** y la conexión TCP junto con todos los mensajes BGP enviados a
-través de la conexión se denomina **sesión BGP.** Además, una sesión BGP que abarca dos
-sistemas autónomos se conoce como **sesión externa BGP** (eBGP) y una sesión BGP entre
-routers de un mismo sistema autónomo se conoce como **sesión interna BGP** (iBGP).
-BGP permite que cada sistema autónomo aprenda qué destinos son alcanzables a través
-de sus sistemas autónomos vecinos. En BGP, los destinos no son hosts sino prefijos CIDR,
-representando cada prefijo una subred o una colección de subredes.
+BGP es un protocolo de enrutamientos entre sistemas autónomos que proporciona a cada sistema autónomo mecanismos para:
+- Obtener información acerca de la alcanzabilidad de las subredes de los sistemas autónomos vecinos
+- Propagar la información de alcanzabilidada a todos los routers internos del sistema autónomo.
+- Determinar buenas rutas de subredes, basándose en la información de alcanzabilidad y en la política del sistema autónomo.
+Lo más importante es que BGP permite a cada subred anunciar su existencia al resto de Internet.
 
-##### Atributos de ruta y rutas BGP
+Para cada conexión TCP, los dos routers situados en los extremos de la conexión se denominan **pares BGP** y la conexión TCP junto con todos los mensajes BGP enviados a través de la conexión se denomina **sesión BGP.** Además, una sesión BGP que abarca dos sistemas autónomos se conoce como **sesión externa BGP** (eBGP) y una sesión BGP entre routers de un mismo sistema autónomo se conoce como **sesión interna BGP** (iBGP).
 
-En BGP, un sistema autónomo se identifica mediante su número de sistema autónomo
-( **ASN, Autonomous System Number** ) globalmente único.
+BGP permite que cada sistema autónomo aprenda qué destinos son alcanzables a través de sus sistemas autónomos vecinos. En BGP, los destinos no son hosts sino prefijos CIDR, representando cada prefijo una subred o una colección de subredes.
+
+#### Atributos de ruta y rutas BGP
+
+En BGP, un sistema autónomo se identifica mediante su número de sistema autónomo (**ASN, Autonomous System Number**) globalmente único.
 Atributos BGP:
-- AS-PATCH: contiene los sistemas autónomos a través de los que ha pasado el
-anuncio del prefijo. Cuando se ha pasado un prefijo dentro de un sistema autónomo,
-el sistema añade su ASN al atributo AS-PATH. Los router utilizan este atributo para
-impedir los bucles de anuncios.
-- El siguiente salto (NEXT HOP) es la interfaz del router que inicia la secuencia de
-sistemas autónomos (AS-PATH).
+- **AS-PATH**: contiene los sistemas autónomos a través de los que ha pasado el anuncio del prefijo. Cuando se ha pasado un prefijo dentro de un sistema autónomo, el sistema añade su ASN al atributo AS-PATH. Los routers utilizan este atributo para impedir los bucles de anuncios.
+- El siguiente salto (**NEXT HOP**) es la interfaz del router que inicia la secuencia de sistemas autónomos (AS-PATH).
 
-##### Selección de la ruta BGP
+Además, BGP incluye atributos que permiten a los routers asignar métricas de preferencia en las rutas, y un atributo que indica como el prefijo fue insertado en BGP en el AS de origen. 
+Cuando un **Gateway router** recibe un aviso de ruta, utiliza su **import policy** para decidir si aceptarla o rechazarla, por ejemplo, sabiendo que nunca se debe hacer el ruteo por el ASxyz.
 
-Un router puede aprender acerca de más de una ruta a cualquier prefijo, en cuyo caso
-tendrá que seleccionar una de las posibles rutas. Las entradas para este proceso de
-selección de ruta es el conjunto de todas las rutas que han sido aprendidas y aceptadas por
-el router. Si existen dos rutas con el mismo prefijo, entonces BGP invoca secuencialmente
-las siguientes reglas de eliminación hasta quedarse con una ruta:
+#### Selección de la ruta BGP
 
-1. Se asigna un valor de preferencia local (LOCAL-PREF) a las rutas, como uno de sus
-  atributos. La preferencia local de una ruta podría haber sido definida por el router o
-  podría haber sido aprendida por otro router perteneciente al mismo sistema
+Un router puede aprender acerca de más de una ruta a cualquier prefijo, en cuyo caso tendrá que seleccionar una de las posibles rutas. Las entradas para este proceso de selección de ruta es el conjunto de todas las rutas que han sido aprendidas y aceptadas por el router. Si existen dos rutas con el mismo prefijo, entonces BGP invoca secuencialmente las siguientes reglas de eliminación hasta quedarse con una ruta:
 
-
-
-autónomo. Esta es una decisión política que se le deja al administrador de red del
-sistema autónomo. Se eligen las rutas con los valores de preferencia local más altos.
-
-2. De las rutas que quedan, toda ellas con el mismo valor de preferencia local, se
-  selecciona la ruta con el camino de sistemas autónomos más corto. Si esta regla
-  fuera la única para seleccionar la ruta, entonces BGP estaría aplicando un vector de
-  distancias para determinar la ruta, siendo la métrica de distancia utilizada el número
-  de saltos entre sistemas autónomos, en lugar de número de saltos entre routers.
-3. De las restantes rutas, todas con el mismo valor de preferencia local y la misma
-  longitud de AS-PATH, se seleccione la ruta con el router del siguiente salto más
-  próximo. En este caso, más próximo quiere decir que el coste de la ruta de coste
-  mínimo, determinado por el algoritmo interno del AS, sea más pequeño. Este
-  procesos se conoce como enrutamiento de la patata caliente.
+1. Valor del atributo de preferencia local, que puede ser definido por el router, o aprendido desde otro router en el mismo AS. Esta política de decisión es llevada a cabo por el administrador de red del AS.
+2. AS-PATH más corto
+3. El router NEXT-HOP más cercano, utilizando el ruteo de la papa caliente.
 4. Si todavía quedan rutas, entonces se aplican criterios adicionales.
-Es importante observar que no se puede afirmar que la decisión garantiza un camino más
-corto en cantidad de hops de routers, porque se desconoce la información interna de cada
-AS. Un camino con AS-PATH más corto puede incluir ASs con muchos “hops” de routers
-internos, y puede ser más largo en término de routers que otro camino con AS-PATH más
-largo.
 
-##### Mensajes BGP
+Es importante observar que no se puede afirmar que la decisión garantiza un camino más corto en cantidad de hops de routers, porque se desconoce la información interna de cada AS. Un camino con AS-PATH más corto puede incluir ASs con muchos “hops” de routers internos, y puede ser más largo en término de routers que otro camino con AS-PATH más largo.
 
-Los mensajes BGP se intercambian usando TCP. Mensajes BGP:
-- OPEN: abre conexión TCP con “peer” y autentica al que envía
-- UPDATE: publica nuevos caminos (o da de baja otros)
-- KEEPALIVE: mantiene la conexión viva en ausencia de
-- UPDATES; se usa también como ACK del OPEN
-- NOTIFICATION: reporta errores en mensaje previo; también se usa para cerrar
+#### Mensajes BGP
+
+Los mensajes BGP se intercambian usando TCP.
+- **OPEN**: abre conexión TCP con “peer” y autentica al que envía
+- **UPDATE**: publica nuevos caminos (o da de baja otros)
+- **KEEPALIVE**: mantiene la conexión viva en ausencia de
+- **UPDATES**; se usa también como ACK del OPEN
+- **NOTIFICATION**: reporta errores en mensaje previo; también se usa para cerrar
 - conexión
 
+#### Política de ruteo en BGP:
 
+![[Pasted image 20221118115118.png]]
+
+- A, B, C son proveedores de red. 
+- X, W, Y son clientes de los proveedores.
+- X es dual-homed, ya que está asociado a dos redes. Por lo que X no quiere “rutear” desde B por X a C, de esta forma, X no avisara a B una ruta a C.
+- A avisa un camino AW a B.
+- B avisa un camino BAW a X.
+- Así, surge la consulta de si B debe avisar del camino BAW a C:
+	- No, ya que B no obtiene “ingresos” por hacer el ruteo CBAW ya que ni W ni C son clientes de B.
+	- B quiere forzar a C a rutear por w a través de A. 
+	- B quiere rutear solamente desde/hacia sus clientes.
+
+### ¿Por qué diferentes ruteos Intra-AS e Inter-AS? 
+
+#### Políticas:
+- Inter-AS: el administrador quiere el control sobre como su tráfico es ruteado, es decir, quien rutea a través de su red.
+- Intra-AS: un único administrador, por lo que no se necesitan políticas de decisión.
+
+#### Escala:
+- El ruteo jerárquico reduce el tamaño de la tabla.
+
+#### Rendimiento:
+- Intra-AS: puede enfocarse en el rendimiento.
+- Inter-AS: las políticas deben dominar por sobre el rendimiento.
+
+# Broadcast y multicasting
+
+En **broadcast Routing**, la capa de red provee un servicio de entrega de paquetes enviados desde el nodo fuente hacia todos los nodos en la red. Por otro lado, **multicast Routing** permite a un único nodo enviar una copia de un paquete a un subconjunto de nodos en otra red.
+
+## Algoritmos de Ruteo de Broadcast
+
+Dados N nodos de destino, el nodo fuente realiza N copias del paquete, direcciona cada copia a un destino distinto, y transmite todas estas a los destinos utilizando unicast Routing. El principal problema de esta implementación es la ineficiencia, ya que, si el nodo fuente está conectado al resto de la red mediante un único enlace, entonces N copias del mismo paquete atravesaran ese único enlace.
+
+![[Pasted image 20221118121112.png|500]]
+
+Otro problema es cómo es obtenida la información de los receptores, ya que se asume que es conocida
+
+### In-network duplication
+
+Una forma de implementar el broadcast es utilizando **flooding**, que consiste en que el nodo fuente envía una copia del paquete a todos sus vecinos. Una vez que un nodo recibe un paquete de broadcast, duplica el paquete y lo reenvía a todos sus vecinos, exceptuando a aquel del cual recibió el paquete. Sin embargo, esta aproximación tiene problemas; por ejemplo, si el grafo tiene ciclos, las copias de los paquetes de broadcast estarán en el ciclo indefinidamente. Otro problema es cuando un nodo está conectado a más de dos nodos, este creará y enviará múltiples copias del paquete de broadcast, y cada uno creará una copia de sí mismo (en otro nodo con más de dos vecinos), generando así una **tormenta de broadcast**, lo cual termina en múltiples paquetes generados, que no son utilizados.
+
+Para solucionar este problema se utiliza el concepto de flooding controlado, donde la clave es que un nodo reenvía un paquete de broadcast únicamente si aún no hizo broadcast de ese paquete antes. Para implementarlo existen distintas técnicas.
+
+- **Por número de secuencia**: un nodo fuente agrega su dirección al paquete, además de un número de secuencia de broadcast en el paquete de broadcast, y envía el paquete a todos sus vecinos. Luego cada nodo mantiene una lista de las direcciones y números de secuencia de cada paquete de broadcast que ya ha recibido, duplicado y reenviado. Cuando este nodo recibe un paquete, chequea en el registro si tiene una entrada para esta dirección y número de secuencia, y en caso de que si, el paquete es ignorado. En caso de que no exista, se duplica y reenvía. 
+- **Reverse Path Forwarding (RPF)**: Solamente se hace el forward de un paquete si este llegó del camino más corto entre el nodo y la fuente. Por ejemplo:
+	![[Pasted image 20221118121250.png|300]]
+
+### Broadcast por Spanning Tree:
+
+En primer lugar, se construye un árbol de cubrimiento. Luego los nodos reenvían copias de los paquetes solamente a través del árbol de cubrimiento construido.
+
+![[Pasted image 20221118121341.png]]
+
+Para construir el árbol de cubrimiento, en primer lugar, se toma un nodo central. Luego cada nodo envía un mensaje unicast de join al nodo central. El mensaje será reenviado hasta que llega a un nodo que ya pertenece al árbol de cubrimiento.
+
+![[Pasted image 20221118121401.png]]
+
+
+
+
+
+
+
+
+
+
+
+## Multicast
+La idea es encontrar un árbol o árboles conectando routers teniendo miembros de un grupo local de multicast.
+- Tree: no todos los caminos entre routers son usados.
+- Source-based: diferente árbol desde cada emisor a receptor.
+- Shared-tree: el mismo árbol utilizado por todos los miembros del grupo.
+
+![[Pasted image 20221118121455.png|500]]
+
+### Aproximaciones para la construcción de árboles de multicast
+- Source-based tree: un árbol por fuente.
+	- Shortest Path trees.
+	- Reverse Path Forwarding.
+- Group-shared tree: el grupo usa un árbol.
+	- Minimal Spanning (Steiner).
+	- Center-based trees.
+
+![[Pasted image 20221118121615.png]]
+![[Pasted image 20221118121626.png]]
+![[Pasted image 20221118121635.png]]
+![[Pasted image 20221118121649.png|400]]
