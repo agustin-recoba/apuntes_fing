@@ -3328,6 +3328,10 @@ var pandoc = (input, output, extraParams) => __async(void 0, null, function* () 
     let error = "";
     const fileBaseName2 = (file) => path.basename(file, path.extname(file));
     let args = [];
+
+    args.push('--resource-path')
+    args.push(path$1.dirname(input.file))
+
     if (input.format) {
       args.push("--from");
       args.push(input.format);

@@ -147,7 +147,7 @@ Que ocurra una colisión implica que el tiempo total de transmisión del paquete
 Hay que notar el rol de la distancia y del retraso de propagación a la hora de determinar la probabilidad de colisión. Cuanto más largo es el retraso de propagación, más grande es la chance de que un nodo carrier-sensing aún no tenga la capacidad de sentir una transmisión que ya ha comenzado en algún otro nodo de la red.
 
 #### CSMA/CD (Carrier Sense Multiple Access / Collision Detection)
-El carrier sensing en este caso es igual al de CSMA. Las colisiones son detectadas dentro de un período corto de tiempo, y las transmisiones que coinciden son abortadas, reduciendo el desperdicio del canal. 
+El carrier sensing en este caso es igual al de CSMA. Las colisiones son detectadas dentro de un período corto de tiempo, y las **transmisiones que coinciden son abortadas**, reduciendo el desperdicio del canal. 
 La detección de colisiones es simple en redes cableadas LAN, mediante la medida de la intensidad de la señal y comparando las señales recibidas y transmitidas. 
 Es difícil en LANs inalámbricas, ya que la intensidad de señal recibida se ve abrumada por la intensidad de transmisión local.
 

@@ -377,7 +377,7 @@ En la lista siguiente se describe la función de cada campo de encabezado.
 - **Dirección de destino**: 128 bits. Dirección del destinatario previsto del paquete. El destinatario previsto no es necesariamente el destinatario si existe un encabezado de enrutamiento opcional.
 
 Varios campos que aparecían en IPv4 ya no aparecen en IPv6, como, por ejemplo:
-- **Fragmentación/Reensamblado**: Si llega un datagrama de tamaño mayor al que soporta, directamente lo descarta. Estas operaciones consumen tiempo, por lo que eliminando esta funcionalidad de los routers e incluyéndose directamente en los sistemas terminales, se acelera considerablemente el reenvío IP dentro de la red.
+- **Fragmentación/Reensamblado**: IPv6 solamente implementa fragmentación end-to-end, no en los routers intermedios; los datagramas cuya MTU exceda las posibilidades de un medio a lo largo del camino, serán descartados. Los datos necesarios para re-ensamblar el paquete ahora se incluyen en Next Header con valor 44.
 - **Suma de comprobación de cabecera**: Esta información la consideraron redundante, ya que este control se realiza en los protocolos TCP y UDP.
 - **Opciones**: permitido, pero fuera del header, indicado por el campo “Next Header”
 
@@ -442,6 +442,7 @@ Hay distintas formas de poner IPv6 en IPv4:
 
 ![[Pasted image 20221118100657.png]]
 
+El concepto se puede aplicar a múltiples protocolos “tunelizados” por otros. El mecanismo más simple es el descripto, normalmente denominado **6in4**; el mecanismo **6to4** es similar pero permite usar servidores de pasarela o relays. Entre otras posibilidades, se puede implementar la tunelización con transporte UDP, denominado Teredo; en este caso se facilita la tunelización a través de un router NAT.
 
 
 

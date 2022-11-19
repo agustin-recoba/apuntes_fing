@@ -26,11 +26,11 @@ Esta responsabilidad es de protocolos de capas superiores.
 ### Unslotted CSMA/CD: protocolo de acceso múltiple de Ethernet
 
 #### Algoritmo: 
-1. NIC recibe un datagrama de la capa de red y crea un frame. 
+1. NIC (Network Interface Card) recibe un datagrama de la capa de red y crea un frame. 
 2. Si la NIC siente un canal ocioso, comienza la transmisión. Si la NIC siente un canal ocupado, espera hasta que el canal quede ocioso y luego transmite. 
 3. Si la NIC transmite el frame entero sin detectar otra transmisión, entonces la NIC completó su trabajo para ese frame. 
 4. Si la NIC detecta otra transmisión mientras está transmitiendo, aborta y envía una señal de atasco. 
-5. Luego de abortar, la NIC entra a Exponential Backoff: luego de la n-ésima colisión, la NIC elige $K$ de forma aleatoria en $\{0,1,2, … , 2n - 1\}$. Luego la NIC espera $512 * K$ $bit$ $times$ y regresa al paso 2.
+5. Luego de abortar, la NIC entra a **Exponential Backoff**: luego de la n-ésima colisión, la NIC elige $K$ de forma aleatoria en $\{0,1,2, … , 2n - 1\}$. Luego la NIC espera $512 * K$ $bit$ $times$ y regresa al paso 2.
 
 **Señal de atasco:** asegura que todos los otros transmisores están al tanto de la colisión. Son 48 bits.
 

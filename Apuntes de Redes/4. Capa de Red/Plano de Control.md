@@ -1,6 +1,10 @@
 # Algoritmos de enrutamiento
 
-Enrutamiento: determinar buenas rutas desde los emisores hasta los receptores a través de la red de routers.
+```ad-info
+title: Enrutamiento
+Determinar buenas rutas desde los emisores hasta los receptores a través de la red de routers.
+```
+
 Dado un conjunto de routers, con enlaces que conectan dichos routers, un algoritmo de enrutamiento determina una “buena” ruta desde el router de origen al router de destino.
 Normalmente, una buena ruta es aquella que tiene el coste mínimo.
 - Un **algoritmo de enrutamiento** global calcula la ruta de coste mínimo entre un origen y un destino utilizando el conocimiento global y completo acerca de la red.
@@ -243,12 +247,10 @@ Es importante observar que no se puede afirmar que la decisión garantiza un cam
 #### Mensajes BGP
 
 Los mensajes BGP se intercambian usando TCP.
-- **OPEN**: abre conexión TCP con “peer” y autentica al que envía
-- **UPDATE**: publica nuevos caminos (o da de baja otros)
-- **KEEPALIVE**: mantiene la conexión viva en ausencia de
-- **UPDATES**; se usa también como ACK del OPEN
-- **NOTIFICATION**: reporta errores en mensaje previo; también se usa para cerrar
-- conexión
+- **OPEN**: abre conexión TCP con “peer” y autentica al que envía.
+- **UPDATE**: publica nuevos caminos (o da de baja otros).
+- **KEEPALIVE**: mantiene la conexión viva en ausencia de UPDATES; se usa también como ACK del OPEN.
+- **NOTIFICATION**: reporta errores en mensaje previo; también se usa para cerrar la conexión.
 
 #### Política de ruteo en BGP:
 
@@ -283,7 +285,7 @@ En **broadcast Routing**, la capa de red provee un servicio de entrega de paquet
 
 ## Algoritmos de Ruteo de Broadcast
 
-Dados N nodos de destino, el nodo fuente realiza N copias del paquete, direcciona cada copia a un destino distinto, y transmite todas estas a los destinos utilizando unicast Routing. El principal problema de esta implementación es la ineficiencia, ya que, si el nodo fuente está conectado al resto de la red mediante un único enlace, entonces N copias del mismo paquete atravesaran ese único enlace.
+Dados N nodos de destino, el nodo fuente realiza N copias del paquete, direcciona cada copia a un destino distinto, y transmite todas estas a los destinos utilizando Unicast Routing. El principal problema de esta implementación es la ineficiencia, ya que, si el nodo fuente está conectado al resto de la red mediante un único enlace, entonces N copias del mismo paquete atravesaran ese único enlace.
 
 ![[Pasted image 20221118121112.png|500]]
 
@@ -308,15 +310,6 @@ En primer lugar, se construye un árbol de cubrimiento. Luego los nodos reenvía
 Para construir el árbol de cubrimiento, en primer lugar, se toma un nodo central. Luego cada nodo envía un mensaje unicast de join al nodo central. El mensaje será reenviado hasta que llega a un nodo que ya pertenece al árbol de cubrimiento.
 
 ![[Pasted image 20221118121401.png]]
-
-
-
-
-
-
-
-
-
 
 
 ## Multicast

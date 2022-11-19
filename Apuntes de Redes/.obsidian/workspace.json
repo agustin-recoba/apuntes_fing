@@ -4,16 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "c41dd791f867ba8e",
+        "id": "ec99df49900b470a",
         "type": "tabs",
         "children": [
           {
-            "id": "e918955d56e264d4",
+            "id": "79a99e139cc2280f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Para el segundo parcial.md",
+                "file": "3. Capa de Transporte/Principios de TCP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8e7a967e59824e2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. Capa de Transporte/TCP, control de congestión.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "28f896846f3fe23d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "3. Capa de Transporte/TCP, control de flujo.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Para el segundo parcial.md",
+                "file": "3. Capa de Transporte/Principios de TCP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Para el segundo parcial.md",
+                "file": "3. Capa de Transporte/Principios de TCP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +149,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Para el segundo parcial.md"
+                "file": "3. Capa de Transporte/Principios de TCP.md"
               }
             }
           },
@@ -144,17 +168,17 @@
     "direction": "horizontal",
     "width": 200
   },
-  "active": "e918955d56e264d4",
+  "active": "79a99e139cc2280f",
   "lastOpenFiles": [
+    "3. Capa de Transporte/TCP, control de flujo.md",
+    "3. Capa de Transporte/TCP, control de congestión.md",
+    "3. Capa de Transporte/RDT, un servicio de transferencia de datos fiable.md",
     "4. Capa de Red/Plano de Control.md",
     "4. Capa de Red/Capa de Red, intro y plano de datos.md",
-    "Para el segundo parcial.md",
-    "6. Capa de enlace/6. Capa de Enlace.md",
-    "3. Capa de Transporte/TCP, control de congestión.md",
-    "3. Capa de Transporte/TCP, control de flujo.md",
-    "3. Capa de Transporte/Principios de TCP.md",
+    "6. Capa de enlace/Ethernet.md",
     "6. Capa de enlace/PPP, Protocolo punto a punto.md",
     "6. Capa de enlace/Redes de área local virtuales  (VLAN).md",
-    "6. Capa de enlace/Switch vs Router.md"
+    "6. Capa de enlace/Protocolo de acceso múltiple.md",
+    "6. Capa de enlace/Direccionamiento de la capa de enlace.md"
   ]
 }
