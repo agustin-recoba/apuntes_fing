@@ -154,6 +154,7 @@ Una historia es **Estricta** si ninguna transacción lee o escribe hasta que tod
 
 ### 2PL
 ![[Pasted image 20221121002713.png]]
+**Asegura seriabilidad**
 
 ![[Pasted image 20221121002731.png]]
 ![[Pasted image 20221121002745.png]]
