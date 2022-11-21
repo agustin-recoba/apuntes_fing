@@ -89,6 +89,8 @@ Por cada atributo multivaluado, una tabla.
 ## Resumen general
 ![[Pasted image 20221121000852.png]]
 
+**El arbol canónico es con productos cartesianos que luego se convertirán en JOIN** 
+
 ## Equivalencia de expresiones de álgebra
 ![[Pasted image 20221121000930.png]]
 
@@ -105,7 +107,7 @@ Por cada atributo multivaluado, una tabla.
 
 ![[Pasted image 20221121001615.png]]
 
-### Seleccion
+### Selección
 ![[Pasted image 20221121001159.png]]
 
 #### Con ídices:

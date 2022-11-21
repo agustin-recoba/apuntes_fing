@@ -6,5 +6,7 @@
   "quick-latex",
   "obsidian-icons-plugin",
   "obsidian-advanced-new-file",
-  "obsidian-languagetool-plugin"
+  "obsidian-languagetool-plugin",
+  "obsidian-pandoc",
+  "obsidian-enhancing-export"
 ]
