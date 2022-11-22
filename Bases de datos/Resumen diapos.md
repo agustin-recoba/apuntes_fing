@@ -89,7 +89,10 @@ Por cada atributo multivaluado, una tabla.
 ## Resumen general
 ![[Pasted image 20221121000852.png]]
 
-**El arbol canónico es con productos cartesianos que luego se convertirán en JOIN** 
+**El arbol canónico:**
+- es con productos cartesianos que luego se convertirán en JOIN
+- Las tablas del FROM deben estár en el mismo orden
+- Los álias se especifican en las hojas: "jobs j"
 
 ## Equivalencia de expresiones de álgebra
 ![[Pasted image 20221121000930.png]]

@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f038fdceed9164e5",
+            "id": "b7c089cc04b93cfe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -16,6 +16,26 @@
                 "file": "Bases de datos/Resumen diapos.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "f038fdceed9164e5",
+            "type": "leaf",
+            "state": {
+              "type": "pdf-annotator",
+              "state": {
+                "file": "Bases de datos/Resumen práctico completo.md"
+              }
+            }
+          },
+          {
+            "id": "0c957818b33e0e37",
+            "type": "leaf",
+            "state": {
+              "type": "pdf-annotator",
+              "state": {
+                "file": "Bases de datos/Resumen 2009.md"
               }
             }
           }
@@ -69,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294
+    "width": 294,
+    "collapsed": true
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -136,17 +157,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f038fdceed9164e5",
+  "active": "eed73acbec0572df",
   "lastOpenFiles": [
-    "Redes de computadoras/Excalidraw/Drawing 2022-10-26 17.49.49.excalidraw.md",
+    "Bases de datos/Resumen 2009.md",
     "Bases de datos/Resumen diapos.md",
+    "Bases de datos/Resumen práctico completo.md",
+    "Redes de computadoras/Excalidraw/Drawing 2022-10-26 17.49.49.excalidraw.md",
     "Bases de datos/media/Pasted image 20221121002838.png",
     "Bases de datos/media/Pasted image 20221120222841.png",
     "Bases de datos/media/Pasted image 20221120222552.png",
     "media/Pasted image 20221120222552.md",
     "Pasted image 20221120222552.md",
-    "Bases de datos/Resumen práctico completo.md",
-    "Bases de datos/media/Pasted image 20221121002745.png",
-    "Bases de datos/media/Pasted image 20221121000720.png"
+    "Bases de datos/media/Pasted image 20221121002745.png"
   ]
 }
