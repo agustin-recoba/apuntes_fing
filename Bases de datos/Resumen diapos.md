@@ -90,9 +90,13 @@ Por cada atributo multivaluado, una tabla.
 ![[Pasted image 20221121000852.png]]
 
 **El arbol canónico:**
-- es con productos cartesianos que luego se convertirán en JOIN
+- Es con productos cartesianos que luego se convertirán en JOIN
 - Las tablas del FROM deben estár en el mismo orden
 - Los álias se especifican en las hojas: "jobs j"
+
+**Pipelined**: hay operadores que se ejecutan simultáneamente y pueden pasarse los resultados a medida que se generan. No necesita grabar los resultado intermedios. Ejemplo: Proyección.
+
+**No Pipelined**: los operadores se ejecutan secuencialmente y es necesario grabar resultados intermedios. Ejemplo: Selección y Join.
 
 ## Equivalencia de expresiones de álgebra
 ![[Pasted image 20221121000930.png]]
@@ -120,10 +124,6 @@ Por cada atributo multivaluado, una tabla.
 ![[Pasted image 20221121001258.png]]
 
 ![[Pasted image 20221121001531.png]]
-
-
-
-
 
 # Transacciones y concurrencia
 ## Transacción
@@ -166,7 +166,5 @@ Una historia es **Estricta** si ninguna transacción lee o escribe hasta que tod
 
 ## Deadlocks
 ![[Pasted image 20221121002838.png]]
-
-# Recuperación
 
 

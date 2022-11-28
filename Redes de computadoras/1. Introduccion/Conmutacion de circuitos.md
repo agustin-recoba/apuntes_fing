@@ -1,5 +1,3 @@
-# Conmutación de circuitos
-
 Se reservan recursos de extremo a extremo en la red para cada llamada, para esto, cuando dos host quieren comunicarse, la red establece una conexión terminal a terminal dedicada entre ellos. Esto consume tiempo de espera. Los recursos reservados no se comparten con otras conexiones, por lo tanto si no se usan los recursos, estos son desperdiciados. La conmutación de circuitos ofrece una calidad garantizada.
 
 ![[Pasted image 20221004230714.png|300]]

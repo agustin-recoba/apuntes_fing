@@ -1,4 +1,3 @@
-# Conmutación de paquetes
 El origen divide los mensajes largos en fragmentos de datos más pequeños que se conocen como paquetes.
 Los paquetes de distintos usuarios comparten los recursos de red. Cada paquete utiliza el ancho de banda disponible. Los paquetes deben esperar para usar los recursos. 
 

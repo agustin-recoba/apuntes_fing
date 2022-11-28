@@ -1,11 +1,12 @@
 Es una red de computadoras que interconecta a través de medios físicos cientos de millones de dispositivos a lo largo de todo el mundo. Los dispositivos pueden ser clientes o servidores, **ambos se encuentran en el borde de la red** y ejecutan aplicaciones que usan internet. Además, se conectan entre sí mediante una red de enlaces de comunicaciones y dispositivos de conmutación de paquetes.
 Hay muchos tipos de enlaces de comunicación compuestos por distintos tipos de medios físicos (cable coaxial, fibra óptica, etc.). Los enlaces pueden transmitir los datos a distintas velocidades.
 
-Los conmutadores de paquetes más usados en Internet son los **routers** (núcleo de la red) y los switches (se emplean en las redes de acceso) de la capa de enlace.
+Los conmutadores de paquetes más usados en Internet son los **routers** (núcleo de la red) y los **switches** (se emplean en las redes de acceso) de la capa de enlace.
 Los sistemas terminales acceden a internet a través de los **ISP** (Proveedor de servicios de internet), cada uno es en sí mismo una red de conmutadores de paquetes y enlaces de comunicaciones.
 Internet es todo lo que conecta a los sistemas terminales entre sí, por lo que los ISP que proporcionan el acceso a los sistemas terminales también tienen que estar interconectados entre ellos.
 
-También podemos describir internet desde un punto de vista completamente diferente, en concreto como **una infraestructura que proporciona servicios a las aplicaciones**. Se dice que las aplicaciones son distribuidas, porque implican varios sistemas terminales que intercambian datos entre sí (las aplicaciones se ejecutan en los sistemas terminales).
+También podemos describir internet desde un punto de vista completamente diferente, en concreto como **una infraestructura que proporciona servicios a las aplicaciones**. 
+Se dice que las aplicaciones son distribuidas, porque implican varios sistemas terminales que intercambian datos entre sí (las aplicaciones se ejecutan en los sistemas terminales).
 
 ## Protocolos
 Cualquier actividad de internet que implique dos o más entidades remotas que se comunican está gobernada por un protocolo. Un **protocolo** define el *formato* y el *orden de los mensajes* intercambiados entre dos o más entidades que se comunican, así como las acciones tomadas en la trasmisión y/o recepción de un mensaje u otro suceso.
@@ -70,7 +71,7 @@ collapse: closed
 ### Núcleo de la red
 
 El NETWORK CORE es una malla de routers interconectados. La pregunta principal es ¿cómo se transfieren los datos a través de la red? 
-Los datos pueden ser enviados mediante Circuit Switching ([[Conmutacion de circuitos]]), donde se tiene un circuito dedicado por llamado, por ejemplo, la red de teléfonos; o mediante Packet-Switching ([[Conmutacion de paquetes]]), donde los datos son enviados a través de “trozos”.
+Los datos pueden ser enviados mediante Circuit Switching, donde se tiene un circuito dedicado por llamado, por ejemplo, la red de teléfonos; o mediante Packet-Switching, donde los datos son enviados a través de “trozos”.
 
 ![[Pasted image 20221004230251.png|200]]
 
