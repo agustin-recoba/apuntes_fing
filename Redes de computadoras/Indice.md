@@ -5,5 +5,3 @@
 ## [[Capa de Red, intro y plano de datos]]
 ## [[Plano de Control]]
 ## [[6. Capa de Enlace]]
-
-

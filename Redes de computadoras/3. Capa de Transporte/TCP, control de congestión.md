@@ -24,7 +24,8 @@ Cuando la conexión comienza, el valor de la ventana de congestión es 1 MSS (ta
 Además, el valor de ventanaCongestion se incrementa 1 MSS cada vez que se produce el primer reconocimiento de un segmento transmitido. Por lo tanto, la velocidad de transmisión irá creciendo exponencialmente durante la fase de arranque lento.
 
 Si se produce un suceso de pérdida de paquete dado por un fin de temporización, el emisor TCP establece el valor de ventanaCongestion en 1 e inicia de nuevo un proceso de arranque lento. También se define una segunda variable denominada umbral, y se inicializa en ventanaCongestion/2.
-Otra forma de terminar con la fase de arranque lento es cuando el valor de ventanaCongestion alcanza el valor de umbral, y las transacciones pasan al modo de Por último, la fase de arranque lento puede terminar cuando se detectan 3 paquetes ACK duplicados, en este caso TCP realiza una retransmisión rápida.
+Otra forma de terminar con la fase de arranque lento es cuando el valor de ventanaCongestion alcanza el valor de umbral, y las transacciones pasan al modo de **Evitación de la congestión**.
+Por último, la fase de arranque lento puede terminar cuando se detectan 3 paquetes ACK duplicados, en este caso TCP realiza una retransmisión rápida.
 
 ### Evitación de la congestión
 
