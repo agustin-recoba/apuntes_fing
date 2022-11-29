@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redes de computadoras/4. Capa de Red, plano de datos/Capa de Red, intro y plano de datos.md",
-                "mode": "source",
+                "file": "Redes de computadoras/Indice-result.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redes de computadoras/4. Capa de Red, plano de datos/Capa de Red, intro y plano de datos.md",
+                "file": "Redes de computadoras/Indice-result.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redes de computadoras/4. Capa de Red, plano de datos/Capa de Red, intro y plano de datos.md",
+                "file": "Redes de computadoras/Indice-result.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redes de computadoras/4. Capa de Red, plano de datos/Capa de Red, intro y plano de datos.md"
+                "file": "Redes de computadoras/Indice-result.md"
               }
             }
           }
@@ -140,14 +139,14 @@
   "active": "5eee7ffb9d232bb3",
   "lastOpenFiles": [
     "Redes de computadoras/Indice.md",
+    "Redes de computadoras/0. Otros/99. Otros.md",
+    "Redes de computadoras/Indice-result.md",
+    "Redes de computadoras/0. Otros/Tips problemas prácticos.md",
+    "Redes de computadoras/0. Otros/Puertos bien conocidos.md",
+    "Redes de computadoras/4. Capa de Red, plano de datos/Capa de Red, intro y plano de datos.md",
     "Redes de computadoras/3. Capa de Transporte/TCP, control de congestión.md",
     "Redes de computadoras/3. Capa de Transporte/Principios de TCP.md",
-    "Redes de computadoras/0. Otros/Tips problemas prácticos.md",
     "Redes de computadoras/4. Capa de Red, plano de datos/Traduccion de direcciones de red, NAT.md",
-    "Redes de computadoras/Indice-result.md",
-    "Redes de computadoras/0. Otros/Puertos bien conocidos.md",
-    "Redes de computadoras/0. Otros/0. Otros.md",
-    "Redes de computadoras/4. Capa de Red, plano de datos/Capa de Red, intro y plano de datos.md",
     "Redes de computadoras/6. Capa de enlace/Dominios de colisión y de broadcast.md"
   ]
 }

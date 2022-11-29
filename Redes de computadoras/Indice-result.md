@@ -1,14 +1,13 @@
-[[0. Otros]]
 [[#1. Introducción a las Redes de Computadoras]]
 [[#2. Capa de Aplicación]]
 [[#3. Capa de Transporte]]
 [[#Capa de Red, intro y plano de datos]]
 [[#Plano de Control]]
 [[#6. Capa de Enlace]]
-
-
+[[#99. Otros]]
 
 # 1. Introducción a las Redes de Computadoras 
+
 - [[#Internet]]
 - [[#Conmutacion de circuitos]]
 - [[#Conmutacion de paquetes]]
@@ -18,7 +17,9 @@
 
 
 
+
 ## Internet 
+
 Es una red de computadoras que interconecta a través de medios físicos cientos de millones de dispositivos a lo largo de todo el mundo. Los dispositivos pueden ser clientes o servidores, **ambos se encuentran en el borde de la red** y ejecutan aplicaciones que usan internet. Además, se conectan entre sí mediante una red de enlaces de comunicaciones y dispositivos de conmutación de paquetes.
 Hay muchos tipos de enlaces de comunicación compuestos por distintos tipos de medios físicos (cable coaxial, fibra óptica, etc.). Los enlaces pueden transmitir los datos a distintas velocidades.
 
@@ -135,7 +136,9 @@ Un paquete atraviesa múltiples redes desde el host fuente hasta el host destino
 ![[Pasted image 20221004232206.png]]
 ```
 
+
 ## Conmutacion de circuitos 
+
 Se reservan recursos de extremo a extremo en la red para cada llamada, para esto, cuando dos host quieren comunicarse, la red establece una conexión terminal a terminal dedicada entre ellos. Esto consume tiempo de espera. Los recursos reservados no se comparten con otras conexiones, por lo tanto si no se usan los recursos, estos son desperdiciados. La conmutación de circuitos ofrece una calidad garantizada.
 
 ![[Pasted image 20221004230714.png|300]]
@@ -162,7 +165,9 @@ El ancho de banda disponible se divide entre el número de usuarios y tenemos do
 - Retraso en el inicio de la comunicación 
 - El camino físico es siempre el mismo, por lo que no se utilizan los posibles caminos alternativos que puedan surgir que sean más eficientes. 
 - Se requiere un tiempo para realizar la conexión, lo que conlleva un retraso en la transmisión de la información.
+
 ## Conmutacion de paquetes 
+
 El origen divide los mensajes largos en fragmentos de datos más pequeños que se conocen como paquetes.
 Los paquetes de distintos usuarios comparten los recursos de red. Cada paquete utiliza el ancho de banda disponible. Los paquetes deben esperar para usar los recursos. 
 
@@ -177,7 +182,9 @@ La compartición de recursos bajo petición, se denomina **multiplexación estad
 
 Secuencia de paquetes A y B no tienen un patrón de tiempo fijo, los anchos de banda son compartidos a demanda. 
 En lugar de pre asignar las ranuras temporales a un número fijo de comunicaciones, detecta las comunicaciones activas y reparte el canal entre todas ellas. De esta forma se evita que una comunicación inactiva malgaste ancho de banda. Este tipo de multiplexación se utiliza en líneas frame relay.
+
 ## Retardo, pérdidas y “throughput” en redes de conmutación de paquetes 
+
 Un paquete puede llegar y encontrarse con que la cola está llena. Si no hay lugar para almacenar un paquete más, el router lo elimina, es decir, el paquete se pierde. El número de paquetes perdidos aumenta cuando la intensidad de tráfico aumenta.
 
 ### Cola de Paquetes en el Buffer del Router 
@@ -261,7 +268,9 @@ Se tiene un end-end throughput por conexión: `min(Rc,Rs,R/10)`. En la práctica
 
 Llamamos intensidad del tráfico al cociente: $$I=\frac{L \times a}{R}$$
 El producto $L \times a$ es la tasa de arribo de bits a la cola del nodo, mientras que R es la tasa de trasmisión, es decir, la velocidad con que el nodo vacía la cola. Por lo tanto si $La/R > 1$ la cola nunca se vacía y el retardo tenderá a infinito; en el otro extremo, si $La/R << 1$, la cola se vacía rápido y consecuentemente el retardo de cola es pequeño, como se ve en la figura.
+
 ## Modelo de capas 
+
 ### Capas de protocolos y modelos de servicios
 
 Las redes son complejas, compuestas por múltiples piezas: 
@@ -303,7 +312,9 @@ Transfiere los datos entre elementos de red vecinos (Ethernet, 802.111 (Wifi), P
 
 ##### Física: 
 Bits en el cable.
+
 ## traceroute 
+
 Aplicación que permite determinar el camino de ida (a ser recorrido por los paquetes en un momento dado) entre un origen y un destino.
 
 Implementado sobre ICMP o UDP.
@@ -325,12 +336,16 @@ La dirección IP origen es la del nodo que genera el mensaje ICMP (payload del p
 El payload de los mensajes ICMP de error es una parte del paquete IP que lo originó (encabezado y algunos bits de su payload) 
 
 El traceroute basado en UDP se implementa a partir de enviar mensajes UDP dirigidos a puertos donde la probabilidad de respuesta es muy baja. En todos los nodos intermedios el camino se va construyendo a partir de mensajes “time exceeded”. Al llegar al destino, se recibirá un mensaje ICMP de error “port unreachable”.
+
 # 2. Capa de Aplicación 
+
 - [[#Arquitecturas]]
 - [[#Procesos]]
 - [[#Servicios de transporte]]
 - [[#Protocolos]]
+
 ## Arquitecturas 
+
 ### Arquitecturas
 
 Cómo la aplicación debe estructurarse en los distintos sistemas terminales.
@@ -357,7 +372,9 @@ collapse: closed
 
 #### Arquitectura híbrida
 Consiste en utilizar tanto una arquitectura P2P como una cliente-servidor. Ejemplos de esto son Skype, que utiliza P2P para la comunicación por voz, permitiendo una comunicación directa entre los usuarios sin pasar por el servidor, y además el servidor centralizado para encontrar la dirección a la cual comunicar. Y además la mensajería instantánea, que permite el chat entre dos usuarios mediante P2P, teniendo además un servicio centralizado donde se almacena la presencia/localización del cliente (el usuario registra su IP cuando se conecta y luego otro usuario se contacta con el servidor para encontrar la IP para comunicarse).
+
 ## Procesos 
+
 Un proceso puede interpretarse como un programa que se ejecuta dentro de un sistema terminal. Los procesos de dos sistemas terminales diferentes se comunican entre ellos intercambiando mensajes a través de la red de computadoras.
 
 En el contexto de una sesión de comunicación entre una pareja de procesos, el proceso que inicia la comunicación, se etiqueta como el **_cliente_** y el proceso que espera a ser contactado para comenzar la sesión como el **_servidor_**.
@@ -377,8 +394,10 @@ En la capa de transporte, los únicos controles que se hacen desde los sockets s
 2. la habilidad de corregir algunos parámetros
 
 ![[Pasted image 20221005140546.png|300]]
+
 ## Servicios de transporte 
-## Servicios disponibles para aplicaciones
+
+#### Servicios disponibles para aplicaciones
 
 - ### Transferencia de datos fiable: 
 Un protocolo proporciona un servicio de entrega de datos garantizado. Si un protocolo no proporciona una transferencia de datos fiable, los datos enviados por el proceso emisor pueden no llegar nunca al proceso de recepción. Esto puede ser aceptable para aplicaciones tolerantes a pérdidas.
@@ -412,7 +431,9 @@ Este modelo de servicio ofrece un servicio orientado a conexión y un servicio d
 UDP es un protocolo de transporte ligero simple que proporciona unos servicios mínimos y no está orientado a la conexión, por lo que no tiene lugar un procedimiento de negociación antes de que los dos procesos comiencen a comunicarse. 
 UDP proporciona un servicio de transferencia de datos no fiable. Tampoco incluye un mecanismo de congestión.
 Es decir, UDP ni siquiera garantiza que el mensaje vaya a llegar a su destino, e incluso pueden llegar desordenados.
+
 ## Protocolos 
+
 Define cómo los procesos de una aplicación, que se ejecutan en distintos sistemas
 terminales, se pasan los mensajes entre sí. Define:
 - Tipo de mensajes intercambiados (petición, respuesta, etc.)
@@ -429,8 +450,10 @@ Tenemos dos tipos de protocolo, los de Dominio Público (definidos en RFCs, perm
 - [[#P2P y Bitorrent]]
 
 
+
 ### La Web y HTTP 
-## La Web
+
+##### La Web
 
 Las páginas web consisten en objetos, que pueden ser archivos HTML, imágenes, Java applet, archivos de audio, video, etc. Cada página web consiste en un archivo base HTML que incluye referencias a otros objetos, cada uno de ellos direccionable por una URL. Un ejemplo de URL es `www.someschool.edu/someDept/pic.gig`, donde `www.someschool.edu` indica el nombre del host, y `/someDept/pic.gig` indica el path del objeto solicitado.
 
@@ -562,8 +585,10 @@ La respuesta del servidor no contiene un objeto si la copia cacheada está actua
 ```
 
 
+
 ### DNS 
-## El servicio de directorio de internet.
+
+##### El servicio de directorio de internet.
 
 El Sistema de nombres de dominio (DNS) de internet es:
 - una **base de datos distribuida** implementada en una **jerarquía de servidores** DNS
@@ -631,8 +656,10 @@ Encabezado:
 	- Respuesta es autoritativa
 
 ![[Pasted image 20221006184516.png|300]]
+
 ### Correo electronico 
-## SMTP
+
+##### SMTP
 
 Puerto 25, ejecuta sobre TCP para transmitir un correo desde el servidor de correos del emisor al servidor de correo del destinatario. Dos lados, el lado del cliente y del servidor.
 Funcionalidades arcaicas como la restricción del cuerpo de los mensajes a formato **ASCII de 7 bits.** Normalmente, SMTP no utiliza servidores de correo intermedios para enviar correos. Si el servidor destinatario no está disponible, el del remitente conservará el mensaje y lo intentará de nuevo.
@@ -703,8 +730,10 @@ POP3 no proporciona ningún medio al usuario para crear carpetas remotas y asign
 ##### IMAP
 
 Tiene más funcionalidades que POP3, por lo que aumenta considerablemente su complejidad, haciendo que la implementación tanto del lado del cliente como del servidor sean significativamente más complejas. Los mensajes en IMAP se mantienen en un único lugar, el servidor, el cual **asocia cada mensaje a una carpeta**, proveyendo a los usuarios con comandos que permiten crear carpetas y mover mensajes entre ellas. A diferencia de POP3, IMAP **mantiene el estado de los usuarios durante las sesiones**, ya sea nombre de las carpetas o mapeados entre ids de mensajes y nombres de carpetas. A su vez, IMAP permite a los user agent acceder componentes de los mensajes, por ejemplo, obtener solo el *header*.
+
 ### FTP 
-## Transferencia de archivos
+
+##### Transferencia de archivos
 
 ![[Pasted image 20221005143325.png|400]]
 
@@ -733,8 +762,10 @@ title: Señalizacion in-band y out-of-band
 HTTP utiliza el mismo canal para control y datos, por lo que es del tipo inband. FTP utiliza canales separados para datos y control, por lo que es del tipo out-of-band.
 ```
 
+
 ### P2P y Bitorrent 
-## Aplicaciones P2P
+
+##### Aplicaciones P2P
 
 Con este tipo de arquitectura no se depende de que exista una infraestructura de servidores siempre activos. En su lugar, una serie de parejas de hosts conectados de forma **intermitente**, denominados pares o _peers_, se comunican directamente entre sí. Los pares **no son propiedad de un proveedor de servicios**, sino que son computadoras de escritorio o portátiles controlados por los clientes.
 
@@ -768,8 +799,10 @@ Para determinar a qué solicitudes debe un peer responder, se le da prioridad a 
 Cada 30 segundos cada peer elegirá aleatoriamente un nuevo socio de intercambio (peer optimistically **unchoke**) e iniciará las transacciones con él. Si los dos pares están satisfechos con el intercambio, se incluirán en sus respectivas listas de los cuatro principales y continuarán realizando intercambios hasta que uno de los pares encuentre un socio mejor.
 Este mecanismo se denomina **_tit-for-that._**
 
+
 # 3. Capa de Transporte 
-## Capa de Transporte
+
+### Capa de Transporte
 
 Un protocolo de capa de transporte proporciona una **comunicación lógica entre procesos** de aplicación que se ejecutan en hosts diferentes (mientras que un protocolo de la capa de red proporciona una comunicación lógica entre hosts). Están **implementados en los sistemas terminales** y residen en ellos. Dentro de un sistema terminal, el protocolo de transporte lleva los mensajes desde los procesos de la aplicación a la frontera de la red.
 
@@ -790,7 +823,9 @@ Extender la entrega host a host (lo que proporciona la capa de red) a una entreg
 	- [[#TCP, control de flujo]]
 	- [[#TCP, control de congestión]]
 
+
 ## Multiplexación y demultiplexación 
+
 Para poder extender la entrega host a host a una entrega proceso a proceso.
 
 **Demultiplexación:** En el extremo receptor, la capa de transporte examina un conjunto de campos del segmento para identificar el socket receptor y a continuación envía el segmento a dicho socket.
@@ -814,7 +849,9 @@ En el caso de un protocolo no orientado a conexión, la demultiplexación se rea
 En el caso de un protocolo orientado a conexión, además de la IP y puerto destino, se utiliza también la IP y puerto origen para realizar la demultiplexación. Es decir, dos mensajes con igual IP y puerto destino, pueden estar dirigidos a distintos sockets si la IP y puerto origen son distintos.
 ```
 
+
 ## Principios de UDP 
+
 Protocolo que hace casi lo mínimo que un protocolo de transporte debe hacer. Además de la función de multiplexación/demultiplexación y algún mecanismo de comprobación de errores, **no añade nada a IP**. Prácticamente, es la aplicación la que se comunica directamente con IP.
 
 Con UDP no se tiene lugar una fase de establecimiento de la conexión entre las entidades de la capa de transporte emisora y receptora previa al envío del segmento. Por eso se dice que UDP **es un protocolo sin conexión.**
@@ -863,8 +900,10 @@ Algunas implementaciones de UDP simplemente descartan el segmento dañado y otra
 ```
 
 
+
 ## RDT, un servicio de transferencia de datos fiable 
-## Principios de un servicio de transferencia de datos fiable.
+
+#### Principios de un servicio de transferencia de datos fiable.
 
 La abstracción del servicio proporcionada a las entidades de la capa superior es la de un canal fiable a través del cual se pueden transferir datos. Disponiendo de un canal fiable, ninguno de los bits de datos transferido está corrompido ni se pierde y todos se entregan en el orden en que fueron enviados. Es la responsabilidad de un protocolo de transferencia de datos fiable implementar esta abstracción del servicio. Tarea complicada por el hecho de que la capa que hay por debajo del protocolo de transferencia de datos puede ser no fiable.
 
@@ -969,8 +1008,10 @@ collapse: open
 ![[Pasted image 20221006200909.png|600]]
 ```
 
+
 ## Principios de pipelining GBN y SR 
-## Protocolo de transferencia fiable con procesamiento en cadena
+
+#### Protocolo de transferencia fiable con procesamiento en cadena
 
 Improbable que los protocolos de parada y espera satisfagan con su rendimiento. Por lo que en lugar de operar en este modo, el emisor podría enviar varios paquetes sin esperar a los mensajes de reconocimiento.
 
@@ -1049,8 +1090,10 @@ collapse: open
 ![[Pasted image 20221006202608.png]]
 ```
 
+
 ## Principios de Control de Congestión 
-## Principios de Control de Congestión
+
+#### Principios de Control de Congestión
 
 La retransmisión de paquetes se ocupa de un síntoma de la congestión de red, pero no se ocupa de la causa de esa congestión de la red, que informalmente podemos definir como demasiados emisores intentando transmitir datos a una velocidad demasiado alta.
 Para tratar la causa de la congestión es que se usan **mecanismos de control de congestión**.
@@ -1070,7 +1113,9 @@ title: Diferencias entre Control de flujo y Control de congestión
 El control de flujo persigue que el emisor no transmita datos a una tasa de transmisión más alta de la que el receptor puede procesar. El control de congestión, en cambio, se encarga de que el transmisor no lo haga a una tasa más alta que lo que los enrutadores intermedios puedan procesar.
 ```
 
+
 ## Principios de TCP 
+
 Para proporcionar una transferencia de datos fiable, TCP confía en muchos de los principios básicos, incluyendo los **mecanismos de detección de errores**, las **retransmisiones**, los **reconocimientos acumulativos,** los **temporizadores** y los campos de cabecera para los **números de secuencia y de reconocimiento**.
 
 Se dice que TCP está **orientado a la conexión** porque antes de que un proceso de la capa de aplicación pueda comenzar a enviar datos a otro, los dos procesos deben primero **“establecer una comunicación”** entre ellos; es decir, tienen que enviarse ciertos segmentos preliminares para definir los parámetros de la transferencia de datos que van a llevar a cabo a continuación. Como parte del proceso de establecimiento de la conexión TCP, ambos lados de la misma iniciarán muchas variables de estado TCP asociadas con la conexión TCP.
@@ -1185,7 +1230,9 @@ title: En resumen
 5. C: ACK
 ```
 
+
 ## TCP, control de flujo 
+
 Si la aplicación receptora es relativamente lenta en cuanto a la lectura de los datos, el emisor puede fácilmente desbordar el buffer de recepción de la conexión enviando muchos datos demasiado rápidamente. 
 TCP proporciona un servicio de control de flujo a sus aplicaciones para eliminar la posibilidad de que el emisor desborde el buffer del receptor. El control de congestión es un servicio de adaptación de velocidades (adapta la velocidad de envío del emisor con la velocidad con la que la aplicación receptora está leyendo).
 TCP proporciona un servicio de control de flujo teniendo que mantener el emisor una variable conocida como **ventana de recepción.** Puesto que TCP es una conexión full-duplex, el emisor de cada lado de la conexión mantiene una ventana de recepción diferente.
@@ -1202,8 +1249,10 @@ title: Se podrá asegurar de **no estar desbordando** el buffer de recepción si
 $UltimoByteEnviado - UltimoByteReconocido ≤ VentanaRecepcion$
 ```
 
+
 ## TCP, control de congestión 
-## Mecanismo de control de congestión de TCP
+
+#### Mecanismo de control de congestión de TCP
 
 TCP tiene que utilizar un control de congestión terminal a terminal en lugar de un control de congestión asistido por la red, ya que la capa IP no proporciona una realimentación explícita a los sistemas terminales informando que hay congestión en la red.
 El método empleado por TCP consiste en que cada emisor limite la velocidad a la que transmite el tráfico a través de su conexión en función de la congestión de red percibida. Si un emisor TCP percibe que en la ruta entre él mismo y el destino apenas existe congestión, entonces incrementara su velocidad de transmisión; por el contrario, si el emisor percibe que existe congestión a lo largo de la ruta, entonces reducirá su velocidad de transmisión.
@@ -1229,7 +1278,8 @@ Cuando la conexión comienza, el valor de la ventana de congestión es 1 MSS (ta
 Además, el valor de ventanaCongestion se incrementa 1 MSS cada vez que se produce el primer reconocimiento de un segmento transmitido. Por lo tanto, la velocidad de transmisión irá creciendo exponencialmente durante la fase de arranque lento.
 
 Si se produce un suceso de pérdida de paquete dado por un fin de temporización, el emisor TCP establece el valor de ventanaCongestion en 1 e inicia de nuevo un proceso de arranque lento. También se define una segunda variable denominada umbral, y se inicializa en ventanaCongestion/2.
-Otra forma de terminar con la fase de arranque lento es cuando el valor de ventanaCongestion alcanza el valor de umbral, y las transacciones pasan al modo de Por último, la fase de arranque lento puede terminar cuando se detectan 3 paquetes ACK duplicados, en este caso TCP realiza una retransmisión rápida.
+Otra forma de terminar con la fase de arranque lento es cuando el valor de ventanaCongestion alcanza el valor de umbral, y las transacciones pasan al modo de **Evitación de la congestión**.
+Por último, la fase de arranque lento puede terminar cuando se detectan 3 paquetes ACK duplicados, en este caso TCP realiza una retransmisión rápida.
 
 ##### Evitación de la congestión
 
@@ -1258,7 +1308,9 @@ collapse: closed
 La distinción se basa en clasificar los dos tipos de detección de congestión. Se entiende que un timeout es signo de una congestión "severa" y que el tripe ACK duplicado es signo de congestión "leve".
 Tanto en TCP Tahoe como en TCP Reno, cuando se da un timeout, se setea el tamaño de la ventana de congestión en $1 \times MSS$. La variación está en que si llegan tres ACK duplicados, TCP Reno no llevará el tamaño de la ventana a $1 \times MSS$ (como lo hace TCP Tahoe), sinó que lo cortará a la mitad.
 
+
 # Capa de Red, intro y plano de datos 
+
 La capa de red es la encargada de transportar segmentos desde el host emisor hasta el host receptor. Del lado del emisor, encapsula los segmentos en datagramas. En el lado de receptor, entrega los paquetes a la capa de transporte. 
 Cada router examina los campos del encabezado de cada datagrama IP que pasa por él
 
@@ -1521,7 +1573,9 @@ collapse: closed
 
 
 
+
 ## El interior de un Router 
+
 Un router tiene dos funciones principales: 
 - Correr el algoritmo de ruteo, o el protocolo (RIP, OSPF, BGP).
 - Hacer el forward de los datagramas desde el enlace entrante hacia el enlace saliente.
@@ -1590,7 +1644,9 @@ Recomendaciones recientes con N flujos, el buffering equivale a $\frac{RTT \time
 Si la Switch Fabric es más lenta que los puertos de entrada combinados, entonces el encolado puede ocurrir en los puertos de entrada. Se pueden producir retrasos de cola y pérdidas debido a la sobrecarga de buffers.
 **Head of The Line Blocking (HOL)**: los datagramas encolados al frente de la cola evitan que otros de la cola puedan ser enviados.
 ![[Pasted image 20221117132121.png|400]]
+
 ## Traduccion de direcciones de red, NAT 
+
 Un ámbito con direcciones privadas hace referencia a una red cuyas direcciones solo tienen significado para los dispositivos internos de dicha red y dejan de ser únicas. El problema surge cuando se quiere enviar paquetes a internet o recibirlos.
 El router NAT no parece un router a ojos del mundo exterior. En su lugar, se comporta de cara al exterior como un único dispositivo con una dirección IP única. Se encarga de ocultar los detalles de la red doméstica al exterior.
 Para poder identificar a qué host dentro de la red doméstica tiene que enviar determinados datagramas, se utiliza una tabla de traducciones NAT que está almacenada en el router NAT, e incluye los números de puertos, así como las direcciones IP en las entradas de la tabla.
@@ -1631,7 +1687,9 @@ Existen distintas soluciones posibles a este problema:
 	El cliente establece conexión con el relay, luego el cliente externo se conecta al relay y este último hace de puente para los paquetes entre ambas conexiones.
 	![[Pasted image 20221118000957.png]]
 
+
 ## IPv6 
+
 Para responder a la necesidad de un espacio de direcciones IP más grande, se desarrolló un nuevo protocolo IP, el protocolo IPv6. Una motivación adicional fue hacer un formato del cabezal que ayude a acelerar el procesamiento/forwarding del paquete.
 Formato del datagrama IPv6: cabezal de largo fijo de 40 bytes y no se permite fragmentación.
 - **Capacidades ampliadas de direccionamiento:** IPv6 aumenta el tamaño de la dirección IP de 32 a 128 bits.
@@ -1759,8 +1817,10 @@ int pathMTUDiscovery(IPv6_address IP_O, IP_D)
 	return min_mtu;
 ```
 
+
 # Plano de Control 
-[[Algoritmos de enrutamiento]]
+
+[[#Algoritmos de enrutamiento]]
 
 
 ## Broadcast y multicasting
@@ -1816,7 +1876,291 @@ La idea es encontrar un árbol o árboles conectando routers teniendo miembros d
 ![[Pasted image 20221118121626.png]]
 ![[Pasted image 20221118121635.png]]
 ![[Pasted image 20221118121649.png|400]]
+
+## Algoritmos de enrutamiento 
+
+
+```ad-info
+title: Enrutamiento
+Determinar buenas rutas desde los emisores hasta los receptores a través de la red de routers.
+```
+
+Dado un conjunto de routers, con enlaces que conectan dichos routers, un algoritmo de enrutamiento determina una “buena” ruta desde el router de origen al router de destino.
+Normalmente, una buena ruta es aquella que tiene el coste mínimo.
+- Un **algoritmo de enrutamiento** global calcula la ruta de coste mínimo entre un origen y un destino utilizando el conocimiento global y completo acerca de la red.
+- En un **algoritmo de enrutamiento descentralizado** , el cálculo de la ruta de coste mínimo se realiza de manera **iterativa** y **distribuida**. Ningún nodo tiene toda la información acerca del coste de todos los enlaces de la red. En lugar de ello, al principio, cada nodo sólo conoce los costes de sus propios enlaces directamente conectados.
+- En los **algoritmos de enrutamiento estático**, las rutas cambian muy lentamente con el tiempo, con frecuencia como resultado de una intervención humana.
+- Los **algoritmos de enrutamiento dinámico** modifican los caminos de enrutamiento a medida que la carga de tráfico o la topología de la red cambian. Un algoritmo dinámico puede ejecutarse periódicamente o como respuesta directa a cambios en la topología o en el coste de los enlaces.
+- En un **algoritmo sensible a la carga**, los costes de enlace varían de forma dinámica para reflejar el nivel actual de congestión en el enlace subyacente. Si se asocia un coste alto con un enlace que actualmente esté congestionado.
+
+### Algoritmo de enrutamiento de estado de enlaces (LS)
+
+En un algoritmo de estado de enlaces, la topología de la red y el coste de todos los enlaces son conocidos; es decir, están disponibles como entradas para el algoritmo LS. En la práctica, esto se consigue haciendo que cada nodo difunda paquetes del estado de los enlaces a todos los demás nodos de la red, con cada paquete de estado de enlace conteniendo las identidades y los costes de sus enlaces conectados.
+
+El resultado de difundir la información de los nodos es que **todos los nodos tienen una visión completa e idéntica de la red**. Cada nodo puede entonces ejecutar el algoritmo LS y calcular el mismo conjunto de rutas de coste mínimo que cualquier otro nodo. 
+
+El algoritmo de Dijkstra calcula la ruta de coste mínimo desde un nodo (el origen, al que denominaremos u) hasta todos los demás nodos de la red.
+
+```python
+### inicialización:
+N’ = {u}
+for todo nodo v
+	if v es un vecino de u:
+		D(v) = c(u,v)
+	else:
+		D(v) = ∞
+do
+	encontrar w no perteneciente a N’ tal que D(w) sea un mínimo
+	agregar w a N’
+	actualizar D(v) para cada vecino v de w, que no pertenezca a N’:
+		D(v) = min( D(v), D(w) + c(w,v) )
+	# el nuevo coste a v es o bien el antiguo coste a v o el coste de
+	# la ruta de coste mínimo a w más el coste desde w a v
+until N’ = N
+```
+
+Cuando el algoritmo LS termina, tenemos para cada nodo su predecesor a lo largo de la ruta de coste mínimo desde el nodo de origen. Para cada predecesor, también tenemos su predecesor, y así de este modo podemos construir la ruta completa desde el origen a todos los destinos.
+El número total de nodos a través de los que tenemos que buscar teniendo en cuenta todas las iteraciones es igual a $\frac{n(n + 1)}{2}$ y, por tanto, decimos que la implementación anterior del algoritmo LS tiene, en el caso peor, una complejidad de orden n al cuadrado: $O(n^2)$.
+Una implementación más eficiente tiene $O(n \times log(n))$.
+
+```ad-example
+title: Ejemplo
+collapse: closed
+![[Pasted image 20221118101737.png]]
+```
+
+### Algoritmo de enrutamiento por vector de distancias (DV)
+
+El algoritmo por vector de distancias (DV) es iterativo, asíncrono y distribuido. 
+- Es **distribuido** en el sentido de que cada nodo recibe información de uno o más de sus vecinos directamente conectados, realiza un cálculo y luego distribuye los resultados de su cálculo de vuelta a sus vecinos. 
+- Es **iterativo** porque este proceso continúa hasta que no hay disponible más información para ser intercambiada entre los vecinos.
+- El algoritmo es **asíncrono**, en el sentido de que no requiere que todos los nodos operen sincronizados entre sí.
+
+```ad-important
+title: Ecuación de Bellman-Ford
+<br />
+
+$$d_x (y) = min_{v} \{c(x, v) + d_v(y)\}$$
+
+<br />
+
+Donde $d_x (y)$ representa la distancia mínima de $x$ a $y$, $c(x, v)$ indica el costo físico del link que conecta el nodo $x$ con el $v$, y $d_v(y)$ es la distancia mínima en la cual el nodo $v$ puede llegar al nodo $y$. En definitiva, la distancia se calcula como la distancia hacia el nodo 𝑣 que presenta la distancia mínima al nodo buscado, y el costo de llegar a ese nodo $v$.
+```
+
+En el algoritmo, de vez en cuando, cada nodo envía una copia de su vector de distancias a cada uno de sus vecinos. Cuando un nodo x recibe un nuevo vector de distancias procedente de cualquiera de sus vecinos v, guarda dicho vector de v y luego utiliza la ecuación de Bellman-Ford para actualizar su propio vector de distancias.
+Si el vector de distancias del nodo x ha cambiado como resultado de este paso de actualización, entonces el nodo x enviará su vector de distancias actualizado a cada uno de sus vecinos, lo que puede a su vez actualizar sus propios vectores distancia.
+
+```
+1  Inicialización: 
+2      for todos los destinos y vecinos de x: 
+3          Dx(y) = c(x,y) 
+4      for cada vecino w de x 
+5          Dw(y) = ∞ para todos los destinos y vecinos de x
+6      for cada vecino w de x 
+7          enviar vector de distancias Dx = [Dx(y): y vecino de x] a w 
+8 
+9  bucle 
+10     wait (hasta ver una variación en el coste de enlace de un vecino w 
+11             o hasta recibir un vector de distancias de algún vecino w) 
+12 
+13     for cada y conocido de x: // pueden haber tanto conocidos vecinos 
+14                              // como conocidos no vecinos 
+15         Dx(y) = minv vecino de x{c(x,v) + Dv(y)} 
+16  
+17     if Dx(y) se modifica para cualquier y conocido de x 
+18         enviar vector de distancia Dx = [Dx(y): y conocido de x] a 
+19         todos los vecinos 
+20 
+21  forever
+```
+
+El proceso de recibir vectores distancia actualizados de los vecinos, recalcular las entradas de la tabla de enrutamiento e informar a los vecinos de los costes modificados de la ruta de coste mínimo hacia un destino continúa hasta que ya no se envían mensajes de actualización. **El algoritmo se encuentra en estado de reposo.**
+
+#### Conteo al infinito
+Si bien el algoritmo funciona bien con costos de link fijos, cabe destacar lo que sucede cuando el costo de un link cambia en la red. Para ello, se debe considerar dos casos diferentes: cuando un link disminuye, y cuando uno de ellos aumenta. Para ejemplificar lo que sucede, se presentan las siguientes redes:
+![[Pasted image 20221118103043.png]]
+
+En esta oportunidad, se realiza un cambio de costo disminuyendo el link que conecta x e y.
+
+En el tiempo $t_0$, $y$ detecta el cambio de link y envía dicho cambio a sus vecinos. En $t_1$, $z$ recibe el vector de $y$ y actualiza su vector: $D_z(x)= min\{1 + 1, 50 + 0\} = 2$. En $t_2$ , $y$ recibe el vector de $z$ y actualiza su vector, pero este permanece incambiado, por lo que no envía más mensajes a sus vecinos. En definitiva, se requieren solamente dos iteraciones para que las tablas converjan.
+
+Esta vez, se aumenta el link que conecta x e y a 60. 
+En tiempo $t_0$, y detecta el cambio de link, y computa un nuevo mínimo $D_y(x)= min\{60+0, 1+5\} = 6$. Claramente, el costo computado es erróneo (ya que el costo del camino mínimo entre x e y es de 51), pero con la información manejada por el nodo no se puede determinar el costo correcto. Se envía a sus vecinos el vector costos con el nuevo costo determinado. En $t_2$, z recibe el vector de y, y computa lo siguiente: $D_y(x)= min\{50+0, 6+1\} = 7$ siendo este costo también incorrecto. Luego envía su vector de distancia actualizado. 
+Este ciclo de cómputos incorrectos continuará aumentando el valor en una unidad en cada nodo hasta que z determine el costo como $D_z(x)= min\{50+0, 50+1\}$, quedándose así con el primer término, lo que implica que rutea a x directamente por el link que los conecta. Este proceso durará **44 iteraciones**, que es lo que demora el costo mínimo en llegar de 6 a 50.
+
+
+##### Reversa envenenada
+
+Para solucionar este problema, se utiliza la técnica conocida como reversa envenenada. Supóngase que un nodo x debe enviar su vector de distancia a sus vecinos. Supóngase también que el próximo nodo al que se debe enviar el vector es al nodo y. Antes de realizar el envío, el nodo x modificará las entradas del vector de distancia correspondientes a los nodos que alcanza mediante y por el valor “infinito”. 
+En otros términos, si $next\_hop_x(z) = y ⟹ D_x(z)=\infty$. De esta manera, el nodo y creerá que no existe un camino de él hacia z que pase por x y no intentará enviar el paquete destinado a z por esa ruta.
+
+### Comparación LS y DV
+
+- **Complejidad del mensaje**: LS requiere que cada nodo conozca el coste de cada enlace de la red. Además, cuando el coste del enlace cambia, el nuevo coste tiene que enviarse a todos los nodos. El algoritmo de vector de distancias (DV) requiere intercambios de mensajes entre los vecinos directamente conectados en cada iteración. Cuando los costos de los enlaces cambian, el algoritmo de vector de distancias propagara los resultados del coste del enlace que ha cambiado solo si el nuevo coste de enlace da lugar a una ruta de coste mínimo distinta para no de los nodos conectados a dicho enlace.
+- **Velocidad de convergencia**: la implementación del algoritmo de estados de enlaces es un algoritmo $O(N^2)$ que requiera enviar $O(N*E)$ mensajes. El algoritmo de vector de distancias puede converger lentamente y pueden aparecer bucles de enrutamiento mientras está convergiendo. Este algoritmo también sufre el problema de la cuenta hasta infinito.
+- **Robustez**: LS proporcionando un mayor grado de robustez. Con el algoritmo de vector de distancias, un nodo puede anunciar rutas de coste mínimo incorrectas a cualquiera o a todos los destinos. Con el algoritmo de vector de distancias, un cálculo de nodo incorrecto puede difundirse a través de la red.
+
+### Enrutamiento jerárquico
+
+**Sistemas autónomos (AS)**, formados por un grupo de routers que normalmente se encuentran bajo el mismo control administrativo. Los routers de un mismo AS ejecutan todos ellos el mismo algoritmo de enrutamiento.
+**Protocolo de enrutamiento interno del sistema autónomo:** el algoritmo de enrutamiento que se ejecuta en el sistema. 
+**Routers gateways:** routers de un sistema autónomo que tendrán la tarea adicional de ser responsables del reenvio de paquetes a los destinos externos al AS.
+
+Un protocolo de enrutamiento interno cumple la tarea de obtener información de alcanzabilidad de los AS vecinos y propagar dicha información de alcanzabilidad a todos los routers internos del AS.
+Cuando un sistema autónomo obtiene información acerca de un destino de un AS vecino, puede anunciar esta información de enrutamiento a algunos de sus otros sistemas autónomos vecinos.
+
+![[Pasted image 20221118105810.png|400]]
+
+```ad-example
+title: Método de la patata caliente
+Un método, que es el que se suele utilizar en la práctica, consistiría en utilizar el enrutamiento de la **patata caliente**. Con este tipo de enrutamiento, el sistema autónomo suelta el paquete tan rápido como sea posible (de la forma más barata posible). 
+
+Para hacer esto, el router envía el paquete al router de pasarela que tiene el coste más pequeño de entre todos los routers de pasarela que cuentan con una ruta hasta ese destino.
+```
+
+```ad-example
+title: Definiendo una entrada en la tabla de forwarding de un router
+collapse: open
+Supongamos que AS1 aprende por medio de un protocolo inter-AS que la subred 𝑋 es alcanzable a través de AS3, por el Gateway 1c, pero no vía AS2; luego el protocolo inter-AS propaga esa información a todos los routers internos. Luego el router 1d determina por el algoritmo de ruteo intra-AS que la interfaz 𝐼 está en el camino de costo mínimo, por lo que agrega a la tabla de forwarding la entrada (𝑋,𝐼).
+
+![[Pasted image 20221118110145.png|500]]
+
+Ahora suponemos que AS1 aprende por el protocolo inter-AS que la subred 𝑋 es alcanzable tanto por AS3 como por AS2, entonces, para configurar la tabla de forwarding, el router 1d debe determinar por qué Gateway redirigir los paquetes para el destino 𝑋, lo cual es un trabajo para el protocolo de ruteo inter-AS.
+
+![[Pasted image 20221118110225.png|500]]
+```
+
+
+#### Enrutamiento en Internet
+
+##### INTRA-AS ROUTING (IGP)
+El protocolo Intra-AS es utilizado para determinar cómo es ejecutado el ruteo dentro del sistema autónomo. Son conocidos también son conocidos como **Interior Gateway Protocols (IGP)**.
+
+Los más utilizados son:
+- **RIP**: Routing Information Protocol
+- **OSPF**: Open Shortest Path First
+- **IGRP**: Interior Gateway Routing Protocol
+
+##### Routing Information Protocol (RIP)
+
+Los protocolos de enrutamiento internos de los AS se conocen también como **protocolos de pasarela interior.**
+RIP es un protocolo de **vector de distancias** que opera de una forma muy parecida al protocolo DV ideal. Utiliza como métrica de coste el recuento de saltos; es decir, cada enlace tiene un coste de 1. Fue diseñado para** redes pequeñas o medianas** y por esto establece que un camino dentro de la red tiene un máximo de 15 hops. De esta manera utiliza **16 como infinito**.
+
+El vector de distancias para cualquier router es la estimación actual de la ruta más corta desde dicho router a las subredes del AS. En RIP, las actualizaciones de enrutamientos son intercambiadas entre los vecinos cada 30 segundos mediante un **mensaje de respuesta RIP.**
+
+El mensaje de respuesta enviado por un router o un host contiene una lista de hasta 25 subredes de destino pertenecientes al sistema autónomo, así como la distancia desde el emisor a cada una de esas subredes. Los mensajes de respuesta se conocen como **anuncios RIP** .
+
+Cada router mantiene una tabla RIP conocida como tabla de enrutamiento, esta tabla incluye tanto el vector de distancia del router como la tabla de reenvío del mismo.
+Si un router no tienen noticias de su vecino al menos una vez cada 180 segundos, considera que ese vecino ya no es alcanzable; es decir, o bien ese vecino ha muerto o el enlace que le conectaba con el ha fallado. Si esto ocurre, RIP modifica su tabla de enrutamiento local, y luego propagara esta información enviando anuncios a sus routers vecinos. Los fallos de enlace se propagan rápidamente a la red completa, utilizando **reversa envenenada** para evitar ping-pong loops, con la distancia infinita igual a 16hops.
+
+Un router también puede solicitar información de otros mediante un mensaje de solicitud RIP, acerca del coste a un destino dado. Esto se realiza mediante mensajes UDP en el puerto 520.
+
+##### OPEN SHORTEST PATH FIRST (OSPF)
+
+Protocolo de **estado de enlaces** que utiliza la técnica de inundación de información de estados de los enlaces y el algoritmo de **cálculo de ruta de coste mínimo de Dijkstra.**
+
+OSPF es un protocolo de enrutamiento **intradominio**, que permite el enrutamiento jerárquico, y lo hace **dividiendo un AS en zonas**.
+
+Con OSPF, un router construye un mapa topológico completo del sistema autónomo entero, es decir un grafo. A continuación, el router ejecuta localmente el algoritmo de la ruta más corta de Dijkstra para determinar un árbol de rutas más cortas a todas las subredes, con él mismo como nodo raíz. 
+
+El administrador de la red configura los costes de los enlaces individuales, además puede decidir hacer igual a 1 el coste de todos los enlaces, proporcionando un enrutamiento de número mínimo de saltos, o puede definir los pesos de los enlaces para que sea inversamente proporcionales a la capacidad de los mismos, con el fin de disuadir el tráfico a utilizar los enlaces con pequeño ancho de banda. OSPF no establece una política para definir el pesos de los enlaces, sino que proporciona mecanismos para determinar el enrutamiento de coste mínimo para el conjunto dado de pesos de los enlaces.
+
+Con OSPF, un router difunde la información de enrutamiento a todos los demás routers del sistema autónomo, no solo a sus routers vecinos. esta información se difunde cuando se ha producido un cambio en el estado de un enlace, también difunde esta información en menos de 30 minutos, incluso aunque no haya cambiado el estado.
+Lo anuncios OSPF están contenidos en **OSPF messages** que son transportados **directamente por IP**, siendo el número de protocolo de la capa superior para OSPF igual a 89 (header tipo de IP). Así, el protocolo tiene que implementar por sí mismo funcionalidades tales como la transferencia fiable de mensajes y la de envío de mensajes de difusión acerca del estados de los enlaces. 
+
+OSPF comprueba que los enlaces están operativos mediante que el mensaje HELLO que se envía a un vecino conectado, y permite al router OSPF obtener de un vecino la base de datos de estado de los enlaces de toda la red.
+
+Algunas de las funcionalidades avanzadas incluidas en OSPF son las siguientes:
+  - Seguridad: 
+	Los intercambios entre routers OSPF pueden ser autentificados.
+    Con esto solo pueden participar en el protocolo OSPF los routers de confianza del sistema autónomo. Por defecto, los paquetes OSPF entre routers no son identificados y podrían ser alterados. Pueden configurarse dos tipos de autenticación: simple y MD5.
+  - Varias rutas de igual coste:
+	Cuando varias rutas de un destino tienen el mismo coste, OSPF permite utilizar varias rutas.
+  - Soporte integrado para enrutamiento de unidifusión y por multidifusión: 
+	OSP multidifusión añade extensiones simples a OSPF para proporcionar enrutamiento por multidifusión.
+- Soporte para añadir una jerarquía dentro de un mismo dominio de enrutamiento.
+
+###### OSPF jerárquico
+Se tienen dos niveles de jerarquía, **área local** y **backbone**. Los advertisements de link-state solo ocurren en área local. Cada nodo tiene una topología detallada de áreas, solo sabe direcciones a redes en otras áreas.
+
+![[Pasted image 20221118112110.png|500]]
+
+Varios elementos: 
+- Area border routers: resume las distancias a redes en su propia área y avisa a otros Area border routers.
+- Backbone routers: corren el ruteo OSPF limitado al backbone.
+- Boundary routers: conectan con otros AS.
+
+
+##### Enrutamiento entre sistemas autónomos: BGP
+
+BGP es un protocolo de enrutamientos entre sistemas autónomos que proporciona a cada sistema autónomo mecanismos para:
+- Obtener información acerca de la alcanzabilidad de las subredes de los sistemas autónomos vecinos
+- Propagar la información de alcanzabilidada a todos los routers internos del sistema autónomo.
+- Determinar buenas rutas de subredes, basándose en la información de alcanzabilidad y en la política del sistema autónomo.
+Lo más importante es que BGP permite a cada subred anunciar su existencia al resto de Internet.
+
+Para cada conexión TCP, los dos routers situados en los extremos de la conexión se denominan **pares BGP** y la conexión TCP junto con todos los mensajes BGP enviados a través de la conexión se denomina **sesión BGP.** Además, una sesión BGP que abarca dos sistemas autónomos se conoce como **sesión externa BGP** (eBGP) y una sesión BGP entre routers de un mismo sistema autónomo se conoce como **sesión interna BGP** (iBGP).
+
+BGP permite que cada sistema autónomo aprenda qué destinos son alcanzables a través de sus sistemas autónomos vecinos. En BGP, los destinos no son hosts sino prefijos CIDR, representando cada prefijo una subred o una colección de subredes.
+
+###### Atributos de ruta y rutas BGP
+
+En BGP, un sistema autónomo se identifica mediante su número de sistema autónomo (**ASN, Autonomous System Number**) globalmente único.
+Atributos BGP:
+- **AS-PATH**: contiene los sistemas autónomos a través de los que ha pasado el anuncio del prefijo. Cuando se ha pasado un prefijo dentro de un sistema autónomo, el sistema añade su ASN al atributo AS-PATH. Los routers utilizan este atributo para impedir los bucles de anuncios.
+- El siguiente salto (**NEXT HOP**) es la interfaz del router que inicia la secuencia de sistemas autónomos (AS-PATH).
+
+Además, BGP incluye atributos que permiten a los routers asignar métricas de preferencia en las rutas, y un atributo que indica como el prefijo fue insertado en BGP en el AS de origen. 
+Cuando un **Gateway router** recibe un aviso de ruta, utiliza su **import policy** para decidir si aceptarla o rechazarla, por ejemplo, sabiendo que nunca se debe hacer el ruteo por el ASxyz.
+
+###### Selección de la ruta BGP
+
+Un router puede aprender acerca de más de una ruta a cualquier prefijo, en cuyo caso tendrá que seleccionar una de las posibles rutas. Las entradas para este proceso de selección de ruta es el conjunto de todas las rutas que han sido aprendidas y aceptadas por el router. Si existen dos rutas con el mismo prefijo, entonces BGP invoca secuencialmente las siguientes reglas de eliminación hasta quedarse con una ruta:
+
+1. Valor del atributo de preferencia local, que puede ser definido por el router, o aprendido desde otro router en el mismo AS. Esta política de decisión es llevada a cabo por el administrador de red del AS.
+2. AS-PATH más corto
+3. El router NEXT-HOP más cercano, utilizando el ruteo de la papa caliente.
+4. Si todavía quedan rutas, entonces se aplican criterios adicionales.
+
+Es importante observar que **no se puede afirmar que la decisión garantiza un camino más corto en cantidad de hops de routers**, porque se desconoce la información interna de cada AS. Un camino con AS-PATH más corto puede incluir ASs con muchos “hops” de routers internos, y puede ser más largo en término de routers que otro camino con AS-PATH más largo.
+
+###### Mensajes BGP
+
+Los mensajes BGP se intercambian usando TCP.
+- **OPEN**: abre conexión TCP con “peer” y autentica al que envía.
+- **UPDATE**: publica nuevos caminos (o da de baja otros).
+- **KEEPALIVE**: mantiene la conexión viva en ausencia de UPDATES; se usa también como ACK del OPEN.
+- **NOTIFICATION**: reporta errores en mensaje previo; también se usa para cerrar la conexión.
+
+###### Política de ruteo en BGP:
+
+![[Pasted image 20221118115118.png]]
+
+- A, B, C son proveedores de red. 
+- X, W, Y son clientes de los proveedores.
+- X es dual-homed, ya que está asociado a dos redes. Por lo que X no quiere “rutear” desde B por X a C, de esta forma, X no avisara a B una ruta a C.
+- A avisa un camino AW a B.
+- B avisa un camino BAW a X.
+- Así, surge la consulta de si B debe avisar del camino BAW a C:
+	- No, ya que B no obtiene “ingresos” por hacer el ruteo CBAW ya que ni W ni C son clientes de B.
+	- B quiere forzar a C a rutear por w a través de A. 
+	- B quiere rutear solamente desde/hacia sus clientes.
+
+#### ¿Por qué diferentes ruteos Intra-AS e Inter-AS? 
+
+###### Políticas:
+- Inter-AS: el administrador quiere el control sobre como su tráfico es ruteado, es decir, quien rutea a través de su red.
+- Intra-AS: un único administrador, por lo que no se necesitan políticas de decisión.
+
+###### Escala:
+- El ruteo jerárquico reduce el tamaño de la tabla.
+
+###### Rendimiento:
+- Intra-AS: puede enfocarse en el rendimiento.
+- Inter-AS: las políticas deben dominar por sobre el rendimiento.
+
 # 6. Capa de Enlace 
+
 Protocolo de la capa de transporte: define el formato de los paquetes intercambiados por los nodos situados en los extremos del enlace, así como las acciones que estos nodos llevan a cabo cuando se envían y reciben los paquetes. Tiene asignada la tarea de mover tramas entre nodos.
 
 ```ad-info
@@ -1875,7 +2219,9 @@ Por otro lado, el lado receptor busca por errores, rdt, control de flujo, etc.; 
 
 [[#PPP, Protocolo punto a punto]]
 
+
 ## Técnicas de detección y corrección de errores 
+
 Notamos EDC a los Bits de detección y corrección de errores (redundancia), y D a los datos protegidos por el chequeo de errores, que puede incluir campos de encabezado. La detección de errores no es 100% confiable, ya que el protocolo puede olvidar algunos errores (raramente), aunque con mayor campo para EDC significa una mejor corrección y detección de errores.
 
 ![[Pasted image 20221116122946.png|500]]
@@ -1930,7 +2276,9 @@ collapse: closed
 ![[Pasted image 20221116123544.png]]
 ```
 
+
 ## Protocolo de acceso múltiple 
+
 Un **enlace punto a punto** está compuesto por un único emisor en un extremo del enlace y un único receptor en el otro extremo. Un **enlace de difusión** (o enlace de broadcast), puede tener múltiples nodos emisores y receptores, todos conectados al mismo y único canal de difusión compartido.
 
 ```ad-example
@@ -2112,8 +2460,10 @@ algún procedimiento de recuperación para hacer que el testigo vuelva a circula
 ![[Pasted image 20221116134650.png]]
 
 
+
 ## Direccionamiento de la capa de enlace 
-### Direcciones MAC
+
+##### Direcciones MAC
 
 La dirección MAC tiene 6 bytes de longitud, lo que nos da 248 posibles direcciones MAC.
 Suelen expresarse en notación hexadecimal, indicándose cada byte de la dirección mediante una pareja de números hexadecimales. Aunque las direcciones MAC se diseñaron para ser permanentes, hoy día es posible modificar la dirección MAC de un adaptador mediante un software apropiado.
@@ -2172,7 +2522,9 @@ collapse: closed
 ```
 
 
+
 ## Ethernet 
+
 Es la tecnología cableada LAN dominante, por varias razones:
 - Una tarjeta de red es barata.
 - Primera tecnología LAN utilizada ampliamente.
@@ -2229,7 +2581,9 @@ collapse: closed
 
 
 
+
 ## Dominios de colisión y de broadcast 
+
 
 ##### Dominio de Colisión
 Se conoce como dominio de colisión al espacio físico con un ancho de banda compartido por un conjunto de dispositivos. En el caso que dos de esos dispositivos quieran transmitir al mismo tiempo, existe la posibilidad de que sus mensajes colisionen el espacio compartido y, o bien acaben convertidos en una amalgama de bits o bien no se pueda asegurar que al receptor le ha llegado el mensaje, de ahí el término colisión. Para resolverlo, Ethernet implementa CSMA/CD (Carrier dense multiple access with collision detection). 
@@ -2257,7 +2611,9 @@ Otro problema que presenta una red con tantos dispositivos está asociado a las 
 Otro aspecto importante puede asociarse a la seguridad, pues, cualquier error en la configuración de la red, puede tener impacto en todos los equipos (p.e. un equipo que se configure equívocamente con la dirección del router). Cada vez que haya que resolver un problema, la causa puede provenir de la totalidad de la red, y no de sectores.
 ```
 
+
 ## Conmutadores de la capa de enlace 
+
 ### Hub o concentrador
 Dispositivo de la capa física que actúa sobre los bits individuales en lugar de sobre las tramas. Cuando un bit, que representa un cero o un uno, llega procedente de una interfaz, el concentrador simplemente vuelve a crear el bit, incrementa su intensidad de energía y lo transmite a todas las demás interfaces.
 Si un concentrador recibe tramas procedentes de dos interfaces distintas al mismo tiempo, se produce una colisión y los nodos que crean las tramas tendrán que retransmitirlas.
@@ -2304,8 +2660,10 @@ Los conmutadores tienen la propiedad de que su tabla se construye de forma autom
 - **Administración:**  Además de proporcionar una seguridad mejorada, un conmutador también facilita las tareas de gestión de la red. Un conmutador puede detectar cuando un adaptador de red funciona mal enviando continuamente tramas y desconectar internamente el adaptador que está funcionando incorrectamente. Un corte en un cable sólo desconecta al nodo que está usando el cable cortado para conectarse al conmutador.
 
 
+
 ## Switch vs Router 
-### Switches:
+
+##### Switches:
 ####### Pros:
 - Dispositivos plug-and-play
 - Ofrecen tasas de filtrado y reenvío relativamente altas (trabajan hasta capa 2)
@@ -2323,7 +2681,9 @@ Los conmutadores tienen la propiedad de que su tabla se construye de forma autom
 - los routers suelen tener un tiempo de procesamiento por paquete mayor que los conmutadores (trabajan hasta capa 3)
 
 
+
 ## Redes de área local virtuales  (VLAN) 
+
 Un conmutador compatible con redes VLAN permite definir **múltiples redes de área local virtuales sobre una única infraestructura de red** de área local física. Los hosts de una VLAN se comunican entre sí como si sólo ellos (y ningún otro host) estuvieran conectados al conmutador.
 En una **VLAN basada en puertos**, el administrador de la red divide los puertos (interfaces) del conmutador en grupos. Cada grupo constituye una VLAN, con los puertos de cada VLAN formando un dominio de difusión.
 Para enviar tráfico entre un departamento y otro, los fabricantes de conmutadores incorporan en un único dispositivo un conmutador VLAN y un router, con lo que no es necesario un router externo.
@@ -2350,7 +2710,9 @@ El protocolo 802.1Q involucra una redefinición del cabezal Ethernet, que introd
 De los 32bits adicionales, se reservan 12 para identificar VLANs. 
 
 A nivel de los switches se distinguen puertos a los que se pueden conectar dispositivos que manipulan los cabezales extendidos y son capaces de intercambiar tráfico que incluye TAGS de los puertos en los que se conectan equipos que desconocen del uso de tags. Estos puertos, los que reciben tráfico sin tags se conocen como UNTAGGED PORTS y realizan la tarea de etiquetar tráfico al ingreso y quitar el tag al momento de forwardear el paquete hacia el host. Los puertos por los que se transmiten tramas extendidas se conocen tomo TRUNK PORTS. Cabe mencionar que la distinción es administrativa, y no hay diferencias físicas en los puertos.
+
 ## PPP, Protocolo punto a punto 
+
 El protocolo punto a punto PPP es un protocolo de la capa de enlace que opera sobre un enlace punto a punto: un enlace que conecta directamente dos nodos situados cada uno de ellos en extremo del enlace.
 
 ##### **Requisitos establecidos para el diseño de PPP:**
@@ -2375,3 +2737,893 @@ recibidas.
 ##### PPP Data Control Protocol
 
 ![[Pasted image 20221116205122.png]]
+
+# 99. Otros 
+
+[[#Puertos bien conocidos]]
+[[#Tips problemas prácticos]]
+
+### Practicos
+- [[#Practico 5]]
+- [[#Practico 6]]
+- [[#Practico 7]]
+
+## Puertos bien conocidos 
+
+- HTTP --> 80
+	- HTTPS --> 443
+
+- DNS --> 53
+
+- FTP --> 21 para control y 20 para datos
+
+- SMTP –> 25 
+	- seguro --> 465, 587
+- POP3 –> 110 
+	- sobre TLS --> 995
+- IMAP –> 143
+	- sobre TLS --> 993
+
+
+
+
+## Tips problemas prácticos 
+
+
+### Implementación de NAT
+- Siempre recalcular el checksum y setearlo al paquete como último paso antes de finalizar el procesamiento
+- La tabla debe mantener IP_priv, PORT_priv, IP_publ, PORT_publ
+
+### Implementación de Forwarding
+- Chequear TTL y decrementarlo. Si TTL no es mayor a 1, se debe enviar el mensaje ICMP con TTL Expire.
+- Longest Prefix Match obviamente
+- Detectar multicast sabiendo que una dir. de multicast siempre comienza con 1110
+
+### TCP
+- C
+
+## Practico 5 
+
+
+### Ej. 1
+```ad-info
+title: Letra
+collapse: closed
+
+![[Pasted image 20221025172748.png]]
+```
+#### Parte *a*
+
+| Direccion de destino | Interfaz de salida |
+| -------------------- | ------------------ |
+| H3                   | 3                  |
+
+#### Parte *b*
+No es posible con una tabla de reenvío basada en la dirección de destino (destination-based forwarding). Si se puede hacer con OpenFlow 1.0 y posteriores.
+
+### Ej. 2
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221025172939.png]]
+```
+
+#### Parte *a*
+No, no es posible porque deben turnarse para utilizar el bus compartido.
+
+#### Parte *b*
+No, para realizar el copiado del enlace de entrada al enlace de salida debe usarse el CPU y un bus compartido. Aunque el CPU pudiera ejecutar varios procesos en simultáneo, no se podría hacer que se muevan dos datos distintos por un mismo bus.
+
+#### Parte *c*
+No, no se puede porque el enlace de salida solo puede "encolar" un datagrama por vez. Se podría si los datagramas tienen enlaces de salida distintos.
+
+### Ej. 3
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221025205030.png]]
+```
+
+- Velocidad de entrada: `s`
+- Cant. puertos de entrada: `n`
+- Llegan `n` paquetes de largo `L` en las `n` entradas simultáneamente
+- Todos los paquetes se reenvían a puertos de salida distintos
+- Velocidad del entramado: `n*s`
+
+#### Parte *a*: memoria
+Como la copia de un paquete se debe hacer primero enviándolo a la memoria principal y luego al puerto de salida, solo puede realizarse 1 transferencia por vez. Cada transferencia durará: `dur_transf := copia_a_memoria + copia_a_puerto_salida`
+De esto se deduce que el paquete que debe esperar más (el último) deberá esperar `(n-1)*dur_transf`.
+
+#### Parte *b*: bus
+El bus no es compartido, por lo que no es posible enviar más de un paquete en un instante dado. Se deberá esperar `(n-1)*dur_transf`.
+
+#### Parte *c*: malla
+Como todos los paquetes van a distinto destino, ninguno deberá esperar por algún otro para ser enviado. El retardo máximo es 0.
+
+### Ej. 4
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026162711.png]]
+```
+
+#### Parte *a*
+$t_0$ : como la foto
+$t_1$ : 
+	- Cola de entrada 1 se fue el X. 
+	- De la cola 2 se fué el paquete Y. 
+	- En la cola 3 se fue Z.
+$t_2$ :
+	- De la cola 2 se fué el paquete X. 
+	- En la cola 3 se fue Y 
+
+#### Parte *b*
+No se me ocurrió si "una cola no vacía nunca está inactiva".
+
+### Ej. 5
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026163928.png]]
+![[Pasted image 20221026163942.png]]
+```
+
+#### Parte *a*
+###### Saco los prefijos:
+0:  11100000 00
+	11100000 00000000 00000000 00000000
+	11100000 00111111 11111111 11111111
+1:  11100000 01000000
+	11100000 01000000 00000000 00000000
+	11100000 01000000 11111111 11111111
+2:  11100001 0 y 11100000 01
+	11100000 01000001 00000000 00000000 
+	11100001 01111111 11111111 11111111
+3: otro caso
+###### Sol:
+| Direccion de destino | Interfaz de salida |
+| -------------------- | ------------------ |
+| 11100000 00  | 0                |
+|     11100000 01000000      | 1                |
+|     11100001 0          | 2                |
+|      11100000 01         | 2                |
+|    Otro caso         | 3                |
+
+
+#### Parte *b*
+
+1. 3
+2. 2
+3. 3
+
+### Ej. 6
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026172517.png]]
+```
+
+223.1.16.0/23 quiere decir que tenemos disponibles las direcciones:
+
+11011111.00000001.00010000.00000000 
+	a
+11011111.00000001.00010001.11111111
+Osea, 512 ips
+
+S1: 
+	60 interfaces + red + broadcast = 62 -> 6 bits y sobra
+	/26
+S2: 
+	95 interfaces + red + broadcast = 97 -> 7 bits y sobra
+	/25
+S3:
+	16 interfaces + red + broadcast = 18 -> 5 bits y sobra
+	/27
+
+![[Drawing 2022-10-26 17.49.49.excalidraw]]
+
+### Ej. 7
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026180012.png]]
+```
+
+![[Drawing 2022-10-26 18.15.54.excalidraw]]
+
+### Ej. 8
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026182630.png]]
+```
+Ignorando las direcciones de la figura:
+#### Parte *a*
+- A:
+	250 + red + broadcast
+	8 bits
+	214.97.253.0/24
+- B:
+	120 + red + broadcast
+	7 bits
+	214.97.252.0/25
+- C: 
+	120 + red + broadcast
+	7 bits
+	214.97.252.128/25
+- D: 
+	2 + red + broadcast
+	2 bits
+	214.97.254.0/30
+- E: 
+	2 + red + broadcast
+	2 bits
+	214.97.254.4/30
+- F: 
+	2 + red + broadcast
+	2 bits
+	214.97.254.16/30
+#### Parte *b*
+...
+
+### Ej. 9
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026192656.png]]
+```
+
+2400 bytes ⇾  20 bytes cabecera IP + 2380 bytes de datos
+
+Se particionan los datos en fragmentos de largo máximo 680 bytes.
+
+Fragmento 1:
+	id: 422
+	largo: 700
+	indicador de fin: 1 (quedan paquetes)
+	desplazamiento dentro del datagrama original: 0
+Fragmento 2:
+	id: 422
+	largo: 700
+	indicador de fin: 
+	desplazamiento dentro del datagrama original: 1 * 680
+Fragmento 3:
+	id: 422
+	largo: 700
+	indicador de fin: 1
+	desplazamiento dentro del datagrama original: 2 * 680
+Fragmento 4:
+	id: 422
+	largo: 360 
+	indicador de fin: 0 (ultimo)
+	desplazamiento dentro del datagrama original: 3 * 680
+
+### Ej. 10
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026193649.png]]
+```
+
+5 millones en paquetes de (1500-20): 3379 datagramas
+
+### Ej. 11
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026193910.png]]
+```
+
+#### Parte *a*
+- Router: 192.168.1.1
+- H1: 192.168.1.2
+- H2: 192.168.1.3
+- H3: 192.168.1.4
+
+#### Parte *b*
+| Lado WAN            | Lado LAN        |
+| ------------------- | --------------- |
+| 24.34.112.235:50011 | 192.168.1.2:501 |
+| 24.34.112.235:50012 | 192.168.1.2:502 |
+| 24.34.112.235:50021 | 192.168.1.3:501 |
+| 24.34.112.235:50022 | 192.168.1.3:502 |
+| 24.34.112.235:50031 | 192.168.1.4:501 |
+| 24.34.112.235:50032 | 192.168.1.4:502 |
+
+### Ej. 12
+```ad-info
+title: Letra
+collapse: closed
+![[Pasted image 20221026194858.png]]
+![[Pasted image 20221026194850.png]]
+![[Pasted image 20221026194838.png]]
+```
+
+```ad-danger
+title: Dominio de broadcast
+Todas las IP alcanzables por el broadcast de la sub-red.
+```
+#### Parte *a*:
+- Subred 1
+- Subred 2
+- 190.1.1.2/29
+
+#### Parte *b* y *c*
+- Subred 1
+	30 hosts + router + red + broadcast = 33
+	6 bits ⇾ /25
+	192.168.1.0/25
+	
+	Dispositivos:
+	- R1: 192.168.1.1
+	- A1: 192.168.1.2
+	- B1: 192.168.1.3
+
+- Subred 2
+	125 hosts + router + red + broadcast = 128 bits
+	7 bits ⇾ /26
+	10.1.2.0/26
+	
+	Dispositivos:
+	- R1: 10.1.2.1
+	- A2: 10.1.2.2
+	- B2: 10.1.2.3
+
+#### Parte *d*
+
+| Dispositivo | Prefijo        | Interfaz de salida | Next_hop                    |
+| ----------- | -------------- | ------------------ | --------------------------- |
+| A1          | 192.168.1.0/25 | eth0               | DC (directamente conectado) |
+| A1          | 0.0.0.0/0      | eth0               | 192.168.1.1                 |
+|             |                |                    |                             |
+|             |                |                    |                             |
+| A2          | 10.1.2.0/26    | eth0               | DC (directamente conectado) |
+| A2          | 0.0.0.0/0      | eth0               | 10.1.2.1                    |
+|             |                |                    |                             |
+|             |                |                    |                             |
+| R1          | 10.1.2.0/26    | eth2               | DC                          |
+| R1          | 192.168.1.0/25 | eth1               | DC                          |
+| R1          | 190.1.1.0/29   | eth0               | DC                          |
+| R1          | 0.0.0.0/0      | eth0               | 190.1.1.2                   |
+
+#### Parte *e*
+Esto se puede lograr con redes virtuales.
+
+
+
+## Practico 6 
+
+### Ej. 1
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031160828.png]]
+```
+
+| \#Paso | N'                  | w   | i   | (D(i), p(i)) |
+| ------ | ------------------- | --- | --- | ------------ |
+| 0      | x                   | x   | z   | 8, x         |
+| 0      | x                   | x   | y   | 6, x         |
+| 0      | x                   | x   | v   | 3, x         |
+| 0      | x                   | x   | w   | 6, x         |
+| 0      | x                   | x   | t   | $\infty$, -  |
+| 0      | x                   | x   | u   | $\infty$, -  |
+| 1      | x, v                | v   | y   | 6, x         |
+| 1      | x, v                | v   | t   | 7, v         |
+| 1      | x, v                | v   | u   | 6, v         |
+| 1      | x, v                | v   | w   | 6, x         |
+
+| **i**   | **D(i)** | **p(i)** |
+| --- | ---- | ---- |
+| x   | 0    | -    |
+| z   | 8    | x    |
+| y   | 6    | x    |
+| v   | 3    | x    |
+| w   | 6    | x    |
+| t   | 7    | v    |
+| u   | 6    | v    |
+
+  
+### Ej. 2
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031160906.png]]
+```
+
+
+### Ej. 3
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031160927.png]]
+![[Pasted image 20221031160938.png]]
+```
+z:
+| -   | z   | v   | w   | y   | x   |     | -    | z   | v   | w   | y   | x   |     |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| z   | 0   | 6   | inf | inf | 2   |     | z   | 0   | 5   | 7   | 5   | 2   |     |
+| v   | ?   | ?   | ?   | ?   | ?   |     | v   | 6   | 0   | 1   | inf | 3   |     |
+| w   | ?   | ?   | ?   | ?   | ?   |     | w   | ?   | ?   | ?   | ?   | ?   |     |
+| y   | ?   | ?   | ?   | ?   | ?   |     | y   | ?   | ?   | ?   | ?   | ?   |     |
+| x   | ?   | ?   | ?   | ?   | ?   |     | x   | 2   | 3   | inf | 3   | 0   |     |
+
+v: 
+| -   | z   | v   | w   | y   | x   |     | -   | z   | v   | w   | y   | x   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| z   | ?   | ?   | ?   | ?   | ?   |     | z   | 0   | 6   | inf | inf | 2   |
+| v   | 6   | 0   | 1   | inf | 3   |     | v   | 5   | 0   | 1   | 3   | 3   |
+| w   | ?   | ?   | ?   | ?   | ?   |     | w   | inf | 1   | 0   | 2   | inf |
+| y   | ?   | ?   | ?   | ?   | ?   |     | y   | ?   | ?   | ?   | ?   | ?   |
+| x   | ?   | ?   | ?   | ?   | ?   |     | x   | 2   | 3   | inf | 3   | 0   |
+
+x: 
+| -   | z   | v   | w   | y   | x   |     | -   | z   | v   | w   | y   | x   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| z   | ?   | ?   | ?   | ?   | ?   |     | z   | 0   | 6   | inf | inf | 2   |
+| v   | ?   | ?   | ?   | ?   | ?   |     | v   | 6   | 0   | 1   | inf | 3   |
+| w   | ?   | ?   | ?   | ?   | ?   |     | w   | ?   | ?   | ?   | ?   | ?   |
+| y   | ?   | ?   | ?   | ?   | ?   |     | y   | inf | inf | 2   | 0   | 3   |
+| x   | 2   | 3   | inf | 3   | 0   |     | x   | 2   | 3   | 4   | 3   | 0   |
+
+y: 
+| -   | z   | v   | w   | y   | x   |     | -   | z   | v   | w   | y   | x   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| z   | ?   | ?   | ?   | ?   | ?   |     | z   | ?   | ?   | ?   | ?   | ?   |
+| v   | ?   | ?   | ?   | ?   | ?   |     | v   | ?   | ?   | ?   | ?   | ?   |
+| w   | ?   | ?   | ?   | ?   | ?   |     | w   | inf | 1   | 0   | 2   | inf |
+| y   | inf | inf | 2   | 0   | 3   |     | y   |  5   |  3   | 2    |  0   |  3   |
+| x   | ?   | ?   | ?   | ?   | ?   |     | x   | 2   | 3   | inf | 3   | 0   |
+
+w:
+| -   | z   | v   | w   | y   | x   |     | -   | z   | v   | w   | y   | x   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| z   | ?   | ?   | ?   | ?   | ?   |     | z   | ?   | ?   | ?   | ?   | ?   |
+| v   | ?   | ?   | ?   | ?   | ?   |     | v   | 6   | 0   | 1   | inf | 3   |
+| w   | inf | 1   | 0   | 2   | inf |     | w   | 7   | 1   | 0   | 2   | 4   |
+| y   | ?   | ?   | ?   | ?   | ?   |     | y   | inf | inf | 2   | 0   | 3   |
+| z   | ?   | ?   | ?   | ?   | ?   |     | z   | ?   | ?   | ?   | ?   | ?   |
+
+
+### Ej. 4
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031160954.png]]
+```
+
+NO, this is because that decreasing link cost won’t cause a loop (caused by the next-hop relation of between two nodes of that link). Connecting two nodes with a link is equivalent to decreasing the link weight from infinite to the finite weight.
+
+### Ej. 5
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031183341.png]]
+```
+
+#### Parte a
+eBGP, pues obitiene el dato de 4c (un router externo a AS3).
+
+#### Parte b
+iBGP, pues obtiene el dato de 3c (interno a AS3) y x no pertenece a AS3.
+
+#### Parte c
+eBGP, pues obitiene el dato de 3a (un router externo a AS1).
+
+#### Parte d
+iBGP, pues obtiene el dato de 1c (interno a AS1) y x no pertenece a AS3.
+### Ej. 6
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031185540.png]]
+![[Pasted image 20221031185551.png]]
+```
+
+#### Parte a: 
+Como el router de salida es $1c$, el camino más corto (menor costo) empieza por el enlace $1d$-$1a$, el cual toma la interfaz $I_1$.
+
+#### Parte b:
+Dos rutas:
+- Ruta 1:
+	- AS-PATH = \[AS2, AS4, x\]
+	- NEXT-HOP = $1b$
+- Ruta 2:
+	- AS-PATH = \[AS3, AS4, x\]
+	- NEXT-HOP = $1c$
+
+Como el largo del AS-PATH es idéntico en ambas rutas, se desempata por el camino hasta el NEXT-HOP más corto. Este es $1b$. Por lo tanto, $I = I_2$.
+
+#### Parte c:
+Ahora el largo del AS-PATH de la ruta 1 aumenta a 3, por lo que la ruta elegida será la 2. La salida es por $I_1$.
+
+### Ej. 7
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031191317.png]]
+```
+
+![[Pasted image 20221031192053.png]]
+
+### Ej. 8
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031192201.png]]
+```
+
+A debería anunciar a B dos rutas:
+	- A-W 
+	- A-V.
+ A debería anunciar a C una única ruta:
+	 - A-V.
+
+ C recibe dos AS-PATH: 
+	 - B-A-W, 
+	 - B-A-V, 
+	 - A-V
+
+### Ej. 9
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031194040.png]]
+![[Pasted image 20221031194103.png]]
+```
+
+#### Parte a:
+NOTA: 122.0.0.0/7 agrupa las subredes A y B.
+
+##### AS3_a
+| Prefijo       | Interfaz de salida |
+| ------------- | ------------------ |
+| 123.0.0.0/8   | eth0               |
+| *             | eth1               |
+
+##### AS2_a
+| Prefijo       | Interfaz de salida |
+| ------------- | ------------------ |
+| 200.128.0.0/9 | eth1               |
+| *             | eth0               |
+
+##### AS2_b
+| Prefijo       | Interfaz de salida |
+| ------------- | ------------------ |
+| 200.128.0.0/9 | eth0               |
+| 200.64.0.0/10 | eth2               |
+| *             | eth1               |
+
+##### AS1_a
+| Prefijo       | Interfaz de salida |
+| ------------- | ------------------ |
+| 122.0.0.0/7   | eth0               |
+| 200.128.0.0/9 | eth0               |
+| 200.64.0.0/10 | eth0               |
+| *             | eth1               |
+
+##### AS1_b
+| Prefijo       | Interfaz de salida |
+| ------------- | ------------------ |
+| 200.128.0.0/9 | eth1               |
+| 200.64.0.0/10 | eth1               |
+| *             | eth0               |
+
+##### AS1_c
+| Prefijo       | Interfaz de salida |
+| ------------- | ------------------ |
+| 122.0.0.0/8   | eth0               |
+| 200.128.0.0/9 | eth2               |
+| 200.64.0.0/10 | eth2               |
+| 123.0.0.0/8   | eth3               |
+| *             | eth1               |
+
+
+#### Parte b:
+##### Tablas de a:
+| -   | a   | b   | c   |     | -   | a   | b   | c   |     | -   | a   | b   | c   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| a   | 0   | 7   | 5   |     | a   | 0   | 1   | 5   |     | a   | 0   | 1   | 3   |
+| b   | ?   | ?   | ?   |     | b   | ?   | ?   | ?   |     | b   | 1   | 0   | 2   |
+| c   | 5   | 2   | 0   |     | c   | 5   | 2   | 0   |     | c   | 5   | 2   | 0   |
+##### Tablas de b:
+| -   | a   | b   | c   |     | -   | a   | b   | c   |     | -   | a   | b   | c   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| a   | ?   | ?   | ?   |     | a   | ?   | ?   | ?   |     | a   | 0   | 1   | 5   |
+| b   | 7   | 0   | 2   |     | b   | 1   | 0   | 2   |     | b   | 1   | 0   | 2   | 
+| c   | 5   | 2   | 0   |     | c   | 5   | 2   | 0   |     | c   | 5   | 2   | 0   |
+##### Tablas de c:
+| -   | a   | b   | c   |     | -   | a   | b   | c   |     | -   | a   | b   | c   |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| a   | 0   | 7   | 5   |     | a   | 0   | 7   | 5   |     | a   | 0   | 1   | 5   |
+| b   | 7   | 0   | 2   |     | b   | 7   | 0   | 2   |     | b   | 1   | 0   | 2   |
+| c   | 5   | 2   | 0   |     | c   | 5   | 2   | 0   |     | c   | 3   | 2   | 0   | 
+
+
+### Ej. 10
+```ad-abstract
+title: Letra
+collapse: closed
+![[Pasted image 20221031204620.png]]
+![[Pasted image 20221031204631.png]]
+```
+#### Parte a:
+![[Pasted image 20221031210008.png]]
+#### Parte b:
+##### R1:
+![[Pasted image 20221031210038.png]]
+##### R4:
+![[Pasted image 20221031210109.png]]
+![[Pasted image 20221031210122.png]]
+
+#### Parte c:
+![[Pasted image 20221031210207.png]]
+
+## Practico 7 
+
+### Ejercicio 1
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210000.png]]
+```
+
+
+`1110 1`
+`0110 0`
+`1001 0`
+`1101 1`
+
+`1100 0`
+
+¿Por qué es de longitud mínima el chechsum? Una agrupación 4x4 nos da 9 bits de redundancia. 2x8 u 8x2 nos da 11, 1x16 da 18.
+
+### Ejercicio 2
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210046.png]]
+```
+Ni a palanca hago división binaria a mano
+
+#### Parte a)
+If we divide 10011 into 1010101010 0000, we get 1011011100, with a remainder of R=0100. Note that, G=10011 is CRC-4-ITU standard.
+
+#### Parte b)
+we get 1000110000, with a remainder of R=0000.
+
+#### Parte c)
+we get 0101010101, with a remainder of R=1111.
+
+#### Parte d)
+we get 1011010111, with a remainder of R=1001.
+
+### Ejercicio 3
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210101.png]]
+```
+
+#### Parte a)
+Tasa media de transferencia = probabilidad de transmitir en un slot dado
+$$ p_{trans}^a = p_{a}\times (1-p_{b})$$
+La eficiencia es el porcentaje del ancho de banda utilizado sin colisiones.
+Asumiendo que ambos tengan algo siempre para transmitir, la eficiencia se calculará como la probabilidad de que alguno de los dos transmita exitosamente
+
+$$ ef = p_{a}\times (1-p_{b}) + p_{b}\times (1-p_{a})$$
+#### Parte b)
+Vamos a calcular directamente cuál debe ser la relación entre $p_a$ y $p_b$ para que $p_{trans}^a$ = $2 \times p_{trans}^b$
+$$ p_{a}\times (1-p_{b}) = 2 \times p_{b} \times (1-p_{a})$$
+Con alguna cuenta:
+$$ p_a= 2 - (p_a / p_b) $$
+
+#### Parte c)
+
+$$ p_{trans}^a = 2p\times (1-p)^{N-1}$$
+$$ p_{trans}^{otros} = p\times (1-p)^{N-2}\times (1-2p)$$
+
+### Ejercicio 4
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210133.png]]
+```
+
+La tasa máxima se obtendrá cuando todos tengan al menos Q bits para transmitir cada vez que se les otorga un turno.
+
+A lo largo del tiempo pasarán las siguientes cosas en un ciclo:
+1. El nodo de sondeo averiguará quién quiere transmitir
+2. El nodo de sondeo le indicará a cierto nodo (de los que solicitaron) que puede transmitir
+3. El nodo transmitirá sus Q bits
+4. Volver al inicio
+Los pasos 1 y 2 tardan $d$ en conjunto y el paso 3 tarda $Q/R$.
+Repitiendo esto para N nodos, tenemos un largo de ronda de $N \times (\frac{Q}{R}+ d)$.
+Dado que la cantidad de bits "útiles" de una ronda es $Q \times N$, la tasa de transferencia máxima será:
+$$\frac{NQ}{N \times \frac{Q}{R}+ d} = \frac{R}{1+\frac{d \times R}{Q}}$$
+
+### Ejercicio 5
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210158.png]]
+```
+
+#### Parte a y b)
+![[Pasted image 20221116221605.png]]
+
+#### Parte c)
+1. E determina con su tabla de forwarding que el next-hop es 192.168.3.002. Con su tabla de ARP, determina que debe empaquetar el datagrama ip en un frame ethernes con destino MAC 88...88.
+3. Router 2 inspecciona el paquete, determina con su tabla de ruteo y de ARP que debe enviar hacia la LAN2 con ip destino 192.168.2.002 y MAC destino 33...33 y MAC origen 55...55
+4. Se repite casi lo mismo en Router 1
+5. El paquete llega a B y su capa de enlace lo entrega a la capa de red pues el MAC destino es él mismo.
+
+#### Parte d)
+1. E determina con su tabla de forwarding que el next-hop es 192.168.3.002.
+2. E no tiene una entrada en su tabla de ARP para la ip mencionada, debe consultarla vía una ARP Query. El query se emapqueta en un mensaje broadcast de capa de enlace (MAC FF...FF) y se envía. El router 2 recibe la query y la responde con un ARP response packet destinado a MAC 77...77.
+
+
+### Ejercicio 6
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210223.png]]
+```
+
+#### Parte a)
+No. E está directamente conectado a F y por lo tanto no precisa del router 1. Se armará un paquete con los datos de cada interfaz conectada al dominio de colisión que comparten E y F.
+
+#### Parte b)
+No, E no hace consulta ARP pues B no está en su misma LAN. Las direcciones de origen son las mismas que en la parte anterior. Ahora la IP de destino es la IP de B y la MAC de destino es la del router 1.
+
+#### Parte c)
+Como el ARP Query es un mensaje de difusión de capa 2, difunde la trama en todas sus interfaces, menos la de entrada. Además usará la MAC de origen para identificar y recordar que en la interfaz de entrada se encuentra el HOST con la MAC de A.
+R1 recibirá la trama con el ARP Query, lo procesará pero no lo difundirá por la subred 3. 
+B no debe hacer nada excepto leer la dirección MAC de origen para saber la dirección MAC del solicitante ARP.
+Cuando S1 reciba la trama de B, guardará en su tabla de forwarding que dicho host se encuentra en la interfaz de entrada. Como la dirección MAC de destino se accede por la misma interfaz por la que llegó la trama (esto lo sabe por haber guardado la MAC de A previamente), descartará la misma.
+
+### Ejercicio 7
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210236.png]]
+```
+
+#### Parte a)
+No. E can check the subnet prefix of Host F’s IP address, and then learn that F is on the same LAN segment.
+Thus, E will not send the packet to S2. 
+Ethernet frame from E to F: 
+	Source IP = E’s IP address 
+	Destination IP = F’s IP address 
+	Source MAC = E’s MAC address 
+	Destination MAC = F’s MAC address
+
+#### Parte b)
+Yes, because E would like to find B’s MAC address. In this case, E will send an ARP query packet with destination MAC address being the broadcast address. 
+This query packet will be re-broadcast by switch 1, and eventually received by Host B. Ethernet frame from E to S2: 
+	Source IP = E’s IP address
+	Destination IP = B’s IP address 
+	Source MAC = E’s MAC address 
+	Destination MAC = broadcast MAC address: FF-FF-FF-FF-FF-FF.
+
+#### Parte c)
+Switch S1 will broadcast the Ethernet frame via both its interfaces as the received ARP frame’s destination address is a broadcast address. And it learns that A resides on Subnet 1 which is connected to S1 at the interface connecting to Subnet 1. And, S1 will update its forwarding table to include an entry for Host A. 
+Yes, router S2 also receives this ARP request message, and S2 will broadcast this query packet to all its interfaces. 
+B won’t send ARP query message asking for A’s MAC address, as this address can be obtained from A’s query message. 
+Once switch S1 receives B’s response message, it will add an entry for host B in its forwarding table, and then drop the received frame as destination host A is on the same interface as host B (i.e., A and B are on the same LAN segment).
+
+### Ejercicio 8
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210250.png]]
+```
+
+t = 0
+	A transmits. 
+t = 576
+	A would finish transmitting.
+t=324
+	In the worst case, B begins transmitting, which is the time right before the first bit of A’s frame arrives at B. 
+t=324+325=649
+	B 's first bit arrives at A . Because 649 > 576, **A finishes transmitting before it detects that B has transmitted**. So A incorrectly **thinks that its frame was successfully transmitted** without a collision.
+
+### Ejercicio 9
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210304.png]]
+```
+
+t = 0
+	A and B begin transmission.
+t = 245
+	A and B detect collision.
+t = 293
+	A and B finish transmitting jam signal.
+t = 293+245 = 538  
+	B 's last bit arrives at A.
+	A detects an idle channel.
+t = 538+96=634
+	A starts transmitting.
+t = 293+512 = 805 
+	B returns to Step2.
+	B must sense idle channel for 96 bit times before it transmits.
+t = 634+245=879
+	A’s transmission reaches B.
+
+Because A's retransmission reaches B before B's scheduled retransmission time (805+96), B refrains from transmitting while A retransmits. Thus A and B do not collide. Thus the factor 512 appearing in the exponential backoff algorithm is sufficiently large
+
+### Ejercicio 10
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210318.png]]
+```
+
+![[Pasted image 20221116233912.png]]
+
+#### Parte a) from A to left router
+Source MAC address: 00-00-00-00-00-00 
+Destination MAC address: 22-22-22-22-22-22
+Source IP: 111.111.111.001
+Destination IP: 133.333.333.003 
+#### Parte b) from the left router to the right router
+Source MAC address: 33-33-33-33-33-33 
+Destination MAC address: 55-55-55-55-55-55 
+Source IP: 111.111.111.001 
+Destination IP: 133.333.333.003 
+#### Parte c) from the right router to F
+Source MAC address: 88-88-88-88-88-88 
+Destination MAC address: 99-99-99-99-99-99
+Source IP: 111.111.111.001 
+Destination IP: 133.333.333.003
+
+### Ejercicio 11
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210331.png]]
+```
+
+##### From A to switch: 
+Source MAC address: 00-00-00-00-00-00
+Destination MAC address: 55-55-55-55-55-55 
+Source IP: 111.111.111.001 
+Destination IP: 133.333.333.003 
+
+##### From switch to right router: 
+Source MAC address: 00-00-00-00-00-00 
+Destination MAC address: 55-55-55-55-55-55 
+Source IP: 111.111.111.001 
+Destination IP: 133.333.333.003
+
+##### From right router to F: 
+Source MAC address: 88-88-88-88-88-88 
+Destination MAC address: 99-99-99-99-99-99
+Source IP: 111.111.111.001 
+Destination IP: 133.333.333.003
+
+### Ejercicio 12
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210352.png]]
+![[Pasted image 20221116210350.png]]
+```
+
+![[Pasted image 20221116234307.png]]
+### Ejercicio 13
+```ad-question
+title: Letra
+collapse: closed
+![[Pasted image 20221116210403.png]]
+```
+
+The IP addresses for those three computers (from left to right) in EE department are: 111.111.1.1, 111.111.1.2, 111.111.1.3. The subnet mask is 111.111.1/24. 
+
+The IP addresses for those three computers (from left to right) in CS department are: 111.111.2.1, 111.111.2.2, 111.111.2.3. The subnet mask is 111.111.2/24. 
+
+The router’s interface card that connects to port 1 can be configured to contain two subinterface IP addresses: 111.111.1.0 and 111.111.2.0. The first one is for the subnet of EE department, and the second one is for the subnet of CS department. Each IP address is associated with a VLAN ID. Suppose 111.111.1.0 is associated with VLAN 11, and 111.111.2.0 is associated with VLAN 12. This means that each frame that comes from subnet 111.111.1/24 will be added an 802.1q tag with VLAN ID 11, and each frame that comes from 111.111.2/24 will be added an 802.1q tag with VLAN ID 12. 
+
+Suppose that host A in EE department with IP address 111.111.1.1 would like to send an IP datagram to host B (111.111.2.1) in CS department. Host A first encapsulates the IP datagram (destined to 111.111.2.1) into a frame with a destination MAC address equal to the MAC address of the router’s interface card that connects to port 1 of the switch. Once the router receives the frame, then it passes it up to IP layer, which decides that the IP datagram should be forwarded to subnet 111.111.2/24 via sub-interface 111.111.2.0. Then the router encapsulates the IP datagram into a frame and sends it to port 1. Note that this frame has an 802.1q tag VLAN ID 12. Once the switch receives the frame port 1, it knows that this frame is destined to VLAN with ID 12, so the switch will send the frame to Host B which is in CS department. Once Host B receives this frame, it will remove the 802.1q tag.
