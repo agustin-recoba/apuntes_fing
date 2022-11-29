@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "fdb7670db68b0a5f",
+        "id": "83729a8b78273218",
         "type": "tabs",
         "children": [
           {
-            "id": "b8d9857a02e5d38d",
+            "id": "43bd51bf861c24ae",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Redes de computadoras/6. Capa de enlace/Dominios de colisión y de broadcast.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -44,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "HOL",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Redes de computadoras/6. Capa de enlace/Dominios de colisión y de broadcast.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Redes de computadoras/6. Capa de enlace/Dominios de colisión y de broadcast.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Redes de computadoras/6. Capa de enlace/Dominios de colisión y de broadcast.md"
+              }
             }
           }
         ]
@@ -128,17 +137,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "eed73acbec0572df",
+  "active": "999c6b81ca65be15",
   "lastOpenFiles": [
-    "Redes de computadoras/0. Otros/Practicos/Practico 5.md",
-    "Redes de computadoras/Excalidraw/Drawing 2022-10-26 17.49.49.excalidraw.md",
-    "Redes de computadoras/0. Otros/Practicos/Practico 6.md",
-    "Redes de computadoras/0. Otros/Practicos/Practico 7.md",
-    "Redes de computadoras/0. Otros/0. Otros.md",
-    "Redes de computadoras/0. Otros/Puertos bien conocidos.md",
-    "Redes de computadoras/Indice.md",
-    "Redes de computadoras/Indice-result.md",
-    "Redes de computadoras/Indice.mdresult.md",
-    "Redes de computadoras/1. Introduccion/Modelo de capas.md"
+    "Redes de computadoras/4. Capa de Red, plano de datos/IPv6.md",
+    "Redes de computadoras/6. Capa de enlace/Ethernet.md",
+    "Redes de computadoras/5. Capa de Red, plano de control/Algoritmos de enrutamiento.md",
+    "Redes de computadoras/5. Capa de Red, plano de control/Plano de Control.md",
+    "Redes de computadoras/0. Otros/Tips problemas prácticos.md",
+    "Redes de computadoras/3. Capa de Transporte/TCP, control de congestión.md",
+    "Redes de computadoras/6. Capa de enlace/Técnicas de detección y corrección de errores.md",
+    "Redes de computadoras/1. Introduccion/Retardo, pérdidas y “throughput” en redes de conmutación de paquetes.md",
+    "Redes de computadoras/4. Capa de Red, plano de datos/Capa de Red, intro y plano de datos.md",
+    "Redes de computadoras/6. Capa de enlace/Redes de área local virtuales  (VLAN).md"
   ]
 }

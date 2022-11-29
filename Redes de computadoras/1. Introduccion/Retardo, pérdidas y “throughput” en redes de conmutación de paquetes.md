@@ -1,12 +1,12 @@
 Un paquete puede llegar y encontrarse con que la cola está llena. Si no hay lugar para almacenar un paquete más, el router lo elimina, es decir, el paquete se pierde. El número de paquetes perdidos aumenta cuando la intensidad de tráfico aumenta.
 
-## Cola de Paquetes en el Buffer del Router 
+# Cola de Paquetes en el Buffer del Router 
 Los paquetes llegan con determinada tasa de arribo para ser enlazados, pero dicha tasa puede superar la capacidad de enlace, por lo que los paquetes deben esperar en una cola a que sea su turno.
 Dado que la cola (buffer) tiene capacidad finita, cuando un paquete entrante se encuentra con la cola completa, este se pierde. Sin embargo, es posible que el paquete perdido se retransmitido por el nodo anterior o por el End System fuente.
 
 ![[Pasted image 20221004232856.png|500]]
 
-## Tipos de retardo
+# Tipos de retardo
 
 ```ad-note
 title: Retardo de procesamiento ( $d_{proc}$ )
@@ -65,7 +65,7 @@ collapse: closed
 ```
 
 
-## Rendimiento (throughput)
+# Rendimiento (throughput)
 
 El **throughput** es la tasa (bits/unidad de tiempo) a la cual los bits son transferidos entre el emisor y el receptor. Puede ser instantáneo, que es la tasa a un punto dado del tiempo; o promedio, que es la tasa a lo largo de un período de tiempo.
 
@@ -76,3 +76,8 @@ title: Escenario de Internet
 
 Se tiene un end-end throughput por conexión: `min(Rc,Rs,R/10)`. En la práctica Rc o Rs generalmente es un cuello de botella.
 ```
+
+# Intensidad del tráfico
+
+Llamamos intensidad del tráfico al cociente: $$I=\frac{L \times a}{R}$$
+El producto $L \times a$ es la tasa de arribo de bits a la cola del nodo, mientras que R es la tasa de trasmisión, es decir, la velocidad con que el nodo vacía la cola. Por lo tanto si $La/R > 1$ la cola nunca se vacía y el retardo tenderá a infinito; en el otro extremo, si $La/R << 1$, la cola se vacía rápido y consecuentemente el retardo de cola es pequeño, como se ve en la figura.

@@ -102,76 +102,7 @@ Por ejemplo, supongamos que la dirección de destino del paquete es 11001000 000
 
 En caso de que haya más de un match, se utiliza la regla del prefijo más largo emparejado, que encuentra la entrada más larga que empareja en la tabla y envía el paquete por la interfaz asociada con el prefijo más largo emparejado.
 
-## El interior de un Router
-
-Un router tiene dos funciones principales: 
-- Correr el algoritmo de ruteo, o el protocolo (RIP, OSPF, BGP).
-- Hacer el forward de los datagramas desde el enlace entrante hacia el enlace saliente.
-
-![[Pasted image 20221117125539.png|400]]
-
-### Componentes de un router:
-- **Puertos de entrada:**
-	Realiza las funciones de la capa física consistentes en la terminación de un enlace físico de entrada a un router. Realiza las funciones de la capa de enlace de datos necesarias para inter operar con las funciones de la capa de enlace de datos en el lado remoto del enlace de entrada. También realiza una función de búsqueda y reenvío, un paquete reenviado dentro del entramado de conmutación del router emerge en el puerto de salida apropiado.
-- **Entramado de conmutación:** 
-	Conecta los puertos de entrada del router a sus puertos de salida. Dentro del router.
-- **Puertos de salida:** 
-	Almacena los paquetes que le han sido reenviados a través del entramado de conmutación y los transmite al enlace de salida. Así, el puerto de salida lleva a cabo la función inversa de la capa física y de la capa de enlace de datos que el puerto de entrada.
-- **Procesador de enrutamiento:** 
-	Ejecuta los protocolos de enrutamiento.
-
-#### Puertos de entrada
-
-![[Pasted image 20221117130759.png]]
-
-La elección del puerto de salida se lleva a cabo utilizando la información almacenada en la tabla de reenvío. Aunque el procesador de enrutamiento calcula la tabla de reenvío, suele almacenarse una copia de la misma en cada puerto de entrada. La decisión de reenvío puede **tomarse localmente** en cada puerto de entrada sin invocar al procesador de enrutamiento, lo cual evita la formación de cuellos de botella en el procesamiento de reenvíos en un único punto dentro del router.
-
-En los routers con capacidades de procesamiento limitadas en el puerto de entrada, este puede simplemente reenviar el paquete al procesador de enrutamiento centralizado, el cual entonces hará una búsqueda en la tabla de reenvío y transmite el paquete al puerto de salida apropiado.
-
-Debido a la necesidad de operar a velocidades de enlace altas, no se puede buscar linealmente en la tabla de reenvío la correspondencia, sino que se almacena las entradas en la tabla de reenvío en una estructura de árbol. Cada nivel del árbol se interpreta como el correspondiente a un bit de la dirección de destino.
-Tiempo de búsqueda de 2^32 para direcciones IP, no suficientemente rápido.
-
-Otra técnica: memorias direccionables por contenido (**CAM, Content Addressable Memory**), las cuales permiten acceder a la memoria mediante una dirección IP de 32 bits, devolviendo el contenido de la correspondiente entrada de la tabla de reenvío en un tiempo prácticamente constante.
-
-Otra técnica: utilizar una caché para almacenar las entradas accedidas recientemente.
-Una vez determinado el puerto de salida de un paquete, es reenviado al entramado de conmutación, pero puede ser bloqueada su entrada si está siendo usado por otros paquetes. Por lo que queda almacenado en la cola de entrada del puerto de entrada.
-
-#### Entramado de Conmutación
-Se encargan de transferir el paquete desde el buffer de entrada al correspondiente buffer de salida. La tasa de switching es la tasa a la cual los paquetes pueden ser transferidos desde las entradas hacia las salidas. A veces se mida como un múltiplo de la tasa lineal de entrada/salida. 
-Si tenemos N entradas, se desea una tasa N veces la tasa lineal. 
-Hay tres tipos de Switching Fabrics:
-
-- Vía memoria: 
-	Utilizado en los routers de la primera generación. Son computadoras tradicionales con Switching bajo control directo de la CPU. El paquete es copiado a la memoria del sistema. La velocidad está limitada por el ancho de banda de memoria (2 cruces de bus por datagrama).
-	![[Pasted image 20221117131218.png|400]]
-- Conmutación vía bus: 
-	Los datagramas van desde la memoria del puerto de entrada a la memoria del puerto de salida mediante un bus compartido, por lo que un solo paquete puede ser transferido al mismo tiempo por ese bus. Un paquete que llega y encuentra el bus ocupado, es bloqueado de pasar por la switiching fabric, y encolado en el puerto de entrada. 
-	Dado que un único paquete puede pasar a la vez, la velocidad de switching está limitada por el ancho de banda del bus.
-	![[Pasted image 20221117131318.png|300]]
-- Conmutación vía una red de interconexión: 
-	Utilizado para superar las limitaciones de ancho de banda del bus. Redes secretarias, crossbar, otras redes de interconexión inicialmente desarrolladas para conectar procesadores en multiprocesadores. 
-	Diseño avanzado: fragmentación de los datagramas en celdas de tamaño fijo, se hace el switch de las celdas a través de la fábrica.
-	![[Pasted image 20221117131407.png|250]]
-
-#### Puertos de salida
-El procesamiento de puerto de salida toma los paquetes que han sido almacenados en la memoria del puerto de salida y los transmite a través del enlace de salida. Se requiere de buffering para el caso en que los datagramas arriben desde la fábrica más rápido que la tasa de transmisión.
-La disciplina de planificación escoge entre los datagramas encolados para la transmisión.
-![[Pasted image 20221117131443.png|400]]
-
-#### Colas
-El buffering ocurre cuando la tasa de llegada por switch excede la velocidad de la línea de salida. Esto puede generar el encolado de paquetes (retraso) e incluso la pérdida debido a una sobrecarga del buffer de salida.
-
-##### En puertos de salida:
-El buffering ocurre cuando la tasa de llegada por switch excede la velocidad de la línea de salida. Esto puede generar el encolado de paquetes (retraso) e incluso la pérdida debido a una sobrecarga del buffer de salida.
-
-###### ¿Cuánto buffer es necesario?
-La regla de oro de RFC 3439 dice que el buffering promedio es igual al típico RTT (por ejemplo, 250msec) veces la capacidad del enlace C. Por ejemplo, si el enlace C = 10 Gbps, el buffer es de 2.5Gbits
-Recomendaciones recientes con N flujos, el buffering equivale a $\frac{RTT \times C}{\sqrt{N}}$
-
-##### En puertos de entrada:
-Si la Switch Fabric es más lenta que los puertos de entrada combinados, entonces el encolado puede ocurrir en los puertos de entrada. Se pueden producir retrasos de cola y pérdidas debido a la sobrecarga de buffers.
-**Head of The Line Blocking (HOL)**: los datagramas encolados al frente de la cola evitan que otros de la cola puedan ser enviados.
-![[Pasted image 20221117132121.png|400]]
+## [[El interior de un Router]]
 
 ## Protocolo de Internet (IP)
 Como vemos en la figura a continuación, la red tiene 3 componentes principales. En primer lugar, el protocolo IP. En segundo lugar, los protocolos de ruteo, que determinan el camino que debe seguir el paquete para llegar desde la fuente hacia el destino, completando las tablas de Forwarding. Y el componente final es la facilidad de reportar errores en los datagramas y responder con información de la capa de red, a través del protocolo ICMP.
@@ -200,6 +131,13 @@ title: En resumen
 collapse: closed
 ![[Pasted image 20221117132530.png]]
 ```
+
+```ad-question
+title: ¿Cómo sabe la capa de red (IP) de ese host que debería pasar el segmento a TCP en lugar de a UDP o cualquier otro protocolo? 
+collapse: closed
+La capa de red le entrega el payload del datagrama a el protocolo indicado por el campo de ocho bits “protocol” del encabezado. Los valores de ese campo están estandarizados y cada uno de ellos indica un protocolo de capa superior determinado. Si en payload del datagrama es un segmento TCP, el campo protocol tiene el valor 6.
+```
+
 
 ### Fragmentación (y reensamblado)
 
@@ -355,94 +293,9 @@ collapse: closed
 ```
 
 
-### IPv6
+# [[IPv6]]
 
-Para responder a la necesidad de un espacio de direcciones IP más grande, se desarrolló un nuevo protocolo IP, el protocolo IPv6. Una motivación adicional fue hacer un formato del cabezal que ayude a acelerar el procesamiento/forwarding del paquete.
-Formato del datagrama IPv6: cabezal de largo fijo de 40 bytes y no se permite fragmentación.
-- **Capacidades ampliadas de direccionamiento:** IPv6 aumenta el tamaño de la dirección IP de 32 a 128 bits.
-- **Una cabecera de 40 bytes simplificada:** Permite un procesamiento más rápido del datagrama.
-- Prioridad y etiquetado del flujo: Permite etiquetar los paquetes que pertenecen a determinados flujos para que los que el emisor solicita un tratamiento especial, como un servicio en tiempo real o una calidad servicio no predeterminados.
 
-#### Encabezado IPv6
-![[Pasted image 20221118001419.png]]
-
-En la lista siguiente se describe la función de cada campo de encabezado.
-- **Versión**: número de versión de 4 bits del protocolo de Internet = 6.
-- **Clase de tráfico**: campo de clase de tráfico de 8 bits.
-- **Etiqueta de flujo**: campo de 20 bits.
-- **Tamaño de carga útil**: entero sin signo de 16 bits, que representa el resto del paquete que sigue al encabezado de IPv6, en octetos.
-- **Encabezado siguiente**: selector de 8 bits. Identifica el tipo de encabezado que va inmediatamente después del encabezado de IPv6. Emplea los mismos valores que el campo de protocolo IPv4.
-- **Límite de salto**: entero sin signo de 8 bits. Disminuye en uno cada nodo que reenvía el paquete. El paquete se desecha si el límite de salto se reduce a cero
-- **Dirección de origen**: 128 bits. Dirección del remitente inicial del paquete. 
-- **Dirección de destino**: 128 bits. Dirección del destinatario previsto del paquete. El destinatario previsto no es necesariamente el destinatario si existe un encabezado de enrutamiento opcional.
-
-Varios campos que aparecían en IPv4 ya no aparecen en IPv6, como, por ejemplo:
-- **Fragmentación/Reensamblado**: IPv6 solamente implementa fragmentación end-to-end, no en los routers intermedios; los datagramas cuya MTU exceda las posibilidades de un medio a lo largo del camino, serán descartados. Los datos necesarios para re-ensamblar el paquete ahora se incluyen en Next Header con valor 44.
-- **Suma de comprobación de cabecera**: Esta información la consideraron redundante, ya que este control se realiza en los protocolos TCP y UDP.
-- **Opciones**: permitido, pero fuera del header, indicado por el campo “Next Header”
-
-#### Cabezales de extensión
-- Las “opciones” son manejadas a través de extension headers
-- Los headers son “enganchados” utilizando el campo Next Header
-- Los valores son inter operables con los valores utilizados por el protocolo IPv4 (i.e. TCP = 6, UDP = 17 , etc.)
-- Extension headers:
-	- Hop-by-hop header (NH=0)
-	- Routing header (NH=43)
-	- Fragment header (NH=44)
-	- Authentication header (NH=51)
-	- Encapsulated security payload (NH=50
-	- Destination option (NH=60)
-
-```ad-example
-title: Ejemplo
-collapse: closed
-![[Pasted image 20221118001800.png]]
-```
-
-#### Tipos de direcciones IPv6
-- 128 bits.
-- Tres tipos diferentes (además de rangos reservados):
-	- **Unicast** Identifican exactamente una interfaz.
-	- **Multicast** Identifican a un grupo de interfaces. Un paquete enviado a una dirección de multicast es entregado a todos los miembros del grupo.
-	- **Anycast** Un paquete enviado a una dirección anycast es entregado al miembro “más próximo” del grupo.
-
-#### Direcciones IPv6 especiales (RFC 5156)
-- **Unspecified address**: puede ser utilizada únicamente por un nodo que aún no tiene una dirección, y su valor es “0:0:0:0:0:0:0:0”, pudiendo ser abreviada -aún más- como “::” o “::/128”
-- **Loopback address**: utilizada -como en IPv4- para enviar datagramas IPv6 al propio host. El valor de la dirección es el “0:0:0:0:0:0:0:1” se abrevia como “::1” o “::1/128”
-- **Default route**: requerida para especificar el ruteo por defecto en las tablas de ruteo. Se representa por “0:0:0:0:0:0:0:0/0” y se abrevia como “::/0”
-
-### Transición de IPv4 a IPv6
-
-No se puede hacer una actualización de todos los routers simultáneamente, o sea hacer un “dia D”.
-
-La forma más directa es la **pila dual** (dual stack), donde todos los nodos de la red tengan una implementación para IPV4 e IPV6.
-
-Otra opción es la **tunelización,** consiste en tomar el datagrama IPv6 completo como el campo de datos de un datagrama IPv4, el cual se envía normalmente por una red IPv4, permitiendo recuperar el datagrama IPv6 original en el receptor. El concepto se puede aplicar a múltiples protocolos “tunelizados” por otros.
-
-Una última opción sería que se haga traducción entre IPv6 y IPv4 cuando sea necesario.
-
-#### Dual Stack
-IPv6 puede ser agregado a cualquier dispositivo que hable IPv4. 
-Los protocolos son multiplexados y de-multiplexados sobre los mismos enlaces (i.e. IEEE 802 family) utilizando diferentes números de protocolo en una misma posición del frame.
-Misma técnica a la utilizada para mezclar IPX, Appletalk, TCP, etc. 
-Es un problema de la aplicación elegir cuál protocolo utilizar (i.e. si una respuesta a una consulta DNS contiene registros AAAA, entonces preferir TCP sobre IPv6 como transporte).
-Esto habilita una transición paulatina, permitiendo a los desarrolladores actualizar gradualmente sus aplicaciones. 
-Lenguajes como Java permiten la utilización de objetos de tipo InetAddress, generalizaciones de Inet4Address e Inet6Address, haciendo su manejo independiente del protocolo.
-
-#### Tunelización
-Utilizamos el tunneling para “ocultar” tráfico IPv6 dentro de tráfico IPv4. De esta forma podemos cruzar secciones de Internet que nos son IPv6 Ready aún.
-Los paquetes IPv6 se encapsulan en paquetes IPv4, que pueden tratarse como tráfico IPv4 standard. 
-Conceptualmente, puede pensarse como:
-- IPv6 utilizando IPv4 como una capa de enlace virtual
-- Una VPN IPv6 configurada sobre la Internet IPv4
-
-![[Pasted image 20221118100642.png]]
-
-Hay distintas formas de poner IPv6 en IPv4:
-
-![[Pasted image 20221118100657.png]]
-
-El concepto se puede aplicar a múltiples protocolos “tunelizados” por otros. El mecanismo más simple es el descripto, normalmente denominado **6in4**; el mecanismo **6to4** es similar pero permite usar servidores de pasarela o relays. Entre otras posibilidades, se puede implementar la tunelización con transporte UDP, denominado Teredo; en este caso se facilita la tunelización a través de un router NAT.
 
 
 

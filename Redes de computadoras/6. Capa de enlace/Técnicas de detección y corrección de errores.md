@@ -2,6 +2,13 @@ Notamos EDC a los Bits de detección y corrección de errores (redundancia), y D
 
 ![[Pasted image 20221116122946.png|500]]
 
+```ad-question
+title: Si todos los enlaces de Internet tuvieran que proporcionar un servicio de entrega de tramas fiable, ¿sería redundante el servicio de entrega fiable de TCP?
+collapse: closed
+No, no sería redundante ya que se pueden perder paquetes por congestión en las colas de los routers, o pueden llegar en desorden a causa de diversidad de caminos en un flujo.
+```
+
+
 #### Comprobaciones de paridad
 
 En un esquema de paridad par, el emisor simplemente incluye un bit adicional y selecciona su valor de modo que el número total de 1s en los d+1 bits (la info. original más el bit de paridad) sea par. El receptor solamente necesita contar el número de 1s de los d+1 bits recibidos. 

@@ -14,3 +14,13 @@ Los dominios broadcast o de difusión están delimitados por routers.
 - Los **switches** o conmutadores segmentan los dominios de colisión, pero expanden el dominio de difusión. Es decir, el alcance de un mensaje broadcast no es limitado por un switch (No obstante, sí limitan su alcance en el caso de las VLAN).
 - Los **routers** también segmentan los dominios de colisión, pero además también lo hacen con los de difusión (un mensaje broadcast es limitado por el router y no sale de la LAN en la que se encuentra).
 
+```ad-info
+title: Problemas con dominios muy grandes
+En una red moderna, generalmente los dispositivos de red se conectan a switches, y por lo tanto el dominio de colisiones no coincide con el dominio de broadcast; de no ser así, la cantidad de hosts provocaría que las colisiones hicieran casi imposible de utilizar la red. 
+
+De todas formas, con switches, todos los mensajes de broadcast igualmente se difunden en toda la subred y afectan a todos los equipos, demandando tiempo de CPU para analizar paquetes que mayoritariamente serán descartados porque son dirigidos hacia otro dispositivo. Esta carga, normalmente atendida por el sistema operativo y no por la tarjeta de red en PCs de escritorio, interrumpe constantemente el procesamiento, afecta la localidad de la ejecución y quita capacidad de procesamiento “productiva” a los hosts. 
+
+Otro problema que presenta una red con tantos dispositivos está asociado a las tablas de ARP que deben mantener los hosts, así como los mapeos de direcciones MAC a puertos en los switches. Tablas tan “abultadas” representan overhead en las transmisiones. 
+
+Otro aspecto importante puede asociarse a la seguridad, pues, cualquier error en la configuración de la red, puede tener impacto en todos los equipos (p.e. un equipo que se configure equívocamente con la dirección del router). Cada vez que haya que resolver un problema, la causa puede provenir de la totalidad de la red, y no de sectores.
+```
