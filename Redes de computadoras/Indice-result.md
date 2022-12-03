@@ -4,7 +4,7 @@
 [[#Capa de Red, intro y plano de datos]]
 [[#Plano de Control]]
 [[#6. Capa de Enlace]]
-[[#99. Otros]]
+[[#99. Otros]]<div style="page-break-after: always;"></div>
 
 # 1. Introducción a las Redes de Computadoras 
 
@@ -16,7 +16,7 @@
 - [[#traceroute]]
 
 
-
+<div style="page-break-after: always;"></div>
 
 ## Internet 
 
@@ -68,7 +68,7 @@ Las **Redes de acceso** hacen referencia a aquella parte de la red de comunicaci
 
 ```ad-info
 title: Diferencia entre fibra óptica y UTP
-collapse: closed
+
 ![[Pasted image 20221004225014.png]]
 ```
 
@@ -77,7 +77,7 @@ En cada par transmisor-receptor, los bits se envían a lo largo del medio físic
 
 ```ad-example
 title: Ejemplo de medios guiados
-collapse: closed
+
 - Cable de cobre par trenzado (UTP) es el medio más barato y usado en las redes telefónicas.
 - Cable coaxial consta de dos conductores concéntricos, uno central, llamado núcleo, encargado de llevar la información, y uno exterior, de aspecto tubular, llamado malla, blindaje o trenza.
 - Cable de fibra óptica es un medio flexible y de poco espesor que conduce pulsos de luz, representando cada pulso un bit. Es inmune a las interferencias y transmite a velocidades muy altas.
@@ -85,7 +85,7 @@ collapse: closed
 
 ```ad-example
 title: Ejemplos de medios no guiados
-collapse: closed
+
 - Canales de radio terrestres: señales de espectro electromagnético. No requiere la instalación de cables físicos. Puede atravesar las paredes, proporciona conectividad móvil y puede enviar señal a grandes distancias.
 - Canales de radio vía satélite.
 ```
@@ -102,7 +102,7 @@ En el Internet público, hay diferentes redes de acceso que se conectan al resto
 
 ```ad-tip
 title: Tier 1
-collapse: open
+
 En el extremo más alto de la jerarquía hay un número relativamente pequeño de los llamados ISP de nivel 1 (Tier 1). Un ISP de nivel 1 es lo mismo que cualquier red: tiene enlaces y routers, y está conectado a otras redes. Sus routers deben ser capaces de transmitir una cantidad muy elevada de datos al mismo tiempo. Los ISP de nivel 1 (Tier 1) están caracterizados por:
 - Estar conectados directamente a cada uno de los demás ISP de nivel 1. 
 - Estar conectados a un gran número de ISP de nivel 2 (Tier 2) y otras redes de usuario. 
@@ -114,7 +114,7 @@ Además, en ese nivel están también los grandes distribuidores de contenido (G
 
 ```ad-tip
 title: Tier 2
-collapse: open
+
 En otro nivel de jerarquía se encuentran los tier 2, que son proveedores más pequeños, en general regionales, los cuales se conectan a uno o más tier 1. Cada tier 1 tiene múltiples tier 2, los cuales le pagan por sus servicios. Los tier 2 se conectan directamente con otros, evitando los tier 1, o con un IXP (Internet Exchange Point).
 
 ![[Pasted image 20221004232019.png|600]]
@@ -122,7 +122,7 @@ En otro nivel de jerarquía se encuentran los tier 2, que son proveedores más p
 
 ```ad-tip
 title: Tier 3
-collapse: open
+
 El último paso del acceso a la red es a través de los tier 3, o ISP local, los cuales son clientes de las redes de tier 1 y tier 2. Son los más cercanos a los End Systems.
 
 ![[Pasted image 20221004232113.png|600]]
@@ -130,12 +130,12 @@ El último paso del acceso a la red es a través de los tier 3, o ISP local, los
 
 ```ad-tip
 title: Cliente
-collapse: open
+
 Un paquete atraviesa múltiples redes desde el host fuente hasta el host destino.
 
 ![[Pasted image 20221004232206.png]]
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## Conmutacion de circuitos 
 
@@ -164,7 +164,7 @@ El ancho de banda disponible se divide entre el número de usuarios y tenemos do
 - Si la comunicación es a ráfagas en vez de continua, o entre una gran variedad de estaciones, es ineficiente. 
 - Retraso en el inicio de la comunicación 
 - El camino físico es siempre el mismo, por lo que no se utilizan los posibles caminos alternativos que puedan surgir que sean más eficientes. 
-- Se requiere un tiempo para realizar la conexión, lo que conlleva un retraso en la transmisión de la información.
+- Se requiere un tiempo para realizar la conexión, lo que conlleva un retraso en la transmisión de la información.<div style="page-break-after: always;"></div>
 
 ## Conmutacion de paquetes 
 
@@ -181,7 +181,7 @@ La compartición de recursos bajo petición, se denomina **multiplexación estad
 ![[Pasted image 20221004231554.png|400]]
 
 Secuencia de paquetes A y B no tienen un patrón de tiempo fijo, los anchos de banda son compartidos a demanda. 
-En lugar de pre asignar las ranuras temporales a un número fijo de comunicaciones, detecta las comunicaciones activas y reparte el canal entre todas ellas. De esta forma se evita que una comunicación inactiva malgaste ancho de banda. Este tipo de multiplexación se utiliza en líneas frame relay.
+En lugar de pre asignar las ranuras temporales a un número fijo de comunicaciones, detecta las comunicaciones activas y reparte el canal entre todas ellas. De esta forma se evita que una comunicación inactiva malgaste ancho de banda. Este tipo de multiplexación se utiliza en líneas frame relay.<div style="page-break-after: always;"></div>
 
 ## Retardo, pérdidas y “throughput” en redes de conmutación de paquetes 
 
@@ -197,21 +197,21 @@ Dado que la cola (buffer) tiene capacidad finita, cuando un paquete entrante se 
 
 ```ad-note
 title: Retardo de procesamiento ( $d_{proc}$ )
-collapse: closed
+
 Es el tiempo requerido para examinar la cabecera del paquete y determinar el enlace de salida, por eso depende del tamaño del cabezal. También incluye el tiempo necesario para comprobar los errores de bits (chequeo de paridad CRC).
 Orden: _microsegundos_.
 ```
 
 ``````ad-note
 title: Retardo de cola ($d_{cola}$)
-collapse: closed
+
 
 Generado por paquetes que esperan en la cola para ser transmitidos en un enlace, depende del número de paquetes que hayan llegado antes a la cola, del perfil del tráfico generado (si tiene ráfagas o no) y de la presencia de otros flujos que compartan las mismas colas. Por eso se dice que no es constante.
 Orden: microsegundos a milisegundos.
 
 ```ad-question
 title: ¿De qué depende que en algunos casos el retardo de cola sea grande y que en otros sea insignificante?
-collapse: closed
+
 
 La respuesta a esta pregunta depende de la velocidad a la que llega el tráfico a la cola, de la velocidad de transmisión del enlace y de la naturaleza del tráfico entrante, es decir, de si el tráfico llega periódicamente o en ráfagas.
 ```
@@ -222,7 +222,7 @@ La respuesta a esta pregunta depende de la velocidad a la que llega el tráfico 
 
 ```ad-note
 title: Retardo de transmisión ( $d_{trans}$ )
-collapse: closed
+
 Tiempo requerido para insertar en el enlace los bits de un paquete, a la velocidad de la interfaz de cada nodo.
 Orden: _microsegundos a milisegundos_.
 Sea:
@@ -234,7 +234,7 @@ Entonces:
 
 ```ad-note
 title: Retardo de propagación ( $d_{prop}$ )
-collapse: closed
+
 Es el tiempo “de viaje” de un bit entre dos nodos; depende del medio físico (fibra, 	cobre, etc) y de la distancia. 
 Orden: _milisegundos_.
 Sea: 
@@ -246,7 +246,7 @@ Entonces:
 
 ```ad-summary
 title: Resumen
-collapse: closed
+
 
 ![[Pasted image 20221004233001.png]]
 ```
@@ -267,7 +267,7 @@ Se tiene un end-end throughput por conexión: `min(Rc,Rs,R/10)`. En la práctica
 ### Intensidad del tráfico
 
 Llamamos intensidad del tráfico al cociente: $$I=\frac{L \times a}{R}$$
-El producto $L \times a$ es la tasa de arribo de bits a la cola del nodo, mientras que R es la tasa de trasmisión, es decir, la velocidad con que el nodo vacía la cola. Por lo tanto si $La/R > 1$ la cola nunca se vacía y el retardo tenderá a infinito; en el otro extremo, si $La/R << 1$, la cola se vacía rápido y consecuentemente el retardo de cola es pequeño, como se ve en la figura.
+El producto $L \times a$ es la tasa de arribo de bits a la cola del nodo, mientras que R es la tasa de trasmisión, es decir, la velocidad con que el nodo vacía la cola. Por lo tanto si $La/R > 1$ la cola nunca se vacía y el retardo tenderá a infinito; en el otro extremo, si $La/R << 1$, la cola se vacía rápido y consecuentemente el retardo de cola es pequeño, como se ve en la figura.<div style="page-break-after: always;"></div>
 
 ## Modelo de capas 
 
@@ -311,7 +311,7 @@ El reenvío hace referencia entonces a la acción local que realiza **un** route
 Transfiere los datos entre elementos de red vecinos (Ethernet, 802.111 (Wifi), PPP).
 
 ##### Física: 
-Bits en el cable.
+Bits en el cable.<div style="page-break-after: always;"></div>
 
 ## traceroute 
 
@@ -335,14 +335,14 @@ La dirección IP origen es la del nodo que genera el mensaje ICMP (payload del p
 
 El payload de los mensajes ICMP de error es una parte del paquete IP que lo originó (encabezado y algunos bits de su payload) 
 
-El traceroute basado en UDP se implementa a partir de enviar mensajes UDP dirigidos a puertos donde la probabilidad de respuesta es muy baja. En todos los nodos intermedios el camino se va construyendo a partir de mensajes “time exceeded”. Al llegar al destino, se recibirá un mensaje ICMP de error “port unreachable”.
+El traceroute basado en UDP se implementa a partir de enviar mensajes UDP dirigidos a puertos donde la probabilidad de respuesta es muy baja. En todos los nodos intermedios el camino se va construyendo a partir de mensajes “time exceeded”. Al llegar al destino, se recibirá un mensaje ICMP de error “port unreachable”.<div style="page-break-after: always;"></div>
 
 # 2. Capa de Aplicación 
 
 - [[#Arquitecturas]]
 - [[#Procesos]]
 - [[#Servicios de transporte]]
-- [[#Protocolos]]
+- [[#Protocolos]]<div style="page-break-after: always;"></div>
 
 ## Arquitecturas 
 
@@ -361,7 +361,7 @@ Existe una mínima (o ninguna) dependencia de una infraestructura de servidores 
 
 ```ad-example
 title: Retos importantes
-collapse: closed
+
 
 - **Orientadas al ISP**: la mayoría de los ISP están dimensionados para soportar más tráfico de descarga que de carga. Pero las aplicaciones P2P desplazan	el tráfico de carga de los servidores a los ISP residenciales, ejerciendo gran	presión sobre ellos.
 - **Seguridad**
@@ -371,7 +371,7 @@ collapse: closed
 ```
 
 #### Arquitectura híbrida
-Consiste en utilizar tanto una arquitectura P2P como una cliente-servidor. Ejemplos de esto son Skype, que utiliza P2P para la comunicación por voz, permitiendo una comunicación directa entre los usuarios sin pasar por el servidor, y además el servidor centralizado para encontrar la dirección a la cual comunicar. Y además la mensajería instantánea, que permite el chat entre dos usuarios mediante P2P, teniendo además un servicio centralizado donde se almacena la presencia/localización del cliente (el usuario registra su IP cuando se conecta y luego otro usuario se contacta con el servidor para encontrar la IP para comunicarse).
+Consiste en utilizar tanto una arquitectura P2P como una cliente-servidor. Ejemplos de esto son Skype, que utiliza P2P para la comunicación por voz, permitiendo una comunicación directa entre los usuarios sin pasar por el servidor, y además el servidor centralizado para encontrar la dirección a la cual comunicar. Y además la mensajería instantánea, que permite el chat entre dos usuarios mediante P2P, teniendo además un servicio centralizado donde se almacena la presencia/localización del cliente (el usuario registra su IP cuando se conecta y luego otro usuario se contacta con el servidor para encontrar la IP para comunicarse).<div style="page-break-after: always;"></div>
 
 ## Procesos 
 
@@ -393,7 +393,7 @@ En la capa de transporte, los únicos controles que se hacen desde los sockets s
 1. la elección del protocolo de transporte
 2. la habilidad de corregir algunos parámetros
 
-![[Pasted image 20221005140546.png|300]]
+![[Pasted image 20221005140546.png|300]]<div style="page-break-after: always;"></div>
 
 ## Servicios de transporte 
 
@@ -430,7 +430,7 @@ Este modelo de servicio ofrece un servicio orientado a conexión y un servicio d
 ##### Servicios UDP
 UDP es un protocolo de transporte ligero simple que proporciona unos servicios mínimos y no está orientado a la conexión, por lo que no tiene lugar un procedimiento de negociación antes de que los dos procesos comiencen a comunicarse. 
 UDP proporciona un servicio de transferencia de datos no fiable. Tampoco incluye un mecanismo de congestión.
-Es decir, UDP ni siquiera garantiza que el mensaje vaya a llegar a su destino, e incluso pueden llegar desordenados.
+Es decir, UDP ni siquiera garantiza que el mensaje vaya a llegar a su destino, e incluso pueden llegar desordenados.<div style="page-break-after: always;"></div>
 
 ## Protocolos 
 
@@ -449,7 +449,7 @@ Tenemos dos tipos de protocolo, los de Dominio Público (definidos en RFCs, perm
 - [[#FTP]]
 - [[#P2P y Bitorrent]]
 
-
+<div style="page-break-after: always;"></div>
 
 ### La Web y HTTP 
 
@@ -475,7 +475,7 @@ Los problemas del HTTP no persistente son:
 
 ```ad-faq
 title: Nota
-collapse: closed
+
 
 El header "Connection" con valor "keep-alive" indica que la conexión se debe manetener abierta (de ser posible).
 ```
@@ -489,14 +489,14 @@ El header "Connection" con valor "keep-alive" indica que la conexión se debe ma
 
 ```ad-important
 title: GET
-collapse: closed
+
 
 La inmensa mayoría de los mensajes de solicitud HTTP utilizan el método GET. Este método se emplea cuando el navegador solicita un objeto, identificándose dicho objeto en el campo URL. 
 ```
 
 ```ad-note
 title: POST
-collapse: closed
+
 
 A menudo, un cliente HTTP utiliza el método POST cuando el usuario completa un formulario; por ejemplo, cuando especifica términos para realizar una búsqueda utilizando un motor de búsqueda. Con un mensaje POST, el usuario solicita también una página web al servidor, pero el contenido concreto de la misma dependerá de lo que el usuario haya escrito en los campos del formulario. Si el valor del campo de método es POST, entonces el cuerpo de la entidad contendrá lo que el usuario haya introducido en los campos del formulario. 
 No podemos dejar de mencionar que una solicitud generada con un formulario no necesariamente utiliza el método POST. En su lugar, a menudo los formularios HTML emplean el método GET e incluyen los datos de entrada (especificados en los campos del formulario) en el URL solicitado.
@@ -504,21 +504,21 @@ No podemos dejar de mencionar que una solicitud generada con un formulario no ne
 
 ```ad-important
 title: HEAD
-collapse: closed
+
 
 El método HEAD es similar al método GET. Cuando un servidor recibe una solicitud con el método HEAD, responde con un mensaje HTTP, pero excluye el objeto solicitado. Los desarrolladores de aplicaciones a menudo utilizan el método HEAD para labores de depuración.
 ```
 
 ```ad-note
 title: PUT
-collapse: closed
+
 
 El método PUT suele utilizarse junto con herramientas de publicación web. Esto permite a un usuario cargar un objeto en una ruta específica (directorio) en un servidor web determinado. Las aplicaciones que necesitan cargar objetos en servidores web también emplean el método PUT.
 ```
 
 ```ad-important
 title: DELETE
-collapse: closed
+
 
 El método DELETE permite a un usuario o a una aplicación borrar un objeto de un servidor web.
 ```
@@ -574,7 +574,7 @@ Una caché es a la vez un servidor y un cliente. Habitualmente es un ISP quién 
 
 ```ad-summary
 title: GET condicional
-collapse: open
+
 El objetivo es no enviar el objeto si la cache tiene una versión “cacheada” actualizada. La cache especifica la fecha de la copia almacenada en una solicitud HTTP: **If-Modified-Since: 'date'**. 
 
 La respuesta del servidor no contiene un objeto si la copia cacheada está actualizada:
@@ -584,7 +584,7 @@ La respuesta del servidor no contiene un objeto si la copia cacheada está actua
 ![[Pasted image 20221005142705.png|400]]
 ```
 
-
+<div style="page-break-after: always;"></div>
 
 ### DNS 
 
@@ -655,7 +655,7 @@ Encabezado:
 	- Recursión disponible 
 	- Respuesta es autoritativa
 
-![[Pasted image 20221006184516.png|300]]
+![[Pasted image 20221006184516.png|300]]<div style="page-break-after: always;"></div>
 
 ### Correo electronico 
 
@@ -686,7 +686,7 @@ Desde la dirección guri@asado.uy se quiere enviar un correo electrónico a vain
 
 ```ad-info
 title: Comparación con HTTP
-collapse: open
+
 ###### Similitudes con HTTP
 - Ambos se emplean para transferir archivos de un host a otro
 - Para transferir los archivos, ambos emplean conexiones persistentes
@@ -729,7 +729,7 @@ POP3 no proporciona ningún medio al usuario para crear carpetas remotas y asign
 
 ##### IMAP
 
-Tiene más funcionalidades que POP3, por lo que aumenta considerablemente su complejidad, haciendo que la implementación tanto del lado del cliente como del servidor sean significativamente más complejas. Los mensajes en IMAP se mantienen en un único lugar, el servidor, el cual **asocia cada mensaje a una carpeta**, proveyendo a los usuarios con comandos que permiten crear carpetas y mover mensajes entre ellas. A diferencia de POP3, IMAP **mantiene el estado de los usuarios durante las sesiones**, ya sea nombre de las carpetas o mapeados entre ids de mensajes y nombres de carpetas. A su vez, IMAP permite a los user agent acceder componentes de los mensajes, por ejemplo, obtener solo el *header*.
+Tiene más funcionalidades que POP3, por lo que aumenta considerablemente su complejidad, haciendo que la implementación tanto del lado del cliente como del servidor sean significativamente más complejas. Los mensajes en IMAP se mantienen en un único lugar, el servidor, el cual **asocia cada mensaje a una carpeta**, proveyendo a los usuarios con comandos que permiten crear carpetas y mover mensajes entre ellas. A diferencia de POP3, IMAP **mantiene el estado de los usuarios durante las sesiones**, ya sea nombre de las carpetas o mapeados entre ids de mensajes y nombres de carpetas. A su vez, IMAP permite a los user agent acceder componentes de los mensajes, por ejemplo, obtener solo el *header*.<div style="page-break-after: always;"></div>
 
 ### FTP 
 
@@ -761,7 +761,7 @@ Se envían a través de la conexión de control de formato ASCII de 7 bits.
 title: Señalizacion in-band y out-of-band
 HTTP utiliza el mismo canal para control y datos, por lo que es del tipo inband. FTP utiliza canales separados para datos y control, por lo que es del tipo out-of-band.
 ```
-
+<div style="page-break-after: always;"></div>
 
 ### P2P y Bitorrent 
 
@@ -798,7 +798,7 @@ Para determinar a qué solicitudes debe un peer responder, se le da prioridad a 
 
 Cada 30 segundos cada peer elegirá aleatoriamente un nuevo socio de intercambio (peer optimistically **unchoke**) e iniciará las transacciones con él. Si los dos pares están satisfechos con el intercambio, se incluirán en sus respectivas listas de los cuatro principales y continuarán realizando intercambios hasta que uno de los pares encuentre un socio mejor.
 Este mecanismo se denomina **_tit-for-that._**
-
+<div style="page-break-after: always;"></div>
 
 # 3. Capa de Transporte 
 
@@ -822,7 +822,7 @@ Extender la entrega host a host (lo que proporciona la capa de red) a una entreg
 	- [[#Principios de TCP]]
 	- [[#TCP, control de flujo]]
 	- [[#TCP, control de congestión]]
-
+<div style="page-break-after: always;"></div>
 
 ## Multiplexación y demultiplexación 
 
@@ -848,7 +848,7 @@ En el caso de un protocolo no orientado a conexión, la demultiplexación se rea
 
 En el caso de un protocolo orientado a conexión, además de la IP y puerto destino, se utiliza también la IP y puerto origen para realizar la demultiplexación. Es decir, dos mensajes con igual IP y puerto destino, pueden estar dirigidos a distintos sockets si la IP y puerto origen son distintos.
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## Principios de UDP 
 
@@ -878,7 +878,7 @@ Se dice que UDP no es un **protocolo justo**, dado que no tiene control de conge
 
 ```ad-info
 title: Posible solución
-collapse: closed
+
 Para que UDP pueda implementar control de congestión sería necesario contar con algún mecanismo que informe o infiera la existencia de congestión en la red. Por ejemplo, TCP utiliza la pérdida de mensajes de confirmación ACK para inferir la congestión. Por lo tanto, si se desea que UDP realice control de congestión, una opción sería agregarle mensajes de confirmación o algún tipo de retroalimentación del receptor. También se podría implementar algún tipo de retroalimentación de parte de los nodos intermedios de la red. Luego, pudiendo detectar la congestión, el siguiente paso sería agregar a UDP algún mecanismo que controle los datos que se envían, pudiendo reducir o aumentar la velocidad a la que se envían los datos.
 ```
 ``````
@@ -899,7 +899,7 @@ Mecanismo de **detección de errores**. No existe ninguna garantía de que todos
 Algunas implementaciones de UDP simplemente descartan el segmento dañado y otras lo pasan a la aplicación junto con una advertencia.
 ```
 
-
+<div style="page-break-after: always;"></div>
 
 ## RDT, un servicio de transferencia de datos fiable 
 
@@ -917,7 +917,7 @@ Separamos en dos máquinas de estado finitas, una para el emisor y la otra para 
 
 ```ad-info
 title: Maquinas de estado
-collapse: closed
+
 
 ![[Pasted image 20221006195649.png]]
 ```
@@ -939,7 +939,7 @@ Los protocolos de transferencia de datos fiables basados en tales retransmisione
 
 ```ad-info
 title: Maquinas de estado
-collapse: closed
+
 ![[Pasted image 20221006200255.png]]
 ```
 
@@ -956,7 +956,7 @@ Una solución sencilla consiste en añadir un nuevo campo al paquete de datos, y
 
 ```ad-info
 title: Maquinas de estado
-collapse: closed
+
 ![[Pasted image 20221006200413.png|600]]
 
 ![[Pasted image 20221006200432.png|600]]
@@ -968,7 +968,7 @@ Tiene la misma funcionalidad que el rdt 2.1, pero **utilizando únicamente ACKs*
 
 ```ad-info
 title: Maquinas de estado
-collapse: closed
+
 
 ![[Pasted image 20221006200618.png]]
 ```
@@ -995,7 +995,7 @@ Dado que los números de secuencia de los paquetes alternan entre 0 y 1, este pr
 
 ```ad-info
 title: Maquinas de estado
-collapse: closed
+
 
 ![[Pasted image 20221006200804.png|600]]
 
@@ -1004,10 +1004,10 @@ collapse: closed
 
 ```ad-example
 title: Ejemplos de corridas
-collapse: open
+
 ![[Pasted image 20221006200909.png|600]]
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## Principios de pipelining GBN y SR 
 
@@ -1042,7 +1042,7 @@ El receptor descarta los paquetes que no están en orden y envía un mensaje de 
 
 ```ad-hint
 title: Maquinas de estado
-collapse: closed
+
 
 
 ##### Emisor
@@ -1071,11 +1071,11 @@ Las ventanas del emisor y el receptor no siempre coinciden. **El tamaño de la v
 
 ``````ad-question
 title: Pregunta
-collapse: closed
+
 
 ```ad-danger
 title: Suponga que el tamaño del espacio de números de secuencia es S. ¿Cuál es la máxima ventana de emisor permitida para evitar confusiones del lado del receptor?
-collapse: closed
+
 
 En el caso de GBN es suficiente con que la ventana tenga tamaño S-1. Esto se debe a que el receptor no tiene buffer y siempre espera por un único segmento. 
 En el caso de SR, el tamaño de la ventana tiene que ser menor o igual que la mitad del tamaño del espacio de números de secuencia. Esto se debe a que la ventana del emisor, de tamaño N, puede empezar, según los ACKs recibidos, en cualquier valor entre [k-N,k-1], siendo k el siguiente paquete a ser enviado. Si hubiera recibido ACKs hasta k-1, entonces la ventana sería [k,k+N-1]; por lo tanto “los números de secuencia ocupados” por el emisor son potencialmente 2N (k-N hasta k+N-1). Luego 2N debe ser menor o igual que S, el espacio de números de secuencia disponibles.
@@ -1085,11 +1085,11 @@ En el caso de SR, el tamaño de la ventana tiene que ser menor o igual que la mi
 
 ```ad-tldr
 title: Resumen
-collapse: open
+
 
 ![[Pasted image 20221006202608.png]]
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## Principios de Control de Congestión 
 
@@ -1112,7 +1112,7 @@ Los routers proporcionan una realimentación explícita (un bit que indica que e
 title: Diferencias entre Control de flujo y Control de congestión
 El control de flujo persigue que el emisor no transmita datos a una tasa de transmisión más alta de la que el receptor puede procesar. El control de congestión, en cambio, se encarga de que el transmisor no lo haga a una tasa más alta que lo que los enrutadores intermedios puedan procesar.
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## Principios de TCP 
 
@@ -1229,7 +1229,7 @@ title: En resumen
 4. S: FIN
 5. C: ACK
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## TCP, control de flujo 
 
@@ -1248,7 +1248,7 @@ $VentanaRecepcion = BufferRecepcion - (UltimoByteRecibido - UltimoByteLeido)$
 title: Se podrá asegurar de **no estar desbordando** el buffer de recepción si:
 $UltimoByteEnviado - UltimoByteReconocido ≤ VentanaRecepcion$
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## TCP, control de congestión 
 
@@ -1293,13 +1293,13 @@ Si se produce un fin de temporización, el mecanismo de recuperación rápida ef
 
 ```ad-info
 title: Maquina de estados de TCP Tahoe
-collapse: closed
+
 ![[Pasted image 20221025144456.png]]
 ```
 
 ```ad-info
 title: Maquina de TCP Reno
-collapse: closed
+
 ![[Pasted image 20221025144505.png|600]]
 ```
 
@@ -1307,7 +1307,7 @@ collapse: closed
 
 La distinción se basa en clasificar los dos tipos de detección de congestión. Se entiende que un timeout es signo de una congestión "severa" y que el tripe ACK duplicado es signo de congestión "leve".
 Tanto en TCP Tahoe como en TCP Reno, cuando se da un timeout, se setea el tamaño de la ventana de congestión en $1 \times MSS$. La variación está en que si llegan tres ACK duplicados, TCP Reno no llevará el tamaño de la ventana a $1 \times MSS$ (como lo hace TCP Tahoe), sinó que lo cortará a la mitad.
-
+<div style="page-break-after: always;"></div>
 
 # Capa de Red, intro y plano de datos 
 
@@ -1381,7 +1381,7 @@ Un paquete perteneciente a un VC lleva en su encabezado un **número de VC**. Da
 
 ```ad-example
 title: Ejemplo de Tabla de Forwarding en VC
-collapse: closed
+
 ![[Pasted image 20221117124316.png]]
 ```
 
@@ -1398,7 +1398,7 @@ Específicamente, cada router tiene una tabla de Forwarding que mapea direccione
 
 ```ad-example
 title: Ejemplo de tabla de Forwarding
-collapse: closed
+
 ![[Pasted image 20221117124621.png|400]]
 ```
 
@@ -1441,13 +1441,13 @@ El datagrama en IP (en este caso IPv4) tiene el siguiente formato:
 
 ```ad-tldr
 title: En resumen
-collapse: closed
+
 ![[Pasted image 20221117132530.png]]
 ```
 
 ```ad-question
 title: ¿Cómo sabe la capa de red (IP) de ese host que debería pasar el segmento a TCP en lugar de a UDP o cualquier otro protocolo? 
-collapse: closed
+
 La capa de red le entrega el payload del datagrama a el protocolo indicado por el campo de ocho bits “protocol” del encabezado. Los valores de ese campo están estandarizados y cada uno de ellos indica un protocolo de capa superior determinado. Si en payload del datagrama es un segmento TCP, el campo protocol tiene el valor 6.
 ```
 
@@ -1471,7 +1471,7 @@ En el destino, la carga útil del datagrama se pasa a la capa de transporte sól
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 Por ejemplo, un datagrama de 4000 bytes, con un MTU de 1500 bytes:
 
 ![[Pasted image 20221117132819.png]]
@@ -1494,7 +1494,7 @@ es una subred._
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 ![[Pasted image 20221117133048.png]]
 ```
 
@@ -1513,7 +1513,7 @@ Las direcciones IP son gestionadas por la entidad **ICANN** (Internet Corporatio
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 Si al ISP se le otorga el bloque 200.23.16.0/20, puede dividir ese bloque en 8 bloques contiguos de direcciones, y dar uno de estos a hasta 8 organizaciones.
 
 ![[Pasted image 20221117133412.png]]
@@ -1545,7 +1545,7 @@ Dado que un cliente puede desear utilizar su dirección durante más tiempo del 
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 ![[Pasted image 20221117235605.png]]
 ```
 
@@ -1561,7 +1561,7 @@ Los mensajes ICMP tienen un campo de tipo y un campo de código, y contienen la 
 
 ```ad-example
 title: Tabla de tipos de mensajes
-collapse: closed
+
 ![[Pasted image 20221118001154.png]]
 ```
 
@@ -1572,7 +1572,7 @@ collapse: closed
 
 
 
-
+<div style="page-break-after: always;"></div>
 
 ## El interior de un Router 
 
@@ -1643,7 +1643,7 @@ Recomendaciones recientes con N flujos, el buffering equivale a $\frac{RTT \time
 #### En puertos de entrada:
 Si la Switch Fabric es más lenta que los puertos de entrada combinados, entonces el encolado puede ocurrir en los puertos de entrada. Se pueden producir retrasos de cola y pérdidas debido a la sobrecarga de buffers.
 **Head of The Line Blocking (HOL)**: los datagramas encolados al frente de la cola evitan que otros de la cola puedan ser enviados.
-![[Pasted image 20221117132121.png|400]]
+![[Pasted image 20221117132121.png|400]]<div style="page-break-after: always;"></div>
 
 ## Traduccion de direcciones de red, NAT 
 
@@ -1664,7 +1664,7 @@ Para implementar esto, un router que utilice NAT debe:
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 ![[Pasted image 20221118000637.png]]
 ```
 
@@ -1686,7 +1686,7 @@ Existen distintas soluciones posibles a este problema:
 - Utilizar Relaying. 
 	El cliente establece conexión con el relay, luego el cliente externo se conecta al relay y este último hace de puente para los paquetes entre ambas conexiones.
 	![[Pasted image 20221118000957.png]]
-
+<div style="page-break-after: always;"></div>
 
 ## IPv6 
 
@@ -1728,7 +1728,7 @@ Varios campos que aparecían en IPv4 ya no aparecen en IPv6, como, por ejemplo:
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 ![[Pasted image 20221118001800.png]]
 ```
 
@@ -1816,7 +1816,7 @@ int pathMTUDiscovery(IPv6_address IP_O, IP_D)
 	end; //while
 	return min_mtu;
 ```
-
+<div style="page-break-after: always;"></div>
 
 # Plano de Control 
 
@@ -1875,7 +1875,7 @@ La idea es encontrar un árbol o árboles conectando routers teniendo miembros d
 ![[Pasted image 20221118121615.png]]
 ![[Pasted image 20221118121626.png]]
 ![[Pasted image 20221118121635.png]]
-![[Pasted image 20221118121649.png|400]]
+![[Pasted image 20221118121649.png|400]]<div style="page-break-after: always;"></div>
 
 ## Algoritmos de enrutamiento 
 
@@ -1925,7 +1925,7 @@ Una implementación más eficiente tiene $O(n \times log(n))$.
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 ![[Pasted image 20221118101737.png]]
 ```
 
@@ -2020,7 +2020,7 @@ Para hacer esto, el router envía el paquete al router de pasarela que tiene el 
 
 ```ad-example
 title: Definiendo una entrada en la tabla de forwarding de un router
-collapse: open
+
 Supongamos que AS1 aprende por medio de un protocolo inter-AS que la subred 𝑋 es alcanzable a través de AS3, por el Gateway 1c, pero no vía AS2; luego el protocolo inter-AS propaga esa información a todos los routers internos. Luego el router 1d determina por el algoritmo de ruteo intra-AS que la interfaz 𝐼 está en el camino de costo mínimo, por lo que agrega a la tabla de forwarding la entrada (𝑋,𝐼).
 
 ![[Pasted image 20221118110145.png|500]]
@@ -2157,7 +2157,7 @@ Los mensajes BGP se intercambian usando TCP.
 
 ###### Rendimiento:
 - Intra-AS: puede enfocarse en el rendimiento.
-- Inter-AS: las políticas deben dominar por sobre el rendimiento.
+- Inter-AS: las políticas deben dominar por sobre el rendimiento.<div style="page-break-after: always;"></div>
 
 # 6. Capa de Enlace 
 
@@ -2170,7 +2170,7 @@ Un mismo datagrama puede ser transportado por diferentes protocolos de la capa d
 ```
 
 ```ad-question
-collapse: closed
+
 title: ¿Dónde se implementa la capa de enlace?
 Está implementada en todos y cada uno de los hosts. La capa de enlace se implementa en “adaptadores de red”, también conocidas como “Tarjeta de interfaz de red”. En el corazón del adaptador de red se encuentra el controlador de capa de enlace, que usualmente es un único chip que implementa muchos de los servicios de capa de red. 
 
@@ -2218,7 +2218,7 @@ Por otro lado, el lado receptor busca por errores, rdt, control de flujo, etc.; 
 [[#Redes de área local virtuales  (VLAN)]]
 
 [[#PPP, Protocolo punto a punto]]
-
+<div style="page-break-after: always;"></div>
 
 ## Técnicas de detección y corrección de errores 
 
@@ -2228,7 +2228,7 @@ Notamos EDC a los Bits de detección y corrección de errores (redundancia), y D
 
 ```ad-question
 title: Si todos los enlaces de Internet tuvieran que proporcionar un servicio de entrega de tramas fiable, ¿sería redundante el servicio de entrega fiable de TCP?
-collapse: closed
+
 No, no sería redundante ya que se pueden perder paquetes por congestión en las colas de los routers, o pueden llegar en desorden a causa de diversidad de caminos en un flujo.
 ```
 
@@ -2272,10 +2272,10 @@ Es muy utilizado en la práctica, por ejemplo, en Ethernet, 802.11 WiFi, ATM.
 
 ```ad-example
 title: Ejemplo de CRC
-collapse: closed
+
 ![[Pasted image 20221116123544.png]]
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## Protocolo de acceso múltiple 
 
@@ -2283,7 +2283,7 @@ Un **enlace punto a punto** está compuesto por un único emisor en un extremo d
 
 ```ad-example
 title: Ejemplos de enlaces de broadcast
-collapse: closed
+
 ![[Pasted image 20221116130215.png]]
 ```
 
@@ -2316,7 +2316,7 @@ Cada partición se le asigna a cada uno de lo N nodos.
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 Una LAN con 6 estaciones, 1,3,4 tienen paquetes, 2,5,6 quedan ociosos:
 
 ![[Pasted image 20221116130645.png]]
@@ -2327,7 +2327,7 @@ Divide el canal de R bps en diferentes frecuencias (de ancho de banda R/N) y asi
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 LAN de 6 estaciones, 1,3,4 tienen paquete, las bandas de frecuencia 2,5,6 quedan ociosas:
 ![[Pasted image 20221116130747.png]]
 ```
@@ -2358,7 +2358,7 @@ Sea _p_ una probabilidad, es decir, un número comprendido entre 0 y 1:
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 Los nodos 1, 2 y 3 colisionan en el primer slot. El nodo 2 finalmente tiene éxito en el cuarto slot, el nodo 1 en el octavo slot y el nodo 3 en el noveno slot.
 ![[Pasted image 20221116131244.png]]
 ```
@@ -2367,7 +2367,7 @@ El protocolo es **altamente descentralizado**, porque cada nodo detecta las coli
 
 ```ad-important
 title: Particiones con éxito y eficiencia
-collapse: closed
+
 Particiones en las que hay exactamente un nodo transmitiendo.
 
 La eficiencia de un protocolo de acceso múltiple con particiones se define como la fracción (calculada a largo plazo) de particiones con éxito cuando existe un gran número de nodos activos, cada uno de los cuales tiene siempre una gran cantidad de tramas que enviar.
@@ -2398,7 +2398,7 @@ En caso contrario, el nodo esperará durante un tiempo equivalente al tiempo tot
 
 ```ad-example
 title: Ejemplo
-collapse: closed
+
 El frame enviado en $t_0$ colisiona con otros frames enviados entre $[𝑡_0 − 1,𝑡_0 + 1]$.
 
 ![[Pasted image 20221116132602.png]]
@@ -2409,7 +2409,7 @@ La máxima eficiencia del protocolo ALOHA puro es sólo de $1/(2e)$, que es exac
 
 ```ad-todo
 title: Calculo de la eficiencia
-collapse: closed
+
 ![[Pasted image 20221116132729.png]]
 ```
 
@@ -2459,7 +2459,7 @@ algún procedimiento de recuperación para hacer que el testigo vuelva a circula
 
 ![[Pasted image 20221116134650.png]]
 
-
+<div style="page-break-after: always;"></div>
 
 ## Direccionamiento de la capa de enlace 
 
@@ -2486,7 +2486,7 @@ Para enviar un datagrama a un nodo fuera de una subred, la trama tiene que ser e
 
 ```ad-example
 title: Ejemplo dentro de una misma LAN
-collapse: closed
+
 Supongamos que A quiere enviar un datagrama a B, y la dirección MAC de B no está en la tabla ARP de A.
 
 Lo primero que hace A es hacer broadcast a un paquete ARP request, que contiene la dirección IP de B, a la dirección MAC de broadcast (FF-FF-FF-FF-FF-FF), por lo que cada dispositivo en la LAN recibe esta ARP request. 
@@ -2498,7 +2498,7 @@ Cuando A recibe estos datos, extrae la dirección MAC de B y la agrega a la tabl
 
 ```ad-example
 title: Ejemplo ruteando hacia otra LAN
-collapse: closed
+
 Consideremos el siguiente ejemplo:
 ![[Pasted image 20221116135300.png]]
 
@@ -2517,11 +2517,11 @@ Cuando el router recibe en la interfaz 111.111.111.110 el paquete, lo pasa a su 
 
 ```ad-info
 title: Paquete ARP
-collapse: closed
+
 ![[Pasted image 20221116135418.png]]
 ```
 
-
+<div style="page-break-after: always;"></div>
 
 ## Ethernet 
 
@@ -2557,7 +2557,7 @@ Esta responsabilidad es de protocolos de capas superiores.
 2. Si la NIC siente un canal ocioso, comienza la transmisión. Si la NIC siente un canal ocupado, espera hasta que el canal quede ocioso y luego transmite. 
 3. Si la NIC transmite el frame entero sin detectar otra transmisión, entonces la NIC completó su trabajo para ese frame. 
 4. Si la NIC detecta otra transmisión mientras está transmitiendo, aborta y envía una señal de atasco. 
-5. Luego de abortar, la NIC entra a **Exponential Backoff**: luego de la n-ésima colisión, la NIC elige $K$ de forma aleatoria en $\{0,1,2, … , 2n - 1\}$. Luego la NIC espera $512 * K$ $bit$ $times$ y regresa al paso 2.
+5. Luego de abortar, la NIC entra a **Exponential Backoff**: luego de la n-ésima colisión, la NIC elige $K$ de forma aleatoria en $\{0,1,2, … , 2n - 1\}$. Luego la NIC espera $512 * K$ $bit$ $times$ (K veces el tiempo necesario para transmitir 512 bits) y regresa al paso 2.
 
 **Señal de atasco:** asegura que todos los otros transmisores están al tanto de la colisión. Son 48 bits.
 
@@ -2575,12 +2575,12 @@ Esta responsabilidad es de protocolos de capas superiores.
 
 ```ad-note
 title: Eficiencia
-collapse: closed
+
 ![[Pasted image 20221116141154.png]]
 ```
 
 
-
+<div style="page-break-after: always;"></div>
 
 ## Dominios de colisión y de broadcast 
 
@@ -2610,7 +2610,7 @@ Otro problema que presenta una red con tantos dispositivos está asociado a las 
 
 Otro aspecto importante puede asociarse a la seguridad, pues, cualquier error en la configuración de la red, puede tener impacto en todos los equipos (p.e. un equipo que se configure equívocamente con la dirección del router). Cada vez que haya que resolver un problema, la causa puede provenir de la totalidad de la red, y no de sectores.
 ```
-
+<div style="page-break-after: always;"></div>
 
 ## Conmutadores de la capa de enlace 
 
@@ -2659,7 +2659,7 @@ Los conmutadores tienen la propiedad de que su tabla se construye de forma autom
 - **Enlaces heterogéneos:**  Dado que un conmutador aísla un enlace de otro, los distintos enlaces de una LAN pueden operar a velocidades diferentes y pueden utilizar diferentes medios físicos.
 - **Administración:**  Además de proporcionar una seguridad mejorada, un conmutador también facilita las tareas de gestión de la red. Un conmutador puede detectar cuando un adaptador de red funciona mal enviando continuamente tramas y desconectar internamente el adaptador que está funcionando incorrectamente. Un corte en un cable sólo desconecta al nodo que está usando el cable cortado para conectarse al conmutador.
 
-
+<div style="page-break-after: always;"></div>
 
 ## Switch vs Router 
 
@@ -2680,7 +2680,7 @@ Los conmutadores tienen la propiedad de que su tabla se construye de forma autom
 - no son dispositivos plug-and-play
 - los routers suelen tener un tiempo de procesamiento por paquete mayor que los conmutadores (trabajan hasta capa 3)
 
-
+<div style="page-break-after: always;"></div>
 
 ## Redes de área local virtuales  (VLAN) 
 
@@ -2692,7 +2692,7 @@ Para identificar a qué VLAN pertenece cada trama, se utiliza una etiqueta VLAN 
 
 ```ad-important
 title: Ventajas clave
-collapse: open
+
 **Aislación del tráfico:** los frames desde/hasta los puertos 1-8 pueden solamente alcanzar los puertos 1-8. También se puede definir una VLAN basada en direcciones MAC de los endpoints, en lugar del puerto del switch. 
 
 **Membresía dinámica:** los puertos pueden ser asignados dinámicamente a las VLANs.
@@ -2709,7 +2709,7 @@ El protocolo 802.1Q involucra una redefinición del cabezal Ethernet, que introd
 
 De los 32bits adicionales, se reservan 12 para identificar VLANs. 
 
-A nivel de los switches se distinguen puertos a los que se pueden conectar dispositivos que manipulan los cabezales extendidos y son capaces de intercambiar tráfico que incluye TAGS de los puertos en los que se conectan equipos que desconocen del uso de tags. Estos puertos, los que reciben tráfico sin tags se conocen como UNTAGGED PORTS y realizan la tarea de etiquetar tráfico al ingreso y quitar el tag al momento de forwardear el paquete hacia el host. Los puertos por los que se transmiten tramas extendidas se conocen tomo TRUNK PORTS. Cabe mencionar que la distinción es administrativa, y no hay diferencias físicas en los puertos.
+A nivel de los switches se distinguen puertos a los que se pueden conectar dispositivos que manipulan los cabezales extendidos y son capaces de intercambiar tráfico que incluye TAGS de los puertos en los que se conectan equipos que desconocen del uso de tags. Estos puertos, los que reciben tráfico sin tags se conocen como UNTAGGED PORTS y realizan la tarea de etiquetar tráfico al ingreso y quitar el tag al momento de forwardear el paquete hacia el host. Los puertos por los que se transmiten tramas extendidas se conocen tomo TRUNK PORTS. Cabe mencionar que la distinción es administrativa, y no hay diferencias físicas en los puertos.<div style="page-break-after: always;"></div>
 
 ## PPP, Protocolo punto a punto 
 
@@ -2736,7 +2736,7 @@ recibidas.
 
 ##### PPP Data Control Protocol
 
-![[Pasted image 20221116205122.png]]
+![[Pasted image 20221116205122.png]]<div style="page-break-after: always;"></div>
 
 # 99. Otros 
 
@@ -2746,7 +2746,7 @@ recibidas.
 ### Practicos
 - [[#Practico 5]]
 - [[#Practico 6]]
-- [[#Practico 7]]
+- [[#Practico 7]]<div style="page-break-after: always;"></div>
 
 ## Puertos bien conocidos 
 
@@ -2765,7 +2765,7 @@ recibidas.
 	- sobre TLS --> 993
 
 
-
+<div style="page-break-after: always;"></div>
 
 ## Tips problemas prácticos 
 
@@ -2780,7 +2780,7 @@ recibidas.
 - Detectar multicast sabiendo que una dir. de multicast siempre comienza con 1110
 
 ### TCP
-- C
+- C<div style="page-break-after: always;"></div>
 
 ## Practico 5 
 
@@ -2788,7 +2788,7 @@ recibidas.
 ### Ej. 1
 ```ad-info
 title: Letra
-collapse: closed
+
 
 ![[Pasted image 20221025172748.png]]
 ```
@@ -2804,7 +2804,7 @@ No es posible con una tabla de reenvío basada en la dirección de destino (dest
 ### Ej. 2
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221025172939.png]]
 ```
 
@@ -2820,7 +2820,7 @@ No, no se puede porque el enlace de salida solo puede "encolar" un datagrama por
 ### Ej. 3
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221025205030.png]]
 ```
 
@@ -2843,7 +2843,7 @@ Como todos los paquetes van a distinto destino, ninguno deberá esperar por alg�
 ### Ej. 4
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026162711.png]]
 ```
 
@@ -2863,7 +2863,7 @@ No se me ocurrió si "una cola no vacía nunca está inactiva".
 ### Ej. 5
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026163928.png]]
 ![[Pasted image 20221026163942.png]]
 ```
@@ -2899,7 +2899,7 @@ collapse: closed
 ### Ej. 6
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026172517.png]]
 ```
 
@@ -2925,7 +2925,7 @@ S3:
 ### Ej. 7
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026180012.png]]
 ```
 
@@ -2934,7 +2934,7 @@ collapse: closed
 ### Ej. 8
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026182630.png]]
 ```
 Ignorando las direcciones de la figura:
@@ -2969,7 +2969,7 @@ Ignorando las direcciones de la figura:
 ### Ej. 9
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026192656.png]]
 ```
 
@@ -3001,7 +3001,7 @@ Fragmento 4:
 ### Ej. 10
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026193649.png]]
 ```
 
@@ -3010,7 +3010,7 @@ collapse: closed
 ### Ej. 11
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026193910.png]]
 ```
 
@@ -3033,7 +3033,7 @@ collapse: closed
 ### Ej. 12
 ```ad-info
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221026194858.png]]
 ![[Pasted image 20221026194850.png]]
 ![[Pasted image 20221026194838.png]]
@@ -3089,14 +3089,14 @@ Todas las IP alcanzables por el broadcast de la sub-red.
 #### Parte *e*
 Esto se puede lograr con redes virtuales.
 
-
+<div style="page-break-after: always;"></div>
 
 ## Practico 6 
 
 ### Ej. 1
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031160828.png]]
 ```
 
@@ -3127,7 +3127,7 @@ collapse: closed
 ### Ej. 2
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031160906.png]]
 ```
 
@@ -3135,7 +3135,7 @@ collapse: closed
 ### Ej. 3
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031160927.png]]
 ![[Pasted image 20221031160938.png]]
 ```
@@ -3188,7 +3188,7 @@ w:
 ### Ej. 4
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031160954.png]]
 ```
 
@@ -3197,7 +3197,7 @@ NO, this is because that decreasing link cost won’t cause a loop (caused by th
 ### Ej. 5
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031183341.png]]
 ```
 
@@ -3215,7 +3215,7 @@ iBGP, pues obtiene el dato de 1c (interno a AS1) y x no pertenece a AS3.
 ### Ej. 6
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031185540.png]]
 ![[Pasted image 20221031185551.png]]
 ```
@@ -3240,7 +3240,7 @@ Ahora el largo del AS-PATH de la ruta 1 aumenta a 3, por lo que la ruta elegida 
 ### Ej. 7
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031191317.png]]
 ```
 
@@ -3249,7 +3249,7 @@ collapse: closed
 ### Ej. 8
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031192201.png]]
 ```
 
@@ -3267,7 +3267,7 @@ A debería anunciar a B dos rutas:
 ### Ej. 9
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031194040.png]]
 ![[Pasted image 20221031194103.png]]
 ```
@@ -3343,7 +3343,7 @@ NOTA: 122.0.0.0/7 agrupa las subredes A y B.
 ### Ej. 10
 ```ad-abstract
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221031204620.png]]
 ![[Pasted image 20221031204631.png]]
 ```
@@ -3357,14 +3357,14 @@ collapse: closed
 ![[Pasted image 20221031210122.png]]
 
 #### Parte c:
-![[Pasted image 20221031210207.png]]
+![[Pasted image 20221031210207.png]]<div style="page-break-after: always;"></div>
 
 ## Practico 7 
 
 ### Ejercicio 1
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210000.png]]
 ```
 
@@ -3381,7 +3381,7 @@ collapse: closed
 ### Ejercicio 2
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210046.png]]
 ```
 Ni a palanca hago división binaria a mano
@@ -3401,7 +3401,7 @@ we get 1011010111, with a remainder of R=1001.
 ### Ejercicio 3
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210101.png]]
 ```
 
@@ -3426,7 +3426,7 @@ $$ p_{trans}^{otros} = p\times (1-p)^{N-2}\times (1-2p)$$
 ### Ejercicio 4
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210133.png]]
 ```
 
@@ -3445,7 +3445,7 @@ $$\frac{NQ}{N \times \frac{Q}{R}+ d} = \frac{R}{1+\frac{d \times R}{Q}}$$
 ### Ejercicio 5
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210158.png]]
 ```
 
@@ -3466,7 +3466,7 @@ collapse: closed
 ### Ejercicio 6
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210223.png]]
 ```
 
@@ -3485,7 +3485,7 @@ Cuando S1 reciba la trama de B, guardará en su tabla de forwarding que dicho ho
 ### Ejercicio 7
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210236.png]]
 ```
 
@@ -3515,7 +3515,7 @@ Once switch S1 receives B’s response message, it will add an entry for host B 
 ### Ejercicio 8
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210250.png]]
 ```
 
@@ -3531,7 +3531,7 @@ t=324+325=649
 ### Ejercicio 9
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210304.png]]
 ```
 
@@ -3557,7 +3557,7 @@ Because A's retransmission reaches B before B's scheduled retransmission time (8
 ### Ejercicio 10
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210318.png]]
 ```
 
@@ -3582,7 +3582,7 @@ Destination IP: 133.333.333.003
 ### Ejercicio 11
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210331.png]]
 ```
 
@@ -3607,7 +3607,7 @@ Destination IP: 133.333.333.003
 ### Ejercicio 12
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210352.png]]
 ![[Pasted image 20221116210350.png]]
 ```
@@ -3616,7 +3616,7 @@ collapse: closed
 ### Ejercicio 13
 ```ad-question
 title: Letra
-collapse: closed
+
 ![[Pasted image 20221116210403.png]]
 ```
 
