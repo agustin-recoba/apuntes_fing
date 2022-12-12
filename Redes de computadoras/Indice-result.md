@@ -1607,7 +1607,7 @@ Aquí hay 3 subredes.
 ![[Pasted image 20221117133048.png]]
 ```
 
-#### Enrutamiento entre dominios sin clase (CIDR, Classless Interdomain Routing):
+### Enrutamiento entre dominios sin clase (CIDR, Classless Interdomain Routing):
 
 Estrategia de asignación de direcciones en Internet.
 
@@ -1640,7 +1640,7 @@ Un host puede obtener su dirección IP de dos maneras:
 - Mediante **DHCP**.
 
 ##### Protocolo de configuración dinámica de host **DHCP**
-Las direcciones de host también se pueden configurar manualmente, pero frecuentemente ahora esta tarea se lleva cabo utilizando el Protocolo de configuración dinámica de host ( DHCP , Dynamic Host Configuration Protocol) .DHCP permite a un host obtener (permite que se le asigne) automáticamente una dirección IP.
+Las direcciones de host también se pueden configurar manualmente, pero frecuentemente ahora esta tarea se lleva cabo utilizando el Protocolo de configuración dinámica de host (DHCP , Dynamic Host Configuration Protocol). DHCP permite a un host obtener (permite que se le asigne) automáticamente una dirección IP.
 
 Un administrador de red puede configurar DHCP de modo que un host dado reciba la misma dirección IP cada vez que se conecte a la red, o un host puede ser asignado a una dirección IP temporal que será diferente cada vez que el host se conecte a la red.
 También puede brindar información adicional como: su máscara de subred, el gateway (router del primer salto) y la dirección del servidor DNS local.
@@ -1664,6 +1664,17 @@ Dado que un cliente puede desear utilizar su dirección durante más tiempo del 
 title: Ejemplo
 
 ![[Pasted image 20221117235605.png]]
+
+Los mensajes intercambiados son los siguientes:
+
+- El equipo cliente solicita la configuración enviando un mensaje de difusión de tipo “DHCP DISCOVER”. 
+
+- Cada servidor DHCP responde con un mensaje de tipo “DHCP OFFER” que contiene una dirección IP y otras opciones de configuración. Este mensaje se envía al cliente por unicast si es posible o por broadcast en otro caso (RFC 1531 http://tools.ietf.org/html/rfc1531). 
+
+- El cliente acepta los parámetros ofrecidos por alguno de los servidores respondiendo con un mensaje de difusión de tipo “DHCP REQUEST” indicando en él el identificador de servidor que ha elegido. El mensaje DHCPREQUEST debe ser enviado a todos los servidores que recibieron el DHCPDISCOVER para que puedan reutilizar la dirección que habían ofrecido. También se usa DHCPREQUEST para extender en el tiempo la validez de una dirección IP.
+
+- El servidor elegido envía un mensaje de confirmación de tipo “DHCP ACK” indicando que aprueba esa concesión y confirmando la configuración, así como indicando el tiempo máximo en que la dirección IP es válida.
+
 ```<div style="page-break-after: always;"></div>
 
 ## 4.5 Traduccion de direcciones de red, NAT 
@@ -1731,10 +1742,14 @@ title: Tabla de tipos de mensajes
 
 Para responder a la necesidad de un espacio de direcciones IP más grande, se desarrolló un nuevo protocolo IP, el protocolo IPv6. Una motivación adicional fue hacer un formato del cabezal que ayude a acelerar el procesamiento/forwarding del paquete.
 
-Formato del datagrama IPv6: cabezal de largo fijo de 40 bytes y no se permite fragmentación.
+Formato del datagrama IPv6: **cabezal de largo fijo de 40 bytes** y no se permite fragmentación.
 - **Capacidades ampliadas de direccionamiento:** IPv6 aumenta el tamaño de la dirección IP de 32 a 128 bits.
 - **Una cabecera de 40 bytes simplificada:** Permite un procesamiento más rápido del datagrama.
 - Prioridad y etiquetado del flujo: Permite etiquetar los paquetes que pertenecen a determinados flujos para que los que el emisor solicita un tratamiento especial, como un servicio en tiempo real o una calidad servicio no predeterminados.
+
+### Notación de las direcciones IPv6
+
+La notación utilizada por IPv6 codifica los octetos (las agrupaciones de 8 bits) en su representación hexadecimal y separa parejas de éstos con el carácter “:” eliminando ceros a la izquierda dentro de dichas parejas, así como bloques completos de ceros representados por “::”.
 
 ### Encabezado IPv6
 
@@ -1914,8 +1929,9 @@ do
 	agregar w a N’;
 	actualizar D(v) para cada vecino v de w, que no pertenezca a N’:
 		D(v) = min( D(v), D(w) + c(w,v) );
-	# el nuevo coste a v es o bien el antiguo coste a v o el coste de
-	# la ruta de coste mínimo a w más el coste desde w a v
+		# el nuevo coste a v es o bien el antiguo 
+		# coste a v o el coste de la ruta de coste 
+		# mínimo a w más el coste desde w a v
 until N’ = N
 ```
 
@@ -2108,6 +2124,8 @@ BGP es un protocolo de enrutamientos entre sistemas autónomos que proporciona a
 - Determinar buenas rutas de subredes, basándose en la información de alcanzabilidad y en la política del sistema autónomo.
 Lo más importante es que BGP permite a cada subred anunciar su existencia al resto de Internet.
 
+En BGP, los pares de routers intercambian la información de ruteo mediante conexiones TCP semipermanentes en el puerto 179. En general, existe una conexión BGP-TCP por cada enlace que conecta directamente dos routers en dos AS distintos. Además, hay también una conexión TCP semipermanente entre los routers dentro del AS.
+
 Para cada conexión TCP, los dos routers situados en los extremos de la conexión se denominan **pares BGP** y la conexión TCP junto con todos los mensajes BGP enviados a través de la conexión se denomina **sesión BGP.** Además, una sesión BGP que abarca dos sistemas autónomos se conoce como **sesión externa BGP** (eBGP) y una sesión BGP entre routers de un mismo sistema autónomo se conoce como **sesión interna BGP** (iBGP).
 
 BGP permite que cada sistema autónomo aprenda qué destinos son alcanzables a través de sus sistemas autónomos vecinos. En BGP, los destinos no son hosts sino prefijos CIDR, representando cada prefijo una subred o una colección de subredes.
@@ -2133,6 +2151,16 @@ Si existen dos rutas con el mismo prefijo, entonces BGP invoca secuencialmente l
 4. Si todavía quedan rutas, entonces se aplican criterios adicionales.
 
 Es importante observar que **no se puede afirmar que la decisión garantiza un camino más corto en cantidad de hops de routers**, porque se desconoce la información interna de cada AS. Un camino con AS-PATH más corto puede incluir ASs con muchos “hops” de routers internos, y puede ser más largo en término de routers que otro camino con AS-PATH más largo.
+
+```ad-example
+title: Caso de papa caliente
+
+**Dado un Sistema Autónomo ASx conectado a otros Sistemas Autónomos utilizando BGP, describa el concepto de "enrutamiendo de papa caliente" (hot-potato routing) para routers internos al ASx.**
+
+</br>
+
+BGP es utilizado intra-dominio para propagar a los routers internos la información de alcanzabilidad de prefijos externos al sistema autónomo. Si para un determinado prefijo existen múltiples opciones de "next-hop", el enrutamiento de "papa caliente" eligirá como router de borde aquel que tenga el menor costo según el protocolo de enrutamiento interior (IGP).
+```
 
 ##### Mensajes BGP
 
@@ -2202,6 +2230,12 @@ Para construir el árbol de cubrimiento, en primer lugar, se toma un nodo centra
 
 ![[Pasted image 20221118121401.png]]
 
+#### Broadcast vs flooding
+
+Ambos mecanismos cumplen la misma función: enviar una copia de un mensaje a todos los nodos de una red. En el caso de broadcast típicamente se asume un medio compartido (por ejemplo un dominio de broadcast ethernet), donde el origen de la comunicación envía un mensaje a una dirección especial que representa a todos los nodos. En redes con topologías arbitrarias, el envío de un mensaje a todos los nodos se puede implementar mediante flooding. 
+
+Ethernet 802.3 tiene la dirección FF:FF:FF:FF:FF:FF definida como dirección de broadcast. 
+OSPF utiliza flooding para el envío de información de estado-enlace entre routers; en este caso se utiliza como destino una dirección de multicast que representa a todos los routers.
 
 ### Multicast
 La idea es encontrar un árbol o árboles conectando routers teniendo miembros de un grupo local de multicast.
@@ -2284,7 +2318,7 @@ Por otro lado, el lado receptor busca por errores, rdt, control de flujo, etc.; 
 - [[#6.5 Dominios de colisión y de broadcast]]
 - [[#6.6 Conmutadores de la capa de enlace]]
 - [[#6.6.1 Switch vs Router]]
-- [[#6.7 Redes de área local virtuales  (VLAN)]]
+- [[#6.7 VLAN, redes de área local virtuales]]
 - [[#6.8 PPP, Protocolo punto a punto]]<div style="page-break-after: always;"></div>
 
 ## 6.1 Técnicas de detección y corrección de errores 
@@ -2793,9 +2827,9 @@ Los conmutadores tienen la propiedad de que su tabla se construye de forma autom
 - No son dispositivos plug-and-play.
 - Los routers suelen tener un tiempo de procesamiento por paquete mayor que los switches (trabajan hasta capa 3).<div style="page-break-after: always;"></div>
 
-## 6.7 Redes de área local virtuales  (VLAN) 
+## 6.7 VLAN, redes de área local virtuales 
 
-Un conmutador compatible con redes VLAN permite definir **múltiples redes de área local virtuales sobre una única infraestructura de red** de área local física. Los hosts de una VLAN se comunican entre sí como si sólo ellos (y ningún otro host) estuvieran conectados al conmutador.
+Un conmutador compatible con redes VLAN permite definir **múltiples redes de área local virtuales sobre una única infraestructura de red** de área local física. Varias VLAN pueden coexistir en un único conmutador físico o en una única red física. Los hosts de una VLAN se comunican entre sí como si sólo ellos (y ningún otro host) estuvieran conectados al conmutador.
 
 En una **VLAN basada en puertos**, el administrador de la red divide los puertos (interfaces) del conmutador en grupos. Cada grupo constituye una VLAN, con los puertos de cada VLAN formando un dominio de difusión.
 Para enviar tráfico entre un departamento y otro, los fabricantes de conmutadores incorporan en un único dispositivo un conmutador VLAN y un router, con lo que no es necesario un router externo.
@@ -2813,7 +2847,7 @@ title: Ventajas clave
 ```
 
 
-### VLAN 802.1Q
+### Enlaces TRUNK: 802.1Q
 
 El protocolo 802.1Q involucra una redefinición del cabezal Ethernet, que introduce cuatro bytes adicionales luego de las direcciones MAC src y dst:
 
@@ -2884,7 +2918,7 @@ recibidas.
 - IMAP –> 143
 	- sobre TLS --> 993
 
-
+- DHCP –> 68 cliente y 67 servidor
 <div style="page-break-after: always;"></div>
 
 ## 99.2 Tips problemas prácticos 
@@ -2899,14 +2933,26 @@ recibidas.
 - Longest Prefix Match obviamente
 - Detectar multicast sabiendo que una dir. de multicast siempre comienza con 1110
 
+### Sockets
+- Cerrarlos apenas pueda (especialmente UDP)
+- Para el server TCP, poner un client.close() luego del while(true) aunque parezca que nunca se va a ejecutar.
+
+### Simular una captura de paquetes en una interfaz:
+- Si hay una conexión TCP, capturar el acuerdo en tres pasos inicial (SYN, SYN-ACK, ACK) y el cierre de conexión (FIN-ACK-FIN-ACK).
+- Capturar ARP solo si no hay tablas cacheadas.
+- Capturar DNS si los mensajes son hacia un hostname.
+- Diferenciar HTTP GET de Response
+
 ### TCP
-- C
+- 
 
 ### HTTP y la web
 - Una url puede incluir el número de puerto a consultar luego del nombre de dominio. El formato sería: {nomb_dominio | ip}:{num_puerto?}/{path_objeto_consultado}
 - Generalmente conviene implementar una op. 'obtener_objeto' y luego llamarla varias veces a lo largo del programa. Ojo si es HTTP/1.1.
-- El get es del siguiente formato: "FIX ME"
+- El get es del siguiente formato: 
+	- `GET /index.html HTTP/1.1`
 - Para separar los header del contenido útil buscar `"\r\n\r\n"` .
+- Las respuestas del servidor tienen como primer linea algo del estilo: `HTTP/1.1 200 OK`.
 
 ### DHCP
 - Cada vez que un host se une a la red, el servidor DHCP asigna una dirección arbitraria de su conjunto actual de direcciones disponibles; cada vez que un host abandona la red, su dirección es devuelta al conjunto.<div style="page-break-after: always;"></div>

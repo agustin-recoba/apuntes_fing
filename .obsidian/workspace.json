@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redes de computadoras/99. Otros/99.2 Tips problemas prácticos.md",
+                "file": "Redes de computadoras/6. Capa de enlace/6.1 Técnicas de detección y corrección de errores.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294
+    "width": 272
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redes de computadoras/99. Otros/99.2 Tips problemas prácticos.md",
+                "file": "Redes de computadoras/Indice-result.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redes de computadoras/99. Otros/99.2 Tips problemas prácticos.md",
+                "file": "Redes de computadoras/Indice-result.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redes de computadoras/99. Otros/99.2 Tips problemas prácticos.md"
+                "file": "Redes de computadoras/Indice-result.md"
               }
             }
           }
@@ -138,15 +138,15 @@
   },
   "active": "30a84845ab1f9528",
   "lastOpenFiles": [
-    "Redes de computadoras/5. Capa de Red, plano de control/5.1.1 Algoritmo de enrutamiento de estado de enlaces (LS).md",
-    "Redes de computadoras/99. Otros/99.2 Tips problemas prácticos.md",
-    "Redes de computadoras/5. Capa de Red, plano de control/5.2 Enrutamiento jerárquico y sistemas autónomos.md",
-    "Redes de computadoras/3. Capa de Transporte/3.3 RDT, un servicio de transferencia de datos fiable.md",
-    "Redes de computadoras/5. Capa de Red, plano de control/5.3 Broadcast y multicast.md",
+    "Redes de computadoras/Indice.md",
+    "Redes de computadoras/4. Capa de Red, plano de datos/4.1 Intro.md",
+    "Redes de computadoras/6. Capa de enlace/6.8 PPP, Protocolo punto a punto.md",
+    "Redes de computadoras/6. Capa de enlace/6.7 Redes de área local virtuales  (VLAN).md",
+    "Redes de computadoras/6. Capa de enlace/6.6.1 Switch vs Router.md",
+    "Redes de computadoras/6. Capa de enlace/6.6 Conmutadores de la capa de enlace.md",
     "Redes de computadoras/6. Capa de enlace/6.5 Dominios de colisión y de broadcast.md",
-    "Redes de computadoras/4. Capa de Red, plano de datos/4.7 IPv6.md",
-    "Redes de computadoras/4. Capa de Red, plano de datos/4.5 Traduccion de direcciones de red, NAT.md",
-    "Redes de computadoras/4. Capa de Red, plano de datos/4.4.2 Direccionamiento IPv4.md",
-    "Redes de computadoras/99. Otros/99.1 Puertos bien conocidos.md"
+    "Redes de computadoras/6. Capa de enlace/6.4 Ethernet.md",
+    "Redes de computadoras/6. Capa de enlace/6.3 Direccionamiento de la capa de enlace.md",
+    "Redes de computadoras/6. Capa de enlace/6.2 Protocolo de acceso múltiple.md"
   ]
 }
