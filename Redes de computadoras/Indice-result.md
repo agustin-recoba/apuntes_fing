@@ -1333,7 +1333,7 @@ Tanto en TCP Tahoe como en TCP Reno, cuando se da un timeout, se setea el tamañ
 ## 4.1 Intro 
 
 La capa de red es la encargada de transportar segmentos desde el host emisor hasta el host receptor. Del lado del emisor, encapsula los segmentos en datagramas. En el lado de receptor, entrega los paquetes a la capa de transporte. 
-Cada router examina los campos del encabezado de cada datagrama IP que pasa por él
+Cada router examina los campos del encabezado de cada datagrama IP que pasa por él.
 
 ```ad-info
 title: Datagrama
@@ -1346,7 +1346,7 @@ La función de la capa de red es simple: transporta paquetes desde un host emiso
 - **Reenvío** (forwarding): Cuando un paquete llega al enlace de entrada de un router, este tiene que pasar el paquete al enlace de salida apropiado.
 - **Enrutamiento** (routing): La capa de red tiene que determinar la ruta o camino que deben seguir los paquetes a medida que fluyen de un emisor a un receptor. Los algoritmos que calculan estas rutas se conocen como algoritmos de enrutamiento.
 
-De esta forma, Forwarding hace referencia a la acción de transferir un paquete desde la interfaz de enlace de entrada, hacia la interfaz de enlace de salida correspondiente. Mientras que Routing hace referencia al proceso que determina el camino end-to-end que los paquetes toman para llegar desde la fuente hacia el destino.
+De esta forma, Forwarding hace referencia a la acción de transferir un paquete desde la interfaz de enlace de entrada, hacia la interfaz de enlace de salida correspondiente. Mientras que Routing hace referencia al proceso que determina el **camino end-to-end** que los paquetes toman para llegar desde la fuente hacia el destino.
 
 Todo router tiene una **tabla de reenvío**. Un router reenvía un paquete examinando el valor de un campo de la cabecera del paquete entrante y utilizando después ese valor para indexarlo dentro de la tabla de reenvío del router.
 
@@ -1379,10 +1379,9 @@ La capa de red de Internet proporciona un único servicio conocido como **servic
 
 - **Servicio CBR de las redes ATM:** 
 	El objetivo es conceptualmente simple, proporcionar un flujo de paquetes mediante un conductor virtual cuyas propiedades son las mismas que si existiera un enlace de transmisión de ancho de banda fijo dedicado entre los hosts emisor y receptor.
+
 - **Servicio ABR de las redes ATM:** 
 	Con este servicio las celdas no se pueden reordenar, pero si perder y está garantizada la velocidad mínima de transmisión de celda. Si la red tiene los suficientes recursos libres en un instante determinado, un emisor también puede ser capaz de enviar con éxito celdas a una velocidad mayor que la mínima.
-
-
 
 
 
@@ -1431,7 +1430,7 @@ title: Ejemplo de tabla de Forwarding
 ![[Pasted image 20221117124621.png|400]]
 ```
 
-###### Uso de prefijos
+#### Uso de prefijos
 
 ![[Pasted image 20221117124651.png]]
 
@@ -1453,12 +1452,16 @@ Un router tiene dos funciones principales:
 ![[Pasted image 20221117125539.png|400]]
 
 ### Componentes de un router:
+
 - **Puertos de entrada:**
 	Realiza las funciones de la capa física consistentes en la terminación de un enlace físico de entrada a un router. Realiza las funciones de la capa de enlace de datos necesarias para inter operar con las funciones de la capa de enlace de datos en el lado remoto del enlace de entrada. También realiza una función de búsqueda y reenvío, un paquete reenviado dentro del entramado de conmutación del router emerge en el puerto de salida apropiado.
+
 - **Entramado de conmutación:** 
 	Conecta los puertos de entrada del router a sus puertos de salida. Dentro del router.
+
 - **Puertos de salida:** 
 	Almacena los paquetes que le han sido reenviados a través del entramado de conmutación y los transmite al enlace de salida. Así, el puerto de salida lleva a cabo la función inversa de la capa física y de la capa de enlace de datos que el puerto de entrada.
+
 - **Procesador de enrutamiento:** 
 	Ejecuta los protocolos de enrutamiento.
 
@@ -1472,25 +1475,26 @@ En los routers con capacidades de procesamiento limitadas en el puerto de entrad
 
 Debido a la necesidad de operar a velocidades de enlace altas, no se puede buscar linealmente en la tabla de reenvío la correspondencia, sino que se almacena las entradas en la tabla de reenvío en una estructura de árbol. Cada nivel del árbol se interpreta como el correspondiente a un bit de la dirección de destino.
 Tiempo de búsqueda de 2^32 para direcciones IP, no suficientemente rápido.
+- **Otra técnica:** memorias direccionables por contenido (**CAM, Content Addressable Memory**), las cuales permiten acceder a la memoria mediante una dirección IP de 32 bits, devolviendo el contenido de la correspondiente entrada de la tabla de reenvío en un tiempo prácticamente constante.
+- **Otra técnica:** utilizar una caché para almacenar las entradas accedidas recientemente.
 
-**Otra técnica:** memorias direccionables por contenido (**CAM, Content Addressable Memory**), las cuales permiten acceder a la memoria mediante una dirección IP de 32 bits, devolviendo el contenido de la correspondiente entrada de la tabla de reenvío en un tiempo prácticamente constante.
-
-**Otra técnica:** utilizar una caché para almacenar las entradas accedidas recientemente.
 Una vez determinado el puerto de salida de un paquete, es reenviado al entramado de conmutación, pero puede ser bloqueada su entrada si está siendo usado por otros paquetes. Por lo que queda almacenado en la cola de entrada del puerto de entrada.
 
 #### Entramado de Conmutación
 
-Se encargan de transferir el paquete desde el buffer de entrada al correspondiente buffer de salida. La tasa de switching es la tasa a la cual los paquetes pueden ser transferidos desde las entradas hacia las salidas. A veces se mide como un múltiplo de la tasa lineal de entrada/salida. 
+Se encargan de transferir el paquete desde el buffer de entrada al correspondiente buffer de salida. La **tasa de switching** es la tasa a la cual los paquetes pueden ser transferidos desde las entradas hacia las salidas. A veces se mide como un múltiplo de la tasa lineal de entrada/salida. 
 Si tenemos N entradas, se desea una tasa N veces la tasa lineal. 
 Hay tres tipos de Switching Fabrics:
 
 - Vía memoria: 
 	Utilizado en los routers de la primera generación. Son computadoras tradicionales con Switching bajo control directo de la CPU. El paquete es copiado a la memoria del sistema. La velocidad está limitada por el ancho de banda de memoria (2 cruces de bus por datagrama).
 	![[Pasted image 20221117131218.png|400]]
+
 - Conmutación vía bus: 
 	Los datagramas van desde la memoria del puerto de entrada a la memoria del puerto de salida mediante un bus compartido, por lo que un solo paquete puede ser transferido al mismo tiempo por ese bus. Un paquete que llega y encuentra el bus ocupado, es bloqueado de pasar por la switiching fabric, y encolado en el puerto de entrada. 
 	Dado que un único paquete puede pasar a la vez, la velocidad de switching está limitada por el ancho de banda del bus.
 	![[Pasted image 20221117131318.png|300]]
+
 - Conmutación vía una red de interconexión: 
 	Utilizado para superar las limitaciones de ancho de banda del bus. Redes secretarias, crossbar, otras redes de interconexión inicialmente desarrolladas para conectar procesadores en multiprocesadores. 
 	Diseño avanzado: fragmentación de los datagramas en celdas de tamaño fijo, se hace el switch de las celdas a través de la fábrica.
@@ -1511,7 +1515,7 @@ El buffering ocurre cuando la tasa de llegada por switch excede la velocidad de 
 El buffering ocurre cuando la tasa de llegada por switch excede la velocidad de la línea de salida. Esto puede generar el encolado de paquetes (retraso) e incluso la pérdida debido a una sobrecarga del buffer de salida.
 
 #### ¿Cuánto buffer es necesario?
-La regla de oro de RFC 3439 dice que el buffering promedio es igual al típico RTT (por ejemplo, 250msec) veces la capacidad del enlace C. Por ejemplo, si el enlace C = 10 Gbps, el buffer es de 2.5Gbits
+La regla de oro de RFC 3439 dice que el buffering promedio es igual al típico RTT (por ejemplo, 250msec) veces la capacidad del enlace C. Por ejemplo, si el enlace C = 10 Gbps, el buffer es de 2.5Gbits.
 Recomendaciones recientes con N flujos, el buffering equivale a $\frac{RTT \times C}{\sqrt{N}}$
 
 #### En puertos de entrada:
@@ -1522,7 +1526,7 @@ Si la Switch Fabric es más lenta que los puertos de entrada combinados, entonce
 
 ## 4.4.1 Protocolo de Internet (IP) 
 
-Como vemos en la figura a continuación, la red tiene 3 componentes principales. En primer lugar, el protocolo IP. En segundo lugar, los protocolos de ruteo, que determinan el camino que debe seguir el paquete para llegar desde la fuente hacia el destino, completando las tablas de Forwarding. Y el componente final es la facilidad de reportar errores en los datagramas y responder con información de la capa de red, a través del protocolo ICMP.
+Como vemos en la figura a continuación, la red tiene 3 componentes principales. En primer lugar, el **protocolo IP**. En segundo lugar, los **protocolos de ruteo**, que determinan el camino que debe seguir el paquete para llegar desde la fuente hacia el destino, completando las tablas de Forwarding. Y el componente final es la facilidad de reportar errores en los datagramas y responder con información de la capa de red, a través del **protocolo ICMP**.
 
 ![[Pasted image 20221117132248.png|500]]
 
@@ -1538,7 +1542,7 @@ El datagrama en IP (en este caso IPv4) tiene el siguiente formato:
 - **Identificador, indicadores, desplazamiento de fragmentación:** usado para la **fragmentación**
 - **Tiempo de vida (TTL)**: usado para que el datagrama no exista infinitamente en la red.
 - **Protocolo**: Solo se emplea cuando un datagrama IP alcanza su destino final. Este valor indica el protocolo específico de la capa de transporte al que se le pasaran los datos contenidos en ese datagrama.
-- **Suma de comprobación de cabecera**: Normalmente, los routers descartan los paquetes que se detectan errores.
+- **Suma de comprobación de cabecera**: Normalmente, los routers descartan los paquetes en los que se detectan errores.
 - **Direcciones de IP origen y destino**
 - Opciones: permite ampliar la cabecera IP
 - Datos o carga útil
@@ -1565,7 +1569,7 @@ Los fragmentos tiene que ser reensamblados antes de llegar a la capa de transpor
 
 ![[Pasted image 20221117132749.png|300]]
 
-El host destino necesita saber si se trata de datagramas enteros o fragmentos y como ensamblarlos. Para eso se usan los campos identificador, indicador y desplazamiento de fragmentación en la cabecera del datagrama IP.
+El host destino necesita saber si se trata de datagramas enteros o fragmentos y cómo ensamblarlos. Para eso se usan los campos identificador, indicador y desplazamiento de fragmentación en la cabecera del datagrama IP.
 
 Cuando un router necesita fragmentar un datagrama, cada datagrama resultante se marca con la dirección de origen, la dirección de destino y el número de identificación del datagrama original.
 
@@ -1615,7 +1619,9 @@ Los x bits más significativos de una dirección en el formato a.b.c.d/x constit
 
 ```ad-warning
 title: IP de broadcast o difusión
-Cuando un host envía un datagrama cuya dirección de destino es 255.255.255.255, el mensaje se entrega a todos los hosts existentes en la misma subred.
+Cuando un host envía un datagrama cuya dirección de destino es 255.255.255.255, el mensaje se entrega a todos los hosts existentes en la misma subred. 
+
+Cada subred tiene una dirección de broadcast en particular que es distinta de la mencionada. Esta es la máxima dirección disponible dentro de la subred.
 ```
 
 ### Obtener un bloque de direcciones
@@ -1635,11 +1641,12 @@ Si al ISP se le otorga el bloque 200.23.16.0/20, puede dividir ese bloque en 8 b
 ```
 
 #### Cómo obtener una dirección de host: 
-Un host puede obtener su dirección IP de dos maneras: 
+Un **host** puede obtener su dirección IP de dos maneras: 
 - **Hard Codeada** por el administrador del sistema en un archivo.
 - Mediante **DHCP**.
 
-##### Protocolo de configuración dinámica de host **DHCP**
+##### **DHCP**: Protocolo de configuración dinámica de host 
+
 Las direcciones de host también se pueden configurar manualmente, pero frecuentemente ahora esta tarea se lleva cabo utilizando el Protocolo de configuración dinámica de host (DHCP , Dynamic Host Configuration Protocol). DHCP permite a un host obtener (permite que se le asigne) automáticamente una dirección IP.
 
 Un administrador de red puede configurar DHCP de modo que un host dado reciba la misma dirección IP cada vez que se conecte a la red, o un host puede ser asignado a una dirección IP temporal que será diferente cada vez que el host se conecte a la red.
@@ -1648,7 +1655,7 @@ También puede brindar información adicional como: su máscara de subred, el ga
 Protocolo **plug-and-play** por su capacidad de automatizar el proceso de conexión.
 Cada vez que un host se une a la red, el servidor DHCP asigna una dirección arbitraria de su conjunto actual de direcciones disponibles; cada vez que un host abandona la red, su dirección es devuelta al conjunto.
 
-DHCP es un protocolo cliente-servidor . Cada subred necesita un servidor DHCP o puede tener un agente de retransmisión DHCP (un router) que conozca la dirección de un servidor DHCP.
+DHCP es un protocolo cliente-servidor. Cada subred necesita un servidor DHCP o puede tener un agente de retransmisión DHCP (un router) que conozca la dirección de un servidor DHCP.
 
 ![[Pasted image 20221117235529.png]]
 
@@ -1749,7 +1756,7 @@ Formato del datagrama IPv6: **cabezal de largo fijo de 40 bytes** y no se permit
 
 ### Notación de las direcciones IPv6
 
-La notación utilizada por IPv6 codifica los octetos (las agrupaciones de 8 bits) en su representación hexadecimal y separa parejas de éstos con el carácter “:” eliminando ceros a la izquierda dentro de dichas parejas, así como bloques completos de ceros representados por “::”.
+La notación utilizada por IPv6 codifica las agrupaciones de 16 bits en su representación hexadecimal y separa parejas de éstos con el carácter “:” eliminando ceros a la izquierda dentro de dichas parejas, así como bloques completos de ceros representados por “::”. En total quedan 8 agrupaciones de 16 bits.
 
 ### Encabezado IPv6
 
@@ -1773,7 +1780,7 @@ Varios campos que aparecían en IPv4 ya no aparecen en IPv6, como, por ejemplo:
 #### Cabezales de extensión
 - Las “opciones” son manejadas a través de extension headers
 - Los headers son “enganchados” utilizando el campo Next Header
-- Los valores son inter operables con los valores utilizados por el protocolo IPv4 (i.e. TCP = 6, UDP = 17 , etc.)
+- Los valores son inter-operables con los valores utilizados por el protocolo IPv4 (i.e. TCP = 6, UDP = 17 , etc.)
 - Extension headers:
 	- Hop-by-hop header (NH=0)
 	- Routing header (NH=43)
@@ -1916,12 +1923,16 @@ El resultado de difundir la información de los nodos es que **todos los nodos t
 
 El algoritmo de Dijkstra calcula la ruta de coste mínimo desde un nodo (el origen, al que denominaremos u) hasta todos los demás nodos de la red.
 
-```python
+```c
 #### inicialización:
 N’ = {u}
+D : distancias a cada nodo
+P : predecesor en el camino de costo mínimo
+
 for todo nodo v
 	if v es un vecino de u:
 		D(v) = c(u,v);
+		P(v) = u
 	else:
 		D(v) = ∞;
 do
@@ -1932,6 +1943,8 @@ do
 		# el nuevo coste a v es o bien el antiguo 
 		# coste a v o el coste de la ruta de coste 
 		# mínimo a w más el coste desde w a v
+		if se modificó D(v):
+			P(v) = w
 until N’ = N
 ```
 
@@ -2013,8 +2026,9 @@ En otros términos, si $next\_hop_x(z) = y ⟹ D_x(z)=\infty$. De esta manera, e
 
 ```ad-warning
 title: Cuidado
-No funciona siempre para topologías complejas.
+No garantiza una solución al problema para topologías complejas.
 ```
+
 <div style="page-break-after: always;"></div>
 
 ## 5.2 Enrutamiento jerárquico y sistemas autónomos 
@@ -2234,10 +2248,16 @@ Para construir el árbol de cubrimiento, en primer lugar, se toma un nodo centra
 
 Ambos mecanismos cumplen la misma función: enviar una copia de un mensaje a todos los nodos de una red. En el caso de broadcast típicamente se asume un medio compartido (por ejemplo un dominio de broadcast ethernet), donde el origen de la comunicación envía un mensaje a una dirección especial que representa a todos los nodos. En redes con topologías arbitrarias, el envío de un mensaje a todos los nodos se puede implementar mediante flooding. 
 
+```ad-example
+title: Ejemplos
+
 Ethernet 802.3 tiene la dirección FF:FF:FF:FF:FF:FF definida como dirección de broadcast. 
+
 OSPF utiliza flooding para el envío de información de estado-enlace entre routers; en este caso se utiliza como destino una dirección de multicast que representa a todos los routers.
+```
 
 ### Multicast
+
 La idea es encontrar un árbol o árboles conectando routers teniendo miembros de un grupo local de multicast.
 - Tree: no todos los caminos entre routers son usados.
 - Source-based: diferente árbol desde cada emisor a receptor.
@@ -2316,7 +2336,7 @@ Por otro lado, el lado receptor busca por errores, rdt, control de flujo, etc.; 
 - [[#6.3 Direccionamiento de la capa de enlace]]
 - [[#6.4 Ethernet]]
 - [[#6.5 Dominios de colisión y de broadcast]]
-- [[#6.6 Conmutadores de la capa de enlace]]
+- [[#6.6 Hub y Switch]]
 - [[#6.6.1 Switch vs Router]]
 - [[#6.7 VLAN, redes de área local virtuales]]
 - [[#6.8 PPP, Protocolo punto a punto]]<div style="page-break-after: always;"></div>
@@ -2577,13 +2597,13 @@ algún procedimiento de recuperación para hacer que el testigo vuelva a circula
 La dirección MAC tiene 6 bytes de longitud, lo que nos da $2^{48}$ posibles direcciones MAC.
 Suelen expresarse en notación hexadecimal, indicándose cada byte de la dirección mediante una pareja de números hexadecimales. Aunque las direcciones MAC se diseñaron para ser permanentes, hoy día es posible modificar la dirección MAC de un adaptador mediante un software apropiado.
 
-El IEEE se encarga de gestionar el espacio de direcciones MAC, vende direcciones a las empresas que quieren fabricar adaptadores, de forma de tener direcciones MAC únicas.
+El **IEEE** se encarga de gestionar el espacio de direcciones MAC, vende direcciones a las empresas que quieren fabricar adaptadores, de forma de tener direcciones MAC únicas.
 Las direcciones MAC tienen una estructura plana y no varían dependiendo de a donde se lleve el adaptador.
 
 Cuando un adaptador de un emisor quiere enviar una trama a otro adaptador de destino, inserta la dirección MAC del de destino en la trama y luego la envía a través de la red LAN.
 Si se trata de una LAN de difusión, la trama será recibida y procesada por todos los demás adaptadores de la LAN. En particular, cada adaptador que reciba la trama comprobará si la dirección MAC de destino contenida en la trama se corresponde con su propia dirección MAC. Solo se pasará la trama “hacia arriba” si coincide la dirección MAC.
 
-**Dirección de difusión MAC : FF-FF-FF-FF-FF-FF,** con esta dirección se quiere que todos los adaptadores reciban y procesen la trama enviada.
+**Dirección de difusión MAC : FF:FF:FF:FF:FF:FF,** con esta dirección se quiere que todos los adaptadores reciban y procesen la trama enviada.
 
 ### Protocolo de resolución de direcciones (ARP)
 
@@ -2656,7 +2676,7 @@ Es la tecnología cableada LAN dominante, por varias razones:
 - Más simple y barata que token LAN y ATM.
 - Permite velocidades entre 10Mbps – 10Gbps
  
-### Estructura de la trama o frame Ethernet
+### Estructura de la trama Ethernet
 
 ![[Pasted image 20221116135951.png]]
 
@@ -2682,11 +2702,11 @@ Esta responsabilidad es de protocolos de capas superiores.
 ### Unslotted CSMA/CD: protocolo de acceso múltiple de Ethernet
 
 #### Algoritmo: 
-1. NIC (Network Interface Card) recibe un datagrama de la capa de red y crea un frame. 
+1. La NIC (Network Interface Card) recibe un datagrama de la capa de red y crea un frame. 
 2. Si la NIC siente un canal ocioso, comienza la transmisión. Si la NIC siente un canal ocupado, espera hasta que el canal quede ocioso y luego transmite. 
 3. Si la NIC transmite el frame entero sin detectar otra transmisión, entonces la NIC completó su trabajo para ese frame. 
 4. Si la NIC detecta otra transmisión mientras está transmitiendo, aborta y envía una señal de atasco. 
-5. Luego de abortar, la NIC entra a **Exponential Backoff**: luego de la n-ésima colisión, la NIC elige $K$ de forma aleatoria en $\{0,1,2, … , 2n - 1\}$. Luego la NIC espera $512 * K$ $bit$ $times$ (K veces el tiempo necesario para transmitir 512 bits) y regresa al paso 2.
+5. Luego de abortar, la NIC entra a **Exponential Backoff**: luego de la n-ésima colisión, la NIC elige $K$ de forma aleatoria en $\{0,1,2, … , 2^n - 1\}$. Luego la NIC espera $512 * K$ $bit$ $times$ (K veces el tiempo necesario para transmitir 512 bits) y regresa al paso 2. Observar que luego de 10 colisiones $n$ no sigue creciendo.
 
 **Señal de atasco:** asegura que todos los otros transmisores están al tanto de la colisión. Son 48 bits.
 
@@ -2716,8 +2736,8 @@ title: Eficiencia
 ### Dominio de Colisión
 
 Se conoce como dominio de colisión al espacio físico con un ancho de banda compartido por un conjunto de dispositivos. En el caso que dos de esos dispositivos quieran transmitir al mismo tiempo, existe la posibilidad de que sus mensajes colisionen el espacio compartido y, o bien acaben convertidos en una amalgama de bits o bien no se pueda asegurar que al receptor le ha llegado el mensaje, de ahí el término colisión. Para resolverlo, Ethernet implementa CSMA/CD (Carrier dense multiple access with collision detection). 
-L
-a buena práctica en redes Ethernet consiste en mantener los dominios de colisión pequeños, es decir, con pocos dispositivos. Si lo piensas tiene todo el sentido del mundo; cuantos menos nodos compartan un espacio físico menor será la probabilidad de que transmitan a la vez y surja una colisión. 
+
+La buena práctica en redes Ethernet consiste en mantener los dominios de colisión pequeños, es decir, con pocos dispositivos. Si lo piensas tiene todo el sentido del mundo; cuantos menos nodos compartan un espacio físico menor será la probabilidad de que transmitan a la vez y surja una colisión. 
 
 Cuantas más colisiones, peor rendimiento de la red. Este se expresa tal que así: 
 $$Rendimiento = (1-(\frac{Colisiones}{Paquetes Totales}))*100$$
@@ -2752,7 +2772,7 @@ Otro aspecto importante puede asociarse a la seguridad, pues, cualquier error en
 ```
 <div style="page-break-after: always;"></div>
 
-## 6.6 Conmutadores de la capa de enlace 
+## 6.6 Hub y Switch 
 
 ### Hub o concentrador
 
@@ -2793,7 +2813,7 @@ Posibilidades con la tabla:
 
 Los conmutadores tienen la propiedad de que su tabla se construye de forma automática, dinámica y autónoma, sin intervención de un administrador de redes ni de ningún protocolo de configuración.
 1. Incialmente la tabla del conmutador está vacía
-2. Para cada trama entrante recibida en una interfaz, el conmutador almacena en su  tabla (1) la dirección MAC especificada en el campo dirección de origen de la trama,  (2) la interfaz de la que procede la trama y (3) la hora actual.
+2. Para cada trama entrante recibida en una interfaz, el conmutador almacena en su  tabla (1) la dirección MAC especificada en el campo dirección de origen de la trama, (2) la interfaz de la que procede la trama y (3) la hora actual.
 3. El conmutador borra una dirección de la tabla si no se recibe ninguna trama con esa dirección como dirección de origen transcurrido un cierto periodo de tiempo (tiempo de envejecimiento).
 
 #### Propiedades de la conmutación de la capa de enlace
@@ -2832,8 +2852,11 @@ Los conmutadores tienen la propiedad de que su tabla se construye de forma autom
 Un conmutador compatible con redes VLAN permite definir **múltiples redes de área local virtuales sobre una única infraestructura de red** de área local física. Varias VLAN pueden coexistir en un único conmutador físico o en una única red física. Los hosts de una VLAN se comunican entre sí como si sólo ellos (y ningún otro host) estuvieran conectados al conmutador.
 
 En una **VLAN basada en puertos**, el administrador de la red divide los puertos (interfaces) del conmutador en grupos. Cada grupo constituye una VLAN, con los puertos de cada VLAN formando un dominio de difusión.
-Para enviar tráfico entre un departamento y otro, los fabricantes de conmutadores incorporan en un único dispositivo un conmutador VLAN y un router, con lo que no es necesario un router externo.
+
+Para enviar tráfico entre una VLAN y otra, los fabricantes de switches incorporan en un único dispositivo un conmutador VLAN y un router, con lo que no es necesario un router externo.
+
 Si se tienen dos conmutadores separados físicamente pero compartiendo VLANs se utiliza la técnica **troncalización VLAN**, con la cual un puerto especial de cada conmutador se configura como un puerto troncal para interconectar los dos conmutadores VLAN. El puerto troncal pertenece a todas las VLAN y las tramas enviadas a cualquier VLAN son reenviadas a través del enlace troncal hacia el otro conmutador.
+
 Para identificar a qué VLAN pertenece cada trama, se utiliza una etiqueta VLAN de cuatro bytes añadida a la cabecera que transporta la identidad de la VLAN a la que pertenece.
 
 ```ad-important
@@ -2869,10 +2892,9 @@ El protocolo punto a punto PPP es un protocolo de la capa de enlace que opera so
   
 - **Múltiples protocolos de la capa de red:** Tiene que poder dar soporte a múltiples protocolos de la capa de red que se ejecuten sobre el mismo enlace físico de forma simultánea.
   
-- **Múltiples tipos de enlaces:** Además de poder transportar múltiples protocolos de nivel superior, PPP también tiene que poder operar sobre una amica variedad de tipos de enlaces, incluyendo enlaces serie o paralelo, enlaces síncronos o asíncronos, enlaces de baja velocidad o de alta velocidad, o enlaces electrónicos u ópticos.
+- **Múltiples tipos de enlaces:** Además de poder transportar múltiples protocolos de nivel superior, PPP también tiene que poder operar sobre una amplia variedad de tipos de enlaces, incluyendo enlaces serie o paralelo, enlaces síncronos o asíncronos, enlaces de baja velocidad o de alta velocidad, o enlaces electrónicos u ópticos.
   
-- **Detección de errores:** Tiene que ser capaz de detectar errores de bit en las tramas
-recibidas.
+- **Detección de errores:** Tiene que ser capaz de detectar errores de bit en las tramas recibidas.
 
 - **Pervivencia de la conexión:** Tiene que ser capaz de detectar un fallo en el nivel de enlace y de señalar esa condición de error a la capa de red.
   
@@ -2896,6 +2918,7 @@ recibidas.
 
 - [[#99.1 Puertos bien conocidos]]
 - [[#99.2 Tips problemas prácticos]]
+- [[#99.3 Protocolos sobre protocolos]]
 
 ### Practicos
 - [[#Practico 5]]
@@ -2904,34 +2927,37 @@ recibidas.
 
 ## 99.1 Puertos bien conocidos 
 
-- HTTP --> 80
-	- HTTPS --> 443
+- HTTP –> 80
+	- HTTPS –> 443
 
-- DNS --> 53
+- DNS –> 53
 
-- FTP --> 21 para control y 20 para datos
+- FTP –> 21 para control y 20 para datos
 
 - SMTP –> 25 
-	- seguro --> 465, 587
+	- seguro –> 465, 587
 - POP3 –> 110 
-	- sobre TLS --> 995
+	- sobre –> 995
 - IMAP –> 143
-	- sobre TLS --> 993
+	- sobre –> 993
 
 - DHCP –> 68 cliente y 67 servidor
-<div style="page-break-after: always;"></div>
+
+- BGP –> 179<div style="page-break-after: always;"></div>
 
 ## 99.2 Tips problemas prácticos 
 
 
 ### Implementación de NAT
-- Siempre recalcular el checksum y setearlo al paquete como último paso antes de finalizar el procesamiento
-- La tabla debe mantener IP_priv, PORT_priv, IP_publ, PORT_publ
+- Siempre recalcular el checksum y setearlo al paquete como último paso antes de finalizar el procesamiento.
+- La tabla debe mantener IP_priv, PORT_priv, IP_publ, PORT_publ, PROTOCOLO
+	- PORT_x puede ser también el identificador ICMP
+	- Los protocolos son TCP, UDP e ICMP.
 
 ### Implementación de Forwarding
 - Chequear TTL y decrementarlo. Si TTL no es mayor a 1, se debe enviar el mensaje ICMP con TTL Expire.
-- Longest Prefix Match obviamente
-- Detectar multicast sabiendo que una dir. de multicast siempre comienza con 1110
+- Longest Prefix Match a menos que digan lo contrario.
+- Detectar multicast sabiendo que una dir. de multicast siempre comienza con 1110.
 
 ### Sockets
 - Cerrarlos apenas pueda (especialmente UDP)
@@ -2943,19 +2969,34 @@ recibidas.
 - Capturar DNS si los mensajes son hacia un hostname.
 - Diferenciar HTTP GET de Response
 
-### TCP
-- 
-
 ### HTTP y la web
 - Una url puede incluir el número de puerto a consultar luego del nombre de dominio. El formato sería: {nomb_dominio | ip}:{num_puerto?}/{path_objeto_consultado}
 - Generalmente conviene implementar una op. 'obtener_objeto' y luego llamarla varias veces a lo largo del programa. Ojo si es HTTP/1.1.
 - El get es del siguiente formato: 
 	- `GET /index.html HTTP/1.1`
 - Para separar los header del contenido útil buscar `"\r\n\r\n"` .
-- Las respuestas del servidor tienen como primer linea algo del estilo: `HTTP/1.1 200 OK`.
+- Las respuestas del servidor tienen como primer linea algo del estilo: 
+	- `HTTP/1.1 200 OK`.
 
 ### DHCP
 - Cada vez que un host se une a la red, el servidor DHCP asigna una dirección arbitraria de su conjunto actual de direcciones disponibles; cada vez que un host abandona la red, su dirección es devuelta al conjunto.<div style="page-break-after: always;"></div>
+
+## 99.3 Protocolos sobre protocolos 
+
+- HTTP –> TCP
+	- HTTPS –> HTTP sobre TLC o SSL sobre TCP
+
+- DNS –> UDP
+
+- FTP –> TCP
+
+- SMTP –> TCP
+- POP3 –> TCP
+- IMAP –> TCP
+
+- DHCP –> UDP
+
+- BGP –> TCP<div style="page-break-after: always;"></div>
 
 ## Practico 5 
 
