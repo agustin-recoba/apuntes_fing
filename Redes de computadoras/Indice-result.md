@@ -637,7 +637,7 @@ Una vez que cualquier DNS server conoce un mapeo, lo cachea. Las entradas de la 
 
 ##### Registros DNS
 
-Los Servidores DNS que implementan la base de datos distribuida almacenan **“Resource Records” (RR),** incluyendo aquellos que incluyen el mapeo hostName →IP. 
+Los Servidores DNS que implementan la base de datos distribuida almacenan **“Resource Records” (RR),** incluyendo aquellos que incluyen el mapeo hostName→IP. 
 Un RR es una **4-upla formada por (Nombre, Valor, Tipo, TTL)**, donde TTL es el “Time To Live” del RR, que determina cuando un recurso debe ser retirado de la caché. 
 Los significados de Nombre y Valor dependen de la definición de Tipo:
 - **Tipo A** 
@@ -2917,9 +2917,8 @@ El protocolo punto a punto PPP es un protocolo de la capa de enlace que opera so
 # 99. Otros 
 
 - [[#99.1 Puertos bien conocidos]]
-- [[#99.2 Tips problemas prácticos]]
-- [[#99.3 Protocolos sobre protocolos]]
-
+- [[#99.2 Protocolos sobre protocolos]]
+- [[#99.3 Tips problemas prácticos]]
 ### Practicos
 - [[#Practico 5]]
 - [[#Practico 6]]
@@ -2945,7 +2944,24 @@ El protocolo punto a punto PPP es un protocolo de la capa de enlace que opera so
 
 - BGP –> 179<div style="page-break-after: always;"></div>
 
-## 99.2 Tips problemas prácticos 
+## 99.2 Protocolos sobre protocolos 
+
+- HTTP –> TCP
+	- HTTPS –> HTTP sobre TLC o SSL sobre TCP
+
+- DNS –> UDP
+
+- FTP –> TCP
+
+- SMTP –> TCP
+- POP3 –> TCP
+- IMAP –> TCP
+
+- DHCP –> UDP
+
+- BGP –> TCP<div style="page-break-after: always;"></div>
+
+## 99.3 Tips problemas prácticos 
 
 
 ### Implementación de NAT
@@ -2980,23 +2996,6 @@ El protocolo punto a punto PPP es un protocolo de la capa de enlace que opera so
 
 ### DHCP
 - Cada vez que un host se une a la red, el servidor DHCP asigna una dirección arbitraria de su conjunto actual de direcciones disponibles; cada vez que un host abandona la red, su dirección es devuelta al conjunto.<div style="page-break-after: always;"></div>
-
-## 99.3 Protocolos sobre protocolos 
-
-- HTTP –> TCP
-	- HTTPS –> HTTP sobre TLC o SSL sobre TCP
-
-- DNS –> UDP
-
-- FTP –> TCP
-
-- SMTP –> TCP
-- POP3 –> TCP
-- IMAP –> TCP
-
-- DHCP –> UDP
-
-- BGP –> TCP<div style="page-break-after: always;"></div>
 
 ## Practico 5 
 

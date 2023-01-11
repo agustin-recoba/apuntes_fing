@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Redes de computadoras/Indice-result.md",
+                "file": "Redes de computadoras/99. Otros/99.3 Tips problemas prácticos.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redes de computadoras/Indice-result.md",
+                "file": "Redes de computadoras/99. Otros/99.3 Tips problemas prácticos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redes de computadoras/Indice-result.md",
+                "file": "Redes de computadoras/99. Otros/99.3 Tips problemas prácticos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redes de computadoras/Indice-result.md"
+                "file": "Redes de computadoras/99. Otros/99.3 Tips problemas prácticos.md"
               }
             }
           }
@@ -133,20 +133,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "41149679e3c67efd",
   "lastOpenFiles": [
-    "Redes de computadoras/6. Capa de enlace/6.8 PPP, Protocolo punto a punto.md",
-    "Redes de computadoras/6. Capa de enlace/6.7 VLAN, redes de área local virtuales.md",
-    "Redes de computadoras/6. Capa de enlace/6.6.1 Switch vs Router.md",
-    "Redes de computadoras/6. Capa de enlace/6.6 Hub y Switch.md",
-    "Redes de computadoras/6. Capa de enlace/6.5 Dominios de colisión y de broadcast.md",
     "Redes de computadoras/6. Capa de enlace/6.4 Ethernet.md",
-    "Redes de computadoras/6. Capa de enlace/6.3 Direccionamiento de la capa de enlace.md",
-    "Redes de computadoras/6. Capa de enlace/6.2 Protocolo de acceso múltiple.md",
-    "Redes de computadoras/6. Capa de enlace/6.1 Técnicas de detección y corrección de errores.md",
-    "Redes de computadoras/6. Capa de enlace/6. Capa de Enlace.md"
+    "Redes de computadoras/2. Capa de Aplicación/2.4.2 DNS.md",
+    "Redes de computadoras/2. Capa de Aplicación/2.4.1 La Web y HTTP.md",
+    "Redes de computadoras/5. Capa de Red, plano de control/5.2 Enrutamiento jerárquico y sistemas autónomos.md",
+    "Redes de computadoras/4. Capa de Red, plano de datos/4.4.2 Direccionamiento IPv4.md",
+    "Redes de computadoras/2. Capa de Aplicación/2.4.4 FTP.md",
+    "Redes de computadoras/3. Capa de Transporte/3.6.3 TCP, control de congestión.md",
+    "Redes de computadoras/3. Capa de Transporte/3.6.1 Principios de TCP.md",
+    "Redes de computadoras/99. Otros/99.3 Tips problemas prácticos.md",
+    "Redes de computadoras/99. Otros/99. Otros.md"
   ]
 }
