@@ -7,5 +7,8 @@
   "obsidian-advanced-new-file",
   "obsidian-languagetool-plugin",
   "obsidian-pandoc",
-  "obsidian-excalidraw-plugin"
+  "obsidian-excalidraw-plugin",
+  "code-block-copy",
+  "url-into-selection",
+  "obsidian-textgenerator-plugin"
 ]

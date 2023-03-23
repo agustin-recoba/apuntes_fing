@@ -131,6 +131,7 @@ var CreateNoteModal = class extends import_obsidian2.Modal {
   }
   listenInput(evt) {
     if (evt.key === "Enter") {
+      evt.preventDefault();
       this.createNewNote(this.inputEl.value);
       this.close();
     }
@@ -213,12 +214,19 @@ var ChooseFolderModal = class extends import_obsidian3.FuzzySuggestModal {
   }
   init() {
     const folders = new Set();
+    const sortedFolders = [];
+    let leaf = this.app.workspace.getLeaf(false);
+    if (leaf && leaf.view instanceof import_obsidian3.MarkdownView && leaf.view.file instanceof import_obsidian3.TFile && leaf.view.file.parent instanceof import_obsidian3.TFolder) {
+      folders.add(leaf.view.file.parent);
+      sortedFolders.push(leaf.view.file.parent);
+    }
     import_obsidian3.Vault.recurseChildren(this.app.vault.getRoot(), (file) => {
-      if (file instanceof import_obsidian3.TFolder) {
+      if (file instanceof import_obsidian3.TFolder && !folders.has(file)) {
         folders.add(file);
+        sortedFolders.push(file);
       }
     });
-    this.folders = Array.from(folders);
+    this.folders = sortedFolders;
     this.emptyStateText = EMPTY_TEXT;
     this.setPlaceholder(PLACEHOLDER_TEXT);
     this.setInstructions(instructions);
