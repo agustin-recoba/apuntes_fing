@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "e1b8d1777d2495d7",
+        "id": "3704f180c558e5c5",
         "type": "tabs",
         "children": [
           {
-            "id": "85ed8e2dfe85bf51",
+            "id": "04e73e7fcf9cf0ae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "568676282003df74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 277,
+    "width": 402.5,
     "collapsed": true
   },
   "right": {
@@ -99,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -163,26 +142,34 @@
       "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
     }
   },
-  "active": "568676282003df74",
+  "active": "04e73e7fcf9cf0ae",
   "lastOpenFiles": [
-    "Intro. a la Teoría de la Información/media/Pasted image 20230321231216.png",
-    "Intro. a la Teoría de la Información/media/Pasted image 20230321231206.png",
-    "Intro. a la Teoría de la Información/media/Pasted image 20230321231157.png",
-    "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
-    "Intro. a la Teoría de la Información/media/Pasted image 20230321230903.png",
-    "Intro. a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
-    "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requerimientos.md",
+    "Intro. a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
+    "Intro. a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230403222018.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230403221339.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230403221310.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230403221154.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230403220915.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230403215600.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230403214902.png",
+    "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
+    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
+    "Administración General para Ingenieros/media/Pasted image 20230403005427.png",
+    "Administración General para Ingenieros/media/Pasted image 20230403004627.png",
+    "Administración General para Ingenieros/media/Pasted image 20230403004220.png",
+    "Intro. a la Ingeniería de Software/Extras/SWEBOK - Software Design.md",
+    "Capítulo 7 - Diseño e implementación.md",
     "Intro. a la Ingeniería de Software/Extras/Casos de uso.md",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230321082437.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230321082413.png",
+    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
+    "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
+    "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
+    "Intro. a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
+    "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+    "Intro. a la Ingeniería de Software/Extras/User Stories.md",
     "Intro. a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
     "Intro. a la Ingeniería de Software/Capítulo 1 - Introduccion.md",
     "Administración General para Ingenieros/Capítulo 6 - Toma de decisiones.md",
-    "Administración General para Ingenieros/media/Pasted image 20230321001209.png",
-    "Administración General para Ingenieros/media/Pasted image 20230321000545.png",
-    "Administración General para Ingenieros/media/Pasted image 20230321000112.png",
-    "Administración General para Ingenieros/media/Pasted image 20230320234841.png",
-    "Administración General para Ingenieros/media/Pasted image 20230320231717.png",
     "Administración General para Ingenieros/Capítulo 5 - RESPONSABILIDAD Y ÉTICA ADMINISTRATIVA.md",
     "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
     "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
@@ -195,9 +182,6 @@
     "Intro. a la Ingeniería de Software/Indice.md",
     "Redes de computadoras/Indice.md",
     "Redes de computadoras/Indice-result.md",
-    "Redes de computadoras/99. Otros/99.3 Tips problemas prácticos.md",
-    "Redes de computadoras/6. Capa de enlace/6.4 Ethernet.md",
-    "Redes de computadoras/2. Capa de Aplicación/2.4.2 DNS.md",
-    "Redes de computadoras/2. Capa de Aplicación/2.4.1 La Web y HTTP.md"
+    "Redes de computadoras/99. Otros/99.3 Tips problemas prácticos.md"
   ]
 }
