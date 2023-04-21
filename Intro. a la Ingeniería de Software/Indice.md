@@ -1,3 +1,3 @@
-[[Capítulo 1 - Introduccion]]
+[[Capítulo 1 - Introducción]]
 [[Capítulo 2 - Proceso de software]]
-	[[Ejemplos de SDLC]]
+	[[Ejemplos de modelos o SDLC]]

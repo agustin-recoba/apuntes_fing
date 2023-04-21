@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "3704f180c558e5c5",
+        "id": "64084b0fa9051bb1",
         "type": "tabs",
         "children": [
           {
-            "id": "04e73e7fcf9cf0ae",
+            "id": "db8b97917e366a42",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 402.5,
-    "collapsed": true
+    "width": 402.5
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -82,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,15 +124,25 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md"
+              }
+            }
+          },
+          {
+            "id": "0f3d6f834a25c23b",
+            "type": "leaf",
+            "state": {
+              "type": "aHR0cHM6Ly9jaGF0Lm9wZW5haS5jb20v",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 478.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -139,49 +154,51 @@
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-textgenerator-plugin:Generate Text!": false,
-      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false
+      "obsidian-textgenerator-plugin:Text Generator: Templates Packages Manager": false,
+      "open-gate:ChatGPT": false
     }
   },
-  "active": "04e73e7fcf9cf0ae",
+  "active": "db8b97917e366a42",
   "lastOpenFiles": [
-    "Intro. a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
-    "Intro. a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230403222018.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230403221339.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230403221310.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230403221154.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230403220915.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230403215600.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230403214902.png",
+    "Intro. a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
+    "Intro. a la Ingeniería de Software/Extras/Ejemplos de modelos o SDLC.md",
+    "Intro. a la Ingeniería de Software/Capítulo 3 - Metodologías ágiles.md",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230421185631.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230421184440.png",
+    "Intro. a la Ingeniería de Software/Capítulo 1 - Introducción.md",
     "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
-    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
-    "Administración General para Ingenieros/media/Pasted image 20230403005427.png",
-    "Administración General para Ingenieros/media/Pasted image 20230403004627.png",
-    "Administración General para Ingenieros/media/Pasted image 20230403004220.png",
-    "Intro. a la Ingeniería de Software/Extras/SWEBOK - Software Design.md",
-    "Capítulo 7 - Diseño e implementación.md",
-    "Intro. a la Ingeniería de Software/Extras/Casos de uso.md",
-    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
+    "Untitled.canvas",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230420212129.png",
+    "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230420163147.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230420161107.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230420160844.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230420160511.png",
+    "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
+    "Intro. a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
     "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
     "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
+    "Intro. a la Ingeniería de Software/Extras/Casos de uso.md",
+    "Capítulo 7 - Diseño e implementación.md",
+    "Intro. a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230404171428.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230404171358.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230404171113.png",
+    "Intro. a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
+    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
+    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
     "Intro. a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
     "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
     "Intro. a la Ingeniería de Software/Extras/User Stories.md",
-    "Intro. a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
-    "Intro. a la Ingeniería de Software/Capítulo 1 - Introduccion.md",
     "Administración General para Ingenieros/Capítulo 6 - Toma de decisiones.md",
     "Administración General para Ingenieros/Capítulo 5 - RESPONSABILIDAD Y ÉTICA ADMINISTRATIVA.md",
     "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
     "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
-    "Intro. a la Ingeniería de Software/Extras/Ejemplos de SDLC.md",
-    "Intro. a la Ingeniería de Software/Capítulo 3 - Metodologías ágiles.md",
     "Intro. a la Teoría de la Información/media",
     "Intro. a la Teoría de la Información",
     "Administración General para Ingenieros/media",
     "Administración General para Ingenieros",
     "Intro. a la Ingeniería de Software/Indice.md",
-    "Redes de computadoras/Indice.md",
-    "Redes de computadoras/Indice-result.md",
-    "Redes de computadoras/99. Otros/99.3 Tips problemas prácticos.md"
+    "Redes de computadoras/Indice.md"
   ]
 }

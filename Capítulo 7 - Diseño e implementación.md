@@ -1,6 +1,0 @@
-# Diseño
-
-## Extras:
-[[]]
-
-# Implementación
