@@ -1,14 +1,16 @@
-Los requisitos para un sistema son descripciones de lo que el sistema debe hacer: el servicio que ofrece y las restricciones en su operación. Tales requisitos reflejan las necesidades de los clientes por un sistema que atienda cierto propósito. Al proceso de descubrir, analizar, documentar y verificar estos servicios y restricciones se le llama ingeniería de requisitos (IR). 
+Los requisitos para un sistema son **descripciones de lo que el sistema debe hacer**: **el servicio que ofrece y las restricciones en su operación**. Tales requisitos reflejan las necesidades de los clientes por un sistema que atienda cierto propósito. Al proceso de **descubrir, analizar, documentar y verificar** estos servicios y restricciones se le llama **ingeniería de requisitos** (IR). 
 
-Existen cuatro actividades principales en el proceso de ingeniería de requerimientos:
-- **Estudio de factibilidad**
-	Se realiza una estimación sobre si las necesidades identificadas del usuario se cubren con las actuales tecnologías de software y hardware. El estudio considera si el sistema propuesto tendrá un costo-beneficio desde un punto de vista empresarial, y si éste puede desarrollarse dentro de las restricciones presupuestales existentes. Un estudio de factibilidad debe ser rápido y relativamente barato. El resultado debe informar la decisión respecto a si se continúa o no continúa con un análisis más detallado.
-- **Obtención y análisis de requerimientos**
-	Éste es el proceso de derivar los requerimientos del sistema mediante observación de los sistemas existentes, discusiones con los usuarios y proveedores potenciales, análisis de tareas, etcétera. Esto puede incluir el desarrollo de uno o más modelos de sistemas y prototipos, lo que ayuda a entender el sistema que se va a especificar
-- **Especificación de requerimientos**
-	Consiste en la actividad de transcribir la información recopilada durante la actividad de análisis, en un documento que define un conjunto de requerimientos. En este documento se incluyen dos clases de requerimientos. Los requerimientos del usuario son informes abstractos de requerimientos del sistema para el cliente y el usuario final del sistema; y los requerimientos de sistema son una descripción detallada de la funcionalidad a ofrecer.
-- **Validación de requerimientos** 
-	Esta actividad verifica que los requerimientos sean realistas, coherentes y completos. Durante este proceso es inevitable descubrir errores en el documento de requerimientos. En consecuencia, deberían modificarse con la finalidad de corregir dichos problemas.
+Existen **cuatro actividades principales** en el proceso de ingeniería de requisitos:
+- **Estudio de factibilidad**:
+	Se realiza una estimación sobre si las necesidades identificadas del usuario se cubren con las actuales tecnologías de software y hardware. El estudio considera si el sistema propuesto tendrá un **costo-beneficio desde un punto de vista empresarial**, y si éste puede desarrollarse dentro de las restricciones presupuestales existentes. 
+	Debe ser rápido y relativamente **barato**. 
+	El resultado debe informar la decisión respecto a si se continúa o no continúa con un análisis más detallado.
+- **Obtención y análisis de requisitos**:
+	Éste es el proceso de derivar los requisitos del sistema mediante observación de los sistemas existentes, discusiones con los usuarios y proveedores potenciales, análisis de tareas, etcétera. Esto puede incluir el desarrollo de uno o más modelos de sistemas y prototipos, lo que ayuda a entender el sistema que se va a especificar
+- **Especificación de requisitos**:
+	Consiste en la actividad de transcribir la información recopilada durante la actividad de análisis, en un documento que define un conjunto de requisitos. En este documento se incluyen dos clases de requisitos. Los **requisitos del usuario** son informes abstractos de requisitos del sistema para el cliente y el usuario final del sistema; y los **requisitos de sistema** son una descripción detallada de la funcionalidad a ofrecer.
+- **Validación de requisitos**:
+	Esta actividad verifica que los requisitos sean realistas, coherentes y completos. Durante este proceso es inevitable descubrir errores en el documento de requisitos. En consecuencia, deberían modificarse con la finalidad de corregir dichos problemas.
 
 Los requisitos deben redactarse de forma abstracta para que muchos proveedores liciten ofreciendo diferentes maneras de cubrir las necesidades de organización del cliente. Una vez otorgado el contrato, el proveedor tiene que escribir con más detalle una definición del sistema para el cliente, de modo que éste comprenda y valide lo que hará el software. Estos documentos suelen nombrarse documentos de requisitos para el sistema.
 
@@ -31,9 +33,10 @@ Los requisitos deben redactarse de forma abstracta para que muchos proveedores l
 La distinción entre requisitos funcionales y no funcionales puede no ser clara, pues un requisito suele generar o restringir otro. No sólo especifican las características del sistema, sino también las funcionalidades necesarias para que estos servicios se den efectivamente.
 
 ## Requisitos funcionales
+
 Son enunciados acerca de servicios que el sistema debe proveer, de cómo debería reaccionar el sistema a entradas particulares y de cómo debería comportarse o no el sistema en situaciones específicas.
 
-Los requisitos funcionales para un sistema refieren lo que el sistema debe hacer. Tales requisitos dependen del tipo de software que se esté desarrollando, de los usuarios esperados del software y del enfoque general que adopta la organización cuando se escriben los requisitos. 
+Los requisitos funcionales para un sistema refieren a lo que el sistema debe hacer. Tales requisitos dependen del tipo de software que se esté desarrollando, de los usuarios esperados del software y del enfoque general que adopta la organización cuando se escriben los requisitos. 
 Por lo general, se escriben de forma abstracta para lectura de los usuarios. Varían desde requisitos generales que cubren lo que tiene que hacer el sistema, hasta requisitos muy específicos que reflejan maneras locales de trabajar o los sistemas existentes de una organización. 
 
 Los requisitos funcionales pueden escribirse con diferentes niveles de detalle. En principio, la especificación de los requisitos funcionales de un sistema debe ser **completa y consistente**. 
@@ -42,7 +45,8 @@ Los requisitos funcionales pueden escribirse con diferentes niveles de detalle. 
 
 En sistemas grandes, es difícil de lograr debido a la gran cantidad de participantes, la facilidad para cometer errores en sistemas complejos, las diferentes necesidades, etc. Los problemas suelen surgir sólo después de un análisis en profundidad o después de que se entregó el sistema al cliente.
 
-## Requisitos no funcionales 
+## Requisitos no funcionales
+
 Son limitaciones sobre servicios o funciones que ofrece el sistema. Incluyen restricciones tanto de temporización y del proceso de desarrollo, como impuestas por los estándares. Los requisitos no funcionales se suelen aplicar al sistema como un todo, más que a características o a servicios individuales del sistema.
 
 Son requisitos que no se relacionan directamente con los servicios específicos que el sistema entrega a sus usuarios. Pueden relacionarse con propiedades emergentes del sistema, como fiabilidad, tiempo de respuesta y uso de almacenamiento. De forma alternativa, pueden definir restricciones sobre la implementación del sistema, como las capacidades de los dispositivos I/O o las representaciones de datos usados en las interfaces con otros sistemas.
@@ -57,15 +61,14 @@ Los requisitos no funcionales a menudo son más significativos que los requisito
 Los requisitos no funcionales surgen a través de necesidades del usuario, debido a restricciones presupuestales, políticas de la organización, necesidad de interoperabilidad con otro software o sistemas de hardware, o factores externos como regulaciones de seguridad o legislación sobre privacidad.
 
 Los requisitos no funcionales provienen de características requeridas del software (requisitos del producto), la organización que desarrolla el software (requisitos de la organización) o de fuentes externas:
-1. **Requisitos del producto**: Estos requisitos especifican o restringen el comportamiento del software. Los ejemplos incluyen requisitos de rendimiento sobre qué tan rápido se debe ejecutar el sistema y cuánta memoria requiere, requisitos de fiabilidad que establecen la tasa aceptable de fallas, requisitos de seguridad y requisitos de usabilidad. 
-2. **Requisitos de la organización**: Son requisitos de sistemas amplios, derivados de políticas y procedimientos en la organización del cliente y del desarrollador. Los ejemplos incluyen requisitos del proceso operacional que definen cómo se usará el sistema, requisitos del proceso de desarrollo que especifican el lenguaje de programación, estándares del entorno o el proceso de desarrollo a utilizar, y requisitos ambientales que definen el entorno de operación del sistema. 
+1. **Requisitos del producto**: Estos requisitos especifican o restringen el comportamiento del software. Los ejemplos incluyen requisitos de rendimiento sobre qué tan rápido se debe ejecutar el sistema y cuánta memoria requiere, requisitos de fiabilidad que establecen la tasa aceptable de fallas, requisitos de seguridad y requisitos de usabilidad.
+2. **Requisitos de la organización**: Son requisitos de sistemas amplios, derivados de políticas y procedimientos en la organización del cliente y del desarrollador. Los ejemplos incluyen requisitos del proceso operacional que definen cómo se usará el sistema, requisitos del proceso de desarrollo que especifican el lenguaje de programación, estándares del entorno o el proceso de desarrollo a utilizar, y requisitos ambientales que definen el entorno de operación del sistema.
 3. **Requisitos externos**: Este término cubre todos los requisitos derivados de factores externos al sistema y su proceso de desarrollo. En ellos se incluyen requisitos regulatorios que establecen lo que debe hacer el sistema para ser aprobado en su uso por un regulador, como sería un banco central; requisitos legislativos que tienen que seguirse para garantizar que el sistema opere conforme a la ley, y requisitos éticos que garanticen que el sistema será aceptable para sus usuarios y el público en general.
 
 Siempre que sea posible, se deberán **escribir de manera cuantitativa** los requisitos no funcionales, de manera que puedan ponerse objetivamente a prueba **usando métricas o unidades de medida**.
 
 ```ad-example
 title: Formas de medir
-collapse: closed
 ![[Pasted image 20230317145920.png]]
 
 
@@ -75,15 +78,12 @@ De este modo, se puede verificar que los requisitos no funcionales se cumplan. P
 Los requisitos del sistema no son independientes y no sólo detallan los servicios o las características que se requieren del mismo, sino también especifican la funcionalidad necesaria para asegurar que estos servicios y características se entreguen de manera adecuada.
 
 ### Clasificación de Wiegers
-
-#### Artibutos de calidad:
-Un tipo de requisito no funcional que describe una característica de servicio o desempeño de un producto.
-
-#### Interfaces externas:
-Una descripción de una conexión entre un sistema de software y un usuario, otro sistema de software o un dispositivo de hardware.
-
-#### Restricciones:
-Todo el resto.
+- **Artibutos de calidad:**
+	Un tipo de requisito no funcional que describe una característica de servicio o desempeño de un producto.
+- **Interfaces externas:**
+	Una descripción de una conexión entre un sistema de software y un usuario, otro sistema de software o un dispositivo de hardware.
+- **Restricciones:**
+	Todo el resto.
 
 # 4.2 El documento de requisitos de software
 
@@ -119,13 +119,14 @@ Idealmente, los requisitos del sistema deben describir de manera simple el compo
 Los requisitos del usuario se escriben casi siempre en lenguaje natural, complementado con diagramas y tablas adecuados en el documento de requisitos. Los requisitos del sistema se escriben también en lenguaje natural, pero de igual modo se utilizan otras notaciones basadas en formas, modelos gráficos del sistema o modelos matemáticos del sistema.
 
 ## Especificación en lenguaje natural
+
 Es expresivo, intuitivo y universal. También es potencialmente vago, ambiguo y su significado depende de los antecedentes del lector. 
 Para minimizar la interpretación errónea al escribir los requisitos en lenguaje natural, se recomienda:
 - elaborar un formato estándar y asegurarse de que todas las definiciones de requisitos se adhieran a ese formato
 - utilizar el lenguaje de manera clara para distinguir entre requisitos obligatorios y deseables
 - usar texto resaltado (negrita, cursiva o color) para seleccionar partes clave
 - evitar el uso de jerga, abreviaturas y acrónimos
-- asociar, siempre que sea posible, una razón con cada requisito de usuario. Es decir por qué se incluyó el mismo
+- asociar, siempre que sea posible, una razón con cada requisito de usuario, es decir por qué se incluyó el mismo.
 
 ```ad-example
 title: Ejemplo
@@ -139,6 +140,7 @@ collapse: closed
 
 
 ## Especificaciones estructuradas
+
 El lenguaje natural estructurado es una manera de escribir requisitos del sistema, donde está limitada la libertad del escritor de requisitos y todos éstos se anotan en una forma estándar.
 Aunque este enfoque conserva la mayoría de la expresividad y comprensibilidad del lenguaje natural, asegura que haya cierta uniformidad sobre la especificación. Las anotaciones en lenguaje estructurado emplean plantillas para especificar requisitos del sistema. La especificación utiliza constructos de lenguaje de programación para mostrar alternativas e iteración, y destaca elementos clave con el uso de sombreado o de fuentes distintas.
 Para usar un enfoque estructurado que especifique los requisitos de sistema, hay que definir una o más plantillas estándar para requisitos, y representar dichas plantillas como formas estructuradas. La especificación puede estructurarse sobre los objetos manipulados por el sistema, las funciones que el sistema realiza o los eventos procesados por el sistema.
@@ -148,7 +150,6 @@ title: Ejemplo
 collapse: closed
 ![[Pasted image 20230317155946.png]]
 ```
-
 
 Cuando se use una forma estándar para especificar requisitos funcionales, debe incluir la siguiente información: 
 1. Una descripción de la función o entidad a especificar. 

@@ -1,6 +1,6 @@
 # Desarrollo de software profesional
 
-El software profesional se hace para ser usado por alguien que no es el desarrollador y normalmente se hace en equipos. Es mantenido y cambiado durante su vida. A este tipo de software se orienta la ingeniería de software, pues las técnicas que usa son irrelevantes para el software personal. El software incluye no sólo un programa, sino también documentación, librerías y otras cosas. 
+El software profesional se hace para ser usado por alguien que no es el desarrollador y normalmente se hace en equipos. Es mantenido y cambiado durante su vida. A este tipo de software se orienta la ingeniería de software, pues las **técnicas que usa son irrelevantes para el software personal**. El software incluye no sólo un programa, sino también documentación, librerías y otras cosas. 
 
 La computación, a diferencia de la ingeniería de software, se enfoca en la parte teórica, y ésta última es parte de la ingeniería de sistemas. 
 El 40% del costo del software es testing. 
@@ -26,7 +26,7 @@ La calidad de software incluye el comportamiento, estructura y organización de 
 
 ## Ingeniería de software
 
-Es una disciplina de la ingeniería que se ocupa de **todos los aspectos** de la producción de software desde las primeras etapas de la especificación del sistema hasta el mantenimiento del sistema una vez que se ha puesto en uso.
+Es una **disciplina de la ingeniería** que se ocupa de **todos los aspectos** de la producción de software desde las primeras etapas de la especificación del sistema hasta el mantenimiento del sistema una vez que se ha puesto en uso.
 
 Es una disciplina de ingeniería. Los ingenieros trabajan con **restricciones**, y no siempre existe un método que puedan aplicar para resolver un problema. Tienen que dar un **resultado de la calidad requerida en tiempo y bajo el presupuesto**, así que no pueden hacer todo perfectamente. 
 
@@ -49,7 +49,7 @@ La ing. de sw. es un enfoque sistemático para la producción de software que ti
 Uno de los factores más importantes es el tipo de aplicación. Aunque los limites de los tipos son borrosos, ayuda a determinar las técnicas y métodos a utilizar.
 
 **Principios fundamentales:**
-- un proceso de desarrollo manejado y entendido
+- un proceso de desarrollo controlado y entendido
 - confiabilidad y el rendimiento,
 - comprender y gestionar la especificación y requisitos del software,
 - reutilizar el software que ya se ha desarrollado.
@@ -82,12 +82,12 @@ El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) con la ACM produjo
 
 ## Cuestiones de responsabilidad profesional
 
-- Confidencialidad
+- **Confidencialidad**
 	Respetar la confidencialidad de sus empleadores (con o sin acuerdo).
-- Competencia
+- **Competencia**
 	No aceptar trabajos que están fuera de su competencia.
-- Derechos de propiedad intelectual
+- **Derechos de propiedad intelectual**
 	Conocer las leyes sobre el uso de la propiedad intelectual y licencias.
-- Mal uso de la computadora
+- **Mal uso de la computadora**
 	No usar sus habilidades técnicas para usar mal las computadoras de otras personas.
 

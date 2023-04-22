@@ -36,8 +36,8 @@ Tienen que definirse tanto la **funcionalidad** del software como las **restricc
 
 Existen cuatro actividades principales en el proceso de ingeniería de requerimientos:
 - **Estudio de factibilidad**
-- **Obtención y análisis de requerimientos
-- **Especificación de requerimientos
+- **Obtención y análisis de requerimientos**
+- **Especificación de requerimientos**
 - **Validación de requerimientos**
 
 ## 2. Diseño e implementación del software
@@ -57,11 +57,11 @@ Por lo general, los programadores realizan algunas pruebas del código que desar
 
 Se crea para mostrar que un sistema cumple tanto con sus especificaciones como con las expectativas del cliente. Las pruebas del programa, donde el sistema se ejecuta a través de datos de prueba simulados, son la principal técnica de validación. Esta última también puede incluir procesos de comprobación, como inspecciones y revisiones en cada etapa del proceso de software.
 
-- Prueba de desarrollo 
-	Las personas que desarrollan el sistema ponen a prueba los componentes que constituyen el sistema. Cada componente se prueba de manera independiente, es decir, sin otros componentes del sistema. Éstos pueden ser simples entidades, como funciones o clases de objeto, o agrupamientos coherentes de dichas entidades. Por lo general, se usan herramientas de automatización de pruebas
-- Pruebas del sistema
+- **Prueba de desarrollo**
+	Las personas que desarrollan el sistema ponen a prueba los componentes que constituyen el sistema. Cada componente se prueba de manera independiente, es decir, sin otros componentes del sistema. Éstos pueden ser simples entidades, como funciones o clases de objeto, o agrupamientos coherentes de dichas entidades. Por lo general, se usan herramientas de automatización de pruebas.
+- **Pruebas del sistema**
 	Los componentes del sistema se integran para crear un sistema completo. Este proceso tiene la finalidad de descubrir errores que resulten de interacciones no anticipadas entre componentes y problemas de interfaz de componente, así como de mostrar que el sistema cubre sus requerimientos funcionales y no funcionales, y poner a prueba las propiedades emergentes del sistema.
-- Pruebas de aceptación 
+- **Pruebas de aceptación**
 	Ésta es la etapa final en el proceso de pruebas, antes de que el sistema se acepte para uso operacional. El sistema se pone a prueba con datos suministrados por el cliente del sistema, en vez de datos de prueba simulados.
 
 En desarrollo incremental, cada incremento se prueba según sus requerimientos. En desarrollo dirigido por pruebas, las mismas se desarrollan junto con los requerimientos antes de empezar. En desarrollo por plan, se hacen planes de prueba (el modelo en V). El beta testing consiste en enviar el software a posibles clientes para que reporten problemas.
@@ -69,7 +69,7 @@ En desarrollo incremental, cada incremento se prueba según sus requerimientos. 
 
 ## 4. Evolución del software
 
-El software tiene que evolucionar para satisfacer las necesidades cambiantes del cliente. La distinción entre desarrollo y mantenimiento es cada vez más irrelevante. Es muy difícil que cualquier sistema de software sea un sistema completamente nuevo, y tiene mucho más sentido ver el desarrollo y el mantenimiento como un continuo. En lugar de dos procesos separados, es más realista pensar en la ingeniería de software como un proceso evolutivo (figura 2.8), donde el software cambia continuamente a lo largo de su vida, en función de los requerimientos y las necesidades cambiantes del cliente.
+El software tiene que evolucionar para satisfacer las necesidades cambiantes del cliente. La distinción entre desarrollo y mantenimiento es cada vez más irrelevante. Es muy difícil que cualquier sistema de software sea un sistema completamente nuevo, y tiene mucho más sentido ver el desarrollo y el mantenimiento como un continuo. En lugar de dos procesos separados, es más realista pensar en la ingeniería de software como un proceso evolutivo, donde el software cambia continuamente a lo largo de su vida, en función de los requerimientos y las necesidades cambiantes del cliente.
 
 # Cómo enfrentar el cambio
 

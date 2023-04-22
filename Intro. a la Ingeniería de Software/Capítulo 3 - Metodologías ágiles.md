@@ -3,7 +3,9 @@ A los clientes les cuesta darse cuenta de cuáles son los requerimientos del sof
 En los métodos ágiles, no hay especificación del sistema y la documentación del diseño es mínima. Los requerimientos de usuario se plantean de forma genérica.
 Los clientes pueden sugerir cambios para cada versión. Se hacen incrementos pequeños, donde se hacen nuevos sistemas para los clientes cada dos o tres semanas. La razón de este involucramiento es para obtener retroalimentación rápidamente. La comunicación es informal para minimizar la cantidad de documentación. El diseño e implementación son las actividades centrales, y otras actividades como el testing se incorporan a las mismas. 
 
-Los requerimientos y el diseño se desarrollan juntos. De todos modos, **es posible generar documentación con metodologías ágiles**, si así se decidiera. Estas metodologías funcionan bien cuando es posible tener buena comunicación entre el cliente y los desarrolladores, y al no haber varios equipos involucrados, la comunicación informal funciona.
+Los requerimientos y el diseño se desarrollan juntos. De todos modos, **es posible generar documentación con metodologías ágiles**, si así se decidiera. 
+
+Estas metodologías funcionan bien cuando es posible tener buena comunicación entre el cliente y los desarrolladores, y al no haber varios equipos involucrados, la comunicación informal funciona.
 
 ## Manifesto ágil
 
@@ -23,6 +25,9 @@ _Esto es, aunque valoramos los elementos de la derecha, valoramos más los de la
 - Desarrollo de productos de pequeño o mediano porte
 - Desarrollo de sistemas “a medida” (custom systems), en donde hay un claro compromiso del cliente en participar del proceso de desarrollo del software, en donde hay pocas reglas y no hay regulaciones externas que afecten al software. 
 - ¿Alguna otra? Van para el parcial y para el obligatorio...
+	- Si se necesita la entrega rápida y frequente de nuevas funcionalidades en lugar de una única liberación.
+	- Si los requisitos son cambiantes.
+	- Se precisa adaptabilidad al negocio y ambiente (no solo en cuanto a los requisitos).
 
 # Extreme Programming (XP)
 
@@ -36,7 +41,7 @@ A continuación se detallan algunas prácticas de XP (van para el parcial).
 
 ## Historias de usuario
 
-Una historia de usuario es una posibilidad de uso que puede sucederle a un usuario. Esto se discute entre el cliente y los desarrolladores para generar una “tarjeta de historia” que describe una historia que contiene las necesidades del cliente. Luego se desarrolla ese uso en un futuro incremento. Esta es la forma de incorporar los requerimientos al desarrollo.
+Una historia de usuario es una posibilidad de uso que puede sucederle a un usuario. Esto se discute entre el cliente y los desarrolladores para generar una “tarjeta de historia” (o _story-card_) que describe una historia que contiene las necesidades del cliente. Luego se desarrolla ese uso en un futuro incremento. Esta es la forma de incorporar los requerimientos al desarrollo.
 
 Las tarjetas de historia se separan en tareas y se estima el esfuerzo y recursos necesarios, hablando con el cliente para refinar los requerimientos. Luego el cliente elige qué historias son prioritarias para implementar, aquellas que pueden ser útiles inmediatamente. Se debe identificar funcionalidades que se pueden implementar en dos semanas, que es el tiempo hasta el siguiente incremento.
 
