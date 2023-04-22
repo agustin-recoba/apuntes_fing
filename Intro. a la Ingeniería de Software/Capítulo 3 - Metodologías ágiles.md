@@ -1,14 +1,38 @@
-A los clientes les cuesta darse cuenta de cuáles son los requerimientos del software que quieren, por eso es difícil tener requerimientos estables. 
+A los clientes les cuesta darse cuenta de cuáles son los requerimientos del software que quieren, por eso **es difícil tener requerimientos estables**. 
 
-En los métodos ágiles, no hay especificación del sistema y la documentación del diseño es mínima. Los requerimientos de usuario se plantean de forma genérica. Los clientes pueden sugerir cambios para cada versión. Se hacen incrementos pequeños, donde se hacen nuevos sistemas para los clientes cada dos o tres semanas. La razón de este involucramiento es para obtener retroalimentación rápidamente. La comunicación es informal para minimizar la cantidad de documentación. El diseño e implementación son las actividades centrales, y otras actividades como el testing se incorporan a las mismas. 
+En los métodos ágiles, no hay especificación del sistema y la documentación del diseño es mínima. Los requerimientos de usuario se plantean de forma genérica.
+Los clientes pueden sugerir cambios para cada versión. Se hacen incrementos pequeños, donde se hacen nuevos sistemas para los clientes cada dos o tres semanas. La razón de este involucramiento es para obtener retroalimentación rápidamente. La comunicación es informal para minimizar la cantidad de documentación. El diseño e implementación son las actividades centrales, y otras actividades como el testing se incorporan a las mismas. 
 
-Los requerimientos y el diseño se desarrollan juntos. De todos modos, es posible generar documentación con metodologías ágiles, si así se decidiera. Estas metodologías funcionan bien cuando es posible tener buena comunicación entre el cliente y los desarrolladores, y al no haber varios equipos involucrados, la comunicación informal funciona.
+Los requerimientos y el diseño se desarrollan juntos. De todos modos, **es posible generar documentación con metodologías ágiles**, si así se decidiera. Estas metodologías funcionan bien cuando es posible tener buena comunicación entre el cliente y los desarrolladores, y al no haber varios equipos involucrados, la comunicación informal funciona.
 
-# XP
+## Manifesto ágil
 
-Extreme Programming (XP) toma en “extremo” el enfoque de desarrollo iterativo: los requerimientos se expresan como historias de usuario, que se implementan directamente como tareas. Los programadores trabajan de a pares y hacen tests para cada tarea antes de escribir el código. Los requerimientos se basan en las historias de usuario. El cliente debe definir las pruebas de aceptación.
+*“Estamos descubriendo formas mejores de desarrollar software tanto por nuestra propia experiencia como ayudando a terceros. A través de este trabajo hemos aprendido a valorar:*
+- _Individuos e interacciones sobre procesos y herramientas._
+- _Software funcionando sobre documentación extensiva._
+- _Colaboración con el cliente sobre negociación contractual._
+- _Respuesta ante el cambio sobre seguir un plan._
+_Esto es, aunque valoramos los elementos de la derecha, valoramos más los de la izquierda”._
 
-A continuación se detallan algunas prácticas de XP.
+## Principios
+
+![[Pasted image 20230421225915.png]]
+
+## Aplicabilidad de las metodologías ágiles
+
+- Desarrollo de productos de pequeño o mediano porte
+- Desarrollo de sistemas “a medida” (custom systems), en donde hay un claro compromiso del cliente en participar del proceso de desarrollo del software, en donde hay pocas reglas y no hay regulaciones externas que afecten al software. 
+- ¿Alguna otra? Van para el parcial y para el obligatorio...
+
+# Extreme Programming (XP)
+
+Extreme Programming toma en “extremo” el enfoque de desarrollo iterativo: los requerimientos se expresan como historias de usuario, que se implementan directamente como tareas. Los programadores trabajan de a pares y hacen tests para cada tarea antes de escribir el código. Los requerimientos se basan en las historias de usuario. El cliente debe definir las pruebas de aceptación.
+
+A continuación se detallan algunas prácticas de XP (van para el parcial).
+
+## Ciclo de liberación
+
+![[Pasted image 20230421225954.png]]
 
 ## Historias de usuario
 
@@ -49,7 +73,7 @@ Estudios sobre el tema han dado resultados mixtos. En general, la ventaja es que
 
 ## Resumen de XP
 
-![[Pasted image 20230312160904.png]]
+![[Pasted image 20230421230114.png]]
 
 # Scrum
 
@@ -59,15 +83,31 @@ Los términos usados en Scrum son:
 
 ![[Pasted image 20230313123030.png]]
 
-El proceso o ciclo de sprint del Scrum comienza con el product backlog: la lista de cosas en las que hay que trabajar, que no son sólo funcionalidades del sistema (pruebas, arquitectura, documentación). Puede tener distintos niveles de especificidad, lo cual depende del product owner. Cada ciclo de sprint dura un tiempo fijo, y al principio de cada uno el PO define cuáles son los elementos del backlog que tienen prioridad ese ciclo. Si no se completan, no se extiende el tiempo. Luego el equipo elige qué elementos de la lista creen que pueden hacer ese sprint, y estiman el tiempo que les tomará. Para esto, consideran la velocidad lograda en sprints anteriores. Se hace un backlog para ese sprint particular: qué tareas tienen que hacer.
+## Tres fases:
+
+### Inicial
+El proceso o ciclo de sprint del Scrum comienza con el product backlog: la lista de cosas en las que hay que trabajar, que no son sólo funcionalidades del sistema (pruebas, arquitectura, documentación). Puede tener distintos niveles de especificidad, lo cual depende del product owner. 
+
+### Ciclos de sprints
+Cada ciclo de sprint dura un tiempo fijo, y al principio de cada uno el PO define cuáles son los elementos del backlog que tienen prioridad ese ciclo. Si no se completan, no se extiende el tiempo. Luego el equipo elige qué elementos de la lista creen que pueden hacer ese sprint, y estiman el tiempo que les tomará. Para esto, consideran la velocidad lograda en sprints anteriores. Se hace un backlog para ese sprint particular: qué tareas tienen que hacer.
 
 Al final de cada sprint, hay una reunión de evaluación con todo el equipo, donde se ve cómo se puede mejorar la forma en que trabajaron y dan datos del producto para hacer el product backlog del siguiente sprint. El ScrumMaster suele tener que dar reportes a sus superiores, y pueden tener que gestionar proyectos.
 
+### Fase de clausura
+En esta fase se cierra el proyecto, se completa la documentación requerida y se evalúan las lecciones aprendidas del mismo.
+
+## Efectos prácticos
+
 Hoy en día, muchas empresas tienen equipos distribuidos donde los miembros están por todo el mundo. Se ha desarrollado, entonces, el Scrum distribuido para estos casos. Incluye comunicación por chat o videoconferencias, un IDE común y ambiente de integración.
 
-# Escalamiento
+# Escalamiento de procesos ágiles
 
-La necesidad de obtener software más rápidamente se aplica a sistemas y empresas grandes, y por eso se ha intentado evolucionar los métodos ágiles para usarlos en estas circunstancias. Suele ser necesario escalar hacia arriba y hacia afuera al mismo tiempo, pues software grande se encarga a empresas grandes. Los métodos ágiles no aportan tanta productividad y disminución de los efectos en estos casos.
+La necesidad de obtener software más rápidamente se aplica a sistemas y empresas grandes, y por eso se ha intentado evolucionar los métodos ágiles para usarlos en estas circunstancias. 
+
+**“Escalar hacia arriba”** refiere a la utilización de métodos ágiles para el desarrollo de grandes sistemas de software, los cuales no pueden ser desarrollados por equipos reducidos.
+**“Escalar hacia afuera”** refiere a cómo los métodos ágiles pueden ser introducidos a lo largo de una gran organización con muchos años de experiencia en el desarrollo de software.
+
+Suele ser necesario escalar hacia arriba y hacia afuera al mismo tiempo, pues software grande se encarga a empresas grandes. Los métodos ágiles no aportan tanta productividad y disminución de los efectos en estos casos.
 
 Cuando se hace un contrato, normalmente la documentación de los requerimientos es parte del mismo, pero esto no existe en los métodos ágiles. En consecuencia, el cliente paga por el tiempo que toma hacer el sistema y no por los requerimientos solicitados. Esto puede llevar a disputas sobre quién debe pagar si el sistema se demora.
 
