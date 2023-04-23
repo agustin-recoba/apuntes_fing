@@ -11,7 +11,7 @@ Adicionalmente se muestra el desarrollo completo de un caso de uso, que sirve pa
 
 ## Actores
 
-El actor es un agente externo al sistema que participa en la historia de un caso de uso y está representado por el papel que cumple dentro del caso de uso. Los papeles son generalmente desempeñados por seres humanos, usuarios directos del sistema, pero este no es siempre el caso, un papel puede ser desempeñado por otro sistema.
+El actor es un agente externo al sistema que participa en la historia de un caso de uso y está representado por el papel que cumple dentro del caso de uso. Los papeles son generalmente desempeñados por seres humanos, usuarios directos del sistema, pero este no es siempre el caso, **un papel puede ser desempeñado por otro sistema**.
 
 ## Objetivo
 
@@ -20,6 +20,10 @@ Un caso de uso describe una forma de uso del sistema de principio a fin y debe e
 ## Precondiciones
 
 Describe condiciones que debe cumplir el sistema para que se pueda iniciar el caso de uso. Impone restricciones sobre el estado previo del sistema. Las precondiciones no se verifican durante el caso de uso y se asume que se cumplen durante todo el caso de uso.
+
+## Poscondiciones
+
+Las poscondiciones describen el estado del sistema luego de la ejecución exitosa del caso de uso. Indican lo que se tiene que cumplir luego de que el caso de uso termina exitosamente.
 
 ## Descripción
 
@@ -69,8 +73,7 @@ Un escenario alternativo podría ser que el usuario no desee seleccionar la cuen
 	10.A.4. Vuelve al punto 5.
 
 
-El formato de un flujo alternativo es el siguiente:
-
+El **formato de un flujo alternativo** es el siguiente:
 - En la primera línea se indica el identificador del flujo, que surge de la referencia al paso del flujo principal del cual se deriva este flujo alternativo y una letra que permite identificar a este flujo dentro de los distintos flujos alternativos que pueden surgir de un mismo punto. En este caso como es el primer flujo alternativo que deriva del paso 4, se lo identifica como 4.A.
 - Adicionalmente, en la primera línea se indica la condición que hace que se tome el flujo alternativo.
 - Se numera los pasos del flujo alternativo de la misma manera que en el flujo principal (1, 2, 3, ...), o bien antecediendo los números por el identificador del flujo (4.A.1, 4.A.2,...).
@@ -84,13 +87,9 @@ En este caso consideraremos el error que puede surgir en la comunicación con el
 2. Sistema: informa al usuario que no se puede comunicar con el banco en este momento.
 3. Fin CU
 
-Vemos que, al especificarse en el último paso Fin CU, el caso de uso se termina al terminar el flujo alternativo.
+Vemos que, al especificarse en el último paso "Fin CU", el caso de uso se termina al terminar el flujo alternativo.
 
 Sobre el final de la guía se encuentra el desarrollo completo del caso de uso anterior para que se utilice como ejemplo.
-
-## Poscondiciones
-
-Las poscondiciones describen el estado del sistema luego de la ejecución exitosa del caso de uso. Indican lo que se tiene que cumplir luego de que el caso de uso termina exitosamente.
 
 
 # Relaciones entre casos de uso
@@ -98,11 +97,13 @@ Las poscondiciones describen el estado del sistema luego de la ejecución exitos
 Se pueden identificar distintas relaciones entre los casos de uso.
 
 ## Inclusión
-La relación de inclusión es la más común entre casos de uso. Permite definir casos de uso que «ejecuten» otros casos de uso.
 
-Al caso de uso que incluye a otro se le llama caso base y al otro se le denomina caso incluido. Se puede incluir otros casos de uso tanto en el flujo principal como en algún flujo alternativo. 
+La relación de inclusión es la más común entre casos de uso. Permite definir **casos de uso que «ejecuten» otros casos de uso**.
 
-Cuando se llega al punto dentro del caso de uso base en el cual se incluye a otro, se ejecuta en su totalidad el caso de uso incluido y luego su finalizada la ejecución, se continúa en el punto siguiente del caso base. Sólo se continúa la ejecución del caso base si el caso incluido se ejecutó con éxito, en caso de que falle, falla el caso base también.
+Al caso de uso que incluye a otro se le llama **caso base** y al otro se le denomina **caso incluido**. Se puede incluir otros casos de uso tanto en el flujo principal como en algún flujo alternativo. 
+
+Cuando se llega al punto dentro del caso de uso base en el cual se incluye a otro, **se ejecuta en su totalidad el caso de uso incluido** y luego su finalizada la ejecución, **se continúa en el punto siguiente del caso base**. 
+Sólo se continúa la ejecución del caso base si el caso incluido se ejecutó con éxito, en caso de que falle, falla el caso base también.
 
 Cabe notar que el caso de uso incluido no tiene por qué tener conocimiento de los casos de uso que lo incluyen.
 
@@ -118,19 +119,20 @@ En el caso del sistema mencionado en la sección anterior, se requiere que el us
 Una vez que se llega al paso 2 se ejecuta el caso de uso autentificar y sólo si este se ejecuta con éxito, o sea que el usuario logra efectivamente autentificarse, se continúa con el caso de uso de realizar transferencias.
 
 ## Extensión
-La relación de extensión entre casos de uso se refiere a un fragmento de un caso de uso que extiende, es decir, agrega comportamiento, a otro caso de uso. 
 
-Se utilizan para describir escenarios alternativos complejos, que sería demasiado complicado de explicar mediante flujos alternativos o para destacar flujos alternativos. 
+La relación de extensión entre casos de uso se refiere a un fragmento de un caso de uso que extiende, es decir, **agrega comportamiento**, a otro caso de uso. 
 
-Solo se ejecuta en caso de que se cumpla una condición particular en algún punto específico del caso de uso a extender. A ese punto se le llama punto de extensión. 
+Se utilizan para describir **escenarios alternativos complejos**, que sería demasiado complicado de explicar mediante flujos alternativos o para destacar flujos alternativos. 
 
-En esta relación, el caso de uso extendido conoce al caso de uso que lo extiende y viceversa.
+Solo se ejecuta en caso de que se cumpla una condición particular en algún punto específico del caso de uso a extender. A ese punto se le llama **punto de extensión**. 
+
+En esta relación, **el caso de uso extendido conoce al caso de uso que lo extiende y viceversa**.
 
 Cuando se llega al punto de extensión se ejecuta el caso de uso que extiende y, en caso de una ejecución exitosa, se continúa la ejecución del caso base en el punto siguiente al punto de extensión.
 
 ## Generalización
 
-La relación de generalización nos permite definir casos en los cuales tenemos más de un escenario principal para un caso de uso, que comparten cosas en común. Lo que se hace en este caso es crear un caso de uso abstracto y crear distintos casos de uso (uno por cada uno de esos escenarios que mencionamos anteriormente) que hereden del caso de uso abstracto. 
+La relación de generalización nos permite definir casos en los cuales tenemos **más de un escenario principal** para un caso de uso, que comparten cosas en común. Lo que se hace en este caso es crear un caso de uso abstracto y crear distintos casos de uso (uno por cada uno de esos escenarios que mencionamos anteriormente) que hereden del caso de uso abstracto. 
 
 Los casos de usos hijos heredan del padre los escenarios, puntos de extensión y relaciones a la vez que pueden definir o enriquecer con nuevos flujos y acciones al caso de uso padre.
 
@@ -138,14 +140,14 @@ Los casos de usos hijos heredan del padre los escenarios, puntos de extensión y
 
 Se tiene que tener en cuenta las siguientes consideraciones a la hora de desarrollar los casos de uso en el marco de un proceso de desarrollo iterativo e incremental:
 
-- Los casos de uso no tienen porque desarrollarse por completo todos juntos. 
+- Los casos de uso **no tienen porque desarrollarse por completo todos juntos**. 
 	- Primero se identifican los casos de uso y se generan las descripciones (Caso de Uso en Alto Nivel).
 	- Luego se expanden aquellos que se consideren más relevantes o se desee implementar primero (en un proceso guiado por casos de uso, serán los casos de uso relevantes para la arquitectura)
 		Expandir un caso de uso consiste en agregar el flujo principal y los alternativos, precondiciones y poscondiciones (Caso de Uso Expandido). 
 	- A medida que sea necesario, se va desarrollando el resto, cuando se esta más cerca de diseñar la funcionalidad.
 - No se debería incluir en el flujo del caso de uso detalles de la interfaz gráfica. Aunque sí pueden incluirse borradores de las pantallas.
 - Hay errores que no tienen por qué ser considerados a nivel de casos de uso, como por ejemplo lo que tiene que ver con errores en el formato de la entrada (fechas inválidas, pasar strings en lugar de números,...)
-- Se puede tener un flujo alternativo dentro de un flujo alternativo. Se nota de manera similar a los flujos alternativos comunes. 
+- Se puede tener un **flujo alternativo dentro de un flujo alternativo**. Se nota de manera similar a los flujos alternativos comunes. 
 	Por ejemplo, si hay un flujo alternativo que surge a partir del punto 4 del flujo alternativo 12.B, se anota ese flujo de la siguiente manera:
 	**12.B.4.A. Condición que lleva a este flujo alternativo**
 		12.B.4.A.1. Paso 1

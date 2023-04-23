@@ -1,5 +1,4 @@
-
-La ingeniería de software basada en componentes (CBSE) es un enfoque para el desarrollo de software que se basa en la reutilización de entidades llamadas 'componentes de software'.
+La ingeniería de software basada en componentes (CBSE - "Component Based Software Engineering") es un enfoque para el desarrollo de software que se basa en la reutilización de entidades llamadas 'componentes de software'.
 
 Surgió del fracaso del desarrollo orientado a objetos para apoyar la reutilización efectiva. Las clases de objetos individuales son demasiado detalladas y específicas.
 
@@ -32,7 +31,7 @@ Los componentes son más abstractos que las clases de objetos y pueden considera
 ![[Pasted image 20230403220915.png]]
 
 ### Componente como servicio
-Una forma útil de pensar en un componente es como un proveedor de uno o más servicios. Cuando un sistema necesita un servicio, llama a un componente que brinde 0programación que se usó para desarrollarlo.
+Una forma útil de pensar en un componente es como un proveedor de uno o más servicios. Cuando un sistema necesita un servicio, llama a un componente que brinde la programación que se usó para desarrollarlo.
 
 Visualizar un componente como un proveedor de servicio pone de relieve dos características críticas de un componente de reutilización: 
 1. El componente es una entidad ejecutable independiente definida mediante sus interfaces. Para usarlo no se necesita conocimiento alguno de su código fuente. Puede hacerse referencia a él como un servicio externo o incluirse directamente en un programa. 
@@ -70,7 +69,7 @@ El modelo de componente especifica cómo se deben definir las interfaces y los e
 Los modelos de componentes son la base del middleware que proporciona soporte para la ejecución de componentes.
 
 Las implementaciones del modelo de componentes proporcionan:
-- **_Servicios de plataforma_** que permiten que los componentes escritos según el modelo se comuniquen
+- **_Servicios de plataforma_** que permiten que los componentes escritos según el modelo se comuniquen.
 - **_Servicios de soporte_** que son servicios independientes de la aplicación utilizados por diferentes componentes.
 
 ![[Pasted image 20230403221339.png]]

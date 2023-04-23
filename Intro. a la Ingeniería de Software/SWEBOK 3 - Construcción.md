@@ -4,6 +4,8 @@ title: Definición de Construcción
 Refiere a la creación detallada del software mediante una combinación de codificación, verificación, pruebas unitarias, pruebas de integración y debugging.
 ```
 
+![[Pasted image 20230423193402.png]]
+
 # Fundamentos
 
 ## Minimización de la complejidad
@@ -15,7 +17,7 @@ Refiere a la creación detallada del software mediante una combinación de codif
 
 ## Anticipación del cambio
 
-Anticipar el cambio ayuda a escribir software extensible, el cuál será facilmente mejorable sin tener que modificar excesivamente la estructura base.
+Anticipar el cambio ayuda a escribir **software extensible**, el cuál será facilmente mejorable sin tener que modificar excesivamente la estructura base.
 
 ## Construcción para la verificación
 
@@ -102,9 +104,9 @@ Application programming interface.
 
 ## Cuestiones de ejecución OO
 
-- Polimorfismo 
+- Polimorfismo
 	Es la habilidad de un lenguaje de soportar operaciones generales sin saber hasta tiempo de ejecución que tipos concretos de objetos incluirán.
-- Reflection 
+- Reflection
 	Es la habilidad de un programa de observar y modificar su propia estructura y comportamiento en tiempo de ejecución.
 
 ## Tipos genéricos
@@ -124,9 +126,9 @@ Application programming interface.
 
 La manera en que se manejan los errores afecta varios atributos de calidad (correctitud, robustez, etc). Existen muchas técnicas para realizar esto: aserciones, retornar valores neutros, logueo de errores, retornar códigos de error, “apagar el software”, etc.
 
-- Excepciones
+- **Excepciones**
 	se utilizan para detectar y procesar errores o eventos exepcionales. La estructura básica utiliza: throw para lanzar una excepción y el bloque try-catch para su manejo.
-- Tolerancia a las fallas
+- **Tolerancia a las fallas**
 	son un conjunto de técnicas que buscan aumentar la confiabilidad en el software mediante la detección de error y la recuperación.
 
 ## Modelos ejecutables
@@ -247,11 +249,11 @@ Permiten automatizar las pruebas unitarias. El programador especifica las entrad
 Un estándar o estilo de programación son convenciones y buenas prácticas para escribir código fuente en determinados lenguajes de programación.
 
 ### Consideraciones generales
-- Fuerte dependencia del lenguaje de programación
-- La mayoría del software es desarrollado/mantenido por equipos
-- Aunque se trabaje en forma individual, definir un estilo de codificación ayuda a organizarce
-- Aportan a la “mantenibilidad” del Software
-- Priorizar el código “legible”
+- Fuerte dependencia del lenguaje de programación.
+- La mayoría del software es desarrollado/mantenido por equipos.
+- Aunque se trabaje en forma individual, definir un estilo de codificación ayuda a organizarse.
+- Aportan a la “mantenibilidad” del Software.
+- Priorizar el código “legible”.
 
 ### Nomeclatura
 - Constantes
@@ -312,7 +314,8 @@ Administración de una Base de Conocimiento o Biblioteca de Código
 
 ## Debug
 
-- If debugging is the process of removing software bugs, then programming must be the process of putting them in. — Edsger Dijkstra
+_If debugging is the process of removing software bugs, then programming must be the process of putting them in._ — Edsger Dijkstra
+
 - Determinar los pasos para reproducir un bug.
 - Al encontrar un punto dónde sabemos que el sistema estaba bien y un lugar dónde falló tenemos un pedazo de código a revisar.
 	- Usar aserciones o revisar invariantes, por ej. imprimiendo mensajes (mejor aserciones o herramientas del IDE).

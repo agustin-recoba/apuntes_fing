@@ -4,35 +4,35 @@ Un modelo de arquitectura es el siguiente (cajas dentro de cajas indican que el 
 
 ![[Pasted image 20230331163728.png]]
 
-Son de alto nivel y fáciles de entender.
+**Son de alto nivel y fáciles de entender.**
 
-Un modelo arquitectónico puede usarse de dos modos: para generar discusiones sobre el diseño del sistema, pues es más comprensible para los interesados al no tener mucho detalle y enfocarse en componentes clave, y para documentar la arquitectura diseñada, en cuyo caso se muestran más detalles, y simplifica la comprensión del sistema.
+Un modelo arquitectónico puede usarse de dos modos: **para generar discusiones** sobre el diseño del sistema, pues es más comprensible para los interesados al no tener mucho detalle y enfocarse en componentes clave, y **para documentar la arquitectura** diseñada, en cuyo caso se muestran más detalles, y simplifica la comprensión del sistema.
 
 # Decisiones en el diseño arquitectonico
 
 El diseño arquitectónico es un proceso creativo en el cual se diseña una organización del sistema que cubrirá los requerimientos funcionales y no funcionales de éste.
-Es útil pensar en el diseño arquitectónico como un conjunto de decisiones a tomar en vez de una secuencia de actividades.
+Es útil pensar en el diseño arquitectónico como un **conjunto de decisiones a tomar** en vez de una secuencia de actividades.
 
 Con base en su conocimiento y experiencia, deben considerar las siguientes preguntas fundamentales sobre el sistema:
-- ¿Existe una arquitectura genérica que se pueda usar?
-- ¿Cómo va a ser distribuido el sistema?
-- ¿Qué patrones o estilos son apropiados?
-- ¿Se descompondrá en módulos?
-- ¿Cómo va a ser evaluado el diseño de la arquitectura?
-- ¿Cómo se documentará la arquitectura del sistema?
+- ¿Existe una **arquitectura genérica** que se pueda usar?
+- ¿Cómo va a ser **distribuido** el sistema?
+- ¿Qué **patrones o estilos** son apropiados?
+- ¿Se descompondrá en **módulos**?
+- ¿**Cómo va a ser evaluado** el diseño de la arquitectura?
+- ¿**Cómo se documentará** la arquitectura del sistema?
 
-Aunque cada sistema de software es único, los sistemas en el mismo dominio de aplicación tienen normalmente arquitecturas similares que reflejan los conceptos fundamentales del dominio.
-La arquitectura de un sistema de software puede basarse en un patrón o un estilo arquitectónico particular. Un patrón arquitectónico es una descripción de una organización del sistema (Garlan y Shaw, 1993), tal como una organización cliente-servidor o una arquitectura por capas.
+Aunque cada sistema de software es único, **los sistemas en el mismo dominio de aplicación tienen normalmente arquitecturas similares** que reflejan los conceptos fundamentales del dominio.
+La arquitectura de un sistema de software puede basarse en un patrón o un estilo arquitectónico particular. Un **patrón arquitectónico es una descripción de una organización del sistema** (Garlan y Shaw, 1993), tal como una organización cliente-servidor o una arquitectura por capas.
 
 Las decisiones en el proceso de diseño arquitectónico deben depender de:
-- performance (operaciones críticas en pocos componentes), 
-- seguridad (estructura en capas con los elementos más críticos protegidos en las capas interiores), 
-- protección (elementos cercanos que, en caso de falla, desactiven con seguridad el sistema), 
-- disponibilidad (componentes redundantes en caso de falla) y 
-- mantenibilidad (componentes separados y autónomos).
+- **performance** (operaciones críticas en pocos componentes), 
+- **seguridad** (estructura en capas con los elementos más críticos protegidos en las capas interiores), 
+- **protección** (elementos cercanos que, en caso de falla, desactiven con seguridad el sistema), 
+- **disponibilidad** (componentes redundantes en caso de falla) y 
+- **mantenibilidad** (componentes separados y autónomos).
 
 Evidentemente, hay un conflicto potencial entre algunas de estas arquitecturas.
-Evaluar un diseño arquitectónico es difícil porque la verdadera prueba es qué tan bien el sistema cubre sus requisitos funcionales y no funcionales cuando está en uso.
+**Evaluar un diseño arquitectónico es difícil** porque la verdadera prueba es qué tan bien el sistema cubre sus requisitos funcionales y no funcionales cuando está en uso.
 
 # Vistas arquitectónicas
 
@@ -51,10 +51,9 @@ Las vistas que él sugiere son:
 ![[Pasted image 20230331165453.png]]
 
 ### Escenarios
-
 Esta vista es redundante con respecto a las otras 4, pero igualmente tiene su propósito:
-1. Como motivación para descubrir los elementos arquitectónicos durante el diseño de la arquitectura.
-2. Como validación e ilustración luego de que el diseño arquitectónico está terminado. 
+1. Como **motivación para descubrir los elementos arquitectónicos** durante el diseño de la arquitectura.
+2. Como **validación e ilustración** luego de que el diseño arquitectónico está terminado. 
 
 ## Otras opiniones
 
@@ -62,18 +61,18 @@ Hofmeister y sus colaboradores (2000) sugieren el uso de vistas similares, pero 
 
 ## Notaciones
 
-- Cuando se usa UML se hace informalmente
-- Algunos autores proponen notaciones rápidas e informales
+- Cuando se usa UML se hace **informalmente**
+- Algunos autores proponen **notaciones rápidas e informales**
 - Otros lenguajes basados en componentes y conectores
 
 Los usuarios de métodos ágiles afirman que, por lo general, no se utiliza la documentación detallada del diseño. Por lo tanto, desarrollarla es un desperdicio de tiempo y dinero. Sommerville está en gran medida de acuerdo con esta visión y considera que, para la mayoría de los sistemas, no vale la pena desarrollar una descripción arquitectónica detallada desde estas cuatro perspectivas.
 
-En general, hay que desarrollar las vistas que sean útiles para la comunicación sin preocuparse por completitud a no ser que sea un sistema crítico.
+En general, **hay que desarrollar las vistas que sean útiles** para la comunicación sin preocuparse por completitud a no ser que sea un sistema crítico.
 
 ## Ejemplos
 
 - Vista de casos de uso/escenarios → casos de uso
-- Vista de procesos → andariveles, diag de actividad, bpmn
+- Vista de procesos → andariveles, diag. de actividad, bpmn
 - Vista lógica → clases, secuencia, actividad
 - Vista de desarrollo → diagrama de componentes
 - Vista física → diagrama de despliegue (deploy)
@@ -84,7 +83,7 @@ Pueden ser de tamaño chico (clase) hasta grande (subsistema).
 
 ![[Pasted image 20230331170038.png]]
 
-Se puede indicar interfaces requeridas y provistas.
+Se puede indicar interfaces **requeridas y provistas**.
 
 ![[Pasted image 20230331170052.png]]
 
@@ -101,16 +100,14 @@ Se muestra la comunicación entre nodos con una línea sólida agregando un este
 
 ![[Pasted image 20230331170152.png]]
 
-
-
 # Patrones arquitectónicos
 
-Un patrón arquitectónico es una descripción abstracta estilizada de buena práctica, que se ensayó y puso a prueba en diferentes sistemas y entornos. 
-De este modo, un patrón arquitectónico debe describir una organización de sistema que ha tenido éxito en sistemas previos. Debe incluir información sobre cuándo es y cuándo no es adecuado usar dicho patrón, así como sobre las fortalezas y debilidades del patrón.
+Un patrón arquitectónico es una **descripción abstracta estilizada de buena práctica**, que se ensayó y puso a prueba en diferentes sistemas y entornos. 
+De este modo, un patrón arquitectónico debe describir una organización de sistema que **ha tenido éxito** en sistemas previos. Debe incluir información sobre cuándo es y cuándo no es adecuado usar dicho patrón, así como sobre las fortalezas y debilidades del patrón.
 
 Propósito:
-	- Compartir una solución probada, ampliamente aplicable a un problema particular de diseño.
-	- El patrón se presenta en una forma estándar que permite que sea fácilmente reutilizado.
+- Compartir una solución probada, ampliamente aplicable a un problema particular de diseño.
+- El patrón se presenta en una forma estándar que permite que sea fácilmente reutilizado.
 
 Cinco piezas importantes de un patrón:
 - Nombre
@@ -126,12 +123,13 @@ Al basar la arquitectura en estilos que son conocidos se facilita comunicar las 
 ### Formas de usar patrones
 - Solución para el diseño del sistema:
 	- Algún estilo sirve
- - Base para una adaptación
+ - Base para una adaptación:
 	 - Algún estilo soluciona parcialmente los problemas
- - Inspiración para una solución relacionada
+ - Inspiración para una solución relacionada:
 	 - Ningún estilo sirve, pero algunos ayudan a entender mejor los problemas
 
 ## Ejemplo con MVC
+
 ```ad-example
 title: Descripción del patrón "Model View Controller"
 ![[Pasted image 20230331170456.png]]
@@ -171,7 +169,7 @@ Ejemplo de un sistema concreto:
 
 ## Arquitectura de repositorio
 
-- **Descripción** → Todos los datos en un sistema se gestionan en un repositorio central, accesible a todos los componentes del. Los componentes no interactúan directamente.
+- **Descripción** → Todos los datos en un sistema se gestionan en un repositorio central, accesible a todos los componentes de él. Los componentes no interactúan directamente.
 - **Cuándo** → Grandes volúmenes de información o sistemas dirigidos por datos.
 - **Ventajas** → Los componentes no necesitan conocer la existencia de otros componentes. Los cambios se propagan hacia todos los componentes. Gestión consistente y centralizada de los datos.
 - **Desventajas** → Problemas en el repositorio afectan a todo el sistema. Posibles ineficiencias en la comunicación. Posibles dificultades al distribuir el repositorio.
@@ -225,7 +223,7 @@ Se puede usar modelos de arquitecturas de aplicación en varias formas:
 	Si no está familiarizado con el tipo de aplicación que desarrolla, podría basar su diseño inicial en una arquitectura de aplicación genérica.
 2. Como lista de verificación del diseño.
 	Si usted desarrolló un diseño arquitectónico para un sistema de aplicación, puede comparar éste con la arquitectura de aplicación genérica y luego, verificar que su diseño sea consistente con la arquitectura genérica.
-3. Como una forma de organizar el trabajo del equipo de desarrollo
+3. Como una forma de organizar el trabajo del equipo de desarrollo.
 	Las arquitecturas de aplicación identifican características estructurales estables de las arquitecturas del sistema y, en muchos casos, es posible desarrollar éstas en paralelo.
 4. Como un medio para valorar los componentes a reutilizar.
 	Si tiene componentes por reutilizar, compare éstos con las estructuras genéricas.
@@ -234,14 +232,14 @@ Se puede usar modelos de arquitecturas de aplicación en varias formas:
 
 ## Aplicaciones de procesamiento de transacción
 
+Procesan peticiones del usuario mediante la información o una base de datos. Una transacción de base de datos es una secuencia de operaciones que se trata como una sola unidad.
+En general, son sistemas interactivos donde los usuarios hacen peticiones asíncronas de servicios.
+Pueden organizarse como una arquitectura tubería y filtro.
+
 ![[Pasted image 20230331172818.png]]
 
 Ejemplo concreto:
 ![[Pasted image 20230331172900.png]]
-
-Procesan peticiones del usuario mediante la información o una base de datos. Una transacción de base de datos es una secuencia de operaciones que se trata como una sola unidad.
-En general, son sistemas interactivos donde los usuarios hacen peticiones asíncronas de servicios.
-Pueden organizarse como una arquitectura tubería y filtro.
 
 ## Sistemas de información
 
@@ -266,7 +264,7 @@ Cuando es más interactivo puede ser más efectivo utilizar un repositorio:
 
 # Puntos clave
 
-- Una arquitectura de software es una descripción de cómo se organiza un sistema de software. Las propiedades de un sistema, como rendimiento, seguridad y disponibilidad, están influidas por la arquitectura utilizada.
+- Una arquitectura de software es una descripción de **cómo se organiza un sistema de software**. Las propiedades de un sistema, como rendimiento, seguridad y disponibilidad, están influidas por la arquitectura utilizada.
 - Las decisiones de diseño arquitectónico incluyen decisiones sobre el tipo de aplicación, la distribución del sistema, los estilos arquitectónicos a usar y las formas en que la arquitectura debe documentarse y evaluarse.
 - Las arquitecturas pueden documentarse desde varias perspectivas o diferentes vistas. Las posibles vistas incluyen la conceptual, la lógica, la de proceso, la de desarrollo y la física.
 - Los patrones arquitectónicos son medios para reutilizar el conocimiento sobre las arquitecturas de sistemas genéricos. Describen la arquitectura, explican cuándo debe usarse, y exponen sus ventajas y desventajas.

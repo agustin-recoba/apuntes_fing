@@ -4,59 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "3778edd9cdacc608",
+        "id": "a530b710751ab1da",
         "type": "tabs",
         "children": [
           {
-            "id": "646f46962458603e",
+            "id": "d91a8b2a7cd1bc8a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Intro. a la Ingeniería de Software/Indice.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2c377ee995039ff0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6d41b0dadee0c478",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Intro. a la Ingeniería de Software/Extras/Casos de uso.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ab7060f888fed84c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Intro. a la Ingeniería de Software/Extras/User Stories.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 410.5,
-    "collapsed": true
+    "width": 410.5
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -123,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md"
-              }
+              "state": {}
             }
           },
           {
@@ -195,12 +149,22 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2c377ee995039ff0",
+  "active": "eed73acbec0572df",
   "lastOpenFiles": [
-    "Intro. a la Ingeniería de Software/Extras/Casos de uso.md",
-    "Intro. a la Ingeniería de Software/Extras/User Stories.md",
-    "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
+    "Redes de computadoras/4. Capa de Red, plano de datos/4.4.2 Direccionamiento IPv4.md",
+    "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230423193402.png",
     "Intro. a la Ingeniería de Software/Indice.md",
+    "Redes de computadoras/2. Capa de Aplicación/2.4.5 P2P y Bitorrent.md",
+    "Intro. a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
+    "Intro. a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
+    "Intro. a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
+    "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230422225619.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230422225605.png",
+    "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
+    "Intro. a la Ingeniería de Software/Extras/User Stories.md",
+    "Intro. a la Ingeniería de Software/Extras/Casos de uso.md",
     "Intro. a la Ingeniería de Software/Capítulo 3 - Metodologías ágiles.md",
     "Intro. a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
     "Intro. a la Ingeniería de Software/Extras/Ejemplos de modelos o SDLC.md",
@@ -212,28 +176,18 @@
     "Redes de computadoras/Indice-result.md",
     "Redes de computadoras/Indice.md",
     "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
-    "Intro. a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
-    "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230421185631.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230421184440.png",
     "Untitled.canvas",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230420212129.png",
-    "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230420163147.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230420161107.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230420160844.png",
     "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
     "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
     "Capítulo 7 - Diseño e implementación.md",
-    "Intro. a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
-    "Intro. a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
     "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
     "Intro. a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
     "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
     "Administración General para Ingenieros/Capítulo 6 - Toma de decisiones.md",
     "Administración General para Ingenieros/Capítulo 5 - RESPONSABILIDAD Y ÉTICA ADMINISTRATIVA.md",
-    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
-    "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
     "Intro. a la Teoría de la Información/media",
     "Intro. a la Teoría de la Información",
     "Administración General para Ingenieros/media",

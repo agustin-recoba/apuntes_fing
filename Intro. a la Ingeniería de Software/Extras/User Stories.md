@@ -1,12 +1,12 @@
 # Introducción
 
 Una HU describe una funcionalidad que, por sí misma, aporta valor al usuario. (eXtremme Programing XP).
-Son una forma rápida de administrar los requisitos cambiantes de un proyecto.
+Son una forma **rápida** de administrar los requisitos cambiantes de un proyecto.
 
 Una Historia de Usuario se compone de tres elementos (“las tres Cs”):
-- Card (Ficha): Descripción breve de la historia de usuario, utilizada como recordatorio y para planificar.
-- Conversación: Comunicación cara a cara que intercambia no solo información sino también pensamientos, opiniones y sentimientos.
-- Confirmación: Detalles de la historia de usuario para que el equipo sepa lo que tienen que construir y lo que la contraparte espera. Se conoce como Criterios de Aceptación.
+- **Card** (tarjeta): **Descripción breve** de la historia de usuario, utilizada como recordatorio y para planificar.
+- **Conversación**: Comunicación cara a cara que intercambia no solo información sino también pensamientos, opiniones y sentimientos.
+- **Confirmación**: Detalles de la historia de usuario para que el equipo sepa lo que tienen que construir y lo que la contraparte espera. Se conoce como **Criterios de Aceptación**.
 
 Las historias se priorizan en función de su valor para la organización.
 Las entregas (releases) y las iteraciones se planifican colocando historias en iteraciones.
@@ -32,7 +32,7 @@ Una tarjeta de historia es la parte visible de una historia, pero las partes imp
 ## Equipo de cliente
 
 El equipo del cliente incluye a aquellos que se aseguran de que el software satisfaga las necesidades de los usuarios previstos. Esto puede incluir testers, un gerente de producto, usuarios reales y diseñadores de interacción.
-El equipo del cliente escribe las story cards porque están en la mejor posición para expresar las características deseadas y porque luego deben poder trabajar en los detalles de la historia con los desarrolladores y priorizar las historias.
+El equipo del cliente escribe las _story-cards_ porque están en la mejor posición para expresar las características deseadas y porque luego deben poder trabajar en los detalles de la historia con los desarrolladores y priorizar las historias.
 
 # Escribiendo historias
 
@@ -90,17 +90,19 @@ Además:
 - **Técnicas de escenarios:**
 	Suele definir el escenario normal o usual y un escenario alternativo de la funcionalidad en cuestión, y debe describir cómo el usuario ejecutaría o intentaría ejecutar los diferentes pasos en dichos trayectos.
 	Hay diferentes formas de escribirlos, las más usadas utilizan el lenguaje específico para las descripciones de comportamiento de software conocido como gherkin. La sintaxis de gherkin es la siguiente:
-	Dado que [Contexto] y adicionalmente [Contexto], cuando [Evento], entonces [Resultado / Comportamiento esperado]
+	Dado que [Contexto 1] y adicionalmente [Contexto 2], cuando [Evento], entonces [Resultado / Comportamiento esperado]
 	Ejemplo:
 		Dado que **el gps está activado**, cuando se despliegue el listado de deliverys, entonces **el sistema desplegará una lista con todos los deliverys ordenados según la valoración y la ubicación que se encuentra el usuario**.
 
 
 ## Requisitos no funcionales
+
 Newkirk y Martin recomiendan la práctica de anotar una historia con la palabra CONSTRAINT para cualquier historia que debe ser obedecida en lugar de implementada directamente.
 
 ![[Pasted image 20230327153532.png]]
 
 ## Historias tipo SPIKE
+
 Tareas de investigación durante una iteración. Por ejemplo: investigar, diseñar, explorar, comprender mejor un requisito, o aumentar la fiabilidad de estimación de una HU.
 
 Suelen ser de dos tipos: técnicos o funcionales. 

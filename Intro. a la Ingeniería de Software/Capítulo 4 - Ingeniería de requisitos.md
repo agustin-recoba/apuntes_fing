@@ -187,9 +187,9 @@ Las actividades están organizadas como un proceso iterativo alrededor de una es
 
 Un estudio de factibilidad es un breve estudio enfocado que debe realizarse con oportunidad en el proceso de IR. 
 Debe responder tres preguntas clave: 
-	a) ¿El sistema contribuye con los objetivos globales de la organización? 
-	b) ¿El sistema puede implementarse dentro de la fecha y el presupuesto usando la tecnología actual? 
-	c) ¿El sistema puede integrarse con otros sistemas que se utilicen? 
+1.  ¿El sistema contribuye con los objetivos globales de la organización? 
+2. ¿El sistema puede implementarse dentro de la fecha y el presupuesto usando la tecnología actual?
+3. ¿El sistema puede integrarse con otros sistemas que se utilicen? 
 
 Si la respuesta a cualquiera de estas preguntas es negativa, probablemente no sea conveniente continuar con el proyecto.
 
@@ -217,7 +217,7 @@ Las actividades del proceso son:
 4. **Especificación de requisitos:**
 	Los requisitos se documentan e ingresan en la siguiente ronda de la espiral. Pueden producirse documentos de requisitos formales o informales.
 
-La adquisición y el análisis de requisitos es un proceso iterativo con retroalimentación continua de cada actividad a otras actividades.
+La adquisición y el análisis de requisitos es un proceso **iterativo** con retroalimentación continua de cada actividad a otras actividades.
 
 El ciclo concluye cuando está completo el documento de requisitos. La adquisición y la comprensión de los requisitos por parte de los participantes del sistema es un proceso difícil por diferentes razones.
 
@@ -236,8 +236,9 @@ Además de los participantes del sistema, se observa que los requisitos también
 Un punto de vista es una forma de recopilar y organizar un conjunto de requisitos de un grupo de participantes que cuentan con algo en común. Por lo tanto, cada punto de vista incluye una serie de requisitos del sistema. Los puntos de vista pueden provenir de usuarios finales, administradores, etcétera. Ayudan a identificar a los individuos que brindan información sobre sus requisitos y a estructurar los requisitos para análisis.
 
 ## Técnicas de descubrimiento de requisitos:
+
 ### Entrevistas
-En estas entrevistas, el equipo de ingeniería de requisitos formula preguntas a los participantes sobre el sistema que actualmente usan y el sistema que se va a desarrollar. Los requisitos se derivan de las respuestas a dichas preguntas
+En estas entrevistas, el equipo de ingeniería de requisitos formula preguntas a los participantes sobre el sistema que actualmente usan y el sistema que se va a desarrollar. Los requisitos se derivan de las respuestas a dichas preguntas.
 
 Las entrevistas son de dos tipos:
 1. Entrevistas cerradas, donde los participantes responden a un conjunto de preguntas preestablecidas. 
@@ -247,7 +248,7 @@ En la práctica, las entrevistas con los participantes son por lo general una co
 
 #### Desventajas: 
 Las entrevistas no son tan útiles para comprender los requisitos desde el dominio de la aplicación. 
-1. Todos los especialistas en la aplicación usan terminología y jerga que son específicos de un dominio 
+1. Todos los especialistas en la aplicación usan terminología y jerga que son específicos de un dominio.
 2. Cierto conocimiento del dominio es tan familiar a los participantes que encuentran difícil de explicarlo, o bien, creen que es tan fundamental que no vale la pena mencionarlo.
 
 Las entrevistas tampoco son una técnica efectiva para adquirir conocimiento sobre los requisitos y las restricciones de la organización, porque existen relaciones sutiles de poder entre los diferentes miembros en la organización.
@@ -257,7 +258,7 @@ Los entrevistadores efectivos poseen dos características:
 1. Tienen mentalidad abierta, evitan ideas preconcebidas sobre los requisitos y escuchan a los participantes. 
 2. Instan al entrevistado con una pregunta de trampolín para continuar la plática, dar una propuesta de requisitos o trabajar juntos en un sistema de prototipo. Cuando se pregunta al individuo “dime qué quieres” es improbable que alguien consiga información útil. Encuentran mucho más sencillo hablar en un contexto definido que en términos generales. 
 
-La entrevista por sí misma está expuesta a perder información esencial y, por consiguiente, debe usarse junto con otras técnicas de adquisición de requisitos.
+La entrevista por sí misma está expuesta a perder información esencial y, por consiguiente, **debe usarse junto con otras técnicas de adquisición de requisitos**.
 
 ### Escenarios
 Por lo general, las personas encuentran más sencillo vincularse con ejemplos reales que con descripciones abstractas. Los escenarios son particularmente útiles para detallar un bosquejo de descripción de requisitos.
@@ -319,7 +320,7 @@ Provee una representación de alto nivel de los requisitos de usuario.
 
 #### Resúmen
 - Formato simple y estructurado donde los usuarios y desarrolladores pueden trabajar juntos.
-- No son de gran ayuda para identificar aspectos no funcionales.
+- **No son de gran ayuda para identificar aspectos no funcionales.**
 - Mientras se definen los casos de uso, puede ser un buen momento para definir pantallas u otros objetos con los que el usuario interactúa.
 - Pueden ser usados en el diseño y en el testing del sistema.
 
@@ -327,7 +328,7 @@ Provee una representación de alto nivel de los requisitos de usuario.
 
 ### Observaciones / Etnografía
 Los sistemas de software no existen aislados. Se usan en un contexto social y organizacional, y dicho escenario podría derivar o restringir los requisitos del sistema de software.
-La etnografía es una técnica de observación que se usa para entender los procesos operacionales y ayudar a derivar requisitos de apoyo para dichos procesos. Un analista se adentra en el ambiente laboral donde se usará el sistema. Observa el trabajo diario y toma notas acerca de las tareas existentes en que intervienen los participantes. El valor de la etnografía es que ayuda a descubrir requisitos implícitos del sistema que reflejan las formas actuales en que trabaja la gente, en vez de los procesos formales definidos por la organización.
+La etnografía es una técnica de observación que se usa para entender los procesos operacionales y ayudar a derivar requisitos de apoyo para dichos procesos. Un analista se adentra en el ambiente laboral donde se usará el sistema. Observa el trabajo diario y toma notas acerca de las tareas existentes en que intervienen los participantes. El valor de la etnografía es que ayuda a descubrir requisitos implícitos del sistema que reflejan las formas en que trabaja la gente, en vez de los procesos formales definidos por la organización.
 
 La etnografía es muy efectiva para descubrir dos tipos de requisitos: 
 1. Requisitos que se derivan de la forma en que realmente trabaja la gente, en vez de la forma en la cual las definiciones del proceso indican que debería trabajar. 
@@ -361,7 +362,7 @@ Preparar preguntas bien escritas es el mayor desafío.
 - Proveer opciones para todas las posibles respuestas.
 - Hacer que las opciones sean mutuoexcluyentes.
 - Utilizar preguntas cerradas para análisis estadístico y abiertas para recolectar ideas o necesidades nuevas.
-- Siempre probar el cuestionario antes de usarlo.
+- **Siempre probar el cuestionario** antes de usarlo.
 - No incluir demasiadas preguntas.
 
 ![[Pasted image 20230325010731.png]]
@@ -587,7 +588,7 @@ Se recomienda establecer un proceso formal de control de cambios.
 
 ## Cambios en los requisitos
 
-El entorno empresarial y técnico del sistema siempre cambia después de la instalación.Nuevo hardware, nuevas interfaces con otros sistemas, cambian las prioridades del negocio, nuevas legislaciones, etc.
+El entorno empresarial y técnico del sistema siempre cambia después de la instalación. Nuevo hardware, nuevas interfaces con otros sistemas, cambian las prioridades del negocio, nuevas legislaciones, etc.
 
 Las personas que pagan por un sistema y los usuarios de ese sistema casi nunca son las mismas personas.
 
@@ -595,7 +596,8 @@ Los grandes sistemas tienen una diversa comunidad de usuarios, algunos de los cu
 
 ## Planificación de la gestión
 
-Establece el detalle del nivel de gestión requisitos que es requerido. ● Decisiones de gestión de requisitos: 
+Establece el detalle del nivel de gestión requisitos que es requerido.
+Decisiones de gestión de requisitos: 
 - **Identificación de requisitos**— Cada requisito debe ser identificado de modo que pueda hacerse una referencia cruzada con otros.
 - **Proceso de gestión de cambios**— Es el conjunto de actividades que evalúan el impacto y el costo de los cambios.
 - **Políticas de trazabilidad**— Estas políticas definen cómo registrar las relaciones entre los requisitos y el sistema diseñado.
