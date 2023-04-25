@@ -7,7 +7,8 @@ El 40% del costo del software es testing.
 
 ## Productos genéricos y personalizados
 
-En los productos genéricos, la especificación la controla la compañía, mientras que en los personalizados la controla el cliente, y se debe trabajar con ella. En la actualidad, cada vez se mezclan más estas especificaciones, partiendo de un software genérico y adaptándolo. 
+En los productos genéricos, la especificación la controla la compañía, mientras que en los personalizados la controla el cliente, y se debe trabajar con ella. 
+En la actualidad, cada vez se mezclan más estas especificaciones, partiendo de un software genérico y adaptándolo. 
 
 ## Atributos esenciales de un buen sw
 
@@ -46,7 +47,7 @@ Es una disciplina de ingeniería. Los ingenieros trabajan con **restricciones**,
 ### Diversidad en ing. de sw
 La ing. de sw. es un enfoque sistemático para la producción de software que tiene en cuenta los costos prácticos, el cronograma y los problemas de confiabilidad, así como las necesidades de los clientes y productos de software.
 
-Uno de los factores más importantes es el tipo de aplicación. Aunque los limites de los tipos son borrosos, ayuda a determinar las técnicas y métodos a utilizar.
+Uno de los factores más importantes es el tipo de aplicación. Aunque los limites de los tipos son borrosos, **ayuda a determinar las técnicas y métodos a utilizar**.
 
 **Principios fundamentales:**
 - un proceso de desarrollo controlado y entendido
@@ -76,18 +77,19 @@ Uno de los factores más importantes es el tipo de aplicación. Aunque los limit
 
 La ingeniería de software implica responsabilidades más amplias que simplemente la aplicación de habilidades técnicas.
 Los ingenieros de software deben comportarse de una manera honesta y éticamente responsable si deben ser respetados como profesionales.
-El comportamiento ético es más que simplemente mantener la ley, pero implica seguir un conjunto de principios que son moralmente correctos.
+El comportamiento ético es más que simplemente mantener la ley, implica seguir un conjunto de principios que son moralmente correctos.
 
 El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) con la ACM produjo un código de ética y práctica profesional.
 
 ## Cuestiones de responsabilidad profesional
 
 - **Confidencialidad**
-	Respetar la confidencialidad de sus empleadores (con o sin acuerdo).
+	Respetar la confidencialidad de sus empleadores _**(con o sin acuerdo)**_.
 - **Competencia**
 	No aceptar trabajos que están fuera de su competencia.
 - **Derechos de propiedad intelectual**
 	Conocer las leyes sobre el uso de la propiedad intelectual y licencias.
 - **Mal uso de la computadora**
 	No usar sus habilidades técnicas para usar mal las computadoras de otras personas.
+
 

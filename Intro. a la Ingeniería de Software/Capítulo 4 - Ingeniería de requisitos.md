@@ -8,7 +8,7 @@ Existen **cuatro actividades principales** en el proceso de ingeniería de requi
 	Debe ser rápido y relativamente **barato**. 
 	El resultado debe informar la decisión respecto a si se continúa o no continúa con un análisis más detallado.
 - **Obtención y análisis de requisitos**:
-	Éste es el proceso de derivar los requisitos del sistema mediante observación de los sistemas existentes, discusiones con los usuarios y proveedores potenciales, análisis de tareas, etcétera. Esto puede incluir el desarrollo de uno o más modelos de sistemas y prototipos, lo que ayuda a entender el sistema que se va a especificar
+	Éste es el proceso de derivar los requisitos del sistema mediante observación de los sistemas existentes, discusiones con los usuarios y proveedores potenciales, análisis de tareas, etcétera. Esto puede incluir el desarrollo de uno o más modelos de sistemas y prototipos, lo que ayuda a entender el sistema que se va a especificar.
 - **Especificación de requisitos**:
 	Consiste en la actividad de transcribir la información recopilada durante la actividad de análisis, en un documento que define un conjunto de requisitos. En este documento se incluyen dos clases de requisitos. Los **requisitos del usuario** son informes abstractos de requisitos del sistema para el cliente y el usuario final del sistema; y los **requisitos de sistema** son una descripción detallada de la funcionalidad a ofrecer.
 - **Validación de requisitos**:
@@ -57,7 +57,7 @@ Especifican o restringen por lo general características del sistema como un tod
 ![[Pasted image 20230317145810.png]]
 
 Los requisitos no funcionales a menudo son más significativos que los requisitos funcionales individuales:
-1. Los requisitos no funcionales afectan más la arquitectura global de un sistema que los componentes individuales. 
+1. Los requisitos no funcionales **afectan más la arquitectura global** de un sistema que los componentes individuales. 
 2. Un requisito no funcional individual, como un requisito de seguridad, podría generar algunos requisitos funcionales relacionados que definan nuevos servicios del sistema que se requieran. Además, también podría generar requisitos que restrinjan los requisitos ya existentes.
 
 Los requisitos no funcionales surgen a través de necesidades del usuario, debido a restricciones presupuestales, políticas de la organización, necesidad de interoperabilidad con otro software o sistemas de hardware, o factores externos como regulaciones de seguridad o legislación sobre privacidad.
@@ -114,8 +114,9 @@ collapse: closed
 
 # 4.3 Especificación de requisitos
 
-La especificación de requisitos es el proceso de escribir, en un documento de requisitos, los requisitos del usuario y del sistema. De manera ideal, los requisitos del usuario y del sistema deben ser claros, sin ambigüedades, fáciles de entender, completos y consistentes. 
-Los requisitos del usuario para un sistema deben describir los requisitos funcionales y no funcionales, de forma que sean comprensibles para los usuarios del sistema que no cuentan con un conocimiento técnico detallado. De manera ideal, deberían especificar sólo el comportamiento externo del sistema. El documento de requisitos no debe incluir detalles de la arquitectura o el diseño del sistema. En consecuencia, si usted escribe los requisitos del usuario, no tiene que usar jerga de software, anotaciones estructuradas o formales. Debe escribir los requisitos del usuario en lenguaje natural, con tablas y formas sencillas, así como diagramas intuitivos.
+La especificación de requisitos es el proceso de escribir, en un documento de requisitos, los requisitos del usuario y del sistema. De manera ideal, los requisitos del usuario y del sistema deben ser **claros**, **sin ambigüedades**, **fáciles de entender**, **completos** y **consistentes**. 
+Los requisitos del usuario para un sistema deben describir los requisitos funcionales y no funcionales, de forma que sean comprensibles para los usuarios del sistema que no cuentan con un conocimiento técnico detallado. De manera ideal, **deberían especificar sólo el comportamiento externo del sistema**. El documento de requisitos no debe incluir detalles de la arquitectura o el diseño del sistema. En consecuencia, si usted escribe los requisitos del usuario, no tiene que usar jerga de software, anotaciones estructuradas o formales. Debe escribir los requisitos del usuario en lenguaje natural, con tablas y formas sencillas, así como diagramas intuitivos.
+
 Idealmente, los requisitos del sistema deben describir de manera simple el comportamiento externo del sistema y sus restricciones operacionales. No tienen que ocuparse de cómo se diseña o implementa el sistema. Sin embargo, al nivel de detalle requerido para especificar por completo un sistema de software complejo, es prácticamente imposible excluir toda la información de diseño.
 
 Los requisitos del usuario se escriben casi siempre en lenguaje natural, complementado con diagramas y tablas adecuados en el documento de requisitos. Los requisitos del sistema se escriben también en lenguaje natural, pero de igual modo se utilizan otras notaciones basadas en formas, modelos gráficos del sistema o modelos matemáticos del sistema.
@@ -235,12 +236,13 @@ Los participantes varían desde administradores y usuarios finales de un sistema
 Además de los participantes del sistema, se observa que los requisitos también pueden venir del dominio de aplicación y de otros sistemas que interactúan con el sistema a especificar.
 
 #### Puntos de vista
-Un punto de vista es una forma de recopilar y organizar un conjunto de requisitos de un grupo de participantes que cuentan con algo en común. Por lo tanto, cada punto de vista incluye una serie de requisitos del sistema. Los puntos de vista pueden provenir de usuarios finales, administradores, etcétera. Ayudan a identificar a los individuos que brindan información sobre sus requisitos y a estructurar los requisitos para análisis.
+Un punto de vista es una forma de **recopilar y organizar** un conjunto de requisitos de un grupo de participantes que cuentan con algo en común. Por lo tanto, cada punto de vista incluye una serie de requisitos del sistema. Los puntos de vista pueden provenir de usuarios finales, administradores, etcétera. 
+Ayudan a identificar a los individuos que brindan información sobre sus requisitos y a estructurar los requisitos para análisis.
 
 ## Técnicas de descubrimiento de requisitos:
 
 ### Entrevistas
-La manera más obvia de averiguar que necesitan los usuarios de un sistema de software es preguntarle a ellos. En estas entrevistas, el equipo de ingeniería de requisitos formula preguntas a los participantes sobre el sistema que actualmente usan y el sistema que se va a desarrollar. Los requisitos se derivan de las respuestas a dichas preguntas.
+La manera más obvia de averiguar que necesitan los usuarios de un sistema de software es preguntarle a ellos. En estas entrevistas, el equipo de ingeniería de requisitos formula preguntas a los participantes sobre **el sistema que actualmente usan y el sistema que se va a desarrollar**. Los requisitos se derivan de las respuestas a dichas preguntas.
 
 Las entrevistas son de dos tipos:
 1. Entrevistas cerradas, donde los participantes responden a un conjunto de preguntas preestablecidas. 
@@ -255,7 +257,7 @@ Las entrevistas no son tan útiles para comprender los requisitos desde el domin
 
 Las entrevistas tampoco son una técnica efectiva para adquirir conocimiento sobre los requisitos y las restricciones de la organización, porque existen relaciones sutiles de poder entre los diferentes miembros en la organización.
 
-Son costosas y dependen de las habilidades interpersonales de los involucrados.
+Son **costosas** y **dependen de las habilidades interpersonales** de los involucrados.
 
 #### Entevistadores
 Los entrevistadores efectivos poseen dos características: 
@@ -339,7 +341,7 @@ La etnografía es muy efectiva para descubrir dos tipos de requisitos:
 2. Requisitos que se derivan de la cooperación y el conocimiento de las actividades de otras personas.
 
 #### Desventajas
-No en todos los casos se identifican nuevas características que deben agregarse a un sistema. En consecuencia, la etnografía no es un enfoque completo para la adquisición por sí misma, y debe usarse para complementar otros enfoques, como el análisis de casos de uso.
+No en todos los casos se identifican nuevas características que deben agregarse a un sistema. En consecuencia, la etnografía **no es un enfoque completo** para la adquisición por sí misma, y debe usarse para complementar otros enfoques, como el análisis de **casos de uso**.
 
 #### Resumen
 - Implican observar a los usuarios mientras realizan sus actividades. Pueden ser silenciosas o interactivas.
@@ -372,7 +374,7 @@ Preparar preguntas bien escritas es el mayor desafío.
 ![[Pasted image 20230325010731.png]]
 
 ### Análisis de las interfaces del sistema
-Implica examinar los otros sistemas con los que se conecta el sistema.
+Implica **examinar los otros sistemas** con los que se conecta el sistema.
 Revela requisitos funcionales relativas al intercambio de datos y servicios entre sistemas.
 
 Para cada sistema que se deba comunicar con el nuestro se identifican las funcionalidades que nos puedan generar requisitos. Esos requisitos pueden describir los datos a pasar a otros sistemas, los datos a recibir de otros sistemas y las reglas sobre los datos (por ejemplo criterios de validación).

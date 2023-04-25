@@ -159,8 +159,8 @@ title: Arquitectura de aplicación Web con el patrón MVC
 - **Desventajas** → Es difícil ofrecer una separación limpia entre capas, El rendimiento suele ser un problema.
 
 Otros puntos:
-- Soporta el desarrollo incremental 
-- También permite implementaciones multiplataformas
+- Soporta el desarrollo incremental.
+- También permite implementaciones multiplataformas.
 
 ![[Pasted image 20230331171200.png]]
 
@@ -184,6 +184,7 @@ title: Arquitectura de repositorio para un IDE
 ![[Pasted image 20230331171632.png]]
 ```
 
+### Pizarrón
 Un enfoque alternativo es el pizarrón dónde se activan componentes cuando hay datos particulares disponibles. Adecuado para datos menos estructurados.
 
 La mayoría de los sistemas que usan grandes cantidades de datos se organizan sobre una base de datos o un repositorio compartido. Por lo tanto, este modelo es adecuado para aplicaciones en las que un componente genere datos y otro los use. Los ejemplos de este tipo de sistema incluyen sistemas de comando y control, sistemas de información administrativa, sistemas CAD y entornos de desarrollo interactivo para software.

@@ -43,7 +43,7 @@ Existen cuatro actividades principales en el proceso de ingeniería de requerimi
 ## 2. Diseño e implementación del software
 
 Debe desarrollarse el software para cumplir con las especificaciones. La etapa de implementación de desarrollo del software corresponde al proceso de convertir una especificación del sistema en un sistema ejecutable. Siempre incluye procesos de diseño y programación de software, aunque también puede involucrar la corrección en la especificación del software.
-Un diseño de software se entiende como una descripción de la estructura del software que se va a implementar, los modelos y las estructuras de datos utilizados por el sistema, las interfaces entre componentes del sistema y, en ocasiones, los algoritmos usados.
+Un diseño de software (el producto) se entiende como una descripción de la estructura del software que se va a implementar, los modelos y las estructuras de datos utilizados por el sistema, las interfaces entre componentes del sistema y, en ocasiones, los algoritmos usados.
 
 Las actividades en el proceso de diseño varían dependiendo del tipo de sistema a desarrollar:
 - **Diseño arquitectónico**, aquí se identifica la estructura global del sistema, los principales componentes (llamados en ocasiones subsistemas o módulos), sus relaciones y cómo se distribuyen.
@@ -65,7 +65,6 @@ Se crea para mostrar que un sistema cumple tanto con sus especificaciones como c
 	Ésta es la etapa final en el proceso de pruebas, antes de que el sistema se acepte para uso operacional. El sistema se pone a prueba con datos suministrados por el cliente del sistema, en vez de datos de prueba simulados.
 
 En desarrollo incremental, cada incremento se prueba según sus requerimientos. En desarrollo dirigido por pruebas, las mismas se desarrollan junto con los requerimientos antes de empezar. En desarrollo por plan, se hacen planes de prueba (el modelo en V). El beta testing consiste en enviar el software a posibles clientes para que reporten problemas.
-
 
 ## 4. Evolución del software
 
@@ -93,11 +92,11 @@ Los prototipos permiten verificar si un requerimiento es realizable. El objetivo
 
 # Mejora de procesos
 
-El enfoque de madurez de procesos busca mejorar la calidad del producto y que el proceso sea predecible. Por otro lado, el enfoque ágil sostiene que los mejores procesos son los que tienen menores costos generales. El primero se basa en desarrollo dirigido por planes y tiene mayores costos, mientras que el segundo disminuye la formalidad y documentación, enfocándose en el código.
+El **enfoque de madurez de procesos** busca mejorar la calidad del producto y que el proceso sea predecible. Por otro lado, el **enfoque ágil** sostiene que los mejores procesos son los que tienen menores costos generales. El primero se basa en desarrollo dirigido por planes y tiene mayores costos, mientras que el segundo disminuye la formalidad y documentación, enfocándose en el código.
 
 El análisis de procesos se puede hacer con características como velocidad y robustez. En el primer ciclo de cambios hay que recoger información del proceso para poder mejorar. Es una actividad a largo plazo y continua, dados los cambios del mercado. La madurez de los procesos refleja la administración y medidas de los mismos, así como el uso de buenas prácticas de ingeniería de software por parte de la compañía.
 
-En el nivel inicial del modelo de madurez de procesos, los objetivos del área están satisfechos. En el nivel gestionado, además debe haber documentación de los objetivos, y monitorear los procesos. En el nivel definido, se estandarizan los procesos, y se obtienen medidas para el futuro. En el nivel gestionado cuantitativamente, se usan medidas cuantitativas para controlar subprocesos. En el nivel de optimización, se usan las medidas obtenidas para mejorar los procesos.
+En el nivel **inicial** del modelo de madurez de procesos, los objetivos del área están satisfechos. En el nivel **gestionado**, además debe haber documentación de los objetivos, y monitorear los procesos. En el nivel **definido**, se estandarizan los procesos, y se obtienen medidas para el futuro. En el nivel **gestionado cuantitativamente**, se usan medidas cuantitativas para controlar subprocesos. En el nivel de **optimización**, se usan las medidas obtenidas para mejorar los procesos.
 
 Las dificultades de aplicar este modelo por sus costos en modelos ágiles resultan en que sólo compañías grandes lo usan.
 

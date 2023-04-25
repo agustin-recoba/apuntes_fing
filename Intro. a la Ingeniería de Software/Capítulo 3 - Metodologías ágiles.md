@@ -63,7 +63,10 @@ Las características clave son:
 - Involucrar al usuario en el desarrollo y validación de las pruebas
 - Uso de frameworks de testeo automático
 
-Al escribir las pruebas antes del código, se pueden hacer mientras se escribe el código y encontrar problemas. Escribir pruebas define una interfaz y una especificación del comportamiento de la funcionalidad en cuestión. Hay menos problemas de malos entendidos de requerimientos o interfaz, y una clara relación entre los primeros y el código que los implementa, gracias a las tareas. Las personas que implementan las mismas deben entender bien la especificación para hacer pruebas, por lo que ambigüedades y omisiones se deben aclarar antes de empezar. Además, evita que el desarrollador se adelante al tester, lo que puede llevar a la omisión de pruebas para mantener el calendario
+Al escribir las pruebas antes del código, se pueden hacer mientras se escribe el código y encontrar problemas. 
+Escribir pruebas define una interfaz y una especificación del comportamiento de la funcionalidad en cuestión. Hay menos problemas de malos entendidos de requerimientos o interfaz, y una clara relación entre los primeros y el código que los implementa, gracias a las tareas.
+Las personas que implementan las mismas deben entender bien la especificación para hacer pruebas, por lo que ambigüedades y omisiones se deben aclarar antes de empezar. 
+Además, evita que el desarrollador se adelante al tester, lo que puede llevar a la omisión de pruebas para mantener el calendario
 
 Cada tarea genera tests unitarios que verifican la implementación de la misma. El cliente ayuda a desarrollar pruebas de aceptación (que el sistema haga lo que necesita). La automatización de tests es fundamental. Las pruebas se escriben como componentes ejecutables antes de implementar las tareas, y estas pruebas individualmente simulan una entrada y verifican que la salida sea correcta. Hay frameworks para esto (por ejemplo Junit). Esta automatización lleva a que exista un conjunto de pruebas que pueden ser ejecutadas fácilmente al introducir nuevas funcionalidades al sistema.
 
@@ -71,10 +74,10 @@ Como es lógico, este tipo de desarrollo conlleva la escritura de gran cantidad 
 
 ## Pair programming
 
-La pareja de programadores se sienta en la misma computadora para hacer el software. Pero no siempre son los mismos, sino que van rotando. Esto tiene algunas ventajas: apoya la idea de propiedad colectiva del software, haciendo que todos sean responsables de los problemas; es una forma de inspección informal al haber dos personas, que ayuda a encontrar errores sin los problemas de tiempo de las inspecciones formales; y alienta a la refactorización, pues otros se benefician inmediatamente de dicho proceso (normalmente los programadores son reacios a refactorizar porque no se ven los beneficios).
+La pareja de programadores se sienta en la **misma computadora** para hacer el software. Pero no siempre son los mismos, sino que **van rotando**. Esto tiene algunas ventajas: apoya la idea de **propiedad colectiva del software**, haciendo que todos sean responsables de los problemas; es una forma de **inspección informal** al haber dos personas, que ayuda a encontrar errores sin los problemas de tiempo de las inspecciones formales; y **alienta a la refactorización**, pues otros se benefician inmediatamente de dicho proceso (normalmente los programadores son reacios a refactorizar porque no se ven los beneficios).
 
-La eficiencia del pair programming aún es cuestionada, dado que dos individuos trabajando juntos en un período de tiempo producen la mitad de código que si trabajaran separados.
-Estudios sobre el tema han dado resultados mixtos. En general, la ventaja es que se comparte conocimiento, lo que reduce los riesgos para el proyecto cuando algún miembro del equipo se va.
+La **eficiencia del pair programming aún es cuestionada**, dado que dos individuos trabajando juntos en un período de tiempo producen la mitad de código que si trabajaran separados.
+Estudios sobre el tema han dado resultados mixtos. En general, la ventaja es que **se comparte conocimiento**, lo que reduce los riesgos para el proyecto cuando algún miembro del equipo se va.
 
 ## Resumen de XP
 
@@ -82,7 +85,7 @@ Estudios sobre el tema han dado resultados mixtos. En general, la ventaja es que
 
 # Scrum
 
-La planificación informal y falta de documentación de los métodos ágiles colisionan con la necesidad de visibilidad de las grandes empresas, que necesitan saber qué está sucediendo. El desarrollo ágil también requiere gestión para hacer el mejor uso de tiempo y recursos posible. Para dar un framework para esto se desarrolló el Scrum, que permite dar algo de visibilidad. Es un método ágil por seguir los principios necesarios, pero no se enfoca en las prácticas, por lo que puede incorporarse con otras.
+La planificación informal y falta de documentación de los métodos ágiles colisionan con la necesidad de visibilidad de las grandes empresas, que necesitan saber **qué está sucediendo**. El desarrollo ágil también requiere gestión para hacer el mejor uso de tiempo y recursos posible. Para dar un framework para esto se desarrolló el Scrum, que permite dar algo de visibilidad. **Es un método ágil** por seguir los principios necesarios, pero no se enfoca en las prácticas, por lo que puede incorporarse con otras.
 
 Los términos usados en Scrum son:
 
@@ -94,7 +97,8 @@ Los términos usados en Scrum son:
 El proceso o ciclo de sprint del Scrum comienza con el product backlog: la lista de cosas en las que hay que trabajar, que no son sólo funcionalidades del sistema (pruebas, arquitectura, documentación). Puede tener distintos niveles de especificidad, lo cual depende del product owner. 
 
 ### Ciclos de sprints
-Cada ciclo de sprint dura un tiempo fijo, y al principio de cada uno el PO define cuáles son los elementos del backlog que tienen prioridad ese ciclo. Si no se completan, no se extiende el tiempo. Luego el equipo elige qué elementos de la lista creen que pueden hacer ese sprint, y estiman el tiempo que les tomará. Para esto, consideran la velocidad lograda en sprints anteriores. Se hace un backlog para ese sprint particular: qué tareas tienen que hacer.
+Cada ciclo de sprint dura un tiempo fijo, y al principio de cada uno el PO define cuáles son los elementos del backlog que tienen prioridad ese ciclo. Si no se completan, no se extiende el tiempo. 
+Luego el equipo elige qué elementos de la lista creen que pueden hacer ese sprint, y estiman el tiempo que les tomará. Para esto, consideran la velocidad lograda en sprints anteriores. Se hace un backlog para ese sprint particular: qué tareas tienen que hacer.
 
 Al final de cada sprint, hay una reunión de evaluación con todo el equipo, donde se ve cómo se puede mejorar la forma en que trabajaron y dan datos del producto para hacer el product backlog del siguiente sprint. El ScrumMaster suele tener que dar reportes a sus superiores, y pueden tener que gestionar proyectos.
 
@@ -112,15 +116,14 @@ La necesidad de obtener software más rápidamente se aplica a sistemas y empres
 **“Escalar hacia arriba”** refiere a la utilización de métodos ágiles para el desarrollo de grandes sistemas de software, los cuales no pueden ser desarrollados por equipos reducidos.
 **“Escalar hacia afuera”** refiere a cómo los métodos ágiles pueden ser introducidos a lo largo de una gran organización con muchos años de experiencia en el desarrollo de software.
 
-Suele ser necesario escalar hacia arriba y hacia afuera al mismo tiempo, pues software grande se encarga a empresas grandes. Los métodos ágiles no aportan tanta productividad y disminución de los efectos en estos casos.
+Suele ser necesario escalar hacia arriba y hacia afuera al mismo tiempo, pues software grande se encarga a empresas grandes. Los métodos ágiles no aportan tanta productividad y disminución de los defectos en estos casos.
 
 Cuando se hace un contrato, normalmente la documentación de los requerimientos es parte del mismo, pero esto no existe en los métodos ágiles. En consecuencia, el cliente paga por el tiempo que toma hacer el sistema y no por los requerimientos solicitados. Esto puede llevar a disputas sobre quién debe pagar si el sistema se demora.
-
 En la práctica, la documentación formal del sistema no suele ser actualizada, y por eso los promotores de métodos ágiles sostienen que es innecesaria, y que con código legible y de calidad es suficiente para que el sistema se pueda mantener. Sin embargo, los requerimientos de sistema le dicen al ingeniero qué debe hacer el sistema, y sin el mismo el mantenimiento se hace más difícil. Esto es peor si no se puede garantizar la continuidad del equipo.
 
 Es importante mantener al cliente involucrado, que puede perder interés cuando el sistema está hecho y no tener interés en el mantenimiento. Si el equipo de desarrollo no se mantiene, se pierde el conocimiento implícito que sus miembros tenían del sistema y para el cual no necesitaban documentación. Esto hace que sea difícil para nuevos miembros entender qué hace el sistema. Es, además, difícil que el equipo de mantenimiento sea continuo, pues a los programadores no les agrada hacer estas tareas y se van a nuevos proyectos.
 
-Para escalar métodos ágiles, es fundamental integrarlos con enfoques dirigidos por planes, sobre todo en grandes compañías. Los principios de metodologías ágiles no siempre se pueden llevar a cabo. Para decidir el balance, hay que hacerse preguntas de carácter técnico, humano y profesional.
+Para escalar métodos ágiles, es fundamental **integrarlos con enfoques dirigidos por planes**, sobre todo en grandes compañías. Los principios de metodologías ágiles no siempre se pueden llevar a cabo. Para decidir el balance, hay que hacerse preguntas de carácter técnico, humano y profesional.
 
 Los sistemas grandes tienen varios aspectos que requieren planeación y documentación. Cuanto más grande y complejo sea el sistema, más necesario es dirigirse por planes. Además, si tienen larga vida o están sujetos a regulaciones, requieren documentación.
 

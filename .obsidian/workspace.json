@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Intro. a la Ingeniería de Software/Extras/MUM.md",
+                "file": "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro. a la Ingeniería de Software/Extras/MUM.md",
+                "file": "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro. a la Ingeniería de Software/Extras/MUM.md",
+                "file": "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intro. a la Ingeniería de Software/Extras/MUM.md"
+                "file": "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md"
               }
             }
           },
@@ -159,40 +159,41 @@
   },
   "active": "eed73acbec0572df",
   "lastOpenFiles": [
+    "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
+    "Intro. a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
+    "Intro. a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
+    "Intro. a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
     "Intro. a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230424212556.png",
+    "Intro. a la Ingeniería de Software/Extras/User Stories.md",
+    "Intro. a la Ingeniería de Software/Capítulo 3 - Metodologías ágiles.md",
+    "Intro. a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
+    "Intro. a la Ingeniería de Software/Extras/MUM.md",
     "Intro. a la Ingeniería de Software/Extras/Ejemplos de modelos o SDLC.md",
     "Intro. a la Ingeniería de Software/Capítulo 1 - Introducción.md",
-    "Intro. a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
-    "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
-    "Intro. a la Ingeniería de Software/Extras/MUM.md",
+    "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md",
+    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
+    "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230424212556.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230424175951.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230424174640.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230424174619.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230424174531.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230424174112.png",
-    "Intro. a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
-    "Intro. a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
-    "Intro. a la Ingeniería de Software/SWEBOK 3 - Construcción.md",
     "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
     "Redes de computadoras/3. Capa de Transporte/3.5 Principios de Control de Congestión.md",
     "Redes de computadoras/1. Introduccion/1.5 Modelo de capas.md",
-    "Intro. a la Ingeniería de Software/Extras/User Stories.md",
     "Redes de computadoras/4. Capa de Red, plano de datos/4.4.2 Direccionamiento IPv4.md",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230423193402.png",
     "Intro. a la Ingeniería de Software/Indice.md",
     "Redes de computadoras/2. Capa de Aplicación/2.4.5 P2P y Bitorrent.md",
-    "Intro. a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230422225619.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230422225605.png",
     "Intro. a la Ingeniería de Software/Extras/Casos de uso.md",
-    "Intro. a la Ingeniería de Software/Capítulo 3 - Metodologías ágiles.md",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230421230114.png",
     "Redes de computadoras/Indice-result.md",
     "Redes de computadoras/Indice.md",
     "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
     "Untitled.canvas",
-    "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
     "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
     "Capítulo 7 - Diseño e implementación.md",
     "Intro. a la Teoría de la Información/media",

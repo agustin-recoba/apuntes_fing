@@ -3,11 +3,10 @@
 # Principales Características
 
 #### **Iterativo incremental**
-- Desarrollo del sistema en refinamientos sucesivos incrementando la solución definida.
+Desarrollo del sistema en refinamientos sucesivos incrementando la solución definida.
 - Mitigación de riesgos en cada iteración:
-	- Construir el sistema equivocado
-	- Problemas en Integración
-	- Arquitectura
+	- Evita construir el sistema equivocado
+	- Evita problemas en Integración
 - Permite planificar el cambio en la próxima iteración
 - Alto nivel de reutilización: 
 	Se identifican partes comunes ya implementadas.

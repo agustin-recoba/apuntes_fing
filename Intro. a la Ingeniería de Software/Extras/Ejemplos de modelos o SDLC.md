@@ -3,7 +3,7 @@
 
 # Modelo de Cascada
 
-El **modelo de cascada** es un flujo secuencial lineal. En el que se considera que el progreso fluye constantemente hacia abajo (como una cascada) a través de las fases de implementación del software. Esto significa que, idealmente, cualquier fase del proceso de desarrollo **comienza solo si se completa la fase anterior** (en la práctica, dichas etapas se traslapan y se nutren mutuamente de información). 
+El **modelo de cascada** es un flujo secuencial lineal. En el que se considera que el progreso fluye constantemente hacia abajo (como una cascada) a través de las fases de implementación del software. Esto significa que, **idealmente**, cualquier fase del proceso de desarrollo **comienza solo si se completa la fase anterior** (en la práctica, dichas etapas se traslapan y se nutren mutuamente de información). 
 El enfoque en cascada no define el proceso para volver a la fase anterior para manejar los cambios en los requisitos. El enfoque en cascada es **el enfoque más antiguo** y más conocido que se utilizó para el desarrollo de software.
 
 
@@ -118,6 +118,7 @@ Puede consistir en **mini-cascadas o mini-modelos en forma de V**.
 ![incremental-sdlc](https://i0.wp.com/melsatar.blog/wp-content/uploads/2012/03/incremental-sdlc.jpg?resize=297%2C227&ssl=1 "incremental-sdlc")
 
 ## Uso
+
 Se utiliza en aplicaciones de envoltura retráctil y grandes sistemas que incorporan pequeñas fases o segmentos. Además, se puede utilizar en un sistema que tenga componentes separados, por ejemplo, un sistema ERP. Podemos comenzar con el módulo de presupuesto como una primera iteración y luego podemos comenzar con el módulo de inventario y así sucesivamente.
 
 ## Ventajas y desventajas

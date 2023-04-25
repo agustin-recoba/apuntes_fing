@@ -13,9 +13,9 @@ El diseño de software consta de dos actividades que encajan entre el análisis 
 El diseño de un sistema es correcto si un sistema construido de acuerdo a ese diseño satisface los requerimientos del sistema. Pero el objetivo del diseño no es encontrar el diseño correcto sino encontrar el mejor diseño posible dentro de las limitaciones impuestas (los requerimientos, el ambiente físico del sistema, el ambiente social, etc.).
 
 Un diseño claramente debe ser:
-- Verificable
-- Completo (implementa toda la especificación)
-- “Traceable” (se puede rastrear hacia los requerimientos que diseña)
+- **Verificable**
+- **Completo** (implementa toda la especificación)
+- “**Traceable**” (se puede rastrear hacia los requerimientos que diseña)
 
 Sin embargo, las dos cosas **más importantes** concernientes a los diseñadores es que el diseño sea:
 - **Eficiente**
