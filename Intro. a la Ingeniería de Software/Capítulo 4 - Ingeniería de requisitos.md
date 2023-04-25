@@ -1,5 +1,7 @@
 Los requisitos para un sistema son **descripciones de lo que el sistema debe hacer**: **el servicio que ofrece y las restricciones en su operación**. Tales requisitos reflejan las necesidades de los clientes por un sistema que atienda cierto propósito. Al proceso de **descubrir, analizar, documentar y verificar** estos servicios y restricciones se le llama **ingeniería de requisitos** (IR). 
 
+![[Pasted image 20230424212556.png]]
+
 Existen **cuatro actividades principales** en el proceso de ingeniería de requisitos:
 - **Estudio de factibilidad**:
 	Se realiza una estimación sobre si las necesidades identificadas del usuario se cubren con las actuales tecnologías de software y hardware. El estudio considera si el sistema propuesto tendrá un **costo-beneficio desde un punto de vista empresarial**, y si éste puede desarrollarse dentro de las restricciones presupuestales existentes. 
@@ -238,7 +240,7 @@ Un punto de vista es una forma de recopilar y organizar un conjunto de requisito
 ## Técnicas de descubrimiento de requisitos:
 
 ### Entrevistas
-En estas entrevistas, el equipo de ingeniería de requisitos formula preguntas a los participantes sobre el sistema que actualmente usan y el sistema que se va a desarrollar. Los requisitos se derivan de las respuestas a dichas preguntas.
+La manera más obvia de averiguar que necesitan los usuarios de un sistema de software es preguntarle a ellos. En estas entrevistas, el equipo de ingeniería de requisitos formula preguntas a los participantes sobre el sistema que actualmente usan y el sistema que se va a desarrollar. Los requisitos se derivan de las respuestas a dichas preguntas.
 
 Las entrevistas son de dos tipos:
 1. Entrevistas cerradas, donde los participantes responden a un conjunto de preguntas preestablecidas. 
@@ -252,6 +254,8 @@ Las entrevistas no son tan útiles para comprender los requisitos desde el domin
 2. Cierto conocimiento del dominio es tan familiar a los participantes que encuentran difícil de explicarlo, o bien, creen que es tan fundamental que no vale la pena mencionarlo.
 
 Las entrevistas tampoco son una técnica efectiva para adquirir conocimiento sobre los requisitos y las restricciones de la organización, porque existen relaciones sutiles de poder entre los diferentes miembros en la organización.
+
+Son costosas y dependen de las habilidades interpersonales de los involucrados.
 
 #### Entevistadores
 Los entrevistadores efectivos poseen dos características: 
@@ -582,7 +586,7 @@ Gestionar los cambios de los requisitos durante el proceso de ingeniería de req
 
 Nuevos requisitos surgen cuando un sistema está siendo desarrollado y después de haber entrado en uso.
 
-Es necesario mantener un rastreo (trazabilidad) de los requisitos y mantener sus referencias para facilitar el análisis de impacto ante posibles cambios.
+Es necesario mantener un rastreo (trazabilidad) de los requisitos y mantener sus referencias para **facilitar el análisis de impacto ante posibles cambios**.
 
 Se recomienda establecer un proceso formal de control de cambios.
 
@@ -604,6 +608,8 @@ Decisiones de gestión de requisitos:
 - **Soporte de herramientas**— Las herramientas que utilizarán.
 
 ## Gestión de cambios en los requisitos
+
+Es el proceso que se sigue en el análisis de requisitos de un cambio, e incluye las actividades que evalúan el impacto y costo del cambio.
 
 - Decidir sí un cambio en los requisitos debe ser aceptado.
 - Problemas de análisis y cambios en la especificación

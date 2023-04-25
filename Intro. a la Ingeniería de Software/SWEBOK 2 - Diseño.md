@@ -17,12 +17,18 @@ Un diseño claramente debe ser:
 - Completo (implementa toda la especificación)
 - “Traceable” (se puede rastrear hacia los requerimientos que diseña)
 
-Sin embargo, las dos cosas más importantes concernientes a los diseñadores es que el diseño sea:
-- Eficiente
-- Simple
+Sin embargo, las dos cosas **más importantes** concernientes a los diseñadores es que el diseño sea:
+- **Eficiente**
+- **Simple**
 
 Crear un diseño simple y eficiente de un sistema “grande” puede ser una tarea **extremadamente compleja**. Es una actividad **básicamente creativa**, la cual no puede reducirse a una serie de pasos a seguir; sin embargo, se pueden dar guías.
 **Si se logra manejar la complejidad**, se reducen los costos del diseño y se reduce la posibilidad de introducir defectos durante el diseño.
+
+En el Diseño de Software se itera hasta encontrar una solución adecuada:
+1. Postulando soluciones
+2. Construyendo modelos
+3. Evaluando contra requisitos
+4. Especificando los modelos
 
 ![[Pasted image 20230402214406.png]]
 

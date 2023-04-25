@@ -8,6 +8,11 @@ Un modelo de arquitectura es el siguiente (cajas dentro de cajas indican que el 
 
 Un modelo arquitectónico puede usarse de dos modos: **para generar discusiones** sobre el diseño del sistema, pues es más comprensible para los interesados al no tener mucho detalle y enfocarse en componentes clave, y **para documentar la arquitectura** diseñada, en cuyo caso se muestran más detalles, y simplifica la comprensión del sistema.
 
+Tres ventajas de diseñar y documentar de manera explícita la arquitectura de software:
+1. Comunicación con los participantes
+2. Análisis del sistema
+3. Reutilización a gran escala
+
 # Decisiones en el diseño arquitectonico
 
 El diseño arquitectónico es un proceso creativo en el cual se diseña una organización del sistema que cubrirá los requerimientos funcionales y no funcionales de éste.

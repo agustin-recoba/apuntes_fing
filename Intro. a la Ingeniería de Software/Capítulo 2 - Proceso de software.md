@@ -100,3 +100,7 @@ El análisis de procesos se puede hacer con características como velocidad y ro
 En el nivel inicial del modelo de madurez de procesos, los objetivos del área están satisfechos. En el nivel gestionado, además debe haber documentación de los objetivos, y monitorear los procesos. En el nivel definido, se estandarizan los procesos, y se obtienen medidas para el futuro. En el nivel gestionado cuantitativamente, se usan medidas cuantitativas para controlar subprocesos. En el nivel de optimización, se usan las medidas obtenidas para mejorar los procesos.
 
 Las dificultades de aplicar este modelo por sus costos en modelos ágiles resultan en que sólo compañías grandes lo usan.
+
+# Extras
+
+[[MUM]]
