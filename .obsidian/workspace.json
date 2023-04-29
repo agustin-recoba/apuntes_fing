@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "14f4e99179cf081a",
+        "id": "78532e5608b9cd17",
         "type": "tabs",
         "children": [
           {
-            "id": "9bb4cbe0af0ab75f",
+            "id": "babb3e769b777130",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6ce19c293d6d407a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,7 +32,7 @@
             }
           },
           {
-            "id": "bad63e749ef1a2db",
+            "id": "85f920c582011cac",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,7 +44,7 @@
             }
           },
           {
-            "id": "ed0d6037c7275ad8",
+            "id": "f2dee3d68f85c211",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -94,7 +106,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 303.5
+    "width": 336.5,
+    "collapsed": true
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -110,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md",
+                "file": "Intro. a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md",
+                "file": "Intro. a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md"
+                "file": "Intro. a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md"
               }
             }
           },
@@ -163,11 +176,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 563.5,
+    "width": 392.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -182,8 +195,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ed0d6037c7275ad8",
+  "active": "85f920c582011cac",
   "lastOpenFiles": [
+    "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+    "Intro. a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md",
+    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
+    "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md",
+    "Administración General para Ingenieros/Capítulo 5 - RESPONSABILIDAD Y ÉTICA ADMINISTRATIVA.md",
+    "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
+    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
+    "Intro. a la Teoría de la Información/Índice.md",
     "Intro. a la Teoría de la Información/media/Pasted image 20230428135030.png",
     "Intro. a la Teoría de la Información/media/Pasted image 20230428135021.png",
     "Intro. a la Teoría de la Información/media/Pasted image 20230428135011.png",
@@ -194,10 +215,6 @@
     "Intro. a la Teoría de la Información/media/Pasted image 20230428134407.png",
     "Intro. a la Teoría de la Información/media/Pasted image 20230428134342.png",
     "Intro. a la Teoría de la Información/media/Pasted image 20230428134330.png",
-    "Intro. a la Teoría de la Información/media/Pasted image 20230428134314.png",
-    "Intro. a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md",
-    "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md",
-    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
     "Intro. a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
     "Intro. a la Ingeniería de Software/SWEBOK 2 - Diseño.md",
     "Intro. a la Ingeniería de Software/Capítulo 3 - Metodologías ágiles.md",
@@ -212,14 +229,10 @@
     "Intro. a la Ingeniería de Software/Capítulo 1 - Introducción.md",
     "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
     "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
-    "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
     "Redes de computadoras/3. Capa de Transporte/3.5 Principios de Control de Congestión.md",
     "Redes de computadoras/1. Introduccion/1.5 Modelo de capas.md",
     "Redes de computadoras/4. Capa de Red, plano de datos/4.4.2 Direccionamiento IPv4.md",
     "Intro. a la Ingeniería de Software/Indice.md",
-    "Redes de computadoras/2. Capa de Aplicación/2.4.5 P2P y Bitorrent.md",
-    "Intro. a la Ingeniería de Software/Extras/Casos de uso.md",
-    "Redes de computadoras/Indice-result.md",
     "Untitled.canvas",
     "Intro. a la Teoría de la Información/media",
     "Intro. a la Teoría de la Información",

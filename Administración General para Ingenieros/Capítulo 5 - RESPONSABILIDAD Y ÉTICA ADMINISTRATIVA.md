@@ -38,7 +38,7 @@ La **sensibilidad social** es la capacidad de una empresa de adaptarse a los cam
 
 Una empresa que asume responsabilidades sociales ve las cosas de una manera distinta y va mas allá de lo que le impone la ley, hace lo que puede para mejorar la sociedad por que es lo correcto o lo moral. Entonces, la **responsabilidad social** es el deber de una empresa, aparte de los requisitos legales y económicos, de **perseguir metas de largo plazo para el bien de la sociedad.**
 
-Más que decidir que es lo bueno a la larga para la sociedad y más que hacer juicios morales, los gerentes de una organización con sensibilidad social identifican normas sociales prevalecientes y modifican su propia participación social para responder de la mejor manera al cambio de las condiciones de la sociedad. Por ejemplo, el cuidado del entorno es actualmente una norma social importante y muchas compañías buscan los medios para mostrarse sensibles al ambiente.
+Más que decidir que es lo bueno a la larga para la sociedad y más que hacer juicios morales, los gerentes de una organización con sensibilidad social identifican normas sociales prevalecientes y modifican su propia participación social para responder de la mejor manera al cambio de las condiciones de la sociedad. Por ejemplo, el cuidado del entorno es actualmente una norma social importante y muchas compañías buscan los medios para **mostrarse sensibles** al ambiente.
 
 ![[Pasted image 20230313193640.png]]
 
@@ -80,9 +80,9 @@ La organización busca los medios para respetar y defender la Tierra y su medio 
 Es una metodología de dirección en la que los gerentes establecen y sostienen los valores que se comparten en la organización, valores que expresan el sentido de la empresa y sus convicciones.
 
 ### Objetivos de los valores compartidos:
-- Servir como guía para las decisiones y acciones gerenciales
-- Delinear el comportamiento de los empleados y comunicar lo que la organización espera de ellos
-- Influir en las actividades de marketing
+- Servir como guía para las decisiones y acciones gerenciales.
+- Delinear el comportamiento de los empleados y comunicar lo que la organización espera de ellos.
+- Influir en las actividades de marketing.
 - Fomentar el espíritu de grupo ya que une a los empleados en un empeño común.
 
 Cuando los empleados se adhieren a los valores de la corporación, adquieren un compromiso personal más profundo con su trabajo y se sienten obligados a asumir la responsabilidad de sus actos.
@@ -95,13 +95,13 @@ Los gerentes de todos los niveles y áreas, han de enfrentar problemas y disyunt
 ## Cuatro nociones de ética
 
 ### Noción utilitaria
-Se le da gran importancia a la rentabilidad. Idea ética en que las decisiones morales se toman de acuerdo con sus realidades o consecuencias buscando conseguir el mayor bien para el mayor número de personas. El utilitarismo favorece la eficiencia y la productividad y es congruente con la meta de la maximización de utilidades.
+Se le da gran importancia a la **rentabilidad**. Idea ética en que las decisiones morales se toman de acuerdo con sus realidades o consecuencias buscando conseguir el mayor bien para el mayor número de personas. El utilitarismo favorece la eficiencia y la productividad y es congruente con la meta de la maximización de utilidades.
 
 ### Noción legalista
 Se centra en el respeto y la protección de las libertades y privilegios. El lado positivo, es que defiende los derechos básicos del individuo, pero el inconveniente es que llega a entorpecer la productividad y la eficiencia, ya que crea un ambiente más preocupado por defender los derechos de los individuos que por hacer el trabajo.
 
 ### Noción ética de la teoría de justicia
-Los gerentes imponen y hacen obedecer las reglas de manera justa e imparcial siguiendo normas y lineamientos legales. (Por Ej., el gerente tomaría la decisión de ofrecer el mismo pago a individuos que tienen niveles semejantes de destrezas, desempeño y responsabilidad.
+Los gerentes imponen y hacen obedecer las reglas de manera justa e imparcial siguiendo normas y lineamientos legales. (Por Ej., el gerente tomaría la decisión de ofrecer el mismo pago a individuos que tienen niveles semejantes de destrezas, desempeño y responsabilidad).
 
 ### Teoría de los contratos sociales integrados
 Postula que las decisiones éticas deben basarse en las normas éticas de las industrias y comunidades para determinar los que constituye lo correcto e incorrecto. Ésta concepción se basa en la integración de "2 contratos": el **contrato social general** con el que operan las empresas y definen las reglas básicas aceptables, y un **contrato más específico** entre los miembros de la comunidad.
@@ -115,35 +115,34 @@ Que una persona actúe moral o inmoralmente es el resultado de la relación entr
 ![[Pasted image 20230313194043.png]]
 
 ### Variables moderadoras
-
 #### Característica de los individuos
 Toda persona que entra en una organización tiene sus propias convicciones acerca del bien y del mal, y posee 3 variables que influyen en sus actos:
 
-- Valores 
+- **Valores:** 
 	Convicciones básicas sobre lo correcto y lo incorrecto.
-- Firmeza del ego 
+- **Firmeza del ego:** 
 	Medida de personalidad de la fuerza de las convicciones personales.
-- Sede del control:
+- **Sede del control:**
 	Atributo de la personalidad que manifiesta el grado al que el individuo cree que controla su destino.
 
 #### Variables estructurales
 El diseño estructural de una organización influye en el comportamiento moral de los empleados así como:
-- Sistemas de evaluación del desempeño
-- Procedimiento de distribución de premios
-- Comportamiento ético de los gerentes
-- Cultura de la organización
-- Intensidad del problema
+- Sistemas de evaluación del desempeño.
+- Procedimiento de distribución de premios.
+- Comportamiento ético de los gerentes.
+- Cultura de la organización.
+- Intensidad del problema.
 
 Los diseños estructurales que reducen al mínimo la ambigüedad y la incertidumbre mediante reglas y normas formales y aquellos que recuerdan constantemente a sus empleados lo que es ético fomentan mejor la conducta moral.
 
 #### Intensidad del problema 
 Se han identificado 6 características que determinan la intensidad de un problema:
-- Magnitud del daño 
-- Probabilidad de ocurrencia del daño
-- Inmediatez de las consecuencias 
-- Proximidad de las víctimas 
-- Concentración del efecto 
-- Consenso del mal
+- Magnitud del daño.
+- Probabilidad de ocurrencia del daño.
+- Inmediatez de las consecuencias.
+- Proximidad de las víctimas.
+- Concentración del efecto.
+- Consenso del mal.
 
 #### Cultura de la organización
 La cultura que tiene más posibilidades de fomentar las normas éticas es aquella que controla y tolera los riesgos y los conflictos. Una cultura fuerte influye en los empleados más que una débil. Si la cultura es fuerte, contempla normas morales elevadas y tiene una gran influencia en la decisión de actuar moralmente o no.
@@ -151,11 +150,11 @@ La cultura que tiene más posibilidades de fomentar las normas éticas es aquell
 ### Etapas del desarrollo moral
 Existen 3 niveles del desarrollo moral, cada uno compuesto por dos etapas. En cada nivel el juicio moral del individuo gana independencia respecto de las influencias exteriores.
 - **Nivel preconvencional:**
-	En este nivel las personas responden a los conceptos del bien y del mal cuando existen consecuencias personales (castigos o recompensas).
+	En este nivel las personas responden a los conceptos del bien y del mal cuando **existen consecuencias personales** (castigos o recompensas).
 - **Nivel convencional:**
-	Indica que los valores morales consisten en mantener el orden convencional y las expectativas de las demás personas.
+	Indica que los valores morales consisten en **mantener el orden convencional y las expectativas** de las demás personas.
 - **Nivel de los principios:**
-	Las personas realizan un esfuerzo a fin de definir los principios morales como algo diferente de la autoridad de los grupos a los cuales pertenecen.
+	Las personas realizan un esfuerzo a fin de definir los principios morales como algo **diferente de la autoridad** de los grupos a los cuales pertenecen.
 
 ![[Pasted image 20230313193928.png]]
 
@@ -177,8 +176,8 @@ Los gerentes pueden hacer varias cosas para reducir el comportamiento inmoral, c
 1. **Selección de empleados**. Contratar individuos con normas éticas elevadas.
 2. **Establecer códigos de ética y reglas de decisión**. Y se entiende por código de ética, una declaración formal de los principales valores y normas éticas a los que la organización espera que se adhieran los empelados.
 3. **Enseñar con el ejemplo**, mediante el liderazgo de la dirección. Lo que hacen los gerentes es más importante que lo que dicen.
-4. **Definir metas de trabajo y mecanismos de evaluación del desempeño**. En la evaluación del desempeño, un tema fundamental es si el individuo alcanza o no sus metas, pero hay que recordad que si la evaluación se centra exclusivamente en las metas económicas, los fines van a justificar los medios.
-5. **Brindar capacitación en ética**. Las sesiones de capacitación ética aportan varios beneficios. Refuerzan las normas de conducta de la organización. Son un recordatorio para los directores que quieran que sus empelados tengan presentes las cuestiones éticas cuando toman decisiones. Aclaran qué prácticas son aceptables y cuales no.
+4. **Definir metas de trabajo y mecanismos de evaluación del desempeño.** En la evaluación del desempeño, un tema fundamental es si el individuo alcanza o no sus metas, pero hay que recordar que si la evaluación se centra exclusivamente en las metas económicas, los fines van a justificar los medios.
+5. **Brindar capacitación en ética.** Las sesiones de capacitación ética aportan varios beneficios. Refuerzan las normas de conducta de la organización. Son un recordatorio para los directores que quieran que sus empelados tengan presentes las cuestiones éticas cuando toman decisiones. Aclaran qué prácticas son aceptables y cuales no.
 6. **Realizar auditorías sociales**. Estas auditorías evalúan las decisiones y las prácticas administrativas y pueden ser evaluaciones de rutina o al azar.
 7. **Prestar apoyo a los individuos que enfrenten disyuntivas morales.**
 

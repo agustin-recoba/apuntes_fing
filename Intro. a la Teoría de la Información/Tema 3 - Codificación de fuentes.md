@@ -21,11 +21,13 @@
 ## Desigualdad de Kraft
 
 ![[Pasted image 20230327173600.png]]
+
 ![[Pasted image 20230327173612.png]]
 
 
 ### Desigualdad de Kraft extendida
 ![[Pasted image 20230327173631.png]]
+
 ![[Pasted image 20230327173643.png]]
 
 ### Desigualdad de Kraft para códigos UD
@@ -57,7 +59,7 @@ La clase de los codigos UD es más grande que la de los instantáneos, sin embar
 
 ```ad-note
 title: Obs.
-La desigualdad entre las entropías se obtiene de multiplicar cada término por $p_i$ y luego sumar sobre $i$.
+La desigualdad entre las entropías (punto 2) se obtiene de multiplicar cada término por $p_i$ y luego sumar sobre $i$.
 
 
 De esta forma se obtiene la fórmula de largo medio y la definición de entropía.
