@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8fbaca9fb4aa5738",
+        "id": "426d959d6987eed5",
         "type": "tabs",
         "children": [
           {
-            "id": "a3c4459e06aa60fa",
+            "id": "88ab128fa22a322f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,24 +20,12 @@
             }
           },
           {
-            "id": "7f2f866af52cf51a",
+            "id": "dd4880c4b28f5ca8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "57477b5cf1409bff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
+                "file": "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
                 "mode": "source",
                 "source": false
               }
@@ -67,12 +55,22 @@
             }
           },
           {
+            "id": "cd6dbf036abaa31a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md"
+              }
+            }
+          },
+          {
             "id": "999c6b81ca65be15",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "comunicación",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -82,19 +80,22 @@
             }
           },
           {
-            "id": "d7c358af2c36b705",
+            "id": "656c829a86ff37ef",
             "type": "leaf",
             "state": {
-              "type": "starred",
-              "state": {}
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 336.5,
-    "collapsed": true
+    "width": 336.5
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -134,27 +135,6 @@
             }
           },
           {
-            "id": "656c829a86ff37ef",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "cd6dbf036abaa31a",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md"
-              }
-            }
-          },
-          {
             "id": "67202b0b8f17f481",
             "type": "leaf",
             "state": {
@@ -163,7 +143,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -182,16 +162,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a3c4459e06aa60fa",
+  "active": "88ab128fa22a322f",
   "lastOpenFiles": [
+    "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
+    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
+    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
     "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
     "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
-    "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
     "Redes de computadoras/3. Capa de Transporte/3.6.1 Principios de TCP.md",
     "Redes de computadoras/1. Introduccion/1.3 Conmutacion de paquetes.md",
     "Redes de computadoras/1. Introduccion/1.2 Conmutacion de circuitos.md",
-    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
-    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
     "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md",
     "Intro. a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md",
     "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",

@@ -71,7 +71,6 @@ En concreto, los **roles de difusor**, **figura de autoridad**, **negociador**, 
 
 ```ad-summary
 title: Resumen
-collapse: closed
 ![[Pasted image 20230317192430.png]]
 ```
 

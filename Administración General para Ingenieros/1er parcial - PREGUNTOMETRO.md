@@ -16,7 +16,7 @@ a. Planificar, organizar, dirigir y controlar.
 NO ENTIENDO POR QUÉ IMPORTA EL ORDEN
 ```
 
-2. Los roles de los gerentes los podemos agrupar en tres categorías, interpersonales, informativos y de decisión. Los roles de decisión son:
+2. Los roles de los gerentes los podemos agrupar en tres categorías, **interpersonales**, **informativos** y **de decisión**. Los roles de decisión son:
 	a. Empresario, manejador de perturbaciones, distribuidor de recursos y negociador.
 	b. Figura de autoridad, empresario, manejador de perturbaciones y enlace.
 	c. Líder, supervisor, distribuidor de recursos y negociador.
@@ -57,7 +57,7 @@ c. Gente, estructura deliberada y finalidad definida.
 
 5. Indique cuál de las siguientes afirmaciones es correcta.
 	a. Eficacia es lograr los objetivos con el mejor aprovechamiento posible usado para ese logro.
-	b. Eficiencia es hacer las actividades de trabajo de forma que se alcancen los objetivos propuestos
+	b. Eficiencia es hacer las actividades de trabajo de forma que se alcancen los objetivos propuestos.
 	c. La mala administración es resultado de que la eficacia no se logra mediante la eficiencia.
 	d. La eficiencia es "hacer las cosas correctas".
 
@@ -134,7 +134,7 @@ c. Definir el número de empleados que un gerente puede supervisar de manera ade
 
 # TEMA: LIMITACIONES A GERENTES Y ADMINISTRACION EN ENTORNO GLOBAL
 
-1. La esencia de la cultura de una organización se puede captar en varias dimensiones, entre ellas se encuentran:
+1. La esencia de la cultura de una organización se puede captar en varias dimensiones, **entre ellas** se encuentran:
 	a. Atención a los detalles, orientación a resultados y orientación al cliente.
 	b. Orientación a equipos, estabilidad y orientaciones a las personas. 
 	c. Energía, atención a la calidad y atención a los clientes.
@@ -174,7 +174,7 @@ c. Anécdotas, ritos y símbolos materiales. *Otro "El lenguaje"
 ```ad-question
 title: Respuesta
 collapse: closed
-i. **b**, **c** y **f** son correctas. *Son "Clientes, proveedores, competencia y grupos de presión." Los empleados y sindicatos son "proveedores" de mano de obra.
+i. **b**, **c** y **f** son correctas. *Son "Clientes, proveedores, competencia y grupos de presión." Los empleados son "proveedores" de mano de obra y los sindicatos son grupos de presión.
 ```
 
 4. Cuando un gerente piensa que los mejores métodos de trabajo son los del país de origen, donde se encuentra la Casa Matriz, entonces está adoptando una postura:
@@ -427,19 +427,14 @@ a. El nivel jerárquico del que planifica, el grado de incertidumbre del entorno
 	b. La planeación genera flexibilidad en las organizaciones.
 	c. La planeación refuerza el éxito pasado.
 	d. No se pueden trazar planes para un entorno dinámico.
-	e. La planeación hace que los gerentes centren la atención en la supervivencia del mañana y
-	f. no en la competencia de hoy.
+	e. La planeación hace que los gerentes centren la atención en la supervivencia del mañana y no en la competencia de hoy.
 
 ```ad-question
 title: Respuesta
 collapse: closed
-d. No se pueden trazar planes para un entorno dinámico.
-
-<u>NOTAS:</u>
-
 b. La planeación genera flexibilidad en las organizaciones. \*Esta debería ser "rigidez" en lugar de "flexibilidad" para que sea una crítica.
 
-f. no en la competencia de hoy. \*Esta debería ser "La planeación hace que los gerentes centren su atención en la competencia de hoy, no en la supervivencia de mañana." para que sea una crítica.
+e. La planeación hace que los gerentes centren la atención en la supervivencia del mañana y no en la competencia de hoy. \*Esta debería ser "La planeación hace que los gerentes centren su atención en la competencia de hoy, no en la supervivencia de mañana." para que sea una crítica.
 ```
 
 5. Para el autor Michael Porter, las estrategias posibles, llamadas "estrategias competitivas" son:
