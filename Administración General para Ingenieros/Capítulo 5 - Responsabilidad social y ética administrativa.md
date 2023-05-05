@@ -4,9 +4,9 @@ Tanto la responsabilidad social como la ética son reacciones a los cambios del 
 
 # ¿Qué es la responsabilidad social?
 
-**Concepto clásico:** Implica que la **única** responsabilidad social de la administración es **obtener las mayores ganancias**. El principal defensor de este punto de vista es M. Friedman que argumenta que la principal responsabilidad de los gerentes es operar la empresa de acuerdo con los intereses de los accionistas. Según Friedman, los accionistas tienen una única preocupación: las utilidades económicas. También dice que cuando los gerentes deciden gastar los recursos de la organización en el "bien social", aumentan los costos de operar la empresa.
+<b><u>Concepto clásico:</u></b> Implica que la **única** responsabilidad social de la administración es **obtener las mayores ganancias**. El principal defensor de este punto de vista es M. Friedman que argumenta que la principal responsabilidad de los gerentes es operar la empresa de acuerdo con los intereses de los accionistas. Según Friedman, los accionistas tienen una única preocupación: las utilidades económicas. También dice que cuando los gerentes deciden gastar los recursos de la organización en el "bien social", aumentan los costos de operar la empresa.
 
-**Concepto socioeconómico:** Es la idea de que la responsabilidad social de la administración va mas allá de hacer ganancias para incluir la defensa y el mejoramiento del bienestar de la sociedad. Existe una convicción de que las corporaciones no son entidades independientes cuya única responsabilidad son los accionistas. También tienen una responsabilidad con la sociedad. Los defensores de éste punto de vista, piensan que las organizaciones comerciales no son solo instituciones económicas.
+<b><u>Concepto socioeconómico:</u></b> Es la idea de que la responsabilidad social de la administración va mas allá de hacer ganancias para incluir la defensa y el mejoramiento del bienestar de la sociedad. Existe una convicción de que las corporaciones no son entidades independientes cuya única responsabilidad son los accionistas. También tienen una responsabilidad con la sociedad. Los defensores de éste punto de vista, piensan que las organizaciones comerciales no son solo instituciones económicas.
 
 ## Modelo de progresión de la Responsabilidad Social en una organización
 
@@ -33,10 +33,11 @@ La responsabilidad social añade el imperativo moral de hacer aquello que mejora
 
 # OBLIGACIONES A LA SENSIBILIDAD Y LA RESPONSABILIDAD
 
-Primero es necesario entender 2 conceptos. La **obligación social** es el deber de una empresa de cumplir con sus responsabilidades económicas y legales. En contraste, la responsabilidad y la sensibilidad sociales dan un paso más que meramente cumplir con las normas básicas económicas y legales. 
-La **sensibilidad social** es la capacidad de una empresa de adaptarse a los cambios de las condiciones sociales. Una organización con sensibilidad social se guía por normas sociales y actúa de cierta manera por su interés de satisfacer alguna necesidad social.
+Primero es necesario entender 2 conceptos. La **obligación social** es el deber de una empresa de cumplir con sus responsabilidades económicas y legales. En contraste, <u>la responsabilidad y la sensibilidad sociales dan un paso más</u> que meramente cumplir con las normas básicas económicas y legales. 
 
-Una empresa que asume responsabilidades sociales ve las cosas de una manera distinta y va mas allá de lo que le impone la ley, hace lo que puede para mejorar la sociedad por que es lo correcto o lo moral. Entonces, la **responsabilidad social** es el deber de una empresa, aparte de los requisitos legales y económicos, de **perseguir metas de largo plazo para el bien de la sociedad.**
+La <b><u>sensibilidad social</u></b> es la capacidad de una empresa de adaptarse a los cambios de las condiciones sociales. Una organización con sensibilidad social se guía por normas sociales y actúa de cierta manera por su interés de satisfacer alguna necesidad social.
+
+Una empresa que asume responsabilidades sociales ve las cosas de una manera distinta y va mas allá de lo que le impone la ley, hace lo que puede para mejorar la sociedad por que es lo correcto o lo moral. Entonces, la <b><u>responsabilidad social</u></b> es el deber de una empresa, aparte de los requisitos legales y económicos, de **perseguir metas de largo plazo para el bien de la sociedad.**
 
 Más que decidir que es lo bueno a la larga para la sociedad y más que hacer juicios morales, los gerentes de una organización con sensibilidad social identifican normas sociales prevalecientes y modifican su propia participación social para responder de la mejor manera al cambio de las condiciones de la sociedad. Por ejemplo, el cuidado del entorno es actualmente una norma social importante y muchas compañías buscan los medios para **mostrarse sensibles** al ambiente.
 
@@ -46,7 +47,7 @@ Más que decidir que es lo bueno a la larga para la sociedad y más que hacer ju
 
 ¿Qué efecto tienen las actividades de responsabilidad social en su desempeño económico?
 
-El desempeño social de las empresas tendría una relación positiva con el desempeño económico. Es muy posible que el efecto de la responsabilidad social en las utilidades, se dé luego de varios años.
+El desempeño social de las empresas tendría una relación positiva con el desempeño económico. Es muy posible que el efecto de la responsabilidad social en las utilidades, se dé **luego de varios años**.
 En conclusión, hay pocas pruebas de que las acciones sociales de una compañía lastimen su desempeño económico a largo plazo.
 Dadas las presiones políticas y sociales sobre las empresas para que se interesen por la sociedad, es aconsejable que los gerentes tomen en cuenta metas sociales cuando planean, organizan, dirigen y controlan.
 
@@ -62,6 +63,8 @@ Los gerentes tienen que informarse, entender y asumir responsabilidades en:
 ## Postura ecologista de las oraganizaciones
 
 Un modelo de responsabilidad ambiental se vale de la noción de matices de azul para ordenar las posturas que pueden adoptar las organizaciones.
+
+![[Pasted image 20230504205455.png]]
 
 ### Postura legal (azul claro)
 Las organizaciones simplemente hacen lo que les impone la ley, obedeciendo leyes, reglas y normas, incluso tratando de sacar ventajas de la legislación, pero con poca sensibilidad por el ambiente.
@@ -95,17 +98,19 @@ Los gerentes de todos los niveles y áreas, han de enfrentar problemas y disyunt
 ## Cuatro nociones de ética
 
 ### Noción utilitaria
-Se le da gran importancia a la **rentabilidad**. Idea ética en que las decisiones morales se toman de acuerdo con sus realidades o consecuencias buscando conseguir el mayor bien para el mayor número de personas. El utilitarismo favorece la eficiencia y la productividad y es congruente con la meta de la maximización de utilidades.
+Se le da gran importancia a la **rentabilidad**. Idea ética en que las decisiones morales se toman de acuerdo con sus realidades o consecuencias buscando conseguir el mayor bien para el mayor número de personas. 
+El utilitarismo favorece la eficiencia y la productividad y es congruente con la meta de la maximización de utilidades.
 
 ### Noción legalista
-Se centra en el respeto y la protección de las libertades y privilegios. El lado positivo, es que defiende los derechos básicos del individuo, pero el inconveniente es que llega a entorpecer la productividad y la eficiencia, ya que crea un ambiente más preocupado por defender los derechos de los individuos que por hacer el trabajo.
+Se centra en el respeto y la protección de las libertades y privilegios. El lado positivo, es que defiende los derechos básicos del individuo, pero el inconveniente es que **llega a entorpecer la productividad y la eficiencia**, ya que crea un ambiente más preocupado por defender los derechos de los individuos que por hacer el trabajo.
 
 ### Noción ética de la teoría de justicia
-Los gerentes imponen y hacen obedecer las reglas de manera justa e imparcial siguiendo normas y lineamientos legales. (Por Ej., el gerente tomaría la decisión de ofrecer el mismo pago a individuos que tienen niveles semejantes de destrezas, desempeño y responsabilidad).
+Los gerentes imponen y hacen obedecer las reglas de manera justa e imparcial siguiendo normas y lineamientos legales. Por ejemplo, el gerente tomaría la decisión de ofrecer el mismo pago a individuos que tienen niveles semejantes de destrezas, desempeño y responsabilidad.
 
 ### Teoría de los contratos sociales integrados
 Postula que las decisiones éticas deben basarse en las normas éticas de las industrias y comunidades para determinar los que constituye lo correcto e incorrecto. Ésta concepción se basa en la integración de "2 contratos": el **contrato social general** con el que operan las empresas y definen las reglas básicas aceptables, y un **contrato más específico** entre los miembros de la comunidad.
 
+### En resumen
 Casi todos los empresarios optan por la noción utilitaria, ya que coincide con las metas comerciales de eficiencia, productividad y utilidades.
 
 ## Factores que inciden en la ética de los empleados
@@ -117,12 +122,11 @@ Que una persona actúe moral o inmoralmente es el resultado de la relación entr
 ### Variables moderadoras
 #### Característica de los individuos
 Toda persona que entra en una organización tiene sus propias convicciones acerca del bien y del mal, y posee 3 variables que influyen en sus actos:
-
-- **Valores:** 
+- <b><u>Valores:</u></b> 
 	Convicciones básicas sobre lo correcto y lo incorrecto.
-- **Firmeza del ego:** 
+- <b><u>Firmeza del ego:</u></b>
 	Medida de personalidad de la fuerza de las convicciones personales.
-- **Sede del control:**
+- <b><u>Sede del control:</u></b>
 	Atributo de la personalidad que manifiesta el grado al que el individuo cree que controla su destino.
 
 #### Variables estructurales

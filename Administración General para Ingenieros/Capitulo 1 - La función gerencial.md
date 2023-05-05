@@ -19,7 +19,7 @@ Comprenden todos los niveles administrativos entre la primera línea y la direcc
 ### Directivos
 Se encuentran hacia el vértice de la organización. Son responsables de tomar las decisiones que **abarcan a toda la organización**, y determinar planes y metas que atañen a la organización entera. 
 
-### Organizaciones de estructura no tradicional
+## Organizaciones de estructura no tradicional
 
 No todas las organizaciones hacen su trabajo con esta forma piramidal tradicional. Algunas son más flexibles y su configuración es menos rígida. Ahí el trabajo lo hacen equipos de empleados en cambios permanentes que pasan de un proyecto a otro en la medida en que surja la necesidad. En este tipo de empresas es más complejo identificar quienes son los gerentes, pero es evidente que alguien tiene que coordinar el trabajo y trabajar a través de los demás.
 
@@ -34,11 +34,13 @@ Mientras que la eficiencia concierne a los medios para hacer las cosas, la efica
 
 ![[Pasted image 20230317191437.png]]
 
+La mala administración es resultado de que la eficacia no se logra mediante la eficiencia.
+
 # ¿QUÉ HACEN LOS GERENTES?
 
 Luego de muchos años de estudio se crearon tres esquemas de clasificación de tareas que realiza un gerente; por funciones, roles y habilidades.
 
-## Importancia del rol
+## Importancia del rol del gerente
 
 Una de las variable más importante de la productividad y la lealtad no es el sueldo, las prestaciones ni el ambiente de trabajo, sino la calidad de la relación entre los empleados y sus supervisores directo. Por ello es tan importante el rol del gerente. 
 Los gerentes fijan las metas, el programa, las medidas de logros y las pautas de conducta. En las organizaciones más exitosas lo hacen porque ponen el ejemplo, inspiran y dirigen concertadamente en una forma que no es autocrática, sino democrática.
@@ -47,12 +49,25 @@ Los gerentes fijan las metas, el programa, las medidas de logros y las pautas de
 
 A principio del siglo XX, Henry Fayol propuso que las tareas que desempeña un gerente eran: planificar, organizar, mandar, coordinar y controlar. En la actualidad la mayor parte de los libros de texto identifican a las siguientes cuatro: **planificar**, **organizar**, **dirigir** y **controlar**.
 
-Los gerentes desempeñan actividades de planeación cuando definen las metas, fijan las estrategias para alcanzarlas y trazan los planes de la organización. 
-Organizan cuando determinan que hay que hacer, quien lo hace, como lo hace, quien rinde cuentas a quien y dónde se toman las decisiones. 
-Dirigen cuando motivan a los subordinados, influyen en los individuos y los equipos mientras hacen su trabajo, eligen el mejor canal de comunicación y se ocupan de cualquier otra manera del comportamiento de los empleados. 
-Controlan cuando evalúan si se llevaron a cabo las tareas planeadas, si se cumplieron los objetivos y como se cumplieron, son los encargados de retroalimentar la planificación y ajustar errores en la misma.
-
 ![[Pasted image 20230317190751.png]]
+
+### Planificar
+Los gerentes desempeñan actividades de planeación cuando definen las metas, fijan las estrategias para alcanzarlas y trazan los planes de la organización. 
+
+### Organizar
+Organizan cuando determinan que hay que hacer, quien lo hace, como lo hace, quien rinde cuentas a quien y dónde se toman las decisiones. 
+
+Incluye:
+- Coordinar diversas tareas organizacionales
+- Distribuir y utilizar los recursos de la organización
+- Agrupar los trabajos en unidades.
+- Dividir el trabajo a realizar en tareas y departamentos específicos.
+
+### Dirigir
+Dirigen cuando motivan a los subordinados, influyen en los individuos y los equipos mientras hacen su trabajo, eligen el mejor canal de comunicación y se ocupan de cualquier otra manera del comportamiento de los empleados. 
+
+### Controlar
+Controlan cuando evalúan si se llevaron a cabo las tareas planeadas, si se cumplieron los objetivos y como se cumplieron, son los encargados de retroalimentar la planificación y ajustar errores en la misma.
 
 ## Roles del gerente
 
@@ -60,27 +75,41 @@ Henry Mintzberg, estudió a los gerentes en la práctica. Mintzberg dice que la 
 La expresión “roles del gerente” se refiere a las categorías particulares del comportamiento administrativo.
 
 Los 10 roles de Mintzberg se agrupan en relaciones personales, transferencia de información y toma de decisiones. 
-- **Roles interpersonales:** 
-	Roles del gerente que tienen que ver con la gente y otros deberes de índole protocolaria y simbólica. Los tres roles personales son **figura de autoridad**, **líder** y **enlace**. 
-- **Roles informativos:** 
-	Roles del gerente que consisten en recibir, almacenar y difundir información. Los tres roles incluyen el del **supervisor**, el de **difusor** y el **vocero**. 
-- **Roles de decisión:** 
-	Roles del gerente que giran en torno a la toma de decisiones. Los cuatro roles de decisión son: **empresario**, **manejador de perturbaciones**, **distribuidor de recursos** y **negociador**.
 
+#### **Roles interpersonales:**
+Roles del gerente que tienen que ver con la gente y otros deberes de índole protocolaria y simbólica. 
+Los tres roles personales son:
+- **figura de autoridad**, 
+- **líder** y 
+- **enlace**. 
+
+#### **Roles informativos:**
+Roles del gerente que consisten en recibir, almacenar y difundir información. 
+Los tres roles incluyen:
+- **supervisor**, 
+- **difusor** y
+ - **vocero**. 
+
+#### **Roles de decisión:** 
+Roles del gerente que giran en torno a la toma de decisiones. 
+Los cuatro roles de decisión son: 
+- **empresario**, 
+- **manejador de perturbaciones**, 
+- **distribuidor de recursos** y 
+- **negociador**.
+
+### Niveles y roles
 En concreto, los **roles de difusor**, **figura de autoridad**, **negociador**, **enlace** y **vocero** son más importantes en los niveles **superiores de la organización**, en tanto que el **rol de líder** (según la definición de Mintzberg) es más importante en los **niveles inferiores** que en los medios o superiores.
 
-```ad-summary
-title: Resumen
+### Resumen
 ![[Pasted image 20230317192430.png]]
-```
-
 
 ## Habilidades administrativas
 
 Robert Katz definió que las habilidades que debían tener los gerentes son:
 - **técnicas** para conocer el negocio que se está desarrollando, 
 - **de trato personal** para poder trabajar eficientemente con RRHH y,
-- **conceptual** para poder comprender el medio, conceptuar situaciones abstractas y complicadas.
+- **conceptual** para poder comprender el medio y conceptuar situaciones abstractas y complicadas.
 
 Las tres habilidades son importantes en cualquiera de los puestos gerenciales pero a medida que se atraviesa la jerarquía de los gerentes, comenzamos con grandes habilidades técnicas y progresivamente van aumentando la necesidad de las otras dos, para culminar en una importancia de habilidades conceptuales en los mandos más jerárquicos.
 
@@ -120,7 +149,8 @@ Toda organización está compuesta por personas. Una persona que trabaja sola no
 
 ## Cambios en las organizaciones
 
-Todas las organizaciones crean una estructura deliberada para que los integrantes puedan trabajar. Esa estructura puede ser abierta y flexible, sin límites claros ni precisos de los deberes laborales y sin apegarse rigurosamente a ninguna disposición laboral explícita. Pero también puede ser una estructura más tradicional con reglas, normas y descripciones de puestos bien definidas y en la que algunos integrantes identificados como “jefes” tienen la autoridad sobre los demás. Pero cualquiera que sea el andamiaje de la organización, tiene que ser una estructura **deliberada** en la que se clasifiquen las relaciones laborales de los miembros. 
+Todas las organizaciones crean una estructura deliberada para que los integrantes puedan trabajar. Esa estructura puede ser abierta y flexible, sin límites claros ni precisos de los deberes laborales y sin apegarse rigurosamente a ninguna disposición laboral explícita. Pero también puede ser una estructura más tradicional con reglas, normas y descripciones de puestos bien definidas y en la que algunos integrantes identificados como “jefes” tienen la autoridad sobre los demás. 
+Pero cualquiera que sea el andamiaje de la organización, tiene que ser una estructura **deliberada** en la que se clasifiquen las relaciones laborales de los miembros. 
 El concepto de organización ha cambiado, por lo tanto, ya no es adecuado suponer que todas las organizaciones tendrán una estructura en la que se identifiquen claramente divisiones, departamentos y unidades de trabajo. De hecho es más característico de las organizaciones contemporáneas el tener un esquema de trabajo flexible, equipos de trabajo, sistemas de comunicación abierta y alianzas con proveedores.
 
 # ¿POR QUÉ ESTUDIAR ADMINISTRACIÓN?

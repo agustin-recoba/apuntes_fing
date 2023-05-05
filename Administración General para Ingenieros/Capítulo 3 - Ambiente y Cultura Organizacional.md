@@ -10,7 +10,7 @@ De acuerdo con la idea omnipotente, cuando las organizaciones tienen mal desempe
 
 ## Idea simbólica
 
-La idea simbólica sustenta que la capacidad del gerente de influir en los resultados de pende y está **limitada** por los factores externos. 
+La idea simbólica sustenta que la capacidad del gerente de influir en los resultados depende y está **limitada** por los factores externos. 
 
 Según esta postura, es ilógico suponer que los gerentes inciden significativamente en el desempeño de la organización. Más bien, los resultados de la organización están determinados por factores que los gerentes no controlan. 
 Entre estos factores se encuentran, por ejemplo, **economía**, **clientes**, **políticas oficiales**, **actividades de la competencia**, **condiciones de la industria**, **control sobre tecnología registrada** y **decisiones tomadas por los gerentes anteriores**.
@@ -58,7 +58,7 @@ Ventajas de las culturas fuertes:
 - Aprovechan sus actividades de reclutamiento y socialización para fomentar la dedicación de los empleados.
 - Se relacionan con alto desempeño organizacional, pues los valores son claros, los empleados saben que es lo que tienen que hacer y que se espera de ellos y con esto evitan que el desempeño disminuya, y actúen más rápidamente.
 
-Inconveniente: Impide a los empleados ensayar nuevos métodos, en particular durante períodos de cambios acelerados.
+Inconveniente: impide a los empleados ensayar nuevos métodos, en particular durante períodos de cambios acelerados.
 
 ## Establecer y mantener la cultura de una organización
 
@@ -70,13 +70,13 @@ Si se consigue la socialización de los empleados nuevos (proceso por el que se 
 ![[Pasted image 20230317200622.png]]
 
 La cultura se trasmite a los empleados de varias maneras. Las más importantes son:
-- **Las anécdotas**: 
+- **Las anécdotas**:
 	Narraciones sobre hechos o personas significativas, casos de los fundadores, reglas que se rompen, reacciones a errores del pasado, etc.
-- **Los ritos**: 
+- **Los ritos**:
 	Secuencias repetidas de actividades que expresan y refuerzan los valores de la organización, las metas que son más importantes y qué personas son importantes.
 - **Los símbolos materiales**:
 	La disposición de las instalaciones, el atuendo de los empleados, los autos que se dan a los ejecutivos, el tamaño de las oficinas, la elegancia del mobiliario, las gratificaciones de los ejecutivos, salones o comedores, lugares reservados de estacionamiento, etc.
-- **El lenguaje**: 
+- **El lenguaje**:
 	Como modo de identificar a los miembros de una cultura.
 
 ## Cómo afecta la cultura a los gerentes
@@ -85,19 +85,19 @@ La cultura de una organización es especialmente importante para los gerentes, p
 
 # ENTORNO
 
-El ambiente externo son las fuerzas e instituciones fuera de la organización que pueden influir en el desempeño del gerente. Está formado por dos componentes: el entorno **específico** y el entorno **general**.
+El ambiente externo son las fuerzas e instituciones **fuera de la organización** que pueden influir en el desempeño del gerente. Está formado por dos componentes: el entorno <u>específico</u> y el entorno <u>general</u>.
 
 ## Ambiente externo
 
 ![[Pasted image 20230317193908.png]]
 
-Está formado por 2 componentes.
+Está formado por 2 componentes:
 - **Entorno específico:**
 	Fuerzas externas que tienen efecto directo e inmediato en las decisiones y actos de los gerentes y que atañen a la consecución de las metas de la organización.
-	Ejemplos: clientes, proveedores, competencia y grupos de presión.
+	<u>Ejemplos:</u> clientes, proveedores, competencia y grupos de presión.
 - **Entorno general:**
 	Condiciones externas generales que pueden incidir en la organización.
-	Ejemplos: condiciones económicas, políticas y legales, socioculturales, demográficas, tecnológicas y mundiales.
+	<u>Ejemplos:</u> condiciones económicas, políticas y legales, socioculturales, demográficas, tecnológicas y mundiales.
 
 ### Entorno especifico
 Abarca las fuerzas externas que tienen efecto directo e inmediato en las decisiones y actos de los gerentes y que atañen a la consecución de las metas de la organización.
@@ -107,7 +107,7 @@ Abarca las fuerzas externas que tienen efecto directo e inmediato en las decisio
 - Los clientes plantean incertidumbres a la organización, pues sus gustos cambian o dejan de sentirse satisfechos con los productos o servicios de la organización.
 
 #### Proveedores
-- Son otras organizaciones que suministran materiales y equipos. Pero también incluye a quienes prestan servicios financieros y mano de obra. (Bancos, aseguradoras, etc.).
+- Son otras organizaciones que suministran materiales y equipos. Pero también incluye a quienes prestan servicios financieros y mano de obra (bancos, aseguradoras, empleados, etc.).
 - Los gerentes tratan de asegurar un aporte continuo de los insumos que necesitan al menor precio posible.
 - Estos insumos representan incertidumbre por lo que los gerentes hacen grandes esfuerzos por establecer ese aporte continuo y confiable.
 - La aplicación de las técnicas de los negocios electrónicos ha cambiado la forma en que las organizaciones se relacionan con sus proveedores.
@@ -115,7 +115,7 @@ Abarca las fuerzas externas que tienen efecto directo e inmediato en las decisio
 #### Competencia
 - Todas las organizaciones tienen uno o más rivales.
 - Los gerentes no pueden ignorar la competencia. Cuando lo hacen se meten en problemas.
-- La competencia significa una fuerza ambiental que los gerentes deben controlar, vigilar y estar preparador para responder. Puede ser la que ofrece el mismo servicio, o productos sustitutos.
+- La competencia significa una fuerza ambiental que los gerentes deben controlar, vigilar y estar preparador para responder. Puede ser la que ofrece el <u>mismo servicio, o productos sustitutos</u>.
 - Internet tiene que ver en la determinación de los rivales de una organización porque ha eliminado las fronteras geográficas.
 
 #### Grupos de presión
@@ -153,8 +153,8 @@ La globalización es uno de los principales factores que afectan a los gerentes 
 ## Como afecta el entorno a los gerentes: 
 
 El entorno afecta a los gerentes por su: 
-1. grado de incertidumbre y por 
-2. las relaciones entre la organización y las partes externas interesadas.
+1. grado de incertidumbre y
+2. por las relaciones entre la organización y las partes externas interesadas.
 
 ### Incertidumbre ambiental
 La incertidumbre ambiental es la medida de los cambios y la complejidad del entorno de una organización.

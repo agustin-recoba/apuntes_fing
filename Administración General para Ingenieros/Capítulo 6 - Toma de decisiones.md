@@ -100,7 +100,7 @@ Descripción de las opciones congruentes y de máximo valor para el contexto de 
 - La elección final trae el mejor resultado.
 - Quien decide maximiza los intereses de la organización, no los propios.
 
-La mayor parte de las decisiones que toman los gerentes no satisfacen estos requisitos.
+La mayor parte de las decisiones que toman los gerentes <u>no</u> satisfacen estos requisitos.
 
 ## Racionalidad acotada
 
@@ -134,6 +134,8 @@ Se han identificado 5 aspectos de la intuición:
 3. Decisiones por afectos.
 4. Decisiones Intelectuales.
 5. Procesos mentales inconscientes.
+
+Riesgo <u>no</u> es uno de los aspectos.
 
 # CLASES DE PROBLEMAS Y DECISIONES
 
@@ -215,7 +217,7 @@ Dos dimensiones en las cuales varía el estilo de toma de decisiones de un geren
 - **Alta Tolerancia**: puede procesar muchas ideas al mismo tiempo.
 
 ## Estilo directivo
-Poca tolerancia a la ambigüedad y una forma racional de pensar: toma decisiones rápidas y se centran en el corto plazo. Son eficientes y lógicos. Evalúan pocas alternativas y toman la decisión con poca información.
+Poca tolerancia a la ambigüedad y una forma racional de pensar: toma decisiones rápidas y <u>se centran en el corto plazo</u>. Son eficientes y lógicos. Evalúan pocas alternativas y toman la decisión con poca información.
 
 ## Estilo analítico
 Tolerancia a la ambigüedad y forma racional de pensar: capacidad para adaptarse o enfrentar situaciones únicas. Quieren más información antes de tomar la decisión y consideran más alternativas que en el estilo directivo.
@@ -263,7 +265,6 @@ Evaluación de la probabilidad de que ocurra un suceso de acuerdo con su semejan
 
 ## Error de la casualidad
 Los gerentes tratan de imponerle un significado a sucesos casuales.
-
 
 ## Error de los costos incurridos
 Se olvida de que las decisiones actuales no corrigen las anteriores.
