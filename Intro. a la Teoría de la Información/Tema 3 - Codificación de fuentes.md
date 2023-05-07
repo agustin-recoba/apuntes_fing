@@ -74,7 +74,7 @@ De esta forma se obtiene la fórmula de largo medio y la definición de entropí
 
 ![[Pasted image 20230327193538.png]]
 
-### La mala distribución
+## La mala distribución
 
 ![[Pasted image 20230327193559.png]]
 
@@ -83,6 +83,10 @@ De esta forma se obtiene la fórmula de largo medio y la definición de entropí
 ```ad-important
 title: Interpretación
 $D(p || q)$ es el incremento en la complejidad de la descripción debido a «información incorrecta».
+
+</br>
+
+*[p es la correcta y q la incorrecta/estimada]*
 ```
 
 

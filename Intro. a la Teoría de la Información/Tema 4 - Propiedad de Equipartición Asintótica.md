@@ -27,13 +27,13 @@
 
 ![[Pasted image 20230427213844.png]]
 
-### $A_{\epsilon}^{(n)}$ vs. Otros Conjuntos de Alta Probabilidad
+## $A_{\epsilon}^{(n)}$ vs. Otros Conjuntos de Alta Probabilidad
 ![[Pasted image 20230427213911.png]]
 
-#### Demostración
+### Demostración
 ![[Pasted image 20230427213926.png]]
 
-#### Ejemplo
+### Ejemplo
 ![[Pasted image 20230427213953.png]]
 
 # AEP para Procesos Estocásticos 
