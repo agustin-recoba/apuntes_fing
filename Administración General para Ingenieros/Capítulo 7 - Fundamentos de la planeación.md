@@ -14,7 +14,7 @@ En éste capítulo, nos vamos a referir a la planeación como la **planeación f
 
 ## Plantación y desempeño
 
-¿Vale la pena planear? Si bien, en las organizaciones que planean los resultados son positivos, no podemos decir que las organizaciones que trazan planes formales siempre superan a otras.
+¿Vale la pena planear? Si bien en las organizaciones que planean los resultados son positivos, no podemos decir que las organizaciones que trazan planes formales siempre superan a otras.
 Se han llegado a determinadas conclusiones acerca de la relación: planeación – desempeño. En primer lugar, la planeación formal se relaciona con mayores utilidades y resultados financieros positivos. En segundo lugar, es probable que la calidad del proceso de planeación y la puesta en marcha de los planes aporte más al desempeño que el grado de la planeación. Por último, influye en la relación, los tiempos de la planeación. Las organizaciones necesitan por lo menos cuatro años de planeación formal sistemática para incidir en el desempeño.
 
 # ¿CÓMO PLANEAN LOS GERENTES?
@@ -24,12 +24,15 @@ La planeación es la principal de las funciones de los gerentes, porque establec
 ## Metas y planes en la planeación
 
 Las metas son los resultados deseados por la organización, son los objetivos. Marcan la dirección de todas las decisiones administrativas y constituye los estándares con los que se miden los logros reales del trabajo.
-Los planes son documentos en los que se explica cómo se van a alcanzar las metas, así como la asignación de recurso, calendarios y otras acciones necesarias para concretar las metas.
+Los planes son documentos en los que se explica cómo se van a alcanzar las metas, así como la asignación de recursos, calendarios y otras acciones necesarias para concretar las metas.
 
 ### Clases de metas
 - **Metas económicas**: Se relacionan con el desempeño financiero de la organización.
-- **Metas estratégicas**: Atañen a otras áreas de su desempeño, fijan metas generales. Metas reales: Son las que realmente se persiguen, definidas por las prioridades de las organizaciones y por tanto por los actos de los integrantes.
-- **Metas declaradas**: (anuncios oficiales que la organización dicta y quiere que los interesados consideren como sus objetivos) Pueden entrar en conflicto o sufrir un influjo excesivo de lo que la sociedad cree que deben hacer las organizaciones. Tener presente que los objetivos reales y declarados difieren, es importante para entender, lo que de otra manera parecen incongruencias administrativas.
+- **Metas estratégicas**: Atañen a otras áreas de su desempeño, fijan metas generales. 
+- Metas reales: Son las que realmente se persiguen, definidas por las prioridades de las organizaciones y por tanto por los actos de los integrantes.
+- **Metas declaradas**: Anuncios oficiales que la organización dicta y quiere que los interesados consideren como sus objetivos. Pueden entrar en conflicto o sufrir un influjo excesivo de lo que la sociedad cree que deben hacer las organizaciones. 
+
+Tener presente que los objetivos reales y declarados difieren, es importante para entender, lo que de otra manera parecen incongruencias administrativas.
 
 ### Tipos de planes
 Se diferencian según su **línea estratégica** (estratégicos u operativos), **plazo** (corto o largo), **especificidad** (direccionales o concretos) y **frecuencia** (únicos o permanentes).

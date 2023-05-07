@@ -285,7 +285,7 @@ b. El concepto clásico.
 
 # TEMA: TOMA DE DECISIONES
 
-1. Las siguientes etapas forman parte del proceso de Toma de Decisiones, excepto:
+1. Las siguientes etapas forman parte del proceso de Toma de Decisiones, <u>excepto</u>:
 	a. Identificación de un problema.
 	b. Identificación de los criterios de selección
 	c. Identificación de los criterios de exclusión

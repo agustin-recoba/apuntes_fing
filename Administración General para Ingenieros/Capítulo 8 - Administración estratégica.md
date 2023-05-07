@@ -27,13 +27,13 @@ El proceso comprende 6 etapas que abarcan, la planeación, la implementación y 
 
 ## Etapa 2: Análisis externo
 
-Analizar el entorno es una etapa crucial en el proceso estratégico. Los gerentes de todas las organizaciones deben realizar un análisis externo. Deben saber que hace la competencia, que legislación nueva va a afectar a la organización cual es la oferta de mano de obra en los lugares donde opera. Al analizar el entorno, los gerentes deben examinar ambientes tanto generales como particulares. Para ver que tendencias y cambios ocurren.
+Analizar el entorno es una etapa crucial en el proceso estratégico. Los gerentes de <u>todas</u> las organizaciones deben realizar un análisis externo. Deben saber que hace la competencia, que legislación nueva va a afectar a la organización cual es la oferta de mano de obra en los lugares donde opera. Al analizar el entorno, los gerentes deben examinar ambientes tanto generales como particulares. Para ver que tendencias y cambios ocurren.
 
 Después de analizar el entorno, los gerentes tienen que evaluar lo que aprendieron acerca de **oportunidades** que puedan explotar la organización y las **amenazas** que haya que contrarrestar. Las **oportunidades** son tendencias positivas en los factores de ambiente externo y las amenazas son **tendencias** negativas.
 
 ## Etapa 3: Análisis interno
 
-Debe culminar con una evaluación clara de: los recursos de la organización (Ej. capital financiero, empleados capaces, gerentes experimentados, etc.) y las capacidades para realizar las diferentes actividades funcionales (Ej. marketing, Sist. de información, manejo de RR.HH., etc.)
+Debe culminar con una evaluación clara de: los recursos de la organización (ej. capital financiero, empleados capaces, gerentes experimentados, etc.) y las capacidades para realizar las diferentes actividades funcionales (ej. marketing, sist. de información, manejo de RR.HH., etc.)
 
 - Las **fuerzas** son las actividades que la organización hace bien o recursos exclusivos.
 - Las **debilidades** son actividades que la organización no hace, o recursos que no tiene.
@@ -42,7 +42,7 @@ Esta etapa obliga a los gerentes a aceptar que todas las organizaciones, por gra
 
 El análisis interno ofrece información sobre los recursos y aptitudes de la organización. Si éstos son únicos y excepcionales, se los considera las capacidades centrales de la organización. Son las principales destrezas, habilidades y recursos que crean valor para la organización y que determinan sus armas competitivas.
 
-Comprender la cultura de la organización es una parte crucial de la etapa 3 y considerarla es muy importante, ya que el contenido de la misma tendrá efectos sobre la estrategia que se siga. La cultura de una organización es su personalidad. Refleja los valores compartidos, convicciones y conductas.
+<u>Comprender la cultura de la organización</u> es una parte crucial de la etapa 3 y considerarla es muy importante, ya que el contenido de la misma tendrá efectos sobre la estrategia que se siga. La cultura de una organización es su personalidad. Refleja los valores compartidos, convicciones y conductas.
 En una cultura fuerte los empleados entienden claramente de qué trata la organización. Esto facilita a los gerentes, comunicarles nuevas capacidades centrales y la fuerza de la organización. Por otro lado, lo negativo de ésta cultura, es que es difícil cambiarla, ya que actúa como una barrera para aceptar los cambios en las estrategias de la organización.
 En definitiva, **la cultura promueve o estorba las acciones estratégicas**, y una cultura estratégicamente apropiada es aquella que respalda la estrategia que eligió la empresa.
 
@@ -65,7 +65,7 @@ Para ello, también es necesario el liderazgo de la dirección, como también un
 
 La última etapa del proceso de la administración estratégica consiste en evaluar los resultados. ¿Han sido eficaces las estrategias? ¿Se requieren ajustes?
 
-# TIPOS DE ESTRATEGIAS
+# TIPOS Y NIVELES DE ESTRATEGIAS
 
 ![[Pasted image 20230329001628.png]]
 
@@ -115,10 +115,10 @@ Cuando la estrategia corporativa abarca varias empresas, los gerentes manejan al
 ![[Pasted image 20230329001647.png]]
 
 A partir de la evaluación la empresa se sitúa en una de 4 categorías:
-- **Vacas de efectivo:** (poco crecimiento, mucha participación en el mercado). Generan grandes sumas de efectivo pero su perspectiva de crecimiento es limitada.
-- **Estrellas:** (mucho crecimiento, poca participación en el mercado). Empresas en un mercado de crecimiento. acelerado.
-- **Signos de interrogación:** Mucho crecimiento, poca participación, en el mercado.
-- **Perros:** (Poco crecimiento, poca participación en el mercado). Las empresas de ésta categoría no producen ni consumen mucho efectivo. Tampoco prometen mejorar su desempeño.
+- **Vacas de efectivo:** Poco crecimiento, mucha participación en el mercado. Generan grandes sumas de efectivo pero su perspectiva de crecimiento es limitada.
+- **Estrellas:** Mucho crecimiento, poca participación en el mercado. Empresas en un mercado de crecimiento acelerado.
+- **Signos de interrogación:** Mucho crecimiento, poca participación en el mercado.
+- **Perros:** Poco crecimiento, poca participación en el mercado. Las empresas de ésta categoría no producen ni consumen mucho efectivo. Tampoco prometen mejorar su desempeño.
 
 ## Estrategia de nivel empresarial (responsables: gerentes. de nivel medio)
 
@@ -126,58 +126,60 @@ Estrategia para determinar como debe competir la organización en sus negocios. 
 
 Cuando una organización participa en varios negocios, las empresas que son independientes y formulan sus propias estrategias son: unidades estratégicas de negocios (UEN).
 
-## Ventaja competitiva
+### Ventaja competitiva
 
 Es la superioridad que distingue a la organización, su valor distintivo. Esta ventaja procede de las capacidades centrales. Aquellas capacidades centrales que llevan a una ventaja competitiva, vienen de los activos o recursos de la organización, eso que tiene y que a la competencia le falta.
 
-### La calidad como ventaja competitiva
+#### La calidad como ventaja competitiva
 
 La administración de la calidad se centra en los clientes y en el mejoramiento continuo. En la medida en que la organización satisfaga la necesidad de calidad de un cliente, se distingue de la competencia y forma una cartera de clientes leales.
 Las mejoras constantes de la calidad y confiabilidad de los productos o servicios, producen una ventaja competitiva que no puede sustraerse.
 
-### Como sostener la ventaja competitiva
+#### Como sostener la ventaja competitiva
 Todas las organizaciones tienen sus recursos y métodos de trabajo, pero no todas son capaces de explotar bien sus recursos o aptitudes y generar capacidades centrales que les den una ventaja competitiva. Sin embargo, una vez que se ha logrado esa ventaja competitiva hay que ser capaz de sostenerla.
 
-### Estrategias competitivas
+#### Estrategias competitivas
 El éxito depende de elegir la correcta, la compatible con las fuerzas competitivas (recursos y aptitudes) de la organización.
 Porter explicó como los gerentes crean y sostienen una ventaja competitiva que le de a la organización una rentabilidad superior a la promedio.
 
-#### 5 Fuerzas de Porter
+##### 5 Fuerzas de Porter
 En cualquier industria, 5 fuerzas dictan las reglas de la competencia, que en conjunto determinan el atractivo y la rentabilidad de la industria.
 
 Luego de que los gerentes evalúan las 5 fuerzas y determinan cuales son las amenazas y oportunidades, pueden elegir una estrategia competitiva. Porter propone que los gerentes elijan una estrategia que le dé a la organización una ventaja competitiva.
 
-##### Amenaza de nuevos ingresos
+###### Amenaza de nuevos ingresos
 La entrada de nuevas empresas al mercado puede obligar a bajar los precios o inflar los costos de los fabricantes existentes, reduciendo la rentabilidad.
 
 Existen factores que actúan como barreras para el ingreso: 
-- Economías de escala: Ya que sus productos tiene un bajo costo al producir en grandes volúmenes. Esto implica, que las empresas que quieran entrar, deberán producir de la misma manera, y manteniendo bajos los costos.
-- Lealtad a la marca: Las empresas establecidas tienen identificación de marca y lealtad entre los clientes. Esto significa una barrera, ya que los que ingresan deberán realizar grandes gastos para superar la lealtad existente del cliente.
-- Requisitos de capital: Necesidad de invertir grandes recursos financieros para competir
-- Costos cambiantes: Se da si la empresa que ingresa actúa como " proveedor". Por lo tanto, significará un cambio en el costo para las empresas que compran, si es que cambian de proveedor.
-- Acceso a los canales de distribución: Puede significar una barrera para el ingreso, el hecho de que el que ingresa debe asegurar la distribución para su producto.
-- Desventajas en costo, independientes de las economías de escala:
-	Las empresas establecidas pueden tener ventajas de costo no igualables por los competidores que ingresan, ya que: El producto existente posee ciertas características que se mantienen bajo secreto o están patentadas. También la empresa ya existente pudo haber contratado con las fuentes de materia prima más favorables, como también elegido la ubicación mas adecuada. Asimismo, una empresa ya establecida, puede bajar sus costos unitarios a medida que la empresa adquiere mas experiencia y los trabajadores mejoran sus métodos y se vuelven más eficientes.
+- <u>Economías de escala:</u> Ya que sus productos tiene un bajo costo al producir en grandes volúmenes. Esto implica, que las empresas que quieran entrar, deberán producir de la misma manera, y manteniendo bajos los costos.
+- <u>Lealtad a la marca:</u> Las empresas establecidas tienen identificación de marca y lealtad entre los clientes. Esto significa una barrera, ya que los que ingresan deberán realizar grandes gastos para superar la lealtad existente del cliente.
+- <u>Requisitos de capital:</u> Necesidad de invertir grandes recursos financieros para competir
+- <u>Costos cambiantes:</u> Se da si la empresa que ingresa actúa como "proveedor". Por lo tanto, significará un cambio en el costo para las empresas que compran, si es que cambian de proveedor.
+- <u>Acceso a los canales de distribución:</u> Puede significar una barrera para el ingreso, el hecho de que el que ingresa debe asegurar la distribución para su producto.
+- <u>Desventajas en costo, independientes de las economías de escala:</u> Las empresas establecidas pueden tener ventajas de costo no igualables por los competidores que ingresan, ya que: 
+	- El producto existente posee ciertas características que se mantienen bajo secreto o están patentadas. 
+	- También la empresa ya existente pudo haber contratado con las fuentes de materia prima más favorables, como también elegido la ubicación mas adecuada. A
+	- simismo, una empresa ya establecida, puede bajar sus costos unitarios a medida que la empresa adquiere mas experiencia y los trabajadores mejoran sus métodos y se vuelven más eficientes.
 
-##### Intensidad de la rivalidad entre los competidores existentes
+###### Intensidad de la rivalidad entre los competidores existentes
 La rivalidad se presenta porque uno o más de los competidores sienten la presión o ven la oportunidad de mejorar su posición. En la mayor parte de los sectores industriales, las empresas son mutuamente dependientes, lo que puede dejar o no a la empresa iniciadora y al sector en general, en mejor posición.
 
 Ésta rivalidad se acentúa con los siguientes factores:
-- Gran número de competidores: Cuando un sector está sumamente concentrado o dominado por pocas empresas, el líder puede imponer disciplina así como también tener un papel coordinador mediante la aplicación de estrategias como "liderazgo en costos".
-- Crecimiento lento en el sector: Hace que la competencia se transforme en un juego por mayor participación para las empresas que buscan expansión.
-- Falta de diferenciación: Cuando los productos no están bien diferenciados, la elección de los compradores se basará mas que nada en el precio o servicio. Dando lugar a una competencia por precio y servicio.
-- Intereses estratégicos elevados: por parte de otras empresas, las cuales tienen objetivos diversos y desestabilizadores.
-- Fuertes barreras de salida: Son factores económicos, estratégicos y emocionales que mantienen a las empresas compitiendo aún si su rendimiento es bajo o incluso negativo.
+- <u>Gran número de competidores:</u> Cuando un sector está sumamente concentrado o dominado por pocas empresas, el líder puede imponer disciplina así como también tener un papel coordinador mediante la aplicación de estrategias como "liderazgo en costos".
+- <u>Crecimiento lento en el sector:</u> Hace que la competencia se transforme en un juego por mayor participación para las empresas que buscan expansión.
+- <u>Falta de diferenciación:</u> Cuando los productos no están bien diferenciados, la elección de los compradores se basará mas que nada en el precio o servicio. Dando lugar a una competencia por precio y servicio.
+- <u>Intereses estratégicos elevados:</u> por parte de otras empresas, las cuales tienen objetivos diversos y desestabilizadores.
+- <u>Fuertes barreras de salida:</u> Son factores económicos, estratégicos y emocionales que mantienen a las empresas compitiendo aún si su rendimiento es bajo o incluso negativo.
 
-##### Presión de productos sustitutos
+###### Presión de productos sustitutos
 Todas las empresas de un sector compiten, continuamente, con aquellas que producen productos sustitutos. Éstos son productos que desempeñan la misma función que el producto del sector industrial.
 
 Los productos sustitutos que merecen la máxima atención son aquellos que:
-- Tienen tendencias a mejorar su desempeño y precio con respecto a los del sector industrial.
-- Los producidos por sectores industriales con altos rendimientos.
+- Tienen **tendencias a mejorar** su desempeño y precio con respecto a los del sector industrial.
+- Los producidos por sectores industriales con **altos rendimientos**.
 
-##### Poder negociador de los compradores
-El poder de los compradores depende de: su situación de mercado y de la importancia de sus compras en comparación con sus ventas
+###### Poder negociador de los compradores
+El poder de los compradores depende de: su situación de mercado y de la importancia de sus compras en comparación con sus ventas.
 
 El comprador es poderoso si: 
 - Compra grandes volúmenes con relación a las ventas del proveedor. 
@@ -187,7 +189,7 @@ El comprador es poderoso si:
 - El producto que ofrece el proveedor no es de importancia fundamental para calidad del producto o servicio que ofrece el comprador.
 - El comprador tiene gran cantidad de información, lo que le proporciona una ventaja negociadora.
 
-##### Poder negociador de los proveedores
+###### Poder negociador de los proveedores
 Los proveedores pueden ejercer poder negociador sobre los compradores elevando los precios o reduciendo la calidad de los productos.
 Un proveedor es poderoso si:
 - Su sector está dominado por pocas empresas y a su vez mas concentrado que el sector al que vende.
@@ -195,17 +197,17 @@ Un proveedor es poderoso si:
 - La empresa a la que vende, no es un cliente importante.
 - El producto que vende, es fundamental para el negocio del comprador.
 
-
-
-
-#### Estrategias para obtener una ventaja competiviva
-Estas estrategias pueden ser: liderazgo en costos, diferenciación o enfoque
+##### Estrategias para obtener una ventaja competiviva
+Estas estrategias pueden ser: 
+- liderazgo en costos
+- diferenciación
+- enfoque
 
 1. **Liderazgo en costos**
-	Estrategia en la que la organización es el productor con menores costos de la industria. El líder en costos busca eficiencia en sus distintas áreas de operación (marketing, producción, etc.), mientras que los gastos generales se mantienen al mínimo y la empresa hace todo para recortar costos. Éstos líderes también suponen que los compradores deben considerar que el producto que venden tiene la misma calidad que el de los rivales.
+	Estrategia en la que la organización es el productor con menores costos de la industria. El líder en costos busca eficiencia en sus distintas áreas de operación (marketing, producción, etc.), mientras que los gastos generales se mantienen al mínimo y <u>la empresa hace todo para recortar costos</u>. Éstos líderes también suponen que los compradores deben considerar que el producto que venden tiene la misma calidad que el de los rivales.
 
 2. **Diferenciación**
-	Estrategia en la que una compañía ofrece productos exclusivos. Ésta estrategia busca una calidad excepcional, servicio extraordinario, diseño innovador, capacidad tecnológica e imagen de marca reconocida. La clave está en que, lo que sea que se escoja para distinguirse debe diferenciar a la empresa de la competencia y debe ser lo suficientemente importante como para justificar una diferencia de precio.
+	Estrategia en la que una compañía ofrece <u>productos exclusivos</u>. Ésta estrategia busca una calidad excepcional, servicio extraordinario, diseño innovador, capacidad tecnológica o imagen de marca reconocida. La clave está en que, lo que sea que se escoja para distinguirse debe diferenciar a la empresa de la competencia y debe ser lo suficientemente importante como para justificar una diferencia de precio.
 
 3. **Enfoque**
 	Estrategia en la que una compañía busca una ventaja de costos o diferenciación en un segmento industrial determinado. Consiste en un enfoque en los costos ó enfoque en la diferenciación. Es decir, los gerentes eligen un segmento de mercado y tratan de explotarlo. Ésta estrategia será viable dependiendo del tamaño de la organización y de que pueda con el que costo que implicaría sostenerla. Ésta estrategia es ideal para empresas pequeñas ya que no tienen economías de escala ni recursos internos para mantener las otras 2 estrategias planteadas.
