@@ -5,7 +5,7 @@
 ## Es no negativa
 
 ![[Pasted image 20230428134130.png]]
- 
+
 ## Relaciones entre Información Mutua y Entropía
 ![[Pasted image 20230428134159.png]]
 ![[Pasted image 20230428134209.png]]

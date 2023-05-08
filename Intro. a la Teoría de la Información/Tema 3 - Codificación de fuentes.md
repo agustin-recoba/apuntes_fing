@@ -89,7 +89,6 @@ $D(p || q)$ es el incremento en la complejidad de la descripción debido a «inf
 *[p es la correcta y q la incorrecta/estimada]*
 ```
 
-
 ![[Pasted image 20230327193616.png]]
 
 # Esquemas de codificación

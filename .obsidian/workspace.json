@@ -8,7 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a14277613efad068",
+            "id": "3df9b04ebf1b5b23",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e99a6292078dc6e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,7 +32,7 @@
             }
           },
           {
-            "id": "68a5af33dfd61efe",
+            "id": "1bdcfc87576bca28",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,7 +44,7 @@
             }
           },
           {
-            "id": "9720370a56040bdc",
+            "id": "d3d48146179c39fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -72,7 +85,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md"
+                "file": "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md"
               }
             }
           },
@@ -114,7 +127,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 336.5,
+    "collapsed": true
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -130,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
+                "file": "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
+                "file": "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,12 +195,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a14277613efad068",
+  "active": "d3d48146179c39fb",
   "lastOpenFiles": [
+    "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
     "Intro. a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md",
     "Intro. a la Teoría de la Información/Tema 5 - Codificación de canal.md",
-    "Intro. a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
-    "Intro. a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
     "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
     "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
     "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
