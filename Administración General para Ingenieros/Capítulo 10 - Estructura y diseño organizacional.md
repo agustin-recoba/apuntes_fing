@@ -16,15 +16,15 @@ Una vez que los trabajos se dividen por medio de la especialización del trabajo
 La departamentalización es el fundamento mediante el cual se agrupan las tareas.
 
 - **Departamentalización funcional:**
-	Agrupa los trabajos según las funciones desempeñadas.
+	Agrupa los trabajos según las funciones desempeñadas.![[Pasted image 20230510212622.png]]
 - **Departamentalización de productos:**
-	Agrupa los trabajos por línea de productos. Aquí cada área importante de productos se coloca bajo la autoridad de un gerente que es responsable de todo lo que tiene que ver con esa línea de productos.
+	Agrupa los trabajos por línea de productos. Aquí cada área importante de productos se coloca bajo la autoridad de un gerente que es responsable de todo lo que tiene que ver con esa línea de productos.![[Pasted image 20230510212715.png]]
 - **Departamentalización geográfica:**
-	Agrupa los trabajos con base en el territorio o la geografía.
+	Agrupa los trabajos con base en el territorio o la geografía.![[Pasted image 20230510212634.png]]
 - **Departamentalización de procesos:**
-	Agrupa los trabajos con base en el flujo de productos o clientes.
+	Agrupa los trabajos con base en el flujo de productos o clientes.![[Pasted image 20230510212738.png]]
 - **Departamentalización de clientes:**
-	Agrupa los trabajos con base en los clientes que tienen necesidades y problemas comunes.
+	Agrupa los trabajos con base en los clientes que tienen necesidades y problemas comunes.![[Pasted image 20230510212748.png]]
 
 ### Nuevo enfoque
 Los gerentes usan equipos interfuncionales, es decir, grupos de individuos que son expertos en varias especialidades y que trabajan juntos.
@@ -84,9 +84,11 @@ Se refiere al grado en el que los trabajos de una organización son estandarizad
 
 ## Organizaciones mecanicistas y orgánicas
 
-Una **_organización mecanicista_** es una estructura rígida y muy controlada. Se caracteriza por un alto grado de especialización, una departamentalización rígida, amplitudes de control reducidas, alto grado de formalización, una red de información limitada y poca participación en la toma de decisiones de los empleados.
+Una <i><b><u>organización mecanicista</u></b></i> es una estructura rígida y muy controlada. Se caracteriza por un alto grado de especialización, una departamentalización rígida, amplitudes de control reducidas, alto grado de formalización, una red de información limitada y poca participación en la toma de decisiones de los empleados.
 
-Una **_organización orgánica_** es una estructura adaptable y flexible lo que le permite cambiar rápidamente según lo requieran las necesidades. Estas estructuras tienen división de trabajo, pero los trabajos que el personal realiza no son estandarizados. Loe empleados están capacitados y tienen empowerment. Tienen poca formalización y poca supervisión directa.
+Una <i><b><u>organización orgánica</u></b></i> es una estructura adaptable y flexible lo que le permite cambiar rápidamente según lo requieran las necesidades. Estas estructuras tienen división de trabajo, pero los trabajos que el personal realiza no son estandarizados. Loe empleados están capacitados y tienen empowerment. Tienen poca formalización y poca supervisión directa.
+
+![[Pasted image 20230510212829.png]]
 
 ## Factores de contingencia
 
@@ -96,9 +98,9 @@ Saber cual es la estructura adecuada depende de 4 variables de contingencia:
 La estructura de una organización debe facilitar el logro de los objetivos. Si los gerentes cambian significativamente la estrategia de la organización, deben modificar la estructura para adaptarse y apoyar el cambio. Ver Alfred Chandler fue el primero en estudiar esta relación. 
 
 La mayor parte de los esquemas estratégicos actuales tienden a centrarse en 3 aspectos:
-- Innovación: Que refleja la búsqueda de la organización de innovaciones significativas y únicas. Estas organizaciones innovadoras necesitan la flexibilidad y el libre flujo de información de la estructura orgánica.
-- Minimización de los costos: Que refleja la búsqueda de la organización de costos muy controlados. Estas organizaciones buscan la eficiencia, la estabilidad y los controles rígidos de la estructura mecanicista.
-- Imitación: Que refleja el intento de una organización de minimizar el riesgo y maximizar las oportunidades de rendimiento, copiando a los líderes del mercado. Estas usan las características estructurales de ambas, la estructura mecanicista para mantener controles rígidos y costos bajos, y la estructura orgánica para imitar las direcciones innovadoras de la industria.
+- <u>Innovación:</u> Que refleja la búsqueda de la organización de innovaciones significativas y únicas. Estas organizaciones innovadoras necesitan la flexibilidad y el libre flujo de información de la estructura orgánica.
+- <u>Minimización de los costos:</u> Que refleja la búsqueda de la organización de costos muy controlados. Estas organizaciones buscan la eficiencia, la estabilidad y los controles rígidos de la estructura mecanicista.
+- <u>Imitación:</u> Que refleja el intento de una organización de minimizar el riesgo y maximizar las oportunidades de rendimiento, copiando a los líderes del mercado. Estas usan las características estructurales de ambas, la estructura mecanicista para mantener controles rígidos y costos bajos, y la estructura orgánica para imitar las direcciones innovadoras de la industria.
 
 ### Tamaño y estructura
 El tamaño de una organización afecta de manera significativa su estructura, pero más allá de cierto límite el tamaño se vuelve una influencia menos importante para la estructura a medida que una organización crece. No es lo mismo aumentar 500 empleados a una organización que posee 2000 que a una que posee 300. Una vez que la organización posee alrededor de 2000 empleados ya es bastante mecanicista.
@@ -118,7 +120,7 @@ Estos diseños (la estructura simple, la estructura funcional y la estructura de
 
 ### Estructura simple
 Es un diseño organizacional con escasa departamentalización, amplitudes de control extensas, autoridad centralizada y poca formalización. Esta estructura la usan con mayor frecuencia las empresas pequeñas, integradas por propietarios y empleados.
-La mayor parte de las organizaciones no permanecen como simples estructuras. A medida que aumenta el número de empleados, la estructura tiende a volverse más especializada y formalizada. Se introducen reglamentos, se crean departamentos, y la organización se vuelve cada vez más burocrática. Aquí un gerente podría elegir entre organizar la empresa entre alguna de las 2 siguientes estructura.
+La mayor parte de las organizaciones no permanecen como simples estructuras. A medida que aumenta el número de empleados, la estructura tiende a volverse más especializada y formalizada. Se introducen reglamentos, se crean departamentos, y la organización se vuelve cada vez más burocrática. Aquí un gerente podría elegir entre organizar la empresa entre alguna de las 2 siguientes estructuras.
 
 ### Estructura funcional
 Es un diseño organizacional que agrupa especialidades ocupacionales similares o relacionadas. Es el enfoque funcional de la departamentalización aplicado a toda la organización.
@@ -135,14 +137,16 @@ Los gerentes de organizaciones contemporáneas descubren que estos diseños jer�
 
 ### Estructura de equipos
 Es una estructura organizacional en la que toda la organización está integrada por grupos o equipos de trabajo. 
-Existe en gran _empowerment_ de los empleados, que es decisivo en esta estructura, porque no existe una línea de autoridad gerencial de los niveles superiores a los inferiores. Los equipos tienen la libertad de diseñar el trabajo en la forma que ellos consideren mejor, y son responsables de todos los resultados de trabajo y rendimiento de sus áreas respectivas. Existe también una disminución de las barreras entre áreas funcionales.
+Existe en gran **_empowerment_** de los empleados, que es decisivo en esta estructura, porque no existe una línea de autoridad gerencial de los niveles superiores a los inferiores. Los equipos tienen la libertad de diseñar el trabajo en la forma que ellos consideren mejor, y son responsables de todos los resultados de trabajo y rendimiento de sus áreas respectivas. Existe también una disminución de las barreras entre áreas funcionales.
 
 Tiene como desventajas que no existe una cadena de mando definida y hay presiones sobre los equipos para que desempeñen su trabajo.
 
 ### Estructura de matriz
 Es una estructura organizacional que asigna especialistas de diferentes departamentos funcionales para trabajar en uno o más proyectos, dirigidos por gerentes de proyectos. En la parte superior de la matriz de ubican las funciones organizacionales conocidas, y verticalmente en el lado izquierdo se ubican los proyectos específicos en los cuales trabaja actualmente la empresa. Cada proyecto es dirigido por un individuo que toma especialistas de cada uno de los departamentos funcionales y los empleados regresan a sus áreas una vez que el proyecto concluye.
 
-También crea una cadena dual de mando y viola el principio de organización clásico de unidad de mando. Los empleados tienen 2 gerentes: el gerente de su departamento funcional y el gerente de producto o proyecto, quienes comparten la autoridad. La toma de decisiones es rápida, y tiene un diseño fluido y flexible que responde a los cambios ambientales.
+También crea una cadena dual de mando y viola el principio de organización clásico de unidad de mando. Los empleados tienen **2 gerentes**: el gerente de su departamento funcional y el gerente de producto o proyecto, quienes comparten la autoridad. La toma de decisiones es rápida, y tiene un diseño fluido y flexible que responde a los cambios ambientales.
+
+![[Pasted image 20230510213332.png]]
 
 ### Estructura de proyectos
 Es una estructura organizacional en la que los empleados trabajan continuamente en proyectos, donde los equipos de proyectos se integran, se desintegran y se vuelven a integrar según lo requiera el trabajo, y una vez finalizado el proyecto, pasan al siguiente.
