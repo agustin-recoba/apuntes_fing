@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 454.5
+    "width": 454.5,
+    "collapsed": true
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -154,12 +155,14 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "open-gate:ChatGPT": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "webpage-html-export:Export Vault to HTML": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "16043665600f945d",
   "lastOpenFiles": [
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230515171602.png",
+    "Intro. a la Ingeniería de Software/media/Pasted image 20230515165242.png",
+    "Pasted image 20230512194943.png.md",
     "Intro. a la Ingeniería de Software/Software Testing Foundations.md",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230404171113.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230404170406.png",
@@ -170,7 +173,6 @@
     "Intro. a la Ingeniería de Software/media/Pasted image 20230404165303.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230404165752.png",
     "Intro. a la Ingeniería de Software/media/Pasted image 20230404163914.png",
-    "Intro. a la Ingeniería de Software/media/Pasted image 20230404161347.png",
     "Intro. a la Ingeniería de Software/Extras/User Stories.md",
     "Intro. a la Ingeniería de Software/Extras/MUM.md",
     "Intro. a la Ingeniería de Software/Extras/Ejemplos de modelos o SDLC.md",
@@ -199,8 +201,6 @@
     "Intro. a la Ingeniería de Software - copia/Indice.md",
     "Intro. a la Ingeniería de Software - copia/Capítulo 4 - Ingeniería de requisitos.md",
     "Intro. a la Ingeniería de Software - copia/Capítulo 6 - Diseño Arquitectonico.md",
-    "Intro. a la Ingeniería de Software - copia/Capítulo 3 - Metodologías ágiles.md",
-    "Intro. a la Ingeniería de Software - copia/Capítulo 2 - Proceso de software.md",
     "Intro. a la Ingeniería de Software - copia",
     "Intro. a la Teoría de la Información/media",
     "Intro. a la Teoría de la Información",
