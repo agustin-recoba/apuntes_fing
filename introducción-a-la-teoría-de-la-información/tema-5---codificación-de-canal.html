@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Tema 5 - Codificación de canal</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-mo {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-stretchy-h {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>* {
+      display: table-cell;
+      width: 0;
+    }
+
+    mjx-stretchy-h>*>mjx-c {
+      display: inline-block;
+      transform: scalex(1.0000001);
+    }
+
+    mjx-stretchy-h>*>mjx-c::before {
+      display: inline-block;
+      width: initial;
+    }
+
+    mjx-stretchy-h>mjx-ext {
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: clip visible;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c::before {
+      transform: scalex(500);
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c {
+      width: 0;
+    }
+
+    mjx-stretchy-h>mjx-beg>mjx-c {
+      margin-right: -.1em;
+    }
+
+    mjx-stretchy-h>mjx-end>mjx-c {
+      margin-left: -.1em;
+    }
+
+    mjx-stretchy-v {
+      display: inline-block;
+    }
+
+    mjx-stretchy-v>* {
+      display: block;
+    }
+
+    mjx-stretchy-v>mjx-beg {
+      height: 0;
+    }
+
+    mjx-stretchy-v>mjx-end>mjx-c {
+      display: block;
+    }
+
+    mjx-stretchy-v>*>mjx-c {
+      transform: scaley(1.0000001);
+      transform-origin: left center;
+      overflow: hidden;
+    }
+
+    mjx-stretchy-v>mjx-ext {
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 0px solid transparent;
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: visible clip;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c::before {
+      width: initial;
+      box-sizing: border-box;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c {
+      transform: scaleY(500) translateY(.075em);
+      overflow: visible;
+    }
+
+    mjx-mark {
+      display: inline-block;
+      height: 0px;
+    }
+
+    mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D43C.TEX-I::before {
+      padding: 0.683em 0.504em 0 0;
+      content: "I";
+    }
+
+    mjx-c.mjx-c28::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: "(";
+    }
+
+    mjx-c.mjx-c1D44B.TEX-I::before {
+      padding: 0.683em 0.852em 0 0;
+      content: "X";
+    }
+
+    mjx-c.mjx-c3B::before {
+      padding: 0.43em 0.278em 0.194em 0;
+      content: ";";
+    }
+
+    mjx-c.mjx-c1D44C.TEX-I::before {
+      padding: 0.683em 0.763em 0 0;
+      content: "Y";
+    }
+
+    mjx-c.mjx-c29::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: ")";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "..";
+    let mediaPath = "../media";
+    let jsPath = "../scripts";
+    let cssPath = "../styles";
+  </script>
+
+  <script src="../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <h1 data-heading="Información mutua" id="Información_mutua">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Información mutua
+            </h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134100.png" src="Pasted image 20230428134100.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134100.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134100.png?1683988806853"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Es no negativa" id="Es_no_negativa">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Es no negativa
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134130.png" src="Pasted image 20230428134130.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134130.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134130.png?1683988806861"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Relaciones entre Información Mutua y Entropía" id="Relaciones_entre_Información_Mutua_y_Entropía">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Relaciones entre Información Mutua y Entropía
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134159.png" src="Pasted image 20230428134159.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134159.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134159.png?1683988806856"></span><br>
+              <span alt="Pasted image 20230428134209.png" src="Pasted image 20230428134209.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134209.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134209.png?1683988806861"></span><br>
+              <span alt="Pasted image 20230428134216.png" src="Pasted image 20230428134216.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134216.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134216.png?1683988806857"></span>
+            </p>
+          </div>
+          <div>
+            <h2 data-heading="Diagrama de Venn" id="Diagrama_de_Venn">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Diagrama de Venn
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134232.png" src="Pasted image 20230428134232.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134232.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134232.png?1683988806860"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Información Mutua Condicional" id="Información_Mutua_Condicional">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Información Mutua Condicional
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134250.png" src="Pasted image 20230428134250.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134250.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134250.png?1683988806867"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Es no negativa" id="Es_no_negativa">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Es no negativa
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134314.png" src="Pasted image 20230428134314.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134314.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134314.png?1683988806863"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Regla de la cadena" id="Regla_de_la_cadena">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Regla de la cadena
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134330.png" src="Pasted image 20230428134330.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134330.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134330.png?1683988806865"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Demostración" id="Demostración">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Demostración
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134342.png" src="Pasted image 20230428134342.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134342.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134342.png?1683988806875"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Desigualdad de Procesamiento de Datos" id="Desigualdad_de_Procesamiento_de_Datos">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Desigualdad de Procesamiento de Datos
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134407.png" src="Pasted image 20230428134407.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134407.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134407.png?1683988806862"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134414.png" src="Pasted image 20230428134414.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134414.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134414.png?1683988806862"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134424.png" src="Pasted image 20230428134424.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134424.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134424.png?1683988806874"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134446.png" src="Pasted image 20230428134446.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134446.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134446.png?1683988806868"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Concavidad/Convexidad de $I(X; Y)$" id="Concavidad/Convexidad_de_I(X;Y)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Concavidad/Convexidad de <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <mi>I</mi>
+                      <mo stretchy="false">(</mo>
+                      <mi>X</mi>
+                      <mo>;</mo>
+                      <mi>Y</mi>
+                      <mo stretchy="false">)</mo>
+                    </math></mjx-assistive-mml></mjx-container></span>
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428134518.png" src="Pasted image 20230428134518.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428134518.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428134518.png?1683988806870"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Desigualdad de Fano" id="Desigualdad_de_Fano">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Desigualdad de Fano
+            </h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428135011.png" src="Pasted image 20230428135011.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428135011.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428135011.png?1683988806872"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428135021.png" src="Pasted image 20230428135021.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428135021.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428135021.png?1683988806872"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230428135030.png" src="Pasted image 20230428135030.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230428135030.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230428135030.png?1683988806872"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Codificación de canal" id="Codificación_de_canal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Codificación de canal
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="Introducción" id="Introducción">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Introducción
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="Canal discreto sin memoria (DMC)" id="Canal_discreto_sin_memoria_(DMC)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Canal discreto sin memoria (DMC)
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509193635.png" src="Pasted image 20230509193635.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193635.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193635.png?1683988806868"></span><br>
+              <span alt="Pasted image 20230509193644.png" src="Pasted image 20230509193644.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193644.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193644.png?1683988806868"></span>
+            </p>
+          </div>
+          <div>
+            <h3 data-heading="Código de canal (M,n)" id="Código_de_canal_(M,n)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Código de canal (M,n)
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509193722.png" src="Pasted image 20230509193722.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193722.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193722.png?1683988806870"></span><br>
+              <span alt="Pasted image 20230509193729.png" src="Pasted image 20230509193729.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193729.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193729.png?1683988806876"></span>
+            </p>
+          </div>
+          <div>
+            <h3 data-heading="Probabilidad de error de un c´odigo para un canal" id="Probabilidad_de_error_de_un_c´odigo_para_un_canal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Probabilidad de error de un c´odigo para un canal
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509193748.png" src="Pasted image 20230509193748.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193748.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193748.png?1683988806877"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Capacidad Operativa" id="Capacidad_Operativa">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Capacidad Operativa
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509193805.png" src="Pasted image 20230509193805.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193805.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193805.png?1683988806878"></span><br>
+              <span alt="Pasted image 20230509193812.png" src="Pasted image 20230509193812.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193812.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193812.png?1683988806879"></span>
+            </p>
+          </div>
+          <div>
+            <h3 data-heading="Capacidad Informacional de un canal" id="Capacidad_Informacional_de_un_canal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Capacidad Informacional de un canal
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509193826.png" src="Pasted image 20230509193826.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193826.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193826.png?1683988806879"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Capacidad informacional de un canal sin ruido" id="Capacidad_informacional_de_un_canal_sin_ruido">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Capacidad informacional de un canal sin ruido
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509193847.png" src="Pasted image 20230509193847.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193847.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193847.png?1683988806876"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Capacidad informacional del canal binario simétrico (BSC)" id="Capacidad_informacional_del_canal_binario_simétrico_(BSC)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Capacidad informacional del canal binario simétrico (BSC)
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509193904.png" src="Pasted image 20230509193904.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193904.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193904.png?1683988806881"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Capacidad informacional del canal con borraduras" id="Capacidad_informacional_del_canal_con_borraduras">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Capacidad informacional del canal con borraduras
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509193934.png" src="Pasted image 20230509193934.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509193934.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509193934.png?1683988806882"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Teorema de codificación de canal" id="Teorema_de_codificación_de_canal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Teorema de codificación de canal
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="Enunciados previos" id="Enunciados_previos">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Enunciados previos
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="Tipicalidad conjunta" id="Tipicalidad_conjunta">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tipicalidad conjunta
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509202047.png" src="Pasted image 20230509202047.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509202047.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509202047.png?1683988806879"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="AEP conjunta" id="AEP_conjunta">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>AEP conjunta
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509202146.png" src="Pasted image 20230509202146.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509202146.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509202146.png?1683988806879"></span><br>
+              <b><u>Nota:</u></b> El punto 3 dice que la prob. de que dos secuencias típicas de <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.051em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <msup>
+                        <mi>X</mi>
+                        <mi>n</mi>
+                      </msup>
+                    </math></mjx-assistive-mml></mjx-container></span> y <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.059em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <msup>
+                        <mi>Y</mi>
+                        <mi>n</mi>
+                      </msup>
+                    </math></mjx-assistive-mml></mjx-container></span>, pero no generadas por la transmisión, sean también conjuntamente típicas, es chica, y tiende a 0 con <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <mi>n</mi>
+                    </math></mjx-assistive-mml></mjx-container></span> grande.
+            </p>
+          </div>
+          <div>
+            <h5 data-heading="Demostración de (3)" id="Demostración_de_(3)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Demostración de (3)
+            </h5>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509202547.png" src="Pasted image 20230509202547.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509202547.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509202547.png?1683988806885"></span><br>
+              <span alt="Pasted image 20230509202601.png" src="Pasted image 20230509202601.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509202601.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509202601.png?1683988806888"></span>
+            </p>
+          </div>
+          <div>
+            <h2 data-heading="Teorema" id="Teorema">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Teorema
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509202629.png" src="Pasted image 20230509202629.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509202629.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509202629.png?1683988806893"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Intuición" id="Intuición">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Intuición
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509202710.png" src="Pasted image 20230509202710.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509202710.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509202710.png?1683988806883"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Demostración del directo" id="Demostración_del_directo">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Demostración del directo
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="Hoja de ruta" id="Hoja_de_ruta">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Hoja de ruta
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509202945.png" src="Pasted image 20230509202945.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509202945.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509202945.png?1683988806892"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Demostración: esquema de codificación aleatoria" id="Demostración:_esquema_de_codificación_aleatoria">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Demostración: esquema de codificación aleatoria
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203022.png" src="Pasted image 20230509203022.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203022.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203022.png?1683988806892"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Demostración: decodificación por tipicalidad conjunta" id="Demostración:_decodificación_por_tipicalidad_conjunta">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Demostración: decodificación por tipicalidad conjunta
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203119.png" src="Pasted image 20230509203119.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203119.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203119.png?1683988806893"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Demostraci´on: an´alisis de la prob. de error" id="Demostraci´on:_an´alisis_de_la_prob._de_error">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Demostraci´on: an´alisis de la prob. de error
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203141.png" src="Pasted image 20230509203141.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203141.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203141.png?1683988806887"></span><br>
+              <span alt="Pasted image 20230509203202.png" src="Pasted image 20230509203202.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203202.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203202.png?1683988806888"></span><br>
+              <span alt="Pasted image 20230509203214.png" src="Pasted image 20230509203214.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203214.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203214.png?1683988806888"></span>
+            </p>
+          </div>
+          <div>
+            <h4 data-heading="Demostraci´on: refinamiento del c´odigo" id="Demostraci´on:_refinamiento_del_c´odigo">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Demostraci´on: refinamiento del c´odigo
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203234.png" src="Pasted image 20230509203234.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203234.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203234.png?1683988806897"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Final" id="Final">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Final
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203242.png" src="Pasted image 20230509203242.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203242.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203242.png?1683988806895"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Demostraci´on del rec´ıproco" id="Demostraci´on_del_rec´ıproco">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Demostraci´on del rec´ıproco
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="Hoja de ruta" id="Hoja_de_ruta">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Hoja de ruta
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203424.png" src="Pasted image 20230509203424.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203424.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203424.png?1683988806895"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Caso simple: probabilidad de error 0" id="Caso_simple:_probabilidad_de_error_0">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Caso simple: probabilidad de error 0
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203443.png" src="Pasted image 20230509203443.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203443.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203443.png?1683988806895"></span><br>
+              <span alt="Pasted image 20230509203454.png" src="Pasted image 20230509203454.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203454.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203454.png?1683988806895"></span><br>
+              Osea, utilizar el canal varias veces no aumenta su capacidad.
+            </p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203520.png" src="Pasted image 20230509203520.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203520.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203520.png?1683988806895"></span></p>
+          </div>
+          <div>
+            <h4 data-heading="Desigualdad de Fano para codificaci´on de canal" id="Desigualdad_de_Fano_para_codificaci´on_de_canal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Desigualdad de Fano para codificaci´on de canal
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203617.png" src="Pasted image 20230509203617.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203617.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203617.png?1683988806897"></span><br>
+              <span alt="Pasted image 20230509203626.png" src="Pasted image 20230509203626.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203626.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203626.png?1683988806900"></span>
+            </p>
+          </div>
+          <div>
+            <h4 data-heading="Rec´ıproco: demostraci´on" id="Rec´ıproco:_demostraci´on">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Rec´ıproco: demostraci´on
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203652.png" src="Pasted image 20230509203652.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203652.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203652.png?1683988806904"></span><br>
+              <span alt="Pasted image 20230509203700.png" src="Pasted image 20230509203700.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203700.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203700.png?1683988806905"></span>
+            </p>
+          </div>
+          <div>
+            <h4 data-heading="Rec´ıproco: conclusiones" id="Rec´ıproco:_conclusiones">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Rec´ıproco: conclusiones
+            </h4>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230509203737.png" src="Pasted image 20230509203737.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230509203737.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230509203737.png?1683988806905"></span></p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Información_mutua">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Información mutua</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Es_no_negativa">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Es no negativa</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Relaciones_entre_Información_Mutua_y_Entropía">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Relaciones entre Información Mutua y Entropía</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Diagrama_de_Venn">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Diagrama de Venn</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Información_Mutua_Condicional">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Información Mutua Condicional</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Es_no_negativa">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Es no negativa</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Regla_de_la_cadena">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Regla de la cadena</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Demostración">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Demostración</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Desigualdad_de_Procesamiento_de_Datos">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Desigualdad de Procesamiento de Datos</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Concavidad/Convexidad_de_I(X;Y)">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Concavidad/Convexidad de I(X;Y)</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Desigualdad_de_Fano">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Desigualdad de Fano</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Codificación_de_canal">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Codificación de canal</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Introducción">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Introducción</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Canal_discreto_sin_memoria_(DMC)">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Canal discreto sin memoria (DMC)</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Código_de_canal_(M,n)">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Código de canal (M,n)</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Probabilidad_de_error_de_un_c´odigo_para_un_canal">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Probabilidad de error de un c´odigo para un canal</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Capacidad_Operativa">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Capacidad Operativa</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Capacidad_Informacional_de_un_canal">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Capacidad Informacional de un canal</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Capacidad_informacional_de_un_canal_sin_ruido">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Capacidad informacional de un canal sin ruido</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Capacidad_informacional_del_canal_binario_simétrico_(BSC)">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Capacidad informacional del canal binario simétrico (BSC)</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Capacidad_informacional_del_canal_con_borraduras">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Capacidad informacional del canal con borraduras</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Teorema_de_codificación_de_canal">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Teorema de codificación de canal</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Enunciados_previos">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Enunciados previos</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Tipicalidad_conjunta">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Tipicalidad conjunta</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#AEP_conjunta">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">AEP conjunta</span>
+                        </a>
+                        <div class="outline-item-children">
+                          <div class="outline-item" data-size="5"><a class="outline-item-contents internal-link" href="#Demostración_de_(3)">
+                              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                  <path d="M3 8L12 17L21 8"></path>
+                                </svg></div><span class="outline-item-title">Demostración de (3)</span>
+                            </a>
+                            <div class="outline-item-children"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Teorema">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Teorema</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Intuición">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Intuición</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Demostración_del_directo">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Demostración del directo</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Hoja_de_ruta">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Hoja de ruta</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Demostración:_esquema_de_codificación_aleatoria">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Demostración: esquema de codificación aleatoria</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Demostración:_decodificación_por_tipicalidad_conjunta">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Demostración: decodificación por tipicalidad conjunta</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Demostraci´on:_an´alisis_de_la_prob._de_error">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Demostraci´on: an´alisis de la prob. de error</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Demostraci´on:_refinamiento_del_c´odigo">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Demostraci´on: refinamiento del c´odigo</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Final">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Final</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Demostraci´on_del_rec´ıproco">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Demostraci´on del rec´ıproco</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Hoja_de_ruta">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Hoja de ruta</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Caso_simple:_probabilidad_de_error_0">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Caso simple: probabilidad de error 0</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Desigualdad_de_Fano_para_codificaci´on_de_canal">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Desigualdad de Fano para codificaci´on de canal</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Rec´ıproco:_demostraci´on">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Rec´ıproco: demostraci´on</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Rec´ıproco:_conclusiones">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Rec´ıproco: conclusiones</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

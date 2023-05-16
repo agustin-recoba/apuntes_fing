@@ -1,7 +1,0 @@
-- [[1. Introducción a las Redes de Computadoras]]
-- [[2. Capa de Aplicación]]
-- [[3. Capa de Transporte]]
-- [[4. Capa de Red, plano de datos]]
-- [[5. Capa de Red, plano de control]]
-- [[6. Capa de Enlace]]
-- [[99. Otros]]

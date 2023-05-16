@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Practico 6</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../../../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../../../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../../../styles/theme.css">
+  <link rel="stylesheet" href="../../../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-mo {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-stretchy-h {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>* {
+      display: table-cell;
+      width: 0;
+    }
+
+    mjx-stretchy-h>*>mjx-c {
+      display: inline-block;
+      transform: scalex(1.0000001);
+    }
+
+    mjx-stretchy-h>*>mjx-c::before {
+      display: inline-block;
+      width: initial;
+    }
+
+    mjx-stretchy-h>mjx-ext {
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: clip visible;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c::before {
+      transform: scalex(500);
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c {
+      width: 0;
+    }
+
+    mjx-stretchy-h>mjx-beg>mjx-c {
+      margin-right: -.1em;
+    }
+
+    mjx-stretchy-h>mjx-end>mjx-c {
+      margin-left: -.1em;
+    }
+
+    mjx-stretchy-v {
+      display: inline-block;
+    }
+
+    mjx-stretchy-v>* {
+      display: block;
+    }
+
+    mjx-stretchy-v>mjx-beg {
+      height: 0;
+    }
+
+    mjx-stretchy-v>mjx-end>mjx-c {
+      display: block;
+    }
+
+    mjx-stretchy-v>*>mjx-c {
+      transform: scaley(1.0000001);
+      transform-origin: left center;
+      overflow: hidden;
+    }
+
+    mjx-stretchy-v>mjx-ext {
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 0px solid transparent;
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: visible clip;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c::before {
+      width: initial;
+      box-sizing: border-box;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c {
+      transform: scaleY(500) translateY(.075em);
+      overflow: visible;
+    }
+
+    mjx-mark {
+      display: inline-block;
+      height: 0px;
+    }
+
+    mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D43C.TEX-I::before {
+      padding: 0.683em 0.504em 0 0;
+      content: "I";
+    }
+
+    mjx-c.mjx-c28::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: "(";
+    }
+
+    mjx-c.mjx-c1D44B.TEX-I::before {
+      padding: 0.683em 0.852em 0 0;
+      content: "X";
+    }
+
+    mjx-c.mjx-c3B::before {
+      padding: 0.43em 0.278em 0.194em 0;
+      content: ";";
+    }
+
+    mjx-c.mjx-c1D44C.TEX-I::before {
+      padding: 0.683em 0.763em 0 0;
+      content: "Y";
+    }
+
+    mjx-c.mjx-c29::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: ")";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "../../..";
+    let mediaPath = "../../../media";
+    let jsPath = "../../../scripts";
+    let cssPath = "../../../styles";
+  </script>
+
+  <script src="../../../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <h1 data-heading="Ej. 1" id="Ej._1">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 1
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031160828.png" src="Pasted image 20221031160828.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031160828.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031160828.png?1683767034119"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>#Paso</th>
+                  <th>N'</th>
+                  <th>w</th>
+                  <th>i</th>
+                  <th>(D(i), p(i))</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>z</td>
+                  <td>8, x</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>y</td>
+                  <td>6, x</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>v</td>
+                  <td>3, x</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>w</td>
+                  <td>6, x</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>t</td>
+                  <td><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-n"><mjx-c class="mjx-c221E"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi mathvariant="normal">∞</mi>
+                          </math></mjx-assistive-mml></mjx-container></span>, -</td>
+                </tr>
+                <tr>
+                  <td>0</td>
+                  <td>x</td>
+                  <td>x</td>
+                  <td>u</td>
+                  <td><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-n"><mjx-c class="mjx-c221E"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi mathvariant="normal">∞</mi>
+                          </math></mjx-assistive-mml></mjx-container></span>, -</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>x, v</td>
+                  <td>v</td>
+                  <td>y</td>
+                  <td>6, x</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>x, v</td>
+                  <td>v</td>
+                  <td>t</td>
+                  <td>7, v</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>x, v</td>
+                  <td>v</td>
+                  <td>u</td>
+                  <td>6, v</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>x, v</td>
+                  <td>v</td>
+                  <td>w</td>
+                  <td>6, x</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th><strong>i</strong></th>
+                  <th><strong>D(i)</strong></th>
+                  <th><strong>p(i)</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>x</td>
+                  <td>0</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>z</td>
+                  <td>8</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>y</td>
+                  <td>6</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>v</td>
+                  <td>3</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>w</td>
+                  <td>6</td>
+                  <td>x</td>
+                </tr>
+                <tr>
+                  <td>t</td>
+                  <td>7</td>
+                  <td>v</td>
+                </tr>
+                <tr>
+                  <td>u</td>
+                  <td>6</td>
+                  <td>v</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 2" id="Ej._2">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 2
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031160906.png" src="Pasted image 20221031160906.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031160906.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031160906.png?1683767034117"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 3" id="Ej._3">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 3
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031160927.png" src="Pasted image 20221031160927.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031160927.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031160927.png?1683767034125"></span><br>
+                  <span alt="Pasted image 20221031160938.png" src="Pasted image 20221031160938.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031160938.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031160938.png?1683767034115"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>z:<br>
+              | - | z | v | w | y | x | | - | z | v | w | y | x | |<br>
+              | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |<br>
+              | z | 0 | 6 | inf | inf | 2 | | z | 0 | 5 | 7 | 5 | 2 | |<br>
+              | v | ? | ? | ? | ? | ? | | v | 6 | 0 | 1 | inf | 3 | |<br>
+              | w | ? | ? | ? | ? | ? | | w | ? | ? | ? | ? | ? | |<br>
+              | y | ? | ? | ? | ? | ? | | y | ? | ? | ? | ? | ? | |<br>
+              | x | ? | ? | ? | ? | ? | | x | 2 | 3 | inf | 3 | 0 | |</p>
+          </div>
+          <div>
+            <p>v:<br>
+              | - | z | v | w | y | x | | - | z | v | w | y | x |<br>
+              | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |<br>
+              | z | ? | ? | ? | ? | ? | | z | 0 | 6 | inf | inf | 2 |<br>
+              | v | 6 | 0 | 1 | inf | 3 | | v | 5 | 0 | 1 | 3 | 3 |<br>
+              | w | ? | ? | ? | ? | ? | | w | inf | 1 | 0 | 2 | inf |<br>
+              | y | ? | ? | ? | ? | ? | | y | ? | ? | ? | ? | ? |<br>
+              | x | ? | ? | ? | ? | ? | | x | 2 | 3 | inf | 3 | 0 |</p>
+          </div>
+          <div>
+            <p>x:<br>
+              | - | z | v | w | y | x | | - | z | v | w | y | x |<br>
+              | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |<br>
+              | z | ? | ? | ? | ? | ? | | z | 0 | 6 | inf | inf | 2 |<br>
+              | v | ? | ? | ? | ? | ? | | v | 6 | 0 | 1 | inf | 3 |<br>
+              | w | ? | ? | ? | ? | ? | | w | ? | ? | ? | ? | ? |<br>
+              | y | ? | ? | ? | ? | ? | | y | inf | inf | 2 | 0 | 3 |<br>
+              | x | 2 | 3 | inf | 3 | 0 | | x | 2 | 3 | 4 | 3 | 0 |</p>
+          </div>
+          <div>
+            <p>y:<br>
+              | - | z | v | w | y | x | | - | z | v | w | y | x |<br>
+              | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |<br>
+              | z | ? | ? | ? | ? | ? | | z | ? | ? | ? | ? | ? |<br>
+              | v | ? | ? | ? | ? | ? | | v | ? | ? | ? | ? | ? |<br>
+              | w | ? | ? | ? | ? | ? | | w | inf | 1 | 0 | 2 | inf |<br>
+              | y | inf | inf | 2 | 0 | 3 | | y | 5 | 3 | 2 | 0 | 3 |<br>
+              | x | ? | ? | ? | ? | ? | | x | 2 | 3 | inf | 3 | 0 |</p>
+          </div>
+          <div>
+            <p>w:<br>
+              | - | z | v | w | y | x | | - | z | v | w | y | x |<br>
+              | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |<br>
+              | z | ? | ? | ? | ? | ? | | z | ? | ? | ? | ? | ? |<br>
+              | v | ? | ? | ? | ? | ? | | v | 6 | 0 | 1 | inf | 3 |<br>
+              | w | inf | 1 | 0 | 2 | inf | | w | 7 | 1 | 0 | 2 | 4 |<br>
+              | y | ? | ? | ? | ? | ? | | y | inf | inf | 2 | 0 | 3 |<br>
+              | z | ? | ? | ? | ? | ? | | z | ? | ? | ? | ? | ? |</p>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 4" id="Ej._4">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 4
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031160954.png" src="Pasted image 20221031160954.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031160954.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031160954.png?1683767034119"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>NO, this is because that decreasing link cost won’t cause a loop (caused by the next-hop relation of between two nodes of that link). Connecting two nodes with a link is equivalent to decreasing the link weight from infinite to the finite weight.</p>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 5" id="Ej._5">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 5
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031183341.png" src="Pasted image 20221031183341.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031183341.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031183341.png?1683767034119"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="Parte a" id="Parte_a">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte a
+            </h2>
+          </div>
+          <div>
+            <p>eBGP, pues obitiene el dato de 4c (un router externo a AS3).</p>
+          </div>
+          <div>
+            <h2 data-heading="Parte b" id="Parte_b">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte b
+            </h2>
+          </div>
+          <div>
+            <p>iBGP, pues obtiene el dato de 3c (interno a AS3) y x no pertenece a AS3.</p>
+          </div>
+          <div>
+            <h2 data-heading="Parte c" id="Parte_c">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte c
+            </h2>
+          </div>
+          <div>
+            <p>eBGP, pues obitiene el dato de 3a (un router externo a AS1).</p>
+          </div>
+          <div>
+            <h2 data-heading="Parte d" id="Parte_d">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte d
+            </h2>
+          </div>
+          <div>
+            <p>iBGP, pues obtiene el dato de 1c (interno a AS1) y x no pertenece a AS3.</p>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 6" id="Ej._6">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 6
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031185540.png" src="Pasted image 20221031185540.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031185540.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031185540.png?1683767034117"></span><br>
+                  <span alt="Pasted image 20221031185551.png" src="Pasted image 20221031185551.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031185551.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031185551.png?1683767034125"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="Parte a:" id="Parte_a:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte a:
+            </h2>
+          </div>
+          <div>
+            <p>Como el router de salida es <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <mn>1</mn>
+                      <mi>c</mi>
+                    </math></mjx-assistive-mml></mjx-container></span>, el camino más corto (menor costo) empieza por el enlace <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <mn>1</mn>
+                      <mi>d</mi>
+                    </math></mjx-assistive-mml></mjx-container></span>-<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <mn>1</mn>
+                      <mi>a</mi>
+                    </math></mjx-assistive-mml></mjx-container></span>, el cual toma la interfaz <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.064em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <msub>
+                        <mi>I</mi>
+                        <mn>1</mn>
+                      </msub>
+                    </math></mjx-assistive-mml></mjx-container></span>.</p>
+          </div>
+          <div>
+            <h2 data-heading="Parte b:" id="Parte_b:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte b:
+            </h2>
+          </div>
+          <div>
+            <p>Dos rutas:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Ruta 1:
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>AS-PATH = [AS2, AS4, x]
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>NEXT-HOP = <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mn>1</mn>
+                            <mi>b</mi>
+                          </math></mjx-assistive-mml></mjx-container></span>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Ruta 2:
+                <ul class="has-list-bullet">
+                  <li data-line="4">
+                    <div class="list-bullet"></div>AS-PATH = [AS3, AS4, x]
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>NEXT-HOP = <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D450 TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mn>1</mn>
+                            <mi>c</mi>
+                          </math></mjx-assistive-mml></mjx-container></span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Como el largo del AS-PATH es idéntico en ambas rutas, se desempata por el camino hasta el NEXT-HOP más corto. Este es <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44F TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <mn>1</mn>
+                      <mi>b</mi>
+                    </math></mjx-assistive-mml></mjx-container></span>. Por lo tanto, <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.064em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <mi>I</mi>
+                      <mo>=</mo>
+                      <msub>
+                        <mi>I</mi>
+                        <mn>2</mn>
+                      </msub>
+                    </math></mjx-assistive-mml></mjx-container></span>.</p>
+          </div>
+          <div>
+            <h2 data-heading="Parte c:" id="Parte_c:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte c:
+            </h2>
+          </div>
+          <div>
+            <p>Ahora el largo del AS-PATH de la ruta 1 aumenta a 3, por lo que la ruta elegida será la 2. La salida es por <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.064em;"><mjx-mn class="mjx-n" size="s"><mjx-c class="mjx-c31"></mjx-c></mjx-mn></mjx-script></mjx-msub></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
+                      <msub>
+                        <mi>I</mi>
+                        <mn>1</mn>
+                      </msub>
+                    </math></mjx-assistive-mml></mjx-container></span>.</p>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 7" id="Ej._7">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 7
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031191317.png" src="Pasted image 20221031191317.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031191317.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031191317.png?1683767034126"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20221031192053.png" src="Pasted image 20221031192053.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031192053.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031192053.png?1683767034125"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 8" id="Ej._8">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 8
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031192201.png" src="Pasted image 20221031192201.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031192201.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031192201.png?1683767034126"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>A debería anunciar a B dos rutas:<br>
+              - A-W<br>
+              - A-V.<br>
+              A debería anunciar a C una única ruta:<br>
+              - A-V.</p>
+          </div>
+          <div>
+            <p> C recibe dos AS-PATH:<br>
+              - B-A-W,<br>
+              - B-A-V,<br>
+              - A-V</p>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 9" id="Ej._9">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 9
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031194040.png" src="Pasted image 20221031194040.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031194040.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031194040.png?1683767034126"></span><br>
+                  <span alt="Pasted image 20221031194103.png" src="Pasted image 20221031194103.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031194103.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031194103.png?1683767034127"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="Parte a:" id="Parte_a:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte a:
+            </h2>
+          </div>
+          <div>
+            <p>NOTA: 122.0.0.0/7 agrupa las subredes A y B.</p>
+          </div>
+          <div>
+            <h3 data-heading="AS3_a" id="AS3_a">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>AS3_a
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Prefijo</th>
+                  <th>Interfaz de salida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>123.0.0.0/8</td>
+                  <td>eth0</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>eth1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="AS2_a" id="AS2_a">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>AS2_a
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Prefijo</th>
+                  <th>Interfaz de salida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>200.128.0.0/9</td>
+                  <td>eth1</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>eth0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="AS2_b" id="AS2_b">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>AS2_b
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Prefijo</th>
+                  <th>Interfaz de salida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>200.128.0.0/9</td>
+                  <td>eth0</td>
+                </tr>
+                <tr>
+                  <td>200.64.0.0/10</td>
+                  <td>eth2</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>eth1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="AS1_a" id="AS1_a">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>AS1_a
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Prefijo</th>
+                  <th>Interfaz de salida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>122.0.0.0/7</td>
+                  <td>eth0</td>
+                </tr>
+                <tr>
+                  <td>200.128.0.0/9</td>
+                  <td>eth0</td>
+                </tr>
+                <tr>
+                  <td>200.64.0.0/10</td>
+                  <td>eth0</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>eth1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="AS1_b" id="AS1_b">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>AS1_b
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Prefijo</th>
+                  <th>Interfaz de salida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>200.128.0.0/9</td>
+                  <td>eth1</td>
+                </tr>
+                <tr>
+                  <td>200.64.0.0/10</td>
+                  <td>eth1</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>eth0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="AS1_c" id="AS1_c">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>AS1_c
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Prefijo</th>
+                  <th>Interfaz de salida</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>122.0.0.0/8</td>
+                  <td>eth0</td>
+                </tr>
+                <tr>
+                  <td>200.128.0.0/9</td>
+                  <td>eth2</td>
+                </tr>
+                <tr>
+                  <td>200.64.0.0/10</td>
+                  <td>eth2</td>
+                </tr>
+                <tr>
+                  <td>123.0.0.0/8</td>
+                  <td>eth3</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>eth1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h2 data-heading="Parte b:" id="Parte_b:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte b:
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="Tablas de a:" id="Tablas_de_a:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tablas de a:
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                  <th></th>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                  <th></th>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>a</td>
+                  <td>0</td>
+                  <td>7</td>
+                  <td>5</td>
+                  <td></td>
+                  <td>a</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>5</td>
+                  <td></td>
+                  <td>a</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td></td>
+                  <td>b</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td></td>
+                  <td>b</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>c</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td></td>
+                  <td>c</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td></td>
+                  <td>c</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="Tablas de b:" id="Tablas_de_b:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tablas de b:
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                  <th></th>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                  <th></th>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>a</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td></td>
+                  <td>a</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td>?</td>
+                  <td></td>
+                  <td>a</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>7</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>b</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>b</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>c</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td></td>
+                  <td>c</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td></td>
+                  <td>c</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h3 data-heading="Tablas de c:" id="Tablas_de_c:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tablas de c:
+            </h3>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                  <th></th>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                  <th></th>
+                  <th>-</th>
+                  <th>a</th>
+                  <th>b</th>
+                  <th>c</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>a</td>
+                  <td>0</td>
+                  <td>7</td>
+                  <td>5</td>
+                  <td></td>
+                  <td>a</td>
+                  <td>0</td>
+                  <td>7</td>
+                  <td>5</td>
+                  <td></td>
+                  <td>a</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>b</td>
+                  <td>7</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>b</td>
+                  <td>7</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td></td>
+                  <td>b</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>c</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td></td>
+                  <td>c</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td></td>
+                  <td>c</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div>
+            <h1 data-heading="Ej. 10" id="Ej._10">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ej. 10
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-abstract-parent">
+            <div class="callout admonition admonition-abstract admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 176, 255;" data-callout="abstract" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book" class="svg-inline--fa fa-book fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path fill="currentColor" d="M448 360V24c0-13.3-10.7-24-24-24H96C43 0 0 43 0 96v320c0 53 43 96 96 96h328c13.3 0 24-10.7 24-24v-16c0-7.5-3.5-14.3-8.9-18.7-4.2-15.4-4.2-59.3 0-74.7 5.4-4.3 8.9-11.1 8.9-18.6zM128 134c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm0 64c0-3.3 2.7-6 6-6h212c3.3 0 6 2.7 6 6v20c0 3.3-2.7 6-6 6H134c-3.3 0-6-2.7-6-6v-20zm253.4 250H96c-17.7 0-32-14.3-32-32 0-17.6 14.4-32 32-32h285.4c-1.9 17.1-1.9 46.9 0 64z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Letra</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20221031204620.png" src="Pasted image 20221031204620.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031204620.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031204620.png?1683767034130"></span><br>
+                  <span alt="Pasted image 20221031204631.png" src="Pasted image 20221031204631.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031204631.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031204631.png?1683767034127"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="Parte a:" id="Parte_a:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte a:
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20221031210008.png" src="Pasted image 20221031210008.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031210008.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031210008.png?1683767034129"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Parte b:" id="Parte_b:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte b:
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="R1:" id="R1:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>R1:
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20221031210038.png" src="Pasted image 20221031210038.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031210038.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031210038.png?1683767034130"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="R4:" id="R4:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>R4:
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20221031210109.png" src="Pasted image 20221031210109.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031210109.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031210109.png?1683767034130"></span><br>
+              <span alt="Pasted image 20221031210122.png" src="Pasted image 20221031210122.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031210122.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031210122.png?1683767034131"></span>
+            </p>
+          </div>
+          <div>
+            <h2 data-heading="Parte c:" id="Parte_c:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Parte c:
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20221031210207.png" src="Pasted image 20221031210207.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221031210207.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221031210207.png?1683767034132"></span></p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._1">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 1</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._2">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 2</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._3">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 3</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._4">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 4</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._5">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 5</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_a">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte a</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_b">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte b</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_c">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte c</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_d">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte d</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._6">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 6</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_a:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte a:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_b:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte b:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_c:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte c:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._7">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 7</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._8">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 8</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._9">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 9</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_a:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte a:</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#AS3_a">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">AS3_a</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#AS2_a">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">AS2_a</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#AS2_b">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">AS2_b</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#AS1_a">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">AS1_a</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#AS1_b">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">AS1_b</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#AS1_c">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">AS1_c</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_b:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte b:</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Tablas_de_a:">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Tablas de a:</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Tablas_de_b:">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Tablas de b:</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Tablas_de_c:">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Tablas de c:</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ej._10">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ej. 10</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_a:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte a:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_b:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte b:</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#R1:">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">R1:</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#R4:">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">R4:</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Parte_c:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Parte c:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Capítulo 2 - Proceso de software</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-mo {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-stretchy-h {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>* {
+      display: table-cell;
+      width: 0;
+    }
+
+    mjx-stretchy-h>*>mjx-c {
+      display: inline-block;
+      transform: scalex(1.0000001);
+    }
+
+    mjx-stretchy-h>*>mjx-c::before {
+      display: inline-block;
+      width: initial;
+    }
+
+    mjx-stretchy-h>mjx-ext {
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: clip visible;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c::before {
+      transform: scalex(500);
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c {
+      width: 0;
+    }
+
+    mjx-stretchy-h>mjx-beg>mjx-c {
+      margin-right: -.1em;
+    }
+
+    mjx-stretchy-h>mjx-end>mjx-c {
+      margin-left: -.1em;
+    }
+
+    mjx-stretchy-v {
+      display: inline-block;
+    }
+
+    mjx-stretchy-v>* {
+      display: block;
+    }
+
+    mjx-stretchy-v>mjx-beg {
+      height: 0;
+    }
+
+    mjx-stretchy-v>mjx-end>mjx-c {
+      display: block;
+    }
+
+    mjx-stretchy-v>*>mjx-c {
+      transform: scaley(1.0000001);
+      transform-origin: left center;
+      overflow: hidden;
+    }
+
+    mjx-stretchy-v>mjx-ext {
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 0px solid transparent;
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: visible clip;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c::before {
+      width: initial;
+      box-sizing: border-box;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c {
+      transform: scaleY(500) translateY(.075em);
+      overflow: visible;
+    }
+
+    mjx-mark {
+      display: inline-block;
+      height: 0px;
+    }
+
+    mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D43C.TEX-I::before {
+      padding: 0.683em 0.504em 0 0;
+      content: "I";
+    }
+
+    mjx-c.mjx-c28::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: "(";
+    }
+
+    mjx-c.mjx-c1D44B.TEX-I::before {
+      padding: 0.683em 0.852em 0 0;
+      content: "X";
+    }
+
+    mjx-c.mjx-c3B::before {
+      padding: 0.43em 0.278em 0.194em 0;
+      content: ";";
+    }
+
+    mjx-c.mjx-c1D44C.TEX-I::before {
+      padding: 0.683em 0.763em 0 0;
+      content: "Y";
+    }
+
+    mjx-c.mjx-c29::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: ")";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "..";
+    let mediaPath = "../media";
+    let jsPath = "../scripts";
+    let cssPath = "../styles";
+  </script>
+
+  <script src="../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div>
+          <h1 id="Capítulo_2_-_Proceso_de_software">
+            <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                <path d="M3 8L12 17L21 8"></path>
+              </svg></div>Capítulo 2 - Proceso de software
+          </h1>
+        </div>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <p>Un proceso de software es un conjunto de actividades relacionadas que lleva a la producción de un sistema de software. Las cuatro etapas son complejas e incluyen subactividades, y el propio proceso puede tener otras actividades.</p>
+          </div>
+          <div>
+            <h2 data-heading="Plan-driven y ágiles" id="Plan-driven_y_ágiles">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Plan-driven y ágiles
+            </h2>
+          </div>
+          <div>
+            <p>En ocasiones, los procesos de software se clasifican como dirigidos por un plan (plan-driven) o como procesos ágiles.<br>
+              <strong>Los procesos dirigidos por un plan</strong> son aquellos donde todas las actividades del proceso se planean por anticipado y el avance se mide contra dicho plan.<br>
+              En <strong>los procesos ágiles</strong>, la planeación es incremental y es más fácil modificar el proceso para reflejar los requerimientos cambiantes del cliente.
+            </p>
+          </div>
+          <div>
+            <p>Por lo general, uno necesita encontrar un equilibrio entre procesos dirigidos por un plan y procesos ágiles.<br>
+              Aunque no hay un proceso de software “ideal”, en muchas organizaciones sí existe un ámbito para mejorar el proceso de software.</p>
+          </div>
+          <div>
+            <h1 data-heading="Modelos de proceso de software" id="Modelos_de_proceso_de_software">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Modelos de proceso de software
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="Descripciones del proceso" id="Descripciones_del_proceso">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Descripciones del proceso
+            </h2>
+          </div>
+          <div>
+            <p>Cuando se describe un proceso, generalmente hablamos de las actividades de dicho proceso (“especificar el modelo de datos”, “diseñar la interfaz de usuario”) y el orden en el cual se deberían realizar.<br>
+              Las descripciones de los procesos <strong>también deben incluir</strong>:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0"><strong>Productos</strong>, que son los resultados de una actividad del proceso.</li>
+              <li data-line="1"><strong>Roles</strong>, que reflejan las responsabilidades de la gente que interviene en el proceso.</li>
+              <li data-line="2"><strong>Precondiciones y postcondiciones</strong>, que son declaraciones válidas antes y después de que se realice una actividad del proceso o se cree un producto.</li>
+            </ol>
+          </div>
+          <div>
+            <h2 data-heading="Algunos modelos" id="Algunos_modelos">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Algunos modelos
+            </h2>
+          </div>
+          <div>
+            <p><a data-href="Ejemplos de modelos o SDLC" href="../introducción-a-la-ingeniería-de-software/extras/ejemplos-de-modelos-o-sdlc.html" class="internal-link" target="_self" rel="noopener">Ejemplos de modelos o SDLC</a></p>
+          </div>
+          <div>
+            <p>Dichos modelos <strong>no son mutuamente excluyentes</strong> y con frecuencia se usan en conjunto, sobre todo para el desarrollo de grandes sistemas. Para este tipo de sistemas, tiene sentido combinar algunas de las mejores características de los modelos de desarrollo en cascada e incremental. Se necesita contar con información sobre los requerimientos esenciales del sistema para diseñar la arquitectura de software que apoye dichos requerimientos. No puede desarrollarse de manera incremental.<br>
+              <strong>Los subsistemas dentro de un sistema más grande se desarrollan usando diferentes enfoques.</strong> Partes del sistema que son bien comprendidas pueden especificarse y desarrollarse al utilizar un proceso basado en cascada. Partes del sistema que por adelantado son difíciles de especificar, como la interfaz de usuario, siempre deben desarrollarse con un enfoque incremental.
+            </p>
+          </div>
+          <div>
+            <h1 data-heading="Actividades del proceso de software" id="Actividades_del_proceso_de_software">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Actividades del proceso de software
+            </h1>
+          </div>
+          <div>
+            <p>Existen muchos diferentes procesos de software, pero todos deben incluir cuatro actividades que son fundamentales para la ingeniería de software.</p>
+          </div>
+          <div>
+            <h2 data-heading="1. Especificación del software" id="1._Especificación_del_software">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>1. Especificación del software
+            </h2>
+          </div>
+          <div>
+            <p>Tienen que definirse tanto la <strong>funcionalidad</strong> del software como las <strong>restricciones</strong> de su operación. Por lo general, los requerimientos se presentan en dos niveles de detalle. Los usuarios finales y clientes necesitan un informe de requerimientos de alto nivel; los desarrolladores de sistemas precisan una descripción más detallada del sistema.</p>
+          </div>
+          <div>
+            <p>Existen cuatro actividades principales en el proceso de ingeniería de requerimientos:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Estudio de factibilidad</strong>
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><strong>Obtención y análisis de requerimientos</strong>
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><strong>Especificación de requerimientos</strong>
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div><strong>Validación de requerimientos</strong>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="2. Diseño e implementación del software" id="2._Diseño_e_implementación_del_software">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>2. Diseño e implementación del software
+            </h2>
+          </div>
+          <div>
+            <p>Debe desarrollarse el software para cumplir con las especificaciones. La etapa de implementación de desarrollo del software corresponde al proceso de convertir una especificación del sistema en un sistema ejecutable. Siempre incluye procesos de diseño y programación de software, aunque también puede involucrar la corrección en la especificación del software.<br>
+              Un diseño de software (el producto) se entiende como una descripción de la estructura del software que se va a implementar, los modelos y las estructuras de datos utilizados por el sistema, las interfaces entre componentes del sistema y, en ocasiones, los algoritmos usados.</p>
+          </div>
+          <div>
+            <p>Las actividades en el proceso de diseño varían dependiendo del tipo de sistema a desarrollar:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Diseño arquitectónico</strong>, aquí se identifica la estructura global del sistema, los principales componentes (llamados en ocasiones subsistemas o módulos), sus relaciones y cómo se distribuyen.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><strong>Diseño de interfaz</strong>, en éste se definen las interfaces entre los componentes de sistemas. Esta especificación de interfaz no tiene que presentar ambigüedades. Con una interfaz precisa, es factible usar un componente sin que otros tengan que saber cómo se implementó. Una vez que se acuerdan las especificaciones de interfaz, los componentes se diseñan y se desarrollan de manera concurrente.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><strong>Diseño de componentes</strong>, en él se toma cada componente del sistema y se diseña cómo funcionará. Esto puede ser un simple dato de la funcionalidad que se espera implementar, y al programador se le deja el diseño específico. Como alternativa, habría una lista de cambios a realizar sobre un componente que se reutiliza o sobre un modelo de diseño detallado. El modelo de diseño sirve para generar en automático una implementación.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div><strong>Diseño de base de datos</strong>, donde se diseñan las estructuras del sistema de datos y cómo se representarán en una base de datos. De nuevo, el trabajo aquí depende de si una base de datos se reutilizará o se creará una nueva.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="3. Validación del software" id="3._Validación_del_software">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>3. Validación del software
+            </h2>
+          </div>
+          <div>
+            <p>Por lo general, los programadores realizan algunas pruebas del código que desarrollaron. Esto revela con frecuencia defectos del programa que deben eliminarse del programa. A esta actividad se le llama depuración (debugging). La prueba de defectos y la depuración son procesos diferentes. La primera establece la existencia de defectos, en tanto que la segunda se dedica a localizar y corregir dichos defectos.</p>
+          </div>
+          <div>
+            <p>Se crea para mostrar que un sistema cumple tanto con sus especificaciones como con las expectativas del cliente. Las pruebas del programa, donde el sistema se ejecuta a través de datos de prueba simulados, son la principal técnica de validación. Esta última también puede incluir procesos de comprobación, como inspecciones y revisiones en cada etapa del proceso de software.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Prueba de desarrollo</strong><br>
+                Las personas que desarrollan el sistema ponen a prueba los componentes que constituyen el sistema. Cada componente se prueba de manera independiente, es decir, sin otros componentes del sistema. Éstos pueden ser simples entidades, como funciones o clases de objeto, o agrupamientos coherentes de dichas entidades. Por lo general, se usan herramientas de automatización de pruebas.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><strong>Pruebas del sistema</strong><br>
+                Los componentes del sistema se integran para crear un sistema completo. Este proceso tiene la finalidad de descubrir errores que resulten de interacciones no anticipadas entre componentes y problemas de interfaz de componente, así como de mostrar que el sistema cubre sus requerimientos funcionales y no funcionales, y poner a prueba las propiedades emergentes del sistema.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div><strong>Pruebas de aceptación</strong><br>
+                Ésta es la etapa final en el proceso de pruebas, antes de que el sistema se acepte para uso operacional. El sistema se pone a prueba con datos suministrados por el cliente del sistema, en vez de datos de prueba simulados.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>En desarrollo incremental, cada incremento se prueba según sus requerimientos. En desarrollo dirigido por pruebas, las mismas se desarrollan junto con los requerimientos antes de empezar. En desarrollo por plan, se hacen planes de prueba (el modelo en V). El beta testing consiste en enviar el software a posibles clientes para que reporten problemas.</p>
+          </div>
+          <div>
+            <h2 data-heading="4. Evolución del software" id="4._Evolución_del_software">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4. Evolución del software
+            </h2>
+          </div>
+          <div>
+            <p>El software tiene que evolucionar para satisfacer las necesidades cambiantes del cliente. La distinción entre desarrollo y mantenimiento es cada vez más irrelevante. Es muy difícil que cualquier sistema de software sea un sistema completamente nuevo, y tiene mucho más sentido ver el desarrollo y el mantenimiento como un continuo. En lugar de dos procesos separados, es más realista pensar en la ingeniería de software como un proceso evolutivo, donde el software cambia continuamente a lo largo de su vida, en función de los requerimientos y las necesidades cambiantes del cliente.</p>
+          </div>
+          <div>
+            <h1 data-heading="Cómo enfrentar el cambio" id="Cómo_enfrentar_el_cambio">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Cómo enfrentar el cambio
+            </h1>
+          </div>
+          <div>
+            <p>Cualquiera que sea el modelo del proceso de software utilizado, es esencial que ajuste los cambios al software a desarrollar. El cambio se agrega a los costos del desarrollo de software debido a que, por lo general, significa que el trabajo ya terminado debe volver a realizarse. A esto se le llama <strong>rehacer</strong>.</p>
+          </div>
+          <div>
+            <p>Existen dos enfoques relacionados que se usan para reducir los costos del rehacer:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0"><strong>Anticipar el cambio</strong>, donde el proceso de software incluye actividades que anticipan cambios posibles antes de requerirse la labor significativa de rehacer.</li>
+              <li data-line="1"><strong>Tolerancia al cambio</strong>, donde el proceso se diseña de modo que los cambios se ajusten con un costo relativamente bajo.</li>
+            </ol>
+          </div>
+          <div>
+            <h2 data-heading="Dos formas de enfrentar el cambio:" id="Dos_formas_de_enfrentar_el_cambio:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Dos formas de enfrentar el cambio:
+            </h2>
+          </div>
+          <div>
+            <p><strong>Un prototipo</strong> se debe desarrollar de forma rápida e iterativa para que los costos sean controlados y se pueda experimentar con él de forma temprana. Los prototipos les permiten a los potenciales usuarios ver si el sistema les sirve, e incluso puede revelar nuevos requerimientos o errores.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230306193900.png" src="Pasted image 20230306193900.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230306193900.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230306193900.png?1683989080676"></span></p>
+          </div>
+          <div>
+            <p>Los prototipos permiten verificar si un requerimiento es realizable. El objetivo de un prototipo se debe definir desde el principio: desarrollar la interfaz de usuario, un sistema para validar requerimientos, o mostrar la aplicación. Suelen no ser compatibles. Finalmente, para evaluar un prototipo, hay que entrenar al usuario, que no está acostumbrado, y puede no dar resultados correctos.</p>
+          </div>
+          <div>
+            <p><strong>Las entregas incrementales</strong> funcionan con las características del desarrollo incremental. Cada incremento es probado por el cliente, por lo que pueden experimentar para agregar nuevos requerimientos. Como las partes más importantes son las que reciben más testing, por ser hechas primero, tendrán menos errores. Es difícil de implementar cuando se está reemplazando un sistema existente, pues los usuarios están acostumbrados a tener todas las funcionalidades. No es aplicable para los mismos casos que el modelo en cascada sí lo es; en estos casos, son mejores los prototipos.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230421185631.png" src="Pasted image 20230421185631.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230421185631.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230421185631.png?1683989080788"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Mejora de procesos" id="Mejora_de_procesos">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Mejora de procesos
+            </h1>
+          </div>
+          <div>
+            <p>El <strong>enfoque de madurez de procesos</strong> busca mejorar la calidad del producto y que el proceso sea predecible. Por otro lado, el <strong>enfoque ágil</strong> sostiene que los mejores procesos son los que tienen menores costos generales. El primero se basa en desarrollo dirigido por planes y tiene mayores costos, mientras que el segundo disminuye la formalidad y documentación, enfocándose en el código.</p>
+          </div>
+          <div>
+            <p>El análisis de procesos se puede hacer con características como velocidad y robustez. En el primer ciclo de cambios hay que recoger información del proceso para poder mejorar. Es una actividad a largo plazo y continua, dados los cambios del mercado. La madurez de los procesos refleja la administración y medidas de los mismos, así como el uso de buenas prácticas de ingeniería de software por parte de la compañía.</p>
+          </div>
+          <div>
+            <p>En el nivel <strong>inicial</strong> del modelo de madurez de procesos, los objetivos del área están satisfechos. En el nivel <strong>gestionado</strong>, además debe haber documentación de los objetivos, y monitorear los procesos. En el nivel <strong>definido</strong>, se estandarizan los procesos, y se obtienen medidas para el futuro. En el nivel <strong>gestionado cuantitativamente</strong>, se usan medidas cuantitativas para controlar subprocesos. En el nivel de <strong>optimización</strong>, se usan las medidas obtenidas para mejorar los procesos.</p>
+          </div>
+          <div>
+            <p>Las dificultades de aplicar este modelo por sus costos en modelos ágiles resultan en que sólo compañías grandes lo usan.</p>
+          </div>
+          <div>
+            <h1 data-heading="Extras" id="Extras">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Extras
+            </h1>
+          </div>
+          <div>
+            <p><a data-href="MUM" href="../introducción-a-la-ingeniería-de-software/extras/mum.html" class="internal-link" target="_self" rel="noopener">MUM</a></p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Capítulo_2_-_Proceso_de_software">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Capítulo 2 - Proceso de software</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Plan-driven_y_ágiles">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Plan-driven y ágiles</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Modelos_de_proceso_de_software">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Modelos de proceso de software</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Descripciones_del_proceso">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Descripciones del proceso</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Algunos_modelos">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Algunos modelos</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Actividades_del_proceso_de_software">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Actividades del proceso de software</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#1._Especificación_del_software">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">1. Especificación del software</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#2._Diseño_e_implementación_del_software">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">2. Diseño e implementación del software</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#3._Validación_del_software">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">3. Validación del software</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#4._Evolución_del_software">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">4. Evolución del software</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Cómo_enfrentar_el_cambio">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Cómo enfrentar el cambio</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Dos_formas_de_enfrentar_el_cambio:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Dos formas de enfrentar el cambio:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Mejora_de_procesos">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Mejora de procesos</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Extras">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Extras</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

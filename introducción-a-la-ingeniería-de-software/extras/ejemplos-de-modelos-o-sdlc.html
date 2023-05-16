@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Ejemplos de modelos o SDLC</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../../styles/theme.css">
+  <link rel="stylesheet" href="../../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-mo {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-stretchy-h {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>* {
+      display: table-cell;
+      width: 0;
+    }
+
+    mjx-stretchy-h>*>mjx-c {
+      display: inline-block;
+      transform: scalex(1.0000001);
+    }
+
+    mjx-stretchy-h>*>mjx-c::before {
+      display: inline-block;
+      width: initial;
+    }
+
+    mjx-stretchy-h>mjx-ext {
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: clip visible;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c::before {
+      transform: scalex(500);
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c {
+      width: 0;
+    }
+
+    mjx-stretchy-h>mjx-beg>mjx-c {
+      margin-right: -.1em;
+    }
+
+    mjx-stretchy-h>mjx-end>mjx-c {
+      margin-left: -.1em;
+    }
+
+    mjx-stretchy-v {
+      display: inline-block;
+    }
+
+    mjx-stretchy-v>* {
+      display: block;
+    }
+
+    mjx-stretchy-v>mjx-beg {
+      height: 0;
+    }
+
+    mjx-stretchy-v>mjx-end>mjx-c {
+      display: block;
+    }
+
+    mjx-stretchy-v>*>mjx-c {
+      transform: scaley(1.0000001);
+      transform-origin: left center;
+      overflow: hidden;
+    }
+
+    mjx-stretchy-v>mjx-ext {
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 0px solid transparent;
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: visible clip;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c::before {
+      width: initial;
+      box-sizing: border-box;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c {
+      transform: scaleY(500) translateY(.075em);
+      overflow: visible;
+    }
+
+    mjx-mark {
+      display: inline-block;
+      height: 0px;
+    }
+
+    mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D43C.TEX-I::before {
+      padding: 0.683em 0.504em 0 0;
+      content: "I";
+    }
+
+    mjx-c.mjx-c28::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: "(";
+    }
+
+    mjx-c.mjx-c1D44B.TEX-I::before {
+      padding: 0.683em 0.852em 0 0;
+      content: "X";
+    }
+
+    mjx-c.mjx-c3B::before {
+      padding: 0.43em 0.278em 0.194em 0;
+      content: ";";
+    }
+
+    mjx-c.mjx-c1D44C.TEX-I::before {
+      padding: 0.683em 0.763em 0 0;
+      content: "Y";
+    }
+
+    mjx-c.mjx-c29::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: ")";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "../..";
+    let mediaPath = "../../media";
+    let jsPath = "../../scripts";
+    let cssPath = "../../styles";
+  </script>
+
+  <script src="../../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <p><span alt="Pasted image 20230306211120.png" src="Pasted image 20230306211120.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230306211120.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230306211120.png?1683989080689"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Modelo de Cascada" id="Modelo_de_Cascada">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Modelo de Cascada
+            </h1>
+          </div>
+          <div>
+            <p>El&nbsp;<strong>modelo de cascada</strong>&nbsp;es un flujo secuencial lineal.&nbsp;En el que se considera que el progreso fluye constantemente hacia abajo (como una cascada) a través de las fases de implementación del software.&nbsp;Esto significa que, <strong>idealmente</strong>, cualquier fase del proceso de desarrollo <strong>comienza solo si se completa la fase anterior</strong> (en la práctica, dichas etapas se traslapan y se nutren mutuamente de información).&nbsp;<br>
+              El enfoque en cascada no define el proceso para volver a la fase anterior para manejar los cambios en los requisitos.&nbsp;El enfoque en cascada es <strong>el enfoque más antiguo</strong> y más conocido que se utilizó para el desarrollo de software.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230306210526.png" src="Pasted image 20230306210526.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230306210526.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230306210526.png?1683989080687"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Uso" id="Uso">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Uso
+            </h2>
+          </div>
+          <div>
+            <p>Para proyectos que no se enfocan en cambiar los requisitos, por ejemplo, proyectos iniciados a partir de una solicitud de propuestas (RFP), el cliente tiene requisitos documentados muy claros.</p>
+          </div>
+          <div>
+            <h2 data-heading="Ventajas y desventajas" id="Ventajas_y_desventajas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ventajas y desventajas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Ventajas:</p>
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>Fácil de explicar a los usuarios/clientes.
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>Enfoque de estructuras.
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>Las etapas y actividades están bien definidas.
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>Ayuda a planificar y programar el proyecto.
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>La verificación en cada etapa asegura la detección temprana de errores/malentendidos.
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div>Cada fase tiene entregables específicos.
+                  </li>
+                </ul>
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Desventajas:</p>
+                <ul class="has-list-bullet">
+                  <li data-line="9">
+                    <div class="list-bullet"></div>Supone que los requisitos de un sistema se pueden congelar.
+                  </li>
+                  <li data-line="10">
+                    <div class="list-bullet"></div>Muy difícil volver a cualquier etapa una vez que se ha terminado.
+                  </li>
+                  <li data-line="11">
+                    <div class="list-bullet"></div>Poca flexibilidad y ajustar el alcance es difícil y costoso.
+                  </li>
+                  <li data-line="12">
+                    <div class="list-bullet"></div>Costoso y requiere más tiempo, además de un plan detallado.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Modelo en forma de V" id="Modelo_en_forma_de_V">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Modelo en forma de V
+            </h1>
+          </div>
+          <div>
+            <p>Es una extensión del modelo de cascada. En lugar de moverse hacia abajo de forma lineal, los pasos del proceso se doblan hacia arriba después de la fase de implementación y codificación, para formar la típica forma de V.&nbsp;La principal diferencia entre el modelo en forma de V y el modelo en cascada es la planificación temprana de la prueba en el modelo en forma de V.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230306210517.png" src="Pasted image 20230306210517.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230306210517.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230306210517.png?1683989080678"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Uso" id="Uso">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Uso
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Requisitos de software claramente definidos y conocidos
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Las tecnologías y herramientas de desarrollo de software son bien conocidas
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Ventajas y desventajas" id="Ventajas_y_desventajas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ventajas y desventajas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Ventajas:</p>
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>Simple y fácil de usar
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>Cada fase tiene <strong>entregables específicos</strong>.
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>Mayor probabilidad de éxito sobre el modelo en cascada debido al desarrollo de planes de prueba al principio del ciclo de vida.
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>Funciona bien donde los requisitos se entienden fácilmente.
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>Verificación y validación del producto en las primeras etapas de desarrollo del producto.
+                  </li>
+                </ul>
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Desventajas:</p>
+                <ul class="has-list-bullet">
+                  <li data-line="8">
+                    <div class="list-bullet"></div>Muy inflexible, como el modelo de cascada.
+                  </li>
+                  <li data-line="9">
+                    <div class="list-bullet"></div>Ajustar el alcance es difícil y costoso.&nbsp;El software se desarrolla durante la fase de implementación, por lo que no se producen prototipos iniciales del software.&nbsp;El modelo <strong>no proporciona un camino claro para los problemas encontrados durante las fases de prueba</strong>.
+                  </li>
+                  <li data-line="10">
+                    <div class="list-bullet"></div>Costoso y requiere más tiempo, además de un plan detallado.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Modelo de prototipo" id="Modelo_de_prototipo">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Modelo de prototipo
+            </h1>
+          </div>
+          <div>
+            <p>Se refiere a la actividad de crear prototipos de aplicaciones de software, por ejemplo, versiones incompletas del programa de software que se está desarrollando.&nbsp;Es una actividad que puede ocurrir en el desarrollo de software y sirve para visualizar algunos de los componentes del software para limitar la cantidad de malentendidos de los requisitos del cliente por parte del equipo de desarrollo.&nbsp;Esto también reducirá las iteraciones que pueden ocurrir en el enfoque en cascada y que son difíciles de implementar debido a la inflexibilidad del enfoque en cascada.&nbsp;Entonces, cuando se desarrolla el prototipo final, el requisito se considera congelado.</p>
+          </div>
+          <div>
+            <p>Tiene algunos <strong>tipos</strong>, tales como:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <p>Creación de prototipos desechables: prototipos que finalmente se descartan en lugar de convertirse en parte del software finalmente entregado.<br>
+                  <span alt="Pasted image 20230306210759.png" src="Pasted image 20230306210759.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230306210759.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230306210759.png?1683989080685"></span>
+                </p>
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>
+                <p>Creación de prototipos evolutivos: prototipos que evolucionan hacia el sistema final a través de una incorporación iterativa de los comentarios de los usuarios.<br>
+                  <span alt="Pasted image 20230306210814.png" src="Pasted image 20230306210814.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230306210814.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230306210814.png?1683989080688"></span>
+                </p>
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>
+                <p>Creación de prototipos incrementales: el producto final se construye como prototipos separados.&nbsp;Al final, los prototipos separados se fusionan en un diseño general.<br>
+                  <span alt="Pasted image 20230306210849.png" src="Pasted image 20230306210849.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230306210849.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230306210849.png?1683989080688"></span>
+                </p>
+              </li>
+              <li data-line="9">
+                <div class="list-bullet"></div>
+                <p>Prototipado extremo: utilizado en aplicaciones web principalmente.&nbsp;Básicamente, divide el desarrollo web en tres fases, cada una basada en la anterior.&nbsp;La primera fase es un prototipo estático que consiste principalmente en páginas HTML.&nbsp;En la segunda fase, las pantallas se programan y funcionan completamente utilizando una capa de <strong>servicios simulados</strong>.&nbsp;En la tercera fase, se implementan los servicios.</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Uso" id="Uso">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Uso
+            </h2>
+          </div>
+          <div>
+            <p>Este proceso se puede utilizar con cualquier modelo de desarrollo de software. Este proceso se debe elegir cuando se está desarrollando un sistema que tenga interacciones con el usuario. Osea, si el sistema no tiene interacciones con el usuario, como un sistema que hace cálculos, no tendrá prototipos.</p>
+          </div>
+          <div>
+            <h2 data-heading="Ventajas y desventajas" id="Ventajas_y_desventajas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ventajas y desventajas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Ventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>Reducción de tiempo y costos, pero esto puede ser una desventaja si el desarrollador pierde tiempo en desarrollar los prototipos.
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>Mejora y aumento de la participación de los usuarios.
+                  </li>
+                </ul>
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Desventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="5">
+                    <div class="list-bullet"></div>Análisis insuficiente. Confusión del usuario entre el prototipo y el sistema terminado.
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div>Desarrollador malentendido de los objetivos del usuario.
+                  </li>
+                  <li data-line="7">
+                    <div class="list-bullet"></div>Excesivo tiempo de desarrollo del prototipo.
+                  </li>
+                  <li data-line="8">
+                    <div class="list-bullet"></div>Es costoso implementar los prototipos.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Modelo Espiral (SDM)" id="Modelo_Espiral_(SDM)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Modelo Espiral (SDM)
+            </h1>
+          </div>
+          <div>
+            <p>Combina elementos de diseño y creación de prototipos en etapas, en un esfuerzo por combinar las ventajas de los conceptos de arriba hacia abajo y de abajo hacia arriba.&nbsp;<br>
+              Este modelo de desarrollo combina las características del modelo de creación de prototipos y el modelo de cascada.&nbsp;<br>
+              El modelo en espiral es el preferido para proyectos grandes, costosos y complicados.&nbsp;Este modelo utiliza muchas de las mismas fases que el modelo en cascada, esencialmente en el mismo orden, separadas por la planificación, la evaluación de riesgos y la construcción de prototipos y simulaciones.</p>
+          </div>
+          <div>
+            <p><img alt="modelo espiral" src="https://i0.wp.com/melsatar.blog/wp-content/uploads/2012/03/spiral.png?resize=704%2C565&amp;ssl=1" referrerpolicy="no-referrer"></p>
+          </div>
+          <div>
+            <h2 data-heading="Uso" id="Uso">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Uso
+            </h2>
+          </div>
+          <div>
+            <p>Se utiliza en grandes aplicaciones y sistemas que incorporan pequeñas fases o segmentos.</p>
+          </div>
+          <div>
+            <h2 data-heading="Ventajas y desventajas" id="Ventajas_y_desventajas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ventajas y desventajas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Ventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>Las estimaciones (es decir, presupuesto, cronograma, etc.) se vuelven más realistas a medida que avanza el trabajo porque los problemas importantes se descubren antes.
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>Participación temprana de los desarrolladores.
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>Gestiona los riesgos y desarrolla el sistema en fases.
+                  </li>
+                </ul>
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Desventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="6">
+                    <div class="list-bullet"></div>Alto costo y tiempo para llegar al producto final.
+                  </li>
+                  <li data-line="7">
+                    <div class="list-bullet"></div>Necesita habilidades especiales para evaluar los riesgos y supuestos.
+                  </li>
+                  <li data-line="8">
+                    <div class="list-bullet"></div>Reutilización limitada altamente personalizada
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Modelo iterativo e incremental" id="Modelo_iterativo_e_incremental">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Modelo iterativo e incremental
+            </h1>
+          </div>
+          <div>
+            <p>Está desarrollado para superar las debilidades del modelo de cascada.&nbsp;Comienza con la planificación inicial y termina con la implementación con las interacciones cíclicas intermedias.&nbsp;<br>
+              La idea básica detrás de este método es desarrollar un sistema a través de ciclos repetidos (iterativos) y en porciones más pequeñas a la vez (incrementales), lo que permite a los desarrolladores de software aprovechar lo aprendido durante el desarrollo de partes o versiones anteriores del sistema.&nbsp;<br>
+              Puede consistir en <strong>mini-cascadas o mini-modelos en forma de V</strong>.</p>
+          </div>
+          <div>
+            <p><img title="incremental-sdlc" alt="incremental-sdlc" src="https://i0.wp.com/melsatar.blog/wp-content/uploads/2012/03/incremental-sdlc.jpg?resize=297%2C227&amp;ssl=1" referrerpolicy="no-referrer"></p>
+          </div>
+          <div>
+            <h2 data-heading="Uso" id="Uso">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Uso
+            </h2>
+          </div>
+          <div>
+            <p>Se utiliza en aplicaciones de envoltura retráctil y grandes sistemas que incorporan pequeñas fases o segmentos.&nbsp;Además, se puede utilizar en un sistema que tenga componentes separados, por ejemplo, un sistema ERP.&nbsp;Podemos comenzar con el módulo de presupuesto como una primera iteración y luego podemos comenzar con el módulo de inventario y así sucesivamente.</p>
+          </div>
+          <div>
+            <h2 data-heading="Ventajas y desventajas" id="Ventajas_y_desventajas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ventajas y desventajas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Ventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>Produce valor de negocio en las primeras etapas del ciclo de vida del desarrollo. Desde la primera iteración se puede contar con un producto valioso.
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>Mejor uso de recursos escasos a través de una adecuada definición de incrementos.
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>Puede acomodar algunas solicitudes de cambio entre incrementos.
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>Más centrado en el valor del cliente que los enfoques lineales.
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>Podemos detectar problemas y cambios en el proyecto antes.
+                  </li>
+                </ul>
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Desventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="8">
+                    <div class="list-bullet"></div>Requiere mucha documentación.
+                  </li>
+                  <li data-line="9">
+                    <div class="list-bullet"></div>Sigue un conjunto definido de procesos.
+                  </li>
+                  <li data-line="10">
+                    <div class="list-bullet"></div>Define incrementos en función de las dependencias de funciones y características.
+                  </li>
+                  <li data-line="11">
+                    <div class="list-bullet"></div>Requiere más participación del cliente que los enfoques lineales.
+                  </li>
+                  <li data-line="12">
+                    <div class="list-bullet"></div>Particionar las funciones y características puede ser problemático.
+                  </li>
+                  <li data-line="13">
+                    <div class="list-bullet"></div>La estructura del sistema tiende a degradarse conforme se tienen nuevos incrementos. La integración entre las iteraciones puede ser un problema si no se considera durante el desarrollo y la planificación del proyecto.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Modelo ágil" id="Modelo_ágil">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Modelo ágil
+            </h1>
+          </div>
+          <div>
+            <p>Se basa en el desarrollo iterativo e incremental, donde los requisitos y las soluciones evolucionan a través de la colaboración entre equipos multifuncionales.</p>
+          </div>
+          <div>
+            <p><img alt="ágil-SDLC" src="https://i0.wp.com/melsatar.blog/wp-content/uploads/2012/03/sw-fw-design.png?resize=739%2C335&amp;ssl=1" referrerpolicy="no-referrer"></p>
+          </div>
+          <div>
+            <h2 data-heading="Uso" id="Uso">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Uso
+            </h2>
+          </div>
+          <div>
+            <p>Se puede usar con <strong>cualquier tipo de proyecto</strong>, pero necesita más participación del cliente y ser interactivo.&nbsp;Además, podemos usarlo cuando el cliente necesita tener listos algunos requisitos funcionales en menos de tres semanas y los requisitos no son lo suficientemente claros.&nbsp;Esto permitirá piezas de software más valiosas y viables desde el principio, lo que también aumenta la satisfacción del cliente.</p>
+          </div>
+          <div>
+            <h2 data-heading="Ventajas y desventajas" id="Ventajas_y_desventajas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ventajas y desventajas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Ventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>Disminuye el tiempo requerido para aprovechar algunas características del sistema.
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>La comunicación cara a cara y las aportaciones continuas de los representantes de los clientes no dejan lugar a conjeturas. El resultado final es un software de alta calidad en el menor tiempo posible y clientes satisfechos
+                  </li>
+                </ul>
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Desventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="5">
+                    <div class="list-bullet"></div>Escalabilidad.
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div>La capacidad y colaboración del cliente para expresar las necesidades del usuario.
+                  </li>
+                  <li data-line="7">
+                    <div class="list-bullet"></div>La documentación se realiza en etapas posteriores.
+                  </li>
+                  <li data-line="8">
+                    <div class="list-bullet"></div>Reducir la usabilidad de los componentes.
+                  </li>
+                  <li data-line="9">
+                    <div class="list-bullet"></div>Necesita habilidades especiales para el equipo.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Modelo orientada a la reutilización (Integración y Configuración)" id="Modelo_orientada_a_la_reutilización_(Integración_y_Configuración)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Modelo orientada a la reutilización (Integración y Configuración)
+            </h1>
+          </div>
+          <div>
+            <p>Está basado en la reutilización de componentes de software o COTS (Commercial-off-the-shelf), los cuales son integrados en el sistema a construir.<br>
+              Los componentes en general tienen que ser configurados para adaptar su comportamiento y funcionalidad a los requerimientos del cliente.<br>
+              La reutilización de componentes es hoy en día un enfoque estándar para la construcción de muchos tipos de sistemas de negocio.</p>
+          </div>
+          <div>
+            <h2 data-heading="Tipos" id="Tipos">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tipos
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Aplicaciones del tipo stand-alone (llamadas COTS), las cuales son configuradas para uso en algún ambiente en particular (por ejemplo ERP’s).
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Paquetes, librerías o colecciones de objetos que son desarrollados para ser integrados con un framework (como ser .NET or J2EE).
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Servicios web que son desarrollados de acuerdo a estándares de servicios, los cuales se encuentran disponibles mediante invocación remota.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230421184440.png" src="Pasted image 20230421184440.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230421184440.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230421184440.png?1683989080787"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Ventajas y desventajas" id="Ventajas_y_desventajas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ventajas y desventajas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Ventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>Se reducen costos y riesgos ya me que menos software se desarrolla desde cero.
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>Desarrollo y entrega del producto más rápida.
+                  </li>
+                </ul>
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p>Desventajas</p>
+                <ul class="has-list-bullet">
+                  <li data-line="5">
+                    <div class="list-bullet"></div>Puede que el sistema no cumpla con las necesidades reales del cliente (o las cumpla parcialmente).
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div>Se pierde control sobre la evolución de los elementos reutilizados en el sistema.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Modelo_de_Cascada">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Modelo de Cascada</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Uso">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Uso</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Ventajas_y_desventajas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Ventajas y desventajas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Modelo_en_forma_de_V">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Modelo en forma de V</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Uso">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Uso</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Ventajas_y_desventajas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Ventajas y desventajas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Modelo_de_prototipo">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Modelo de prototipo</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Uso">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Uso</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Ventajas_y_desventajas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Ventajas y desventajas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Modelo_Espiral_(SDM)">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Modelo Espiral (SDM)</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Uso">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Uso</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Ventajas_y_desventajas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Ventajas y desventajas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Modelo_iterativo_e_incremental">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Modelo iterativo e incremental</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Uso">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Uso</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Ventajas_y_desventajas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Ventajas y desventajas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Modelo_ágil">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Modelo ágil</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Uso">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Uso</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Ventajas_y_desventajas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Ventajas y desventajas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Modelo_orientada_a_la_reutilización_(Integración_y_Configuración)">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Modelo orientada a la reutilización (Integración y Configuración)</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Tipos">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Tipos</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Ventajas_y_desventajas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Ventajas y desventajas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

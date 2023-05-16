@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>User Stories</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../../styles/theme.css">
+  <link rel="stylesheet" href="../../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-mo {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-stretchy-h {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>* {
+      display: table-cell;
+      width: 0;
+    }
+
+    mjx-stretchy-h>*>mjx-c {
+      display: inline-block;
+      transform: scalex(1.0000001);
+    }
+
+    mjx-stretchy-h>*>mjx-c::before {
+      display: inline-block;
+      width: initial;
+    }
+
+    mjx-stretchy-h>mjx-ext {
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: clip visible;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c::before {
+      transform: scalex(500);
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c {
+      width: 0;
+    }
+
+    mjx-stretchy-h>mjx-beg>mjx-c {
+      margin-right: -.1em;
+    }
+
+    mjx-stretchy-h>mjx-end>mjx-c {
+      margin-left: -.1em;
+    }
+
+    mjx-stretchy-v {
+      display: inline-block;
+    }
+
+    mjx-stretchy-v>* {
+      display: block;
+    }
+
+    mjx-stretchy-v>mjx-beg {
+      height: 0;
+    }
+
+    mjx-stretchy-v>mjx-end>mjx-c {
+      display: block;
+    }
+
+    mjx-stretchy-v>*>mjx-c {
+      transform: scaley(1.0000001);
+      transform-origin: left center;
+      overflow: hidden;
+    }
+
+    mjx-stretchy-v>mjx-ext {
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 0px solid transparent;
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: visible clip;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c::before {
+      width: initial;
+      box-sizing: border-box;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c {
+      transform: scaleY(500) translateY(.075em);
+      overflow: visible;
+    }
+
+    mjx-mark {
+      display: inline-block;
+      height: 0px;
+    }
+
+    mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D43C.TEX-I::before {
+      padding: 0.683em 0.504em 0 0;
+      content: "I";
+    }
+
+    mjx-c.mjx-c28::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: "(";
+    }
+
+    mjx-c.mjx-c1D44B.TEX-I::before {
+      padding: 0.683em 0.852em 0 0;
+      content: "X";
+    }
+
+    mjx-c.mjx-c3B::before {
+      padding: 0.43em 0.278em 0.194em 0;
+      content: ";";
+    }
+
+    mjx-c.mjx-c1D44C.TEX-I::before {
+      padding: 0.683em 0.763em 0 0;
+      content: "Y";
+    }
+
+    mjx-c.mjx-c29::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: ")";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "../..";
+    let mediaPath = "../../media";
+    let jsPath = "../../scripts";
+    let cssPath = "../../styles";
+  </script>
+
+  <script src="../../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <h1 data-heading="Introducción" id="Introducción">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Introducción
+            </h1>
+          </div>
+          <div>
+            <p>Una HU describe una funcionalidad que, por sí misma, aporta valor al usuario. (eXtremme Programing XP).<br>
+              Son una forma <strong>rápida</strong> de administrar los requisitos cambiantes de un proyecto.</p>
+          </div>
+          <div>
+            <p>Una Historia de Usuario se compone de tres elementos (“las tres Cs”):</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Card</strong> (tarjeta): <strong>Descripción breve</strong> de la historia de usuario, utilizada como recordatorio y para planificar.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><strong>Conversación</strong>: Comunicación cara a cara que intercambia no solo información sino también pensamientos, opiniones y sentimientos.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><strong>Confirmación</strong>: Detalles de la historia de usuario para que el equipo sepa lo que tienen que construir y lo que la contraparte espera. Se conoce como <strong>Criterios de Aceptación</strong>.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Las historias se priorizan en función de su valor para la organización.<br>
+              Las entregas (releases) y las iteraciones se planifican colocando historias en iteraciones.<br>
+              La velocidad es la cantidad de trabajo que los desarrolladores pueden completar en una iteración.<br>
+              La suma de las estimaciones de las historias colocadas en una iteración no puede exceder la velocidad prevista por los desarrolladores para esa iteración.<br>
+              Si una historia no cabe en una iteración, puede dividir la historia en dos o más historias más pequeñas.</p>
+          </div>
+          <div>
+            <p>Vale la pena usar las historias de usuarios porque enfatizan la comunicación verbal, el cliente y los desarrolladores pueden entenderlas por igual, se pueden usar para planificar iteraciones, funcionan bien dentro de un proceso de desarrollo iterativo y porque fomentan el aplazamiento de los detalles.</p>
+          </div>
+          <div>
+            <h2 data-heading="Épicas" id="Épicas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Épicas
+            </h2>
+          </div>
+          <div>
+            <p>Cuando una historia de usuario es demasiado grande se la denomina <strong>épica</strong>.<br>
+              Generalmente se clasifican en una de las siguientes categorías: </p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Historia de usuario compuesta</strong>: contiene múltiples historias de usuario<br>
+                “Contactar estudiantes” es una funcionalidad muy importante para un sistema de reclutamiento, pero hay muchas funcionalidades involucradas.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><strong>Historia de usuario compleja</strong>: no se puede separar fácilmente en un conjunto de historias de usuario<br>
+                Si una historia es compleja debido a que existe una incertidumbre asociada a la misma, se puede dividir en dos historias: una para investigar y otra que desarrolle la nueva funcionalidad.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Las historias compuestas y complejas se pueden dividir en múltiples historias más pequeñas.</p>
+          </div>
+          <div>
+            <p>Una tarjeta de historia es la parte visible de una historia, pero las partes importantes son las conversaciones entre el cliente y los desarrolladores sobre la historia.</p>
+          </div>
+          <div>
+            <h2 data-heading="Equipo de cliente" id="Equipo_de_cliente">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Equipo de cliente
+            </h2>
+          </div>
+          <div>
+            <p>El equipo del cliente incluye a aquellos que se aseguran de que el software satisfaga las necesidades de los usuarios previstos. Esto puede incluir testers, un gerente de producto, usuarios reales y diseñadores de interacción.<br>
+              El equipo del cliente escribe las <em>story-cards</em> porque están en la mejor posición para expresar las características deseadas y porque luego deben poder trabajar en los detalles de la historia con los desarrolladores y priorizar las historias.</p>
+          </div>
+          <div>
+            <h1 data-heading="Escribiendo historias" id="Escribiendo_historias">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Escribiendo historias
+            </h1>
+          </div>
+          <div>
+            <p>Una buena historia será:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Independent
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Negotiable
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Valuable to users or customers
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Estimatable
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>Small
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>Testable
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Para recordarlas se propone el acrónimo INVEST.</p>
+          </div>
+          <div>
+            <p>Mike Cohn sugiere una determinada forma de redactarlas:</p>
+          </div>
+          <div class="admonition-parent admonition-important-parent">
+            <div class="callout admonition admonition-important admonition-plugin " style="--callout-color: 0, 191, 165;" data-callout="important" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire" class="svg-inline--fa fa-fire fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path fill="currentColor" d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Formato</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Como <strong>[rol]</strong> quiero <strong>[funcionalidad]</strong> para <strong>[beneficio]</strong>.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>Idealmente, las historias son independientes entre sí. Esto no siempre es posible, pero en la medida en que lo sea, las historias deben escribirse de modo que puedan desarrollarse en cualquier orden.</p>
+          </div>
+          <div>
+            <p>Los detalles de una historia se negocian entre el usuario y los desarrolladores.</p>
+          </div>
+          <div>
+            <p>Las historias deben escribirse de manera que su valor para los usuarios o el cliente sea claro. La mejor manera de lograr esto es que el cliente escriba las historias.</p>
+          </div>
+          <div>
+            <p>Las historias se pueden anotar con detalles, pero demasiados detalles oscurecen el significado de la historia y pueden dar la impresión de que no es necesaria una conversación entre los desarrolladores y el cliente.</p>
+          </div>
+          <div>
+            <p>Una de las mejores formas de anotar una historia es escribir casos de prueba para la historia.</p>
+          </div>
+          <div>
+            <p>Si son demasiado pequeños, se pueden combinar varias historias pequeñas en una historia más grande.</p>
+          </div>
+          <div>
+            <h2 data-heading="Criterios de aceptación" id="Criterios_de_aceptación">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Criterios de aceptación
+            </h2>
+          </div>
+          <div>
+            <p>Ayudan a entender mejor cómo se espera que el producto se comporte frente a ciertas situaciones.<br>
+              Ayudan a resolver ciertas expectativas y permiten que el desarrollo sea más fluido, claro y con menor incertidumbre para el equipo.</p>
+          </div>
+          <div>
+            <p>Además:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Aportan más contexto.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Sirven de guía para el desarrollo de los test de aceptación.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Deben cubrir tanto los casos comunes como los alternativos.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>La calidad de un criterio de aceptación eficaz se define bajo el método SMART:
+                <ul class="has-list-bullet">
+                  <li data-line="4">
+                    <div class="list-bullet"></div>Specific (Específico)
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>Measurable (Medible)
+                  </li>
+                  <li data-line="6">
+                    <div class="list-bullet"></div>Achievable (Alcanzable)
+                  </li>
+                  <li data-line="7">
+                    <div class="list-bullet"></div>Relevant (Relevante)
+                  </li>
+                  <li data-line="8">
+                    <div class="list-bullet"></div>Time-bound (Temporalmente limitado)
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Técnicas:" id="Técnicas:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Técnicas:
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p><strong>Técnicas de comportamiento:</strong><br>
+                  Dada una condición, cuando ocurre un evento o acción, entonces sucederá una consecuencia. Así se consigue una estructura consistente que se trasladará fácilmente a tests automáticos. </p>
+                <ul class="has-list-bullet">
+                  <li data-line="2">
+                    <div class="list-bullet"></div>
+                    <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div>Ejemplo criterio de aceptación de la HU “Visualizar delivery”:
+                    <ul class="has-list-bullet">
+                      <li data-line="3">
+                        <div class="list-bullet"></div>Si el cliente tiene el gps desactivado, se muestra la última ubicación detectada por el teléfono celular y despliega un listado con las 10 opciones de delivery mejor valoradas en base a dicha ubicación.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>
+                <p><strong>Técnicas de escenarios:</strong><br>
+                  Suele definir el escenario normal o usual y un escenario alternativo de la funcionalidad en cuestión, y debe describir cómo el usuario ejecutaría o intentaría ejecutar los diferentes pasos en dichos trayectos.<br>
+                  Hay diferentes formas de escribirlos, las más usadas utilizan el lenguaje específico para las descripciones de comportamiento de software conocido como gherkin. La sintaxis de gherkin es la siguiente:<br>
+                  Dado que [Contexto 1] y adicionalmente [Contexto 2], cuando [Evento], entonces [Resultado / Comportamiento esperado]<br>
+                  Ejemplo:<br>
+                  Dado que <strong>el gps está activado</strong>, cuando se despliegue el listado de deliverys, entonces <strong>el sistema desplegará una lista con todos los deliverys ordenados según la valoración y la ubicación que se encuentra el usuario</strong>.</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Requisitos no funcionales" id="Requisitos_no_funcionales">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Requisitos no funcionales
+            </h2>
+          </div>
+          <div>
+            <p>Newkirk y Martin recomiendan la práctica de anotar una historia con la palabra CONSTRAINT para cualquier historia que debe ser obedecida en lugar de implementada directamente.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230327153532.png" src="Pasted image 20230327153532.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327153532.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230327153532.png?1683989080717"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Historias tipo SPIKE" id="Historias_tipo_SPIKE">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Historias tipo SPIKE
+            </h2>
+          </div>
+          <div>
+            <p>Tareas de investigación durante una iteración. Por ejemplo: investigar, diseñar, explorar, comprender mejor un requisito, o aumentar la fiabilidad de estimación de una HU.</p>
+          </div>
+          <div>
+            <p>Suelen ser de dos tipos: técnicos o funcionales. </p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Técnicos</strong>: se utilizan para determinar la viabilidad.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><strong>Funcionales</strong>: se utilizan para analizar funcionalidad, su riesgo y complejidad.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Responsabilidades del desarrollador:" id="Responsabilidades_del_desarrollador:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Responsabilidades del desarrollador:
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Usted es responsable de ayudar al cliente a escribir historias que sean promesas de conversación en lugar de especificaciones detalladas, que tengan valor para los usuarios o el cliente, que sean independientes, que se puedan probar y que tengan el tamaño adecuado.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Si se siente tentado a pedir una historia sobre el uso de una tecnología o una pieza de infraestructura, es responsable de describir la necesidad en términos de su valor para los usuarios o el cliente.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Responsabilidades del cliente:" id="Responsabilidades_del_cliente:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Responsabilidades del cliente:
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Usted es responsable de escribir historias que sean promesas de conversación en lugar de especificaciones detalladas, que tengan valor para los usuarios o para usted mismo, que sean independientes, comprobables y que tengan el tamaño adecuado.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="User Role Modeling / Modelado de roles de usuario" id="User_Role_Modeling_/_Modelado_de_roles_de_usuario">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>User Role Modeling / Modelado de roles de usuario
+            </h1>
+          </div>
+          <div>
+            <p>Si bien cada usuario llega a su software con antecedentes diferentes y con objetivos diferentes, aún es posible agregar usuarios individuales y pensar en ellos en términos de <strong>roles de usuario</strong>. Un rol de usuario es una colección de atributos definitorios que caracterizan a una población de usuarios y sus interacciones previstas con el sistema.</p>
+          </div>
+          <div>
+            <p>La mayoría de los equipos de proyecto consideran un solo tipo de usuario. Esto conduce a un software que ignora las necesidades de al menos algunos tipos de usuarios.</p>
+          </div>
+          <div>
+            <p>Para evitar escribir todas las historias desde la perspectiva de un solo usuario, identifique los diferentes roles de usuario que interactuarán con el software.</p>
+          </div>
+          <div>
+            <p>Al definir atributos relevantes para cada rol de usuario, puede ver mejor las diferencias entre los roles.</p>
+          </div>
+          <div>
+            <p>Algunos roles de usuario se benefician de ser descritos por personas. Una persona es una representación imaginaria de un rol de usuario. A la persona se le da un nombre, una cara y suficientes detalles relevantes para que parezca real para los miembros del proyecto.</p>
+          </div>
+          <div>
+            <p>Para algunas aplicaciones, los caracteres extremos pueden ser útiles para buscar historias que de otro modo se perderían.</p>
+          </div>
+          <div>
+            <h2 data-heading="Responsabilidades del desarrollador" id="Responsabilidades_del_desarrollador">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Responsabilidades del desarrollador
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Usted es responsable de participar en el proceso de identificación de roles y personas de los usuarios.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Usted es responsable de comprender cada uno de los roles o personas de los usuarios y cómo difieren.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Mientras desarrolla el software, usted es responsable de pensar en cómo los diferentes roles de usuario pueden preferir que se comporte el software.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Usted es responsable de asegurarse de que identificar y describir las funciones de los usuarios no vaya más allá de su función como herramienta en el proceso.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Responsabilidades del cliente:" id="Responsabilidades_del_cliente:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Responsabilidades del cliente:
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Usted es responsable de examinar ampliamente el espacio de posibles usuarios e identificar las funciones de usuario adecuadas.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Usted es responsable de participar en el proceso de identificación de roles y personas de los usuarios.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Usted es responsable de garantizar que el software no se centre de manera inapropiada en un subconjunto de usuarios.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Al escribir historias, será responsable de garantizar que cada historia se pueda asociar con al menos un rol o persona de usuario.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>Mientras desarrolla el software, usted es responsable de pensar en cómo los diferentes roles de usuario pueden preferir que se comporte el software.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>Usted es responsable de asegurarse de que identificar y describir las funciones de los usuarios no vaya más allá de su función como herramienta en el proceso.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Guias para escribir buenas historias" id="Guias_para_escribir_buenas_historias">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Guias para escribir buenas historias
+            </h1>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Para identificar historias, comience considerando los objetivos de cada rol de usuario al usar el sistema.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Al dividir una historia, intente crear historias que atraviesen todas las capas de la aplicación.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Trate de escribir historias que sean de un tamaño en el que el usuario se sienta justificado para tomar un descanso para tomar un café después de completar la historia.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Aumente las historias con otras técnicas de recopilación o documentación de requisitos según sea necesario para el dominio y el entorno del proyecto.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>Cree tarjetas de restricciones y péguelas en una pared compartida o escriba pruebas para asegurarse de que no se violen las restricciones.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>Escriba historias más pequeñas para la funcionalidad que el equipo implementará pronto y escriba historias amplias y de alto nivel para la funcionalidad en el futuro.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>Mantenga la interfaz de usuario fuera de las historias durante el mayor tiempo posible.
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>Cuando sea práctico, incluya el rol del usuario al escribir la historia.
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div>Escribir cuentos en voz activa. Por ejemplo, diga "Un solicitante de empleo puede publicar un currículum" en lugar de "Un solicitante de empleo puede publicar un currículum".
+              </li>
+              <li data-line="9">
+                <div class="list-bullet"></div>Escribe historias para un solo usuario. En lugar de "Los solicitantes de empleo pueden eliminar sus currículos", escriba "Un solicitante de empleo puede eliminar sus propios currículos".
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div>Haga que el cliente, en lugar de un desarrollador, escriba las historias.
+              </li>
+              <li data-line="11">
+                <div class="list-bullet"></div>Mantenga breves las historias de los usuarios y no olvide su propósito como recordatorios para mantener conversaciones.
+              </li>
+              <li data-line="12">
+                <div class="list-bullet"></div>No numere las tarjetas de historias.
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Introducción">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Introducción</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Épicas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Épicas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Equipo_de_cliente">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Equipo de cliente</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Escribiendo_historias">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Escribiendo historias</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Criterios_de_aceptación">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Criterios de aceptación</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Técnicas:">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Técnicas:</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Requisitos_no_funcionales">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Requisitos no funcionales</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Historias_tipo_SPIKE">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Historias tipo SPIKE</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Responsabilidades_del_desarrollador:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Responsabilidades del desarrollador:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Responsabilidades_del_cliente:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Responsabilidades del cliente:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#User_Role_Modeling_/_Modelado_de_roles_de_usuario">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">User Role Modeling / Modelado de roles de usuario</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Responsabilidades_del_desarrollador">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Responsabilidades del desarrollador</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Responsabilidades_del_cliente:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Responsabilidades del cliente:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Guias_para_escribir_buenas_historias">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Guias para escribir buenas historias</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

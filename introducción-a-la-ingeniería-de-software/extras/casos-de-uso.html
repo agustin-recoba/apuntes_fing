@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Casos de uso</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../../styles/theme.css">
+  <link rel="stylesheet" href="../../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-mo {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-stretchy-h {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>* {
+      display: table-cell;
+      width: 0;
+    }
+
+    mjx-stretchy-h>*>mjx-c {
+      display: inline-block;
+      transform: scalex(1.0000001);
+    }
+
+    mjx-stretchy-h>*>mjx-c::before {
+      display: inline-block;
+      width: initial;
+    }
+
+    mjx-stretchy-h>mjx-ext {
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: clip visible;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c::before {
+      transform: scalex(500);
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c {
+      width: 0;
+    }
+
+    mjx-stretchy-h>mjx-beg>mjx-c {
+      margin-right: -.1em;
+    }
+
+    mjx-stretchy-h>mjx-end>mjx-c {
+      margin-left: -.1em;
+    }
+
+    mjx-stretchy-v {
+      display: inline-block;
+    }
+
+    mjx-stretchy-v>* {
+      display: block;
+    }
+
+    mjx-stretchy-v>mjx-beg {
+      height: 0;
+    }
+
+    mjx-stretchy-v>mjx-end>mjx-c {
+      display: block;
+    }
+
+    mjx-stretchy-v>*>mjx-c {
+      transform: scaley(1.0000001);
+      transform-origin: left center;
+      overflow: hidden;
+    }
+
+    mjx-stretchy-v>mjx-ext {
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 0px solid transparent;
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: visible clip;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c::before {
+      width: initial;
+      box-sizing: border-box;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c {
+      transform: scaleY(500) translateY(.075em);
+      overflow: visible;
+    }
+
+    mjx-mark {
+      display: inline-block;
+      height: 0px;
+    }
+
+    mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D43C.TEX-I::before {
+      padding: 0.683em 0.504em 0 0;
+      content: "I";
+    }
+
+    mjx-c.mjx-c28::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: "(";
+    }
+
+    mjx-c.mjx-c1D44B.TEX-I::before {
+      padding: 0.683em 0.852em 0 0;
+      content: "X";
+    }
+
+    mjx-c.mjx-c3B::before {
+      padding: 0.43em 0.278em 0.194em 0;
+      content: ";";
+    }
+
+    mjx-c.mjx-c1D44C.TEX-I::before {
+      padding: 0.683em 0.763em 0 0;
+      content: "Y";
+    }
+
+    mjx-c.mjx-c29::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: ")";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "../..";
+    let mediaPath = "../../media";
+    let jsPath = "../../scripts";
+    let cssPath = "../../styles";
+  </script>
+
+  <script src="../../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <h1 data-heading="Introducción" id="Introducción">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Introducción
+            </h1>
+          </div>
+          <div>
+            <p>Los casos de uso son documentos narrativos que describen las secuencias de eventos de distintos actores (agentes externos) que utilizan un sistema para completar un proceso. Son casos de utilización de un sistema y describen posibles escenarios de interacción de los agente externos con el sistema. Cada escenario es una secuencia posible. Un caso de uso es un conjunto de escenarios.</p>
+          </div>
+          <div>
+            <p>Se desarrollan durante la etapa de análisis y sirven para mejorar la comprensión de los requerimientos y facilitar la comunicación entre los distintos analistas, así como la transición del análisis al diseño. Son independientes del método de diseño y lenguaje que se utilice para la implementación. También se utilizan como herramienta para el relevamiento de los requisitos.</p>
+          </div>
+          <div>
+            <p>En este documento se muestra los elementos principales de un caso de uso y las distintas relaciones que pueden existir entre casos de usos. Además se presenta algunos consejos prácticos y consideraciones a tener en cuenta al momento de desarrollar los casos de uso.<br>
+              Adicionalmente se muestra el desarrollo completo de un caso de uso, que sirve para ejemplificar los distintos conceptos que se manejan a través del documento.</p>
+          </div>
+          <div>
+            <h1 data-heading="Elementos principales" id="Elementos_principales">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Elementos principales
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="Actores" id="Actores">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Actores
+            </h2>
+          </div>
+          <div>
+            <p>El actor es un agente externo al sistema que participa en la historia de un caso de uso y está representado por el papel que cumple dentro del caso de uso. Los papeles son generalmente desempeñados por seres humanos, usuarios directos del sistema, pero este no es siempre el caso, <strong>un papel puede ser desempeñado por otro sistema</strong>.</p>
+          </div>
+          <div>
+            <h2 data-heading="Objetivo" id="Objetivo">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Objetivo
+            </h2>
+          </div>
+          <div>
+            <p>Un caso de uso describe una forma de uso del sistema de principio a fin y debe especificarse claramente cual es su objetivo, las funcionalidades que el caso de uso quiere describir.</p>
+          </div>
+          <div>
+            <h2 data-heading="Precondiciones" id="Precondiciones">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Precondiciones
+            </h2>
+          </div>
+          <div>
+            <p>Describe condiciones que debe cumplir el sistema para que se pueda iniciar el caso de uso. Impone restricciones sobre el estado previo del sistema. Las precondiciones no se verifican durante el caso de uso y se asume que se cumplen durante todo el caso de uso.</p>
+          </div>
+          <div>
+            <h2 data-heading="Poscondiciones" id="Poscondiciones">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Poscondiciones
+            </h2>
+          </div>
+          <div>
+            <p>Las poscondiciones describen el estado del sistema luego de la ejecución exitosa del caso de uso. Indican lo que se tiene que cumplir luego de que el caso de uso termina exitosamente.</p>
+          </div>
+          <div>
+            <h2 data-heading="Descripción" id="Descripción">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Descripción
+            </h2>
+          </div>
+          <div>
+            <p>Es una descripción breve, a alto nivel, del caso de uso y del flujo de acciones del mismo. Su propósito es dar una idea de las acciones que se van a realizar en el caso de uso. No se debe hacer mención a decisiones de diseño ni a casos particulares de la ejecución.</p>
+          </div>
+          <div>
+            <h2 data-heading="Caso de Uso expandido" id="Caso_de_Uso_expandido">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Caso de Uso expandido
+            </h2>
+          </div>
+          <div>
+            <p>El caso de uso expandido detalla la funcionalidad más a fondo, desglosándola en una secuencia determinada de pasos que describen el flujo de acciones entre cada uno de los actores y el sistema.</p>
+          </div>
+          <div>
+            <p>El flujo principal del caso de uso muestra la secuencia de pasos más común que se lleva a cabo para la ejecución exitosa del caso de uso. Se debe especificar un único flujo principal por caso de uso. La secuencia de pasos debe estar numerada para que pueda se pueda hacer referencia a un paso en particular dentro del flujo.</p>
+          </div>
+          <div>
+            <p>Además del flujo principal, un caso de uso puede tener varios flujos alternativos. Un flujo alternativo o secundario describe un escenario alternativo al principal. Permiten mostrar casos particulares y cómo el sistema maneja los distintos errores.</p>
+          </div>
+          <div>
+            <p>Para ejemplificar suponemos un sistema que le permite al cliente de un banco realizar tareas bancarias desde la casa. El sistema corre localmente en la máquina del usuario y se comunica con el servidor del banco para realizar consultas y efectuar operaciones.</p>
+          </div>
+          <div>
+            <p>Consideremos el caso de uso “Realizar Transferencia”, que permite al usuario realizar una transferencia entre 2 cuentas. En este caso de uso participan 2 actores, agentes externos al sistema: el usuario de la aplicación y el banco. </p>
+          </div>
+          <div>
+            <p>El flujo principal es el siguiente:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">El usuario ingresa al sitio.</li>
+              <li data-line="1">El sistema solicita que se registre.</li>
+              <li data-line="2">El usuario ingresa sus datos.</li>
+              <li data-line="3">El sistema envía sus datos al banco.</li>
+              <li data-line="4">El banco valida los datos.</li>
+              <li data-line="5">El sistema le permite al usuario ingresar y le ofrece un menú de servicios.</li>
+              <li data-line="6">Usuario: indica al sistema que desea realizar una transferencia</li>
+              <li data-line="7">Sistema: lista las cuentas del usuario</li>
+              <li data-line="8">Sistema: pide al usuario que seleccione la cuenta de origen de la transferencia de la lista o que la ingrese manualmente.</li>
+              <li data-line="9">Usuario: selecciona cuenta de origen de la transferencia de la lista.</li>
+              <li data-line="10">Sistema: pide al usuario que seleccione la cuenta de destino de la transferencia de la lista o que la ingrese manualmente.</li>
+              <li data-line="11">Usuario: selecciona cuenta de destino de la transferencia de la lista.</li>
+              <li data-line="12">Sistema: pide al usuario que ingrese el monto de la transferencia.</li>
+              <li data-line="13">Usuario: ingresa el monto de la transferencia.</li>
+              <li data-line="14">Sistema: se comunica con el servidor del banco y le indica que desea realizar una transferencia entre las cuentas especificadas y con el monto indicado.</li>
+              <li data-line="15">Banco: realiza la transferencia especificada e indica que la transferencia se realizó con éxito.</li>
+              <li data-line="16">Sistema: actualiza el monto de las cuentas involucradas.</li>
+              <li data-line="17">Sistema: notifica al usuario que la transferencia se efectuó correctamente.</li>
+            </ol>
+          </div>
+          <div>
+            <p>Aquí se muestra el escenario típico de éxito del caso de uso y por eso se identificó a este flujo como el principal. Adicionalmente, hay otros escenarios posibles y errores que pueden surgir.</p>
+          </div>
+          <div>
+            <p>Un escenario alternativo podría ser que el usuario no desee seleccionar la cuenta de origen de las cuentas que tiene guardadas en el sistema, sino que desea ingresar manualmente un número de cuenta. Para eso se genera el siguiente flujo alternativo en el punto 4 del flujo principal:</p>
+          </div>
+          <div>
+            <p><strong>10.A. El usuario desea ingresar manualmente el número de cuenta origen.</strong><br>
+              10.A.1. Usuario: selecciona ingresar manualmente el número de cuenta.<br>
+              10.A.2. Sistema: pide al usuario que ingrese número de cuenta y código del banco.<br>
+              10.A.3. Usuario: ingresa número de cuenta y código del banco.<br>
+              10.A.4. Vuelve al punto 5.</p>
+          </div>
+          <div>
+            <p>El <strong>formato de un flujo alternativo</strong> es el siguiente:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>En la primera línea se indica el identificador del flujo, que surge de la referencia al paso del flujo principal del cual se deriva este flujo alternativo y una letra que permite identificar a este flujo dentro de los distintos flujos alternativos que pueden surgir de un mismo punto. En este caso como es el primer flujo alternativo que deriva del paso 4, se lo identifica como 4.A.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Adicionalmente, en la primera línea se indica la condición que hace que se tome el flujo alternativo.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Se numera los pasos del flujo alternativo de la misma manera que en el flujo principal (1, 2, 3, ...), o bien antecediendo los números por el identificador del flujo (4.A.1, 4.A.2,...).
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Se indica al final, en caso de que corresponda, el punto de retorno del flujo, es decir, qué pasos siguen a la ejecución del flujo alternativo. En caso que no se desee continuar con ningún otro paso, se debe indicar que se da como terminado el caso de uso (fin del caso de uso).
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>También se utilizan flujos alternativos para especificar cómo se manejan los posibles errores que pueden surgir.<br>
+              En este caso consideraremos el error que puede surgir en la comunicación con el banco.</p>
+          </div>
+          <div>
+            <p><strong>16.A. Existe un error en la comunicación con el banco.</strong></p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Sistema: no se puede comunicar con el banco</li>
+              <li data-line="1">Sistema: informa al usuario que no se puede comunicar con el banco en este momento.</li>
+              <li data-line="2">Fin CU</li>
+            </ol>
+          </div>
+          <div>
+            <p>Vemos que, al especificarse en el último paso "Fin CU", el caso de uso se termina al terminar el flujo alternativo.</p>
+          </div>
+          <div>
+            <p>Sobre el final de la guía se encuentra el desarrollo completo del caso de uso anterior para que se utilice como ejemplo.</p>
+          </div>
+          <div>
+            <h1 data-heading="Relaciones entre casos de uso" id="Relaciones_entre_casos_de_uso">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Relaciones entre casos de uso
+            </h1>
+          </div>
+          <div>
+            <p>Se pueden identificar distintas relaciones entre los casos de uso.</p>
+          </div>
+          <div>
+            <h2 data-heading="Inclusión" id="Inclusión">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Inclusión
+            </h2>
+          </div>
+          <div>
+            <p>La relación de inclusión es la más común entre casos de uso. Permite definir <strong>casos de uso que «ejecuten» otros casos de uso</strong>.</p>
+          </div>
+          <div>
+            <p>Al caso de uso que incluye a otro se le llama <strong>caso base</strong> y al otro se le denomina <strong>caso incluido</strong>. Se puede incluir otros casos de uso tanto en el flujo principal como en algún flujo alternativo. </p>
+          </div>
+          <div>
+            <p>Cuando se llega al punto dentro del caso de uso base en el cual se incluye a otro, <strong>se ejecuta en su totalidad el caso de uso incluido</strong> y luego su finalizada la ejecución, <strong>se continúa en el punto siguiente del caso base</strong>.<br>
+              Sólo se continúa la ejecución del caso base si el caso incluido se ejecutó con éxito, en caso de que falle, falla el caso base también.</p>
+          </div>
+          <div>
+            <p>Cabe notar que el caso de uso incluido no tiene por qué tener conocimiento de los casos de uso que lo incluyen.</p>
+          </div>
+          <div>
+            <p>En el caso del sistema mencionado en la sección anterior, se requiere que el usuario indique su nombre de usuario y contraseña para autentificarse frente al banco. Entonces se podría crear un caso de uso “Autentificar” y modificar el caso de uso anterior para incluir al caso de uso de autentificarse:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">El usuario ingresa al sitio.</li>
+              <li data-line="1">&lt;<strong>incluye</strong>&gt; “Autentificar”</li>
+              <li data-line="2">El sistema le ofrece un menú de servicios.</li>
+              <li data-line="3">Usuario: indica al sistema que desea realizar una transferencia</li>
+              <li data-line="4">Sistema: lista las cuentas del usuario</li>
+              <li data-line="5">...</li>
+            </ol>
+          </div>
+          <div>
+            <p>Una vez que se llega al paso 2 se ejecuta el caso de uso autentificar y sólo si este se ejecuta con éxito, o sea que el usuario logra efectivamente autentificarse, se continúa con el caso de uso de realizar transferencias.</p>
+          </div>
+          <div>
+            <h2 data-heading="Extensión" id="Extensión">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Extensión
+            </h2>
+          </div>
+          <div>
+            <p>La relación de extensión entre casos de uso se refiere a un fragmento de un caso de uso que extiende, es decir, <strong>agrega comportamiento</strong>, a otro caso de uso. </p>
+          </div>
+          <div>
+            <p>Se utilizan para describir <strong>escenarios alternativos complejos</strong>, que sería demasiado complicado de explicar mediante flujos alternativos o para destacar flujos alternativos. </p>
+          </div>
+          <div>
+            <p>Solo se ejecuta en caso de que se cumpla una condición particular en algún punto específico del caso de uso a extender. A ese punto se le llama <strong>punto de extensión</strong>. </p>
+          </div>
+          <div>
+            <p>En esta relación, <strong>el caso de uso extendido conoce al caso de uso que lo extiende y viceversa</strong>.</p>
+          </div>
+          <div>
+            <p>Cuando se llega al punto de extensión se ejecuta el caso de uso que extiende y, en caso de una ejecución exitosa, se continúa la ejecución del caso base en el punto siguiente al punto de extensión.</p>
+          </div>
+          <div>
+            <h2 data-heading="Generalización" id="Generalización">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Generalización
+            </h2>
+          </div>
+          <div>
+            <p>La relación de generalización nos permite definir casos en los cuales tenemos <strong>más de un escenario principal</strong> para un caso de uso, que comparten cosas en común. Lo que se hace en este caso es crear un caso de uso abstracto y crear distintos casos de uso (uno por cada uno de esos escenarios que mencionamos anteriormente) que hereden del caso de uso abstracto. </p>
+          </div>
+          <div>
+            <p>Los casos de usos hijos heredan del padre los escenarios, puntos de extensión y relaciones a la vez que pueden definir o enriquecer con nuevos flujos y acciones al caso de uso padre.</p>
+          </div>
+          <div>
+            <h1 data-heading="Otras consideraciones y casos particulares" id="Otras_consideraciones_y_casos_particulares">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Otras consideraciones y casos particulares
+            </h1>
+          </div>
+          <div>
+            <p>Se tiene que tener en cuenta las siguientes consideraciones a la hora de desarrollar los casos de uso en el marco de un proceso de desarrollo iterativo e incremental:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Los casos de uso <strong>no tienen porque desarrollarse por completo todos juntos</strong>.
+                <ul class="has-list-bullet">
+                  <li data-line="1">
+                    <div class="list-bullet"></div>Primero se identifican los casos de uso y se generan las descripciones (Caso de Uso en Alto Nivel).
+                  </li>
+                  <li data-line="2">
+                    <div class="list-bullet"></div>Luego se expanden aquellos que se consideren más relevantes o se desee implementar primero (en un proceso guiado por casos de uso, serán los casos de uso relevantes para la arquitectura)<br>
+                    Expandir un caso de uso consiste en agregar el flujo principal y los alternativos, precondiciones y poscondiciones (Caso de Uso Expandido).
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>A medida que sea necesario, se va desarrollando el resto, cuando se esta más cerca de diseñar la funcionalidad.
+                  </li>
+                </ul>
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>No se debería incluir en el flujo del caso de uso detalles de la interfaz gráfica. Aunque sí pueden incluirse borradores de las pantallas.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>Hay errores que no tienen por qué ser considerados a nivel de casos de uso, como por ejemplo lo que tiene que ver con errores en el formato de la entrada (fechas inválidas, pasar strings en lugar de números,...)
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Se puede tener un <strong>flujo alternativo dentro de un flujo alternativo</strong>. Se nota de manera similar a los flujos alternativos comunes.<br>
+                Por ejemplo, si hay un flujo alternativo que surge a partir del punto 4 del flujo alternativo 12.B, se anota ese flujo de la siguiente manera:<br>
+                <strong>12.B.4.A. Condición que lleva a este flujo alternativo</strong><br>
+                12.B.4.A.1. Paso 1<br>
+                12.B.4.A.2. Paso 2<br>
+                12.B.4.A.3. ...<br>
+                o bien:<br>
+                <strong>12.B.4.A. Condición que lleva a este flujo alternativo</strong>
+                <ol>
+                  <li data-line="15">Paso 1</li>
+                  <li data-line="16">Paso 2</li>
+                  <li data-line="17">...</li>
+                </ol>
+              </li>
+              <li data-line="18">
+                <div class="list-bullet"></div>Dentro de un flujo alternativo se puede hacer referencia a un paso del flujo base al momento de volver a él.<br>
+                Por ejemplo, es válido terminar un flujo alternativo indicando “Volver al punto 6.A.2” (opcionalmente se puede indicar a qué flujo corresponde el paso, por ejemplo “Volver al punto 6 del flujo principal / del flujo alternativo 6.A"). Esto puede resultar útil al momento de manejar errores, debido a que distintos errores pueden requerir manejarse de la misma manera y el manejo de errores se realiza en flujos alternativos.
+              </li>
+              <li data-line="20">
+                <div class="list-bullet"></div>No se debe hacer referencia al lenguaje de implementación en los casos de uso ya que estos son independientes del lenguaje y entorno de desarrollo utilizados.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Ejemplo de un caso de uso desarrollado" id="Ejemplo_de_un_caso_de_uso_desarrollado">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ejemplo de un caso de uso desarrollado
+            </h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230317164856.png" src="Pasted image 20230317164856.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230317164856.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230317164856.png?1683989080713"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230317164908.png" src="Pasted image 20230317164908.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230317164908.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230317164908.png?1683989080705"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230317164917.png" src="Pasted image 20230317164917.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230317164917.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230317164917.png?1683989080705"></span><br>
+              <span alt="Pasted image 20230317164933.png" src="Pasted image 20230317164933.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230317164933.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230317164933.png?1683989080702"></span>
+            </p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230317164943.png" src="Pasted image 20230317164943.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230317164943.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230317164943.png?1683989080706"></span></p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Si se pone como poscondición, no sería obligatorio ponerlo como un paso, ya que no refiere a la interacción, aunque sí es recomendable. Por lo menos debe estar en alguno de los dos lados.</li>
+            </ol>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Introducción">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Introducción</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Elementos_principales">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Elementos principales</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Actores">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Actores</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Objetivo">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Objetivo</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Precondiciones">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Precondiciones</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Poscondiciones">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Poscondiciones</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Descripción">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Descripción</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Caso_de_Uso_expandido">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Caso de Uso expandido</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Relaciones_entre_casos_de_uso">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Relaciones entre casos de uso</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Inclusión">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Inclusión</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Extensión">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Extensión</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Generalización">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Generalización</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Otras_consideraciones_y_casos_particulares">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Otras consideraciones y casos particulares</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ejemplo_de_un_caso_de_uso_desarrollado">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ejemplo de un caso de uso desarrollado</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

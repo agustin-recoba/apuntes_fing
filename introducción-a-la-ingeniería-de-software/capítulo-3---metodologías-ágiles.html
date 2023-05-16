@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Capítulo 3 - Metodologías ágiles</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-mo {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-stretchy-h {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>* {
+      display: table-cell;
+      width: 0;
+    }
+
+    mjx-stretchy-h>*>mjx-c {
+      display: inline-block;
+      transform: scalex(1.0000001);
+    }
+
+    mjx-stretchy-h>*>mjx-c::before {
+      display: inline-block;
+      width: initial;
+    }
+
+    mjx-stretchy-h>mjx-ext {
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: clip visible;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c::before {
+      transform: scalex(500);
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c {
+      width: 0;
+    }
+
+    mjx-stretchy-h>mjx-beg>mjx-c {
+      margin-right: -.1em;
+    }
+
+    mjx-stretchy-h>mjx-end>mjx-c {
+      margin-left: -.1em;
+    }
+
+    mjx-stretchy-v {
+      display: inline-block;
+    }
+
+    mjx-stretchy-v>* {
+      display: block;
+    }
+
+    mjx-stretchy-v>mjx-beg {
+      height: 0;
+    }
+
+    mjx-stretchy-v>mjx-end>mjx-c {
+      display: block;
+    }
+
+    mjx-stretchy-v>*>mjx-c {
+      transform: scaley(1.0000001);
+      transform-origin: left center;
+      overflow: hidden;
+    }
+
+    mjx-stretchy-v>mjx-ext {
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 0px solid transparent;
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: visible clip;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c::before {
+      width: initial;
+      box-sizing: border-box;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c {
+      transform: scaleY(500) translateY(.075em);
+      overflow: visible;
+    }
+
+    mjx-mark {
+      display: inline-block;
+      height: 0px;
+    }
+
+    mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D43C.TEX-I::before {
+      padding: 0.683em 0.504em 0 0;
+      content: "I";
+    }
+
+    mjx-c.mjx-c28::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: "(";
+    }
+
+    mjx-c.mjx-c1D44B.TEX-I::before {
+      padding: 0.683em 0.852em 0 0;
+      content: "X";
+    }
+
+    mjx-c.mjx-c3B::before {
+      padding: 0.43em 0.278em 0.194em 0;
+      content: ";";
+    }
+
+    mjx-c.mjx-c1D44C.TEX-I::before {
+      padding: 0.683em 0.763em 0 0;
+      content: "Y";
+    }
+
+    mjx-c.mjx-c29::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: ")";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "..";
+    let mediaPath = "../media";
+    let jsPath = "../scripts";
+    let cssPath = "../styles";
+  </script>
+
+  <script src="../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div>
+          <h1 id="Capítulo_3_-_Metodologías_ágiles">
+            <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                <path d="M3 8L12 17L21 8"></path>
+              </svg></div>Capítulo 3 - Metodologías ágiles
+          </h1>
+        </div>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <p>A los clientes les cuesta darse cuenta de cuáles son los requerimientos del software que quieren, por eso <strong>es difícil tener requerimientos estables</strong>. </p>
+          </div>
+          <div>
+            <p>En los métodos ágiles, no hay especificación del sistema y la documentación del diseño es mínima. Los requerimientos de usuario se plantean de forma genérica.<br>
+              Los clientes pueden sugerir cambios para cada versión. Se hacen incrementos pequeños, donde se hacen nuevos sistemas para los clientes cada dos o tres semanas. La razón de este involucramiento es para obtener retroalimentación rápidamente. La comunicación es informal para minimizar la cantidad de documentación. El diseño e implementación son las actividades centrales, y otras actividades como el testing se incorporan a las mismas. </p>
+          </div>
+          <div>
+            <p>Los requerimientos y el diseño se desarrollan juntos. De todos modos, <strong>es posible generar documentación con metodologías ágiles</strong>, si así se decidiera. </p>
+          </div>
+          <div>
+            <p>Estas metodologías funcionan bien cuando es posible tener buena comunicación entre el cliente y los desarrolladores, y al no haber varios equipos involucrados, la comunicación informal funciona.</p>
+          </div>
+          <div>
+            <h2 data-heading="Manifesto ágil" id="Manifesto_ágil">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Manifesto ágil
+            </h2>
+          </div>
+          <div>
+            <p><em>“Estamos descubriendo formas mejores de desarrollar software tanto por nuestra propia experiencia como ayudando a terceros. A través de este trabajo hemos aprendido a valorar:</em></p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><em>Individuos e interacciones sobre procesos y herramientas.</em>
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><em>Software funcionando sobre documentación extensiva.</em>
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><em>Colaboración con el cliente sobre negociación contractual.</em>
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div><em>Respuesta ante el cambio sobre seguir un plan.</em><br>
+                <em>Esto es, aunque valoramos los elementos de la derecha, valoramos más los de la izquierda”.</em>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Principios" id="Principios">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Principios
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230421225915.png" src="Pasted image 20230421225915.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230421225915.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230421225915.png?1683989080783"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Aplicabilidad de las metodologías ágiles" id="Aplicabilidad_de_las_metodologías_ágiles">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Aplicabilidad de las metodologías ágiles
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Desarrollo de productos de pequeño o mediano porte
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Desarrollo de sistemas “a medida” (custom systems), en donde hay un claro compromiso del cliente en participar del proceso de desarrollo del software, en donde hay pocas reglas y no hay regulaciones externas que afecten al software.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>¿Alguna otra? Van para el parcial y para el obligatorio...
+                <ul class="has-list-bullet">
+                  <li data-line="3">
+                    <div class="list-bullet"></div>Si se necesita la entrega rápida y frequente de nuevas funcionalidades en lugar de una única liberación.
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>Si los requisitos son cambiantes.
+                  </li>
+                  <li data-line="5">
+                    <div class="list-bullet"></div>Se precisa adaptabilidad al negocio y ambiente (no solo en cuanto a los requisitos).
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Extreme Programming (XP)" id="Extreme_Programming_(XP)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Extreme Programming (XP)
+            </h1>
+          </div>
+          <div>
+            <p>Extreme Programming toma en “extremo” el enfoque de desarrollo iterativo: los requerimientos se expresan como historias de usuario, que se implementan directamente como tareas. Los programadores trabajan de a pares y hacen tests para cada tarea antes de escribir el código. Los requerimientos se basan en las historias de usuario. El cliente debe definir las pruebas de aceptación.</p>
+          </div>
+          <div>
+            <p>A continuación se detallan algunas prácticas de XP (van para el parcial).</p>
+          </div>
+          <div>
+            <h2 data-heading="Ciclo de liberación" id="Ciclo_de_liberación">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ciclo de liberación
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230421225954.png" src="Pasted image 20230421225954.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230421225954.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230421225954.png?1683989080789"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Historias de usuario" id="Historias_de_usuario">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Historias de usuario
+            </h2>
+          </div>
+          <div>
+            <p>Una historia de usuario es una posibilidad de uso que puede sucederle a un usuario. Esto se discute entre el cliente y los desarrolladores para generar una “tarjeta de historia” (o <em>story-card</em>) que describe una historia que contiene las necesidades del cliente. Luego se desarrolla ese uso en un futuro incremento. Esta es la forma de incorporar los requerimientos al desarrollo.</p>
+          </div>
+          <div>
+            <p>Las tarjetas de historia se separan en tareas y se estima el esfuerzo y recursos necesarios, hablando con el cliente para refinar los requerimientos. Luego el cliente elige qué historias son prioritarias para implementar, aquellas que pueden ser útiles inmediatamente. Se debe identificar funcionalidades que se pueden implementar en dos semanas, que es el tiempo hasta el siguiente incremento.</p>
+          </div>
+          <div>
+            <p>Con los cambios de requerimientos, pueden cambiar o eliminarse historias no implementadas. Si hay cambios, el cliente debe elegir si éstos tienen prioridad sobre cosas nuevas. Las historias de usuario facilitan a los mismos sugerir requerimientos, pues les son más comprensibles. Sin embargo, no son completas. No se sabe si se necesitan más requerimientos, o si se tiene toda la información de una actividad.</p>
+          </div>
+          <div>
+            <h2 data-heading="Refactorización" id="Refactorización">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Refactorización
+            </h2>
+          </div>
+          <div>
+            <p>Diseñar para facilitar los cambios suele ser una pérdida de esfuerzo. Para facilitarlos, XP sugiere que el código debe ser refactorizado. La refactorización significa buscar mejoras al programa e implementarlas inmediatamente, aún si no son necesarias. Los cambios suelen degradar la estructura del sistema, y la refactorización evita esto al mejorar la estructura y la legibilidad.</p>
+          </div>
+          <div>
+            <p>Algunos ejemplos son eliminar código duplicado o reemplazar código similar por llamadas a una librería. Los IDEs incluyen herramientas para esto. En principio, con la refactorización el sistema debería ser fácil de entender y cambiar. En la práctica, no siempre hay tiempo para refactorizar, o hay que hacer algún cambio que requiere cambiar la estructura del sistema.</p>
+          </div>
+          <div>
+            <h2 data-heading="Desarrollo dirigido por pruebas" id="Desarrollo_dirigido_por_pruebas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Desarrollo dirigido por pruebas
+            </h2>
+          </div>
+          <div>
+            <p>Hacer pruebas sin tener una especificación es difícil. Para esto, en XP las pruebas son automáticas y centrales al proceso de desarrollo, que no puede proceder hasta que todas las pruebas sean exitosas. </p>
+          </div>
+          <div>
+            <p>Las características clave son:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Desarrollo dirigido por pruebas
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Desarrollo de tests incrementales por uso
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Involucrar al usuario en el desarrollo y validación de las pruebas
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Uso de frameworks de testeo automático
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Al escribir las pruebas antes del código, se pueden hacer mientras se escribe el código y encontrar problemas.<br>
+              Escribir pruebas define una interfaz y una especificación del comportamiento de la funcionalidad en cuestión. Hay menos problemas de malos entendidos de requerimientos o interfaz, y una clara relación entre los primeros y el código que los implementa, gracias a las tareas.<br>
+              Las personas que implementan las mismas deben entender bien la especificación para hacer pruebas, por lo que ambigüedades y omisiones se deben aclarar antes de empezar.<br>
+              Además, evita que el desarrollador se adelante al tester, lo que puede llevar a la omisión de pruebas para mantener el calendario</p>
+          </div>
+          <div>
+            <p>Cada tarea genera tests unitarios que verifican la implementación de la misma. El cliente ayuda a desarrollar pruebas de aceptación (que el sistema haga lo que necesita). La automatización de tests es fundamental. Las pruebas se escriben como componentes ejecutables antes de implementar las tareas, y estas pruebas individualmente simulan una entrada y verifican que la salida sea correcta. Hay frameworks para esto (por ejemplo Junit). Esta automatización lleva a que exista un conjunto de pruebas que pueden ser ejecutadas fácilmente al introducir nuevas funcionalidades al sistema.</p>
+          </div>
+          <div>
+            <p>Como es lógico, este tipo de desarrollo conlleva la escritura de gran cantidad de pruebas. Sin embargo, es difícil verificar que sean completas. Los programadores suelen omitir algunas porque no les gusta el testeo, y algunas pruebas son difíciles de hacer incrementalmente. Por eso es necesario revisar las pruebas y hacer más cuando el sistema ya ha sido desarrollado.</p>
+          </div>
+          <div>
+            <h2 data-heading="Pair programming" id="Pair_programming">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Pair programming
+            </h2>
+          </div>
+          <div>
+            <p>La pareja de programadores se sienta en la <strong>misma computadora</strong> para hacer el software. Pero no siempre son los mismos, sino que <strong>van rotando</strong>. Esto tiene algunas ventajas: apoya la idea de <strong>propiedad colectiva del software</strong>, haciendo que todos sean responsables de los problemas; es una forma de <strong>inspección informal</strong> al haber dos personas, que ayuda a encontrar errores sin los problemas de tiempo de las inspecciones formales; y <strong>alienta a la refactorización</strong>, pues otros se benefician inmediatamente de dicho proceso (normalmente los programadores son reacios a refactorizar porque no se ven los beneficios).</p>
+          </div>
+          <div>
+            <p>La <strong>eficiencia del pair programming aún es cuestionada</strong>, dado que dos individuos trabajando juntos en un período de tiempo producen la mitad de código que si trabajaran separados.<br>
+              Estudios sobre el tema han dado resultados mixtos. En general, la ventaja es que <strong>se comparte conocimiento</strong>, lo que reduce los riesgos para el proyecto cuando algún miembro del equipo se va.</p>
+          </div>
+          <div>
+            <h2 data-heading="Resumen de XP" id="Resumen_de_XP">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Resumen de XP
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230421230114.png" src="Pasted image 20230421230114.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230421230114.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230421230114.png?1683989080790"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Scrum" id="Scrum">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Scrum
+            </h1>
+          </div>
+          <div>
+            <p>La planificación informal y falta de documentación de los métodos ágiles colisionan con la necesidad de visibilidad de las grandes empresas, que necesitan saber <strong>qué está sucediendo</strong>. El desarrollo ágil también requiere gestión para hacer el mejor uso de tiempo y recursos posible. Para dar un framework para esto se desarrolló el Scrum, que permite dar algo de visibilidad. <strong>Es un método ágil</strong> por seguir los principios necesarios, pero no se enfoca en las prácticas, por lo que puede incorporarse con otras.</p>
+          </div>
+          <div>
+            <p>Los términos usados en Scrum son:</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230313123030.png" src="Pasted image 20230313123030.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230313123030.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230313123030.png?1683989080696"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Tres fases:" id="Tres_fases:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tres fases:
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="Inicial" id="Inicial">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Inicial
+            </h3>
+          </div>
+          <div>
+            <p>El proceso o ciclo de sprint del Scrum comienza con el product backlog: la lista de cosas en las que hay que trabajar, que no son sólo funcionalidades del sistema (pruebas, arquitectura, documentación). Puede tener distintos niveles de especificidad, lo cual depende del product owner. </p>
+          </div>
+          <div>
+            <h3 data-heading="Ciclos de sprints" id="Ciclos_de_sprints">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ciclos de sprints
+            </h3>
+          </div>
+          <div>
+            <p>Cada ciclo de sprint dura un tiempo fijo, y al principio de cada uno el PO define cuáles son los elementos del backlog que tienen prioridad ese ciclo. Si no se completan, no se extiende el tiempo.<br>
+              Luego el equipo elige qué elementos de la lista creen que pueden hacer ese sprint, y estiman el tiempo que les tomará. Para esto, consideran la velocidad lograda en sprints anteriores. Se hace un backlog para ese sprint particular: qué tareas tienen que hacer.</p>
+          </div>
+          <div>
+            <p>Al final de cada sprint, hay una reunión de evaluación con todo el equipo, donde se ve cómo se puede mejorar la forma en que trabajaron y dan datos del producto para hacer el product backlog del siguiente sprint. El ScrumMaster suele tener que dar reportes a sus superiores, y pueden tener que gestionar proyectos.</p>
+          </div>
+          <div>
+            <h3 data-heading="Fase de clausura" id="Fase_de_clausura">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Fase de clausura
+            </h3>
+          </div>
+          <div>
+            <p>En esta fase se cierra el proyecto, se completa la documentación requerida y se evalúan las lecciones aprendidas del mismo.</p>
+          </div>
+          <div>
+            <h2 data-heading="Efectos prácticos" id="Efectos_prácticos">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Efectos prácticos
+            </h2>
+          </div>
+          <div>
+            <p>Hoy en día, muchas empresas tienen equipos distribuidos donde los miembros están por todo el mundo. Se ha desarrollado, entonces, el Scrum distribuido para estos casos. Incluye comunicación por chat o videoconferencias, un IDE común y ambiente de integración.</p>
+          </div>
+          <div>
+            <h1 data-heading="Escalamiento de procesos ágiles" id="Escalamiento_de_procesos_ágiles">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Escalamiento de procesos ágiles
+            </h1>
+          </div>
+          <div>
+            <p>La necesidad de obtener software más rápidamente se aplica a sistemas y empresas grandes, y por eso se ha intentado evolucionar los métodos ágiles para usarlos en estas circunstancias. </p>
+          </div>
+          <div>
+            <p><strong>“Escalar hacia arriba”</strong> refiere a la utilización de métodos ágiles para el desarrollo de grandes sistemas de software, los cuales no pueden ser desarrollados por equipos reducidos.<br>
+              <strong>“Escalar hacia afuera”</strong> refiere a cómo los métodos ágiles pueden ser introducidos a lo largo de una gran organización con muchos años de experiencia en el desarrollo de software.
+            </p>
+          </div>
+          <div>
+            <p>Suele ser necesario escalar hacia arriba y hacia afuera al mismo tiempo, pues software grande se encarga a empresas grandes. Los métodos ágiles no aportan tanta productividad y disminución de los defectos en estos casos.</p>
+          </div>
+          <div>
+            <p>Cuando se hace un contrato, normalmente la documentación de los requerimientos es parte del mismo, pero esto no existe en los métodos ágiles. En consecuencia, el cliente paga por el tiempo que toma hacer el sistema y no por los requerimientos solicitados. Esto puede llevar a disputas sobre quién debe pagar si el sistema se demora.<br>
+              En la práctica, la documentación formal del sistema no suele ser actualizada, y por eso los promotores de métodos ágiles sostienen que es innecesaria, y que con código legible y de calidad es suficiente para que el sistema se pueda mantener. Sin embargo, los requerimientos de sistema le dicen al ingeniero qué debe hacer el sistema, y sin el mismo el mantenimiento se hace más difícil. Esto es peor si no se puede garantizar la continuidad del equipo.</p>
+          </div>
+          <div>
+            <p>Es importante mantener al cliente involucrado, que puede perder interés cuando el sistema está hecho y no tener interés en el mantenimiento. Si el equipo de desarrollo no se mantiene, se pierde el conocimiento implícito que sus miembros tenían del sistema y para el cual no necesitaban documentación. Esto hace que sea difícil para nuevos miembros entender qué hace el sistema. Es, además, difícil que el equipo de mantenimiento sea continuo, pues a los programadores no les agrada hacer estas tareas y se van a nuevos proyectos.</p>
+          </div>
+          <div>
+            <p>Para escalar métodos ágiles, es fundamental <strong>integrarlos con enfoques dirigidos por planes</strong>, sobre todo en grandes compañías. Los principios de metodologías ágiles no siempre se pueden llevar a cabo. Para decidir el balance, hay que hacerse preguntas de carácter técnico, humano y profesional.</p>
+          </div>
+          <div>
+            <p>Los sistemas grandes tienen varios aspectos que requieren planeación y documentación. Cuanto más grande y complejo sea el sistema, más necesario es dirigirse por planes. Además, si tienen larga vida o están sujetos a regulaciones, requieren documentación.</p>
+          </div>
+          <div>
+            <p>Los métodos ágiles ponen mucha confianza en el equipo para que se comunique, coopere, y en las habilidades de cada individuo, pero esto no siempre es así, por lo que se puede requerir planeación. Los métodos ágiles requieren más habilidad que los de planes, donde el individuo simplemente convierte el diseño en código, y si se tiene gente con poca habilidad, puede ser necesario poner a los mejores en diseño. Si el equipo está distribuido, es necesario hacer documentación para comunicarse. Finalmente, los métodos ágiles requieren ciertas tecnologías para visualizar el diseño y programación. Si no se tienen, se requiere documentación.</p>
+          </div>
+          <div>
+            <p>Las organizaciones tienen procedimientos, y puede que los administradores no acepten la falta de documentación y formalidad. Se puede usar planes para los requerimientos, pero luego hacer el sistema con métodos ágiles. También sucede que la cultura de un lugar está acostumbrada a la documentación del enfoque por planes.</p>
+          </div>
+          <div>
+            <p>Los factores que influencian esta decisión, entonces, son:</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230309152303.png" src="Pasted image 20230309152303.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230309152303.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230309152303.png?1683989080689"></span></p>
+          </div>
+          <div>
+            <p>Los métodos ágiles tienen que evolucionar para sistemas grandes, ya que son mucho más complejos que sistemas pequeños o productos de software. Esto se debe a seis factores de los sistemas grandes:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Son sistemas de sistemas, y cada sistema es hecho por un equipo diferente y apartado del resto. Esto significa que la mayoría no ve el sistema completo, sino sólo su parte.</li>
+              <li data-line="1">Son sistemas brownfield, es decir, incluyen e interactúan con varios sistemas existentes. Muchos de los requisitos del sistema se ocupan de esta interacción, y no dan mucha posibilidad de flexibilidad o desarrollo incremental.</li>
+              <li data-line="2">Cuando hay varios sistemas integrando uno solo, parte importante del desarrollo es la configuración de sistema, que tampoco se presta para el desarrollo incremental.</li>
+              <li data-line="3">Suelen estar limitados por regulaciones y reglas externas que pueden requerir ciertos tipos de documentación de sistema.</li>
+              <li data-line="4">Tienen un largo tiempo de procuración y desarrollo, lo cual hace difícil mantener un equipo de personas que sepan del sistema todo ese tiempo, pues se van.</li>
+              <li data-line="5">Suelen tener muchas personas interesadas con diferentes objetivos, y es prácticamente imposible involucrarlos a todos en el desarrollo.</li>
+            </ol>
+          </div>
+          <div>
+            <p>El modelo de escalamiento ágil (ASM) de IBM reconoce que es un proceso en etapas. La primera es ir de las prácticas ágiles básicas a entregas ágiles disciplinadas, donde se adaptan las prácticas a un entorno organizado y disciplinado, y se reconoce la importancia de aspectos como los requerimientos y diseño, no sólo desarrollo. La etapa final es ir a agilidad en escala donde se reconoce la complejidad de grandes proyectos. Esto implica ser consciente de factores como desarrollo distribuido y regulaciones. Para esto puede ser necesario modificar las prácticas de la etapa anterior y agregar prácticas dirigidas por planes al proceso.</p>
+          </div>
+          <div>
+            <p>Para escalar metodologías ágiles hay que tener en cuenta lo siguiente:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Un enfoque completamente incremental es imposible; hay que trabajar en los requerimientos antes de empezar para identificar las diferentes partes del sistema. Sin embargo, no tiene por qué hacerse en detalle.</li>
+              <li data-line="1">No puede haber un único product owner o representante del cliente. Varias personas deben involucrarse en distintas partes del sistema, y comunicarse durante el desarrollo.</li>
+              <li data-line="2">No puede enfocarse sólo en el código. Tiene que haber documentación del sistema y su arquitectura, el diseño y aspectos críticos.</li>
+              <li data-line="3">Deben diseñarse y usarse métodos de comunicación entre equipos: llamadas, videoconferencias, emails, según la frecuencia de la comunicación.</li>
+              <li data-line="4">La integración continua (hacer todo el sistema cada vez que hay algún cambio) es imposible si tiene muchas partes, pero es importante hacer versiones regularmente.</li>
+            </ol>
+          </div>
+          <div>
+            <p>Para desarrollo a gran escala, existe el multi-team Scrum, cuyas claves son:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Repetición de roles: cada equipo tiene un ScrumMaster y un Product Owner para su componente, y puede haber uno principal para todo el sistema.</li>
+              <li data-line="1">Arquitectos de producto: cada equipo elige un arquitecto, quienes trabajan juntos para diseñar y elaborar la arquitectura general del sistema.</li>
+              <li data-line="2">Alineación de versiones: las fechas para las nuevas versiones de cada equipo se alinean para tener un sistema completo.</li>
+              <li data-line="3">Scrum de Scrums: hay un Scrum de Scrums diario donde representantes de cada equipo se juntan a hablar del progreso y planear el trabajo.</li>
+            </ol>
+          </div>
+          <div>
+            <p>Puede ser difícil introducir metodologías ágiles en organizaciones grandes por varias razones: </p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Administradores de proyectos sin experiencia en estos métodos pueden no querer tomar el riesgo de un nuevo enfoque, al no saber cómo va a afectar sus proyectos.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Las organizaciones grandes suelen tener procedimientos y estándares de calidad que todos los proyectos deben seguir y, por naturaleza, son incompatibles con los métodos ágiles.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Los métodos ágiles funcionan mejor con gente muy habilidosa, pero en organizaciones grandes hay muchos niveles de habilidad, y los menos habilidosos pueden ser menos efectivos en procesos ágiles.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Resistencia cultural a métodos ágiles.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>La administración de los cambios, por ejemplo, entra en conflicto con la refactorización, ya que la primera requiere que los desarrolladores pidan autorización para hacer un cambio, a diferencia de la segunda. El testing puede derivarse a un equipo externo, lo que entra en conflicto con el desarrollo por pruebas. Es difícil introducir estos cambios, pues son culturales, y lo mejor es hacerlos de a poco, comenzando con un grupo.</p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Capítulo_3_-_Metodologías_ágiles">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Capítulo 3 - Metodologías ágiles</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Manifesto_ágil">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Manifesto ágil</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Principios">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Principios</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Aplicabilidad_de_las_metodologías_ágiles">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Aplicabilidad de las metodologías ágiles</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Extreme_Programming_(XP)">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Extreme Programming (XP)</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Ciclo_de_liberación">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Ciclo de liberación</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Historias_de_usuario">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Historias de usuario</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Refactorización">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Refactorización</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Desarrollo_dirigido_por_pruebas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Desarrollo dirigido por pruebas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Pair_programming">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Pair programming</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Resumen_de_XP">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Resumen de XP</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Scrum">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Scrum</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Tres_fases:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Tres fases:</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Inicial">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Inicial</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Ciclos_de_sprints">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Ciclos de sprints</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Fase_de_clausura">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Fase de clausura</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Efectos_prácticos">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Efectos prácticos</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Escalamiento_de_procesos_ágiles">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Escalamiento de procesos ágiles</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
