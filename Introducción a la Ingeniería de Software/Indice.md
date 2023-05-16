@@ -5,6 +5,7 @@
 # Procesos de software
 [[Capítulo 2 - Proceso de software]]
 	[[Ejemplos de modelos o SDLC]]
+	[[MUM]]
 [[Capítulo 3 - Metodologías ágiles]]
 
 # Ingeniería de requisitos
@@ -23,3 +24,7 @@
 # Construcción
 
 [[SWEBOK 3 - Construcción]]
+
+# Verificación y validación
+
+[[Software Testing Foundations]]
