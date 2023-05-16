@@ -458,9 +458,64 @@ Es importante probar:
 - Intercambio de datos y comunicaciones
 
 ### 3.3.1 Explanation of Terms
+A precondition for integration testing is that the test objects subjected to it (i.e., components) have already been tested. Defects should, if possible, already have been corrected.
+
+#### Integration
+Developers, testers, or special integration teams then compose groups of these components to form larger structural units and subsystems. This connecting of components is called integration.
+
+#### Integration test
+Then the structural units and subsystems must be tested to make sure all components collaborate correctly. Thus, the goal of the integration test is to expose faults in the interfaces and in the interaction between integrated components.
+
+#### Test basis
+The test basis may be the software and system design or system architecture, or workflows through several interfaces and use cases.
+
+#### Integration testing in the large
+Interfaces to the system environment (i.e., external systems) are also subject to integration and integration testing.
+In this cases we sometimes speak of **system integration testing**, higher-level integration testing, or **integration testing in the large** (integration of components is then integration test in the small, sometimes called **component integration testing**).
+System integration testing can be executed only after system testing. The development team has only one-half of such an external interface under its control. This constitutes a special risk.
+
+#### Integration levels
+There may be several integration levels for test objects of different sizes. Component integration tests will test the interfaces between internal components or between internal subsystems. System integration tests focus on testing interfaces between different systems and between hardware and software.
+
 ### 3.3.2 Test Objects
+#### Assembled components
+Step-by-step, during integration, the different components are combined to form larger units. 
+Ideally, there should be an integration test after each of these steps. Each subsystem may then be the basis for integrating further larger units.
+
+#### External systems or acquired components
+In component testing, such existing or standard components are probably not tested. In the integration test, however, these system components must be taken into account and their collaboration with other components must be examined.
+
 ### 3.3.3 The Test Environment
+#### Reuse of the test environment
+Because the test objects are assembled components that have no interfaces to the “outside” other than their constituting components, it is obvious and sensible to reuse the available test drivers for component testing.
+If the component test was well organized, then some test drivers should be available.
+
+If a component test is poorly organized, there may be usable test drivers for only a few of the components.
+During integration testing in a much later stage of the project, the tester will need to put a lot of effort into the creation, change, or repair of the test environment. Time needed for test execution is lost.
+
+#### Monitors are necessary
+During integration testing, additional tools, called monitors, are required. Monitors are programs that read and log data traffic between components. Monitors for standard protocols (e.g., network protocols) are commercially available. Special monitors must be developed for the observation of project-specific component interfaces.
+
+
 ### 3.3.4 Test Objectives
+The test objectives of the test level integration test are clear: to reveal interface problems as well as conflicts between integrated parts.
+
+#### Wrong interface formats
+When attempting to integrate two single components, their **interface formats** may not be compatible with each other because some files are missing or because the developers have split the system into completely different components than specified.
+
+#### Typical faults in data exchange
+The harder-to-find problems, however, are due to the execution of the connected program parts. These kinds of problems can only be found by dynamic testing.
+They are faults in the data exchange or in the communication between the components.
+- A component transmits syntactically incorrect or no data. The receiving component cannot operate or crashes (functional fault in a component, incompatible interface formats, protocol faults).
+- The communication works but the involved components interpret the received data differently (functional fault of a component, contradicting or misinterpreted specifications).
+- Data is transmitted correctly but at the wrong time, or it is late (timing problem), or the intervals between the transmissions are too short (throughput, load, or capacity problem).
+
+#### Can the component test be omitted?
+Of course, this is possible, and in practice it is regretfully often done, but only at the risk of great disadvantages:
+- Most of the failures that will occur in a test designed like this are caused by functional faults within the individual components. An implicit component test is therefore carried out, but in an environment that is not suitable.
+- Because there is no suitable access to the individual component, some failures cannot be provoked and many faults, therefore, cannot be found.
+- If a failure occurs in the test, it can be difficult or impossible to locate its origin and to isolate its cause.
+
 ### 3.3.5 Integration Strategies
 - ¿En qué orden y de qué forma deberíamos probar la integración de los componentes?
 - En la práctica, los diversos componentes van a estar disponibles en momentos diferentes.
@@ -499,8 +554,6 @@ Bottom-Up y Top-Down solo pueden usarse en sistemas estructurados de forma estri
 
 Tercer nivel de prueba: testing de sistema, en donde se comprueba que el sistema cumple con los requisitos especificados.
 
-Las pruebas de sistema se ejecutan desde el punto de vista del usuario final, y consideran interacciones de todos los componentes (que pueden no haber sido contempladas en las pruebas de integración).
-
 - **Objetos de prueba:** el sistema integrado como un todo
 - **Entorno de prueba:** lo más cercano posible al ambiente de producción (error común: utilizar el ambiente de desarrollo)
 - **Objetivos de prueba:** validar que el sistema completo cumple con la especificación de sus requisitos funcionales y no funcionales
@@ -509,42 +562,214 @@ Es importante verificar:
 - Documentación y omisión de requisitos
 
 ### 3.4.1 Explanation of Terms
+#### Reasons for system test
+Las pruebas de sistema se ejecutan desde el punto de vista del usuario final, y consideran interacciones de todos los componentes (que pueden no haber sido contempladas en las pruebas de integración).
+Many functions and system characteristics result from the interaction of all system components; consequently, they are visible only when the entire system is present and can be observed and tested only there.
+
 ### 3.4.2 Test Objects and Test Environment
+The system test tests the system as a whole in an environment as similar as possible to the intended **production environment**.
+
+Instead of test drivers and stubs, the hardware and software products that will be used later should be installed on the test platform (hardware, system software, device driver software, networks, external systems, etc.).
+
+System test also checks system and user documentation, like system manuals, user manuals, training material, etc.
+
+#### Data quality
+It is important to check the quality of data in systems that use a database or large amounts of data. This should be included in the system test. The data itself will then be new test objects. It must be assured that it is consistent, complete, and up-to-date.
+
+#### System test requires a separate test environment
+- During system testing, it is likely that failures will occur, resulting in damage to the customer’s operational environment.
+- The testers have only limited or no control over parameter settings and the configuration of the operational environment. The test conditions may change over time because the other systems in the customer’s environment are running simultaneously with the test.
+
+#### System test effort is often underestimated
+Because of the complex test environment. 
+At the beginning of the system test, only half of the testing and quality control work has been done.
+
+#### 
+
+#### 
+
+#### 
+
+
+
 ### 3.4.3 Test Objectives
+To validate whether the complete system meets the specified functional and nonfunctional requirements and how well it does that.
+
 ### 3.4.4 Problems in System Test Practice
+
+#### Excursion
+In many projects, the requirements are incompletely or not at all written down. So, it’s unclear how the system is supposed to behave. This makes it hard to find defects.
+
+#### Missed decisions
+The consequences for those responsible for system testing are less desirable: 
+- They must collect information on the requirements; 
+- they also have to make decisions that should have been made many months earlier. 
+This collection of information may be very costly and time consuming. Test completion and release of the completed system will surely be delayed.
+
+#### Project fail
+If the requirements are not specified, of course the developers do not Project fail have clear objectives either. Thus, it is very unlikely that the developed system will meet the implicit requirements of the customer.
+In such projects, execution of the system test can probably only announce the collapse of the project.
+
+
 ## 3.5 Acceptance Test
 
 Cuarto nivel de prueba: testing de aceptación, en donde se comprueba que el sistema es adecuado al uso y necesidades del cliente (puede realizarse como parte de las pruebas de niveles inferiores o distribuido en varios niveles de pruebas).
-
-Las pruebas de aceptación contractuales se basan en contratos donde se definen los criterios de aceptación, que se usan para las pruebas. Se hace en software específico para el cliente. Las pruebas de aceptación del usuario se hacen porque el cliente y el usuario final pueden ser diferentes, y los usuarios tienen diferentes expectativas del software. Las pruebas de aceptación operacionales se hacen con los administradores del sistema.
-
-Las pruebas de campo se hacen cuando el software debe correr en muchos entornos diferentes y no se puede probar en todos. De este modo se pueden buscar problemas con ciertos entornos. El alpha/beta testing consiste en enviar versiones previas y estables a clientes para que las prueben y reporten problemas. El dogfood testing consiste en que otros miembros de la compañía desarrolladora lo prueben.
+The acceptance test may be the only test that the customers are actually involved in or that they can understand.
 
 - **Objetos de prueba:** el sistema (o parte de este) bajo la perspectiva del usuario/cliente.
 - **Entorno de prueba:** entorno de producción.
 - **Objetivos de prueba:** validar que construimos el producto “correcto”.
 - **Bases de prueba:** cualquier documento que describa el sistema desde el punto de vista del usuario/cliente: casos de uso, procesos de negocio, user storys, etc.
 
+#### How much acceptance testing?
+For customer-specific systems, the risk is high and a comprehensive acceptance test is necessary. 
+At the other extreme, if a piece of standard software is introduced, it may be sufficient to install the package and test a few representative usage scenarios.
+
+#### Test basis
+The test basis for acceptance testing can be any document describing the system from the user or customer viewpoint.
+
 ### 3.5.1 Contract Acceptance Testing
+Las **pruebas de aceptación contractuales** se basan en contratos donde se definen los criterios de aceptación, que se usan para las pruebas. Se hace en software específico para el cliente. 
+
+Se hace cuando el producto es específico para un cliente. Si es un producto interno, el contrato es menos formal pero igualmente existe.
+
+#### Acceptance criteria
+The test criteria are the acceptance criteria determined in the development contract. Additionally, conformance to any governmental, legal, or safety regulations must be addressed here.
+
+Because the supplier may have misunderstood the acceptance criteria, it is very important that the acceptance test cases are designed by or at least thoroughly reviewed by the customer.
+
+#### Customer (site) acceptance test
+In contrast to system testing, which takes place in the producer environment, acceptance testing is run in the customer’s actual operational environment.
+The acceptance test also checks the delivery and installation procedures.
+
 ### 3.5.2 Testing for User Acceptance
+Las **pruebas de aceptación del usuario** se hacen porque el cliente y el usuario final pueden ser diferentes.
+
+#### Get acceptance of every user group
+Different user groups usually have completely different expectations of a new system. Users may reject a system because they find it “awkward” in some sense.
+This may happen even if the system is completely OK from a functional point of view.
+
+#### Present prototypes to the users early
+If major user acceptance problems are detected during acceptance testing, it is often too late to implement more than cosmetic countermeasures.
+
 ### 3.5.3 Operational [Acceptance] Testing
+Las **pruebas de aceptación operacionales** se hacen con los administradores del sistema.
+It may include testing of backup/restore cycles (including restoration of copied data), disaster recovery, user management, and checks of security vulnerabilities.
+
 ### 3.5.4 Field Testing (alpha/beta testing y dogfood tests)
+Las **pruebas de campo** se hacen cuando el software debe correr en muchos entornos diferentes y no se puede probar en todos. De este modo se pueden buscar problemas con ciertos entornos. 
+
+- El **alpha/beta** testing consiste en enviar versiones previas y estables a clientes para que las prueben y reporten problemas. 
+	Alpha tests are carried out at the producer’s location,.
+	Beta tests are carried out at the customer’s site.
+- El **dogfood testing** consiste en que otros miembros de la compañía desarrolladora lo prueben.
+	**_"if you make dogfood, try it yourself first”_**
+
 ## 3.6 Testing New Product Versions
 
 - Lo que vimos anteriormente es solo el principio del ciclo de vida del software.
 - Luego de la instalación de la primera versión del software, el mismo puede ser usado por años o décadas. Siendo cambiado, actualizado y extendido muchas veces.
 - El software no se “gasta” con el uso, ni los defectos se originan por dicha causa.
-- El mantenimiento puede ser correctivo, adaptativo o evolutivo (lo veremos más adelante en “evolución del software”).
+- El mantenimiento puede ser correctivo, adaptativo o evolutivo.
 
 ### 3.6.1 Software Maintenance
-### 3.6.2 Testing after Further Development
-### 3.6.3 Testing in Incremental Development
-## 3.7 Generic Types of Testing
-### 3.7.1 Functional Testing
-### 3.7.2 Nonfunctional Testing
-### 3.7.3 Testing of Software Structure
-### 3.7.4 Testing Related to Changes and Regression Testing
+We speak of software maintenance when:
+- a product is adapted to new operational conditions (adaptive maintenance, updates of operating systems, databases, middleware)
+- when defects that have been in the product before are corrected (corrective maintenance)
 
-Tanto en el mantenimiento como en procesos iterativos incrementales, es necesario realizar pruebas de regresión: verificar que los cambios o agregados realizados a la nueva versión no hayan degradado o “roto” el funcionamiento del sistema.
+#### Improve the test plan
+When a fault is detected, analyze which kind of testing would have detected this problem and will adequately improve or adapt the test plan.
+
+#### Typical problems
+1. The system is run under new operating conditions that were not predictable and not planned.
+2. The customers express new wishes.
+3. Functions are necessary for rarely occurring special cases that were not anticipated.
+4. Crashes that happen rarely or only after a very long run time are reported. These are often caused by external influences.
+
+#### Testing after maintenance work
+If the production environment has been changed or the system is ported to a new environment (for example, by migration to a new platform), a new acceptance test should be run by the organization responsible for operations. 
+If data has to be migrated or converted, even this aspect must be tested for correctness and completeness.
+
+There should be two strategies: one for emergency fixes (or “hot fixes”) and one for planned releases.
+
+#### Testing before retirement
+Testing for the retirement of a system should include the testing of data archiving or data migration into the future system.
+
+### 3.6.2 Testing after Further Development
+An improved product version will be delivered at certain intervals, such as, e.g., once a year. It is best to synchronize these **releases** with the ongoing maintenance work. For example, every six months a new version is introduced: one maintenance update and one genuine functional update
+
+#### Testing new releases
+As with maintenance testing, anything new or changed should be tested, and the remainder of the system should be regression tested to find unexpected side effects.
+
+### 3.6.3 Testing in Incremental Development
+Incremental development means system functionality and reliability will grow over time. Testing must be adapted to such development models, and continuous integration testing and regression testing are necessary.
+
+This danger can be reduced by running several V-models in sequence, one for each increment, where every next “V” reuses existing test material and adds the tests necessary for new development or for higher reliability requirements.
+![[Pasted image 20230516145036.png]]
+
+
+
+## 3.7 Generic <u>Types</u> of Testing
+### 3.7.1 Functional Testing
+Functional testing includes all kind of tests that verify a system’s input/output behavior.
+Black box testing methods are used, and the test bases are the functional requirements.
+
+#### Requirements-based testing
+Uses the final requirements as the basis for testing. For each requirement, at least one test case is designed and documented in the test specification.
+Usually, more than one test case is needed to test a functional requirement.
+Requirements-based testing focuses on single system functions (e.g., the transmission of a purchase order).
+
+#### Business-process-based testing
+A business process analysis (which is usually elaborated as part of the requirements analysis) shows which business processes are relevant and how often and in which context they appear.
+Test scenarios simulating typical business processes are constructed based on this analysis.
+It focuses on the whole process consisting of many steps (e.g., the sales conversation, consisting of configuring a car, agreeing on the purchase contract, and the transmission of the purchase order). This means a sequence of several tests.
+
+### 3.7.2 Nonfunctional Testing
+Nonfunctional requirements do not describe the functions; they describe the attributes of the functional behavior or the attributes of the system as a whole.
+The following nonfunctional system characteristics should be considered in the tests (usually in system testing):
+- **Load test:** Measuring of the system behavior for increasing system loads.
+- **Performance test:** Measuring the processing speed and response time for particular use cases, usually dependent on increasing load.
+- **Volume test:** Observation of the system behavior dependent on the amount of data.
+- **Stress test:** Observation of the system behavior when the system is overloaded.
+- **Testing of security** against unauthorized access to the system or data, denial of service attacks, etc.
+- **Stability or reliability test:** Performed during permanent operation (e.g., mean time between failures or failure rate with a given user profile) .
+- **Robustness test:** Measuring the system’s response to operating errors, bad programming, hardware failure, etc. as well as examination of exception handling and recovery.
+- **Testing of compatibility and data conversion:** Examination of compatibility with existing systems, import/export of data, etc.
+- **Testing of different configurations of the system:** For example, different versions of the operating system, user interface language, hardware platform, etc. (back-to-back testing).
+- **Usability test:** Examination of the ease of learning the system, ease and efficiency of operation, understandability of the system outputs, etc., always with respect to the needs of a specific group of users.
+- **Checking of the documentation:** For compliance with system behavior (e.g., user manual and GUI).
+- **Checking maintainability:** Assessing the understandability of the system documentation and whether it is up-to-date; checking if the system has a modular structure; etc.
+
+### 3.7.3 Testing of Software Structure
+Structural techniques (**structure-based testing**, white box testing) use information about the test object’s internal code structure or architecture.
+Includes:
+- control flow
+- call hierarchy of procedures
+- menu structure
+
+Structural techniques are most used in component and integration testing, but they can also be applied at higher levels of testing.
+
+### 3.7.4 Testing Related to Changes and Regression Testing
+Tanto en el mantenimiento como en procesos iterativos incrementales, es necesario realizar **pruebas de regresión**: verificar que los cambios o agregados realizados a la nueva versión no hayan degradado o “roto” el funcionamiento del sistema.
+
+Thus, regression testing may be performed at all test levels and applies to functional, nonfunctional, and **structural test**. Test cases to be used in regression testing must be well documented and reusable. Therefore, they are strong candidates for **test automation**.
+
+Simple local code changes can create side effects in any other, arbitrarily distant, system parts. If the test covers only altered or new code parts, it neglects the consequences these alterations can have on unaltered parts.
+
+#### Selection of regression test cases
+- Repeating only the high-priority tests according to the test plan.
+- In the functional test, omitting certain variations.
+- Restricting the tests to certain configurations only.
+- Restricting the test to certain subsystems or test levels.
 
 ## 3.8 Summary
+- The general V-model defines basic test levels: component test, integration test, system test, and acceptance test. It distinguishes between verification and validation. These general characteristics of good testing are applicable to any life cycle model:
+	- For every development step there is a corresponding test level.
+	- The objectives of testing are specific for each test level.
+	- The design of tests for a given test level should begin as early as possible, i.e., during the corresponding development activity.
+	- Testers should be involved in reviewing development documents as early as possible.
+	- The number and intensity of the test levels must be tailored to the specific needs of the project.
+- The V-model uses the fact that it is cheaper to repair defects a short time after they have been introduced. Thus, the V-model requires verification measures (for example, reviews) after ending every development phase. This way, the “ripple effect” of defects (i.e., more defects) is minimized.
+- Component testing examines single software components. Integration testing examines the collaboration of these components. Functional and nonfunctional system testing examine the entire system from the perspective of the future users. In acceptance testing, the customer checks the product for acceptance respective to the contract and acceptance by users and operations personnel. If the system will be installed in many operational environments, then field tests provide an additional opportunity to get experience with the system by running preliminary versions.
+- Defect correction (maintenance) and further development (enhancement) or incremental development continuously alter and extend the software product throughout its life cycle. All these altered versions must be tested again. A specific risk analysis should determine the amount of the regression tests.
+- There are several types of test with different objectives: functional testing, nonfunctional testing, structure-based testing, and change-related testing.

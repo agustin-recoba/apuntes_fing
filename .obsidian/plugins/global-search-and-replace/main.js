@@ -23542,7 +23542,7 @@ var import_react = __toESM(require_react());
 
 // src/react-components/PromptInstructions.tsx
 var React = __toESM(require_react());
-var PromptInstructions = () => /* @__PURE__ */ React.createElement("div", { className: "prompt-instructions" }, /* @__PURE__ */ React.createElement("div", { className: "prompt-instruction" }, /* @__PURE__ */ React.createElement("span", { className: "prompt-instruction-command" }, "\u2191\u2193"), /* @__PURE__ */ React.createElement("span", null, "to navigate")), /* @__PURE__ */ React.createElement("div", { className: "prompt-instruction" }, /* @__PURE__ */ React.createElement("span", { className: "prompt-instruction-command" }, "\u21B5"), /* @__PURE__ */ React.createElement("span", null, "to replace")));
+var PromptInstructions = () => /* @__PURE__ */ React.createElement("div", { className: "prompt-instructions" }, /* @__PURE__ */ React.createElement("div", { className: "prompt-instruction" }, /* @__PURE__ */ React.createElement("span", { className: "prompt-instruction-command" }, "\u2191\u2193"), /* @__PURE__ */ React.createElement("span", null, "to navigate")), /* @__PURE__ */ React.createElement("div", { className: "prompt-instruction" }, /* @__PURE__ */ React.createElement("span", { className: "prompt-instruction-command" }, "\u21B5"), /* @__PURE__ */ React.createElement("span", null, "to replace")), /* @__PURE__ */ React.createElement("div", { className: "prompt-instruction" }, /* @__PURE__ */ React.createElement("span", { className: "prompt-instruction-command" }, "\u2318\u21B5"), /* @__PURE__ */ React.createElement("span", null, "to open")));
 
 // src/react-components/SearchInput.tsx
 var React2 = __toESM(require_react());
@@ -23650,6 +23650,7 @@ var EventBridge = class {
     __publicField(this, "onArrowUp");
     __publicField(this, "onArrowDown");
     __publicField(this, "onEnter");
+    __publicField(this, "onCommandEnter");
   }
 };
 var eventBridge = new EventBridge();
@@ -23715,6 +23716,9 @@ function SearchAndReplace({
       return newIndex;
     });
   }, [searchResults]);
+  const handleCommandEnter = (0, import_react.useCallback)(async () => {
+    await fileOperator.open(searchResults[selectedIndex]);
+  }, [fileOperator, searchResults, selectedIndex]);
   const handleEnterOrClick = (0, import_react.useCallback)(async () => {
     if (searchResults.length === 0)
       return;
@@ -23759,7 +23763,8 @@ function SearchAndReplace({
     event_bridge_default.onArrowUp = handleArrowUp;
     event_bridge_default.onArrowDown = handleArrowDown;
     event_bridge_default.onEnter = handleEnterOrClick;
-  }, [handleArrowUp, handleArrowDown, handleEnterOrClick]);
+    event_bridge_default.onCommandEnter = handleCommandEnter;
+  }, [handleArrowUp, handleArrowDown, handleEnterOrClick, handleCommandEnter]);
   const handleReplaceInputChanged = (event) => {
     setReplaceText(event.target.value);
   };
@@ -23873,6 +23878,14 @@ var SearchAndReplaceModal = class extends import_obsidian2.Modal {
       if (e.repeat)
         return;
       (_b = (_a = event_bridge_default).onEnter) == null ? void 0 : _b.call(_a, e, ctx);
+    });
+    this.scope.register(["Meta"], "Enter", (e, ctx) => {
+      var _a, _b;
+      e.preventDefault();
+      if (e.repeat)
+        return;
+      (_b = (_a = event_bridge_default).onCommandEnter) == null ? void 0 : _b.call(_a, e, ctx);
+      this.close();
     });
   }
   onOpen() {
@@ -24021,6 +24034,28 @@ var FileOperator = class {
       filePath: file.path,
       lineNumber: searchResult.lineNumber
     };
+  }
+  async open(searchResult) {
+    if (searchResult.filePath) {
+      await this.app.workspace.openLinkText(searchResult.filePath, "");
+      const activeEditor = this.app.workspace.activeEditor;
+      const editingTheCorrectFile = (activeEditor == null ? void 0 : activeEditor.file) === searchResult.file;
+      if (!editingTheCorrectFile)
+        return;
+      const editor = activeEditor == null ? void 0 : activeEditor.editor;
+      if (!editor)
+        return;
+      editor.setSelection(
+        {
+          line: searchResult.lineNumber - 1,
+          ch: searchResult.matchStartIndex
+        },
+        {
+          line: searchResult.lineNumber - 1,
+          ch: searchResult.matchEndIndex + 1
+        }
+      );
+    }
   }
   escapeRegexString(str) {
     return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
