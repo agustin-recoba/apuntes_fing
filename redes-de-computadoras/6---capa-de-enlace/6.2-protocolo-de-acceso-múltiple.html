@@ -213,6 +213,21 @@
       text-align: right;
     }
 
+    mjx-msubsup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-script {
+      display: inline-block;
+      padding-right: .05em;
+      padding-left: .033em;
+    }
+
+    mjx-script>mjx-spacer {
+      display: block;
+    }
+
     mjx-mi {
       display: inline-block;
       text-align: left;
@@ -225,6 +240,11 @@
     mjx-utext {
       display: inline-block;
       padding: .75em 0 .2em 0;
+    }
+
+    mjx-TeXAtom {
+      display: inline-block;
+      text-align: left;
     }
 
     mjx-mo {
@@ -324,7 +344,127 @@
       height: 0px;
     }
 
+    mjx-msub {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mn {
+      display: inline-block;
+      text-align: left;
+    }
+
     mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mfrac {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-frac {
+      display: inline-block;
+      vertical-align: 0.17em;
+      padding: 0 .22em;
+    }
+
+    mjx-frac[type="d"] {
+      vertical-align: .04em;
+    }
+
+    mjx-frac[delims] {
+      padding: 0 .1em;
+    }
+
+    mjx-frac[atop] {
+      padding: 0 .12em;
+    }
+
+    mjx-frac[atop][delims] {
+      padding: 0;
+    }
+
+    mjx-dtable {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-dtable>* {
+      font-size: 2000%;
+    }
+
+    mjx-dbox {
+      display: block;
+      font-size: 5%;
+    }
+
+    mjx-num {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-den {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-mfrac[bevelled]>mjx-num {
+      display: inline-block;
+    }
+
+    mjx-mfrac[bevelled]>mjx-den {
+      display: inline-block;
+    }
+
+    mjx-den[align="right"],
+    mjx-num[align="right"] {
+      text-align: right;
+    }
+
+    mjx-den[align="left"],
+    mjx-num[align="left"] {
+      text-align: left;
+    }
+
+    mjx-nstrut {
+      display: inline-block;
+      height: .054em;
+      width: 0;
+      vertical-align: -.054em;
+    }
+
+    mjx-nstrut[type="d"] {
+      height: .217em;
+      vertical-align: -.217em;
+    }
+
+    mjx-dstrut {
+      display: inline-block;
+      height: .505em;
+      width: 0;
+    }
+
+    mjx-dstrut[type="d"] {
+      height: .726em;
+    }
+
+    mjx-line {
+      display: block;
+      box-sizing: border-box;
+      min-height: 1px;
+      height: .06em;
+      border-top: .06em solid;
+      margin: .06em -.1em;
+      overflow: hidden;
+    }
+
+    mjx-line[type="d"] {
+      margin: .18em -.1em;
+    }
+
+    mjx-mrow {
       display: inline-block;
       text-align: left;
     }
@@ -599,9 +739,44 @@
       src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
     }
 
-    mjx-c.mjx-c1D43C.TEX-I::before {
-      padding: 0.683em 0.504em 0 0;
-      content: "I";
+    mjx-c.mjx-c1D45D.TEX-I::before {
+      padding: 0.442em 0.503em 0.194em 0;
+      content: "p";
+    }
+
+    mjx-c.mjx-c1D44E.TEX-I::before {
+      padding: 0.441em 0.529em 0.01em 0;
+      content: "a";
+    }
+
+    mjx-c.mjx-c1D461.TEX-I::before {
+      padding: 0.626em 0.361em 0.011em 0;
+      content: "t";
+    }
+
+    mjx-c.mjx-c1D45F.TEX-I::before {
+      padding: 0.442em 0.451em 0.011em 0;
+      content: "r";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+
+    mjx-c.mjx-c1D460.TEX-I::before {
+      padding: 0.442em 0.469em 0.01em 0;
+      content: "s";
+    }
+
+    mjx-c.mjx-c3D::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "=";
+    }
+
+    mjx-c.mjx-cD7::before {
+      padding: 0.491em 0.778em 0 0;
+      content: "\D7";
     }
 
     mjx-c.mjx-c28::before {
@@ -609,19 +784,19 @@
       content: "(";
     }
 
-    mjx-c.mjx-c1D44B.TEX-I::before {
-      padding: 0.683em 0.852em 0 0;
-      content: "X";
+    mjx-c.mjx-c31::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "1";
     }
 
-    mjx-c.mjx-c3B::before {
-      padding: 0.43em 0.278em 0.194em 0;
-      content: ";";
+    mjx-c.mjx-c2212::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "\2212";
     }
 
-    mjx-c.mjx-c1D44C.TEX-I::before {
-      padding: 0.683em 0.763em 0 0;
-      content: "Y";
+    mjx-c.mjx-c1D44F.TEX-I::before {
+      padding: 0.694em 0.429em 0.011em 0;
+      content: "b";
     }
 
     mjx-c.mjx-c29::before {
@@ -629,9 +804,54 @@
       content: ")";
     }
 
-    mjx-c.mjx-c1D45B.TEX-I::before {
-      padding: 0.442em 0.6em 0.011em 0;
-      content: "n";
+    mjx-c.mjx-c1D452.TEX-I::before {
+      padding: 0.442em 0.466em 0.011em 0;
+      content: "e";
+    }
+
+    mjx-c.mjx-c1D453.TEX-I::before {
+      padding: 0.705em 0.55em 0.205em 0;
+      content: "f";
+    }
+
+    mjx-c.mjx-c2B::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "+";
+    }
+
+    mjx-c.mjx-c32::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "2";
+    }
+
+    mjx-c.mjx-c2F::before {
+      padding: 0.75em 0.5em 0.25em 0;
+      content: "/";
+    }
+
+    mjx-c.mjx-c1D441.TEX-I::before {
+      padding: 0.683em 0.888em 0 0;
+      content: "N";
+    }
+
+    mjx-c.mjx-c1D45C.TEX-I::before {
+      padding: 0.441em 0.485em 0.011em 0;
+      content: "o";
+    }
+
+    mjx-c.mjx-c1D451.TEX-I::before {
+      padding: 0.694em 0.52em 0.01em 0;
+      content: "d";
+    }
+
+    mjx-c.mjx-c1D444.TEX-I::before {
+      padding: 0.704em 0.791em 0.194em 0;
+      content: "Q";
+    }
+
+    mjx-c.mjx-c1D445.TEX-I::before {
+      padding: 0.683em 0.759em 0.021em 0;
+      content: "R";
     }
   </style>
 
@@ -647,7 +867,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:18px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
   <div class="flex-container">
     <div id="sidebar" class="sidebar-left">
       <div class="sidebar-content">
@@ -676,7 +896,7 @@
                   </svg></div>
               </div>
               <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
-                <p><span alt="Pasted image 20221116130215.png" src="Pasted image 20221116130215.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116130215.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116130215.png?1683767034141"></span></p>
+                <p><span alt="Pasted image 20221116130215.png" src="Pasted image 20221116130215.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116130215.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116130215.png?1683767034141"></span></p>
               </div>
             </div>
           </div>
@@ -766,7 +986,7 @@
               </div>
               <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
                 <p>Una LAN con 6 estaciones, 1,3,4 tienen paquetes, 2,5,6 quedan ociosos:</p>
-                <p><span alt="Pasted image 20221116130645.png" src="Pasted image 20221116130645.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116130645.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116130645.png?1683767034140"></span></p>
+                <p><span alt="Pasted image 20221116130645.png" src="Pasted image 20221116130645.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116130645.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116130645.png?1683767034140"></span></p>
               </div>
             </div>
           </div>
@@ -793,7 +1013,7 @@
               </div>
               <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
                 <p>LAN de 6 estaciones, 1,3,4 tienen paquete, las bandas de frecuencia 2,5,6 quedan ociosas:<br>
-                  <span alt="Pasted image 20221116130747.png" src="Pasted image 20221116130747.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116130747.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116130747.png?1683767034139"></span>
+                  <span alt="Pasted image 20221116130747.png" src="Pasted image 20221116130747.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116130747.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116130747.png?1683767034139"></span>
                 </p>
               </div>
             </div>
@@ -884,7 +1104,7 @@
               </div>
               <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
                 <p>Los nodos 1, 2 y 3 colisionan en el primer slot. El nodo 2 finalmente tiene éxito en el cuarto slot, el nodo 1 en el octavo slot y el nodo 3 en el noveno slot.<br>
-                  <span alt="Pasted image 20221116131244.png" src="Pasted image 20221116131244.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116131244.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116131244.png?1683767034140"></span>
+                  <span alt="Pasted image 20221116131244.png" src="Pasted image 20221116131244.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116131244.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116131244.png?1683767034140"></span>
                 </p>
               </div>
             </div>
@@ -1116,7 +1336,7 @@
                           <mo stretchy="false">]</mo>
                         </math></mjx-assistive-mml></mjx-container></span>.</p>
                 <br>
-                <p><span alt="Pasted image 20221116132602.png" src="Pasted image 20221116132602.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116132602.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116132602.png?1683767034141"></span></p>
+                <p><span alt="Pasted image 20221116132602.png" src="Pasted image 20221116132602.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116132602.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116132602.png?1683767034141"></span></p>
               </div>
             </div>
           </div>
@@ -1144,7 +1364,7 @@
                   </svg></div>
               </div>
               <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
-                <p><span alt="Pasted image 20221116132729.png" src="Pasted image 20221116132729.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116132729.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116132729.png?1683767034139"></span></p>
+                <p><span alt="Pasted image 20221116132729.png" src="Pasted image 20221116132729.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116132729.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116132729.png?1683767034139"></span></p>
               </div>
             </div>
           </div>
@@ -1168,7 +1388,7 @@
             </ul>
           </div>
           <div>
-            <p><span alt="Pasted image 20221116132854.png" src="Pasted image 20221116132854.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116132854.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116132854.png?1683767034142"></span></p>
+            <p><span alt="Pasted image 20221116132854.png" src="Pasted image 20221116132854.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116132854.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116132854.png?1683767034142"></span></p>
           </div>
           <div>
             <p>Cuanto mayor sea el <strong>retardo de propagación</strong> (el tiempo que una señal tarda en propagarse de uno de los nodos a otro), mayor será la probabilidad de que un nodo que efectúe el sondeo de portadora no sea capaz detectar una transmisión que ya ha comenzado en otro nodo de la red.<br>
@@ -1189,7 +1409,7 @@
               Es difícil en LANs inalámbricas, ya que la intensidad de señal recibida se ve abrumada por la intensidad de transmisión local.</p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221116133102.png" src="Pasted image 20221116133102.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116133102.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116133102.png?1683767034143"></span></p>
+            <p><span alt="Pasted image 20221116133102.png" src="Pasted image 20221116133102.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116133102.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116133102.png?1683767034143"></span></p>
           </div>
           <div>
             <h2 data-heading="Protocolo de toma de turnos" id="Protocolo_de_toma_de_turnos">
@@ -1225,7 +1445,7 @@
             </ul>
           </div>
           <div>
-            <p><span alt="Pasted image 20221116134521.png" src="Pasted image 20221116134521.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116134521.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116134521.png?1683767034140"></span></p>
+            <p><span alt="Pasted image 20221116134521.png" src="Pasted image 20221116134521.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116134521.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116134521.png?1683767034140"></span></p>
           </div>
           <div>
             <h3 data-heading="Protocolo de paso de testigo" id="Protocolo_de_paso_de_testigo">
@@ -1260,7 +1480,7 @@
             </ul>
           </div>
           <div>
-            <p><span alt="Pasted image 20221116134650.png" src="Pasted image 20221116134650.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116134650.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116134650.png?1683767034144"></span></p>
+            <p><span alt="Pasted image 20221116134650.png" src="Pasted image 20221116134650.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221116134650.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Redes%20de%20computadoras/media/Pasted%20image%2020221116134650.png?1683767034144"></span></p>
           </div>
           <div class="mod-footer"></div>
         </div>

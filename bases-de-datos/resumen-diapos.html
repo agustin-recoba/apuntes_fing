@@ -213,6 +213,21 @@
       text-align: right;
     }
 
+    mjx-msubsup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-script {
+      display: inline-block;
+      padding-right: .05em;
+      padding-left: .033em;
+    }
+
+    mjx-script>mjx-spacer {
+      display: block;
+    }
+
     mjx-mi {
       display: inline-block;
       text-align: left;
@@ -225,6 +240,11 @@
     mjx-utext {
       display: inline-block;
       padding: .75em 0 .2em 0;
+    }
+
+    mjx-TeXAtom {
+      display: inline-block;
+      text-align: left;
     }
 
     mjx-mo {
@@ -324,7 +344,127 @@
       height: 0px;
     }
 
+    mjx-msub {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mn {
+      display: inline-block;
+      text-align: left;
+    }
+
     mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mfrac {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-frac {
+      display: inline-block;
+      vertical-align: 0.17em;
+      padding: 0 .22em;
+    }
+
+    mjx-frac[type="d"] {
+      vertical-align: .04em;
+    }
+
+    mjx-frac[delims] {
+      padding: 0 .1em;
+    }
+
+    mjx-frac[atop] {
+      padding: 0 .12em;
+    }
+
+    mjx-frac[atop][delims] {
+      padding: 0;
+    }
+
+    mjx-dtable {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-dtable>* {
+      font-size: 2000%;
+    }
+
+    mjx-dbox {
+      display: block;
+      font-size: 5%;
+    }
+
+    mjx-num {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-den {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-mfrac[bevelled]>mjx-num {
+      display: inline-block;
+    }
+
+    mjx-mfrac[bevelled]>mjx-den {
+      display: inline-block;
+    }
+
+    mjx-den[align="right"],
+    mjx-num[align="right"] {
+      text-align: right;
+    }
+
+    mjx-den[align="left"],
+    mjx-num[align="left"] {
+      text-align: left;
+    }
+
+    mjx-nstrut {
+      display: inline-block;
+      height: .054em;
+      width: 0;
+      vertical-align: -.054em;
+    }
+
+    mjx-nstrut[type="d"] {
+      height: .217em;
+      vertical-align: -.217em;
+    }
+
+    mjx-dstrut {
+      display: inline-block;
+      height: .505em;
+      width: 0;
+    }
+
+    mjx-dstrut[type="d"] {
+      height: .726em;
+    }
+
+    mjx-line {
+      display: block;
+      box-sizing: border-box;
+      min-height: 1px;
+      height: .06em;
+      border-top: .06em solid;
+      margin: .06em -.1em;
+      overflow: hidden;
+    }
+
+    mjx-line[type="d"] {
+      margin: .18em -.1em;
+    }
+
+    mjx-mrow {
       display: inline-block;
       text-align: left;
     }
@@ -599,9 +739,44 @@
       src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
     }
 
-    mjx-c.mjx-c1D43C.TEX-I::before {
-      padding: 0.683em 0.504em 0 0;
-      content: "I";
+    mjx-c.mjx-c1D45D.TEX-I::before {
+      padding: 0.442em 0.503em 0.194em 0;
+      content: "p";
+    }
+
+    mjx-c.mjx-c1D44E.TEX-I::before {
+      padding: 0.441em 0.529em 0.01em 0;
+      content: "a";
+    }
+
+    mjx-c.mjx-c1D461.TEX-I::before {
+      padding: 0.626em 0.361em 0.011em 0;
+      content: "t";
+    }
+
+    mjx-c.mjx-c1D45F.TEX-I::before {
+      padding: 0.442em 0.451em 0.011em 0;
+      content: "r";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+
+    mjx-c.mjx-c1D460.TEX-I::before {
+      padding: 0.442em 0.469em 0.01em 0;
+      content: "s";
+    }
+
+    mjx-c.mjx-c3D::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "=";
+    }
+
+    mjx-c.mjx-cD7::before {
+      padding: 0.491em 0.778em 0 0;
+      content: "\D7";
     }
 
     mjx-c.mjx-c28::before {
@@ -609,19 +784,19 @@
       content: "(";
     }
 
-    mjx-c.mjx-c1D44B.TEX-I::before {
-      padding: 0.683em 0.852em 0 0;
-      content: "X";
+    mjx-c.mjx-c31::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "1";
     }
 
-    mjx-c.mjx-c3B::before {
-      padding: 0.43em 0.278em 0.194em 0;
-      content: ";";
+    mjx-c.mjx-c2212::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "\2212";
     }
 
-    mjx-c.mjx-c1D44C.TEX-I::before {
-      padding: 0.683em 0.763em 0 0;
-      content: "Y";
+    mjx-c.mjx-c1D44F.TEX-I::before {
+      padding: 0.694em 0.429em 0.011em 0;
+      content: "b";
     }
 
     mjx-c.mjx-c29::before {
@@ -629,9 +804,54 @@
       content: ")";
     }
 
-    mjx-c.mjx-c1D45B.TEX-I::before {
-      padding: 0.442em 0.6em 0.011em 0;
-      content: "n";
+    mjx-c.mjx-c1D452.TEX-I::before {
+      padding: 0.442em 0.466em 0.011em 0;
+      content: "e";
+    }
+
+    mjx-c.mjx-c1D453.TEX-I::before {
+      padding: 0.705em 0.55em 0.205em 0;
+      content: "f";
+    }
+
+    mjx-c.mjx-c2B::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "+";
+    }
+
+    mjx-c.mjx-c32::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "2";
+    }
+
+    mjx-c.mjx-c2F::before {
+      padding: 0.75em 0.5em 0.25em 0;
+      content: "/";
+    }
+
+    mjx-c.mjx-c1D441.TEX-I::before {
+      padding: 0.683em 0.888em 0 0;
+      content: "N";
+    }
+
+    mjx-c.mjx-c1D45C.TEX-I::before {
+      padding: 0.441em 0.485em 0.011em 0;
+      content: "o";
+    }
+
+    mjx-c.mjx-c1D451.TEX-I::before {
+      padding: 0.694em 0.52em 0.01em 0;
+      content: "d";
+    }
+
+    mjx-c.mjx-c1D444.TEX-I::before {
+      padding: 0.704em 0.791em 0.194em 0;
+      content: "Q";
+    }
+
+    mjx-c.mjx-c1D445.TEX-I::before {
+      padding: 0.683em 0.759em 0.021em 0;
+      content: "R";
     }
   </style>
 
@@ -647,7 +867,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:18px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
   <div class="flex-container">
     <div id="sidebar" class="sidebar-left">
       <div class="sidebar-content">
@@ -660,7 +880,9 @@
       <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
         <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
           <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
-          <div class="mod-header"></div>
+          <div class="mod-header">
+            <div class="inline-title" contenteditable="true" spellcheck="false" tabindex="-1" enterkeyhint="done">Resumen diapos</div>
+          </div>
           <div class="is-collapsed">
             <h1 data-heading="Dependencias funcionales" id="Dependencias_funcionales">
               <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
@@ -676,7 +898,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120234321.png" src="Pasted image 20221120234321.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234321.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234321.png?1683767033655"></span></p>
+            <p><span alt="Pasted image 20221120234321.png" src="Pasted image 20221120234321.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234321.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234321.png?1683767033655"></span></p>
           </div>
           <div class="is-collapsed">
             <h3 data-heading="Algoritmo para hallar un cubrimiento minimal de un conjunto de DF" id="Algoritmo_para_hallar_un_cubrimiento_minimal_de_un_conjunto_de_DF">
@@ -686,7 +908,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120222841.png" src="Pasted image 20221120222841.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120222841.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120222841.png?1683767033655"></span></p>
+            <p><span alt="Pasted image 20221120222841.png" src="Pasted image 20221120222841.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120222841.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120222841.png?1683767033655"></span></p>
           </div>
           <div class="is-collapsed">
             <h1 data-heading="Dependencias multivaluadas" id="Dependencias_multivaluadas">
@@ -699,7 +921,7 @@
             <p>Si se tienen 2 o más atributos que tienen más de un valor asociado con determinado objeto y que son independientes entre sí, se tendrán que repetir todos los valores de uno de los atributos con cada valor del otro atributo manteniendo la misma referencia para los objetos, para que las tuplas de la relación sigan siendo consistentes. Esta restricción se especifica con una dependencia multivaluada.</p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000428.png" src="Pasted image 20221121000428.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000428.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000428.png?1683767033669"></span></p>
+            <p><span alt="Pasted image 20221121000428.png" src="Pasted image 20221121000428.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000428.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000428.png?1683767033669"></span></p>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="Inferencia de DMV" id="Inferencia_de_DMV">
@@ -709,7 +931,7 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000459.png" src="Pasted image 20221121000459.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000459.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000459.png?1683767033675"></span></p>
+            <p><span alt="Pasted image 20221121000459.png" src="Pasted image 20221121000459.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000459.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000459.png?1683767033675"></span></p>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="Dependencia Multivaluada Embebida" id="Dependencia_Multivaluada_Embebida">
@@ -719,7 +941,7 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000720.png" src="Pasted image 20221121000720.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000720.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000720.png?1683767033681"></span></p>
+            <p><span alt="Pasted image 20221121000720.png" src="Pasted image 20221121000720.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000720.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000720.png?1683767033681"></span></p>
           </div>
           <div class="is-collapsed">
             <h1 data-heading="Normalización" id="Normalización">
@@ -736,7 +958,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120235523.png" src="Pasted image 20221120235523.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235523.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235523.png?1683767033655"></span></p>
+            <p><span alt="Pasted image 20221120235523.png" src="Pasted image 20221120235523.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235523.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235523.png?1683767033655"></span></p>
           </div>
           <div class="is-collapsed">
             <h3 data-heading="Matriz JSP" id="Matriz_JSP">
@@ -746,7 +968,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120235537.png" src="Pasted image 20221120235537.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235537.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235537.png?1683767033656"></span></p>
+            <p><span alt="Pasted image 20221120235537.png" src="Pasted image 20221120235537.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235537.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235537.png?1683767033656"></span></p>
           </div>
           <div class="is-collapsed">
             <h3 data-heading="Preservacion de dependencias" id="Preservacion_de_dependencias">
@@ -844,7 +1066,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120234641.png" src="Pasted image 20221120234641.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234641.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234641.png?1683767033655"></span></p>
+            <p><span alt="Pasted image 20221120234641.png" src="Pasted image 20221120234641.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234641.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234641.png?1683767033655"></span></p>
           </div>
           <div>
             <h3 data-heading="2NF" id="2NF">
@@ -854,7 +1076,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120234614.png" src="Pasted image 20221120234614.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234614.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234614.png?1683767033655"></span></p>
+            <p><span alt="Pasted image 20221120234614.png" src="Pasted image 20221120234614.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234614.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234614.png?1683767033655"></span></p>
           </div>
           <div>
             <h4 data-heading="Atributo no primo" id="Atributo_no_primo">
@@ -884,7 +1106,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120234554.png" src="Pasted image 20221120234554.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234554.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234554.png?1683767033655"></span></p>
+            <p><span alt="Pasted image 20221120234554.png" src="Pasted image 20221120234554.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234554.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234554.png?1683767033655"></span></p>
           </div>
           <div>
             <h4 data-heading="Dependencia transitiva" id="Dependencia_transitiva">
@@ -904,7 +1126,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120234932.png" src="Pasted image 20221120234932.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234932.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234932.png?1683767033655"></span></p>
+            <p><span alt="Pasted image 20221120234932.png" src="Pasted image 20221120234932.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120234932.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120234932.png?1683767033655"></span></p>
           </div>
           <div>
             <h3 data-heading="4NF" id="4NF">
@@ -914,7 +1136,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000533.png" src="Pasted image 20221121000533.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000533.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000533.png?1683767033670"></span></p>
+            <p><span alt="Pasted image 20221121000533.png" src="Pasted image 20221121000533.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000533.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000533.png?1683767033670"></span></p>
           </div>
           <div class="is-collapsed">
             <h2 data-heading="Algoritmos" id="Algoritmos">
@@ -931,7 +1153,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120222552.png" src="Pasted image 20221120222552.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120222552.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120222552.png?1683767033646"></span></p>
+            <p><span alt="Pasted image 20221120222552.png" src="Pasted image 20221120222552.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120222552.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120222552.png?1683767033646"></span></p>
           </div>
           <div>
             <h3 data-heading="Pasaje a BCNF con JSP (usar antes el algoritmo de 3NF)" id="Pasaje_a_BCNF_con_JSP_(usar_antes_el_algoritmo_de_3NF)">
@@ -941,7 +1163,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120235621.png" src="Pasted image 20221120235621.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235621.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235621.png?1683767033656"></span></p>
+            <p><span alt="Pasted image 20221120235621.png" src="Pasted image 20221120235621.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235621.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235621.png?1683767033656"></span></p>
           </div>
           <div>
             <h3 data-heading="Pasaje a 4NF con JSP (usar antes el algoritmo de 3NF)" id="Pasaje_a_4NF_con_JSP_(usar_antes_el_algoritmo_de_3NF)">
@@ -951,7 +1173,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000631.png" src="Pasted image 20221121000631.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000631.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000631.png?1683767033669"></span></p>
+            <p><span alt="Pasted image 20221121000631.png" src="Pasted image 20221121000631.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000631.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000631.png?1683767033669"></span></p>
           </div>
           <div class="is-collapsed">
             <h1 data-heading="Pasaje MER a Relacional" id="Pasaje_MER_a_Relacional">
@@ -972,13 +1194,13 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120235822.png" src="Pasted image 20221120235822.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235822.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235822.png?1683767033666"></span></p>
+            <p><span alt="Pasted image 20221120235822.png" src="Pasted image 20221120235822.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235822.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235822.png?1683767033666"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120235840.png" src="Pasted image 20221120235840.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235840.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235840.png?1683767033668"></span></p>
+            <p><span alt="Pasted image 20221120235840.png" src="Pasted image 20221120235840.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235840.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235840.png?1683767033668"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000343.png" src="Pasted image 20221121000343.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000343.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000343.png?1683767033670"></span></p>
+            <p><span alt="Pasted image 20221121000343.png" src="Pasted image 20221121000343.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000343.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000343.png?1683767033670"></span></p>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="Entidad débil" id="Entidad_débil">
@@ -988,7 +1210,7 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120235909.png" src="Pasted image 20221120235909.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235909.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235909.png?1683767033659"></span></p>
+            <p><span alt="Pasted image 20221120235909.png" src="Pasted image 20221120235909.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235909.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235909.png?1683767033659"></span></p>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="Categorizaciones" id="Categorizaciones">
@@ -998,19 +1220,19 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20221120235936.png" src="Pasted image 20221120235936.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235936.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235936.png?1683767033669"></span></p>
+            <p><span alt="Pasted image 20221120235936.png" src="Pasted image 20221120235936.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221120235936.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221120235936.png?1683767033669"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000006.png" src="Pasted image 20221121000006.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000006.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000006.png?1683767033669"></span></p>
+            <p><span alt="Pasted image 20221121000006.png" src="Pasted image 20221121000006.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000006.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000006.png?1683767033669"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000025.png" src="Pasted image 20221121000025.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000025.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000025.png?1683767033669"></span></p>
+            <p><span alt="Pasted image 20221121000025.png" src="Pasted image 20221121000025.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000025.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000025.png?1683767033669"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000037.png" src="Pasted image 20221121000037.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000037.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000037.png?1683767033669"></span></p>
+            <p><span alt="Pasted image 20221121000037.png" src="Pasted image 20221121000037.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000037.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000037.png?1683767033669"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000048.png" src="Pasted image 20221121000048.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000048.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000048.png?1683767033669"></span></p>
+            <p><span alt="Pasted image 20221121000048.png" src="Pasted image 20221121000048.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000048.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000048.png?1683767033669"></span></p>
           </div>
           <div class="is-collapsed">
             <h1 data-heading="Optimización" id="Optimización">
@@ -1027,7 +1249,7 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000852.png" src="Pasted image 20221121000852.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000852.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000852.png?1683767033681"></span></p>
+            <p><span alt="Pasted image 20221121000852.png" src="Pasted image 20221121000852.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000852.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000852.png?1683767033681"></span></p>
           </div>
           <div>
             <p><strong>El arbol canónico:</strong></p>
@@ -1059,10 +1281,10 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000930.png" src="Pasted image 20221121000930.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000930.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000930.png?1683767033681"></span></p>
+            <p><span alt="Pasted image 20221121000930.png" src="Pasted image 20221121000930.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000930.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000930.png?1683767033681"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121000947.png" src="Pasted image 20221121000947.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000947.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000947.png?1683767033682"></span></p>
+            <p><span alt="Pasted image 20221121000947.png" src="Pasted image 20221121000947.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121000947.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121000947.png?1683767033682"></span></p>
           </div>
           <div class="is-collapsed">
             <h2 data-heading="Heurísticas" id="Heurísticas">
@@ -1072,7 +1294,7 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001014.png" src="Pasted image 20221121001014.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001014.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001014.png?1683767033682"></span></p>
+            <p><span alt="Pasted image 20221121001014.png" src="Pasted image 20221121001014.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001014.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001014.png?1683767033682"></span></p>
           </div>
           <div class="is-collapsed">
             <h2 data-heading="Planes físicos" id="Planes_físicos">
@@ -1082,7 +1304,7 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001129.png" src="Pasted image 20221121001129.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001129.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001129.png?1683767033682"></span></p>
+            <p><span alt="Pasted image 20221121001129.png" src="Pasted image 20221121001129.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001129.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001129.png?1683767033682"></span></p>
           </div>
           <div>
             <h3 data-heading="Resumen" id="Resumen">
@@ -1092,10 +1314,10 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001605.png" src="Pasted image 20221121001605.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001605.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001605.png?1683767033699"></span></p>
+            <p><span alt="Pasted image 20221121001605.png" src="Pasted image 20221121001605.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001605.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001605.png?1683767033699"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001615.png" src="Pasted image 20221121001615.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001615.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001615.png?1683767033689"></span></p>
+            <p><span alt="Pasted image 20221121001615.png" src="Pasted image 20221121001615.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001615.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001615.png?1683767033689"></span></p>
           </div>
           <div>
             <h3 data-heading="Selección" id="Selección">
@@ -1105,7 +1327,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001159.png" src="Pasted image 20221121001159.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001159.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001159.png?1683767033682"></span></p>
+            <p><span alt="Pasted image 20221121001159.png" src="Pasted image 20221121001159.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001159.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001159.png?1683767033682"></span></p>
           </div>
           <div>
             <h4 data-heading="Con ídices:" id="Con_ídices:">
@@ -1115,7 +1337,7 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001232.png" src="Pasted image 20221121001232.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001232.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001232.png?1683767033682"></span></p>
+            <p><span alt="Pasted image 20221121001232.png" src="Pasted image 20221121001232.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001232.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001232.png?1683767033682"></span></p>
           </div>
           <div>
             <h3 data-heading="Join $R \Join _{A=B} S$" id="Join_R⋈A=BS">
@@ -1136,10 +1358,10 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001258.png" src="Pasted image 20221121001258.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001258.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001258.png?1683767033683"></span></p>
+            <p><span alt="Pasted image 20221121001258.png" src="Pasted image 20221121001258.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001258.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001258.png?1683767033683"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001531.png" src="Pasted image 20221121001531.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001531.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001531.png?1683767033683"></span></p>
+            <p><span alt="Pasted image 20221121001531.png" src="Pasted image 20221121001531.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001531.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001531.png?1683767033683"></span></p>
           </div>
           <div class="is-collapsed">
             <h1 data-heading="Transacciones y concurrencia" id="Transacciones_y_concurrencia">
@@ -1156,8 +1378,8 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121001734.png" src="Pasted image 20221121001734.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001734.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001734.png?1683767033701"></span><br>
-              <span alt="Pasted image 20221121001755.png" src="Pasted image 20221121001755.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001755.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001755.png?1683767033685"></span>
+            <p><span alt="Pasted image 20221121001734.png" src="Pasted image 20221121001734.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001734.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001734.png?1683767033701"></span><br>
+              <span alt="Pasted image 20221121001755.png" src="Pasted image 20221121001755.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121001755.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121001755.png?1683767033685"></span>
             </p>
           </div>
           <div class="is-collapsed">
@@ -1344,13 +1566,13 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121002713.png" src="Pasted image 20221121002713.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121002713.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121002713.png?1683767033685"></span><br>
+            <p><span alt="Pasted image 20221121002713.png" src="Pasted image 20221121002713.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121002713.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121002713.png?1683767033685"></span><br>
               <strong>Asegura seriabilidad</strong>
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121002731.png" src="Pasted image 20221121002731.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121002731.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121002731.png?1683767033699"></span><br>
-              <span alt="Pasted image 20221121002745.png" src="Pasted image 20221121002745.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121002745.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121002745.png?1683767033699"></span>
+            <p><span alt="Pasted image 20221121002731.png" src="Pasted image 20221121002731.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121002731.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121002731.png?1683767033699"></span><br>
+              <span alt="Pasted image 20221121002745.png" src="Pasted image 20221121002745.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121002745.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121002745.png?1683767033699"></span>
             </p>
           </div>
           <div class="is-collapsed">
@@ -1361,9 +1583,11 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20221121002838.png" src="Pasted image 20221121002838.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121002838.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121002838.png?1683767033699"></span></p>
+            <p><span alt="Pasted image 20221121002838.png" src="Pasted image 20221121002838.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20221121002838.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Bases%20de%20datos/media/Pasted%20image%2020221121002838.png?1683767033699"></span></p>
           </div>
-          <div class="mod-footer"></div>
+          <div class="mod-footer">
+            <div class="embedded-backlinks" style="display: none;"></div>
+          </div>
         </div>
       </div>
     </div>

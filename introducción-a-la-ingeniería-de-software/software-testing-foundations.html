@@ -213,6 +213,21 @@
       text-align: right;
     }
 
+    mjx-msubsup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-script {
+      display: inline-block;
+      padding-right: .05em;
+      padding-left: .033em;
+    }
+
+    mjx-script>mjx-spacer {
+      display: block;
+    }
+
     mjx-mi {
       display: inline-block;
       text-align: left;
@@ -225,6 +240,11 @@
     mjx-utext {
       display: inline-block;
       padding: .75em 0 .2em 0;
+    }
+
+    mjx-TeXAtom {
+      display: inline-block;
+      text-align: left;
     }
 
     mjx-mo {
@@ -324,7 +344,127 @@
       height: 0px;
     }
 
+    mjx-msub {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mn {
+      display: inline-block;
+      text-align: left;
+    }
+
     mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mfrac {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-frac {
+      display: inline-block;
+      vertical-align: 0.17em;
+      padding: 0 .22em;
+    }
+
+    mjx-frac[type="d"] {
+      vertical-align: .04em;
+    }
+
+    mjx-frac[delims] {
+      padding: 0 .1em;
+    }
+
+    mjx-frac[atop] {
+      padding: 0 .12em;
+    }
+
+    mjx-frac[atop][delims] {
+      padding: 0;
+    }
+
+    mjx-dtable {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-dtable>* {
+      font-size: 2000%;
+    }
+
+    mjx-dbox {
+      display: block;
+      font-size: 5%;
+    }
+
+    mjx-num {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-den {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-mfrac[bevelled]>mjx-num {
+      display: inline-block;
+    }
+
+    mjx-mfrac[bevelled]>mjx-den {
+      display: inline-block;
+    }
+
+    mjx-den[align="right"],
+    mjx-num[align="right"] {
+      text-align: right;
+    }
+
+    mjx-den[align="left"],
+    mjx-num[align="left"] {
+      text-align: left;
+    }
+
+    mjx-nstrut {
+      display: inline-block;
+      height: .054em;
+      width: 0;
+      vertical-align: -.054em;
+    }
+
+    mjx-nstrut[type="d"] {
+      height: .217em;
+      vertical-align: -.217em;
+    }
+
+    mjx-dstrut {
+      display: inline-block;
+      height: .505em;
+      width: 0;
+    }
+
+    mjx-dstrut[type="d"] {
+      height: .726em;
+    }
+
+    mjx-line {
+      display: block;
+      box-sizing: border-box;
+      min-height: 1px;
+      height: .06em;
+      border-top: .06em solid;
+      margin: .06em -.1em;
+      overflow: hidden;
+    }
+
+    mjx-line[type="d"] {
+      margin: .18em -.1em;
+    }
+
+    mjx-mrow {
       display: inline-block;
       text-align: left;
     }
@@ -599,9 +739,44 @@
       src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
     }
 
-    mjx-c.mjx-c1D43C.TEX-I::before {
-      padding: 0.683em 0.504em 0 0;
-      content: "I";
+    mjx-c.mjx-c1D45D.TEX-I::before {
+      padding: 0.442em 0.503em 0.194em 0;
+      content: "p";
+    }
+
+    mjx-c.mjx-c1D44E.TEX-I::before {
+      padding: 0.441em 0.529em 0.01em 0;
+      content: "a";
+    }
+
+    mjx-c.mjx-c1D461.TEX-I::before {
+      padding: 0.626em 0.361em 0.011em 0;
+      content: "t";
+    }
+
+    mjx-c.mjx-c1D45F.TEX-I::before {
+      padding: 0.442em 0.451em 0.011em 0;
+      content: "r";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+
+    mjx-c.mjx-c1D460.TEX-I::before {
+      padding: 0.442em 0.469em 0.01em 0;
+      content: "s";
+    }
+
+    mjx-c.mjx-c3D::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "=";
+    }
+
+    mjx-c.mjx-cD7::before {
+      padding: 0.491em 0.778em 0 0;
+      content: "\D7";
     }
 
     mjx-c.mjx-c28::before {
@@ -609,19 +784,19 @@
       content: "(";
     }
 
-    mjx-c.mjx-c1D44B.TEX-I::before {
-      padding: 0.683em 0.852em 0 0;
-      content: "X";
+    mjx-c.mjx-c31::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "1";
     }
 
-    mjx-c.mjx-c3B::before {
-      padding: 0.43em 0.278em 0.194em 0;
-      content: ";";
+    mjx-c.mjx-c2212::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "\2212";
     }
 
-    mjx-c.mjx-c1D44C.TEX-I::before {
-      padding: 0.683em 0.763em 0 0;
-      content: "Y";
+    mjx-c.mjx-c1D44F.TEX-I::before {
+      padding: 0.694em 0.429em 0.011em 0;
+      content: "b";
     }
 
     mjx-c.mjx-c29::before {
@@ -629,9 +804,54 @@
       content: ")";
     }
 
-    mjx-c.mjx-c1D45B.TEX-I::before {
-      padding: 0.442em 0.6em 0.011em 0;
-      content: "n";
+    mjx-c.mjx-c1D452.TEX-I::before {
+      padding: 0.442em 0.466em 0.011em 0;
+      content: "e";
+    }
+
+    mjx-c.mjx-c1D453.TEX-I::before {
+      padding: 0.705em 0.55em 0.205em 0;
+      content: "f";
+    }
+
+    mjx-c.mjx-c2B::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "+";
+    }
+
+    mjx-c.mjx-c32::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "2";
+    }
+
+    mjx-c.mjx-c2F::before {
+      padding: 0.75em 0.5em 0.25em 0;
+      content: "/";
+    }
+
+    mjx-c.mjx-c1D441.TEX-I::before {
+      padding: 0.683em 0.888em 0 0;
+      content: "N";
+    }
+
+    mjx-c.mjx-c1D45C.TEX-I::before {
+      padding: 0.441em 0.485em 0.011em 0;
+      content: "o";
+    }
+
+    mjx-c.mjx-c1D451.TEX-I::before {
+      padding: 0.694em 0.52em 0.01em 0;
+      content: "d";
+    }
+
+    mjx-c.mjx-c1D444.TEX-I::before {
+      padding: 0.704em 0.791em 0.194em 0;
+      content: "Q";
+    }
+
+    mjx-c.mjx-c1D445.TEX-I::before {
+      padding: 0.683em 0.759em 0.021em 0;
+      content: "R";
     }
   </style>
 
@@ -647,7 +867,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:18px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
   <div class="flex-container">
     <div id="sidebar" class="sidebar-left">
       <div class="sidebar-content">
@@ -660,10 +880,8 @@
       <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
         <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
           <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
-          <div class="mod-header">
-            <div class="inline-title" contenteditable="true" spellcheck="false" tabindex="-1" enterkeyhint="done">Software Testing Foundations</div>
-          </div>
-          <div>
+          <div class="mod-header"></div>
+          <div class="is-collapsed">
             <h1 data-heading="Chapter 1 - Introduction" id="Chapter_1_-_Introduction">
               <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
@@ -764,7 +982,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="is-collapsed">
             <h1 data-heading="Chapter 2 - Fundamentals of Testing" id="Chapter_2_-_Fundamentals_of_Testing">
               <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
@@ -1776,7 +1994,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="is-collapsed">
             <h1 data-heading="Chapter 3 - Testing in the Software Life Cycle" id="Chapter_3_-_Testing_in_the_Software_Life_Cycle">
               <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
@@ -1791,7 +2009,7 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230515165242.png" src="Pasted image 20230515165242.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230515165242.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230515165242.png?1684180362033"></span></p>
+            <p><span alt="Pasted image 20230515165242.png" src="Pasted image 20230515165242.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230515165242.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230515165242.png?1684180362033"></span></p>
           </div>
           <div>
             <p>Se ven los niveles de prueba:</p>
@@ -2093,7 +2311,7 @@
             </ol>
           </div>
           <div>
-            <p><span alt="Pasted image 20230515171602.png" src="Pasted image 20230515171602.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230515171602.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230515171602.png?1684181762229"></span></p>
+            <p><span alt="Pasted image 20230515171602.png" src="Pasted image 20230515171602.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230515171602.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230515171602.png?1684181762229"></span></p>
           </div>
           <div>
             <h2 data-heading="3.3 Integration Test" id="3.3_Integration_Test">
@@ -2918,7 +3136,7 @@
           </div>
           <div>
             <p>This danger can be reduced by running several V-models in sequence, one for each increment, where every next “V” reuses existing test material and adds the tests necessary for new development or for higher reliability requirements.<br>
-              <span alt="Pasted image 20230516145036.png" src="Pasted image 20230516145036.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230516145036.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230516145036.png?1684259436202"></span>
+              <span alt="Pasted image 20230516145036.png" src="Pasted image 20230516145036.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230516145036.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230516145036.png?1684259436202"></span>
             </p>
           </div>
           <div>
@@ -3126,9 +3344,619 @@
               </li>
             </ul>
           </div>
-          <div class="mod-footer">
-            <div class="embedded-backlinks" style="display: none;"></div>
+          <div>
+            <h1 data-heading="Chapter 4 - Static Test" id="Chapter_4_-_Static_Test">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Chapter 4 - Static Test
+            </h1>
           </div>
+          <div>
+            <p>Opposite to dynamic testing, the test object is not provided with test data and executed but rather analyzed.<br>
+              This can be done using one or more persons for an intensive investigation or through the use of tools.<br>
+              Tool-supported static analysis is only possible for documents with a formal structure.</p>
+          </div>
+          <div>
+            <p>The goal of examination is to find defects and deviations from the existing specifications, standards to comply with, or even the project plan.</p>
+          </div>
+          <div>
+            <h2 data-heading="4.1 Structured Group Evaluations" id="4.1_Structured_Group_Evaluations">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.1 Structured Group Evaluations
+            </h2>
+          </div>
+          <div class="is-collapsed">
+            <h3 data-heading="4.1.1 Foundations" id="4.1.1_Foundations">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.1.1 Foundations
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="Systematic use of the human ability to think and analyze" id="Systematic_use_of_the_human_ability_to_think_and_analyze">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Systematic use of the human ability to think and analyze
+            </h4>
+          </div>
+          <div>
+            <p>Reviews apply the human analytical capabilities to check and evaluate complex issues. Intensive reading and trying to understand the examined documents is the key.<br>
+              There are different techniques for checking documents. They differ regarding the intensity, formality, necessary resources (staff and time), and goals.</p>
+          </div>
+          <div class="is-collapsed">
+            <h3 data-heading="4.1.2 Reviews" id="4.1.2_Reviews">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.1.2 Reviews
+            </h3>
+          </div>
+          <div>
+            <p><strong><em>Review</em></strong> is a common generic term for all the different static analysis techniques people perform as well as the term for a specific document examination technique.<br>
+              Reviews rely on the colleagues of the author to provide mutual feedback. Because of this, they are also called <strong><em>peer reviews</em></strong>.</p>
+          </div>
+          <div>
+            <p>However, <strong><em>inspection</em></strong> is usually defined as a special, formal review using data collection and special rules.</p>
+          </div>
+          <div>
+            <h4 data-heading="A means for quality assurance" id="A_means_for_quality_assurance">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>A means for quality assurance
+            </h4>
+          </div>
+          <div>
+            <p>Reviews are an efficient means to assure the quality of the examined documents. They should be performed as soon as possible to find mistakes and inconsistencies early.<br>
+              Eliminating defects and inconsistencies leads to improved document quality and positively influences the whole development process.</p>
+          </div>
+          <div>
+            <h4 data-heading="Positive effects" id="Positive_effects">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Positive effects
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Cheaper defect elimination. If defects are found and eliminated early, fewer resources are needed for defect identification and elimination later.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Shortened development time.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>If defects are recognized and corrected early, costs and time needed for executing the dynamic tests decrease because there are fewer defects in the test object.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Because of the smaller number of defects, cost reduction can be expected during the whole product life.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>During operation of the system, a reduced failure rate can be expected.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>As the examinations are done using a team of people, reviews lead to mutual learning.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>Because several persons are involved in a review, a clear and understandable description of the facts is required. The necessity to formulate a clear document helps the author find forgotten issues.
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>The whole team feels responsible for the quality of the examined object. The group will gain a common understanding of it
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="Potential problem" id="Potential_problem">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Potential problem
+            </h4>
+          </div>
+          <div>
+            <p>In a badly moderated review session, the Potential problem author may get into a psychologically difficult situation, <strong>feeling</strong> that he as a person and not the document is subject to critical scrutiny.</p>
+          </div>
+          <div>
+            <h4 data-heading="Reviews costs and savings" id="Reviews_costs_and_savings">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Reviews costs and savings
+            </h4>
+          </div>
+          <div>
+            <p>The costs caused by reviews are estimated to be 10–15% of the devel- Reviews costs and savings opment budget.<br>
+              Savings are estimated to be about 14–25% (the extra effort for the reviews themselves is included in this calculation.).<br>
+              It is plausible that defect cost in development is reduced by 75% and more.</p>
+          </div>
+          <div>
+            <h4 data-heading="Important success factors" id="Important_success_factors">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Important success factors
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Every review has a clear goal, which is formulated beforehand.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>The “right” people are chosen as review participants based on the review objective as well as on their subject knowledge and skills.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="4.1.3 The General Process" id="4.1.3_The_General_Process">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.1.3 The General Process
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230516194840.png" src="Pasted image 20230516194840.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230516194840.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230516194840.png?1684277320823"></span></p>
+          </div>
+          <div>
+            <p>A review requires six work steps: planning, kick-off, individual preparation, review meeting, rework, and follow-up.</p>
+          </div>
+          <div>
+            <h4 data-heading="Planning" id="Planning">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Planning
+            </h4>
+          </div>
+          <div>
+            <h5 data-heading="Reviews need planning" id="Reviews_need_planning">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Reviews need planning
+            </h5>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Early, during overall planning, management must decide <strong><em>which documents</em></strong> in the software development process shall be subject to <strong><em>which review technique</em></strong>.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>During planning of the individual review, the review leader selects technically competent staff and assembles a review team.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>In formal reviews, entry criteria (and the corresponding exit criteria) may be set. A review should continue only after any available entry criteria has been checked.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="Kick-Off" id="Kick-Off">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Kick-Off
+            </h4>
+          </div>
+          <div>
+            <p>The kick-off (or overview) serves to provide those involved in the review with all of the necessary information.<br>
+              It may include:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>significance and the objective of the planned review
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>short introduction to the material
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>a description of how it fits into the application or environment
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 data-heading="Higher-level documents are necessary" id="Higher-level_documents_are_necessary">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Higher-level documents are necessary
+            </h5>
+          </div>
+          <div>
+            <p>Those involved must have access to documents that help to decide if a particular statement is wrong or correct. Such documents are also called base documents or baselines.</p>
+          </div>
+          <div>
+            <h4 data-heading="Individual Preparation" id="Individual_Preparation">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Individual Preparation
+            </h4>
+          </div>
+          <div>
+            <h5 data-heading="Intensive study of the review object" id="Intensive_study_of_the_review_object">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Intensive study of the review object
+            </h5>
+          </div>
+          <div>
+            <p>The members of the review team must prepare individually for the review meeting.</p>
+          </div>
+          <div>
+            <h4 data-heading="Review Meeting" id="Review_Meeting">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Review Meeting
+            </h4>
+          </div>
+          <div>
+            <p>A review leader or <strong>moderator</strong> leads the review meeting. Moderator and participants should behave diplomatically (not be aggressive with each other) and contribute to the review in the best possible way.</p>
+          </div>
+          <div>
+            <h4 data-heading="Rework" id="Rework">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Rework
+            </h4>
+          </div>
+          <div>
+            <p>The manager decides whether to follow the recommendation or do something else.</p>
+          </div>
+          <div>
+            <h4 data-heading="Follow-Up" id="Follow-Up">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Follow-Up
+            </h4>
+          </div>
+          <div>
+            <p>The proper correction of defects must be followed up, usually by the manager, moderator, or someone especially assigned this responsibility.<br>
+              If the result of the first review was not acceptable, another review should be scheduled.</p>
+          </div>
+          <div>
+            <h3 data-heading="4.1.4 Roles and Responsibilities" id="4.1.4_Roles_and_Responsibilities">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.1.4 Roles and Responsibilities
+            </h3>
+          </div>
+          <div>
+            <h4 data-heading="Manager" id="Manager">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Manager
+            </h4>
+          </div>
+          <div>
+            <p>The manager selects the objects to be reviewed, assigns the necessary resources, and selects the review team.</p>
+          </div>
+          <div>
+            <h4 data-heading="Moderator" id="Moderator">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Moderator
+            </h4>
+          </div>
+          <div>
+            <p>The moderator is responsible for executing the review. Planning, preparation, execution, rework, and follow-up should be done in such a way that the review objectives are achieved.<br>
+              The moderator is responsible for collecting review data and issuing the review report.</p>
+          </div>
+          <div>
+            <h4 data-heading="Author" id="Author">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Author
+            </h4>
+          </div>
+          <div>
+            <p>The author is the creator of the document that is the subject of a Author review. If several people have been involved in the creation, one person should be appointed to be responsible.<br>
+              The author is responsible for the review object meeting its review entry criteria and for performing any rework required for meeting the review exit criteria.</p>
+          </div>
+          <div>
+            <h4 data-heading="Reviewer" id="Reviewer">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Reviewer
+            </h4>
+          </div>
+          <div>
+            <p>The reviewers, sometimes also called inspectors, are several technical experts that participate in the review meeting after necessary individual preparation.<br>
+              They should represent different viewpoints (for example, sponsor, requirements, design, code, safety, test).</p>
+          </div>
+          <div>
+            <h4 data-heading="Recorder" id="Recorder">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Recorder
+            </h4>
+          </div>
+          <div>
+            <p>The recorder (or scribe) shall document the issues (problems, action items, decisions, and recommendations) found by the review team.</p>
+          </div>
+          <div>
+            <h3 data-heading="4.1.5 Types of Reviews" id="4.1.5_Types_of_Reviews">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.1.5 Types of Reviews
+            </h3>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Reviews pertaining to products or intermediate products that have been created during the development process.</li>
+              <li data-line="1">Reviews that analyze the project itself or the development process.</li>
+            </ol>
+          </div>
+          <div>
+            <h4 data-heading="Walkthrough" id="Walkthrough">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Walkthrough
+            </h4>
+          </div>
+          <div>
+            <p>A walkthrough is a <strong><em>manual</em></strong>, <strong><em>informal review</em></strong> method with the purpose of finding defects, ambiguities, and problems in written documents. The author presents the document to the reviewers in a review meeting.</p>
+          </div>
+          <div>
+            <p>Goals:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>educating an audience regarding a software product
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>improve the product
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>error detection
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>discuss alternative implementations
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>evaluate conformance to standards and specifications
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 data-heading="Discussion of typical usage situations" id="Discussion_of_typical_usage_situations">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Discussion of typical usage situations
+            </h5>
+          </div>
+          <div>
+            <h5 data-heading="Suitable for small development teams" id="Suitable_for_small_development_teams">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Suitable for small development teams
+            </h5>
+          </div>
+          <div>
+            <h4 data-heading="Inspection" id="Inspection">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Inspection
+            </h4>
+          </div>
+          <div>
+            <p>The inspection is the most formal review. It follows a formal, prescribed process. Every person involved, usually people who work directly with the author, has a defined role. Rules define the process. The reviewers use checklists containing criteria for checking the different aspects.</p>
+          </div>
+          <div>
+            <p>Goals:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>finding unclear items and possible defects
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>measuring review object quality
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>improving the quality of the inspection process and the development process
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>The concrete objectives of each individual inspection are determined during planning.</p>
+          </div>
+          <div>
+            <h4 data-heading="Technical Review" id="Technical_Review">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Technical Review
+            </h4>
+          </div>
+          <div>
+            <p>In a technical review, the focus is compliance of the document with the specification, fitness for its intended purpose, and compliance to standards.<br>
+              During preparation, the reviewers check the review object with respect to the specified review criteria.<br>
+              The reviewers must be <strong><em>technically qualified</em></strong>.</p>
+          </div>
+          <div>
+            <p>Goals:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>generate a discussion
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>find alternative aproaches
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>solve technical issues
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>assess conformity to review standards
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>reveal errors and defects
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5 data-heading="High preparation effort" id="High_preparation_effort">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>High preparation effort
+            </h5>
+          </div>
+          <div>
+            <h4 data-heading="Informal Review" id="Informal_Review">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Informal Review
+            </h4>
+          </div>
+          <div>
+            <p>The informal review is a light version of a review. It more or less follows the general procedure for reviews in a simplified way.</p>
+          </div>
+          <div>
+            <p>Goals:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>reduce costs and effort compared to other forms of review
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>generate a discussion and exchange information between colleagues
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 data-heading="Selection Criteria" id="Selection_Criteria">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Selection Criteria
+            </h4>
+          </div>
+          <div>
+            <p>The type of review that should be used depends very much on how thor- Selecting the type of review ough the review needs to be and the effort that can be spent. It also depends on the project environment.<br>
+              It makes sense to use testers as reviewers. The reviewed documents are usually used as the test basis to design test cases</p>
+          </div>
+          <div>
+            <h2 data-heading="4.2 Static Analysis" id="4.2_Static_Analysis">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.2 Static Analysis
+            </h2>
+          </div>
+          <div>
+            <p><strong><em>Static analysis</em></strong> points to the fact that this form of checking does not involve an execution of the checked objects (of a program).<br>
+              The objective of static analysis is, as with reviews, to reveal defects or defect-prone parts in a document. However, in static analysis, tools do the analysis.</p>
+          </div>
+          <div>
+            <p>Even spell checkers can be regarded as a form of <strong>static analyzers</strong> because they find mistakes in documents and therefore contribute to quality improvement.</p>
+          </div>
+          <div>
+            <p>The document to be analyzed must follow a certain formal structure in order to be checked by a tool.</p>
+          </div>
+          <div>
+            <p>Due to the fact that static analysis is tool supported, there is much less effort involved than in a review.</p>
+          </div>
+          <div>
+            <p>Not all defects can be found using static testing.<br>
+              The following defects and dangerous constructions can be detected by static analysis:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Syntax violations
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Deviations from conventions and standards
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Control flow anomalies
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Data flow anomalies
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="4.2.1 The Compiler as a Static Analysis Tool" id="4.2.1_The_Compiler_as_a_Static_Analysis_Tool">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.2.1 The Compiler as a Static Analysis Tool
+            </h3>
+          </div>
+          <div>
+            <h3 data-heading="4.2.2 Examination of Compliance to Conventions and Standards" id="4.2.2_Examination_of_Compliance_to_Conventions_and_Standards">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.2.2 Examination of Compliance to Conventions and Standards
+            </h3>
+          </div>
+          <div>
+            <h3 data-heading="4.2.3 Execution of Data Flow Analysis" id="4.2.3_Execution_of_Data_Flow_Analysis">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.2.3 Execution of Data Flow Analysis
+            </h3>
+          </div>
+          <div>
+            <h3 data-heading="4.2.4 Execution of Control Flow Analysis" id="4.2.4_Execution_of_Control_Flow_Analysis">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.2.4 Execution of Control Flow Analysis
+            </h3>
+          </div>
+          <div>
+            <h3 data-heading="4.2.5 Determining Metrics" id="4.2.5_Determining_Metrics">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.2.5 Determining Metrics
+            </h3>
+          </div>
+          <div>
+            <h2 data-heading="4.3 Summary" id="4.3_Summary">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4.3 Summary
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Several pairs of eyes see more than a single pair of eyes. This is also true in software development. This is the main principle for the reviews that are performed for checking and for improving quality. Several people inspect the documents and discuss them in a meeting and the results are recorded.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>A fundamental review process consists of the following activities: planning, kick-off, preparation, review meeting, rework, and follow-up. The roles of the participants are manager, moderator, author, reviewer, and recorder.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>There are several types of reviews. Unfortunately, the terminology is defined differently in all literature and standards.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>The walkthrough is an informal procedure where the author presents her document to the reviewers in the meeting. There is little preparation for the meeting. The walkthrough is especially suitable for small development teams, for discussing alternatives, and for educating people in the team.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>The inspection is the most formal review type. Preparation is done using checklists, there are defined entry and exit criteria, and a trained moderator chairs the meeting. The objective of inspections is checking the quality of the document and improvement of development, the development process, and the inspection process itself.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>In the technical review, the individual reviewers’ results must be given to the review leader prior to the meeting. The meeting is then prioritized by assumed importance of the individual issues. The evaluators usually have access to the specifications and other documentation only. The author can remain anonymous.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>The informal review is not based on a formal procedure. The form in which the results have to be presented is not prescribed. Because this type of review can be performed with minimal effort, its acceptance is very high, and in practice it is commonly used.
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>Generally, the specific environment, i.e., the organization and project for which the review is used, determines the type of review to be used. Reviews are tailored to meet specific needs and requirements, which increases their efficiency. It is important to establish a cooperative and collaborative atmosphere among the people involved in the development of the software.
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div>In addition to the reviews, a lot of checks can be done for documents that have a formalized structure. These checks are called static analyses. The test object is not executed during a static analysis.
+              </li>
+              <li data-line="9">
+                <div class="list-bullet"></div>The compiler is the most common analysis tool and reveals syntax errors in the program code. Usually, compilers provide even more checking and information.
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div>Analysis tools that are dependent on programming language can also show violation of standards and other conventions.
+              </li>
+              <li data-line="11">
+                <div class="list-bullet"></div>Tools are available for detecting anomalies in the data and control flows of the program. Useful information about control and data flows is generated, which often points to parts that could contain defects.
+              </li>
+              <li data-line="12">
+                <div class="list-bullet"></div>Metrics are used to measure quality. One such metric is the cyclomatic number, which calculates the number of independent paths in the checked program. It is possible to gain information on the structure and the testing effort.
+              </li>
+              <li data-line="13">
+                <div class="list-bullet"></div>Generally, static analyses should be performed first, before a document is subjected to review. Static analyses provide a relatively inexpensive means to detect defects and thus make the reviews less expensive.
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
         </div>
       </div>
     </div>
@@ -4133,6 +4961,313 @@
                   <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                       <path d="M3 8L12 17L21 8"></path>
                     </svg></div><span class="outline-item-title">3.8 Summary</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Chapter_4_-_Static_Test">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Chapter 4 - Static Test</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#4.1_Structured_Group_Evaluations">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">4.1 Structured Group Evaluations</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.1.1_Foundations">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.1.1 Foundations</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Systematic_use_of_the_human_ability_to_think_and_analyze">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Systematic use of the human ability to think and analyze</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.1.2_Reviews">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.1.2 Reviews</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#A_means_for_quality_assurance">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">A means for quality assurance</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Positive_effects">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Positive effects</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Potential_problem">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Potential problem</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Reviews_costs_and_savings">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Reviews costs and savings</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Important_success_factors">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Important success factors</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.1.3_The_General_Process">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.1.3 The General Process</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Planning">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Planning</span>
+                        </a>
+                        <div class="outline-item-children">
+                          <div class="outline-item" data-size="5"><a class="outline-item-contents internal-link" href="#Reviews_need_planning">
+                              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                  <path d="M3 8L12 17L21 8"></path>
+                                </svg></div><span class="outline-item-title">Reviews need planning</span>
+                            </a>
+                            <div class="outline-item-children"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Kick-Off">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Kick-Off</span>
+                        </a>
+                        <div class="outline-item-children">
+                          <div class="outline-item" data-size="5"><a class="outline-item-contents internal-link" href="#Higher-level_documents_are_necessary">
+                              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                  <path d="M3 8L12 17L21 8"></path>
+                                </svg></div><span class="outline-item-title">Higher-level documents are necessary</span>
+                            </a>
+                            <div class="outline-item-children"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Individual_Preparation">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Individual Preparation</span>
+                        </a>
+                        <div class="outline-item-children">
+                          <div class="outline-item" data-size="5"><a class="outline-item-contents internal-link" href="#Intensive_study_of_the_review_object">
+                              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                  <path d="M3 8L12 17L21 8"></path>
+                                </svg></div><span class="outline-item-title">Intensive study of the review object</span>
+                            </a>
+                            <div class="outline-item-children"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Review_Meeting">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Review Meeting</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Rework">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Rework</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Follow-Up">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Follow-Up</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.1.4_Roles_and_Responsibilities">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.1.4 Roles and Responsibilities</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Manager">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Manager</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Moderator">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Moderator</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Author">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Author</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Reviewer">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Reviewer</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Recorder">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Recorder</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.1.5_Types_of_Reviews">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.1.5 Types of Reviews</span>
+                    </a>
+                    <div class="outline-item-children">
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Walkthrough">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Walkthrough</span>
+                        </a>
+                        <div class="outline-item-children">
+                          <div class="outline-item" data-size="5"><a class="outline-item-contents internal-link" href="#Discussion_of_typical_usage_situations">
+                              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                  <path d="M3 8L12 17L21 8"></path>
+                                </svg></div><span class="outline-item-title">Discussion of typical usage situations</span>
+                            </a>
+                            <div class="outline-item-children"></div>
+                          </div>
+                          <div class="outline-item" data-size="5"><a class="outline-item-contents internal-link" href="#Suitable_for_small_development_teams">
+                              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                  <path d="M3 8L12 17L21 8"></path>
+                                </svg></div><span class="outline-item-title">Suitable for small development teams</span>
+                            </a>
+                            <div class="outline-item-children"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Inspection">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Inspection</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Technical_Review">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Technical Review</span>
+                        </a>
+                        <div class="outline-item-children">
+                          <div class="outline-item" data-size="5"><a class="outline-item-contents internal-link" href="#High_preparation_effort">
+                              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                                  <path d="M3 8L12 17L21 8"></path>
+                                </svg></div><span class="outline-item-title">High preparation effort</span>
+                            </a>
+                            <div class="outline-item-children"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Informal_Review">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Informal Review</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                      <div class="outline-item" data-size="4"><a class="outline-item-contents internal-link" href="#Selection_Criteria">
+                          <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                              <path d="M3 8L12 17L21 8"></path>
+                            </svg></div><span class="outline-item-title">Selection Criteria</span>
+                        </a>
+                        <div class="outline-item-children"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#4.2_Static_Analysis">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">4.2 Static Analysis</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.2.1_The_Compiler_as_a_Static_Analysis_Tool">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.2.1 The Compiler as a Static Analysis Tool</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.2.2_Examination_of_Compliance_to_Conventions_and_Standards">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.2.2 Examination of Compliance to Conventions and Standards</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.2.3_Execution_of_Data_Flow_Analysis">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.2.3 Execution of Data Flow Analysis</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.2.4_Execution_of_Control_Flow_Analysis">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.2.4 Execution of Control Flow Analysis</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#4.2.5_Determining_Metrics">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">4.2.5 Determining Metrics</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#4.3_Summary">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">4.3 Summary</span>
                 </a>
                 <div class="outline-item-children"></div>
               </div>

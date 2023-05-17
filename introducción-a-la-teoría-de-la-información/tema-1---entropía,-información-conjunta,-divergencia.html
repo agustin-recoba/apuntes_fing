@@ -213,6 +213,21 @@
       text-align: right;
     }
 
+    mjx-msubsup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-script {
+      display: inline-block;
+      padding-right: .05em;
+      padding-left: .033em;
+    }
+
+    mjx-script>mjx-spacer {
+      display: block;
+    }
+
     mjx-mi {
       display: inline-block;
       text-align: left;
@@ -225,6 +240,11 @@
     mjx-utext {
       display: inline-block;
       padding: .75em 0 .2em 0;
+    }
+
+    mjx-TeXAtom {
+      display: inline-block;
+      text-align: left;
     }
 
     mjx-mo {
@@ -324,7 +344,127 @@
       height: 0px;
     }
 
+    mjx-msub {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mn {
+      display: inline-block;
+      text-align: left;
+    }
+
     mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mfrac {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-frac {
+      display: inline-block;
+      vertical-align: 0.17em;
+      padding: 0 .22em;
+    }
+
+    mjx-frac[type="d"] {
+      vertical-align: .04em;
+    }
+
+    mjx-frac[delims] {
+      padding: 0 .1em;
+    }
+
+    mjx-frac[atop] {
+      padding: 0 .12em;
+    }
+
+    mjx-frac[atop][delims] {
+      padding: 0;
+    }
+
+    mjx-dtable {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-dtable>* {
+      font-size: 2000%;
+    }
+
+    mjx-dbox {
+      display: block;
+      font-size: 5%;
+    }
+
+    mjx-num {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-den {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-mfrac[bevelled]>mjx-num {
+      display: inline-block;
+    }
+
+    mjx-mfrac[bevelled]>mjx-den {
+      display: inline-block;
+    }
+
+    mjx-den[align="right"],
+    mjx-num[align="right"] {
+      text-align: right;
+    }
+
+    mjx-den[align="left"],
+    mjx-num[align="left"] {
+      text-align: left;
+    }
+
+    mjx-nstrut {
+      display: inline-block;
+      height: .054em;
+      width: 0;
+      vertical-align: -.054em;
+    }
+
+    mjx-nstrut[type="d"] {
+      height: .217em;
+      vertical-align: -.217em;
+    }
+
+    mjx-dstrut {
+      display: inline-block;
+      height: .505em;
+      width: 0;
+    }
+
+    mjx-dstrut[type="d"] {
+      height: .726em;
+    }
+
+    mjx-line {
+      display: block;
+      box-sizing: border-box;
+      min-height: 1px;
+      height: .06em;
+      border-top: .06em solid;
+      margin: .06em -.1em;
+      overflow: hidden;
+    }
+
+    mjx-line[type="d"] {
+      margin: .18em -.1em;
+    }
+
+    mjx-mrow {
       display: inline-block;
       text-align: left;
     }
@@ -599,9 +739,44 @@
       src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
     }
 
-    mjx-c.mjx-c1D43C.TEX-I::before {
-      padding: 0.683em 0.504em 0 0;
-      content: "I";
+    mjx-c.mjx-c1D45D.TEX-I::before {
+      padding: 0.442em 0.503em 0.194em 0;
+      content: "p";
+    }
+
+    mjx-c.mjx-c1D44E.TEX-I::before {
+      padding: 0.441em 0.529em 0.01em 0;
+      content: "a";
+    }
+
+    mjx-c.mjx-c1D461.TEX-I::before {
+      padding: 0.626em 0.361em 0.011em 0;
+      content: "t";
+    }
+
+    mjx-c.mjx-c1D45F.TEX-I::before {
+      padding: 0.442em 0.451em 0.011em 0;
+      content: "r";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+
+    mjx-c.mjx-c1D460.TEX-I::before {
+      padding: 0.442em 0.469em 0.01em 0;
+      content: "s";
+    }
+
+    mjx-c.mjx-c3D::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "=";
+    }
+
+    mjx-c.mjx-cD7::before {
+      padding: 0.491em 0.778em 0 0;
+      content: "\D7";
     }
 
     mjx-c.mjx-c28::before {
@@ -609,19 +784,19 @@
       content: "(";
     }
 
-    mjx-c.mjx-c1D44B.TEX-I::before {
-      padding: 0.683em 0.852em 0 0;
-      content: "X";
+    mjx-c.mjx-c31::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "1";
     }
 
-    mjx-c.mjx-c3B::before {
-      padding: 0.43em 0.278em 0.194em 0;
-      content: ";";
+    mjx-c.mjx-c2212::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "\2212";
     }
 
-    mjx-c.mjx-c1D44C.TEX-I::before {
-      padding: 0.683em 0.763em 0 0;
-      content: "Y";
+    mjx-c.mjx-c1D44F.TEX-I::before {
+      padding: 0.694em 0.429em 0.011em 0;
+      content: "b";
     }
 
     mjx-c.mjx-c29::before {
@@ -629,9 +804,54 @@
       content: ")";
     }
 
-    mjx-c.mjx-c1D45B.TEX-I::before {
-      padding: 0.442em 0.6em 0.011em 0;
-      content: "n";
+    mjx-c.mjx-c1D452.TEX-I::before {
+      padding: 0.442em 0.466em 0.011em 0;
+      content: "e";
+    }
+
+    mjx-c.mjx-c1D453.TEX-I::before {
+      padding: 0.705em 0.55em 0.205em 0;
+      content: "f";
+    }
+
+    mjx-c.mjx-c2B::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "+";
+    }
+
+    mjx-c.mjx-c32::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "2";
+    }
+
+    mjx-c.mjx-c2F::before {
+      padding: 0.75em 0.5em 0.25em 0;
+      content: "/";
+    }
+
+    mjx-c.mjx-c1D441.TEX-I::before {
+      padding: 0.683em 0.888em 0 0;
+      content: "N";
+    }
+
+    mjx-c.mjx-c1D45C.TEX-I::before {
+      padding: 0.441em 0.485em 0.011em 0;
+      content: "o";
+    }
+
+    mjx-c.mjx-c1D451.TEX-I::before {
+      padding: 0.694em 0.52em 0.01em 0;
+      content: "d";
+    }
+
+    mjx-c.mjx-c1D444.TEX-I::before {
+      padding: 0.704em 0.791em 0.194em 0;
+      content: "Q";
+    }
+
+    mjx-c.mjx-c1D445.TEX-I::before {
+      padding: 0.683em 0.759em 0.021em 0;
+      content: "R";
     }
   </style>
 
@@ -647,7 +867,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:18px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
   <div class="flex-container">
     <div id="sidebar" class="sidebar-left">
       <div class="sidebar-content">
@@ -669,10 +889,10 @@
             </h1>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319212503.png" src="Pasted image 20230319212503.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212503.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212503.png?1683988806687"></span></p>
+            <p><span alt="Pasted image 20230319212503.png" src="Pasted image 20230319212503.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212503.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212503.png?1683988806687"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319212513.png" src="Pasted image 20230319212513.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212513.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212513.png?1683988806687"></span></p>
+            <p><span alt="Pasted image 20230319212513.png" src="Pasted image 20230319212513.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212513.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212513.png?1683988806687"></span></p>
           </div>
           <div class="admonition-parent admonition-quote-parent">
             <div class="callout admonition admonition-quote admonition-plugin is-collapsible is-collapsed" style="--callout-color: 158, 158, 158;" data-callout="quote" data-callout-fold="+">
@@ -686,9 +906,9 @@
                   </svg></div>
               </div>
               <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
-                <p><span alt="Pasted image 20230319212845.png" src="Pasted image 20230319212845.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212845.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212845.png?1683988806694"></span></p>
-                <p><span alt="Pasted image 20230319220218.png" src="Pasted image 20230319220218.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319220218.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319220218.png?1683988806722"></span></p>
-                <p><span alt="Pasted image 20230319220306.png" src="Pasted image 20230319220306.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319220306.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319220306.png?1683988806717"></span></p>
+                <p><span alt="Pasted image 20230319212845.png" src="Pasted image 20230319212845.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212845.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212845.png?1683988806694"></span></p>
+                <p><span alt="Pasted image 20230319220218.png" src="Pasted image 20230319220218.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319220218.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319220218.png?1683988806722"></span></p>
+                <p><span alt="Pasted image 20230319220306.png" src="Pasted image 20230319220306.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319220306.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319220306.png?1683988806717"></span></p>
               </div>
             </div>
           </div>
@@ -700,7 +920,7 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213003.png" src="Pasted image 20230319213003.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213003.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213003.png?1683988806694"></span></p>
+            <p><span alt="Pasted image 20230319213003.png" src="Pasted image 20230319213003.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213003.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213003.png?1683988806694"></span></p>
           </div>
           <div>
             <h2 data-heading="Entropía conjunta y condicional" id="Entropía_conjunta_y_condicional">
@@ -710,10 +930,10 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213111.png" src="Pasted image 20230319213111.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213111.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213111.png?1683988806692"></span></p>
+            <p><span alt="Pasted image 20230319213111.png" src="Pasted image 20230319213111.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213111.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213111.png?1683988806692"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213121.png" src="Pasted image 20230319213121.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213121.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213121.png?1683988806697"></span></p>
+            <p><span alt="Pasted image 20230319213121.png" src="Pasted image 20230319213121.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213121.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213121.png?1683988806697"></span></p>
           </div>
           <div>
             <h2 data-heading="Regla de la cadena para la entropía" id="Regla_de_la_cadena_para_la_entropía">
@@ -723,10 +943,10 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213158.png" src="Pasted image 20230319213158.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213158.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213158.png?1683988806697"></span></p>
+            <p><span alt="Pasted image 20230319213158.png" src="Pasted image 20230319213158.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213158.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213158.png?1683988806697"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213207.png" src="Pasted image 20230319213207.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213207.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213207.png?1683988806703"></span></p>
+            <p><span alt="Pasted image 20230319213207.png" src="Pasted image 20230319213207.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213207.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213207.png?1683988806703"></span></p>
           </div>
           <div>
             <h3 data-heading="Caso condicionado" id="Caso_condicionado">
@@ -736,7 +956,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213217.png" src="Pasted image 20230319213217.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213217.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213217.png?1683988806703"></span></p>
+            <p><span alt="Pasted image 20230319213217.png" src="Pasted image 20230319213217.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213217.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213217.png?1683988806703"></span></p>
           </div>
           <div>
             <h3 data-heading="Caso general" id="Caso_general">
@@ -746,7 +966,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213242.png" src="Pasted image 20230319213242.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213242.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213242.png?1683988806703"></span></p>
+            <p><span alt="Pasted image 20230319213242.png" src="Pasted image 20230319213242.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213242.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213242.png?1683988806703"></span></p>
           </div>
           <div>
             <h4 data-heading="No condicionado" id="No_condicionado">
@@ -756,7 +976,7 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213253.png" src="Pasted image 20230319213253.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213253.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213253.png?1683988806703"></span></p>
+            <p><span alt="Pasted image 20230319213253.png" src="Pasted image 20230319213253.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213253.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213253.png?1683988806703"></span></p>
           </div>
           <div>
             <h4 data-heading="Condicionado" id="Condicionado">
@@ -766,7 +986,7 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213425.png" src="Pasted image 20230319213425.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213425.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213425.png?1683988806704"></span></p>
+            <p><span alt="Pasted image 20230319213425.png" src="Pasted image 20230319213425.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213425.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213425.png?1683988806704"></span></p>
           </div>
           <div>
             <h3 data-heading="Ejemplo" id="Ejemplo">
@@ -776,7 +996,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319213521.png" src="Pasted image 20230319213521.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213521.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213521.png?1683988806701"></span></p>
+            <p><span alt="Pasted image 20230319213521.png" src="Pasted image 20230319213521.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213521.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213521.png?1683988806701"></span></p>
           </div>
           <div>
             <h1 data-heading="Divergencia, Entropía Relativa o Distancia LK" id="Divergencia,_Entropía_Relativa_o_Distancia_LK">
@@ -786,7 +1006,7 @@
             </h1>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319212616.png" src="Pasted image 20230319212616.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212616.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212616.png?1683988806688"></span></p>
+            <p><span alt="Pasted image 20230319212616.png" src="Pasted image 20230319212616.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212616.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212616.png?1683988806688"></span></p>
           </div>
           <div class="admonition-parent admonition-cite-parent">
             <div class="callout admonition admonition-cite admonition-plugin is-collapsible is-collapsed" style="--callout-color: 158, 158, 158;" data-callout="cite" data-callout-fold="+">
@@ -800,7 +1020,7 @@
                   </svg></div>
               </div>
               <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
-                <p><span alt="Pasted image 20230319213640.png" src="Pasted image 20230319213640.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213640.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213640.png?1683988806702"></span></p>
+                <p><span alt="Pasted image 20230319213640.png" src="Pasted image 20230319213640.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319213640.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319213640.png?1683988806702"></span></p>
               </div>
             </div>
           </div>
@@ -812,10 +1032,10 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215455.png" src="Pasted image 20230319215455.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215455.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215455.png?1683988806706"></span></p>
+            <p><span alt="Pasted image 20230319215455.png" src="Pasted image 20230319215455.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215455.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215455.png?1683988806706"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215512.png" src="Pasted image 20230319215512.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215512.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215512.png?1683988806706"></span></p>
+            <p><span alt="Pasted image 20230319215512.png" src="Pasted image 20230319215512.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215512.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215512.png?1683988806706"></span></p>
           </div>
           <div>
             <h3 data-heading="Regla de la cadena" id="Regla_de_la_cadena">
@@ -825,10 +1045,10 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215625.png" src="Pasted image 20230319215625.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215625.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215625.png?1683988806705"></span></p>
+            <p><span alt="Pasted image 20230319215625.png" src="Pasted image 20230319215625.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215625.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215625.png?1683988806705"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215634.png" src="Pasted image 20230319215634.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215634.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215634.png?1683988806706"></span></p>
+            <p><span alt="Pasted image 20230319215634.png" src="Pasted image 20230319215634.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215634.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215634.png?1683988806706"></span></p>
           </div>
           <div>
             <h2 data-heading="Desigualdad de la información" id="Desigualdad_de_la_información">
@@ -838,13 +1058,13 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215754.png" src="Pasted image 20230319215754.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215754.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215754.png?1683988806714"></span></p>
+            <p><span alt="Pasted image 20230319215754.png" src="Pasted image 20230319215754.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215754.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215754.png?1683988806714"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215802.png" src="Pasted image 20230319215802.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215802.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215802.png?1683988806707"></span></p>
+            <p><span alt="Pasted image 20230319215802.png" src="Pasted image 20230319215802.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215802.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215802.png?1683988806707"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215808.png" src="Pasted image 20230319215808.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215808.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215808.png?1683988806714"></span></p>
+            <p><span alt="Pasted image 20230319215808.png" src="Pasted image 20230319215808.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215808.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215808.png?1683988806714"></span></p>
           </div>
           <div>
             <h4 data-heading="En divergencia condicional" id="En_divergencia_condicional">
@@ -854,10 +1074,10 @@
             </h4>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215834.png" src="Pasted image 20230319215834.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215834.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215834.png?1683988806708"></span></p>
+            <p><span alt="Pasted image 20230319215834.png" src="Pasted image 20230319215834.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215834.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215834.png?1683988806708"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215842.png" src="Pasted image 20230319215842.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215842.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215842.png?1683988806715"></span></p>
+            <p><span alt="Pasted image 20230319215842.png" src="Pasted image 20230319215842.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215842.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215842.png?1683988806715"></span></p>
           </div>
           <div>
             <h2 data-heading="Entropía máxima" id="Entropía_máxima">
@@ -867,10 +1087,10 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215919.png" src="Pasted image 20230319215919.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215919.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215919.png?1683988806715"></span></p>
+            <p><span alt="Pasted image 20230319215919.png" src="Pasted image 20230319215919.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215919.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215919.png?1683988806715"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319215926.png" src="Pasted image 20230319215926.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215926.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215926.png?1683988806716"></span></p>
+            <p><span alt="Pasted image 20230319215926.png" src="Pasted image 20230319215926.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319215926.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319215926.png?1683988806716"></span></p>
           </div>
           <div>
             <h1 data-heading="Información mutua" id="Información_mutua">
@@ -880,13 +1100,13 @@
             </h1>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319212557.png" src="Pasted image 20230319212557.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212557.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212557.png?1683988806688"></span></p>
+            <p><span alt="Pasted image 20230319212557.png" src="Pasted image 20230319212557.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212557.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212557.png?1683988806688"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319212628.png" src="Pasted image 20230319212628.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212628.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212628.png?1683988806691"></span></p>
+            <p><span alt="Pasted image 20230319212628.png" src="Pasted image 20230319212628.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212628.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212628.png?1683988806691"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230320210519.png" src="Pasted image 20230320210519.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230320210519.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230320210519.png?1683988806723"></span></p>
+            <p><span alt="Pasted image 20230320210519.png" src="Pasted image 20230320210519.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230320210519.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230320210519.png?1683988806723"></span></p>
           </div>
           <div class="admonition-parent admonition-quote-parent">
             <div class="callout admonition admonition-quote admonition-plugin is-collapsible is-collapsed" style="--callout-color: 158, 158, 158;" data-callout="quote" data-callout-fold="+">
@@ -900,7 +1120,7 @@
                   </svg></div>
               </div>
               <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
-                <p><span alt="Pasted image 20230319220030.png" src="Pasted image 20230319220030.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319220030.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319220030.png?1683988806716"></span></p>
+                <p><span alt="Pasted image 20230319220030.png" src="Pasted image 20230319220030.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319220030.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319220030.png?1683988806716"></span></p>
               </div>
             </div>
           </div>
@@ -1019,7 +1239,7 @@
             </h1>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319212640.png" src="Pasted image 20230319212640.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212640.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212640.png?1683988806694"></span><br>
+            <p><span alt="Pasted image 20230319212640.png" src="Pasted image 20230319212640.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212640.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212640.png?1683988806694"></span><br>
               Caso base: <span class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true" style="position: relative;"><mjx-math display="true" class="MJX-TEX" aria-hidden="true" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D43C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3B"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c7C"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                       <mi>I</mi>
                       <mo stretchy="false">(</mo>
@@ -1045,7 +1265,7 @@
                       <mo data-mjx-texclass="ORD" stretchy="false">|</mo>
                       <mi>X</mi>
                       <mo stretchy="false">)</mo>
-                    </math></mjx-assistive-mml></mjx-container></span><span alt="Pasted image 20230319212649.png" src="Pasted image 20230319212649.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212649.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212649.png?1683988806693"></span></p>
+                    </math></mjx-assistive-mml></mjx-container></span><span alt="Pasted image 20230319212649.png" src="Pasted image 20230319212649.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212649.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212649.png?1683988806693"></span></p>
           </div>
           <div>
             <h1 data-heading="Desigualdades" id="Desigualdades">
@@ -1055,7 +1275,7 @@
             </h1>
           </div>
           <div>
-            <p><span alt="Pasted image 20230319212704.png" src="Pasted image 20230319212704.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212704.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212704.png?1683988806693"></span></p>
+            <p><span alt="Pasted image 20230319212704.png" src="Pasted image 20230319212704.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230319212704.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230319212704.png?1683988806693"></span></p>
           </div>
           <div>
             <h1 data-heading="Cota de Independencia" id="Cota_de_Independencia">
@@ -1065,7 +1285,7 @@
             </h1>
           </div>
           <div>
-            <p><span alt="Pasted image 20230321230903.png" src="Pasted image 20230321230903.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230321230903.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230321230903.png?1683988806730"></span></p>
+            <p><span alt="Pasted image 20230321230903.png" src="Pasted image 20230321230903.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230321230903.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230321230903.png?1683988806730"></span></p>
           </div>
           <div class="mod-footer"></div>
         </div>

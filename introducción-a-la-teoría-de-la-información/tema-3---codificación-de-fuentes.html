@@ -213,6 +213,21 @@
       text-align: right;
     }
 
+    mjx-msubsup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-script {
+      display: inline-block;
+      padding-right: .05em;
+      padding-left: .033em;
+    }
+
+    mjx-script>mjx-spacer {
+      display: block;
+    }
+
     mjx-mi {
       display: inline-block;
       text-align: left;
@@ -225,6 +240,11 @@
     mjx-utext {
       display: inline-block;
       padding: .75em 0 .2em 0;
+    }
+
+    mjx-TeXAtom {
+      display: inline-block;
+      text-align: left;
     }
 
     mjx-mo {
@@ -324,7 +344,127 @@
       height: 0px;
     }
 
+    mjx-msub {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mn {
+      display: inline-block;
+      text-align: left;
+    }
+
     mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mfrac {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-frac {
+      display: inline-block;
+      vertical-align: 0.17em;
+      padding: 0 .22em;
+    }
+
+    mjx-frac[type="d"] {
+      vertical-align: .04em;
+    }
+
+    mjx-frac[delims] {
+      padding: 0 .1em;
+    }
+
+    mjx-frac[atop] {
+      padding: 0 .12em;
+    }
+
+    mjx-frac[atop][delims] {
+      padding: 0;
+    }
+
+    mjx-dtable {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-dtable>* {
+      font-size: 2000%;
+    }
+
+    mjx-dbox {
+      display: block;
+      font-size: 5%;
+    }
+
+    mjx-num {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-den {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-mfrac[bevelled]>mjx-num {
+      display: inline-block;
+    }
+
+    mjx-mfrac[bevelled]>mjx-den {
+      display: inline-block;
+    }
+
+    mjx-den[align="right"],
+    mjx-num[align="right"] {
+      text-align: right;
+    }
+
+    mjx-den[align="left"],
+    mjx-num[align="left"] {
+      text-align: left;
+    }
+
+    mjx-nstrut {
+      display: inline-block;
+      height: .054em;
+      width: 0;
+      vertical-align: -.054em;
+    }
+
+    mjx-nstrut[type="d"] {
+      height: .217em;
+      vertical-align: -.217em;
+    }
+
+    mjx-dstrut {
+      display: inline-block;
+      height: .505em;
+      width: 0;
+    }
+
+    mjx-dstrut[type="d"] {
+      height: .726em;
+    }
+
+    mjx-line {
+      display: block;
+      box-sizing: border-box;
+      min-height: 1px;
+      height: .06em;
+      border-top: .06em solid;
+      margin: .06em -.1em;
+      overflow: hidden;
+    }
+
+    mjx-line[type="d"] {
+      margin: .18em -.1em;
+    }
+
+    mjx-mrow {
       display: inline-block;
       text-align: left;
     }
@@ -599,9 +739,44 @@
       src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
     }
 
-    mjx-c.mjx-c1D43C.TEX-I::before {
-      padding: 0.683em 0.504em 0 0;
-      content: "I";
+    mjx-c.mjx-c1D45D.TEX-I::before {
+      padding: 0.442em 0.503em 0.194em 0;
+      content: "p";
+    }
+
+    mjx-c.mjx-c1D44E.TEX-I::before {
+      padding: 0.441em 0.529em 0.01em 0;
+      content: "a";
+    }
+
+    mjx-c.mjx-c1D461.TEX-I::before {
+      padding: 0.626em 0.361em 0.011em 0;
+      content: "t";
+    }
+
+    mjx-c.mjx-c1D45F.TEX-I::before {
+      padding: 0.442em 0.451em 0.011em 0;
+      content: "r";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+
+    mjx-c.mjx-c1D460.TEX-I::before {
+      padding: 0.442em 0.469em 0.01em 0;
+      content: "s";
+    }
+
+    mjx-c.mjx-c3D::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "=";
+    }
+
+    mjx-c.mjx-cD7::before {
+      padding: 0.491em 0.778em 0 0;
+      content: "\D7";
     }
 
     mjx-c.mjx-c28::before {
@@ -609,19 +784,19 @@
       content: "(";
     }
 
-    mjx-c.mjx-c1D44B.TEX-I::before {
-      padding: 0.683em 0.852em 0 0;
-      content: "X";
+    mjx-c.mjx-c31::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "1";
     }
 
-    mjx-c.mjx-c3B::before {
-      padding: 0.43em 0.278em 0.194em 0;
-      content: ";";
+    mjx-c.mjx-c2212::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "\2212";
     }
 
-    mjx-c.mjx-c1D44C.TEX-I::before {
-      padding: 0.683em 0.763em 0 0;
-      content: "Y";
+    mjx-c.mjx-c1D44F.TEX-I::before {
+      padding: 0.694em 0.429em 0.011em 0;
+      content: "b";
     }
 
     mjx-c.mjx-c29::before {
@@ -629,9 +804,54 @@
       content: ")";
     }
 
-    mjx-c.mjx-c1D45B.TEX-I::before {
-      padding: 0.442em 0.6em 0.011em 0;
-      content: "n";
+    mjx-c.mjx-c1D452.TEX-I::before {
+      padding: 0.442em 0.466em 0.011em 0;
+      content: "e";
+    }
+
+    mjx-c.mjx-c1D453.TEX-I::before {
+      padding: 0.705em 0.55em 0.205em 0;
+      content: "f";
+    }
+
+    mjx-c.mjx-c2B::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "+";
+    }
+
+    mjx-c.mjx-c32::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "2";
+    }
+
+    mjx-c.mjx-c2F::before {
+      padding: 0.75em 0.5em 0.25em 0;
+      content: "/";
+    }
+
+    mjx-c.mjx-c1D441.TEX-I::before {
+      padding: 0.683em 0.888em 0 0;
+      content: "N";
+    }
+
+    mjx-c.mjx-c1D45C.TEX-I::before {
+      padding: 0.441em 0.485em 0.011em 0;
+      content: "o";
+    }
+
+    mjx-c.mjx-c1D451.TEX-I::before {
+      padding: 0.694em 0.52em 0.01em 0;
+      content: "d";
+    }
+
+    mjx-c.mjx-c1D444.TEX-I::before {
+      padding: 0.704em 0.791em 0.194em 0;
+      content: "Q";
+    }
+
+    mjx-c.mjx-c1D445.TEX-I::before {
+      padding: 0.683em 0.759em 0.021em 0;
+      content: "R";
     }
   </style>
 
@@ -647,7 +867,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:20px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:18px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
   <div class="flex-container">
     <div id="sidebar" class="sidebar-left">
       <div class="sidebar-content">
@@ -676,16 +896,16 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327171714.png" src="Pasted image 20230327171714.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327171714.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327171714.png?1683988806741"></span></p>
+            <p><span alt="Pasted image 20230327171714.png" src="Pasted image 20230327171714.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327171714.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327171714.png?1683988806741"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173234.png" src="Pasted image 20230327173234.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173234.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173234.png?1683988806734"></span><br>
-              <span alt="Pasted image 20230327173244.png" src="Pasted image 20230327173244.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173244.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173244.png?1683988806738"></span>
+            <p><span alt="Pasted image 20230327173234.png" src="Pasted image 20230327173234.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173234.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173234.png?1683988806734"></span><br>
+              <span alt="Pasted image 20230327173244.png" src="Pasted image 20230327173244.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173244.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173244.png?1683988806738"></span>
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173258.png" src="Pasted image 20230327173258.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173258.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173258.png?1683988806735"></span><br>
-              <span alt="Pasted image 20230327173306.png" src="Pasted image 20230327173306.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173306.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173306.png?1683988806739"></span>
+            <p><span alt="Pasted image 20230327173258.png" src="Pasted image 20230327173258.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173258.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173258.png?1683988806735"></span><br>
+              <span alt="Pasted image 20230327173306.png" src="Pasted image 20230327173306.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173306.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173306.png?1683988806739"></span>
             </p>
           </div>
           <div>
@@ -696,16 +916,16 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173422.png" src="Pasted image 20230327173422.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173422.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173422.png?1683988806738"></span></p>
+            <p><span alt="Pasted image 20230327173422.png" src="Pasted image 20230327173422.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173422.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173422.png?1683988806738"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173500.png" src="Pasted image 20230327173500.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173500.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173500.png?1683988806738"></span></p>
+            <p><span alt="Pasted image 20230327173500.png" src="Pasted image 20230327173500.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173500.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173500.png?1683988806738"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173512.png" src="Pasted image 20230327173512.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173512.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173512.png?1683988806749"></span></p>
+            <p><span alt="Pasted image 20230327173512.png" src="Pasted image 20230327173512.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173512.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173512.png?1683988806749"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173524.png" src="Pasted image 20230327173524.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173524.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173524.png?1683988806740"></span></p>
+            <p><span alt="Pasted image 20230327173524.png" src="Pasted image 20230327173524.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173524.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173524.png?1683988806740"></span></p>
           </div>
           <div>
             <h2 data-heading="Desigualdad de Kraft" id="Desigualdad_de_Kraft">
@@ -715,10 +935,10 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173600.png" src="Pasted image 20230327173600.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173600.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173600.png?1683988806750"></span></p>
+            <p><span alt="Pasted image 20230327173600.png" src="Pasted image 20230327173600.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173600.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173600.png?1683988806750"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173612.png" src="Pasted image 20230327173612.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173612.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173612.png?1683988806758"></span></p>
+            <p><span alt="Pasted image 20230327173612.png" src="Pasted image 20230327173612.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173612.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173612.png?1683988806758"></span></p>
           </div>
           <div>
             <h3 data-heading="Desigualdad de Kraft extendida" id="Desigualdad_de_Kraft_extendida">
@@ -728,10 +948,10 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173631.png" src="Pasted image 20230327173631.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173631.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173631.png?1683988806752"></span></p>
+            <p><span alt="Pasted image 20230327173631.png" src="Pasted image 20230327173631.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173631.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173631.png?1683988806752"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173643.png" src="Pasted image 20230327173643.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173643.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173643.png?1683988806745"></span></p>
+            <p><span alt="Pasted image 20230327173643.png" src="Pasted image 20230327173643.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173643.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173643.png?1683988806745"></span></p>
           </div>
           <div>
             <h3 data-heading="Desigualdad de Kraft para códigos UD" id="Desigualdad_de_Kraft_para_códigos_UD">
@@ -744,16 +964,16 @@
             <p>La clase de los codigos UD es más grande que la de los instantáneos, sin embargo no presentan ninguna ventaja respecto a la longitud de las palabras de código.</p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173708.png" src="Pasted image 20230327173708.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173708.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173708.png?1683988806758"></span><br>
-              <span alt="Pasted image 20230327173725.png" src="Pasted image 20230327173725.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173725.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173725.png?1683988806755"></span><br>
-              <span alt="Pasted image 20230327173736.png" src="Pasted image 20230327173736.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173736.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173736.png?1683988806756"></span>
+            <p><span alt="Pasted image 20230327173708.png" src="Pasted image 20230327173708.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173708.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173708.png?1683988806758"></span><br>
+              <span alt="Pasted image 20230327173725.png" src="Pasted image 20230327173725.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173725.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173725.png?1683988806755"></span><br>
+              <span alt="Pasted image 20230327173736.png" src="Pasted image 20230327173736.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173736.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173736.png?1683988806756"></span>
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173755.png" src="Pasted image 20230327173755.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173755.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173755.png?1683988806756"></span></p>
+            <p><span alt="Pasted image 20230327173755.png" src="Pasted image 20230327173755.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173755.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173755.png?1683988806756"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173802.png" src="Pasted image 20230327173802.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173802.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173802.png?1683988806750"></span></p>
+            <p><span alt="Pasted image 20230327173802.png" src="Pasted image 20230327173802.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173802.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173802.png?1683988806750"></span></p>
           </div>
           <div>
             <h2 data-heading="Códigos instantáneos óptimos (o cómo buscarlos)" id="Códigos_instantáneos_óptimos_(o_cómo_buscarlos)">
@@ -763,7 +983,7 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173830.png" src="Pasted image 20230327173830.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173830.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173830.png?1683988806764"></span></p>
+            <p><span alt="Pasted image 20230327173830.png" src="Pasted image 20230327173830.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173830.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173830.png?1683988806764"></span></p>
           </div>
           <div>
             <h2 data-heading="Primer Teorema de Shannon" id="Primer_Teorema_de_Shannon">
@@ -773,13 +993,13 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173910.png" src="Pasted image 20230327173910.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173910.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173910.png?1683988806752"></span></p>
+            <p><span alt="Pasted image 20230327173910.png" src="Pasted image 20230327173910.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173910.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173910.png?1683988806752"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327173920.png" src="Pasted image 20230327173920.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173920.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173920.png?1683988806753"></span></p>
+            <p><span alt="Pasted image 20230327173920.png" src="Pasted image 20230327173920.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327173920.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327173920.png?1683988806753"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327192706.png" src="Pasted image 20230327192706.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327192706.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327192706.png?1683988806761"></span></p>
+            <p><span alt="Pasted image 20230327192706.png" src="Pasted image 20230327192706.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327192706.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327192706.png?1683988806761"></span></p>
           </div>
           <div>
             <h2 data-heading="Cotas para el largo medio" id="Cotas_para_el_largo_medio">
@@ -789,7 +1009,7 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327193459.png" src="Pasted image 20230327193459.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193459.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193459.png?1683988806763"></span></p>
+            <p><span alt="Pasted image 20230327193459.png" src="Pasted image 20230327193459.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193459.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193459.png?1683988806763"></span></p>
           </div>
           <div class="admonition-parent admonition-note-parent">
             <div class="callout admonition admonition-note admonition-plugin " style="--callout-color: 68, 138, 255;" data-callout="note" data-callout-fold="">
@@ -813,7 +1033,7 @@
             </div>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327193513.png" src="Pasted image 20230327193513.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193513.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193513.png?1683988806761"></span></p>
+            <p><span alt="Pasted image 20230327193513.png" src="Pasted image 20230327193513.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193513.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193513.png?1683988806761"></span></p>
           </div>
           <div>
             <h3 data-heading="Procesos estocásticos estacionarios" id="Procesos_estocásticos_estacionarios">
@@ -823,10 +1043,10 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327193526.png" src="Pasted image 20230327193526.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193526.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193526.png?1683988806764"></span></p>
+            <p><span alt="Pasted image 20230327193526.png" src="Pasted image 20230327193526.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193526.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193526.png?1683988806764"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327193538.png" src="Pasted image 20230327193538.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193538.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193538.png?1683988806771"></span></p>
+            <p><span alt="Pasted image 20230327193538.png" src="Pasted image 20230327193538.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193538.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193538.png?1683988806771"></span></p>
           </div>
           <div>
             <h2 data-heading="La mala distribución" id="La_mala_distribución">
@@ -836,10 +1056,10 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327193559.png" src="Pasted image 20230327193559.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193559.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193559.png?1683988806765"></span></p>
+            <p><span alt="Pasted image 20230327193559.png" src="Pasted image 20230327193559.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193559.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193559.png?1683988806765"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327194828.png" src="Pasted image 20230327194828.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327194828.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327194828.png?1683988806763"></span></p>
+            <p><span alt="Pasted image 20230327194828.png" src="Pasted image 20230327194828.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327194828.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327194828.png?1683988806763"></span></p>
           </div>
           <div class="admonition-parent admonition-important-parent">
             <div class="callout admonition admonition-important admonition-plugin " style="--callout-color: 0, 191, 165;" data-callout="important" data-callout-fold="">
@@ -865,7 +1085,7 @@
             </div>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327193616.png" src="Pasted image 20230327193616.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193616.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193616.png?1683988806769"></span></p>
+            <p><span alt="Pasted image 20230327193616.png" src="Pasted image 20230327193616.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327193616.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327193616.png?1683988806769"></span></p>
           </div>
           <div>
             <h1 data-heading="Esquemas de codificación" id="Esquemas_de_codificación">
@@ -882,10 +1102,10 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327195324.png" src="Pasted image 20230327195324.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327195324.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327195324.png?1683988806771"></span></p>
+            <p><span alt="Pasted image 20230327195324.png" src="Pasted image 20230327195324.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327195324.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327195324.png?1683988806771"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327195332.png" src="Pasted image 20230327195332.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327195332.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327195332.png?1683988806770"></span></p>
+            <p><span alt="Pasted image 20230327195332.png" src="Pasted image 20230327195332.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327195332.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327195332.png?1683988806770"></span></p>
           </div>
           <div>
             <h2 data-heading="Códigos de Huffman" id="Códigos_de_Huffman">
@@ -895,7 +1115,7 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327195344.png" src="Pasted image 20230327195344.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327195344.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327195344.png?1683988806768"></span></p>
+            <p><span alt="Pasted image 20230327195344.png" src="Pasted image 20230327195344.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327195344.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327195344.png?1683988806768"></span></p>
           </div>
           <div class="admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin " style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="">
@@ -906,25 +1126,25 @@
                 <div class="callout-title-inner admonition-title-content">Ejercicio</div>
               </div>
               <div class="callout-content admonition-content">
-                <p><span alt="Pasted image 20230327195352.png" src="Pasted image 20230327195352.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327195352.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327195352.png?1683988806774"></span></p>
+                <p><span alt="Pasted image 20230327195352.png" src="Pasted image 20230327195352.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327195352.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327195352.png?1683988806774"></span></p>
                 <p><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c32"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
                           <mi>D</mi>
                           <mo>=</mo>
                           <mn>2</mn>
                         </math></mjx-assistive-mml></mjx-container></span><br>
-                  <span alt="Pasted image 20230327201315.png" src="Pasted image 20230327201315.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201315.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201315.png?1683988806790"></span><br>
+                  <span alt="Pasted image 20230327201315.png" src="Pasted image 20230327201315.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201315.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201315.png?1683988806790"></span><br>
                   <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="4"><mjx-c class="mjx-c33"></mjx-c></mjx-mn></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
                           <mi>D</mi>
                           <mo>=</mo>
                           <mn>3</mn>
                         </math></mjx-assistive-mml></mjx-container></span><br>
-                  <span alt="Pasted image 20230327201532.png" src="Pasted image 20230327201532.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201532.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201532.png?1683988806790"></span>
+                  <span alt="Pasted image 20230327201532.png" src="Pasted image 20230327201532.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201532.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201532.png?1683988806790"></span>
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327200917.png" src="Pasted image 20230327200917.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327200917.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327200917.png?1683988806779"></span></p>
+            <p><span alt="Pasted image 20230327200917.png" src="Pasted image 20230327200917.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327200917.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327200917.png?1683988806779"></span></p>
           </div>
           <div>
             <h3 data-heading="Comentarios sobre los códigos de Huffman" id="Comentarios_sobre_los_códigos_de_Huffman">
@@ -934,10 +1154,10 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327200950.png" src="Pasted image 20230327200950.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327200950.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327200950.png?1683988806784"></span></p>
+            <p><span alt="Pasted image 20230327200950.png" src="Pasted image 20230327200950.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327200950.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327200950.png?1683988806784"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327201001.png" src="Pasted image 20230327201001.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201001.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201001.png?1683988806785"></span></p>
+            <p><span alt="Pasted image 20230327201001.png" src="Pasted image 20230327201001.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201001.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201001.png?1683988806785"></span></p>
           </div>
           <div>
             <h3 data-heading="Optimalidad de los códigos de Huffman" id="Optimalidad_de_los_códigos_de_Huffman">
@@ -947,14 +1167,14 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327201026.png" src="Pasted image 20230327201026.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201026.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201026.png?1683988806774"></span><br>
-              <span alt="Pasted image 20230327201034.png" src="Pasted image 20230327201034.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201034.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201034.png?1683988806786"></span><br>
-              <span alt="Pasted image 20230327201049.png" src="Pasted image 20230327201049.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201049.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201049.png?1683988806787"></span><br>
-              <span alt="Pasted image 20230327201058.png" src="Pasted image 20230327201058.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201058.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201058.png?1683988806787"></span>
+            <p><span alt="Pasted image 20230327201026.png" src="Pasted image 20230327201026.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201026.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201026.png?1683988806774"></span><br>
+              <span alt="Pasted image 20230327201034.png" src="Pasted image 20230327201034.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201034.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201034.png?1683988806786"></span><br>
+              <span alt="Pasted image 20230327201049.png" src="Pasted image 20230327201049.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201049.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201049.png?1683988806787"></span><br>
+              <span alt="Pasted image 20230327201058.png" src="Pasted image 20230327201058.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327201058.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327201058.png?1683988806787"></span>
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327204629.png" src="Pasted image 20230327204629.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327204629.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327204629.png?1683988806790"></span><br>
+            <p><span alt="Pasted image 20230327204629.png" src="Pasted image 20230327204629.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327204629.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327204629.png?1683988806790"></span><br>
               VER EXPLICACIÓN DE LA FIGURA EN EL LIBRO</p>
           </div>
           <div>
@@ -966,10 +1186,10 @@
           </div>
           <div>
             <p>Usando los 3 lemas de arriba:<br>
-              <span alt="Pasted image 20230327204900.png" src="Pasted image 20230327204900.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327204900.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327204900.png?1683988806790"></span><br>
-              <span alt="Pasted image 20230327204936.png" src="Pasted image 20230327204936.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327204936.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327204936.png?1683988806793"></span><br>
-              <span alt="Pasted image 20230327205015.png" src="Pasted image 20230327205015.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327205015.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327205015.png?1683988806802"></span><br>
-              <span alt="Pasted image 20230327205029.png" src="Pasted image 20230327205029.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327205029.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327205029.png?1683988806797"></span>
+              <span alt="Pasted image 20230327204900.png" src="Pasted image 20230327204900.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327204900.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327204900.png?1683988806790"></span><br>
+              <span alt="Pasted image 20230327204936.png" src="Pasted image 20230327204936.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327204936.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327204936.png?1683988806793"></span><br>
+              <span alt="Pasted image 20230327205015.png" src="Pasted image 20230327205015.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327205015.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327205015.png?1683988806802"></span><br>
+              <span alt="Pasted image 20230327205029.png" src="Pasted image 20230327205029.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327205029.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327205029.png?1683988806797"></span>
             </p>
           </div>
           <div>
@@ -980,7 +1200,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327205057.png" src="Pasted image 20230327205057.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327205057.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327205057.png?1683988806797"></span></p>
+            <p><span alt="Pasted image 20230327205057.png" src="Pasted image 20230327205057.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327205057.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327205057.png?1683988806797"></span></p>
           </div>
           <div>
             <h2 data-heading="Codigos de Shannon-Fano-Elias" id="Codigos_de_Shannon-Fano-Elias">
@@ -990,16 +1210,16 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327212203.png" src="Pasted image 20230327212203.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212203.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212203.png?1683988806799"></span><br>
-              <span alt="Pasted image 20230327212215.png" src="Pasted image 20230327212215.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212215.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212215.png?1683988806801"></span><br>
-              <span alt="Pasted image 20230327212228.png" src="Pasted image 20230327212228.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212228.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212228.png?1683988806795"></span>
+            <p><span alt="Pasted image 20230327212203.png" src="Pasted image 20230327212203.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212203.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212203.png?1683988806799"></span><br>
+              <span alt="Pasted image 20230327212215.png" src="Pasted image 20230327212215.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212215.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212215.png?1683988806801"></span><br>
+              <span alt="Pasted image 20230327212228.png" src="Pasted image 20230327212228.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212228.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212228.png?1683988806795"></span>
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327212237.png" src="Pasted image 20230327212237.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212237.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212237.png?1683988806803"></span></p>
+            <p><span alt="Pasted image 20230327212237.png" src="Pasted image 20230327212237.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212237.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212237.png?1683988806803"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327212254.png" src="Pasted image 20230327212254.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212254.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212254.png?1683988806803"></span></p>
+            <p><span alt="Pasted image 20230327212254.png" src="Pasted image 20230327212254.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327212254.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327212254.png?1683988806803"></span></p>
           </div>
           <div>
             <h2 data-heading="Codificación aritmética" id="Codificación_aritmética">
@@ -1009,25 +1229,25 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327215751.png" src="Pasted image 20230327215751.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215751.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215751.png?1683988806805"></span><br>
-              <span alt="Pasted image 20230327215758.png" src="Pasted image 20230327215758.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215758.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215758.png?1683988806808"></span>
+            <p><span alt="Pasted image 20230327215751.png" src="Pasted image 20230327215751.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215751.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215751.png?1683988806805"></span><br>
+              <span alt="Pasted image 20230327215758.png" src="Pasted image 20230327215758.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215758.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215758.png?1683988806808"></span>
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327215812.png" src="Pasted image 20230327215812.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215812.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215812.png?1683988806810"></span></p>
+            <p><span alt="Pasted image 20230327215812.png" src="Pasted image 20230327215812.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215812.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215812.png?1683988806810"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327215829.png" src="Pasted image 20230327215829.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215829.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215829.png?1683988806807"></span></p>
+            <p><span alt="Pasted image 20230327215829.png" src="Pasted image 20230327215829.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215829.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215829.png?1683988806807"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327215838.png" src="Pasted image 20230327215838.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215838.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215838.png?1683988806828"></span><br>
-              <span alt="Pasted image 20230327215934.png" src="Pasted image 20230327215934.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215934.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215934.png?1683988806822"></span><br>
-              <span alt="Pasted image 20230327220000.png" src="Pasted image 20230327220000.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327220000.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327220000.png?1683988806829"></span><br>
-              <span alt="Pasted image 20230327220014.png" src="Pasted image 20230327220014.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327220014.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327220014.png?1683988806828"></span>
+            <p><span alt="Pasted image 20230327215838.png" src="Pasted image 20230327215838.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215838.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215838.png?1683988806828"></span><br>
+              <span alt="Pasted image 20230327215934.png" src="Pasted image 20230327215934.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327215934.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327215934.png?1683988806822"></span><br>
+              <span alt="Pasted image 20230327220000.png" src="Pasted image 20230327220000.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327220000.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327220000.png?1683988806829"></span><br>
+              <span alt="Pasted image 20230327220014.png" src="Pasted image 20230327220014.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327220014.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327220014.png?1683988806828"></span>
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327220031.png" src="Pasted image 20230327220031.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327220031.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327220031.png?1683988806829"></span></p>
+            <p><span alt="Pasted image 20230327220031.png" src="Pasted image 20230327220031.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327220031.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327220031.png?1683988806829"></span></p>
           </div>
           <div>
             <p>A medida que la secuencia es más grande el intervalo se achica y los primeros bits quedan fijos, por lo cual “ya se pueden transmitir”.</p>
@@ -1040,7 +1260,7 @@
             </h3>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327225610.png" src="Pasted image 20230327225610.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327225610.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327225610.png?1683988806837"></span></p>
+            <p><span alt="Pasted image 20230327225610.png" src="Pasted image 20230327225610.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327225610.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327225610.png?1683988806837"></span></p>
           </div>
           <div>
             <p>Como el primer símbolo es A, restringimos el intervalo a <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML" style="position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-mn class="mjx-n"><mjx-c class="mjx-c30"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mn class="mjx-n" space="2"><mjx-c class="mjx-c30"></mjx-c><mjx-c class="mjx-c2E"></mjx-c><mjx-c class="mjx-c34"></mjx-c></mjx-mn><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1083,7 +1303,7 @@
           </div>
           <div>
             <p>Repetimos para el 3er y 4to símbolo.<br>
-              <span alt="Pasted image 20230327231026.png" src="Pasted image 20230327231026.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327231026.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327231026.png?1683988806853"></span>
+              <span alt="Pasted image 20230327231026.png" src="Pasted image 20230327231026.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327231026.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327231026.png?1683988806853"></span>
             </p>
           </div>
           <div>
@@ -1112,23 +1332,23 @@
             </h2>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327232219.png" src="Pasted image 20230327232219.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232219.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232219.png?1683988806832"></span></p>
+            <p><span alt="Pasted image 20230327232219.png" src="Pasted image 20230327232219.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232219.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232219.png?1683988806832"></span></p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327232227.png" src="Pasted image 20230327232227.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232227.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232227.png?1683988806829"></span><br>
-              <span alt="Pasted image 20230327232236.png" src="Pasted image 20230327232236.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232236.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232236.png?1683988806833"></span><br>
-              <span alt="Pasted image 20230327232248.png" src="Pasted image 20230327232248.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232248.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232248.png?1683988806841"></span><br>
+            <p><span alt="Pasted image 20230327232227.png" src="Pasted image 20230327232227.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232227.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232227.png?1683988806829"></span><br>
+              <span alt="Pasted image 20230327232236.png" src="Pasted image 20230327232236.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232236.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232236.png?1683988806833"></span><br>
+              <span alt="Pasted image 20230327232248.png" src="Pasted image 20230327232248.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232248.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232248.png?1683988806841"></span><br>
               Donde la última desigualdad se cumple por Kraft.
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327232300.png" src="Pasted image 20230327232300.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232300.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232300.png?1683988806841"></span><br>
-              <span alt="Pasted image 20230327232322.png" src="Pasted image 20230327232322.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232322.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232322.png?1683988806837"></span><br>
-              <span alt="Pasted image 20230327232331.png" src="Pasted image 20230327232331.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232331.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232331.png?1683988806851"></span>
+            <p><span alt="Pasted image 20230327232300.png" src="Pasted image 20230327232300.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232300.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232300.png?1683988806841"></span><br>
+              <span alt="Pasted image 20230327232322.png" src="Pasted image 20230327232322.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232322.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232322.png?1683988806837"></span><br>
+              <span alt="Pasted image 20230327232331.png" src="Pasted image 20230327232331.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232331.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232331.png?1683988806851"></span>
             </p>
           </div>
           <div>
-            <p><span alt="Pasted image 20230327232343.png" src="Pasted image 20230327232343.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232343.png" src="app://95b1e53775919c21a67f4b22391e7d55e561/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232343.png?1683988806839"></span></p>
+            <p><span alt="Pasted image 20230327232343.png" src="Pasted image 20230327232343.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230327232343.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Teor%C3%ADa%20de%20la%20Informaci%C3%B3n/media/Pasted%20image%2020230327232343.png?1683988806839"></span></p>
           </div>
           <div class="mod-footer"></div>
         </div>

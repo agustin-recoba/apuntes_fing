@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Capítulo 13 - Manejo del cambio y la innovación</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-msubsup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-script {
+      display: inline-block;
+      padding-right: .05em;
+      padding-left: .033em;
+    }
+
+    mjx-script>mjx-spacer {
+      display: block;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-TeXAtom {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mo {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-stretchy-h {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>* {
+      display: table-cell;
+      width: 0;
+    }
+
+    mjx-stretchy-h>*>mjx-c {
+      display: inline-block;
+      transform: scalex(1.0000001);
+    }
+
+    mjx-stretchy-h>*>mjx-c::before {
+      display: inline-block;
+      width: initial;
+    }
+
+    mjx-stretchy-h>mjx-ext {
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: clip visible;
+      width: 100%;
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c::before {
+      transform: scalex(500);
+    }
+
+    mjx-stretchy-h>mjx-ext>mjx-c {
+      width: 0;
+    }
+
+    mjx-stretchy-h>mjx-beg>mjx-c {
+      margin-right: -.1em;
+    }
+
+    mjx-stretchy-h>mjx-end>mjx-c {
+      margin-left: -.1em;
+    }
+
+    mjx-stretchy-v {
+      display: inline-block;
+    }
+
+    mjx-stretchy-v>* {
+      display: block;
+    }
+
+    mjx-stretchy-v>mjx-beg {
+      height: 0;
+    }
+
+    mjx-stretchy-v>mjx-end>mjx-c {
+      display: block;
+    }
+
+    mjx-stretchy-v>*>mjx-c {
+      transform: scaley(1.0000001);
+      transform-origin: left center;
+      overflow: hidden;
+    }
+
+    mjx-stretchy-v>mjx-ext {
+      display: block;
+      height: 100%;
+      box-sizing: border-box;
+      border: 0px solid transparent;
+      /* IE */
+      overflow: hidden;
+      /* others */
+      overflow: visible clip;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c::before {
+      width: initial;
+      box-sizing: border-box;
+    }
+
+    mjx-stretchy-v>mjx-ext>mjx-c {
+      transform: scaleY(500) translateY(.075em);
+      overflow: visible;
+    }
+
+    mjx-mark {
+      display: inline-block;
+      height: 0px;
+    }
+
+    mjx-msub {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mn {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-msup {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mfrac {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-frac {
+      display: inline-block;
+      vertical-align: 0.17em;
+      padding: 0 .22em;
+    }
+
+    mjx-frac[type="d"] {
+      vertical-align: .04em;
+    }
+
+    mjx-frac[delims] {
+      padding: 0 .1em;
+    }
+
+    mjx-frac[atop] {
+      padding: 0 .12em;
+    }
+
+    mjx-frac[atop][delims] {
+      padding: 0;
+    }
+
+    mjx-dtable {
+      display: inline-table;
+      width: 100%;
+    }
+
+    mjx-dtable>* {
+      font-size: 2000%;
+    }
+
+    mjx-dbox {
+      display: block;
+      font-size: 5%;
+    }
+
+    mjx-num {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-den {
+      display: block;
+      text-align: center;
+    }
+
+    mjx-mfrac[bevelled]>mjx-num {
+      display: inline-block;
+    }
+
+    mjx-mfrac[bevelled]>mjx-den {
+      display: inline-block;
+    }
+
+    mjx-den[align="right"],
+    mjx-num[align="right"] {
+      text-align: right;
+    }
+
+    mjx-den[align="left"],
+    mjx-num[align="left"] {
+      text-align: left;
+    }
+
+    mjx-nstrut {
+      display: inline-block;
+      height: .054em;
+      width: 0;
+      vertical-align: -.054em;
+    }
+
+    mjx-nstrut[type="d"] {
+      height: .217em;
+      vertical-align: -.217em;
+    }
+
+    mjx-dstrut {
+      display: inline-block;
+      height: .505em;
+      width: 0;
+    }
+
+    mjx-dstrut[type="d"] {
+      height: .726em;
+    }
+
+    mjx-line {
+      display: block;
+      box-sizing: border-box;
+      min-height: 1px;
+      height: .06em;
+      border-top: .06em solid;
+      margin: .06em -.1em;
+      overflow: hidden;
+    }
+
+    mjx-line[type="d"] {
+      margin: .18em -.1em;
+    }
+
+    mjx-mrow {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D45D.TEX-I::before {
+      padding: 0.442em 0.503em 0.194em 0;
+      content: "p";
+    }
+
+    mjx-c.mjx-c1D44E.TEX-I::before {
+      padding: 0.441em 0.529em 0.01em 0;
+      content: "a";
+    }
+
+    mjx-c.mjx-c1D461.TEX-I::before {
+      padding: 0.626em 0.361em 0.011em 0;
+      content: "t";
+    }
+
+    mjx-c.mjx-c1D45F.TEX-I::before {
+      padding: 0.442em 0.451em 0.011em 0;
+      content: "r";
+    }
+
+    mjx-c.mjx-c1D45B.TEX-I::before {
+      padding: 0.442em 0.6em 0.011em 0;
+      content: "n";
+    }
+
+    mjx-c.mjx-c1D460.TEX-I::before {
+      padding: 0.442em 0.469em 0.01em 0;
+      content: "s";
+    }
+
+    mjx-c.mjx-c3D::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "=";
+    }
+
+    mjx-c.mjx-cD7::before {
+      padding: 0.491em 0.778em 0 0;
+      content: "\D7";
+    }
+
+    mjx-c.mjx-c28::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: "(";
+    }
+
+    mjx-c.mjx-c31::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "1";
+    }
+
+    mjx-c.mjx-c2212::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "\2212";
+    }
+
+    mjx-c.mjx-c1D44F.TEX-I::before {
+      padding: 0.694em 0.429em 0.011em 0;
+      content: "b";
+    }
+
+    mjx-c.mjx-c29::before {
+      padding: 0.75em 0.389em 0.25em 0;
+      content: ")";
+    }
+
+    mjx-c.mjx-c1D452.TEX-I::before {
+      padding: 0.442em 0.466em 0.011em 0;
+      content: "e";
+    }
+
+    mjx-c.mjx-c1D453.TEX-I::before {
+      padding: 0.705em 0.55em 0.205em 0;
+      content: "f";
+    }
+
+    mjx-c.mjx-c2B::before {
+      padding: 0.583em 0.778em 0.082em 0;
+      content: "+";
+    }
+
+    mjx-c.mjx-c32::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "2";
+    }
+
+    mjx-c.mjx-c2F::before {
+      padding: 0.75em 0.5em 0.25em 0;
+      content: "/";
+    }
+
+    mjx-c.mjx-c1D441.TEX-I::before {
+      padding: 0.683em 0.888em 0 0;
+      content: "N";
+    }
+
+    mjx-c.mjx-c1D45C.TEX-I::before {
+      padding: 0.441em 0.485em 0.011em 0;
+      content: "o";
+    }
+
+    mjx-c.mjx-c1D451.TEX-I::before {
+      padding: 0.694em 0.52em 0.01em 0;
+      content: "d";
+    }
+
+    mjx-c.mjx-c1D444.TEX-I::before {
+      padding: 0.704em 0.791em 0.194em 0;
+      content: "Q";
+    }
+
+    mjx-c.mjx-c1D445.TEX-I::before {
+      padding: 0.683em 0.759em 0.021em 0;
+      content: "R";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "..";
+    let mediaPath = "../media";
+    let jsPath = "../scripts";
+    let cssPath = "../styles";
+  </script>
+
+  <script src="../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:18px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <p>Grandes y pequeñas empresas, colegios y universidades, e incluso el ejército se ven obligados a cambiar de manera significativa la forma de hacer las cosas. Aunque el cambio siempre ha sido parte del trabajo de un gerente, se ha vuelto todavía más importante en años recientes.</p>
+          </div>
+          <div>
+            <h1 data-heading="¿QUÉ ES EL CAMBIO?" id="¿QUÉ_ES_EL_CAMBIO?">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>¿QUÉ ES EL CAMBIO?
+            </h1>
+          </div>
+          <div class="admonition-parent admonition-info-parent">
+            <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Definición</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Cualquier alteración del personal, la estructura o la tecnología.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>Sin él, el trabajo de los gerentes sería relativamente fácil. La planeación sería sencilla porque el día de mañana no sería diferente al de hoy. El asunto del diseño organizacional eficaz también se resolvería porque el ambiente estaría libre de incertidumbre y no habría necesidad de adaptación. De modo similar, la toma de decisiones se simplificaría mucho porque el resultado de cada alternativa se podría predecir con cierta exactitud.</p>
+          </div>
+          <div>
+            <h1 data-heading="FUERZAS PARA EL CAMBIO" id="FUERZAS_PARA_EL_CAMBIO">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>FUERZAS PARA EL CAMBIO
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="Fuerzas externas" id="Fuerzas_externas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Fuerzas externas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Las leyes y reglamentaciones gubernamentales son un impulso fuerte para el cambio. (Ley en EEUU que exigió cambiar la presentación de la información financiera)
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>La tecnología crea también la necesidad de cambio.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>La fluctuación de los mercados laborales también obliga a cambiar a los gerentes. Las organizaciones que necesitan ciertos tipos de empleados deben cambiar sus actividades de gerencia de RRHH para atraer y retener empleados capacitados en las áreas donde más se necesitan.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Los cambios económicos afectan a casi todas las organizaciones. Por ejemplo las presiones de la recesión global, la incertidumbre sobre las tasas de interés, etc.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Fuerzas internas" id="Fuerzas_internas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Fuerzas internas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>La redefinición o modificación de la estrategia de una organización introduce con frecuencia una serie de cambios.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>La fuerza laboral de una organización rara vez es estática. Su composición cambia en cuanto a edad, educación, antecedentes étnicos, sexo, etc.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Introducción de equipamiento nuevo representa otra fuerza interna para el cambio. Trabajos tendrían que ser rediseñados y empleados necesitarían capacitación para operar el nuevo equipo.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Las actitudes de los empleados, producen con frecuencia cambios en las políticas y prácticas gerenciales. Actitudes como la insatisfacción laboral podría dar lugar a un aumento del ausentismo, mas renuncias voluntarias o huelgas laborales.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="El gerente como agente de cambio" id="El_gerente_como_agente_de_cambio">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>El gerente como agente de cambio
+            </h2>
+          </div>
+          <div>
+            <p>Los cambios organizacionales necesitan un catalizador. Las personas que actúan como catalizadoras y asumen la responsabilidad de la gestión del proceso de cambio se conocen como <strong><em>agentes de cambio</em></strong>.<br>
+              El gerente inicia y coordina los cambios en una organización.</p>
+          </div>
+          <div>
+            <p>Sin embargo el agente de cambio podría no ser él. Para cambios importantes de todo el sistema, se contratan a menudo <strong><em>consultores externos</em></strong>:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Proporcionan consejos y ayuda.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Ofrecen perspectiva objetiva.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Comprensión muy limitada de la historia, la cultura y los procedimientos operativos y el personal.<br>
+                Tienden a iniciar cambios más drásticos por no tener que vivir con las repercusiones luego de implementado.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Gerentes internos que actúan como agentes de cambio pueden ser más considerados y cautelosos ya que luego tendrán que convivir con las decisiones que tomen.</p>
+          </div>
+          <div>
+            <h1 data-heading="DOS PUNTOS DE VISTA DEL PROCESO DE CAMBIO" id="DOS_PUNTOS_DE_VISTA_DEL_PROCESO_DE_CAMBIO">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>DOS PUNTOS DE VISTA DEL PROCESO DE CAMBIO
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="Metáfora de las aguas tranquilas" id="Metáfora_de_las_aguas_tranquilas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Metáfora de las aguas tranquilas
+            </h2>
+          </div>
+          <div>
+            <p>Ve a la organización como un gran barco que cruza un mar tranquilo. El capitán y la tripulación del barco saben exactamente hacia dónde van porque han hecho el viaje en muchas ocasiones. Los cambios se presentan en la forma de una tormenta ocasional, una breve distracción en un viaje que de otro modo sería tranquilo y previsible.</p>
+          </div>
+          <div>
+            <p>Kurt Lewin plantea 3 etapas que describen el proceso de cambio, donde el cambio exitoso requiere <u>descongelar el status quo</u>, <u>cambiar a una nueva situación</u> y <u>volver a congelar</u> para que el cambio sea permanente.</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">El status quo es considerado como un estado de equilibrio. <em>Para romper dicho equilibrio es necesario descongelar.</em> Puede verse como una preparación para el cambio necesario. Se logra <strong>aumentando las fuerzas impulsoras</strong> (fuerzas que dirigen el cambio y alejan el comportamiento del status quo), <strong>disminuyendo las fuerzas limitantes</strong> (fuerzas que resisten el cambio e impulsan el comportamiento hacia el status quo) o <strong>combinando</strong> los dos enfoques.</li>
+              <li data-line="1">Una vez <em>descongelada</em> la situación, se puede <strong>implementar el cambio</strong> mismo.</li>
+              <li data-line="2">Es necesario <strong><em>volver a congelar</em></strong> la nueva situación para que se pueda mantener con el paso del tiempo, con el objetivo de estabilizar la situación reforzando los nuevos comportamientos.</li>
+            </ol>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230517165909.png" src="Pasted image 20230517165909.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230517165909.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230517165909.png?1684353549851"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Metáfora de los rápidos en aguas turbulentas" id="Metáfora_de_los_rápidos_en_aguas_turbulentas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Metáfora de los rápidos en aguas turbulentas
+            </h2>
+          </div>
+          <div>
+            <p>La organización es vista como una pequeña balsa que navega por un río caudaloso, con rápidos incesantes de aguas blancas. En la balsa viaja media docena de personas que nunca han trabajado juntas, que desconocen completamente el río, que no están seguras de su destino final y que, por si fuera poco, viajan de noche.</p>
+          </div>
+          <div>
+            <p>La metáfora de los rápidos de aguas blancas es congruente con nuestro análisis de los ambientes inciertos y dinámicos de los capítulos 3 y 8. También es congruente con un mundo que es dominado cada vez más por la información, las ideas y el conocimiento.</p>
+          </div>
+          <div>
+            <p>Las alteraciones del status quo no son ocasionales ni temporales, ni son seguidas por un regreso a aguas tranquilas. Muchos gerentes nunca salen de los rápidos, sino enfrentan cambios constantes.<br>
+              No todos los gerentes enfrentan un mundo de cambio constante y caótico, pero el número de los que no lo enfrentan está disminuyendo. Hoy en día cualquier organización que considere el cambio como la alteración ocasional de un mundo tranquilo y estable corre un gran riesgo.</p>
+          </div>
+          <div>
+            <h1 data-heading="MANEJO DEL CAMBIO" id="MANEJO_DEL_CAMBIO">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>MANEJO DEL CAMBIO
+            </h1>
+          </div>
+          <div>
+            <p>Los gerentes deben identificar que áreas organizacionales podrían requerir un cambio y poner el proceso de cambio en acción. Los gerentes deben manejar la resistencia de los empleados al cambio.</p>
+          </div>
+          <div>
+            <h2 data-heading="Tipos de cambio" id="Tipos_de_cambio">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tipos de cambio
+            </h2>
+          </div>
+          <div>
+            <p>¿Qué puede cambiar un gerente?<br>
+              Las opciones de los gerentes corresponden a tres categorías: la estructura, la tecnología y las personas.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230517170703.png" src="Pasted image 20230517170703.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230517170703.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230517170703.png?1684354023262"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Cambio de la estructura" id="Cambio_de_la_estructura">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Cambio de la estructura
+            </h3>
+          </div>
+          <div>
+            <p>Incluye cualquier modificación de las relaciones de autoridad, los mecanismos de coordinación, el empowerment, el rediseño de trabajos o variables estructurales similares.</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Los gerentes pueden modificar uno o más de los componentes estructurales (especialización del trabajo, departamentalización y formalización). </li>
+              <li data-line="1">Otra opción sería realizar cambios importantes del diseño estructural real (eliminar, fusionar o expandir las divisiones de productos, reemplazar una estructura funcional por una estructura de productos o la creación de un diseño de estructura de proyectos).</li>
+            </ol>
+          </div>
+          <div>
+            <h3 data-heading="Cambio de la tecnología" id="Cambio_de_la_tecnología">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Cambio de la tecnología
+            </h3>
+          </div>
+          <div>
+            <p>Abarca las modificaciones en la forma de desempeñar el trabajo o los métodos y el equipo que se utilizan.<br>
+              Implican en general la introducción de equipo, herramientas o métodos nuevos, la automatización o el uso de cómputo:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Los factores competitivos o las innovaciones de una industria requieren con frecuencia que los gerentes introduzcan equipo, herramientas o métodos operativos nuevos.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>La automatización es un cambio tecnológico que reemplaza con máquinas ciertas tareas realizadas por personas.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>El cambio que más se utiliza en épocas actuales es la migración a equipos de computo.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Cambio en las personas" id="Cambio_en_las_personas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Cambio en las personas
+            </h3>
+          </div>
+          <div>
+            <p>Refiere a los cambios de actitudes, expectativas, percepciones y comportamientos de los empleados. Este cambio no es fácil.<br>
+              El término <strong><em>desarrollo organizacional (DO)</em></strong>, aunque se refiere en ocasiones a todos los tipos de cambios, se centra básicamente en técnicas o programas para cambiar a las personas, así como a la naturaleza y la calidad de las relaciones laborales interpersonales.</p>
+          </div>
+          <div class="admonition-parent admonition-seealso-parent">
+            <div class="callout admonition admonition-seealso admonition-plugin is-collapsible is-collapsed" style="--callout-color: 68, 138, 255;" data-callout="seealso" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="pencil-alt" class="svg-inline--fa fa-pencil-alt fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Técnicas de desarrollo organizacional</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20230517171146.png" src="Pasted image 20230517171146.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230517171146.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230517171146.png?1684354306900"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="Manejo de la resistencia al cambio" id="Manejo_de_la_resistencia_al_cambio">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Manejo de la resistencia al cambio
+            </h2>
+          </div>
+          <div>
+            <p>El cambio puede ser una amenaza para el personal de una organización. Las organizaciones pueden generar inercia que motive a las personas a resistirse al cambio de su status quo, aunque el cambio pueda ser benéfico.</p>
+          </div>
+          <div>
+            <p>Un individuo se puede resistir al cambio por las siguientes razones:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">El cambio reemplaza lo conocido por <strong><em>ambigüedad e incertidumbre</em></strong>.</li>
+              <li data-line="1">Otra causa de resistencia es que hacemos las cosas por <strong><em>hábito</em></strong>. Cuando tenemos que hacer frente al cambio, esta tendencia a responder en nuestra forma acostumbrada se convierte en una fuente de resistencia.</li>
+              <li data-line="2">La tercera causa de resistencia es el <strong><em>temor a perder algo que ya se poseía</em></strong>. Temen perder prestigio, dinero, autoridad, amistades, conveniencia personal u otros beneficios económicos.</li>
+              <li data-line="3">La última causa de resistencia es la <strong>creencia de una persona de que el cambio es incompatible con los objetivos</strong> y los intereses de la organización.</li>
+            </ol>
+          </div>
+          <div>
+            <h3 data-heading="Técnicas para reducir la resistencia" id="Técnicas_para_reducir_la_resistencia">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Técnicas para reducir la resistencia
+            </h3>
+          </div>
+          <div>
+            <p>Cuando los gerentes ven que la resistencia al cambio es disfuncional, pueden recurrir a cualquiera de seis acciones para manejarlo. </p>
+          </div>
+          <div>
+            <p>Dependiendo del tipo y la fuente de la resistencia, los gerentes pueden decidir llevar a cabo alguna de estas acciones:<br>
+              <span alt="Pasted image 20230517171229.png" src="Pasted image 20230517171229.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230517171229.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230517171229.png?1684354349872"></span>
+            </p>
+          </div>
+          <div>
+            <h1 data-heading="ASPECTOS CONTEMPORÁNEOS EN EL MANEJO DEL CAMBIO" id="ASPECTOS_CONTEMPORÁNEOS_EN_EL_MANEJO_DEL_CAMBIO">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>ASPECTOS CONTEMPORÁNEOS EN EL MANEJO DEL CAMBIO
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="Cambiando la cultura organizacional" id="Cambiando_la_cultura_organizacional">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Cambiando la cultura organizacional
+            </h2>
+          </div>
+          <div>
+            <p>El hecho de que la cultura de una organización esté integrada por características relativamente estables y permanentes, hace que esa cultura sea muy resistente al cambio. Una cultura requiere mucho tiempo para desarrollarse, y una vez establecida tiene a arraigarse. Las culturas sólidas son en particular resistentes al cambio porque los empleados están muy comprometidos con ellas.<br>
+              Si con el paso del tiempo cierta cultura se vuelve inadecuada para una organización y una desventaja para la gerencia, ésta puede hacer poco para cambiarla, sobre todo en el corto plazo. Incluso en las condiciones más favorables, los cambios culturales se verán en años, no en semanas ni siquiera en meses.</p>
+          </div>
+          <div>
+            <h3 data-heading="Comprensión de los factores situacionales" id="Comprensión_de_los_factores_situacionales">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Comprensión de los factores situacionales
+            </h3>
+          </div>
+          <div>
+            <p>Las evidencias sugieren que hay más probabilidades de que ocurra el cambio cultural cuando se presenten la mayor parte de las condiciones siguientes o todas ellas:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Ocurre una crisis drástica. Un impacto que debilite el status quo y haga que las personas empiecen a pensar en la importancia de la cultura existente. (Ej.: Pérdida de un clientes importante. innovación extraordinaria de un competidor, etc.).</li>
+              <li data-line="1">Cambio de liderazgo. Un nuevo liderazgo de alto nivel, que pueda proporcionar una serie de valores alternativos, podría percibirse como mas capaz de responder a la crisis que los líderes anteriores.</li>
+              <li data-line="2">La organización es joven y pequeña. Cuanto más joven sea la organización, menos arraigada estará su cultura.</li>
+              <li data-line="3">La cultura es débil. Las culturas más débiles son las más receptivas al cambio, pues los valores no están tan difundidos y acordados entre los miembros.</li>
+            </ol>
+          </div>
+          <div>
+            <h3 data-heading="¿Cómo se puede lograr el cambio cultural?" id="¿Cómo_se_puede_lograr_el_cambio_cultural?">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>¿Cómo se puede lograr el cambio cultural?
+            </h3>
+          </div>
+          <div>
+            <p>Si las condiciones son adecuadas ¿Cómo emprenden los gerentes el cambio cultural? El reto consiste en descongelar la cultura existente, implantar las nuevas formas de hacer las cosas y reforzar los nuevos valores. Ninguna acción por si sola producirá el impacto necesario para cambiar algo que está tan arraigado y es tan valorado. Por lo tanto se requiere una estrategia integral y coordinada para manejar el cambio cultural. Deben llevarse a cabo acciones específicas para cambiar la cultura ineficaz. Igualmente seguir estas sugerencias no es garantía de que los esfuerzos de cambio de un gerente logren el éxito. Los gerentes deben ser pacientes, ya que el cambio, si es que ocurre, será lento y los gerentes deben estar constantemente alerta para evitar cualquier regreso a las prácticas y tradiciones antiguas y conocidas.</p>
+          </div>
+          <div>
+            <h2 data-heading="Manejo de la tensión de los empleados" id="Manejo_de_la_tensión_de_los_empleados">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Manejo de la tensión de los empleados
+            </h2>
+          </div>
+          <div>
+            <p>La tensión es la presión física y psicológica que siente un individuo cuando enfrenta o experimenta exigencias, limitaciones u oportunidades extraordinarias cuyo resultado es percibido tanto incierto como importante.</p>
+          </div>
+          <div>
+            <p><strong><em>La tensión (o stress) no es necesariamente mala,</em></strong> tiene un valor positivo particularmente cuando ofrece un beneficio potencial. La tensión funcional permite a un empleado lograr su nivel más alto de desempeño en situaciones decisivas.<br>
+              Sin embargo la tensión se relaciona más a menudo con limitaciones y necesidades. Una limitación impide hacer lo que se desea y las necesidades se refieren a la pérdida de algo deseado.<br>
+              Se necesitan dos condiciones para que la tensión potencial se convierta en tensión real. Debe haber una incertidumbre en cuanto al resultado, y éste debe ser importante.</p>
+          </div>
+          <div>
+            <h3 data-heading="Causas de tensión" id="Causas_de_tensión">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Causas de tensión
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230517171732.png" src="Pasted image 20230517171732.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230517171732.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230517171732.png?1684354652262"></span></p>
+          </div>
+          <div>
+            <p>Las causas de tensión se encuentran en asuntos relacionados con la organización o en factores personales que se desarrollan en la vida privada del empleado. Un cambio de cualquier tipo tiene el potencial de ocasionar tensión, este es un factor de tensión importante.</p>
+          </div>
+          <div>
+            <h3 data-heading="Síntomas de tensión" id="Síntomas_de_tensión">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Síntomas de tensión
+            </h3>
+          </div>
+          <div>
+            <p>La tensión se revela a si misma de diversas maneras. Por ejemplo la persona puede sentirse deprimida, con tendencia a los accidentes o discutir con frecuencia, puede tener dificultad para tomar decisiones rutinarias, distraerse con facilidad, etc.</p>
+          </div>
+          <div>
+            <p>Los síntomas de tensión se agrupan en tres categorías generales: </p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Físicas. </li>
+              <li data-line="1">Psicológicas. </li>
+              <li data-line="2">De comportamiento</li>
+            </ol>
+          </div>
+          <div>
+            <p>Los físicos son los menos importantes para los gerentes. Los psicológicos y de comportamiento les interesan más dado que afectan directamente el trabajo de un empleado.</p>
+          </div>
+          <div>
+            <h3 data-heading="Reduciendo la tensión" id="Reduciendo_la_tensión">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Reduciendo la tensión
+            </h3>
+          </div>
+          <div>
+            <p>Debido a que no es posible eliminar la tensión de la vida de una persona, los gerentes se preocupan por reducir la tensión que produce un comportamiento laboral disfuncional, controlando ciertos factores organizacionales para reducir la tensión organizacional, y en un grado más limitado ofreciendo ayuda para la tensión personal.<br>
+              Lo que los gerentes pueden hacer en cuanto a los factores organizacionales comienza con la selección de empleados. Los gerentes necesitan tener la seguridad de que las habilidades de un empleado concuerdan con los requisitos laborales.<br>
+              El mejoramiento de las comunicaciones organizacionales mantendrá en un nivel mínimo la tensión inducida por la ambigüedad.<br>
+              Un programa de planeación de desempeño definirá las responsabilidades laborales, proporcionará objetivos de desempeño definidos y reducirá la ambigüedad.<br>
+              Si se detecta que la causa de tensión es el aburrimiento o la sobrecarga de trabajo, los trabajos se deben rediseñar para aumentar el reto o reducir la carga laboral. Esta es otra manera de reducir la tensión. </p>
+          </div>
+          <div>
+            <p>La tensión en la vida personal de un individuo plantea dos problemas: Es difícil que el gerente lo controle en forma directa y existen consideraciones éticas. ¿Tiene el gerente derecho a inmiscuirse en la vida personal del empleado?<br>
+              Hay algunos enfoques que el gerente puede tomar en cuenta para aliviar la tensión: </p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>La consejería. (A través de gerentes, consejeros internos o ayuda profesional externa gratuita o de bajo costo).
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Programa de administración del tiempo, que puede ayudarlos a ordenar sus prioridades.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Programas de bienestar patrocinados a nivel organizacional.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="ESTIMULANDO LA INNOVACIÓN" id="ESTIMULANDO_LA_INNOVACIÓN">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>ESTIMULANDO LA INNOVACIÓN
+            </h1>
+          </div>
+          <div>
+            <p>¿Qué pueden hacer los gerentes para que sus organizaciones sean más innovadoras?</p>
+          </div>
+          <div>
+            <h2 data-heading="Creatividad e Innovación" id="Creatividad_e_Innovación">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Creatividad e Innovación
+            </h2>
+          </div>
+          <div>
+            <p>Creatividad: La habilidad para combinar ideas de manera única o realizar asociaciones poco usuales entre ellas. Una organización que estimula la creatividad desarrolla formas únicas de trabajar o soluciones novedosas a problemas. </p>
+          </div>
+          <div>
+            <p>Innovación: El proceso que consiste en tomar una idea creativa y convertirla en un producto, servicio o método de operación útil.</p>
+          </div>
+          <div>
+            <p>La organización innovadora se caracteriza por su habilidad para canalizar la creatividad en resultados útiles.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230517172308.png" src="Pasted image 20230517172308.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230517172308.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230517172308.png?1684354988399"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Estimulando y cultivando la innovación" id="Estimulando_y_cultivando_la_innovación">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Estimulando y cultivando la innovación
+            </h2>
+          </div>
+          <div>
+            <p>Se han identificado 3 series de variables que estimulan la innovación.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230517172430.png" src="Pasted image 20230517172430.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230517172430.png" src="app://46a0c70b562d9f5c7343808e4643f6783741/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230517172430.png?1684355070384"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Variables estructurales" id="Variables_estructurales">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Variables estructurales
+            </h3>
+          </div>
+          <div>
+            <p>Las estructuras orgánicas influyen de manera positiva facilitando la flexibilidad, la capacidad de adaptación y la fertilización cruzada. La abundancia de recursos permite costear la innovación, pagar el costo de su institución y absorber los fracasos. La comunicación frecuente entre unidades ayuda a derribar las barreras para la innovación. Los equipos interfuncionales, las fuerzas de tarea y otros diseños organizacionales facilitan la interacción entre las líneas departamentales. Minimizar las presiones de tiempo extremadas en actividades creativas. Proporcionar apoyo explícito a la creatividad por medio de fuentes laborales y no laborales mejora el desempeño creativo de un empleado.</p>
+          </div>
+          <div>
+            <h3 data-heading="Variables culturales" id="Variables_culturales">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Variables culturales
+            </h3>
+          </div>
+          <div>
+            <p>Una cultura innovadora es probable que presente las siguientes características:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Aceptación de la ambigüedad. Poco énfasis en la objetividad y especificidad que limitan la creatividad.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Tolerancia a lo poco práctico (respuestas poco prácticas), pues pueden conducir a soluciones innovadoras.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Controles externos reducidos. Normas, reglamentaciones, políticas y controles a nivel mínimo.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Tolerancia a los riesgos. Se alienta a no temer a los errores que se manejan como oportunidades de aprendizaje.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>Tolerancia a los conflictos. Fomento de diversidad de opiniones.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>Enfoque en los fines más que en los medios. Considerar rutas alternativas para alcanzar los objetivos, pues pueden así surgir varias respuestas a un mismo problema dado.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>Enfoque de sistema abierto. Gerentes vigilan de cerca el ambiente.
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>Retroalimentación positiva, haciendo que los empleados sientan que sus ideas creativas recibirán atención.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Variables de recursos humanos" id="Variables_de_recursos_humanos">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Variables de recursos humanos
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Fomentar activamente la capacitación y el desarrollo de los miembros de tal manera que sus conocimientos permanezcan al día.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Ofrecer a los empleados una alta seguridad laboral para reducir el temor de ser despedidos por cometer errores.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Animar a los individuos a convertirse en campeones de ideas: individuos que apoyan las nuevas ideas de manera activa y entusiasta, proporcionan apoyo, superan la resistencia y garantizan la implementación de las innovaciones. Presentan características relacionadas con un liderazgo dinámico. Inspiran y estimulan a otros con su visión del potencial de innovación y a través de su fuerte convicción personal en su misión.
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#¿QUÉ_ES_EL_CAMBIO?">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">¿QUÉ ES EL CAMBIO?</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#FUERZAS_PARA_EL_CAMBIO">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">FUERZAS PARA EL CAMBIO</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Fuerzas_externas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Fuerzas externas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Fuerzas_internas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Fuerzas internas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#El_gerente_como_agente_de_cambio">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">El gerente como agente de cambio</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#DOS_PUNTOS_DE_VISTA_DEL_PROCESO_DE_CAMBIO">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">DOS PUNTOS DE VISTA DEL PROCESO DE CAMBIO</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Metáfora_de_las_aguas_tranquilas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Metáfora de las aguas tranquilas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Metáfora_de_los_rápidos_en_aguas_turbulentas">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Metáfora de los rápidos en aguas turbulentas</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#MANEJO_DEL_CAMBIO">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">MANEJO DEL CAMBIO</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Tipos_de_cambio">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Tipos de cambio</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Cambio_de_la_estructura">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Cambio de la estructura</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Cambio_de_la_tecnología">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Cambio de la tecnología</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Cambio_en_las_personas">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Cambio en las personas</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Manejo_de_la_resistencia_al_cambio">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Manejo de la resistencia al cambio</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Técnicas_para_reducir_la_resistencia">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Técnicas para reducir la resistencia</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#ASPECTOS_CONTEMPORÁNEOS_EN_EL_MANEJO_DEL_CAMBIO">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">ASPECTOS CONTEMPORÁNEOS EN EL MANEJO DEL CAMBIO</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Cambiando_la_cultura_organizacional">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Cambiando la cultura organizacional</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Comprensión_de_los_factores_situacionales">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Comprensión de los factores situacionales</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#¿Cómo_se_puede_lograr_el_cambio_cultural?">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">¿Cómo se puede lograr el cambio cultural?</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Manejo_de_la_tensión_de_los_empleados">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Manejo de la tensión de los empleados</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Causas_de_tensión">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Causas de tensión</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Síntomas_de_tensión">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Síntomas de tensión</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Reduciendo_la_tensión">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Reduciendo la tensión</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#ESTIMULANDO_LA_INNOVACIÓN">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">ESTIMULANDO LA INNOVACIÓN</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Creatividad_e_Innovación">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Creatividad e Innovación</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Estimulando_y_cultivando_la_innovación">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Estimulando y cultivando la innovación</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Variables_estructurales">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Variables estructurales</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Variables_culturales">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Variables culturales</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Variables_de_recursos_humanos">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Variables de recursos humanos</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
