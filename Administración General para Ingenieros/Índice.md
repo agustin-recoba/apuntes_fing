@@ -9,3 +9,4 @@
 [[1er parcial - PREGUNTOMETRO]]
 
 [[Capítulo 12 - Gerencia de recursos humanos]]
+[[Capítulo 13 - Manejo del cambio y la innovación]]
