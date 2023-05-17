@@ -773,3 +773,201 @@ Simple local code changes can create side effects in any other, arbitrarily dist
 - Component testing examines single software components. Integration testing examines the collaboration of these components. Functional and nonfunctional system testing examine the entire system from the perspective of the future users. In acceptance testing, the customer checks the product for acceptance respective to the contract and acceptance by users and operations personnel. If the system will be installed in many operational environments, then field tests provide an additional opportunity to get experience with the system by running preliminary versions.
 - Defect correction (maintenance) and further development (enhancement) or incremental development continuously alter and extend the software product throughout its life cycle. All these altered versions must be tested again. A specific risk analysis should determine the amount of the regression tests.
 - There are several types of test with different objectives: functional testing, nonfunctional testing, structure-based testing, and change-related testing.
+
+# Chapter 4 - Static Test
+
+Opposite to dynamic testing, the test object is not provided with test data and executed but rather analyzed.
+This can be done using one or more persons for an intensive investigation or through the use of tools.
+Tool-supported static analysis is only possible for documents with a formal structure.
+
+The goal of examination is to find defects and deviations from the existing specifications, standards to comply with, or even the project plan.
+
+## 4.1 Structured Group Evaluations
+
+### 4.1.1 Foundations
+
+#### Systematic use of the human ability to think and analyze
+Reviews apply the human analytical capabilities to check and evaluate complex issues. Intensive reading and trying to understand the examined documents is the key.
+There are different techniques for checking documents. They differ regarding the intensity, formality, necessary resources (staff and time), and goals.
+
+### 4.1.2 Reviews
+***Review*** is a common generic term for all the different static analysis techniques people perform as well as the term for a specific document examination technique.
+Reviews rely on the colleagues of the author to provide mutual feedback. Because of this, they are also called ***peer reviews***.
+
+However, ***inspection*** is usually defined as a special, formal review using data collection and special rules.
+
+#### A means for quality assurance
+Reviews are an efficient means to assure the quality of the examined documents. They should be performed as soon as possible to find mistakes and inconsistencies early.
+Eliminating defects and inconsistencies leads to improved document quality and positively influences the whole development process.
+
+#### Positive effects
+- Cheaper defect elimination. If defects are found and eliminated early, fewer resources are needed for defect identification and elimination later.
+- Shortened development time.
+- If defects are recognized and corrected early, costs and time needed for executing the dynamic tests decrease because there are fewer defects in the test object.
+- Because of the smaller number of defects, cost reduction can be expected during the whole product life.
+- During operation of the system, a reduced failure rate can be expected.
+- As the examinations are done using a team of people, reviews lead to mutual learning.
+- Because several persons are involved in a review, a clear and understandable description of the facts is required. The necessity to formulate a clear document helps the author find forgotten issues.
+- The whole team feels responsible for the quality of the examined object. The group will gain a common understanding of it
+
+#### Potential problem
+In a badly moderated review session, the Potential problem author may get into a psychologically difficult situation, **feeling** that he as a person and not the document is subject to critical scrutiny.
+
+#### Reviews costs and savings
+The costs caused by reviews are estimated to be 10–15% of the devel- Reviews costs and savings opment budget.
+Savings are estimated to be about 14–25% (the extra effort for the reviews themselves is included in this calculation.).
+It is plausible that defect cost in development is reduced by 75% and more.
+
+#### Important success factors
+- Every review has a clear goal, which is formulated beforehand.
+- The “right” people are chosen as review participants based on the review objective as well as on their subject knowledge and skills.
+
+### 4.1.3 The General Process
+
+![[Pasted image 20230516194840.png]]
+
+A review requires six work steps: planning, kick-off, individual preparation, review meeting, rework, and follow-up.
+
+#### Planning
+##### Reviews need planning
+- Early, during overall planning, management must decide ***which documents*** in the software development process shall be subject to ***which review technique***.
+- During planning of the individual review, the review leader selects technically competent staff and assembles a review team.
+- In formal reviews, entry criteria (and the corresponding exit criteria) may be set. A review should continue only after any available entry criteria has been checked.
+
+
+#### Kick-Off
+The kick-off (or overview) serves to provide those involved in the review with all of the necessary information.
+It may include:
+- significance and the objective of the planned review
+- short introduction to the material
+- a description of how it fits into the application or environment
+
+##### Higher-level documents are necessary
+Those involved must have access to documents that help to decide if a particular statement is wrong or correct. Such documents are also called base documents or baselines.
+
+#### Individual Preparation
+##### Intensive study of the review object
+The members of the review team must prepare individually for the review meeting.
+
+#### Review Meeting
+A review leader or **moderator** leads the review meeting. Moderator and participants should behave diplomatically (not be aggressive with each other) and contribute to the review in the best possible way.
+
+#### Rework
+The manager decides whether to follow the recommendation or do something else.
+
+#### Follow-Up
+The proper correction of defects must be followed up, usually by the manager, moderator, or someone especially assigned this responsibility.
+If the result of the first review was not acceptable, another review should be scheduled.
+
+### 4.1.4 Roles and Responsibilities
+
+#### Manager
+The manager selects the objects to be reviewed, assigns the necessary resources, and selects the review team.
+
+#### Moderator
+The moderator is responsible for executing the review. Planning, preparation, execution, rework, and follow-up should be done in such a way that the review objectives are achieved.
+The moderator is responsible for collecting review data and issuing the review report.
+
+#### Author
+The author is the creator of the document that is the subject of a Author review. If several people have been involved in the creation, one person should be appointed to be responsible.
+The author is responsible for the review object meeting its review entry criteria and for performing any rework required for meeting the review exit criteria.
+
+#### Reviewer
+The reviewers, sometimes also called inspectors, are several technical experts that participate in the review meeting after necessary individual preparation.
+They should represent different viewpoints (for example, sponsor, requirements, design, code, safety, test).
+
+#### Recorder
+The recorder (or scribe) shall document the issues (problems, action items, decisions, and recommendations) found by the review team.
+
+### 4.1.5 Types of Reviews
+1. Reviews pertaining to products or intermediate products that have been created during the development process.
+2. Reviews that analyze the project itself or the development process.
+
+#### Walkthrough
+A walkthrough is a ***manual***, ***informal review*** method with the purpose of finding defects, ambiguities, and problems in written documents. The author presents the document to the reviewers in a review meeting.
+
+Goals:
+- educating an audience regarding a software product
+- improve the product
+- error detection
+- discuss alternative implementations
+- evaluate conformance to standards and specifications
+
+##### Discussion of typical usage situations
+##### Suitable for small development teams
+
+#### Inspection
+The inspection is the most formal review. It follows a formal, prescribed process. Every person involved, usually people who work directly with the author, has a defined role. Rules define the process. The reviewers use checklists containing criteria for checking the different aspects.
+
+Goals:
+- finding unclear items and possible defects
+- measuring review object quality
+- improving the quality of the inspection process and the development process
+
+The concrete objectives of each individual inspection are determined during planning.
+
+#### Technical Review
+In a technical review, the focus is compliance of the document with the specification, fitness for its intended purpose, and compliance to standards.
+During preparation, the reviewers check the review object with respect to the specified review criteria.
+The reviewers must be ***technically qualified***.
+
+Goals:
+- generate a discussion
+- find alternative aproaches
+- solve technical issues
+- assess conformity to review standards
+- reveal errors and defects
+
+##### High preparation effort
+
+#### Informal Review
+The informal review is a light version of a review. It more or less follows the general procedure for reviews in a simplified way.
+
+Goals:
+- reduce costs and effort compared to other forms of review
+- generate a discussion and exchange information between colleagues
+
+#### Selection Criteria
+The type of review that should be used depends very much on how thor- Selecting the type of review ough the review needs to be and the effort that can be spent. It also depends on the project environment.
+It makes sense to use testers as reviewers. The reviewed documents are usually used as the test basis to design test cases
+
+## 4.2 Static Analysis
+
+***Static analysis*** points to the fact that this form of checking does not involve an execution of the checked objects (of a program).
+The objective of static analysis is, as with reviews, to reveal defects or defect-prone parts in a document. However, in static analysis, tools do the analysis.
+
+Even spell checkers can be regarded as a form of **static analyzers** because they find mistakes in documents and therefore contribute to quality improvement.
+
+The document to be analyzed must follow a certain formal structure in order to be checked by a tool.
+
+Due to the fact that static analysis is tool supported, there is much less effort involved than in a review.
+
+Not all defects can be found using static testing.
+The following defects and dangerous constructions can be detected by static analysis:
+- Syntax violations
+- Deviations from conventions and standards
+- Control flow anomalies
+- Data flow anomalies
+
+### 4.2.1 The Compiler as a Static Analysis Tool
+### 4.2.2 Examination of Compliance to Conventions and Standards
+### 4.2.3 Execution of Data Flow Analysis
+### 4.2.4 Execution of Control Flow Analysis
+### 4.2.5 Determining Metrics
+
+## 4.3 Summary
+- Several pairs of eyes see more than a single pair of eyes. This is also true in software development. This is the main principle for the reviews that are performed for checking and for improving quality. Several people inspect the documents and discuss them in a meeting and the results are recorded.
+- A fundamental review process consists of the following activities: planning, kick-off, preparation, review meeting, rework, and follow-up. The roles of the participants are manager, moderator, author, reviewer, and recorder.
+- There are several types of reviews. Unfortunately, the terminology is defined differently in all literature and standards.
+- The walkthrough is an informal procedure where the author presents her document to the reviewers in the meeting. There is little preparation for the meeting. The walkthrough is especially suitable for small development teams, for discussing alternatives, and for educating people in the team.
+- The inspection is the most formal review type. Preparation is done using checklists, there are defined entry and exit criteria, and a trained moderator chairs the meeting. The objective of inspections is checking the quality of the document and improvement of development, the development process, and the inspection process itself.
+- In the technical review, the individual reviewers’ results must be given to the review leader prior to the meeting. The meeting is then prioritized by assumed importance of the individual issues. The evaluators usually have access to the specifications and other documentation only. The author can remain anonymous.
+- The informal review is not based on a formal procedure. The form in which the results have to be presented is not prescribed. Because this type of review can be performed with minimal effort, its acceptance is very high, and in practice it is commonly used.
+- Generally, the specific environment, i.e., the organization and project for which the review is used, determines the type of review to be used. Reviews are tailored to meet specific needs and requirements, which increases their efficiency. It is important to establish a cooperative and collaborative atmosphere among the people involved in the development of the software.
+- In addition to the reviews, a lot of checks can be done for documents that have a formalized structure. These checks are called static analyses. The test object is not executed during a static analysis.
+- The compiler is the most common analysis tool and reveals syntax errors in the program code. Usually, compilers provide even more checking and information.
+- Analysis tools that are dependent on programming language can also show violation of standards and other conventions.
+- Tools are available for detecting anomalies in the data and control flows of the program. Useful information about control and data flows is generated, which often points to parts that could contain defects.
+- Metrics are used to measure quality. One such metric is the cyclomatic number, which calculates the number of independent paths in the checked program. It is possible to gain information on the structure and the testing effort.
+- Generally, static analyses should be performed first, before a document is subjected to review. Static analyses provide a relatively inexpensive means to detect defects and thus make the reviews less expensive.
+

@@ -7,3 +7,5 @@
 [[Capítulo 10 - Estructura y diseño organizacional]]
 
 [[1er parcial - PREGUNTOMETRO]]
+
+[[Capítulo 12 - Gerencia de recursos humanos]]
