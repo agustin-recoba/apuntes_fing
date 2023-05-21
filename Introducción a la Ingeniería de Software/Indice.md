@@ -28,3 +28,13 @@
 # Verificación y validación
 
 [[Software Testing Foundations]]
+	[[Generating Test Cases From Use Cases]]
+
+
+
+
+
+
+
+
+

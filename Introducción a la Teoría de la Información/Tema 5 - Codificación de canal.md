@@ -56,7 +56,7 @@
 ![[Pasted image 20230509193722.png]]
 ![[Pasted image 20230509193729.png]]
 
-### Probabilidad de error de un c´odigo para un canal
+### Probabilidad de error de un código para un canal
 ![[Pasted image 20230509193748.png]]
 
 ### Capacidad Operativa
@@ -91,7 +91,7 @@
 ![[Pasted image 20230509202547.png]]
 ![[Pasted image 20230509202601.png]]
 
-## Teorema
+### Enunciado del teorema
 
 ![[Pasted image 20230509202629.png]]
 
@@ -108,18 +108,18 @@
 #### Demostración: decodificación por tipicalidad conjunta
 ![[Pasted image 20230509203119.png]]
 
-#### Demostraci´on: an´alisis de la prob. de error
+#### Demostración: análisis de la prob. de error
 ![[Pasted image 20230509203141.png]]
 ![[Pasted image 20230509203202.png]]
 ![[Pasted image 20230509203214.png]]
 
-#### Demostraci´on: refinamiento del c´odigo
+#### Demostración: refinamiento del código
 ![[Pasted image 20230509203234.png]]
 
 #### Final
 ![[Pasted image 20230509203242.png]]
 
-### Demostraci´on del rec´ıproco
+### Demostración del recíproco
 #### Hoja de ruta
 ![[Pasted image 20230509203424.png]]
 
@@ -130,13 +130,73 @@ Osea, utilizar el canal varias veces no aumenta su capacidad.
 
 ![[Pasted image 20230509203520.png]]
 
-#### Desigualdad de Fano para codificaci´on de canal
+#### Desigualdad de Fano para codificación de canal
 ![[Pasted image 20230509203617.png]]
 ![[Pasted image 20230509203626.png]]
 
-#### Rec´ıproco: demostraci´on
+#### Recíproco: enunciado
 ![[Pasted image 20230509203652.png]]
+
+#### Recíproco: demostración
 ![[Pasted image 20230509203700.png]]
 
-#### Rec´ıproco: conclusiones
+#### Recíproco: conclusiones
 ![[Pasted image 20230509203737.png]]
+
+## Códigos prácticos de canal
+
+![[Pasted image 20230517201718.png]]
+
+### Códigos lineales
+![[Pasted image 20230517203006.png]]
+
+#### Definiciones
+![[Pasted image 20230517203246.png]]
+
+##### Matriz generadora G
+![[Pasted image 20230517203029.png]]
+
+##### Matriz de chequeo de paridad H
+![[Pasted image 20230517203421.png]]
+
+#### Ejemplos de códigos 
+![[Pasted image 20230517203036.png]]
+![[Pasted image 20230517203103.png]]
+![[Pasted image 20230517203438.png]]
+![[Pasted image 20230518145539.png]]
+
+#### Ejemplo de decodificación (Hamming)
+![[Pasted image 20230518145618.png]]
+
+#### Otros códigos lineales
+![[Pasted image 20230518145647.png]]
+
+##### Aplicaciones
+![[Pasted image 20230518145717.png]]
+
+### Canales con realimentación
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

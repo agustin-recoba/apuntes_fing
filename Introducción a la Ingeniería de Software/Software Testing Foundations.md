@@ -36,7 +36,7 @@ Las pruebas pueden hacerse para obtener información del producto, permitiendo t
 El objetivo del testing es la verificación y validación. En ambas se puede hacer inspección y revisión de código. Las inspecciones pueden encontrar varios errores, temas de calidad y hacerse sobre versiones incompletas. La confianza que se debe tener para el sistema depende de su propósito (cuanto más crítico, más seguro debe ser), las expectativas de los usuarios y el mercado.
 
 ### 2.1.1 Error, Defect, and Bug Terminology
-![[Pasted image 20230512172229.png]]
+
 
 Falló -> no hace lo requerido (o hace algo que no debería)
 
@@ -202,6 +202,8 @@ To define the expected results, the tester must obtain the information from some
 #### Test cases for expected and unexpected inputs
 - First are test cases for examining the specified behavior, output, and reaction. Included here are test cases that examine specified handling of exception and error cases (negative test). But it is often difficult to create the necessary preconditions for the execution of these test cases (for example, capacity overload of a network connection).
 - Next are test cases for examining the reaction of test objects to invalid and unexpected inputs or conditions, which have no specified exception handling
+
+[[Tecnicas de generación de casos de prueba]]
 
 ### 2.2.3 Test Implementation and Execution
 
@@ -709,7 +711,10 @@ This danger can be reduced by running several V-models in sequence, one for each
 
 
 
-## 3.7 Generic <u>Types</u> of Testing
+## 3.7 <u>Generic Types of Testing</u>
+
+![[Pasted image 20230518202729.png]]
+
 ### 3.7.1 Functional Testing
 Functional testing includes all kind of tests that verify a system’s input/output behavior.
 Black box testing methods are used, and the test bases are the functional requirements.
@@ -726,19 +731,30 @@ It focuses on the whole process consisting of many steps (e.g., the sales conver
 
 ### 3.7.2 Nonfunctional Testing
 Nonfunctional requirements do not describe the functions; they describe the attributes of the functional behavior or the attributes of the system as a whole.
+
 The following nonfunctional system characteristics should be considered in the tests (usually in system testing):
-- **Load test:** Measuring of the system behavior for increasing system loads.
-- **Performance test:** Measuring the processing speed and response time for particular use cases, usually dependent on increasing load.
-- **Volume test:** Observation of the system behavior dependent on the amount of data.
-- **Stress test:** Observation of the system behavior when the system is overloaded.
-- **Testing of security** against unauthorized access to the system or data, denial of service attacks, etc.
-- **Stability or reliability test:** Performed during permanent operation (e.g., mean time between failures or failure rate with a given user profile) .
-- **Robustness test:** Measuring the system’s response to operating errors, bad programming, hardware failure, etc. as well as examination of exception handling and recovery.
-- **Testing of compatibility and data conversion:** Examination of compatibility with existing systems, import/export of data, etc.
-- **Testing of different configurations of the system:** For example, different versions of the operating system, user interface language, hardware platform, etc. (back-to-back testing).
-- **Usability test:** Examination of the ease of learning the system, ease and efficiency of operation, understandability of the system outputs, etc., always with respect to the needs of a specific group of users.
-- **Checking of the documentation:** For compliance with system behavior (e.g., user manual and GUI).
+- **Load test (prueba de carga):** Measuring of the system behavior for increasing system loads.
+- **Performance test (prueba de rendimiento):** Measuring the processing speed and response time for particular use cases, usually dependent on increasing load.
+- **Volume test (prueba de volumen):** Observation of the system behavior dependent on the amount of data.
+- **Stress test (prueba de estrés):** Observation of the system behavior when the system is overloaded.
+- **Testing of security (seguridad)** against unauthorized access to the system or data, denial of service attacks, etc.
+- **Stability or reliability test (prueba de confiabilidad):** Performed during permanent operation (e.g., mean time between failures or failure rate with a given user profile) .
+- **Robustness test (prueba de robustez):** Measuring the system’s response to operating errors, bad programming, hardware failure, etc. as well as examination of exception handling and recovery.
+- **Testing of compatibility and data conversion (prueba de compatibilidad y conversión de datos):** Examination of compatibility with existing systems, import/export of data, etc.
+- **Testing of different configurations of the system (prueba de configuración):** For example, different versions of the operating system, user interface language, hardware platform, etc. (back-to-back testing).
+- **Usability test (prueba de facilidad de uso):** Examination of the ease of learning the system, ease and efficiency of operation, understandability of the system outputs, etc., always with respect to the needs of a specific group of users.
+- **Checking of the documentation (comprobación de documentación):** For compliance with system behavior (e.g., user manual and GUI).
 - **Checking maintainability:** Assessing the understandability of the system documentation and whether it is up-to-date; checking if the system has a modular structure; etc.
+
+#### Pruebas no funcionales (desempeño)
+Lo esencial es definir: 
+- <u>Procedimientos de prueba:</u>
+	Ejemplo (tiempo de respuesta): simular la carga, tomar los tiempos de tal manera, número de casos a probar, etc.
+- <u>Criterios de aceptación: </u>
+	Ejemplo: el cliente lo valida si en el 90% de los casos de prueba en el ambiente de producción se cumple con los requerimientos de tiempo de respuesta.
+- <u>Características del ambiente:</u>
+	Definir las características del ambiente de producción ya que estas hacen grandes diferencias en los requerimientos no funcionales.
+
 
 ### 3.7.3 Testing of Software Structure
 Structural techniques (**structure-based testing**, white box testing) use information about the test object’s internal code structure or architecture.
@@ -776,6 +792,8 @@ Simple local code changes can create side effects in any other, arbitrarily dist
 
 # Chapter 4 - Static Test
 
+![[Pasted image 20230518202844.png]]
+
 Opposite to dynamic testing, the test object is not provided with test data and executed but rather analyzed.
 This can be done using one or more persons for an intensive investigation or through the use of tools.
 Tool-supported static analysis is only possible for documents with a formal structure.
@@ -784,6 +802,8 @@ The goal of examination is to find defects and deviations from the existing spec
 
 ## 4.1 Structured Group Evaluations
 
+![[Pasted image 20230518202916.png]]
+
 ### 4.1.1 Foundations
 
 #### Systematic use of the human ability to think and analyze
@@ -791,6 +811,8 @@ Reviews apply the human analytical capabilities to check and evaluate complex is
 There are different techniques for checking documents. They differ regarding the intensity, formality, necessary resources (staff and time), and goals.
 
 ### 4.1.2 Reviews
+![[Pasted image 20230518203030.png]]
+
 ***Review*** is a common generic term for all the different static analysis techniques people perform as well as the term for a specific document examination technique.
 Reviews rely on the colleagues of the author to provide mutual feedback. Because of this, they are also called ***peer reviews***.
 
@@ -861,30 +883,32 @@ If the result of the first review was not acceptable, another review should be s
 
 ### 4.1.4 Roles and Responsibilities
 
-#### Manager
-The manager selects the objects to be reviewed, assigns the necessary resources, and selects the review team.
+#### Manager (lider)
+Selecciona los artefactos a ser revisados, asigna los recursos necesarios y selecciona el equipo de revisión (generalmente no participa de la reunión de revisión).
 
-#### Moderator
+#### Moderator (moderador)
 The moderator is responsible for executing the review. Planning, preparation, execution, rework, and follow-up should be done in such a way that the review objectives are achieved.
 The moderator is responsible for collecting review data and issuing the review report.
 
-#### Author
+#### Author (autor)
 The author is the creator of the document that is the subject of a Author review. If several people have been involved in the creation, one person should be appointed to be responsible.
 The author is responsible for the review object meeting its review entry criteria and for performing any rework required for meeting the review exit criteria.
 
-#### Reviewer
+#### Reviewer (revisores)
 The reviewers, sometimes also called inspectors, are several technical experts that participate in the review meeting after necessary individual preparation.
 They should represent different viewpoints (for example, sponsor, requirements, design, code, safety, test).
 
-#### Recorder
+#### Recorder (secretario)
 The recorder (or scribe) shall document the issues (problems, action items, decisions, and recommendations) found by the review team.
 
 ### 4.1.5 Types of Reviews
 1. Reviews pertaining to products or intermediate products that have been created during the development process.
-2. Reviews that analyze the project itself or the development process.
+2. Reviews that analyze the **project itself** or the **development process**.
 
-#### Walkthrough
+#### <u>Walkthrough</u>
 A walkthrough is a ***manual***, ***informal review*** method with the purpose of finding defects, ambiguities, and problems in written documents. The author presents the document to the reviewers in a review meeting.
+
+Se “recorre” el producto (o se simula su comportamiento en caso de ser código) en busca de defectos. Es bastante más informal que otros tipos de revisiones (inspecciones por ejemplo).
 
 Goals:
 - educating an audience regarding a software product
@@ -896,8 +920,14 @@ Goals:
 ##### Discussion of typical usage situations
 ##### Suitable for small development teams
 
-#### Inspection
-The inspection is the most formal review. It follows a formal, prescribed process. Every person involved, usually people who work directly with the author, has a defined role. Rules define the process. The reviewers use checklists containing criteria for checking the different aspects.
+#### <u>Inspection</u>
+The inspection is the most formal review. It follows a formal, prescribed process. Every person involved, usually people who work directly with the author, has a defined role. Rules define the process. 
+
+The reviewers use checklists containing criteria for checking the different aspects.Estas listas dependen del lenguaje de programación y de la organización.  Por ejemplo revisan: 
+- Uso de variables no inicializadas.
+- Asignaciones de tipos no compatibles.
+
+Se examinan arterfactos (no solo aplicables al código) buscando defectos comunes.
 
 Goals:
 - finding unclear items and possible defects
@@ -906,7 +936,7 @@ Goals:
 
 The concrete objectives of each individual inspection are determined during planning.
 
-#### Technical Review
+#### <u>Technical Review</u>
 In a technical review, the focus is compliance of the document with the specification, fitness for its intended purpose, and compliance to standards.
 During preparation, the reviewers check the review object with respect to the specified review criteria.
 The reviewers must be ***technically qualified***.
@@ -920,7 +950,7 @@ Goals:
 
 ##### High preparation effort
 
-#### Informal Review
+#### <u>Informal Review</u>
 The informal review is a light version of a review. It more or less follows the general procedure for reviews in a simplified way.
 
 Goals:
@@ -932,6 +962,8 @@ The type of review that should be used depends very much on how thor- Selecting 
 It makes sense to use testers as reviewers. The reviewed documents are usually used as the test basis to design test cases
 
 ## 4.2 Static Analysis
+
+![[Pasted image 20230518202928.png]]
 
 ***Static analysis*** points to the fact that this form of checking does not involve an execution of the checked objects (of a program).
 The objective of static analysis is, as with reviews, to reveal defects or defect-prone parts in a document. However, in static analysis, tools do the analysis.
@@ -970,4 +1002,324 @@ The following defects and dangerous constructions can be detected by static anal
 - Tools are available for detecting anomalies in the data and control flows of the program. Useful information about control and data flows is generated, which often points to parts that could contain defects.
 - Metrics are used to measure quality. One such metric is the cyclomatic number, which calculates the number of independent paths in the checked program. It is possible to gain information on the structure and the testing effort.
 - Generally, static analyses should be performed first, before a document is subjected to review. Static analyses provide a relatively inexpensive means to detect defects and thus make the reviews less expensive.
+
+
+# Chapter 5 - Dynamic Analysis – Test Design Techniques
+
+***Probar el sistema ejecutando el objeto de pruebas.***
+
+Tres categorías generales (refieren al diseño de los CP): 
+- Pruebas de caja negra (también llamadas pruebas basadas en la especificación)
+- Pruebas de caja blanca (también llamadas pruebas estructurales)
+- Pruebas basadas en la experiencia
+
+![[Pasted image 20230518212454.png]]
+
+### Execution of the test object on a computer
+The test object (program) is fed with input data and executed. To do this, the program must be executable. In the lower test stages (component and integration testing), the test object cannot be run alone but must be embedded into a test harness or test bed to obtain an executable program.
+
+### A test bed is necessary
+The test bed must supply the test object with input data. In most cases, it is necessary to simulate a part of the program that is supposed to call the test object. A test driver does this. Driver and stub combined establish the test bed. Together, they constitute an executable program with the test object itself.
+
+![[Pasted image 20230518212417.png]]
+
+## 5.1 Black Box Testing Techniques
+
+La estructura inherente o diseño del objeto de prueba <u>no es considerado</u> para el diseño de los casos de prueba.
+Black box techniques are also called requirements-based testing techniques.
+
+Algunas técnicas:
+- Particiones en clases de equivalencia
+- Análisis de valores límites
+- Pruebas de transición de estados
+- Pruebas basadas en la lógica (grafos causa efecto, tablas de decisión y pairwise testing)
+- Pruebas basadas en casos de uso
+
+### 5.1.1 Equivalence Class Partitioning
+***Clase de equivalencia:*** conjunto de entradas para las cuales suponemos que el software se comporta igual.
+
+#### Proceso de partición de equivalencia: 
+1. Identificar el dominio de entrada y de salida
+2. Identificar las clases de equivalencia del dominio de entrada
+3. Definir los casos de prueba
+
+#### Propiedades de un buen caso de prueba:
+- Reduce significativamente el número de los otros casos de prueba
+- Cubre un conjunto extenso de otros casos de prueba posibles
+
+#### Identificación de las clases de equivalencia:
+- Cada condición de entrada separarla en 2 o más grupos.
+- Identificar las <u>clases válidas</u> así como también las <u>clases inválidas</u>.
+- Ejemplos:
+	- “la numeración es de 1 a 999” clase válida 1 <= num <= 999, 2 clases inválidas num < 1 y num > 999.
+	- “el primer carácter debe ser una letra” clase válida el primer carácter es una letra, clase inválida el primer carácter no es una letra.
+- Si se cree que ciertos elementos de una clase de eq. no son tratados de forma idéntica por el programa, dividir la clase de eq. en clases de eq. diferentes.
+
+#### Proceso de definición de los casos de prueba:
+1. Asignar un número único a cada clase de equivalencia. 
+2. Hasta cubrir todas las clases de eq. con casos de prueba:
+	Escribir un nuevo caso de prueba que cubra tantas clases de eq. válidas, no cubiertas, como sea posible.
+3. Escribir un caso de prueba para cubrir una y solo una clase de equivalencia para cada **clase de equivalencia inválida** (evita cubrimiento de errores por otro error).
+
+### 5.1.2 Boundary Value Analysis
+La experiencia muestra que los casos de prueba que exploran las condiciones límite producen mejor resultado que aquellas que no lo hacen.
+Las condiciones límite son aquellas que se hallan “arriba” y “debajo” de los márgenes de las clases de equivalencia de entrada y de salida.
+
+Diferencias con partición de equivalencia:
+- Elegir casos tal que los márgenes de las clases de eq. sean probados (el límite y los adyacentes a ambos lados).
+- Se debe tener muy en cuenta las clases de eq. de la salida (esto también se puede considerar en particiones de equivalencia).
+
+Ejemplos:
+- La entrada son valores entre -1 y 1. Escribir casos de prueba con entrada 1, -1, 1.001, -1.001
+- Un archivo de entrada puede contener de 1 a 255 registros. Escribir casos de prueba con 1, 255, 0 y 256 registros
+- Se registran hasta 4 mensajes en la cuenta a pagar (UTE, ANTEL, etc). Escribir casos de prueba que generen 0 y 4 mensajes. Escribir un caso de prueba que pueda causar el registro de 5 mensajes. 
+
+***USAR EL INGENIO PARA ENCONTRAR CONDICIONES LÍMITE***
+
+#### Tips
+- For an input domain, the boundaries and the adjacent values outside the domain must be considered. Domain: $[-1.0; +1.0]$, test data: $-1.0$, $+1.0$ and $-1.001$, $+1.001$.
+- If an input file has a restricted number of data records (for example, between 1 and 100), the test values should be 1, 100 and 0, 101.
+- If the *output* domains serve as the basis, then this is the way to proceed: The output of the test object is an integer value between 500 and 1000. Test outputs that should be achieved: 500, 1000, 499, 1001. Indeed, it can be difficult to identify the respective input test data to achieve exactly the required outputs. Generating the invalid outputs may even be impossible, but you may find defects by thinking about it.
+- If the permitted number of output values is to be tested, proceed just as with the number of input values: If outputs of 1 to 4 data values are allowed, the test outputs to produce are 1, 4 as well as 0 and 5 data values.
+- For ordered sets, the first element and the last element are of special interest for the test.
+- If complex data structures are given as input or output (for instance, an empty list or zero), tables can be considered as boundary values.
+- For numeric calculations, values that are close together, as well as values that are far apart, should be taken into consideration as boundary values.
+- For invalid equivalence classes, boundary value analysis is only useful when different exception handling for the test object is expected, depending on an equivalence class boundary.
+- Additionally, extremely large data structures, lists, tables, etc. should be chosen. For example, you should exceed buffer, file, or data storage boundaries, in order to check the behavior of the test object in extreme cases.
+- For lists and tables, empty and full lists and the first and last elements are of interest because they often show failures due to incorrect programming (Off-by-one problem).
+
+### 5.1.3 State Transition Testing
+In many systems, not only the current input but also the history of execution or events or inputs influences computation of the outputs and how the system will behave.
+To illustrate the dependence on history, **state diagrams** are used. They are the basis for designing the test (state transition testing).
+Finite state machines, state diagrams, and state transition tables model this behavior
+
+In state transition testing, the test object can be a complete system with different system states as well as a class in an object-oriented system with different states.
+
+A state transition test should execute all specified functions of a state at Test criteria least once. Compliance between the specified and the actual behavior of the test object can thus be checked.
+
+#### Transition tree
+To identify the necessary test cases, the finite state machine is transformed into a so-called transition tree, which includes certain sequences of transitions.
+The cyclic state transition diagram with potentially infinite sequences of states changes to a transition tree, which corresponds to a representative number of states without cycles.
+
+The transition tree is built from a transition diagram this way: 
+1. The initial or start state is the root of the tree. 
+2. For every possible transition from the initial state to a following state in the state transition diagram, the transition tree receives a branch from its root to a node, representing this next state. 
+3. The process for step 2 is repeated for every leaf in the tree (every newly added node) until one of the following two end conditions is fulfilled:
+	- The corresponding state is already included in the tree on the way from the root to the node. This end condition corresponds to one execution of a cycle in the transition diagram.
+	- The corresponding state is a final state and therefore has no further transitions to be considered.
+
+```ad-example
+title: Ejemplo
+collapse: closed
+![[Pasted image 20230519160635.png]]
+![[Pasted image 20230519160647.png]]
+```
+
+#### Incorrect use of functions
+It is a violation of the specification if functions are called in states where they should not be used (e.g., to delete the stack while in the “full” state). A robustness test must be executed to check how the test object works when used incorrectly. It should be tested to see whether unexpected transitions appear. The test can be seen as an analogy to the **test of unexpected input values**.
+
+#### Definition of the Test Exit Criteria
+- Every state has been reached at least once.
+- Every transition has been executed at least once.
+- Every transition violating the specification has been checked.
+
+### 5.1.4 Logic-Based Techniques (Cause-Effect Graphing and Decision Table Technique, Pairwise Testing)
+The previously introduced techniques look at the different input data independently. Dependencies among the different inputs and their effects on the outputs are not explicitly considered for test case design
+
+#### Cause-effect graphing
+Uses the dependencies for identification of the test cases.
+The logical relationships between the causes and their effects in a component or a system are displayed in a so-called cause-effect graph.
+
+Every cause is described as a condition that consists of input values (or combinations thereof). The conditions are connected with logical operators (e.g., AND, OR, NOT). The condition, and thus its cause, can be true or false. Effects are treated similarly and described in the graph.
+
+```ad-example
+title: Ejemplo
+collapse: closed
+![[Pasted image 20230519161819.png]]
+```
+
+The graph makes clear which conditions must be combined in order to achieve the corresponding effects.
+
+##### Descision tables
+The graph must be transformed into a <u>decision table</u> from which the test cases can be derived. 
+The steps to transform a graph into a table are as follows: 
+1. Choose an effect.
+2. Looking in the graph, find combinations of causes that have this effect and combinations that do not have this effect.
+3. Add one column into the table for every one of these cause-effect combinations. Include the caused states of the remaining effects.
+4. Check to see if decision table entries occur several times, and if they do, delete them.
+
+The objective for a test based on decision tables is that it executes “interesting” combinations of inputs. 
+
+```ad-example
+title: Ejemplo
+collapse: closed
+![[Pasted image 20230519162055.png]]
+```
+
+Every column of this table is to be interpreted as a test case. From the table, the necessary input conditions and expected actions can be found directly.
+
+##### Tables -> decision tree
+From a decision table, a decision tree may be derived. The decision tree is analogous to the transition tree in state transition testing in how it’s used. Every path from the root of the tree to a leaf corresponds to a test case. Every node on the way to a leaf contains a condition that determines the further path, depending on its truth-value.
+
+### 5.1.5 Use-Case-Based Testing
+
+[[Generating Test Cases From Use Cases]]
+[[Guía para la generación de CP a partir de HU]]
+
+There are many research projects and approaches to directly derive test cases from UML diagrams and to generate these tests more or less automatically
+The diagrams help define requirements on a relatively abstract level by describing typical user-system interactions. Testers may utilize use cases to derive test cases.
+
+#### Use-Case diagram
+Use case diagrams mainly serve to show the external view of a system from the viewpoint of the user or to show the relation to neighboring systems.
+
+#### System and acceptance testing
+Use cases and use case diagrams serve as the basis for determining test cases in use-case-based testing. As the external view is modeled, the technique is very useful for both system testing and acceptance testing. If the diagrams are used to model the interactions between different subsystems, test cases can also be derived for integration testing.
+
+#### Test cases
+All of the following information is necessary for designing test cases and is often available in the diagrams:
+- Start situation and preconditions
+- Possibly other conditions
+- Expected results
+- Postconditions
+
+However, the concrete input data and results for the individual test cases cannot be derived directly from the use cases. The individual input and output data must be chosen.
+
+### 5.1.6 General Discussion of the Black Box Technique
+
+#### Wrong specification is not detected
+Black box testing will not be able to find problems where the implementation is based on incorrect requirements or a faulty design specification because there will be no deviation between the faulty specification or design and the observed results.
+
+#### Functionality that’s not required is not detected
+In addition, black box testing cannot reveal extra functionality that exceeds the specifications. (Such extra functionality is often the cause of security problems.)
+
+#### Verification of the functionality
+The center of attention for all black box techniques is the verification of the functionality of the test object.
+
+## 5.2 White Box Testing Techniques
+
+La derivación de los casos de prueba se basa en la estructura inherente o diseño del objeto de prueba. Son también llamadas técnicas basadas en la estructura o en el código.
+The source code must be available, and in certain cases, it must be possible to manipulate it, that is, to add code.
+
+Tipos de técnicas de caja blanca:
+- Basadas en el flujo de control del programa.
+	Expresan los cubrimientos del testing en términos del grafo de flujo de control del programa.
+- Basadas en el flujo de datos del programa.
+	Expresan los cubrimientos del testing en términos de las asociaciones definición-uso del programa.
+
+El foco de las técnicas de caja blanca es ejecutar (cubrir) cada parte del código al menos una vez.
+
+El cubrimiento de ese código puede tener diferentes criterios:
+- Cubrimiento de sentencias
+- Cubrimiento de decisión
+- Cubrimiento de condición
+- Cubrimiento de decisión/condición
+- Cubrimiento de condición múltiple
+- Cubrimiento de arcos
+- Cubrimiento de caminos
+- Cubrimiento de trayectorias independientes
+
+### 5.2.1 Statement Testing and Coverage
+This analysis focuses on each statement of the test object.
+Asegura que el conjunto de casos de pruebas (CCP) ejecuta al menos una vez cada instrucción del código.
+
+![[Pasted image 20230519215341.png]]
+
+#### Control flow graph is necessary
+The first step is to translate the source code into a control flow graph. The graph makes it easier to specify in detail the control elements that must be covered.
+
+```ad-example
+collapse: closed
+![[Pasted image 20230520200146.png]]
+```
+
+#### Test cases
+After the edges are traversed, all statements have been executed once. Other combinations of edges of the graph can also be used to achieve complete coverage. But the cost of testing should always be minimized, which means reaching the goal with the smallest possible number of test cases.
+
+The expected results and the expected behavior of the test object should be identified in advance from the specification (not the code!).
+
+### 5.2.2 Decision/Branch Testing and Coverage
+This time, the execution of decisions is considered instead of the execution of the statement. The result of the decision determines which statement is executed next. This should be used in testing.
+
+Cada decisión dentro del código toma al menos una vez el valor true y otra vez el valor false para el CCP.
+
+![[Pasted image 20230519215409.png]]
+
+#### Branch vs decision
+A branch is the connection between two nodes of the graph. In the program text, there are IF or CASE statements, loops, and so on, also called decisions. This test is thus called decision test or decision coverage.
+The following example illustrates this: An IF statement with an empty ELSE-part is checked. Decision testing gives 50% coverage if the condition is evaluated to true. With one more test case where the condition is false, 100% decision coverage will be achieved. For the branch test, which is built from the control flow graph, slightly different values result. The THEN part consists of two branches and one node, the ELSE part only of one branch without any node (no statement there). Thus, the whole IF statement with the empty ELSE part consists of three branches. Executing the condition with true results in covering two of the three branches, that is, 66% coverage. (Decision testing gives 50% in this case). Executing the second test case with the condition being false, 100% branch coverage and 100% decision coverage are achieved. Branch testing is discussed further a bit later.
+
+### 5.2.3 Test of Conditions
+If a decision is based on several (partial) conditions connected by logical operators, then the complexity of the condition should be considered in the test.
+The goal of condition testing is to cause each ***atomic*** (partial) condition in the test to adopt both a true and a false value.
+
+### Otros criterios
+
+#### Criterio de cubrimiento de decisión/condición
+Combinación de los dos criterios anteriores.
+
+#### Criterio de cubrimiento de condición múltiple
+Todas las combinaciones posibles de resultados de condición dentro de una decisión se ejecuten al menos una vez.
+
+#### Criterio de cubrimiento de caminos
+Se ejecutan al menos una vez todos los caminos posibles (combinaciones de trayectorias).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

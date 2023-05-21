@@ -4,18 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e09f0f53888b938e",
+        "id": "50b367d793f32858",
         "type": "tabs",
         "children": [
           {
-            "id": "bceaa9b5e62fcb1f",
+            "id": "fcfe49ffb4276c9d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Introducción a la Ingeniería de Software/Extras/Testing basado en la experiencia.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "71b75cc0269fa99c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +61,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Redes de computadoras/3 - Capa de Transporte/3.6.3 TCP, control de congestión.md"
+                "file": "Introducción a la Ingeniería de Software/Software Testing Foundations.md"
               }
             }
           },
@@ -86,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 341.5,
+    "collapsed": true
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -102,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Redes de computadoras/3 - Capa de Transporte/3.6.3 TCP, control de congestión.md",
+                "file": "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +137,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Redes de computadoras/3 - Capa de Transporte/3.6.3 TCP, control de congestión.md",
+                "file": "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,81 +172,43 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "floating": {
-    "id": "6028cbf650cf8b4d",
-    "type": "floating",
-    "children": [
-      {
-        "id": "6d85af750c15b790",
-        "type": "window",
-        "children": [
-          {
-            "id": "9222bbf48ed854f0",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "aefd9dc96590d1e8",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Redes de computadoras/2 - Capa de Aplicación/2.4.1 La Web y HTTP.md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -1479,
-        "y": 500,
-        "width": 901,
-        "height": 451,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "eed73acbec0572df",
+  "active": "71b75cc0269fa99c",
   "lastOpenFiles": [
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4.1 Intro.md",
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4. Capa de Red, plano de datos.md",
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4.3 El interior de un Router.md",
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4.2 Redes de circuitos virtuales y de datagramas.md",
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4.4.2 Direccionamiento IPv4.md",
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4.7 IPv6.md",
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4.5 Traduccion de direcciones de red, NAT.md",
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4.6 ICMP, protocolo de mensajes de control de Internet.md",
-    "Redes de computadoras/4 - Capa de Red, plano de datos/4.4.1 Protocolo de Internet (IP).md",
-    "Redes de computadoras/6 - Capa de enlace/6. Capa de Enlace.md",
-    "Redes de computadoras/6 - Capa de enlace/6.2 Protocolo de acceso múltiple.md",
-    "Redes de computadoras/6 - Capa de enlace/6.1 Técnicas de detección y corrección de errores.md",
-    "Redes de computadoras/6 - Capa de enlace/6.3 Direccionamiento de la capa de enlace.md",
-    "Redes de computadoras/6 - Capa de enlace/6.6.1 Switch vs Router.md",
-    "Redes de computadoras/6 - Capa de enlace/6.7 VLAN, redes de área local virtuales.md",
-    "Redes de computadoras/6 - Capa de enlace/6.5 Dominios de colisión y de broadcast.md",
-    "Redes de computadoras/6 - Capa de enlace/6.4 Ethernet.md",
-    "Redes de computadoras/6 - Capa de enlace/6.8 PPP, Protocolo punto a punto.md",
-    "Redes de computadoras/6 - Capa de enlace/6.6 Hub y Switch.md",
-    "Redes de computadoras/5 - Capa de Red, plano de control/5. Capa de Red, plano de control.md",
-    "Redes de computadoras/5 - Capa de Red, plano de control/5.1 Algoritmos de enrutamiento.md",
-    "Redes de computadoras/5 - Capa de Red, plano de control/5.1.1 Algoritmo de enrutamiento de estado de enlaces (LS).md",
-    "Redes de computadoras/5 - Capa de Red, plano de control/5.1.2 Algoritmo de enrutamiento por vector de distancias (DV).md",
-    "Redes de computadoras/5 - Capa de Red, plano de control/5.3 Broadcast y multicast.md",
-    "Redes de computadoras/5 - Capa de Red, plano de control/5.2 Enrutamiento jerárquico y sistemas autónomos.md",
-    "Redes de computadoras/99 - Otros/99.1 Puertos bien conocidos.md",
-    "Administración General para Ingenieros/media/Pasted image 20230517172430.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517172308.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517172144.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517171732.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517171229.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517171224.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517171146.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517170703.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517165909.png",
-    "Administración General para Ingenieros/media/Pasted image 20230517155238.png",
+    "Introducción a la Ingeniería de Software/Extras/Testing basado en la experiencia.md",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230520205852.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230520205845.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230520205824.png",
+    "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230520200146.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230519215409.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230519215341.png",
+    "Introducción a la Ingeniería de Software/Extras/Guía para la generación de CP a partir de HU.md",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230519200551.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230519200538.png",
+    "Introducción a la Ingeniería de Software/Extras/Generating Test Cases From Use Cases.md",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230519190108.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230519180649.png",
+    "Introducción a la Ingeniería de Software/Indice.md",
+    "Introducción a la Ingeniería de Software/Extras/Tecnicas de generación de casos de prueba.md",
+    "Pasted image 20230512172229.png.md",
+    "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+    "Introducción a la Teoría de la Información/Tema 5 - Codificación de canal.md",
+    "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
+    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
+    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
+    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
+    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
+    "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
+    "Administración General para Ingenieros/Capítulo 5 - Responsabilidad social y ética administrativa.md",
+    "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
+    "Administración General para Ingenieros/Capítulo 6 - Toma de decisiones.md",
+    "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
+    "Administración General para Ingenieros/Índice.md",
+    "Bases de datos/Resumen diapos.md",
+    "Bases de datos/Resumen 2009.md",
+    "Bases de datos/Resumen práctico completo.md",
+    "Bases de datos/Índice.md",
+    "index.md",
     "Introducción a la Ingeniería de Software/media",
     "Introducción a la Ingeniería de Software/Extras",
     "Introducción a la Ingeniería de Software",
