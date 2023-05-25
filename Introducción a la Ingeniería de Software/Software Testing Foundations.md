@@ -1323,3 +1323,176 @@ Se ejecutan al menos una vez todos los caminos posibles (combinaciones de trayec
 
 
 
+
+# Chapter 6 - Test Management
+
+## 6.1 Test Organization
+
+Así como en el desarrollo, las actividades de testing necesitan ser organizadas. Las mismas deben ser coordinadas con las actividades de desarrollo.
+
+### 6.1.1 Test Teams
+Because there is a tendency to be blind to our own errors, it is much more efficient to organize testing as independently as possible from development.
+
+##### Benefits of independent testing
+- Independent testers are unbiased and thus find additional and different defects than developers find.
+- An independent tester can verify (implicit) assumptions made by developers during specification and implementation of the system.
+
+##### Possible drawbacks of independent testing
+- Too much isolation may impair the necessary communication between testers and developers.
+- Independent testing may become a bottleneck if there is a lack of necessary resources.
+- Developers may lose a sense of responsibility for quality because they may think, “the testers will find the problems anyway.”
+
+##### Models of independent testing
+1. The development team is responsible for testing, but developers test each other’s programs, i.e., a developer tests the program of a colleague.
+2. There are testers within the development team; these testers do all the test work for their team.
+3. One or more dedicated testing teams exist within the project team (these teams are not responsible for development tasks).
+4. Independent test specialists are used for specific testing tasks (such as performance test, usability test, security test, or for showing conformance to standards and regulatory rules).
+5. A separate organization (testing department, external testing facility, test laboratory) takes over the testing (or important parts of it, such as the system test).
+
+For each of these models, it is advantageous to have testing consultants available. These consultants can support several projects and can offer methodical assistance in areas such as training, coaching, test automation, etc. Which of the previously mentioned models is appropriate depends on—among other things—the current **test level**.
+
+#### Component Testing
+Testing should be close to development.
+Independent testing such as in model 1 is easy to organize and would certainly improve quality. Testing such as in model 2 is useful, if a sufficient number of testers relative to the number of developers can be made available. 
+However, with both testing models, there is the risk that the participating people essentially consider themselves developers and thus will neglect their testing responsibilities.
+
+#### Integration Testing
+When the same team that developed the components also performs integration and integration testing, this testing can be organized as for component testing (models 1, 2).
+Depending on the size of the development project and the number of components, models 3, 4, and 5 should be considered here.
+
+#### System Testing
+The final product shall be considered from the point of view of the customer and the end user. Therefore, independence from the development team is crucial. This leaves only models 3, 4, and 5.
+
+### 6.1.2 Tasks and Qualifications
+Specialists with knowledge covering the full scope of activities in the test process should be available.
+
+The following roles should be assigned, ideally to specifically qualified employees:
+- <b><u>Test manager (test leader):</u></b> Test planning and test control expert(s).
+	- Selecciona y da soporte a las estrategias de pruebas a utilizar, procura y asigna los recursos a las mismas.
+	- Identifica las métricas necesarias para dar seguimiento al progreso de las pruebas y controlar la calidad del producto de software.
+- <b><u>Test designer (test analyst):</u></b> Expert(s) in test methods and test specification.
+- <b><u>Test automator:</u></b> Test automation expert(s) with knowledge of testing basics, programming experience, and deep knowledge of the testing tools and script languages. Automates tests as required, making use of the test tools available for the project.
+- <b><u>Test administrator:</u></b> Expert(s) for installing and operating the test environment.
+- <b><u>Tester:</u></b> Expert(s) for executing tests and reporting failures.
+
+#### Social competence is important
+#### Multidisciplinary team
+Especially in system testing, it is often necessary to extend the test team by adding IT specialists, at least temporarily, to perform work for the test team. For example, these might be database administrators, database designers, or network specialists.
+
+#### Specialized software test service providers
+If appropriate resources are not available within the company, test activities can be given to external software testing service providers. This is similar to letting an external software house develop software.
+
+## 6.2 Planning
+
+Testing should not be the only measure for quality assurance (QA). It should be used in combination with other quality assurance measures.
+Las actividades de verificación se deben planificar en mayor o menor grado, dependiendo y siendo coherente con el enfoque del proceso de desarrollo.
+Permite que el personal técnico obtenga una visión global de las pruebas del sistema y ubique su propio trabajo en ese contexto.
+
+### 6.2.1 Quality Assurance Plan
+
+Contents of a Software Quality Assurance Plan as defined in IEEE 730-2002:
+1. Purpose
+2. Reference documents
+3. Management 
+4. Documentation 
+5. Standards, practices, conventions, and metrics 
+6. Software reviews 
+7. Test 
+8. Problem reporting and corrective action 
+9. Tools, techniques, and methodologies 
+10. Media control 
+11. Supplier control 
+12. Records collection, maintenance, and retention 
+13. Training 
+14. Risk management 
+15. Glossary 
+16. SQA Plan Change Procedure and History
+
+### 6.2.2 Test Plan
+A task as extensive as testing requires careful planning. This planning and test preparation starts as early as possible in the software project.
+La V&V es un proceso caro se requiere llevar una planificación cuidadosa para obtener el máximo provecho de las revisiones y las pruebas para controlar los costos del proceso de V&V.
+
+#### Test planning activities
+- Defining the overall approach to and strategy for testing
+- Deciding about the test environment and test automation
+- Defining the test levels and their interaction, and integrating the testing activities with other project activities
+- Deciding how to evaluate the test results
+- Selecting metrics for monitoring and controlling test work, as well as defining test exit criteria
+- Determining how much test documentation shall be prepared and determining templates
+- Writing the test plan and deciding on what, who, when, and how much testing
+- Estimating test effort and test costs; (re)estimating and (re)planning the testing tasks during later testing work
+- Pone en la balanza los enfoques estático y dinámico para la verificación y la validación
+- Utiliza estándares y procedimientos para las revisiones y las pruebas de software
+- Establece listas de verificación para las inspecciones
+- Define el plan de pruebas de software
+
+
+```ad-warning
+title: Mayor error
+El mayor error cometido en la planificación de un proceso de prueba: 
+
+
+<u>Suponer que no se encontrarán fallas al momento de realizar el cronograma.</u>
+
+Los resultados de esta equivocación son obvios:
+- Se subestima la cantidad de personal a asignar
+- Se subestima el tiempo de calendario a asignar
+- Entregamos el sistema fuera de fecha o ni siquiera entregamos
+
+```
+
+##### IEEE Standard 829-1998
+The results are documented in the test plan. IEEE Standard 829-1998 [IEEE 829] provides a template.
+![[Pasted image 20230521125518.png]]
+
+This structure works well in practice. The sections listed will be found in real test plans in many projects in the same, or slightly modified, form.
+The different level test plans are optional, depending on the criticality of the product developed.
+
+### 6.2.3 Prioritizing Tests
+Even with good planning and control, it is possible that the time and budget for the total test, or for a certain test level, are not sufficient for executing all planned test cases.
+This means test cases must be prioritized.
+
+#### Prioritization rule
+Test cases should be prioritized so that if any test ends prematurely, the best possible test result at that point of time is achieved.
+
+#### The most important test cases first
+This way important problems can be found early.
+
+#### Criteria for prioritization
+- The **usage frequency** of a function or the **probability** of failure in software use. If certain functions of the system are used often and they contain a fault, then the probability of this fault leading to a failure is high.
+- **Failure risk.** Risk is the combination (mathematical product) of severity and failure probability. The severity is the expected damage. Tests that may find failures with a high risk get higher priority than tests that may find failures with low risks.
+- The **visibility** of a failure for the end user is a further criterion for prioritization of test cases. This is especially important in interactive systems.
+- Test cases can be chosen depending on the **priority of the requirements**. The different functions delivered by a system have different importance for the customer.
+- Besides the functional requirements, the **quality characteristics** may have differing importance for the customer. Correct implementation of the important quality characteristics must be tested.
+- Prioritization can also be done from the perspective of development or system architecture. Components that lead to severe consequences when they fail (for example, a crash of the system) should be tested especially intensively.
+- **Complexity** of the individual components and system parts can be used to prioritize test cases. Complex program parts should be tested more intensively because developers probably introduced more faults.
+- Failures having a high project risk should be found early. These are failures that require considerable correction work that in turn requires special resources and leads to considerable delays of the project.
+
+Without prioritizing test cases, it is not possible to adequately allocate limited test resources. Concentration of resources on high-priority test cases is a MUST.
+
+### 6.2.4 Test Entry and Exit Criteria
+Defining clear test entry and exit criteria is an important part of test planning. They define when testing can be started and stopped (totally or within a test level).
+
+#### Test start criteria
+- The test environment is ready.
+- The test tools are ready for use in the test environment.
+- Test objects are installed in the test environment.
+- The necessary test data is available.
+
+#### Exit criteria
+Exit criteria are used to make sure test work is not stopped by chance Exit criteria or prematurely.
+
+- Achieved test coverage: Tests run, covered requirements, code coverage, etc.
+- Product quality: Defect density, defect severity, failure rate, and reliability of the test object
+- Residual risk: Tests not executed, defects not repaired, incomplete coverage of requirements or code, etc.
+- Economic constraints: Allowed cost, project risks, release deadlines, and market chances
+
+
+
+
+
+
+
+
+
+

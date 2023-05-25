@@ -29,10 +29,14 @@
 
 [[Software Testing Foundations]]
 	[[Generating Test Cases From Use Cases]]
+	[[Guía para la generación de CP a partir de HU]]
+	[[Testing basado en la experiencia]]
 
+# Liberación y Evolución
 
-
-
+[[Liberación]]
+[[Capítulo 9 - Evolución del Software]]
+[[Deuda técnica]]
 
 
 

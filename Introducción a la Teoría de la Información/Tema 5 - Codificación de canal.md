@@ -120,22 +120,22 @@
 ![[Pasted image 20230509203242.png]]
 
 ### Demostración del recíproco
+#### Recíproco: enunciado
+![[Pasted image 20230509203652.png]]
+
 #### Hoja de ruta
 ![[Pasted image 20230509203424.png]]
 
 #### Caso simple: probabilidad de error 0
 ![[Pasted image 20230509203443.png]]
 ![[Pasted image 20230509203454.png]]
-Osea, utilizar el canal varias veces no aumenta su capacidad.
+Osea, utilizar el canal varias veces <u>no aumenta</u> su capacidad.
 
 ![[Pasted image 20230509203520.png]]
 
 #### Desigualdad de Fano para codificación de canal
 ![[Pasted image 20230509203617.png]]
 ![[Pasted image 20230509203626.png]]
-
-#### Recíproco: enunciado
-![[Pasted image 20230509203652.png]]
 
 #### Recíproco: demostración
 ![[Pasted image 20230509203700.png]]
