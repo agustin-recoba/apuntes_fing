@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>2.3 Servicios de transporte</title>
+  <title>Generating Test Cases From Use Cases</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta charset="UTF-8">
@@ -555,108 +555,118 @@
           <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
           <div class="mod-header"></div>
           <div>
-            <h1 data-heading="Servicios disponibles para aplicaciones" id="Servicios_disponibles_para_aplicaciones">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                  <path d="M3 8L12 17L21 8"></path>
-                </svg></div>Servicios disponibles para aplicaciones
-            </h1>
+            <p>The most important part of a use case for generating test cases is the flow of events. The two main parts of the flow of events are the <b><u>basic flow of events</u></b> and the <b><u>alternate flows of events</u></b>:</p>
           </div>
           <div>
             <ul class="has-list-bullet">
               <li data-line="0">
-                <div class="list-bullet"></div>
-                <h2 data-heading="Transferencia de datos fiable:" id="Transferencia_de_datos_fiable:">
-                  <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div>Transferencia de datos fiable:
-                </h2>
-                <p>Un protocolo proporciona un servicio de entrega de datos garantizado. Si un protocolo no proporciona una transferencia de datos fiable, los datos enviados por el proceso emisor pueden no llegar nunca al proceso de recepción. Esto puede ser aceptable para aplicaciones tolerantes a pérdidas.</p>
+                <div class="list-bullet"></div>The <strong><em>basic</em></strong> flow of events should cover what "normally" happens when the use case is performed.
               </li>
-              <li data-line="3">
-                <div class="list-bullet"></div>
-                <h2 data-heading="Tasa de transferencia:" id="Tasa_de_transferencia:">
-                  <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div>Tasa de transferencia:
-                </h2>
-                <p>Disponible garantizada a una cierta velocidad especificada. </p>
+              <li data-line="1">
+                <div class="list-bullet"></div>The <strong><em>alternate</em></strong> flows of events covers behavior of an optional or exceptional character relative to normal behavior, and also variations of the normal behavior. You can think of the alternate flows of events as "detours" from the basic flow of events.
               </li>
             </ul>
           </div>
           <div>
-            <p><strong>Aplicaciones sensibles al ancho de banda:</strong> aplicaciones con requisitos de tasa de transferencia.<br>
-              <strong>Aplicaciones elásticas:</strong> pueden hacer uso de la tasa de transferencia que haya disponible.
+            <p><span alt="Pasted image 20230519180218.png" src="Pasted image 20230519180218.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230519180218.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230519180218.png?1684530138007"></span></p>
+          </div>
+          <div>
+            <p>A significant amount of detail goes into fully specifying a use case. Ideally, the flows should be written as "dialogs" between the system and the actors. Each step should explain what the actor does and what the system does in response; it should also be numbered and have a title. Alternate flows always specify where they start in the basic flow and where they go when they end.</p>
+          </div>
+          <div>
+            <h1 data-heading="Use-Case Scenarios" id="Use-Case_Scenarios">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Use-Case Scenarios
+            </h1>
+          </div>
+          <div>
+            <p>A use-case scenario is an instance of a use case, or a complete "path" through the use case. End users of the completed system can go down many paths as they execute the functionality specified in the use case.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230519180406.png" src="Pasted image 20230519180406.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230519180406.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230519180406.png?1684530246191"></span></p>
+          </div>
+          <div>
+            <p>These scenarios will be used as the basis for creating test cases.</p>
+          </div>
+          <div>
+            <h1 data-heading="Generating Test Cases" id="Generating_Test_Cases">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Generating Test Cases
+            </h1>
+          </div>
+          <div>
+            <p>We will describe a three-step process for generating test cases from a fullydetailed use case:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">For each use case, generate a full set of use-case scenarios.</li>
+              <li data-line="1">For each scenario, identify at least one test case and the conditions that will make it "execute."</li>
+              <li data-line="2">For each test case, identify the data values with which to test.</li>
+            </ol>
+          </div>
+          <div>
+            <h2 data-heading="Step One: Generate Scenarios" id="Step_One:_Generate_Scenarios">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Step One: Generate Scenarios
+            </h2>
+          </div>
+          <div>
+            <p>Read the use-case textual description and identify each combination of main and alternate flows -- the scenarios -- and create a scenario matrix.</p>
+          </div>
+          <div>
+            <h2 data-heading="Step Two: Identify Test Cases" id="Step_Two:_Identify_Test_Cases">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Step Two: Identify Test Cases
+            </h2>
+          </div>
+          <div>
+            <p>We can do this by analyzing the scenarios and reviewing the use case textual description as well. There should be at least one test case for each scenario, but there will probably be more. </p>
+          </div>
+          <div>
+            <p>For example, if the textual description for an alternate flow is written in a very cursory way, like the description below,<br>
+              <em>3A. Unfulfilled Prerequisites, Course Full, or Schedule Conflicts</em><br>
+              Then additional test cases may be required to test all the possibilities. In addition, we may wish to add test cases to test boundary conditions.
             </p>
           </div>
           <div>
-            <ul class="has-list-bullet">
-              <li data-line="0">
-                <div class="list-bullet"></div>
-                <h2 data-heading="Temporización:" id="Temporización:">
-                  <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div>Temporización:
-                </h2>
-                <p>Atractivo para aplicaciones en tiempo real.</p>
-              </li>
-              <li data-line="3">
-                <div class="list-bullet"></div>
-                <h2 data-heading="Seguridad:" id="Seguridad:">
-                  <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div>Seguridad:
-                </h2>
-                <p>Confidencialidad entre los procesos, garantizar la integridad de los datos y mecanismos de autenticación en el punto terminal.</p>
-              </li>
-            </ul>
+            <p>The next step in fleshing out the test cases is to reread the use-case textual description and find the conditions or data elements required to execute the various scenarios. For the Register for Course use case, conditions would be student ID, password, courses selected, etc.</p>
           </div>
           <div>
-            <h1 data-heading="Servicios de transporte proporcionados por Internet" id="Servicios_de_transporte_proporcionados_por_Internet">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                  <path d="M3 8L12 17L21 8"></path>
-                </svg></div>Servicios de transporte proporcionados por Internet
-            </h1>
+            <p>To clearly document the test cases, once again, a matrix format is useful, like the one below.</p>
           </div>
           <div>
-            <h2 data-heading="Servicios TCP" id="Servicios_TCP">
+            <p><span alt="Pasted image 20230519180649.png" src="Pasted image 20230519180649.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230519180649.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230519180649.png?1684530409836"></span></p>
+          </div>
+          <div>
+            <p>Notice that in this matrix no data values have actually been entered. The cells of the table contain a V, I, or n/a. V indicates valid, I is for invalid, and n/a means that it is not necessary to supply a data value in this case.</p>
+          </div>
+          <div>
+            <h2 data-heading="Step Three: Identify Data Values to Test" id="Step_Three:_Identify_Data_Values_to_Test">
               <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div>Servicios TCP
+                </svg></div>Step Three: Identify Data Values to Test
             </h2>
           </div>
           <div>
-            <p>Muchos programas dentro de una red de datos compuesta por redes de computadoras, pueden usar TCP para crear “conexiones” entre sí a través de las cuales puede enviarse un flujo de datos. El protocolo garantiza que los datos serán entregados en su destino sin errores y en el mismo orden en que se transmitieron. También proporciona un mecanismo para distinguir distintas aplicaciones dentro de una misma máquina, a través del concepto de puerto.<br>
-              TCP da soporte a muchas de las aplicaciones más populares de Internet (navegadores, intercambio de ficheros, clientes FTP, etc.) y protocolos de aplicación HTTP, SMTP, SSH y FTP.<br>
-              Este modelo de servicio ofrece un servicio orientado a conexión y un servicio de transferencia confiable de los datos. Cuando una aplicación invoca TCP como protocolo, la aplicación recibe ambos de estos servicios.</p>
+            <p>Once all of the test cases have been identified, they should be reviewed and validated to ensure accuracy and to identify redundant or missing test cases. Then, once they are approved, the final step is to substitute actual data values for the Is and Vs.<br>
+              Without test data, test cases (or test procedures) can't be implemented or executed; they are just descriptions of conditions, scenarios, and paths.</p>
           </div>
           <div>
-            <ul class="has-list-bullet">
-              <li data-line="0">
-                <div class="list-bullet"></div>Servicio orientado a la conexión:<br>
-                cliente y servidor intercambian la información de control de la capa de transporte entre sí antes que empiecen a fluir los mensajes de la capa de aplicación. Después de la negociación se dice que hay una conexión TCP (full duplex) entre los sockets de los dos procesos.
-              </li>
-              <li data-line="2">
-                <div class="list-bullet"></div>Servicio de transferencia de datos fiable:<br>
-                Los procesos pueden confiar en TCP para entregar todos los datos enviados sin errores y en el orden correcto.<br>
-                TCP también incluye un servicio de control de congestión para mejorar el funcionamiento general de internet, más que para el beneficio directo de los procesos que se comunican.
-              </li>
-              <li data-line="5">
-                <div class="list-bullet"></div>No provee:<br>
-                Control de tiempo, garantías de throughput mínimo ni seguridad.
-              </li>
-            </ul>
+            <p><span alt="Pasted image 20230519190108.png" src="Pasted image 20230519190108.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230519190108.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230519190108.png?1684533668360"></span></p>
           </div>
           <div>
-            <h2 data-heading="Servicios UDP" id="Servicios_UDP">
+            <h2 data-heading="Putting It All Together" id="Putting_It_All_Together">
               <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div>Servicios UDP
+                </svg></div>Putting It All Together
             </h2>
           </div>
           <div>
-            <p>UDP es un protocolo de transporte ligero simple que proporciona unos servicios mínimos y no está orientado a la conexión, por lo que no tiene lugar un procedimiento de negociación antes de que los dos procesos comiencen a comunicarse.<br>
-              UDP proporciona un servicio de transferencia de datos no fiable. Tampoco incluye un mecanismo de congestión.<br>
-              Es decir, UDP ni siquiera garantiza que el mensaje vaya a llegar a su destino, e incluso pueden llegar desordenados.</p>
+            <p>In current practice, use cases are associated with the front end of the software development lifecycle and test cases are typically associated with the latter part of the lifecycle. By leveraging use cases to generate test cases, however, testing teams can get started much earlier in the lifecycle, allowing them to identify and repair defects that would be very costly to fix later, ship on time, and ensure that the system will work reliably.</p>
           </div>
           <div class="mod-footer"></div>
         </div>
@@ -668,59 +678,44 @@
           <div class="outline-header">
             <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
           </div>
-          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Servicios_disponibles_para_aplicaciones">
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Use-Case_Scenarios">
               <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div><span class="outline-item-title">Servicios disponibles para aplicaciones</span>
+                </svg></div><span class="outline-item-title">Use-Case Scenarios</span>
             </a>
-            <div class="outline-item-children">
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Transferencia_de_datos_fiable:">
-                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Transferencia de datos fiable:</span>
-                </a>
-                <div class="outline-item-children"></div>
-              </div>
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Tasa_de_transferencia:">
-                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Tasa de transferencia:</span>
-                </a>
-                <div class="outline-item-children"></div>
-              </div>
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Temporización:">
-                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Temporización:</span>
-                </a>
-                <div class="outline-item-children"></div>
-              </div>
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Seguridad:">
-                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Seguridad:</span>
-                </a>
-                <div class="outline-item-children"></div>
-              </div>
-            </div>
+            <div class="outline-item-children"></div>
           </div>
-          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Servicios_de_transporte_proporcionados_por_Internet">
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Generating_Test_Cases">
               <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div><span class="outline-item-title">Servicios de transporte proporcionados por Internet</span>
+                </svg></div><span class="outline-item-title">Generating Test Cases</span>
             </a>
             <div class="outline-item-children">
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Servicios_TCP">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Step_One:_Generate_Scenarios">
                   <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                       <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Servicios TCP</span>
+                    </svg></div><span class="outline-item-title">Step One: Generate Scenarios</span>
                 </a>
                 <div class="outline-item-children"></div>
               </div>
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Servicios_UDP">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Step_Two:_Identify_Test_Cases">
                   <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                       <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Servicios UDP</span>
+                    </svg></div><span class="outline-item-title">Step Two: Identify Test Cases</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Step_Three:_Identify_Data_Values_to_Test">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Step Three: Identify Data Values to Test</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Putting_It_All_Together">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Putting It All Together</span>
                 </a>
                 <div class="outline-item-children"></div>
               </div>

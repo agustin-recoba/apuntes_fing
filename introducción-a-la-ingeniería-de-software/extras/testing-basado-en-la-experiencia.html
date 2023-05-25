@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>2.3 Servicios de transporte</title>
+  <title>Testing basado en la experiencia</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta charset="UTF-8">
@@ -555,108 +555,183 @@
           <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
           <div class="mod-header"></div>
           <div>
-            <h1 data-heading="Servicios disponibles para aplicaciones" id="Servicios_disponibles_para_aplicaciones">
+            <p>No es un enfoque sistemático (como vimos anteriormente), sino que por el contrario, <u>se basa fuertemente en la intuición, habilidades, conocimiento y experiencia</u> del tester.<br>
+              Los casos de prueba se basan en datos históricos (errores/defectos del pasado) o en la intuición de dónde podrían estar en el futuro (<strong><em>error guessing</em></strong>).<br>
+              Si no existe documentación para utilizar como bases del testing (requisitos, casos de uso, etc.), como técnica puede utilizarse el <u>testing exploratorio</u>.</p>
+          </div>
+          <div>
+            <h1 data-heading="Testing exploratorio" id="Testing_exploratorio">
               <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div>Servicios disponibles para aplicaciones
+                </svg></div>Testing exploratorio
             </h1>
           </div>
           <div>
-            <ul class="has-list-bullet">
-              <li data-line="0">
-                <div class="list-bullet"></div>
-                <h2 data-heading="Transferencia de datos fiable:" id="Transferencia_de_datos_fiable:">
-                  <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div>Transferencia de datos fiable:
-                </h2>
-                <p>Un protocolo proporciona un servicio de entrega de datos garantizado. Si un protocolo no proporciona una transferencia de datos fiable, los datos enviados por el proceso emisor pueden no llegar nunca al proceso de recepción. Esto puede ser aceptable para aplicaciones tolerantes a pérdidas.</p>
-              </li>
-              <li data-line="3">
-                <div class="list-bullet"></div>
-                <h2 data-heading="Tasa de transferencia:" id="Tasa_de_transferencia:">
-                  <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div>Tasa de transferencia:
-                </h2>
-                <p>Disponible garantizada a una cierta velocidad especificada. </p>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p><strong>Aplicaciones sensibles al ancho de banda:</strong> aplicaciones con requisitos de tasa de transferencia.<br>
-              <strong>Aplicaciones elásticas:</strong> pueden hacer uso de la tasa de transferencia que haya disponible.
-            </p>
+            <p>3 actividades de forma simultánea:</p>
           </div>
           <div>
             <ul class="has-list-bullet">
               <li data-line="0">
-                <div class="list-bullet"></div>
-                <h2 data-heading="Temporización:" id="Temporización:">
-                  <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div>Temporización:
-                </h2>
-                <p>Atractivo para aplicaciones en tiempo real.</p>
+                <div class="list-bullet"></div>Aprendizaje/exploración de la aplicación
               </li>
-              <li data-line="3">
-                <div class="list-bullet"></div>
-                <h2 data-heading="Seguridad:" id="Seguridad:">
-                  <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div>Seguridad:
-                </h2>
-                <p>Confidencialidad entre los procesos, garantizar la integridad de los datos y mecanismos de autenticación en el punto terminal.</p>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h1 data-heading="Servicios de transporte proporcionados por Internet" id="Servicios_de_transporte_proporcionados_por_Internet">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                  <path d="M3 8L12 17L21 8"></path>
-                </svg></div>Servicios de transporte proporcionados por Internet
-            </h1>
-          </div>
-          <div>
-            <h2 data-heading="Servicios TCP" id="Servicios_TCP">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                  <path d="M3 8L12 17L21 8"></path>
-                </svg></div>Servicios TCP
-            </h2>
-          </div>
-          <div>
-            <p>Muchos programas dentro de una red de datos compuesta por redes de computadoras, pueden usar TCP para crear “conexiones” entre sí a través de las cuales puede enviarse un flujo de datos. El protocolo garantiza que los datos serán entregados en su destino sin errores y en el mismo orden en que se transmitieron. También proporciona un mecanismo para distinguir distintas aplicaciones dentro de una misma máquina, a través del concepto de puerto.<br>
-              TCP da soporte a muchas de las aplicaciones más populares de Internet (navegadores, intercambio de ficheros, clientes FTP, etc.) y protocolos de aplicación HTTP, SMTP, SSH y FTP.<br>
-              Este modelo de servicio ofrece un servicio orientado a conexión y un servicio de transferencia confiable de los datos. Cuando una aplicación invoca TCP como protocolo, la aplicación recibe ambos de estos servicios.</p>
-          </div>
-          <div>
-            <ul class="has-list-bullet">
-              <li data-line="0">
-                <div class="list-bullet"></div>Servicio orientado a la conexión:<br>
-                cliente y servidor intercambian la información de control de la capa de transporte entre sí antes que empiecen a fluir los mensajes de la capa de aplicación. Después de la negociación se dice que hay una conexión TCP (full duplex) entre los sockets de los dos procesos.
+              <li data-line="1">
+                <div class="list-bullet"></div>Diseño de casos de prueba
               </li>
               <li data-line="2">
-                <div class="list-bullet"></div>Servicio de transferencia de datos fiable:<br>
-                Los procesos pueden confiar en TCP para entregar todos los datos enviados sin errores y en el orden correcto.<br>
-                TCP también incluye un servicio de control de congestión para mejorar el funcionamiento general de internet, más que para el beneficio directo de los procesos que se comunican.
-              </li>
-              <li data-line="5">
-                <div class="list-bullet"></div>No provee:<br>
-                Control de tiempo, garantías de throughput mínimo ni seguridad.
+                <div class="list-bullet"></div>Ejecución de casos de prueba
               </li>
             </ul>
           </div>
           <div>
-            <h2 data-heading="Servicios UDP" id="Servicios_UDP">
+            <p>Si bien no hay actividades explícitas de planificación:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Se puede utilizar el enfoque basado en sesiones,
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>Definir el objetivo que queremos cumplir con la sesión de testing
+                <ul class="has-list-bullet">
+                  <li data-line="2">
+                    <div class="list-bullet"></div>Establecer flujos de la aplicación
+                  </li>
+                  <li data-line="3">
+                    <div class="list-bullet"></div>Ver cómo se integra con otra aplicación
+                  </li>
+                  <li data-line="4">
+                    <div class="list-bullet"></div>Robustez
+                  </li>
+                </ul>
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>Limitar el tiempo dedicado a dicha sesión
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Los elementos del software bajo prueba son “explorados”:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>En una primera instancia se ejecutan unos pocos casos de prueba para obtener conocimiento acerca del software.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Se deriva el comportamiento del software (qué es y cómo funciona, qué problemas de calidad podría tener y qué expectativas debería cubrir).
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>En base a los resultados de sesiones anteriores se planifican nuevas sesiones utilizando una “hoja de ruta” para cada una.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Esta técnica es altamente dependiente de las habilidades del tester</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Pensamiento crítico, observadores, analíticos
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Conocimiento del negocio del software
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Preguntas importantes a realizarse en cada sesión de prueba" id="Preguntas_importantes_a_realizarse_en_cada_sesión_de_prueba">
               <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div>Servicios UDP
+                </svg></div>Preguntas importantes a realizarse en cada sesión de prueba
+            </h3>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">¿Cuál es el objetivo?</li>
+              <li data-line="1">¿Qué debe ser probado?</li>
+              <li data-line="2">¿Qué método de prueba debo usar?</li>
+              <li data-line="3">¿Qué tipo de problemas podría encontrar?</li>
+            </ol>
+          </div>
+          <div>
+            <h3 data-heading="Consideraciones generales:" id="Consideraciones_generales:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Consideraciones generales:
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Los resultados de los CP ejecutados influencian el diseño y ejecución de los CP que siguen a continuación
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Durante las pruebas se construye un modelo mental del SW
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Las pruebas se ejecutan contra ese “modelo” mental
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Resumen sobre técnicas de testing" id="Resumen_sobre_técnicas_de_testing">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Resumen sobre técnicas de testing
+            </h1>
+          </div>
+          <div>
+            <p>Vimos una amplia variedad de técnicas de prueba... ahora bien, ¿cuáles debería usar?</p>
+          </div>
+          <div>
+            <p>Factores que influencian: </p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>El tipo de objeto de prueba
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Documentación formal y/o disponibilidad de herramientas
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Cumplimiento de estándares
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Experiencia de los testers
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>Necesidades/deseos del cliente
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>Evaluación de riesgos
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Proceso para un módulo (sugerencia)" id="Proceso_para_un_módulo_(sugerencia)">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Proceso para un módulo (sugerencia)
             </h2>
           </div>
           <div>
-            <p>UDP es un protocolo de transporte ligero simple que proporciona unos servicios mínimos y no está orientado a la conexión, por lo que no tiene lugar un procedimiento de negociación antes de que los dos procesos comiencen a comunicarse.<br>
-              UDP proporciona un servicio de transferencia de datos no fiable. Tampoco incluye un mecanismo de congestión.<br>
-              Es decir, UDP ni siquiera garantiza que el mensaje vaya a llegar a su destino, e incluso pueden llegar desordenados.</p>
+            <p><span alt="Pasted image 20230520205824.png" src="Pasted image 20230520205824.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230520205824.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230520205824.png?1684627104208"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Comparación de técnicas" id="Comparación_de_técnicas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Comparación de técnicas
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230520205845.png" src="Pasted image 20230520205845.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230520205845.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230520205845.png?1684627125953"></span><br>
+              <span alt="Pasted image 20230520205852.png" src="Pasted image 20230520205852.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230520205852.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230520205852.png?1684627132501"></span>
+            </p>
           </div>
           <div class="mod-footer"></div>
         </div>
@@ -668,59 +743,45 @@
           <div class="outline-header">
             <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
           </div>
-          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Servicios_disponibles_para_aplicaciones">
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Testing_exploratorio">
               <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div><span class="outline-item-title">Servicios disponibles para aplicaciones</span>
+                </svg></div><span class="outline-item-title">Testing exploratorio</span>
             </a>
             <div class="outline-item-children">
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Transferencia_de_datos_fiable:">
+              <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Preguntas_importantes_a_realizarse_en_cada_sesión_de_prueba">
                   <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                       <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Transferencia de datos fiable:</span>
+                    </svg></div><span class="outline-item-title">Preguntas importantes a realizarse en cada sesión de prueba</span>
                 </a>
                 <div class="outline-item-children"></div>
               </div>
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Tasa_de_transferencia:">
+              <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Consideraciones_generales:">
                   <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                       <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Tasa de transferencia:</span>
-                </a>
-                <div class="outline-item-children"></div>
-              </div>
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Temporización:">
-                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Temporización:</span>
-                </a>
-                <div class="outline-item-children"></div>
-              </div>
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Seguridad:">
-                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                      <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Seguridad:</span>
+                    </svg></div><span class="outline-item-title">Consideraciones generales:</span>
                 </a>
                 <div class="outline-item-children"></div>
               </div>
             </div>
           </div>
-          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Servicios_de_transporte_proporcionados_por_Internet">
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Resumen_sobre_técnicas_de_testing">
               <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div><span class="outline-item-title">Servicios de transporte proporcionados por Internet</span>
+                </svg></div><span class="outline-item-title">Resumen sobre técnicas de testing</span>
             </a>
             <div class="outline-item-children">
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Servicios_TCP">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Proceso_para_un_módulo_(sugerencia)">
                   <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                       <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Servicios TCP</span>
+                    </svg></div><span class="outline-item-title">Proceso para un módulo (sugerencia)</span>
                 </a>
                 <div class="outline-item-children"></div>
               </div>
-              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Servicios_UDP">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Comparación_de_técnicas">
                   <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                       <path d="M3 8L12 17L21 8"></path>
-                    </svg></div><span class="outline-item-title">Servicios UDP</span>
+                    </svg></div><span class="outline-item-title">Comparación de técnicas</span>
                 </a>
                 <div class="outline-item-children"></div>
               </div>

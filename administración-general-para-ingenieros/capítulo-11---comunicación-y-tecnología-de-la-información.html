@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Capítulo 11 - Comunicación y tecnología de la información</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta charset="UTF-8">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
+
+
+  <link rel="stylesheet" href="../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../styles/theme.css">
+  <link rel="stylesheet" href="../styles/snippets.css">
+
+  <style> </style>
+  <style>
+    mjx-container[jax="CHTML"] {
+      line-height: 0;
+    }
+
+    mjx-container [space="1"] {
+      margin-left: .111em;
+    }
+
+    mjx-container [space="2"] {
+      margin-left: .167em;
+    }
+
+    mjx-container [space="3"] {
+      margin-left: .222em;
+    }
+
+    mjx-container [space="4"] {
+      margin-left: .278em;
+    }
+
+    mjx-container [space="5"] {
+      margin-left: .333em;
+    }
+
+    mjx-container [rspace="1"] {
+      margin-right: .111em;
+    }
+
+    mjx-container [rspace="2"] {
+      margin-right: .167em;
+    }
+
+    mjx-container [rspace="3"] {
+      margin-right: .222em;
+    }
+
+    mjx-container [rspace="4"] {
+      margin-right: .278em;
+    }
+
+    mjx-container [rspace="5"] {
+      margin-right: .333em;
+    }
+
+    mjx-container [size="s"] {
+      font-size: 70.7%;
+    }
+
+    mjx-container [size="ss"] {
+      font-size: 50%;
+    }
+
+    mjx-container [size="Tn"] {
+      font-size: 60%;
+    }
+
+    mjx-container [size="sm"] {
+      font-size: 85%;
+    }
+
+    mjx-container [size="lg"] {
+      font-size: 120%;
+    }
+
+    mjx-container [size="Lg"] {
+      font-size: 144%;
+    }
+
+    mjx-container [size="LG"] {
+      font-size: 173%;
+    }
+
+    mjx-container [size="hg"] {
+      font-size: 207%;
+    }
+
+    mjx-container [size="HG"] {
+      font-size: 249%;
+    }
+
+    mjx-container [width="full"] {
+      width: 100%;
+    }
+
+    mjx-box {
+      display: inline-block;
+    }
+
+    mjx-block {
+      display: block;
+    }
+
+    mjx-itable {
+      display: inline-table;
+    }
+
+    mjx-row {
+      display: table-row;
+    }
+
+    mjx-row>* {
+      display: table-cell;
+    }
+
+    mjx-mtext {
+      display: inline-block;
+    }
+
+    mjx-mstyle {
+      display: inline-block;
+    }
+
+    mjx-merror {
+      display: inline-block;
+      color: red;
+      background-color: yellow;
+    }
+
+    mjx-mphantom {
+      visibility: hidden;
+    }
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root mjx-container {
+      will-change: opacity;
+    }
+
+    mjx-assistive-mml {
+      position: absolute !important;
+      top: 0px;
+      left: 0px;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 1px 0px 0px 0px !important;
+      border: 0px !important;
+      display: block !important;
+      width: auto !important;
+      overflow: hidden !important;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    mjx-assistive-mml[display="block"] {
+      width: 100% !important;
+    }
+
+    mjx-math {
+      display: inline-block;
+      text-align: left;
+      line-height: 0;
+      text-indent: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 100%;
+      font-size-adjust: none;
+      letter-spacing: normal;
+      border-collapse: collapse;
+      word-wrap: normal;
+      word-spacing: normal;
+      white-space: nowrap;
+      direction: ltr;
+      padding: 1px 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: block;
+      text-align: center;
+      margin: 1em 0;
+    }
+
+    mjx-container[jax="CHTML"][display="true"][width="full"] {
+      display: flex;
+    }
+
+    mjx-container[jax="CHTML"][display="true"] mjx-math {
+      padding: 0;
+    }
+
+    mjx-container[jax="CHTML"][justify="left"] {
+      text-align: left;
+    }
+
+    mjx-container[jax="CHTML"][justify="right"] {
+      text-align: right;
+    }
+
+    mjx-msub {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-mi {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c {
+      display: inline-block;
+    }
+
+    mjx-utext {
+      display: inline-block;
+      padding: .75em 0 .2em 0;
+    }
+
+    mjx-mn {
+      display: inline-block;
+      text-align: left;
+    }
+
+    mjx-c::before {
+      display: block;
+      width: 0;
+    }
+
+    .MJX-TEX {
+      font-family: MJXZERO, MJXTEX;
+    }
+
+    .TEX-B {
+      font-family: MJXZERO, MJXTEX-B;
+    }
+
+    .TEX-I {
+      font-family: MJXZERO, MJXTEX-I;
+    }
+
+    .TEX-MI {
+      font-family: MJXZERO, MJXTEX-MI;
+    }
+
+    .TEX-BI {
+      font-family: MJXZERO, MJXTEX-BI;
+    }
+
+    .TEX-S1 {
+      font-family: MJXZERO, MJXTEX-S1;
+    }
+
+    .TEX-S2 {
+      font-family: MJXZERO, MJXTEX-S2;
+    }
+
+    .TEX-S3 {
+      font-family: MJXZERO, MJXTEX-S3;
+    }
+
+    .TEX-S4 {
+      font-family: MJXZERO, MJXTEX-S4;
+    }
+
+    .TEX-A {
+      font-family: MJXZERO, MJXTEX-A;
+    }
+
+    .TEX-C {
+      font-family: MJXZERO, MJXTEX-C;
+    }
+
+    .TEX-CB {
+      font-family: MJXZERO, MJXTEX-CB;
+    }
+
+    .TEX-FR {
+      font-family: MJXZERO, MJXTEX-FR;
+    }
+
+    .TEX-FRB {
+      font-family: MJXZERO, MJXTEX-FRB;
+    }
+
+    .TEX-SS {
+      font-family: MJXZERO, MJXTEX-SS;
+    }
+
+    .TEX-SSB {
+      font-family: MJXZERO, MJXTEX-SSB;
+    }
+
+    .TEX-SSI {
+      font-family: MJXZERO, MJXTEX-SSI;
+    }
+
+    .TEX-SC {
+      font-family: MJXZERO, MJXTEX-SC;
+    }
+
+    .TEX-T {
+      font-family: MJXZERO, MJXTEX-T;
+    }
+
+    .TEX-V {
+      font-family: MJXZERO, MJXTEX-V;
+    }
+
+    .TEX-VB {
+      font-family: MJXZERO, MJXTEX-VB;
+    }
+
+    mjx-stretchy-v mjx-c,
+    mjx-stretchy-h mjx-c {
+      font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+    }
+
+    @font-face
+
+    /* 0 */
+      {
+      font-family: MJXZERO;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 1 */
+      {
+      font-family: MJXTEX;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 2 */
+      {
+      font-family: MJXTEX-B;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 3 */
+      {
+      font-family: MJXTEX-I;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 4 */
+      {
+      font-family: MJXTEX-MI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 5 */
+      {
+      font-family: MJXTEX-BI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 6 */
+      {
+      font-family: MJXTEX-S1;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 7 */
+      {
+      font-family: MJXTEX-S2;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 8 */
+      {
+      font-family: MJXTEX-S3;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 9 */
+      {
+      font-family: MJXTEX-S4;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 10 */
+      {
+      font-family: MJXTEX-A;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 11 */
+      {
+      font-family: MJXTEX-C;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 12 */
+      {
+      font-family: MJXTEX-CB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 13 */
+      {
+      font-family: MJXTEX-FR;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 14 */
+      {
+      font-family: MJXTEX-FRB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 15 */
+      {
+      font-family: MJXTEX-SS;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 16 */
+      {
+      font-family: MJXTEX-SSB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 17 */
+      {
+      font-family: MJXTEX-SSI;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 18 */
+      {
+      font-family: MJXTEX-SC;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 19 */
+      {
+      font-family: MJXTEX-T;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 20 */
+      {
+      font-family: MJXTEX-V;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+    }
+
+    @font-face
+
+    /* 21 */
+      {
+      font-family: MJXTEX-VB;
+      src: url("https://publish.obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+    }
+
+    mjx-c.mjx-c1D461.TEX-I::before {
+      padding: 0.626em 0.361em 0.011em 0;
+      content: "t";
+    }
+
+    mjx-c.mjx-c30::before {
+      padding: 0.666em 0.5em 0.022em 0;
+      content: "0";
+    }
+
+    mjx-c.mjx-c31::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "1";
+    }
+
+    mjx-c.mjx-c32::before {
+      padding: 0.666em 0.5em 0 0;
+      content: "2";
+    }
+  </style>
+
+
+  <script id="relative-paths">
+    let rootPath = "..";
+    let mediaPath = "../media";
+    let jsPath = "../scripts";
+    let cssPath = "../styles";
+  </script>
+
+  <script src="../scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:17px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em;">
+  <div class="flex-container">
+    <div id="sidebar" class="sidebar-left">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle" for="theme_toggle"><input class="toggle__input" type="checkbox" id="theme_toggle">
+            <div class="toggle__fill"></div>
+          </label></div>
+      </div>
+    </div>
+    <div class="center-content">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <h1 data-heading="ENTENDER LA COMUNICACIÓN" id="ENTENDER_LA_COMUNICACIÓN">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>ENTENDER LA COMUNICACIÓN
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="¿Qué es la comunicación?" id="¿Qué_es_la_comunicación?">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>¿Qué es la comunicación?
+            </h2>
+          </div>
+          <div>
+            <p>La transferencia y la comprensión de significados (<strong>énfasis en la transferencia de significado</strong>). Si no se ha transmitido información o ideas, la comunicación no se ha llevado a cabo.</p>
+          </div>
+          <div>
+            <p>La comunicación implica la comprensión de significados, es decir que para que la comunicación sea exitosa, el significado se debe impartir y entender, aunque el receptor no tiene por qué estar de acuerdo con ella.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><u>Comunicación interpersonal:</u> La comunicación entre dos o más personas
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><u>Comunicación organizacional:</u> Todos los patrones, redes y sistemas de comunicación de una organización.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Funciones de la comunicación" id="Funciones_de_la_comunicación">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Funciones de la comunicación
+            </h2>
+          </div>
+          <div>
+            <p>La comunicación sirve para 4 funciones principales: </p>
+          </div>
+          <div>
+            <h3 data-heading="<u>Control</u>" id="Control">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><u>Control</u>
+            </h3>
+          </div>
+          <div>
+            <p>La comunicación formal e informal se usa para controlar el comportamiento individual en la organización. </p>
+          </div>
+          <div>
+            <h3 data-heading="<u>Motivación</u>" id="Motivación">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><u>Motivación</u>
+            </h3>
+          </div>
+          <div>
+            <p>La comunicación aclara a los empleados lo que deben hacer, qué tan bien lo están haciendo y qué pueden hacer para mejorar el rendimiento si esto no está al nivel esperado. </p>
+          </div>
+          <div>
+            <h3 data-heading="<u>Expresión emocional</u>" id="Expresión_emocional">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><u>Expresión emocional</u>
+            </h3>
+          </div>
+          <div>
+            <p>La comunicación que se lleva a cabo en el grupo de trabajo es un mecanismo fundamental que los miembros usan para compartir sus frustraciones y sentimientos de satisfacción, como escape de expresión emocional de sentimientos y satisfacción de necesidades sociales. </p>
+          </div>
+          <div>
+            <h3 data-heading="<u>Información</u>" id="Información">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><u>Información</u>
+            </h3>
+          </div>
+          <div>
+            <p>La comunicación proporciona la información que los individuos y grupos necesitan para realizar el trabajo de las organizaciones. Para que los grupos trabajen con eficacia necesitan mantener alguna forma de control sobre los miembros, motivarlos para que trabajen, proporcionar un medio para la expresión emocional y tomar decisiones.</p>
+          </div>
+          <div>
+            <h1 data-heading="COMUNICACIÓN INTERPERSONAL" id="COMUNICACIÓN_INTERPERSONAL">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>COMUNICACIÓN INTERPERSONAL
+            </h1>
+          </div>
+          <div>
+            <p>Antes de que se lleve a cabo la comunicación debe haber un =&gt; Mensaje; Un propósito que se transmite. Este pasa entre una fuente (el transmisor) y un receptor. El transmisor lo debe =&gt; Codificar; Convertir un mensaje en símbolos donde intervienen cuatro características; destrezas, las actitudes, el conocimiento del transmisor y el sistemas sociocultural. Que pasa al receptor a través de un =&gt; Canal: el medio a través del cual viaja un mensaje. El receptor debe =&gt;Decodificar; traducir de nuevo el mensaje del transmisor.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230523152657.png" src="Pasted image 20230523152657.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230523152657.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230523152657.png?1684866417929"></span></p>
+          </div>
+          <div>
+            <p>Todo el proceso de comunicación es susceptible al <b><u>ruido</u></b> que es cualquier alteración que interfiere con la transmisión, la recepción o la retroalimentación de un mensaje. Algunos ejemplos de ruido; impresión ilegible, la estática telefónica, la falta de atención del receptor o los sonidos de fondo de la maquinaria o los colegas.</p>
+          </div>
+          <div>
+            <h2 data-heading="Métodos de comunicación interpersonal" id="Métodos_de_comunicación_interpersonal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Métodos de comunicación interpersonal
+            </h2>
+          </div>
+          <div>
+            <p>¿Cómo se sabe cual usar? Los gerentes pueden utilizar 12 preguntas que los ayuden a evaluar los diversos métodos de comunicación.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Retroalimentación.</strong> ¿Qué tan rápido puede responder el receptor al mensaje?
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><strong>Capacidad de complejidad.</strong> ¿Puede procesar el método mensajes complejos?
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><strong>Potencial de amplitud.</strong> ¿Cuántos mensajes diferentes se pueden transmitir usando este método?
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div><strong>Confidencialidad.</strong> ¿Pueden los comunicadores estar seguros de que solo reciben sus mensajes aquellos a los cuales va dirigido?
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div><strong>Facilidad de codificación.</strong> ¿Puede el transmisor usar este canal fácil y rápidamente?
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div><strong>Facilidad de decodificación oportuna.</strong> ¿Puede el receptor decodificar los mensajes fácil y rápidamente?
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div><strong>Limitación en tiempo y espacio.</strong> ¿Necesitan los transmisores y receptores comunicarse al mismo tiempo y espacio?
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div><strong>Costo.</strong> ¿Cuánto cuesta usar este método?
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div><strong>Calidez personal.</strong> ¿Este método que tan bien transmite la calidez interpersonal?
+              </li>
+              <li data-line="9">
+                <div class="list-bullet"></div><strong>Formalidad.</strong> ¿Tiene éste método el nivel necesario de formalidad?
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div><strong>Capacidad de detección.</strong> ¿Permite éste método buscar o detectar fácilmente el mensaje para obtener información importante?
+              </li>
+              <li data-line="11">
+                <div class="list-bullet"></div><strong>Tiempo de consumo.</strong> ¿Ejerce el transmisor o el receptor el máximo control al tratar con el mensaje?
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Comunicación no verbal" id="Comunicación_no_verbal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Comunicación no verbal
+            </h3>
+          </div>
+          <div>
+            <p>Comunicación transmitida sin palabras. Algunas comunicaciones con mayor significado no son orales ni escritas: sonidos, imágenes, actitudes, comportamientos, ropa, etc. Los 2 tipos mejor conocidos son: </p>
+          </div>
+          <div>
+            <p><em><strong>Lenguaje corporal:</strong></em> gestos, configuración facial y otros movimientos del cuerpo que transmiten un significado. Los movimientos de manos, las expresiones faciales y otros gestos comunican emocione so temperamentos. </p>
+          </div>
+          <div>
+            <p><em><strong>Entonación verbal:</strong></em> énfasis dado a las palabras o frases, que transmiten significado. Las personas responden a como se dijo algo y a lo que se dijo.</p>
+          </div>
+          <div>
+            <h2 data-heading="Barreras a la comunicación interpersonal eficaz" id="Barreras_a_la_comunicación_interpersonal_eficaz">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Barreras a la comunicación interpersonal eficaz
+            </h2>
+          </div>
+          <div>
+            <p><strong>Filtrado:</strong> Manipulación deliberada de la información para que parezca más favorable al receptor. Conforme la información se comunica a través de los niveles organizacionales, es condensada y sintetizada por los transmisores de tal manera que los que se encuentran en los niveles más altos no se sobrecarguen de información. El grado de filtrado depende del número de niveles verticales de la organización y de la cultura organizacional. La cultura organizacional alienta o desalienta el filtrado según el tipo de comportamiento que recompense.</p>
+          </div>
+          <div>
+            <p><strong>Emociones:</strong> La manera en que un receptor se siente al recibir un mensaje influye en su manera de interpretarlo. Las emociones extremas tienen más posibilidades de dificultar la comunicación eficaz.</p>
+          </div>
+          <div>
+            <p><strong>Sobrecarga de información:</strong> La información con que se cuenta para trabajar excede la capacidad de procesamiento. Cuando los individuos tienen más información de la que pueden clasificar y usar, tiende a seleccionar, ignorar, pasar por alto u olvidar la información. O pueden postergar el procesamiento excesivo hasta que la situación de sobrecarga se termine. El resultado, es información perdida y una comunicación menos eficaz.</p>
+          </div>
+          <div>
+            <p><strong>Defensa:</strong> Cuando las personas sienten que están siendo amenazadas tienden a reaccionar en ciertas formas que reducen su habilidad para lograr una comprensión mutua. Toman una actitud defensiva, atacan verbalmente a otros, hacen comentarios sarcásticos o son demasiado críticos y cuestionan los motivos de los demás.</p>
+          </div>
+          <div>
+            <p><strong>Lenguaje:</strong> Las palabras tienen distintos significados para diferentes personas. La edad, la educación y los antecedentes culturales son tres de las variables que influyen en el lenguaje, y las definiciones que le da a las palabras. Jerga: Terminología especializada o lenguaje técnico que los miembros de un grupo usan para comunicarse entre si. Los transmisores tienden a suponer que el vocabulario que ellos usan significa lo mismo para el receptor y para ellos.</p>
+          </div>
+          <div>
+            <p><strong>Cultura nacional:</strong> Las diferencias culturales pueden afectar la manera en la que un gerente decide comunicarse y estas diferencias pueden ser una barrera para la comunicación eficaz si no se toman en cuenta.</p>
+          </div>
+          <div>
+            <h2 data-heading="Venciendo las barreras" id="Venciendo_las_barreras">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Venciendo las barreras
+            </h2>
+          </div>
+          <div>
+            <p><strong>Utilice la retroalimentación:</strong> Es menos probable que problemas de malos entendidos e inexactitudes ocurran, si el gerente utiliza la retroalimentación, en el proceso de comunicación. Plantear serie de preguntas sobre un mensaje para determinar si se recibió y entendió o no. Puede pedirse que se repita el mensaje con sus propias palabras. No necesariamente tiene que ser verbal. Las acciones pueden hablar más fuerte que las palabras.</p>
+          </div>
+          <div>
+            <p><strong>Simplifique su lenguaje:</strong> La comprensión del mensaje mejora al simplificar el lenguaje usado en relación a la audiencia deseada.</p>
+          </div>
+          <div>
+            <p><strong>Escuche activamente:</strong> Escuchar el significado completo de un mensaje sin hacer juicios o interpretaciones prematuras, y exige una concentración total. La escucha activa mejora al desarrollar empatía con el transmisor, es decir al colocarse en su posición.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230523153236.png" src="Pasted image 20230523153236.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230523153236.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Administraci%C3%B3n%20General%20para%20Ingenieros/media/Pasted%20image%2020230523153236.png?1684866756889"></span></p>
+          </div>
+          <div>
+            <p><strong>Limite las emociones:</strong> Los gerentes no siempre se comunican de manera racional. Deben evitar comunicarse hasta recobrar la calma.</p>
+          </div>
+          <div>
+            <p><strong>Vigile las señales no verbales:</strong> Para tener la seguridad de que las mismas concuerdan y refuerzan las palabras que las acompañan.</p>
+          </div>
+          <div>
+            <h1 data-heading="COMUNICACIÓN ORGANIZACIONAL" id="COMUNICACIÓN_ORGANIZACIONAL">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>COMUNICACIÓN ORGANIZACIONAL
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="Comunicación formal e informal" id="Comunicación_formal_e_informal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Comunicación formal e informal
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <p><strong>Comunicación formal:</strong> Comunicación que sigue la cadena oficial de mando o que alguien requiera para realizar su trabajo.</p>
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>
+                <p><strong>Comunicación informal:</strong> Comunicación que no está definida por la jerarquía estructural de la organización.</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Dirección del flujo de la comunicación" id="Dirección_del_flujo_de_la_comunicación">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Dirección del flujo de la comunicación
+            </h2>
+          </div>
+          <div>
+            <p><strong>Hacia abajo:</strong> Comunicación que fluye hacia abajo, de un gerente a los empleados, que se usa para informar, dirigir, coordinar y evaluar a los empleados.</p>
+          </div>
+          <div>
+            <p><strong>Hacia arriba:</strong> Comunicación que fluye hacia arriba, de los empleados a los gerentes, que les da a conocer cómo se sienten los empleados con sus empleos, con sus colegas y la organización en general. Sirve también para obtener ideas sobre la manera de mejorar las cosas.</p>
+          </div>
+          <div>
+            <p><strong>Lateral (Horizontal):</strong> Comunicación que se lleva a cabo entre empleados que están en el mismo nivel organizacional, sirven para ahorrar tiempo y facilitar la coordinación.</p>
+          </div>
+          <div>
+            <p><strong>Diagonal:</strong> Comunicación que pasa a través de las áreas de trabajo y los niveles organizacionales con el fin de lograr eficiencia y velocidad.</p>
+          </div>
+          <div>
+            <h2 data-heading="Redes de comunicación organizacional" id="Redes_de_comunicación_organizacional">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Redes de comunicación organizacional
+            </h2>
+          </div>
+          <div>
+            <p>Variedad de patrones de los flujos verticales y horizontales de la comunicación organizacional. (Los flujos se combinan en patrones que se denominan redes de comunicación).</p>
+          </div>
+          <div>
+            <h3 data-heading="Tipos de redes de comunicación" id="Tipos_de_redes_de_comunicación">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tipos de redes de comunicación
+            </h3>
+          </div>
+          <div>
+            <p><strong>De cadena;</strong> la comunicación fluye de acuerdo con la cadena formal de mando, tanto hacia arriba como hacia abajo. Velocidad moderada, alta exactitud, surgimiento de un líder moderado y satisfacción de los miembros moderada.</p>
+          </div>
+          <div>
+            <p><strong>De rueda;</strong> la comunicación fluye entre un líder (centro) claramente identificable y fuerte y el resto del grupo o equipo de trabajo. Rápida velocidad, alta exactitud, surgimiento de un líder alto y baja satisfacción de los miembros.</p>
+          </div>
+          <div>
+            <p><strong>De todos los canales;</strong> la comunicación fluye libremente entre todos los miembros de un equipo de trabajo. Velocidad rápida, moderada exactitud, surgimiento de un líder nulo y alta satisfacción de los miembros. La red a usar depende del objetivo, pues no existe una mejor red para todas las situaciones.</p>
+          </div>
+          <div>
+            <h3 data-heading="Comunicación informal" id="Comunicación_informal">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Comunicación informal
+            </h3>
+          </div>
+          <div>
+            <p>La red de comunicación informal está activa en casi todas las organizaciones. Al estar al tanto del flujo y los patrones de comunicación informal, los gerentes pueden tener conocimiento de los asuntos que interesan a los empleados y puede usar la comunicación informal para diseminar información importante. Como la comunicación informal no se puede eliminar, sino manejarla, tampoco los rumores pueden eliminarse por completo, pero se puede minimizar su impacto comunicándose abierta, completa y honestamente con los empleados.</p>
+          </div>
+          <div>
+            <h1 data-heading="ENTENDER LA TECNOLOGÍA DE LA INFORMACIÓN" id="ENTENDER_LA_TECNOLOGÍA_DE_LA_INFORMACIÓN">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>ENTENDER LA TECNOLOGÍA DE LA INFORMACIÓN
+            </h1>
+          </div>
+          <div>
+            <h2 data-heading="Cómo afecta la tecnología a la comunicación gerencial" id="Cómo_afecta_la_tecnología_a_la_comunicación_gerencial">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Cómo afecta la tecnología a la comunicación gerencial
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="Sistemas de cómputo en red" id="Sistemas_de_cómputo_en_red">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Sistemas de cómputo en red
+            </h3>
+          </div>
+          <div>
+            <p>Vincula las computadoras individuales de una organización creando una red organizacional, con varias aplicaciones:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><u>Correo electrónico;</u> La transmisión instantánea de mensajes escritos a computadoras que están vinculadas. Desventaja: puede ser lento y pesado.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><u>Mensajes instantáneos;</u> Comunicación interactiva en tiempo real que se lleva a cabo entre usuarios de computadoras que ingresan a la red al mismo tiempo.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><u>Correo de voz;</u> Un sistema de comunicación que digitaliza un mensaje hablado, lo transmite a través de una red y lo almacena en un disco para que el receptor lo recupere más tarde.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div><u>Fax;</u> Comunicación por medio de máquinas que permiten la transmisión de documentos, que contienen tanto texto como gráficas, por medio de líneas telefónicas ordinarias.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div><u>Intercambio de datos electrónicos (EDI);</u> Una forma en la que las organizaciones intercambian documentos de transacciones de negocios estándar usando redes directas de computadora a computadora.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div><u>Teleconferencia;</u> Sistema de comunicación que permite a un grupo de personas realizar una conferencia simultánea usando el teléfono o software de comunicaciones en grupo por correo electrónico.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div><u>Videoconferencia;</u> Una conferencia de comunicación simultánea en la que los participantes se pueden ver unos a otros.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Los sistemas de cómputo en red han permitido el desarrollo de: </p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><u>Redes Internas o Intranet;</u> Sistema de comunicación organizacional interno que usa la tecnología de Internet y al que tienen acceso sólo los empleados de la organización.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><u>Redes externas o Extranet;</u> Red de comunicación organizacional que utiliza la tecnología de Internet y permite a los usuarios autorizados dentro de la organización comunicarse con ciertas personas que están fuera de ella.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Capacidades inalámbricas" id="Capacidades_inalámbricas">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Capacidades inalámbricas
+            </h3>
+          </div>
+          <div>
+            <p>Depende de señales enviadas a través del aire o del espacio sin ninguna conexión física, usando señales de microondas, satélites, ondas y antenas de radio o rayos de luz infrarroja.<br>
+              Hot spots: Sitios donde los usuarios obtienen acceso inalámbrico a Internet.<br>
+              Teléfonos inteligentes inalámbricos y notebooks.</p>
+          </div>
+          <div>
+            <h2 data-heading="Cómo afecta la tecnología de la información a las organizaciones" id="Cómo_afecta_la_tecnología_de_la_información_a_las_organizaciones">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Cómo afecta la tecnología de la información a las organizaciones
+            </h2>
+          </div>
+          <div>
+            <p>Los empleados (trabajando en equipos o en forma individual) necesitan información para tomar decisiones y realizar su trabajo. La tecnología puede afectar significativamente la manera que tienen los miembros de la organización de comunicarse, compartir información y llevar a cabo su trabajo.</p>
+          </div>
+          <div>
+            <h1 data-heading="TEMAS DE COMUNICACIÓN EN LAS ORGANIZACIONES ACTUALES" id="TEMAS_DE_COMUNICACIÓN_EN_LAS_ORGANIZACIONES_ACTUALES">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>TEMAS DE COMUNICACIÓN EN LAS ORGANIZACIONES ACTUALES
+            </h1>
+          </div>
+          <div>
+            <p>Ser un comunicador eficaz en las organizaciones de hoy significa estar conectado (sobre todo con los empleados y clientes, aunque en realidad con cualquier parte interesada de la organización).</p>
+          </div>
+          <div>
+            <h2 data-heading="Manejo de los sitios de quejas por Internet" id="Manejo_de_los_sitios_de_quejas_por_Internet">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Manejo de los sitios de quejas por Internet
+            </h2>
+          </div>
+          <div>
+            <p>a primera reacción de un gerente ante estas quejas en foros públicos sobre decisiones o acciones organizacionales es probable que sea el enojo o la negación. No obstante, los gerentes no deben tener tanta prisa para condenar estos sitios de quejas. En vez de eso, deben verlos como una fuente de información. ¿Qué se puede aprender de la información (exacta o inexacta) que se envía a estos sitios?<br>
+              Algunas respuestas posibles podrían incluir enviar mensajes al sitio de quejas para aclarar la información errónea o tomar acciones para corregir cualquier problema mencionado. Además, los gerentes podrían establecer un foro interno anónimo, como una comunicación por red interna, y animar a los empleados a enviar sus quejas ahí, más que al Internet público. Por último, los gerentes deben continuar vigilando los sitios Web. Al mantener sus dedos “tomando el pulso” de asuntos importantes para los empleados, pueden elegir el mejor curso de acción.</p>
+          </div>
+          <div>
+            <h2 data-heading="Gestión de los recursos de conocimiento de la organización" id="Gestión_de_los_recursos_de_conocimiento_de_la_organización">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Gestión de los recursos de conocimiento de la organización
+            </h2>
+          </div>
+          <div>
+            <p>[FALTA]</p>
+          </div>
+          <div>
+            <h2 data-heading="El papel de la comunicación en el servicio al cliente" id="El_papel_de_la_comunicación_en_el_servicio_al_cliente">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>El papel de la comunicación en el servicio al cliente
+            </h2>
+          </div>
+          <div>
+            <p>[FALTA]</p>
+          </div>
+          <div>
+            <h2 data-heading="Comunicación políticamente correcta" id="Comunicación_políticamente_correcta">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Comunicación políticamente correcta
+            </h2>
+          </div>
+          <div>
+            <p>[FALTA]</p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar" class="sidebar-right">
+      <div class="sidebar-content">
+        <div class="outline-container" data-size="0">
+          <div class="outline-header">
+            <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#ENTENDER_LA_COMUNICACIÓN">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">ENTENDER LA COMUNICACIÓN</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#¿Qué_es_la_comunicación?">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">¿Qué es la comunicación?</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Funciones_de_la_comunicación">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Funciones de la comunicación</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Control">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Control</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Motivación">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Motivación</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Expresión_emocional">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Expresión emocional</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Información">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Información</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#COMUNICACIÓN_INTERPERSONAL">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">COMUNICACIÓN INTERPERSONAL</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Métodos_de_comunicación_interpersonal">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Métodos de comunicación interpersonal</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Comunicación_no_verbal">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Comunicación no verbal</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Barreras_a_la_comunicación_interpersonal_eficaz">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Barreras a la comunicación interpersonal eficaz</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Venciendo_las_barreras">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Venciendo las barreras</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#COMUNICACIÓN_ORGANIZACIONAL">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">COMUNICACIÓN ORGANIZACIONAL</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Comunicación_formal_e_informal">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Comunicación formal e informal</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Dirección_del_flujo_de_la_comunicación">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Dirección del flujo de la comunicación</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Redes_de_comunicación_organizacional">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Redes de comunicación organizacional</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Tipos_de_redes_de_comunicación">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Tipos de redes de comunicación</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Comunicación_informal">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Comunicación informal</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#ENTENDER_LA_TECNOLOGÍA_DE_LA_INFORMACIÓN">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">ENTENDER LA TECNOLOGÍA DE LA INFORMACIÓN</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Cómo_afecta_la_tecnología_a_la_comunicación_gerencial">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Cómo afecta la tecnología a la comunicación gerencial</span>
+                </a>
+                <div class="outline-item-children">
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Sistemas_de_cómputo_en_red">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Sistemas de cómputo en red</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                  <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Capacidades_inalámbricas">
+                      <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                          <path d="M3 8L12 17L21 8"></path>
+                        </svg></div><span class="outline-item-title">Capacidades inalámbricas</span>
+                    </a>
+                    <div class="outline-item-children"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Cómo_afecta_la_tecnología_de_la_información_a_las_organizaciones">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Cómo afecta la tecnología de la información a las organizaciones</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#TEMAS_DE_COMUNICACIÓN_EN_LAS_ORGANIZACIONES_ACTUALES">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">TEMAS DE COMUNICACIÓN EN LAS ORGANIZACIONES ACTUALES</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Manejo_de_los_sitios_de_quejas_por_Internet">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Manejo de los sitios de quejas por Internet</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Gestión_de_los_recursos_de_conocimiento_de_la_organización">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Gestión de los recursos de conocimiento de la organización</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#El_papel_de_la_comunicación_en_el_servicio_al_cliente">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">El papel de la comunicación en el servicio al cliente</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="2"><a class="outline-item-contents internal-link" href="#Comunicación_políticamente_correcta">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Comunicación políticamente correcta</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

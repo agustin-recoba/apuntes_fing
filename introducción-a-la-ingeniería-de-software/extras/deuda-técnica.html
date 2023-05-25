@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Resumen práctico completo</title>
+  <title>Deuda técnica</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta charset="UTF-8">
@@ -16,10 +16,10 @@
   <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
 
 
-  <link rel="stylesheet" href="../styles/obsidian-styles.css">
-  <link rel="stylesheet" href="../styles/plugin-styles.css">
-  <link rel="stylesheet" href="../styles/theme.css">
-  <link rel="stylesheet" href="../styles/snippets.css">
+  <link rel="stylesheet" href="../../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../../styles/theme.css">
+  <link rel="stylesheet" href="../../styles/snippets.css">
 
   <style> </style>
   <style>
@@ -530,13 +530,13 @@
 
 
   <script id="relative-paths">
-    let rootPath = "..";
-    let mediaPath = "../media";
-    let jsPath = "../scripts";
-    let cssPath = "../styles";
+    let rootPath = "../..";
+    let mediaPath = "../../media";
+    let jsPath = "../../scripts";
+    let cssPath = "../../styles";
   </script>
 
-  <script src="../scripts/webpage.js"></script>
+  <script src="../../scripts/webpage.js"></script>
 
 </head>
 
@@ -550,17 +550,70 @@
       </div>
     </div>
     <div class="center-content">
-      <div class="markdown-preview-view markdown-rendered">
-        <div class="markdown-preview-sizer" style="width: 100%; height: 100%; margin: 0px; padding: 0px; max-width: 100%; min-height: 100%;">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div>
+          <h1 id="Deuda_técnica">
+            <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                <path d="M3 8L12 17L21 8"></path>
+              </svg></div>Deuda técnica
+          </h1>
+        </div>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
           <div>
-            <center style="position: relative; transform: translateY(20vh); width: 100%; text-align: center;">
-              <h1 style="" id="Page_Not_Found">
-                <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                    <path d="M3 8L12 17L21 8"></path>
-                  </svg></div>Page Not Found
-              </h1>
-            </center>
+            <p>Los sistemas informáticos son propensos a acumular <strong>cruft</strong>, es decir, deficiencias de calidad interna que dificultan más de lo ideal la modificación y ampliación del sistema.</p>
           </div>
+          <div>
+            <p>La deuda técnica es una metáfora, acuñada por Ward Cunningham, que enmarca la forma de abordar este problema, como si se tratara de una deuda financiera. El esfuerzo adicional que supone añadir nuevas funciones es el interés que se paga por la deuda.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230525143426.png" src="Pasted image 20230525143426.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230525143426.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230525143426.png?1685036066472"></span></p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Limpiar el código y eliminar la basura es como pagar el principal de una deuda.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Al principio, limpiar el código puede llevar más tiempo, pero a la larga puede suponer un ahorro.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Medir objetivamente los costes y beneficios de la eliminación de "cruft" es difícil, por lo que es necesario hacer estimaciones.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>El autor sugiere amortizar gradualmente el principal asignando tiempo extra a la eliminación de cruft en la primera función.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>Este planteamiento ayuda a reducir los costes futuros y mejora la eficacia de futuros cambios.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>La mejora gradual se centra en eliminar cruft en las áreas que sufren modificaciones frecuentes, que son las que más lo necesitan.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>La metáfora de la deuda ayuda a decidir qué cruft hay que abordar en el desarrollo de software.
+              </li>
+              <li data-line="7">
+                <div class="list-bullet"></div>Las zonas estables del código que no se modifican con frecuencia pueden dejarse tranquilas, ya que no generan pagos de intereses.
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div>Las áreas de alta actividad requieren una actitud de tolerancia cero hacia el cruft debido al alto coste del pago de intereses.
+              </li>
+              <li data-line="9">
+                <div class="list-bullet"></div>A veces se justifica descuidar la calidad interna utilizando la metáfora de la deuda, aceptando la deuda por las nuevas características urgentes.
+              </li>
+              <li data-line="10">
+                <div class="list-bullet"></div>Sin embargo, este enfoque a menudo conduce a una entrega más lenta y al agotamiento de las tarjetas de crédito, ya que el impacto del cruft afecta a las nuevas características.
+              </li>
+              <li data-line="11">
+                <div class="list-bullet"></div>Asumir una deuda para acelerar la entrega sólo funciona si se mantiene por debajo de la línea de pago del diseño y se resuelve en cuestión de semanas.
+              </li>
+              <li data-line="12">
+                <div class="list-bullet"></div>Existen debates sobre si los distintos tipos de cruft deben considerarse deuda, lo que ha dado lugar al concepto de Cuadrante de Deuda Técnica.
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
         </div>
       </div>
     </div>
@@ -570,10 +623,10 @@
           <div class="outline-header">
             <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
           </div>
-          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Page_Not_Found">
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Deuda_técnica">
               <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div><span class="outline-item-title">Page Not Found</span>
+                </svg></div><span class="outline-item-title">Deuda técnica</span>
             </a>
             <div class="outline-item-children"></div>
           </div>

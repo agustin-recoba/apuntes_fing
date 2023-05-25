@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Resumen práctico completo</title>
+  <title>Guía para la generación de CP a partir de HU</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta charset="UTF-8">
@@ -16,10 +16,10 @@
   <script src="https://pixijs.download/v7.2.4/pixi.js"></script>
 
 
-  <link rel="stylesheet" href="../styles/obsidian-styles.css">
-  <link rel="stylesheet" href="../styles/plugin-styles.css">
-  <link rel="stylesheet" href="../styles/theme.css">
-  <link rel="stylesheet" href="../styles/snippets.css">
+  <link rel="stylesheet" href="../../styles/obsidian-styles.css">
+  <link rel="stylesheet" href="../../styles/plugin-styles.css">
+  <link rel="stylesheet" href="../../styles/theme.css">
+  <link rel="stylesheet" href="../../styles/snippets.css">
 
   <style> </style>
   <style>
@@ -530,13 +530,13 @@
 
 
   <script id="relative-paths">
-    let rootPath = "..";
-    let mediaPath = "../media";
-    let jsPath = "../scripts";
-    let cssPath = "../styles";
+    let rootPath = "../..";
+    let mediaPath = "../../media";
+    let jsPath = "../../scripts";
+    let cssPath = "../../styles";
   </script>
 
-  <script src="../scripts/webpage.js"></script>
+  <script src="../../scripts/webpage.js"></script>
 
 </head>
 
@@ -550,17 +550,98 @@
       </div>
     </div>
     <div class="center-content">
-      <div class="markdown-preview-view markdown-rendered">
-        <div class="markdown-preview-sizer" style="width: 100%; height: 100%; margin: 0px; padding: 0px; max-width: 100%; min-height: 100%;">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding: unset; width: unset; height: unset; margin: unset; max-width: unset; min-height: unset;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
           <div>
-            <center style="position: relative; transform: translateY(20vh); width: 100%; text-align: center;">
-              <h1 style="" id="Page_Not_Found">
-                <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
-                    <path d="M3 8L12 17L21 8"></path>
-                  </svg></div>Page Not Found
-              </h1>
-            </center>
+            <p>En esta guía se describen algunas pautas y recomendaciones para la identificación y generación de casos de prueba a partir de la especificación de un requisito bajo el formato de historia de usuario.</p>
           </div>
+          <div>
+            <h1 data-heading="Estructura de una historia de usuario" id="Estructura_de_una_historia_de_usuario">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Estructura de una historia de usuario
+            </h1>
+          </div>
+          <div>
+            <p>Las historias de usuario son descripciones cortas y de alto nivel de las funcionalidades expresadas en los términos del cliente. Una historia de usuario típica tiene la siguiente forma:<br>
+              <span alt="Pasted image 20230519200538.png" src="Pasted image 20230519200538.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230519200538.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230519200538.png?1684537538045"></span>
+            </p>
+          </div>
+          <div>
+            <p>Y puede venir acompañada de uno o varios criterios de aceptación, los cuales tienen la siguiente forma:<br>
+              <span alt="Pasted image 20230519200551.png" src="Pasted image 20230519200551.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230519200551.png" src="app://6e3b168eefb80951caee4c06d7f14e656183/C:/Users/agust/Documents/obsidian_repos/Introducci%C3%B3n%20a%20la%20Ingenier%C3%ADa%20de%20Software/media/Pasted%20image%2020230519200551.png?1684537551882"></span>
+            </p>
+          </div>
+          <div>
+            <p>Desde el punto de vista de la verificación, los diferentes escenarios conformados tanto por la descripción principal de la historia de usuario como por los diferentes criterios de aceptación, serán aquellos que tendremos en cuenta para la generación de los casos de prueba.</p>
+          </div>
+          <div>
+            <h1 data-heading="Procedimiento de generación de CP" id="Procedimiento_de_generación_de_CP">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Procedimiento de generación de CP
+            </h1>
+          </div>
+          <div>
+            <p>El procedimiento general que recomendamos para la generación de casos de prueba a través de la descripción de una historia de usuario es el siguiente: </p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Para cada historia de usuario, identificar el conjunto de todos los escenarios posibles de realización. </li>
+              <li data-line="1">Para cada escenario, identificar las condiciones, acciones del usuario, eventos o contexto que lo hacen posible. </li>
+              <li data-line="2">Para cada escenario identificado, identificar por lo menos un caso de prueba y las condiciones que lo harán ejecutable. </li>
+              <li data-line="3">Para cada caso de prueba, identificar los datos de prueba a utilizar.</li>
+            </ol>
+          </div>
+          <div>
+            <p>Nota: los puntos 3 y 4 son análogos a la técnica descrita en el artículo Derivación de casos de prueba a partir de casos de uso.</p>
+          </div>
+          <div>
+            <h3 data-heading="Recomendaciones generales:" id="Recomendaciones_generales:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Recomendaciones generales:
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Para identificar los escenarios utilizar los criterios de aceptación e identificar las condiciones en las cuales esos criterios de aceptación se cumplen.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Si un escenario puede darse bajo diferentes condiciones (“A” o “B”, por ejemplo), conviene separarlo en dos escenarios/condición diferentes (“escenario A” y “escenario B”)
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Generar <u>al menos</u> un caso de prueba por cada escenario identificado y cada caso de prueba debe probar un único escenario.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Para completar los casos de prueba con datos utilizar los conceptos de clases de equivalencia y valores límites para los datos de entrada y los datos de contexto (o de las condiciones). Esto puede generar más de un caso de prueba interesante para un mismo escenario.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Nota importante:" id="Nota_importante:">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Nota importante:
+            </h3>
+          </div>
+          <div>
+            <p>Hay escenarios de prueba que pueden no encontrarse en los criterios de aceptación (como ser que el usuario no ingrese los datos requeridos en un formulario) o que no se encuentran detallados en la descripción de la historia de usuario. Es necesario pensar más allá de lo explicitado en la historia de usuario, dado que esta no es un método detallado de describir un requisito y por tanto muchos detalles pueden no estar presentes.</p>
+          </div>
+          <div>
+            <h1 data-heading="Ejemplo" id="Ejemplo">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ejemplo
+            </h1>
+          </div>
+          <div>
+            <p><a rel="noopener" class="external-link" href="https://eva.fing.edu.uy/pluginfile.php/338657/mod_resource/content/1/Gu%C3%ADa%20para%20la%20generaci%C3%B3n%20de%20CP%20a%20partir%20de%20HU.pdf" target="_blank">https://eva.fing.edu.uy/pluginfile.php/338657/mod_resource/content/1/Gu%C3%ADa%20para%20la%20generaci%C3%B3n%20de%20CP%20a%20partir%20de%20HU.pdf</a></p>
+          </div>
+          <div class="mod-footer"></div>
         </div>
       </div>
     </div>
@@ -570,10 +651,39 @@
           <div class="outline-header">
             <h6 style="margin: 1em 1em 1em 0px;">Table of Contents</h6><button class="clickable-icon collapse-all"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button>
           </div>
-          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Page_Not_Found">
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Estructura_de_una_historia_de_usuario">
               <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
-                </svg></div><span class="outline-item-title">Page Not Found</span>
+                </svg></div><span class="outline-item-title">Estructura de una historia de usuario</span>
+            </a>
+            <div class="outline-item-children"></div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Procedimiento_de_generación_de_CP">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Procedimiento de generación de CP</span>
+            </a>
+            <div class="outline-item-children">
+              <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Recomendaciones_generales:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Recomendaciones generales:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+              <div class="outline-item" data-size="3"><a class="outline-item-contents internal-link" href="#Nota_importante:">
+                  <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                      <path d="M3 8L12 17L21 8"></path>
+                    </svg></div><span class="outline-item-title">Nota importante:</span>
+                </a>
+                <div class="outline-item-children"></div>
+              </div>
+            </div>
+          </div>
+          <div class="outline-item" data-size="1"><a class="outline-item-contents internal-link" href="#Ejemplo">
+              <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><span class="outline-item-title">Ejemplo</span>
             </a>
             <div class="outline-item-children"></div>
           </div>
