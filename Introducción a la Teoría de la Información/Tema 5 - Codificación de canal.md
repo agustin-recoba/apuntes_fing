@@ -174,24 +174,49 @@ Osea, utilizar el canal varias veces <u>no aumenta</u> su capacidad.
 ##### Aplicaciones
 ![[Pasted image 20230518145717.png]]
 
-### Canales con realimentación
+## Canales con realimentación
+![[Pasted image 20230525204542.png]]
+
+### Definiciones
+![[Pasted image 20230525204610.png]]
+![[Pasted image 20230525204629.png]]
+![[Pasted image 20230525204636.png]]
+
+### Capacidad del canal con realimentación
+![[Pasted image 20230525204700.png]]
+
+![[Pasted image 20230525204716.png]]
+
+![[Pasted image 20230525204726.png]]
+![[Pasted image 20230525204743.png]]
+![[Pasted image 20230525204810.png]]
+
+## Codificación conjunta fuente-canal: uniendo teoremas
+![[Pasted image 20230525204841.png]]
+
+### ¿Separar o no separar?
+![[Pasted image 20230525204858.png]]
+
+Lo mismo da!
+![[Pasted image 20230525204908.png]]
 
 
+### Formalización del problema
+![[Pasted image 20230525210233.png]]
 
+### Teorema (Codificación conjunta fuente-canal)
+![[Pasted image 20230525210302.png]]
 
+#### Demostración del directo
+![[Pasted image 20230525210343.png]]
 
+#### Demostración del recíproco
+![[Pasted image 20230525210355.png]]
+![[Pasted image 20230525210403.png]]
+![[Pasted image 20230525210417.png]]
 
-
-
-
-
-
-
-
-
-
-
-
+#### Conclusiones
+![[Pasted image 20230525212533.png]]
 
 
 
