@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Capítulo 6 - Toma de decisiones</title>
+  <base href="../">
+  <meta id="root-path" root-path="../">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 108,
+      "linkCount": 111,
+      "radii": [7, 6.609375, 6.4375, 6.234375, 6.234375, 6, 5.734375, 5.734375, 5.4375, 5.4375, 5.109375, 5.109375, 4.75, 4.75, 4.359375, 4.359375, 4.359375, 4.359375, 4.359375, 4.359375, 4.359375, 3.9375, 3.9375, 3.9375, 3.9375, 3.9375, 3.9375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3.484375, 3, 3, 3, 3],
+      "labels": ["Indice", "Índice", "6. Capa de Enlace", "3. Capa de Transporte", "4. Capa de Red, plano de datos", "Indice", "99. Otros", "1. Introducción a las Redes de Computadoras", "2.4 Protocolos", "Índice", "2. Capa de Aplicación", "index", "5. Capa de Red, plano de control", "Índice", "Practico 5", "5.1 Algoritmos de enrutamiento", "Software Testing Foundations", "Capítulo 4 - Ingeniería de requisitos", "Capítulo 2 - Proceso de software", "Resumen práctico completo", "Resumen 2009", "User Stories", "MUM", "Guía para la generación de CP a partir de HU", "Generating Test Cases From Use Cases", "Ejemplos de modelos o SDLC", "Casos de uso", "Practico 6", "Practico 7", "99.2 Protocolos sobre protocolos", "99.3 Tips problemas prácticos", "99.1 Puertos bien conocidos", "Drawing 2022-10-26 18.15.54.excalidraw", "Drawing 2022-10-26 17.49.49.excalidraw", "6.3 Direccionamiento de la capa de enlace", "6.8 PPP, Protocolo punto a punto", "6.6 Hub y Switch", "6.5 Dominios de colisión y de broadcast", "6.7 VLAN, redes de área local virtuales", "6.6.1 Switch vs Router", "6.4 Ethernet", "6.2 Protocolo de acceso múltiple", "6.1 Técnicas de detección y corrección de errores", "5.3 Broadcast y multicast", "5.1.2 Algoritmo de enrutamiento por vector de distancias (DV)", "5.2 Enrutamiento jerárquico y sistemas autónomos", "5.1.1 Algoritmo de enrutamiento de estado de enlaces (LS)", "3.6.3 TCP, control de congestión", "3.4 Principios de pipelining GBN y SR", "3.6.2 TCP, control de flujo", "3.6.1 Principios de TCP", "3.3 RDT, un servicio de transferencia de datos fiable", "3.5 Principios de Control de Congestión", "3.2 Principios de UDP", "3.1 Multiplexación y demultiplexación", "4.3 El interior de un Router", "4.4.2 Direccionamiento IPv4", "4.7 IPv6", "4.6 ICMP, protocolo de mensajes de control de Internet", "4.5 Traduccion de direcciones de red, NAT", "4.4.1 Protocolo de Internet (IP)", "4.2 Redes de circuitos virtuales y de datagramas", "4.1 Intro", "2.4.5 P2P y Bitorrent", "2.4.1 La Web y HTTP", "2.4.4 FTP", "2.4.2 DNS", "2.4.3 Correo electronico", "2.3 Servicios de transporte", "2.2 Procesos y sockets", "2.1 Arquitecturas", "1.4 Retardo, pérdidas y “throughput” en redes de conmutación de paquetes", "1.3 Conmutacion de paquetes", "1.6 traceroute", "1.5 Modelo de capas", "1.2 Conmutacion de circuitos", "1.1 Internet", "Tema 4 - Propiedad de Equipartición Asintótica", "Tema 5 - Codificación de canal", "Tema 1 - Entropía, información conjunta, divergencia", "Tema 3 - Codificación de fuentes", "Tema 2 - Procesos estocásticos y cadenas de Markov", "SWEBOK 3 - Construcción", "SWEBOK 2 - Diseño", "Liberación", "Testing basado en la experiencia", "Deuda técnica", "Capítulo 6 - Diseño Arquitectonico", "Capítulo 3 - Metodologías ágiles", "Capítulo 9 - Evolución del Software", "Capítulo 18 - Ingeniería de Software Distribuido", "Capítulo 17 - Ingeniería de software basada en componentes", "Capítulo 1 - Introducción", "Capítulo 8 - Administración estratégica", "Capítulo 7 - Fundamentos de la planeación", "Capítulo 6 - Toma de decisiones", "Capítulo 5 - Responsabilidad social y ética administrativa", "Capítulo 3 - Ambiente y Cultura Organizacional", "Capítulo 13 - Manejo del cambio y la innovación", "Capítulo 12 - Gerencia de recursos humanos", "Capítulo 10 - Estructura y diseño organizacional", "Capitulo 1 - La función gerencial", "1er parcial - PREGUNTOMETRO", "Resumen diapos", "Capítulo 23 - Planeación de proyectos", "Capítulo 22 - Gestión de proyectos", "Gestión de proyectos - notas de las clases", "Capítulo 11 - Comunicación y tecnología de la información"],
+      "paths": ["introducción-a-la-ingeniería-de-software/indice.html", "administración-general-para-ingenieros/índice.html", "redes-de-computadoras/6-capa-de-enlace/6-capa-de-enlace.html", "redes-de-computadoras/3-capa-de-transporte/3-capa-de-transporte.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4-capa-de-red,-plano-de-datos.html", "redes-de-computadoras/indice.html", "redes-de-computadoras/99-otros/99-otros.html", "redes-de-computadoras/1-introduccion/1-introducción-a-las-redes-de-computadoras.html", "redes-de-computadoras/2-capa-de-aplicación/2.4-protocolos.html", "introducción-a-la-teoría-de-la-información/índice.html", "redes-de-computadoras/2-capa-de-aplicación/2-capa-de-aplicación.html", "index.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5-capa-de-red,-plano-de-control.html", "bases-de-datos/índice.html", "redes-de-computadoras/99-otros/practicos/practico-5.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1-algoritmos-de-enrutamiento.html", "introducción-a-la-ingeniería-de-software/software-testing-foundations.html", "introducción-a-la-ingeniería-de-software/capítulo-4-ingeniería-de-requisitos.html", "introducción-a-la-ingeniería-de-software/capítulo-2-proceso-de-software.html", "bases-de-datos/resumen-práctico-completo.html", "bases-de-datos/resumen-2009.html", "introducción-a-la-ingeniería-de-software/extras/user-stories.html", "introducción-a-la-ingeniería-de-software/extras/mum.html", "introducción-a-la-ingeniería-de-software/extras/guía-para-la-generación-de-cp-a-partir-de-hu.html", "introducción-a-la-ingeniería-de-software/extras/generating-test-cases-from-use-cases.html", "introducción-a-la-ingeniería-de-software/extras/ejemplos-de-modelos-o-sdlc.html", "introducción-a-la-ingeniería-de-software/extras/casos-de-uso.html", "redes-de-computadoras/99-otros/practicos/practico-6.html", "redes-de-computadoras/99-otros/practicos/practico-7.html", "redes-de-computadoras/99-otros/99.2-protocolos-sobre-protocolos.html", "redes-de-computadoras/99-otros/99.3-tips-problemas-prácticos.html", "redes-de-computadoras/99-otros/99.1-puertos-bien-conocidos.html", "redes-de-computadoras/media/excalidraw/drawing-2022-10-26-18.15.54.excalidraw.html", "redes-de-computadoras/media/excalidraw/drawing-2022-10-26-17.49.49.excalidraw.html", "redes-de-computadoras/6-capa-de-enlace/6.3-direccionamiento-de-la-capa-de-enlace.html", "redes-de-computadoras/6-capa-de-enlace/6.8-ppp,-protocolo-punto-a-punto.html", "redes-de-computadoras/6-capa-de-enlace/6.6-hub-y-switch.html", "redes-de-computadoras/6-capa-de-enlace/6.5-dominios-de-colisión-y-de-broadcast.html", "redes-de-computadoras/6-capa-de-enlace/6.7-vlan,-redes-de-área-local-virtuales.html", "redes-de-computadoras/6-capa-de-enlace/6.6.1-switch-vs-router.html", "redes-de-computadoras/6-capa-de-enlace/6.4-ethernet.html", "redes-de-computadoras/6-capa-de-enlace/6.2-protocolo-de-acceso-múltiple.html", "redes-de-computadoras/6-capa-de-enlace/6.1-técnicas-de-detección-y-corrección-de-errores.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.3-broadcast-y-multicast.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.2-algoritmo-de-enrutamiento-por-vector-de-distancias-(dv).html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.2-enrutamiento-jerárquico-y-sistemas-autónomos.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.1-algoritmo-de-enrutamiento-de-estado-de-enlaces-(ls).html", "redes-de-computadoras/3-capa-de-transporte/3.6.3-tcp,-control-de-congestión.html", "redes-de-computadoras/3-capa-de-transporte/3.4-principios-de-pipelining-gbn-y-sr.html", "redes-de-computadoras/3-capa-de-transporte/3.6.2-tcp,-control-de-flujo.html", "redes-de-computadoras/3-capa-de-transporte/3.6.1-principios-de-tcp.html", "redes-de-computadoras/3-capa-de-transporte/3.3-rdt,-un-servicio-de-transferencia-de-datos-fiable.html", "redes-de-computadoras/3-capa-de-transporte/3.5-principios-de-control-de-congestión.html", "redes-de-computadoras/3-capa-de-transporte/3.2-principios-de-udp.html", "redes-de-computadoras/3-capa-de-transporte/3.1-multiplexación-y-demultiplexación.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.3-el-interior-de-un-router.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.2-direccionamiento-ipv4.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.7-ipv6.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.6-icmp,-protocolo-de-mensajes-de-control-de-internet.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.5-traduccion-de-direcciones-de-red,-nat.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.1-protocolo-de-internet-(ip).html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.2-redes-de-circuitos-virtuales-y-de-datagramas.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.1-intro.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.5-p2p-y-bitorrent.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.1-la-web-y-http.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.4-ftp.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.2-dns.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.3-correo-electronico.html", "redes-de-computadoras/2-capa-de-aplicación/2.3-servicios-de-transporte.html", "redes-de-computadoras/2-capa-de-aplicación/2.2-procesos-y-sockets.html", "redes-de-computadoras/2-capa-de-aplicación/2.1-arquitecturas.html", "redes-de-computadoras/1-introduccion/1.4-retardo,-pérdidas-y-“throughput”-en-redes-de-conmutación-de-paquetes.html", "redes-de-computadoras/1-introduccion/1.3-conmutacion-de-paquetes.html", "redes-de-computadoras/1-introduccion/1.6-traceroute.html", "redes-de-computadoras/1-introduccion/1.5-modelo-de-capas.html", "redes-de-computadoras/1-introduccion/1.2-conmutacion-de-circuitos.html", "redes-de-computadoras/1-introduccion/1.1-internet.html", "introducción-a-la-teoría-de-la-información/tema-4-propiedad-de-equipartición-asintótica.html", "introducción-a-la-teoría-de-la-información/tema-5-codificación-de-canal.html", "introducción-a-la-teoría-de-la-información/tema-1-entropía,-información-conjunta,-divergencia.html", "introducción-a-la-teoría-de-la-información/tema-3-codificación-de-fuentes.html", "introducción-a-la-teoría-de-la-información/tema-2-procesos-estocásticos-y-cadenas-de-markov.html", "introducción-a-la-ingeniería-de-software/swebok-3-construcción.html", "introducción-a-la-ingeniería-de-software/swebok-2-diseño.html", "introducción-a-la-ingeniería-de-software/liberación.html", "introducción-a-la-ingeniería-de-software/extras/testing-basado-en-la-experiencia.html", "introducción-a-la-ingeniería-de-software/extras/deuda-técnica.html", "introducción-a-la-ingeniería-de-software/capítulo-6-diseño-arquitectonico.html", "introducción-a-la-ingeniería-de-software/capítulo-3-metodologías-ágiles.html", "introducción-a-la-ingeniería-de-software/capítulo-9-evolución-del-software.html", "introducción-a-la-ingeniería-de-software/capítulo-18-ingeniería-de-software-distribuido.html", "introducción-a-la-ingeniería-de-software/capítulo-17-ingeniería-de-software-basada-en-componentes.html", "introducción-a-la-ingeniería-de-software/capítulo-1-introducción.html", "administración-general-para-ingenieros/capítulo-8-administración-estratégica.html", "administración-general-para-ingenieros/capítulo-7-fundamentos-de-la-planeación.html", "administración-general-para-ingenieros/capítulo-6-toma-de-decisiones.html", "administración-general-para-ingenieros/capítulo-5-responsabilidad-social-y-ética-administrativa.html", "administración-general-para-ingenieros/capítulo-3-ambiente-y-cultura-organizacional.html", "administración-general-para-ingenieros/capítulo-13-manejo-del-cambio-y-la-innovación.html", "administración-general-para-ingenieros/capítulo-12-gerencia-de-recursos-humanos.html", "administración-general-para-ingenieros/capítulo-10-estructura-y-diseño-organizacional.html", "administración-general-para-ingenieros/capitulo-1-la-función-gerencial.html", "administración-general-para-ingenieros/1er-parcial-preguntometro.html", "bases-de-datos/resumen-diapos.html", "introducción-a-la-ingeniería-de-software/capítulo-23-planeación-de-proyectos.html", "introducción-a-la-ingeniería-de-software/capítulo-22-gestión-de-proyectos.html", "introducción-a-la-ingeniería-de-software/extras/gestión-de-proyectos-notas-de-las-clases.html", "administración-general-para-ingenieros/capítulo-11-comunicación-y-tecnología-de-la-información.html"],
+      "linkSources": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 20, 19, 13, 13, 13, 18, 18, 17, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 16, 9, 9, 9, 9, 9, 7, 7, 7, 7, 7, 7, 10, 10, 10, 10, 8, 8, 8, 8, 8, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 12, 12, 12, 15, 15, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 6, 6, 6, 6, 6, 14, 14, 5, 5, 5, 5, 5, 5, 5, 11, 11, 11, 11, 11],
+      "linkTargets": [101, 97, 96, 95, 94, 93, 100, 102, 99, 98, 20, 19, 20, 103, 19, 25, 22, 21, 26, 92, 18, 25, 22, 88, 17, 21, 26, 87, 83, 91, 90, 82, 16, 24, 23, 85, 84, 89, 86, 24, 23, 79, 81, 80, 77, 78, 76, 75, 72, 71, 74, 73, 70, 69, 68, 8, 64, 66, 67, 65, 63, 54, 53, 51, 48, 52, 50, 49, 47, 62, 61, 55, 60, 56, 59, 58, 57, 15, 45, 43, 46, 44, 42, 41, 34, 40, 37, 36, 39, 38, 35, 31, 29, 30, 14, 27, 28, 33, 32, 7, 10, 3, 4, 12, 2, 6, 1, 13, 0, 5, 9]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:17px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">obsidian_repos</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="administración-general-para-ingenieros"><span class="tree-item-title">Administración General para Ingenieros</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/1er-parcial-preguntometro.html"><span class="tree-item-title">1er parcial - PREGUNTOMETRO</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capitulo-1-la-función-gerencial.html"><span class="tree-item-title">Capitulo 1 - La función gerencial</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-10-estructura-y-diseño-organizacional.html"><span class="tree-item-title">Capítulo 10 - Estructura y diseño organizacional</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-11-comunicación-y-tecnología-de-la-información.html"><span class="tree-item-title">Capítulo 11 - Comunicación y tecnología de la información</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-12-gerencia-de-recursos-humanos.html"><span class="tree-item-title">Capítulo 12 - Gerencia de recursos humanos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-13-manejo-del-cambio-y-la-innovación.html"><span class="tree-item-title">Capítulo 13 - Manejo del cambio y la innovación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-3-ambiente-y-cultura-organizacional.html"><span class="tree-item-title">Capítulo 3 - Ambiente y Cultura Organizacional</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-5-responsabilidad-social-y-ética-administrativa.html"><span class="tree-item-title">Capítulo 5 - Responsabilidad social y ética administrativa</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-6-toma-de-decisiones.html"><span class="tree-item-title">Capítulo 6 - Toma de decisiones</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-7-fundamentos-de-la-planeación.html"><span class="tree-item-title">Capítulo 7 - Fundamentos de la planeación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-8-administración-estratégica.html"><span class="tree-item-title">Capítulo 8 - Administración estratégica</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/índice.html"><span class="tree-item-title">Índice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="bases-de-datos"><span class="tree-item-title">Bases de datos</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="bases-de-datos/índice.html"><span class="tree-item-title">Índice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="bases-de-datos/resumen-2009.html"><span class="tree-item-title">Resumen 2009</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="bases-de-datos/resumen-diapos.html"><span class="tree-item-title">Resumen diapos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="bases-de-datos/resumen-práctico-completo.html"><span class="tree-item-title">Resumen práctico completo</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software"><span class="tree-item-title">Introducción a la Ingeniería de Software</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras"><span class="tree-item-title">Extras</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/casos-de-uso.html"><span class="tree-item-title">Casos de uso</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/deuda-técnica.html"><span class="tree-item-title">Deuda técnica</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/ejemplos-de-modelos-o-sdlc.html"><span class="tree-item-title">Ejemplos de modelos o SDLC</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/generating-test-cases-from-use-cases.html"><span class="tree-item-title">Generating Test Cases From Use Cases</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/gestión-de-proyectos-notas-de-las-clases.html"><span class="tree-item-title">Gestión de proyectos - notas de las clases</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/guía-para-la-generación-de-cp-a-partir-de-hu.html"><span class="tree-item-title">Guía para la generación de CP a partir de HU</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/mum.html"><span class="tree-item-title">MUM</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/testing-basado-en-la-experiencia.html"><span class="tree-item-title">Testing basado en la experiencia</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/user-stories.html"><span class="tree-item-title">User Stories</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-1-introducción.html"><span class="tree-item-title">Capítulo 1 - Introducción</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-17-ingeniería-de-software-basada-en-componentes.html"><span class="tree-item-title">Capítulo 17 - Ingeniería de software basada en componentes</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-18-ingeniería-de-software-distribuido.html"><span class="tree-item-title">Capítulo 18 - Ingeniería de Software Distribuido</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-2-proceso-de-software.html"><span class="tree-item-title">Capítulo 2 - Proceso de software</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-22-gestión-de-proyectos.html"><span class="tree-item-title">Capítulo 22 - Gestión de proyectos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-23-planeación-de-proyectos.html"><span class="tree-item-title">Capítulo 23 - Planeación de proyectos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-3-metodologías-ágiles.html"><span class="tree-item-title">Capítulo 3 - Metodologías ágiles</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-4-ingeniería-de-requisitos.html"><span class="tree-item-title">Capítulo 4 - Ingeniería de requisitos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-6-diseño-arquitectonico.html"><span class="tree-item-title">Capítulo 6 - Diseño Arquitectonico</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-9-evolución-del-software.html"><span class="tree-item-title">Capítulo 9 - Evolución del Software</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/indice.html"><span class="tree-item-title">Indice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/liberación.html"><span class="tree-item-title">Liberación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/software-testing-foundations.html"><span class="tree-item-title">Software Testing Foundations</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/swebok-2-diseño.html"><span class="tree-item-title">SWEBOK 2 - Diseño</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/swebok-3-construcción.html"><span class="tree-item-title">SWEBOK 3 - Construcción</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información"><span class="tree-item-title">Introducción a la Teoría de la Información</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/índice.html"><span class="tree-item-title">Índice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-1-entropía,-información-conjunta,-divergencia.html"><span class="tree-item-title">Tema 1 - Entropía, información conjunta, divergencia</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-2-procesos-estocásticos-y-cadenas-de-markov.html"><span class="tree-item-title">Tema 2 - Procesos estocásticos y cadenas de Markov</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-3-codificación-de-fuentes.html"><span class="tree-item-title">Tema 3 - Codificación de fuentes</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-4-propiedad-de-equipartición-asintótica.html"><span class="tree-item-title">Tema 4 - Propiedad de Equipartición Asintótica</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-5-codificación-de-canal.html"><span class="tree-item-title">Tema 5 - Codificación de canal</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="redes-de-computadoras"><span class="tree-item-title">Redes de computadoras</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/1-introduccion"><span class="tree-item-title">1 - Introduccion</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1-introducción-a-las-redes-de-computadoras.html"><span class="tree-item-title">1. Introducción a las Redes de Computadoras</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.1-internet.html"><span class="tree-item-title">1.1 Internet</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.2-conmutacion-de-circuitos.html"><span class="tree-item-title">1.2 Conmutacion de circuitos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.3-conmutacion-de-paquetes.html"><span class="tree-item-title">1.3 Conmutacion de paquetes</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.4-retardo,-pérdidas-y-“throughput”-en-redes-de-conmutación-de-paquetes.html"><span class="tree-item-title">1.4 Retardo, pérdidas y “throughput” en redes de conmutación de paquetes</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.5-modelo-de-capas.html"><span class="tree-item-title">1.5 Modelo de capas</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.6-traceroute.html"><span class="tree-item-title">1.6 traceroute</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación"><span class="tree-item-title">2 - Capa de Aplicación</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2-capa-de-aplicación.html"><span class="tree-item-title">2. Capa de Aplicación</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.1-arquitecturas.html"><span class="tree-item-title">2.1 Arquitecturas</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.2-procesos-y-sockets.html"><span class="tree-item-title">2.2 Procesos y sockets</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.3-servicios-de-transporte.html"><span class="tree-item-title">2.3 Servicios de transporte</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4-protocolos.html"><span class="tree-item-title">2.4 Protocolos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.1-la-web-y-http.html"><span class="tree-item-title">2.4.1 La Web y HTTP</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.2-dns.html"><span class="tree-item-title">2.4.2 DNS</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.3-correo-electronico.html"><span class="tree-item-title">2.4.3 Correo electronico</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.4-ftp.html"><span class="tree-item-title">2.4.4 FTP</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.5-p2p-y-bitorrent.html"><span class="tree-item-title">2.4.5 P2P y Bitorrent</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte"><span class="tree-item-title">3 - Capa de Transporte</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3-capa-de-transporte.html"><span class="tree-item-title">3. Capa de Transporte</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.1-multiplexación-y-demultiplexación.html"><span class="tree-item-title">3.1 Multiplexación y demultiplexación</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.2-principios-de-udp.html"><span class="tree-item-title">3.2 Principios de UDP</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.3-rdt,-un-servicio-de-transferencia-de-datos-fiable.html"><span class="tree-item-title">3.3 RDT, un servicio de transferencia de datos fiable</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.4-principios-de-pipelining-gbn-y-sr.html"><span class="tree-item-title">3.4 Principios de pipelining GBN y SR</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.5-principios-de-control-de-congestión.html"><span class="tree-item-title">3.5 Principios de Control de Congestión</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.6.1-principios-de-tcp.html"><span class="tree-item-title">3.6.1 Principios de TCP</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.6.2-tcp,-control-de-flujo.html"><span class="tree-item-title">3.6.2 TCP, control de flujo</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.6.3-tcp,-control-de-congestión.html"><span class="tree-item-title">3.6.3 TCP, control de congestión</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos"><span class="tree-item-title">4 - Capa de Red, plano de datos</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4-capa-de-red,-plano-de-datos.html"><span class="tree-item-title">4. Capa de Red, plano de datos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.1-intro.html"><span class="tree-item-title">4.1 Intro</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.2-redes-de-circuitos-virtuales-y-de-datagramas.html"><span class="tree-item-title">4.2 Redes de circuitos virtuales y de datagramas</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.3-el-interior-de-un-router.html"><span class="tree-item-title">4.3 El interior de un Router</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.1-protocolo-de-internet-(ip).html"><span class="tree-item-title">4.4.1 Protocolo de Internet (IP)</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.2-direccionamiento-ipv4.html"><span class="tree-item-title">4.4.2 Direccionamiento IPv4</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.5-traduccion-de-direcciones-de-red,-nat.html"><span class="tree-item-title">4.5 Traduccion de direcciones de red, NAT</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.6-icmp,-protocolo-de-mensajes-de-control-de-internet.html"><span class="tree-item-title">4.6 ICMP, protocolo de mensajes de control de Internet</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.7-ipv6.html"><span class="tree-item-title">4.7 IPv6</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control"><span class="tree-item-title">5 - Capa de Red, plano de control</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5-capa-de-red,-plano-de-control.html"><span class="tree-item-title">5. Capa de Red, plano de control</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1-algoritmos-de-enrutamiento.html"><span class="tree-item-title">5.1 Algoritmos de enrutamiento</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.1-algoritmo-de-enrutamiento-de-estado-de-enlaces-(ls).html"><span class="tree-item-title">5.1.1 Algoritmo de enrutamiento de estado de enlaces (LS)</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.2-algoritmo-de-enrutamiento-por-vector-de-distancias-(dv).html"><span class="tree-item-title">5.1.2 Algoritmo de enrutamiento por vector de distancias (DV)</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.2-enrutamiento-jerárquico-y-sistemas-autónomos.html"><span class="tree-item-title">5.2 Enrutamiento jerárquico y sistemas autónomos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.3-broadcast-y-multicast.html"><span class="tree-item-title">5.3 Broadcast y multicast</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace"><span class="tree-item-title">6 - Capa de enlace</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6-capa-de-enlace.html"><span class="tree-item-title">6. Capa de Enlace</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.1-técnicas-de-detección-y-corrección-de-errores.html"><span class="tree-item-title">6.1 Técnicas de detección y corrección de errores</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.2-protocolo-de-acceso-múltiple.html"><span class="tree-item-title">6.2 Protocolo de acceso múltiple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.3-direccionamiento-de-la-capa-de-enlace.html"><span class="tree-item-title">6.3 Direccionamiento de la capa de enlace</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.4-ethernet.html"><span class="tree-item-title">6.4 Ethernet</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.5-dominios-de-colisión-y-de-broadcast.html"><span class="tree-item-title">6.5 Dominios de colisión y de broadcast</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.6-hub-y-switch.html"><span class="tree-item-title">6.6 Hub y Switch</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.6.1-switch-vs-router.html"><span class="tree-item-title">6.6.1 Switch vs Router</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.7-vlan,-redes-de-área-local-virtuales.html"><span class="tree-item-title">6.7 VLAN, redes de área local virtuales</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.8-ppp,-protocolo-punto-a-punto.html"><span class="tree-item-title">6.8 PPP, Protocolo punto a punto</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/99-otros"><span class="tree-item-title">99 - Otros</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="redes-de-computadoras/99-otros/practicos"><span class="tree-item-title">Practicos</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/practicos/practico-5.html"><span class="tree-item-title">Practico 5</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/practicos/practico-6.html"><span class="tree-item-title">Practico 6</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/practicos/practico-7.html"><span class="tree-item-title">Practico 7</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/99-otros.html"><span class="tree-item-title">99. Otros</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/99.1-puertos-bien-conocidos.html"><span class="tree-item-title">99.1 Puertos bien conocidos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/99.2-protocolos-sobre-protocolos.html"><span class="tree-item-title">99.2 Protocolos sobre protocolos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/99.3-tips-problemas-prácticos.html"><span class="tree-item-title">99.3 Tips problemas prácticos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/media"><span class="tree-item-title">media</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="redes-de-computadoras/media/excalidraw"><span class="tree-item-title">Excalidraw</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/media/excalidraw/drawing-2022-10-26-17.49.49.excalidraw.html"><span class="tree-item-title">Drawing 2022-10-26 17.49.49.excalidraw</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/media/excalidraw/drawing-2022-10-26-18.15.54.excalidraw.html"><span class="tree-item-title">Drawing 2022-10-26 18.15.54.excalidraw</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/indice.html"><span class="tree-item-title">Indice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="index.html"><span class="tree-item-title">index</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header"></div>
+          <div>
+            <h1 data-heading="El GERENTE" id="El_GERENTE">El GERENTE</h1>
+          </div>
+          <div>
+            <p>Si bien todos los integrantes de una organización toman decisiones, la toma de decisiones es particularmente importante en el trabajo de un gerente. Es una parte de las 4 funciones gerenciales.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230320230446.png" src="Pasted image 20230320230446.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230320230446.png" src="administración-general-para-ingenieros\media\pasted-image-20230320230446.png"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="EL PROCESO DE TOMA DE DECISIONES" id="EL_PROCESO_DE_TOMA_DE_DECISIONES">EL PROCESO DE TOMA DE DECISIONES</h1>
+          </div>
+          <div class="admonition-parent admonition-info-parent">
+            <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Decisión</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Elección entre dos o más alternativas. </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>Es una serie de 8 etapas para identificar un problema, elegir una alternativa y evaluar la eficacia de la decisión.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230320231717.png" src="Pasted image 20230320231717.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230320231717.png" src="administración-general-para-ingenieros\media\pasted-image-20230320231717.png"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="1. Identificar un problema" id="1._Identificar_un_problema" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>1. Identificar un problema
+            </h2>
+          </div>
+          <div>
+            <p>El proceso de toma de decisiones comienza con la existencia de uno o más problemas, es decir: </p>
+          </div>
+          <div class="admonition-parent admonition-info-parent">
+            <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Problema</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Discrepancia entre la situación actual y la situación deseada.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>Los gerentes deben de tener cuidado de no confundir los problemas con sus señales.<br>
+              Esta etapa es subjetiva, lo que gerente ve como un problema, otro puede no verlo así. El gerente que por equivocación resuelve el problema erróneo tiene un desempeño tan malo como el gerente que no identifica el problema correcto ni hace nada. </p>
+          </div>
+          <div>
+            <h3 data-heading="Características de los problemas:" id="Características_de_los_problemas:" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Características de los problemas:
+            </h3>
+          </div>
+          <div>
+            <p>Una discrepancia se transforma en problema cuando; </p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Los gerentes se hacen <strong>conscientes de una discrepancia</strong> al comparar el estado actual de las cosas con la situación en la que deberían estar o quisieran que estuvieran.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Se siente <strong>presionado para resolver la discrepancia</strong>. Las presiones pueden venir de políticas de la organización, plazos, crisis económicas, actos de la competencia, quejas de los clientes, etc.. Una discrepancia sin la presión para actuar es un problema que puede posponerse.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><strong>El gerente debe tener la autoridad, información y recursos necesarios para resolverlo.</strong> No es probable que los gerentes señalen algo como problema si les parece que no tienen la autoridad, la información o los recursos para actuar.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="2. Identificar los criterios de decisión" id="2._Identificar_los_criterios_de_decisión" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>2. Identificar los criterios de decisión
+            </h2>
+          </div>
+          <div class="admonition-parent admonition-info-parent">
+            <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Criterios de decision</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Criterios que definen lo que es pertinente en una decisión.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>Son explícitos o tácitos.<br>
+              También se pueden clasificar los objetivos o criterios que deben cumplir las alternativas elegidas en <strong>objetivos necesarios</strong> (que se deben cumplir <strong>imprescindiblemente</strong>) y <strong>objetivos deseados</strong> (<strong>no imprescindibles</strong>).</p>
+          </div>
+          <div>
+            <h2 data-heading="3. Asignar pesos a los criterios" id="3._Asignar_pesos_a_los_criterios" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>3. Asignar pesos a los criterios
+            </h2>
+          </div>
+          <div>
+            <p>No todos los criterios de decisión tienen la misma importancia.<br>
+              Quien toma la decisión tiene que ponderarlos en forma ordenada para asignarles la prioridad correcta en la decisión.<br>
+              Para ayudar a la priorización se puede pensar en la clasificación GUT (gravedad, urgencia, tendencia).<br>
+              Una forma muy fácil es punteando al criterio de mayor peso con 10, y al resto del 1 al 10, en comparación con el mayor.</p>
+          </div>
+          <div>
+            <h2 data-heading="4. Desarrollar las alternativas" id="4._Desarrollar_las_alternativas" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>4. Desarrollar las alternativas
+            </h2>
+          </div>
+          <div>
+            <p>Preparar una lista de las alternativas viables que resuelvan el problema, sin evaluar, <strong>sólo enumerarlas</strong>.</p>
+          </div>
+          <div>
+            <h2 data-heading="5. Analizar las alternativas" id="5._Analizar_las_alternativas" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>5. Analizar las alternativas
+            </h2>
+          </div>
+          <div>
+            <p>Analizar críticamente las distintas alternativas. Se evalúan de acuerdo con los criterios establecidos en las etapas 1 y 2.<br>
+              Comparándolas se revelan las ventajas y desventajas. La comparación se puede hacer multiplicando cada puntaje por el peso establecido anteriormente y sumando para cada alternativa.</p>
+          </div>
+          <div>
+            <h2 data-heading="6. Seleccionar una alternativa" id="6._Seleccionar_una_alternativa" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>6. Seleccionar una alternativa
+            </h2>
+          </div>
+          <div>
+            <p>Elegir la mejor alternativa entre todas las consideradas.<br>
+              Se escoge aquella que generó el total mayor en la etapa 5.</p>
+          </div>
+          <div>
+            <h2 data-heading="7. Implementar una alternativa" id="7._Implementar_una_alternativa" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>7. Implementar una alternativa
+            </h2>
+          </div>
+          <div>
+            <p>Puesta en marcha de la decisión.<br>
+              Comunicarla a los afectados y lograr que se comprometan con ella.<br>
+              Si las personas que deben implantar la decisión participan en el proceso, es más probable que apoyen con entusiasmo el resultado que si solo se les dice lo que deben hacer.</p>
+          </div>
+          <div>
+            <h2 data-heading="8. Evaluar eficacia de la decisión" id="8._Evaluar_eficacia_de_la_decisión" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>8. Evaluar eficacia de la decisión
+            </h2>
+          </div>
+          <div>
+            <p>Evaluar el resultado de la decisión para saber si se resolvió el problema.<br>
+              ¿Se consiguió el resultado buscado con la alternativa elegida en la etapa 6 y puesta en marcha en la etapa 7?</p>
+          </div>
+          <div>
+            <p>Si el problema persiste se debe examinar qué salió mal:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Si se definió mal el problema.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Si se cometieron errores en la evaluación de las alternativas.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>O elegida correctamente la alternativa se implantó mal.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Las respuestas llevarán de vuelta al gerente a una de las etapas anteriores, incluso es posible que deba repetir todo el proceso.</p>
+          </div>
+          <div>
+            <h1 data-heading="RACIONALIDAD, RACIONALIDAD ACOTADA E INTUICIÓN" id="RACIONALIDAD,_RACIONALIDAD_ACOTADA_E_INTUICIÓN">RACIONALIDAD, RACIONALIDAD ACOTADA E INTUICIÓN</h1>
+          </div>
+          <div>
+            <h2 data-heading="Racionalidad" id="Racionalidad" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Racionalidad
+            </h2>
+          </div>
+          <div class="admonition-parent admonition-info-parent">
+            <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Toma racional de decisiones</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Descripción de las opciones congruentes y de máximo valor para el contexto de restricciones específicas.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 data-heading="Premisas de la racionalidad" id="Premisas_de_la_racionalidad" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Premisas de la racionalidad
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>El problema es claro y directo.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Hay que alcanzar una sola meta bien definida.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div>Se conocen todas las alternativas y consecuencias.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>Las preferencias están claras y son constantes y estables.
+              </li>
+              <li data-line="4">
+                <div class="list-bullet"></div>No hay restricciones ni de tiempo ni de costos.
+              </li>
+              <li data-line="5">
+                <div class="list-bullet"></div>La elección final trae el mejor resultado.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>Quien decide maximiza los intereses de la organización, no los propios.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>La mayor parte de las decisiones que toman los gerentes <u>no</u> satisfacen estos requisitos.</p>
+          </div>
+          <div>
+            <h2 data-heading="Racionalidad acotada" id="Racionalidad_acotada" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Racionalidad acotada
+            </h2>
+          </div>
+          <div class="admonition-parent admonition-info-parent">
+            <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Racionalidad acotada</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Toma de decisiones que es racional pero limitada (acotada) por la capacidad del individuo de procesar la información.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>Como es imposible que analicen toda la información sobre todas las alternativas, los gerentes llegan a una <strong>solución satisfactoria</strong>, en vez de una óptima (solución aceptada como <strong>“suficientemente buena”</strong>).</p>
+          </div>
+          <div>
+            <p>Los gerentes son racionales dentro de los límites (cotas) de su capacidad de procesamiento de la información. </p>
+          </div>
+          <div>
+            <p>La mayor parte de las decisiones que toman los gerentes no corresponden a las premisas de la racionalidad perfecta, sino que siguen el método de la racionalidad acotada.</p>
+          </div>
+          <div class="admonition-parent admonition-caution-parent">
+            <div class="callout admonition admonition-caution admonition-plugin " style="--callout-color: 255, 145, 0;" data-callout="caution" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" class="svg-inline--fa fa-exclamation-triangle fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <path fill="currentColor" d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Intensificación del compromiso</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>La toma de decisiones también sufre la influencia de la organización: su cultura, políticas internas, consideraciones de poder, y un fenómeno llamado <strong>Intensificación del Compromiso</strong>, que es una dedicación redoblada a decisiones anteriores aunque haya pruebas de que están equivocadas.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="Papel de la intuición, toma de decisiones intuitiva" id="Papel_de_la_intuición,_toma_de_decisiones_intuitiva" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Papel de la intuición, toma de decisiones intuitiva
+            </h2>
+          </div>
+          <div class="admonition-parent admonition-info-parent">
+            <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Toma de decisiones intuitiva</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Acto de tomar decisiones a partir de la experiencia, sentimientos y buen juicio acumulado.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>No tiene que ser independiente del análisis racional sino complementario.<br>
+              Se han identificado 5 aspectos de la intuición:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Decisiones basadas en la experiencia.</li>
+              <li data-line="1">Decisiones basadas en valores éticos.</li>
+              <li data-line="2">Decisiones por afectos.</li>
+              <li data-line="3">Decisiones Intelectuales.</li>
+              <li data-line="4">Procesos mentales inconscientes.</li>
+            </ol>
+          </div>
+          <div>
+            <p>Riesgo <u>no</u> es uno de los aspectos.</p>
+          </div>
+          <div>
+            <h1 data-heading="CLASES DE PROBLEMAS Y DECISIONES" id="CLASES_DE_PROBLEMAS_Y_DECISIONES">CLASES DE PROBLEMAS Y DECISIONES</h1>
+          </div>
+          <div>
+            <h2 data-heading="1. Problemas estructurados y decisiones programadas" id="1._Problemas_estructurados_y_decisiones_programadas" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>1. Problemas estructurados y decisiones programadas
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="Problemas estructurados" id="Problemas_estructurados" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Problemas estructurados
+            </h3>
+          </div>
+          <div>
+            <p><strong>Problemas sencillos, familiares y fáciles de definir.</strong></p>
+          </div>
+          <div>
+            <p>La meta es clara.<br>
+              La información al respecto se define y reúne fácilmente.</p>
+          </div>
+          <div>
+            <p>Cuando se define un problema estructurado, su solución es evidente o por lo menos se reduce a unas pocas alternativas conocidas y que se ha probado que funcionan, por lo que la etapa de encontrar alternativas del proceso no existe o se le presta poca atención.</p>
+          </div>
+          <div>
+            <h3 data-heading="Decisiones programadas" id="Decisiones_programadas" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Decisiones programadas
+            </h3>
+          </div>
+          <div>
+            <p><strong>Una decisión programada que es una decisión repetida que se maneja de rutina.</strong></p>
+          </div>
+          <div>
+            <p>En estos casos no existe desarrollo de alternativas dado que ya hay un método definido para manejarla, donde se aplica uno de los siguientes 3:</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Procedimiento</strong><br>
+                <strong>Conjunto de pasos sucesivos que da el gerente para responder a un problema estructurado.</strong><br>
+                La única dificultad real está en identificar el problema, pero cuando éste se aclara, también se aclara el procedimiento.
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div><strong>Regla</strong><br>
+                <strong>Declaración explícita de lo que pueden y no pueden hacer los gerentes.</strong><br>
+                Las reglas son frecuentes porque es fácil seguirlas y son constantes.
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div><strong>Política</strong><br>
+                <strong>Normas para tomar decisiones.</strong><br>
+                A diferencia de las reglas, una política establece parámetros generales para quien decide, más que declarar explícitamente qué debe o no debe hacerse. Las políticas contienen un término ambiguo que deja la interpretación a quien decide.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="2. Problemas sin estructurar y decisiones sin programar" id="2._Problemas_sin_estructurar_y_decisiones_sin_programar" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>2. Problemas sin estructurar y decisiones sin programar
+            </h2>
+          </div>
+          <div>
+            <h3 data-heading="Problemas sin estructurar:" id="Problemas_sin_estructurar:" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Problemas sin estructurar:
+            </h3>
+          </div>
+          <div>
+            <p><strong>Problemas que son nuevos o inusitados y para los cuales la información es ambigua o incompleta.</strong><br>
+              Requieren soluciones a medida. </p>
+          </div>
+          <div>
+            <h3 data-heading="Decisiones sin programar:" id="Decisiones_sin_programar:" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Decisiones sin programar:
+            </h3>
+          </div>
+          <div>
+            <p><strong>Decisiones que son únicas, no se repiten y requieren soluciones a medida.</strong></p>
+          </div>
+          <div>
+            <h2 data-heading="Integración" id="Integración" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Integración
+            </h2>
+          </div>
+          <div>
+            <p>Como los gerentes de nivel inferior tienen problemas conocidos y repetidos en general recurren a decisiones programadas como procedimientos, reglas y políticas.<br>
+              Los problemas que enfrentan los gerentes se hacen menos estructurados a medida que ascienden por la jerarquía de la organización, porque los gerentes de niveles inferiores se ocupan de las decisiones de rutina y dejan que los gerentes de niveles superiores se encarguen de las decisiones que les parecen inusitadas o difíciles. Del mismo modo, los gerentes de nivel superior delegan las decisiones de rutina en sus subordinados para concentrarse en los problemas más difíciles.<br>
+              La mayor parte de las decisiones se encuentran en el medio. Una decisión es principalmente programada o principalmente sin programar.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230320234841.png" src="Pasted image 20230320234841.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230320234841.png" src="administración-general-para-ingenieros\media\pasted-image-20230320234841.png"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="CONDICIONES PARA LA TOMA DE DECISIONES" id="CONDICIONES_PARA_LA_TOMA_DE_DECISIONES">CONDICIONES PARA LA TOMA DE DECISIONES</h1>
+          </div>
+          <div>
+            <h2 data-heading="Certeza" id="Certeza" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Certeza
+            </h2>
+          </div>
+          <div>
+            <p>Situación en la que el gerente puede tomar decisiones correctas porque <strong>conoce los resultados de todas las alternativas</strong>.</p>
+          </div>
+          <div>
+            <h2 data-heading="Riesgo" id="Riesgo" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Riesgo
+            </h2>
+          </div>
+          <div>
+            <p>Situación en la cual quien toma la decisión <strong>estima la probabilidad de ciertos resultados</strong>.<br>
+              Es una situación mucho más común que la certeza.</p>
+          </div>
+          <div>
+            <h2 data-heading="Incertidumbre" id="Incertidumbre" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Incertidumbre
+            </h2>
+          </div>
+          <div>
+            <p>Situación en la cual quien decide no tiene la certeza ni cuenta con cálculos de probabilidades.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Maximax</strong>: el gerente optimista maximiza el máximo resultado posible.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><strong>Maximin</strong>: el gerente pesimista maximiza el mínimo resultado posible.
+              </li>
+              <li data-line="2">
+                <div class="list-bullet"></div><strong>Minimax</strong>: para el gerente que quiere minimizar su máximo arrepentimiento.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>El gerente optimista preferirá la opción <strong>maximax</strong> (maximizar el máximo resultado posible), el pesimista se inclinará por la opción <strong>maximin</strong> (maximizar el mínimo resultado posible) y el gerente que quiere minimizar su máximo “arrepentimiento” escogerá la opción <strong>minimax</strong>.</p>
+          </div>
+          <div>
+            <h1 data-heading="ESTILOS DE TOMA DE DECISIONES" id="ESTILOS_DE_TOMA_DE_DECISIONES">ESTILOS DE TOMA DE DECISIONES</h1>
+          </div>
+          <div>
+            <p>Cuando se diagraman las 2 dimensiones, se revelan 4 estilos de toma de decisiones.<br>
+              Aunque todos estos estilos son diferentes, casi todos los gerentes tienen características de más de un estilo. Lo más realista es pensar en el estilo dominante de un gerente y sus estilos secundarios. Los gerentes también deben aceptar que sus empleados tienen diferentes estilos para decidir.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230321000112.png" src="Pasted image 20230321000112.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230321000112.png" src="administración-general-para-ingenieros\media\pasted-image-20230321000112.png"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Dimensiones involucradas" id="Dimensiones_involucradas" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Dimensiones involucradas
+            </h2>
+          </div>
+          <div>
+            <p>Dos dimensiones en las cuales varía el estilo de toma de decisiones de un gerente.</p>
+          </div>
+          <div>
+            <h3 data-heading="Forma de pensar" id="Forma_de_pensar" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Forma de pensar
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Racional</strong>: estudia la información en orden y se asegura que sea lógica y congruente
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><strong>Intuitiva</strong>: creativa y con la información analizada en conjunto
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Tolerancia a la ambigüedad" id="Tolerancia_a_la_ambigüedad" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Tolerancia a la ambigüedad
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div><strong>Baja Tolerancia</strong>: requiere constancia y orden en la forma en que estructuran la información.
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><strong>Alta Tolerancia</strong>: puede procesar muchas ideas al mismo tiempo.
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Estilo directivo" id="Estilo_directivo" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Estilo directivo
+            </h2>
+          </div>
+          <div>
+            <p>Poca tolerancia a la ambigüedad y una forma racional de pensar: toma decisiones rápidas y <u>se centran en el corto plazo</u>. Son eficientes y lógicos. Evalúan pocas alternativas y toman la decisión con poca información.</p>
+          </div>
+          <div>
+            <h2 data-heading="Estilo analítico" id="Estilo_analítico" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Estilo analítico
+            </h2>
+          </div>
+          <div>
+            <p>Tolerancia a la ambigüedad y forma racional de pensar: capacidad para adaptarse o enfrentar situaciones únicas. Quieren más información antes de tomar la decisión y consideran más alternativas que en el estilo directivo.</p>
+          </div>
+          <div>
+            <h2 data-heading="Estilo conceptual" id="Estilo_conceptual" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Estilo conceptual
+            </h2>
+          </div>
+          <div>
+            <p>Tolerancia a la ambigüedad y forma intuitiva de pensar: se enfocan en el largo plazo y encuentran soluciones creativas. Tienen miras muy amplias y buscan muchas alternativas.</p>
+          </div>
+          <div>
+            <h2 data-heading="Estilo conductual" id="Estilo_conductual" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Estilo conductual
+            </h2>
+          </div>
+          <div>
+            <p>Poca tolerancia a la ambigüedad y forma intuitiva de pensar: se interesan en los logros de los otros y aceptan sugerencias. Trabajan bien con los demás. Convocan juntas para comunicarse, y tratan de evitar conflictos. La aceptación de los demás es muy importante. </p>
+          </div>
+          <div>
+            <h1 data-heading="PREJUICIOS Y ERRORES EN LA TOMA DE DECISIONES" id="PREJUICIOS_Y_ERRORES_EN_LA_TOMA_DE_DECISIONES">PREJUICIOS Y ERRORES EN LA TOMA DE DECISIONES</h1>
+          </div>
+          <div class="admonition-parent admonition-info-parent">
+            <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Métodos heurísticos</div>
+              </div>
+              <div class="callout-content admonition-content">
+                <p>Reglas prácticas con las que los gerentes simplifican la toma de decisiones, pero esto no quiere decir que las reglas sean confiables.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230321000545.png" src="Pasted image 20230321000545.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230321000545.png" src="administración-general-para-ingenieros\media\pasted-image-20230321000545.png"></span></p>
+          </div>
+          <div>
+            <p>Las heurísticas pueden llevar a errores y prejuicios al procesar y evaluar la información como:</p>
+          </div>
+          <div>
+            <h2 data-heading="Error del exceso de confianza" id="Error_del_exceso_de_confianza" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Error del exceso de confianza
+            </h2>
+          </div>
+          <div>
+            <p>Los que deciden tienen opiniones exageradamente positivas de ellos mismos y su desempeño, y piensan que saben más de lo que en realidad saben. </p>
+          </div>
+          <div>
+            <h2 data-heading="Error de la satisfacción inmediata" id="Error_de_la_satisfacción_inmediata" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Error de la satisfacción inmediata
+            </h2>
+          </div>
+          <div>
+            <p>Gerentes que buscan los beneficios instantáneos y evitan los costos inmediatos. Las opciones que tienen resultados rápidos son más atractivas que otras.</p>
+          </div>
+          <div>
+            <h2 data-heading="Efecto del ancla" id="Efecto_del_ancla" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Efecto del ancla
+            </h2>
+          </div>
+          <div>
+            <p>Cuando los que deciden se quedan fijados en la información inicial y no se adaptan a la información siguiente. </p>
+          </div>
+          <div>
+            <h2 data-heading="Prejuicio de percepción selectiva" id="Prejuicio_de_percepción_selectiva" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Prejuicio de percepción selectiva
+            </h2>
+          </div>
+          <div>
+            <p>Los gerentes organizan selectivamente e interpretan los acontecimientos de acuerdo con sus impresiones tergiversadas.</p>
+          </div>
+          <div>
+            <h2 data-heading="Prejuicio de confirmación" id="Prejuicio_de_confirmación" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Prejuicio de confirmación
+            </h2>
+          </div>
+          <div>
+            <p>Se busca información que reafirma las elecciones anteriores y se ignora la que contradice los juicios anteriores. Estas personas aceptan sin más la información que confirma sus ideas preconcebidas y se muestran críticos y escépticos de la información que arroja dudas sobre esas ideas.</p>
+          </div>
+          <div>
+            <h2 data-heading="Error de la contextualización" id="Error_de_la_contextualización" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Error de la contextualización
+            </h2>
+          </div>
+          <div>
+            <p>Se elige y subraya ciertos aspectos de una situación al tiempo que se excluye otros.</p>
+          </div>
+          <div>
+            <h2 data-heading="Prejuicio de la disponibilidad" id="Prejuicio_de_la_disponibilidad" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Prejuicio de la disponibilidad
+            </h2>
+          </div>
+          <div>
+            <p>Quienes deciden recuerdan los acontecimientos más recientes y que están más frescos en su memoria. Se altera la capacidad de recordar objetivamente y hacen estimaciones y juicios distorsionados.</p>
+          </div>
+          <div>
+            <h2 data-heading="Error de la representación" id="Error_de_la_representación" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Error de la representación
+            </h2>
+          </div>
+          <div>
+            <p>Evaluación de la probabilidad de que ocurra un suceso de acuerdo con su semejanza con otros sucesos. Trazan analogías y ven situaciones idénticas donde no las hay.</p>
+          </div>
+          <div>
+            <h2 data-heading="Error de la casualidad" id="Error_de_la_casualidad" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Error de la casualidad
+            </h2>
+          </div>
+          <div>
+            <p>Los gerentes tratan de imponerle un significado a sucesos casuales.</p>
+          </div>
+          <div>
+            <h2 data-heading="Error de los costos incurridos" id="Error_de_los_costos_incurridos" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Error de los costos incurridos
+            </h2>
+          </div>
+          <div>
+            <p>Se olvida de que las decisiones actuales no corrigen las anteriores.</p>
+          </div>
+          <div>
+            <h2 data-heading="Prejuicio Egoísta" id="Prejuicio_Egoísta" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Prejuicio Egoísta
+            </h2>
+          </div>
+          <div>
+            <p>Apresuramiento para asignarse el mérito por los éxitos y culpar de sus fracasos a factores externos.</p>
+          </div>
+          <div>
+            <h2 data-heading="Error de la percepción retrospectiva" id="Error_de_la_percepción_retrospectiva" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Error de la percepción retrospectiva
+            </h2>
+          </div>
+          <div>
+            <p>Tendencia a creer falsamente, después de conocer un resultado, que lo habrían pronosticado correctamente. Para evitar los efectos negativos de estos errores y prejuicios, los gerentes deben estar conscientes de ellos y tratar de no cometerlos.</p>
+          </div>
+          <div>
+            <h1 data-heading="RESÚMEN DE LA TOMA DE DECISIONES GERENCIAL" id="RESÚMEN_DE_LA_TOMA_DE_DECISIONES_GERENCIAL">RESÚMEN DE LA TOMA DE DECISIONES GERENCIAL</h1>
+          </div>
+          <div>
+            <p>Influyen en el proceso de toma de decisiones 4 factores: Método de decisión, Condiciones de la decisión, Tipo de problema y Estilo de decisión del responsable. Además ciertos errores y prejuicios repercuten en el proceso.</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230321001209.png" src="Pasted image 20230321001209.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230321001209.png" src="administración-general-para-ingenieros\media\pasted-image-20230321001209.png"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="TOMA DE DECISIONES EN EL MUNDO DE HOY" id="TOMA_DE_DECISIONES_EN_EL_MUNDO_DE_HOY">TOMA DE DECISIONES EN EL MUNDO DE HOY</h1>
+          </div>
+          <div>
+            <p>El mundo de las empresas actuales gira en torno de las decisiones, a menudo riesgosas, por lo regular con información incompleta o inadecuada y con intensas presiones de tiempo.</p>
+          </div>
+          <div>
+            <h2 data-heading="Guía para tomar decisiones efectivas" id="Guía_para_tomar_decisiones_efectivas" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Guía para tomar decisiones efectivas
+            </h2>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <p><strong>Sepa cuándo es hora de rendirse.</strong><br>
+                  No hay que temer a aceptar que llego la hora de moverse. </p>
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>
+                <p><strong>Practique los cinco porqués.</strong><br>
+                  Este método consiste en que los empleados aprendan a preguntar por qué, 5 veces. En la primera vez se obtendrá una explicación superficial del problemas, en los siguientes porqués se obligará a quienes deciden a sondear más hondo en las causas del problema y las posible soluciones. </p>
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>
+                <div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div>
+                <p><strong>Tome buenas decisiones.</strong><br>
+                  Un buen proceso de toma de decisiones tiene estas seis características: </p>
+                <ol>
+                  <li data-line="8">se enfoca en lo que es importante; </li>
+                  <li data-line="9">es lógico y congruente; </li>
+                  <li data-line="10">acepta el razonamiento subjetivo y objetivo, y combina el razonamiento analítico con el intuitivo; </li>
+                  <li data-line="11">requiere sólo la información necesaria para resolver un dilema;</li>
+                  <li data-line="12">alienta y guía el acopio de información pertinente y la formación de una opinión ilustrada, y </li>
+                  <li data-line="13">es sencillo, confiable, fácil de seguir y flexible.</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Hábitos de las organizaciones muy confiables" id="Hábitos_de_las_organizaciones_muy_confiables" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Hábitos de las organizaciones muy confiables
+            </h2>
+          </div>
+          <div>
+            <p>Karl Weick, psicólogo organizacional, dice que la mejor manera en que los gerentes responden a la ambigüedad y la incertidumbre es construir una organización que detecte con destreza lo inesperado en cuanto surja, y que se adapte rápidamente al cambio del ambiente.<br>
+              Llama a estas instituciones <strong>Organizaciones muy Confiables</strong> y dice que comparten 5 hábitos.</p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>
+                <p><strong>No se dejan engañar por sus éxitos.</strong><br>
+                  Se preocupan por sus fracasos. Están alertas a mínimas desviaciones, y reaccionan pronto y de prisa a lo que no concuerde con sus expectativas.</p>
+              </li>
+              <li data-line="3">
+                <div class="list-bullet"></div>
+                <p><strong>Se someten a los expertos del frente.</strong><br>
+                  Los empleados del frente, que se relacionan con los clientes, los proveedores, etc. poseen un conocimiento de primera mano de lo que puede o no hacerse, de lo que va a funcionar y lo que no. Les piden sus comentarios y los dejan participar en la toma de decisiones.</p>
+              </li>
+              <li data-line="6">
+                <div class="list-bullet"></div>
+                <p><strong>Dejan que circunstancias inesperadas proporcionen la solución.</strong></p>
+              </li>
+              <li data-line="8">
+                <div class="list-bullet"></div>
+                <p><strong>Aceptan la complejidad.</strong><br>
+                  Se requiere complejidad para entender la complejidad. </p>
+              </li>
+              <li data-line="11">
+                <div class="list-bullet"></div>
+                <p><strong>Anticipan sus límites.</strong><br>
+                  Tratan de prever cuanto sea posible, pero saben que no pueden adelantarse a todo. No piensas y luego actúan, sino que piensan al actuar. Al hacer las cosas, uno averigua que funciona y que no funciona.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#El_GERENTE"><span class="tree-item-title">El GERENTE</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#EL_PROCESO_DE_TOMA_DE_DECISIONES"><span class="tree-item-title">EL PROCESO DE TOMA DE DECISIONES</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#1._Identificar_un_problema"><span class="tree-item-title">1. Identificar un problema</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Características_de_los_problemas:"><span class="tree-item-title">Características de los problemas:</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#2._Identificar_los_criterios_de_decisión"><span class="tree-item-title">2. Identificar los criterios de decisión</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#3._Asignar_pesos_a_los_criterios"><span class="tree-item-title">3. Asignar pesos a los criterios</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#4._Desarrollar_las_alternativas"><span class="tree-item-title">4. Desarrollar las alternativas</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#5._Analizar_las_alternativas"><span class="tree-item-title">5. Analizar las alternativas</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#6._Seleccionar_una_alternativa"><span class="tree-item-title">6. Seleccionar una alternativa</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#7._Implementar_una_alternativa"><span class="tree-item-title">7. Implementar una alternativa</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#8._Evaluar_eficacia_de_la_decisión"><span class="tree-item-title">8. Evaluar eficacia de la decisión</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#RACIONALIDAD,_RACIONALIDAD_ACOTADA_E_INTUICIÓN"><span class="tree-item-title">RACIONALIDAD, RACIONALIDAD ACOTADA E INTUICIÓN</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#Racionalidad"><span class="tree-item-title">Racionalidad</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Premisas_de_la_racionalidad"><span class="tree-item-title">Premisas de la racionalidad</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Racionalidad_acotada"><span class="tree-item-title">Racionalidad acotada</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Papel_de_la_intuición,_toma_de_decisiones_intuitiva"><span class="tree-item-title">Papel de la intuición, toma de decisiones intuitiva</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#CLASES_DE_PROBLEMAS_Y_DECISIONES"><span class="tree-item-title">CLASES DE PROBLEMAS Y DECISIONES</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#1._Problemas_estructurados_y_decisiones_programadas"><span class="tree-item-title">1. Problemas estructurados y decisiones programadas</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Problemas_estructurados"><span class="tree-item-title">Problemas estructurados</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Decisiones_programadas"><span class="tree-item-title">Decisiones programadas</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#2._Problemas_sin_estructurar_y_decisiones_sin_programar"><span class="tree-item-title">2. Problemas sin estructurar y decisiones sin programar</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Problemas_sin_estructurar:"><span class="tree-item-title">Problemas sin estructurar:</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Decisiones_sin_programar:"><span class="tree-item-title">Decisiones sin programar:</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Integración"><span class="tree-item-title">Integración</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#CONDICIONES_PARA_LA_TOMA_DE_DECISIONES"><span class="tree-item-title">CONDICIONES PARA LA TOMA DE DECISIONES</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Certeza"><span class="tree-item-title">Certeza</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Riesgo"><span class="tree-item-title">Riesgo</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Incertidumbre"><span class="tree-item-title">Incertidumbre</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#ESTILOS_DE_TOMA_DE_DECISIONES"><span class="tree-item-title">ESTILOS DE TOMA DE DECISIONES</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#Dimensiones_involucradas"><span class="tree-item-title">Dimensiones involucradas</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Forma_de_pensar"><span class="tree-item-title">Forma de pensar</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Tolerancia_a_la_ambigüedad"><span class="tree-item-title">Tolerancia a la ambigüedad</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Estilo_directivo"><span class="tree-item-title">Estilo directivo</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Estilo_analítico"><span class="tree-item-title">Estilo analítico</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Estilo_conceptual"><span class="tree-item-title">Estilo conceptual</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Estilo_conductual"><span class="tree-item-title">Estilo conductual</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#PREJUICIOS_Y_ERRORES_EN_LA_TOMA_DE_DECISIONES"><span class="tree-item-title">PREJUICIOS Y ERRORES EN LA TOMA DE DECISIONES</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Error_del_exceso_de_confianza"><span class="tree-item-title">Error del exceso de confianza</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Error_de_la_satisfacción_inmediata"><span class="tree-item-title">Error de la satisfacción inmediata</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Efecto_del_ancla"><span class="tree-item-title">Efecto del ancla</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Prejuicio_de_percepción_selectiva"><span class="tree-item-title">Prejuicio de percepción selectiva</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Prejuicio_de_confirmación"><span class="tree-item-title">Prejuicio de confirmación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Error_de_la_contextualización"><span class="tree-item-title">Error de la contextualización</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Prejuicio_de_la_disponibilidad"><span class="tree-item-title">Prejuicio de la disponibilidad</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Error_de_la_representación"><span class="tree-item-title">Error de la representación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Error_de_la_casualidad"><span class="tree-item-title">Error de la casualidad</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Error_de_los_costos_incurridos"><span class="tree-item-title">Error de los costos incurridos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Prejuicio_Egoísta"><span class="tree-item-title">Prejuicio Egoísta</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Error_de_la_percepción_retrospectiva"><span class="tree-item-title">Error de la percepción retrospectiva</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#RESÚMEN_DE_LA_TOMA_DE_DECISIONES_GERENCIAL"><span class="tree-item-title">RESÚMEN DE LA TOMA DE DECISIONES GERENCIAL</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#TOMA_DE_DECISIONES_EN_EL_MUNDO_DE_HOY"><span class="tree-item-title">TOMA DE DECISIONES EN EL MUNDO DE HOY</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Guía_para_tomar_decisiones_efectivas"><span class="tree-item-title">Guía para tomar decisiones efectivas</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Hábitos_de_las_organizaciones_muy_confiables"><span class="tree-item-title">Hábitos de las organizaciones muy confiables</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
