@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a518a15a90367c60",
+        "id": "45939b71f10628d7",
         "type": "tabs",
         "children": [
           {
-            "id": "0dde4410a7bcdc7b",
+            "id": "aed876c49dc1867a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 5 - Codificación de canal.md",
-                "mode": "source",
-                "source": false
+                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf"
               }
             }
           }
@@ -48,7 +46,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 5 - Codificación de canal.md"
+                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf"
               }
             }
           },
@@ -107,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 5 - Codificación de canal.md",
+                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 5 - Codificación de canal.md",
+                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,13 +152,26 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "open-gate:ChatGPT": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
+      "open-gate:ChatGPT": false,
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "0dde4410a7bcdc7b",
+  "active": "aed876c49dc1867a",
   "lastOpenFiles": [
+    "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
+    "Introducción a la Ingeniería de Software/Extras/Untitled.md",
+    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
+    "Introducción a la Ingeniería de Software/Capítulo 23 - Planeación de proyectos.md",
+    "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
+    "Introducción a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230530163301.png",
+    "Introducción a la Ingeniería de Software/Capítulo 22 - Gestión de proyectos.md",
+    "Introducción a la Ingeniería de Software/Capítulo 9 - Evolución del Software.md",
+    "Introducción a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
+    "Introducción a la Teoría de la Información/Tema 5 - Codificación de canal.md",
+    "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+    "Introducción a la Teoría de la Información/media/Pasted image 20230528195055.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230525212533.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230525210417.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230525210403.png",
@@ -169,9 +180,6 @@
     "Introducción a la Teoría de la Información/media/Pasted image 20230525210302.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230525210233.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230525204908.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525204858.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525204841.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525204829.png",
     "Bases de datos/Resumen práctico completo.md",
     "Bases de datos/Resumen 2009.md",
     "Bases de datos/Resumen diapos.md",
@@ -188,15 +196,6 @@
     "Administración General para Ingenieros/Índice.md",
     "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
     "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
-    "index.md",
-    "Introducción a la Ingeniería de Software/Capítulo 1 - Introducción.md",
-    "Introducción a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
-    "Introducción a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
-    "Introducción a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
-    "Introducción a la Ingeniería de Software/Capítulo 9 - Evolución del Software.md",
-    "Introducción a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
-    "Introducción a la Ingeniería de Software/Capítulo 3 - Metodologías ágiles.md",
-    "Introducción a la Ingeniería de Software/Capítulo 6 - Diseño Arquitectonico.md",
     "Introducción a la Ingeniería de Software/media",
     "Introducción a la Ingeniería de Software/Extras",
     "Introducción a la Ingeniería de Software",
@@ -206,7 +205,6 @@
     "Introducción a la Teoría de la Información/media",
     "Introducción a la Teoría de la Información",
     "web-export/bases-de-datos/resumen-2009.html",
-    "web-export/bases-de-datos/resumen-diapos.html",
     "Untitled.canvas"
   ]
 }

@@ -75,30 +75,34 @@
 #### Capacidad informacional del canal con borraduras
 ![[Pasted image 20230509193934.png]]
 
-## Teorema de codificación de canal
+## <u>Teorema</u> de codificación de canal
 
 ### Enunciados previos
-
 #### Tipicalidad conjunta
 ![[Pasted image 20230509202047.png]]
 
-#### AEP conjunta
+#### Teorema AEP conjunta
 ![[Pasted image 20230509202146.png]]
 <b><u>Nota:</u></b> El punto 3 dice que la prob. de que dos secuencias típicas de $X^n$ y $Y^n$, pero no generadas por la transmisión, sean también conjuntamente típicas, es chica, y tiende a 0 con $n$ grande.
-
 
 ##### Demostración de (3)
 ![[Pasted image 20230509202547.png]]
 ![[Pasted image 20230509202601.png]]
 
-### Enunciado del teorema
+### <u>Enunciado</u> del teorema
 
 ![[Pasted image 20230509202629.png]]
+
+```ad-question
+title: Enunciado completo
+![[Pasted image 20230528195055.png]]
+```
+
 
 ### Intuición
 ![[Pasted image 20230509202710.png]]
 
-### Demostración del directo
+### Demostración del <u>directo</u>
 #### Hoja de ruta
 ![[Pasted image 20230509202945.png]]
 
@@ -110,6 +114,18 @@
 
 #### Demostración: análisis de la prob. de error
 ![[Pasted image 20230509203141.png]]
+
+ ```ad-seealso
+title: Nota
+$$
+P(E|W=w) = P(\text{no es conjunta ó es conjunta también con otro mensaje}|W=w)
+$$
+$$
+= P(E^{C}_{w} \cup \bigcup_{u!=w}E_{u} | W=w)
+\leq P(E^{C}_{w}|W=w) + \sum_{u != w}{P(E_u|W=w)}
+$$
+```
+
 ![[Pasted image 20230509203202.png]]
 ![[Pasted image 20230509203214.png]]
 
@@ -119,31 +135,34 @@
 #### Final
 ![[Pasted image 20230509203242.png]]
 
-### Demostración del recíproco
-#### Recíproco: enunciado
+### Demostración del <u>recíproco</u>
+#### Recíproco: <u>enunciado</u>
 ![[Pasted image 20230509203652.png]]
 
 #### Hoja de ruta
 ![[Pasted image 20230509203424.png]]
 
-#### Caso simple: probabilidad de error 0
+#### <u>Caso simple:</u> probabilidad de error 0
 ![[Pasted image 20230509203443.png]]
+
+##### Lema <u>cota de info. mutua</u>
 ![[Pasted image 20230509203454.png]]
+DMC = Discrete Memoryless Channel
 Osea, utilizar el canal varias veces <u>no aumenta</u> su capacidad.
 
 ![[Pasted image 20230509203520.png]]
 
-#### Desigualdad de Fano para codificación de canal
+#### <u>Desigualdad de Fano</u> para codificación de canal
 ![[Pasted image 20230509203617.png]]
 ![[Pasted image 20230509203626.png]]
 
 #### Recíproco: demostración
 ![[Pasted image 20230509203700.png]]
 
-#### Recíproco: conclusiones
+#### Recíproco: *conclusiones*
 ![[Pasted image 20230509203737.png]]
 
-## Códigos prácticos de canal
+## Códigos <u>prácticos</u> de canal
 
 ![[Pasted image 20230517201718.png]]
 
@@ -174,7 +193,7 @@ Osea, utilizar el canal varias veces <u>no aumenta</u> su capacidad.
 ##### Aplicaciones
 ![[Pasted image 20230518145717.png]]
 
-## Canales con realimentación
+## Canales con <u>realimentación</u>
 ![[Pasted image 20230525204542.png]]
 
 ### Definiciones
@@ -191,7 +210,7 @@ Osea, utilizar el canal varias veces <u>no aumenta</u> su capacidad.
 ![[Pasted image 20230525204743.png]]
 ![[Pasted image 20230525204810.png]]
 
-## Codificación conjunta fuente-canal: uniendo teoremas
+## <u>Codificación conjunta fuente-canal</u>: uniendo teoremas
 ![[Pasted image 20230525204841.png]]
 
 ### ¿Separar o no separar?
