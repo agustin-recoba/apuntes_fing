@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Tema 6 - Entropía diferencial</title>
+  <base href="../">
+  <meta id="root-path" root-path="../">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 110,
+      "linkCount": 114,
+      "radii": [7, 6.3530245746691865, 6.166351606805293, 5.956049149338375, 5.956049149338375, 5.72211720226843, 5.464555765595463, 5.464555765595463, 5.18336483931947, 5.18336483931947, 4.878544423440454, 4.878544423440454, 4.550094517958412, 4.550094517958412, 4.198015122873346, 4.198015122873346, 4.198015122873346, 4.198015122873346, 4.198015122873346, 4.198015122873346, 4.198015122873346, 3.822306238185255, 3.822306238185255, 3.822306238185255, 3.822306238185255, 3.822306238185255, 3.822306238185255, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3, 3, 3],
+      "labels": ["Indice", "Índice", "6. Capa de Enlace", "4. Capa de Red, plano de datos", "3. Capa de Transporte", "Indice", "99. Otros", "1. Introducción a las Redes de Computadoras", "2.4 Protocolos", "Índice", "2. Capa de Aplicación", "index", "5. Capa de Red, plano de control", "Índice", "5.1 Algoritmos de enrutamiento", "Practico 5", "Software Testing Foundations", "Capítulo 4 - Ingeniería de requisitos", "Capítulo 2 - Proceso de software", "Resumen 2009", "Resumen práctico completo", "User Stories", "MUM", "Guía para la generación de CP a partir de HU", "Generating Test Cases From Use Cases", "Casos de uso", "Ejemplos de modelos o SDLC", "Drawing 2022-10-26 18.15.54.excalidraw", "Drawing 2022-10-26 17.49.49.excalidraw", "5.3 Broadcast y multicast", "5.2 Enrutamiento jerárquico y sistemas autónomos", "5.1.2 Algoritmo de enrutamiento por vector de distancias (DV)", "5.1.1 Algoritmo de enrutamiento de estado de enlaces (LS)", "99.2 Protocolos sobre protocolos", "Practico 7", "Practico 6", "99.3 Tips problemas prácticos", "99.1 Puertos bien conocidos", "6.8 PPP, Protocolo punto a punto", "6.5 Dominios de colisión y de broadcast", "6.4 Ethernet", "6.7 VLAN, redes de área local virtuales", "6.6 Hub y Switch", "6.6.1 Switch vs Router", "6.3 Direccionamiento de la capa de enlace", "6.2 Protocolo de acceso múltiple", "6.1 Técnicas de detección y corrección de errores", "4.2 Redes de circuitos virtuales y de datagramas", "4.7 IPv6", "4.6 ICMP, protocolo de mensajes de control de Internet", "4.3 El interior de un Router", "4.5 Traduccion de direcciones de red, NAT", "4.4.2 Direccionamiento IPv4", "4.4.1 Protocolo de Internet (IP)", "4.1 Intro", "3.5 Principios de Control de Congestión", "3.6.3 TCP, control de congestión", "3.6.2 TCP, control de flujo", "3.6.1 Principios de TCP", "3.3 RDT, un servicio de transferencia de datos fiable", "3.4 Principios de pipelining GBN y SR", "3.2 Principios de UDP", "3.1 Multiplexación y demultiplexación", "2.4.4 FTP", "2.4.5 P2P y Bitorrent", "2.4.3 Correo electronico", "2.4.1 La Web y HTTP", "2.4.2 DNS", "2.1 Arquitecturas", "2.3 Servicios de transporte", "2.2 Procesos y sockets", "1.6 traceroute", "1.5 Modelo de capas", "1.4 Retardo, pérdidas y “throughput” en redes de conmutación de paquetes", "1.3 Conmutacion de paquetes", "1.1 Internet", "1.2 Conmutacion de circuitos", "SWEBOK 3 - Construcción", "SWEBOK 2 - Diseño", "Deuda técnica", "Testing basado en la experiencia", "Gestión de proyectos - notas de las clases", "Capítulo 9 - Evolución del Software", "Liberación", "Capítulo 3 - Metodologías ágiles", "Capítulo 6 - Diseño Arquitectonico", "Capítulo 18 - Ingeniería de Software Distribuido", "Capítulo 17 - Ingeniería de software basada en componentes", "Capítulo 23 - Planeación de proyectos", "Capítulo 22 - Gestión de proyectos", "Capítulo 1 - Introducción", "Capítulo 7 - Fundamentos de la planeación", "Capítulo 8 - Administración estratégica", "Capítulo 6 - Toma de decisiones", "Capítulo 5 - Responsabilidad social y ética administrativa", "Capítulo 3 - Ambiente y Cultura Organizacional", "Capítulo 12 - Gerencia de recursos humanos", "Capítulo 13 - Manejo del cambio y la innovación", "Capitulo 1 - La función gerencial", "Capítulo 10 - Estructura y diseño organizacional", "1er parcial - PREGUNTOMETRO", "Tema 5 - Codificación de canal", "Tema 4 - Propiedad de Equipartición Asintótica", "Tema 3 - Codificación de fuentes", "Tema 2 - Procesos estocásticos y cadenas de Markov", "Tema 1 - Entropía, información conjunta, divergencia", "Resumen diapos", "Capítulo 11 - Comunicación y tecnología de la información", "Capítulo 16 - La motivación de los empleados", "Tema 6 - Entropía diferencial"],
+      "paths": ["introducción-a-la-ingeniería-de-software/indice.html", "administración-general-para-ingenieros/índice.html", "redes-de-computadoras/6-capa-de-enlace/6-capa-de-enlace.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4-capa-de-red,-plano-de-datos.html", "redes-de-computadoras/3-capa-de-transporte/3-capa-de-transporte.html", "redes-de-computadoras/indice.html", "redes-de-computadoras/99-otros/99-otros.html", "redes-de-computadoras/1-introduccion/1-introducción-a-las-redes-de-computadoras.html", "redes-de-computadoras/2-capa-de-aplicación/2.4-protocolos.html", "introducción-a-la-teoría-de-la-información/índice.html", "redes-de-computadoras/2-capa-de-aplicación/2-capa-de-aplicación.html", "index.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5-capa-de-red,-plano-de-control.html", "bases-de-datos/índice.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1-algoritmos-de-enrutamiento.html", "redes-de-computadoras/99-otros/practicos/practico-5.html", "introducción-a-la-ingeniería-de-software/software-testing-foundations.html", "introducción-a-la-ingeniería-de-software/capítulo-4-ingeniería-de-requisitos.html", "introducción-a-la-ingeniería-de-software/capítulo-2-proceso-de-software.html", "bases-de-datos/resumen-2009.html", "bases-de-datos/resumen-práctico-completo.html", "introducción-a-la-ingeniería-de-software/extras/user-stories.html", "introducción-a-la-ingeniería-de-software/extras/mum.html", "introducción-a-la-ingeniería-de-software/extras/guía-para-la-generación-de-cp-a-partir-de-hu.html", "introducción-a-la-ingeniería-de-software/extras/generating-test-cases-from-use-cases.html", "introducción-a-la-ingeniería-de-software/extras/casos-de-uso.html", "introducción-a-la-ingeniería-de-software/extras/ejemplos-de-modelos-o-sdlc.html", "redes-de-computadoras/media/excalidraw/drawing-2022-10-26-18.15.54.excalidraw.html", "redes-de-computadoras/media/excalidraw/drawing-2022-10-26-17.49.49.excalidraw.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.3-broadcast-y-multicast.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.2-enrutamiento-jerárquico-y-sistemas-autónomos.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.2-algoritmo-de-enrutamiento-por-vector-de-distancias-(dv).html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.1-algoritmo-de-enrutamiento-de-estado-de-enlaces-(ls).html", "redes-de-computadoras/99-otros/99.2-protocolos-sobre-protocolos.html", "redes-de-computadoras/99-otros/practicos/practico-7.html", "redes-de-computadoras/99-otros/practicos/practico-6.html", "redes-de-computadoras/99-otros/99.3-tips-problemas-prácticos.html", "redes-de-computadoras/99-otros/99.1-puertos-bien-conocidos.html", "redes-de-computadoras/6-capa-de-enlace/6.8-ppp,-protocolo-punto-a-punto.html", "redes-de-computadoras/6-capa-de-enlace/6.5-dominios-de-colisión-y-de-broadcast.html", "redes-de-computadoras/6-capa-de-enlace/6.4-ethernet.html", "redes-de-computadoras/6-capa-de-enlace/6.7-vlan,-redes-de-área-local-virtuales.html", "redes-de-computadoras/6-capa-de-enlace/6.6-hub-y-switch.html", "redes-de-computadoras/6-capa-de-enlace/6.6.1-switch-vs-router.html", "redes-de-computadoras/6-capa-de-enlace/6.3-direccionamiento-de-la-capa-de-enlace.html", "redes-de-computadoras/6-capa-de-enlace/6.2-protocolo-de-acceso-múltiple.html", "redes-de-computadoras/6-capa-de-enlace/6.1-técnicas-de-detección-y-corrección-de-errores.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.2-redes-de-circuitos-virtuales-y-de-datagramas.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.7-ipv6.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.6-icmp,-protocolo-de-mensajes-de-control-de-internet.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.3-el-interior-de-un-router.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.5-traduccion-de-direcciones-de-red,-nat.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.2-direccionamiento-ipv4.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.1-protocolo-de-internet-(ip).html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.1-intro.html", "redes-de-computadoras/3-capa-de-transporte/3.5-principios-de-control-de-congestión.html", "redes-de-computadoras/3-capa-de-transporte/3.6.3-tcp,-control-de-congestión.html", "redes-de-computadoras/3-capa-de-transporte/3.6.2-tcp,-control-de-flujo.html", "redes-de-computadoras/3-capa-de-transporte/3.6.1-principios-de-tcp.html", "redes-de-computadoras/3-capa-de-transporte/3.3-rdt,-un-servicio-de-transferencia-de-datos-fiable.html", "redes-de-computadoras/3-capa-de-transporte/3.4-principios-de-pipelining-gbn-y-sr.html", "redes-de-computadoras/3-capa-de-transporte/3.2-principios-de-udp.html", "redes-de-computadoras/3-capa-de-transporte/3.1-multiplexación-y-demultiplexación.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.4-ftp.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.5-p2p-y-bitorrent.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.3-correo-electronico.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.1-la-web-y-http.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.2-dns.html", "redes-de-computadoras/2-capa-de-aplicación/2.1-arquitecturas.html", "redes-de-computadoras/2-capa-de-aplicación/2.3-servicios-de-transporte.html", "redes-de-computadoras/2-capa-de-aplicación/2.2-procesos-y-sockets.html", "redes-de-computadoras/1-introduccion/1.6-traceroute.html", "redes-de-computadoras/1-introduccion/1.5-modelo-de-capas.html", "redes-de-computadoras/1-introduccion/1.4-retardo,-pérdidas-y-“throughput”-en-redes-de-conmutación-de-paquetes.html", "redes-de-computadoras/1-introduccion/1.3-conmutacion-de-paquetes.html", "redes-de-computadoras/1-introduccion/1.1-internet.html", "redes-de-computadoras/1-introduccion/1.2-conmutacion-de-circuitos.html", "introducción-a-la-ingeniería-de-software/swebok-3-construcción.html", "introducción-a-la-ingeniería-de-software/swebok-2-diseño.html", "introducción-a-la-ingeniería-de-software/extras/deuda-técnica.html", "introducción-a-la-ingeniería-de-software/extras/testing-basado-en-la-experiencia.html", "introducción-a-la-ingeniería-de-software/extras/gestión-de-proyectos-notas-de-las-clases.html", "introducción-a-la-ingeniería-de-software/capítulo-9-evolución-del-software.html", "introducción-a-la-ingeniería-de-software/liberación.html", "introducción-a-la-ingeniería-de-software/capítulo-3-metodologías-ágiles.html", "introducción-a-la-ingeniería-de-software/capítulo-6-diseño-arquitectonico.html", "introducción-a-la-ingeniería-de-software/capítulo-18-ingeniería-de-software-distribuido.html", "introducción-a-la-ingeniería-de-software/capítulo-17-ingeniería-de-software-basada-en-componentes.html", "introducción-a-la-ingeniería-de-software/capítulo-23-planeación-de-proyectos.html", "introducción-a-la-ingeniería-de-software/capítulo-22-gestión-de-proyectos.html", "introducción-a-la-ingeniería-de-software/capítulo-1-introducción.html", "administración-general-para-ingenieros/capítulo-7-fundamentos-de-la-planeación.html", "administración-general-para-ingenieros/capítulo-8-administración-estratégica.html", "administración-general-para-ingenieros/capítulo-6-toma-de-decisiones.html", "administración-general-para-ingenieros/capítulo-5-responsabilidad-social-y-ética-administrativa.html", "administración-general-para-ingenieros/capítulo-3-ambiente-y-cultura-organizacional.html", "administración-general-para-ingenieros/capítulo-12-gerencia-de-recursos-humanos.html", "administración-general-para-ingenieros/capítulo-13-manejo-del-cambio-y-la-innovación.html", "administración-general-para-ingenieros/capitulo-1-la-función-gerencial.html", "administración-general-para-ingenieros/capítulo-10-estructura-y-diseño-organizacional.html", "administración-general-para-ingenieros/1er-parcial-preguntometro.html", "introducción-a-la-teoría-de-la-información/tema-5-codificación-de-canal.html", "introducción-a-la-teoría-de-la-información/tema-4-propiedad-de-equipartición-asintótica.html", "introducción-a-la-teoría-de-la-información/tema-3-codificación-de-fuentes.html", "introducción-a-la-teoría-de-la-información/tema-2-procesos-estocásticos-y-cadenas-de-markov.html", "introducción-a-la-teoría-de-la-información/tema-1-entropía,-información-conjunta,-divergencia.html", "bases-de-datos/resumen-diapos.html", "administración-general-para-ingenieros/capítulo-11-comunicación-y-tecnología-de-la-información.html", "administración-general-para-ingenieros/capítulo-16-la-motivación-de-los-empleados.html", "introducción-a-la-teoría-de-la-información/tema-6-entropía-diferencial.html"],
+      "linkSources": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 19, 20, 13, 13, 13, 18, 18, 17, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 16, 9, 9, 9, 9, 9, 7, 7, 7, 7, 7, 7, 10, 10, 10, 10, 8, 8, 8, 8, 8, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 12, 12, 12, 14, 14, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 6, 6, 6, 6, 6, 15, 15, 5, 5, 5, 5, 5, 5, 5, 11, 11, 11, 11, 11],
+      "linkTargets": [98, 95, 94, 93, 91, 92, 99, 100, 96, 97, 19, 20, 19, 106, 20, 26, 22, 21, 25, 90, 18, 26, 22, 84, 17, 21, 25, 85, 78, 87, 86, 77, 16, 24, 23, 80, 83, 82, 79, 89, 81, 88, 24, 23, 105, 104, 103, 102, 101, 75, 76, 74, 73, 72, 71, 68, 70, 69, 8, 66, 67, 65, 63, 64, 62, 61, 59, 60, 55, 58, 57, 56, 54, 47, 50, 53, 52, 51, 49, 48, 14, 30, 29, 32, 31, 46, 45, 44, 40, 39, 42, 43, 41, 38, 37, 33, 36, 15, 35, 34, 28, 27, 7, 10, 4, 3, 12, 2, 6, 1, 13, 0, 5, 9]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:17px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">obsidian_repos</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="administración-general-para-ingenieros"><span class="tree-item-title">Administración General para Ingenieros</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/1er-parcial-preguntometro.html"><span class="tree-item-title">1er parcial - PREGUNTOMETRO</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capitulo-1-la-función-gerencial.html"><span class="tree-item-title">Capitulo 1 - La función gerencial</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-10-estructura-y-diseño-organizacional.html"><span class="tree-item-title">Capítulo 10 - Estructura y diseño organizacional</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-11-comunicación-y-tecnología-de-la-información.html"><span class="tree-item-title">Capítulo 11 - Comunicación y tecnología de la información</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-12-gerencia-de-recursos-humanos.html"><span class="tree-item-title">Capítulo 12 - Gerencia de recursos humanos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-13-manejo-del-cambio-y-la-innovación.html"><span class="tree-item-title">Capítulo 13 - Manejo del cambio y la innovación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-16-la-motivación-de-los-empleados.html"><span class="tree-item-title">Capítulo 16 - La motivación de los empleados</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-3-ambiente-y-cultura-organizacional.html"><span class="tree-item-title">Capítulo 3 - Ambiente y Cultura Organizacional</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-5-responsabilidad-social-y-ética-administrativa.html"><span class="tree-item-title">Capítulo 5 - Responsabilidad social y ética administrativa</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-6-toma-de-decisiones.html"><span class="tree-item-title">Capítulo 6 - Toma de decisiones</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-7-fundamentos-de-la-planeación.html"><span class="tree-item-title">Capítulo 7 - Fundamentos de la planeación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-8-administración-estratégica.html"><span class="tree-item-title">Capítulo 8 - Administración estratégica</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/índice.html"><span class="tree-item-title">Índice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="bases-de-datos"><span class="tree-item-title">Bases de datos</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="bases-de-datos/índice.html"><span class="tree-item-title">Índice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="bases-de-datos/resumen-2009.html"><span class="tree-item-title">Resumen 2009</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="bases-de-datos/resumen-diapos.html"><span class="tree-item-title">Resumen diapos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="bases-de-datos/resumen-práctico-completo.html"><span class="tree-item-title">Resumen práctico completo</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software"><span class="tree-item-title">Introducción a la Ingeniería de Software</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras"><span class="tree-item-title">Extras</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/casos-de-uso.html"><span class="tree-item-title">Casos de uso</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/deuda-técnica.html"><span class="tree-item-title">Deuda técnica</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/ejemplos-de-modelos-o-sdlc.html"><span class="tree-item-title">Ejemplos de modelos o SDLC</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/generating-test-cases-from-use-cases.html"><span class="tree-item-title">Generating Test Cases From Use Cases</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/gestión-de-proyectos-notas-de-las-clases.html"><span class="tree-item-title">Gestión de proyectos - notas de las clases</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/guía-para-la-generación-de-cp-a-partir-de-hu.html"><span class="tree-item-title">Guía para la generación de CP a partir de HU</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/mum.html"><span class="tree-item-title">MUM</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/testing-basado-en-la-experiencia.html"><span class="tree-item-title">Testing basado en la experiencia</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/extras/user-stories.html"><span class="tree-item-title">User Stories</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-1-introducción.html"><span class="tree-item-title">Capítulo 1 - Introducción</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-17-ingeniería-de-software-basada-en-componentes.html"><span class="tree-item-title">Capítulo 17 - Ingeniería de software basada en componentes</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-18-ingeniería-de-software-distribuido.html"><span class="tree-item-title">Capítulo 18 - Ingeniería de Software Distribuido</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-2-proceso-de-software.html"><span class="tree-item-title">Capítulo 2 - Proceso de software</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-22-gestión-de-proyectos.html"><span class="tree-item-title">Capítulo 22 - Gestión de proyectos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-23-planeación-de-proyectos.html"><span class="tree-item-title">Capítulo 23 - Planeación de proyectos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-3-metodologías-ágiles.html"><span class="tree-item-title">Capítulo 3 - Metodologías ágiles</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-4-ingeniería-de-requisitos.html"><span class="tree-item-title">Capítulo 4 - Ingeniería de requisitos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-6-diseño-arquitectonico.html"><span class="tree-item-title">Capítulo 6 - Diseño Arquitectonico</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-9-evolución-del-software.html"><span class="tree-item-title">Capítulo 9 - Evolución del Software</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/indice.html"><span class="tree-item-title">Indice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/liberación.html"><span class="tree-item-title">Liberación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/software-testing-foundations.html"><span class="tree-item-title">Software Testing Foundations</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/swebok-2-diseño.html"><span class="tree-item-title">SWEBOK 2 - Diseño</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/swebok-3-construcción.html"><span class="tree-item-title">SWEBOK 3 - Construcción</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información"><span class="tree-item-title">Introducción a la Teoría de la Información</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/índice.html"><span class="tree-item-title">Índice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-1-entropía,-información-conjunta,-divergencia.html"><span class="tree-item-title">Tema 1 - Entropía, información conjunta, divergencia</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-2-procesos-estocásticos-y-cadenas-de-markov.html"><span class="tree-item-title">Tema 2 - Procesos estocásticos y cadenas de Markov</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-3-codificación-de-fuentes.html"><span class="tree-item-title">Tema 3 - Codificación de fuentes</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-4-propiedad-de-equipartición-asintótica.html"><span class="tree-item-title">Tema 4 - Propiedad de Equipartición Asintótica</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-5-codificación-de-canal.html"><span class="tree-item-title">Tema 5 - Codificación de canal</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-teoría-de-la-información/tema-6-entropía-diferencial.html"><span class="tree-item-title">Tema 6 - Entropía diferencial</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="redes-de-computadoras"><span class="tree-item-title">Redes de computadoras</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/1-introduccion"><span class="tree-item-title">1 - Introduccion</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1-introducción-a-las-redes-de-computadoras.html"><span class="tree-item-title">1. Introducción a las Redes de Computadoras</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.1-internet.html"><span class="tree-item-title">1.1 Internet</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.2-conmutacion-de-circuitos.html"><span class="tree-item-title">1.2 Conmutacion de circuitos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.3-conmutacion-de-paquetes.html"><span class="tree-item-title">1.3 Conmutacion de paquetes</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.4-retardo,-pérdidas-y-“throughput”-en-redes-de-conmutación-de-paquetes.html"><span class="tree-item-title">1.4 Retardo, pérdidas y “throughput” en redes de conmutación de paquetes</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.5-modelo-de-capas.html"><span class="tree-item-title">1.5 Modelo de capas</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/1-introduccion/1.6-traceroute.html"><span class="tree-item-title">1.6 traceroute</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación"><span class="tree-item-title">2 - Capa de Aplicación</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2-capa-de-aplicación.html"><span class="tree-item-title">2. Capa de Aplicación</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.1-arquitecturas.html"><span class="tree-item-title">2.1 Arquitecturas</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.2-procesos-y-sockets.html"><span class="tree-item-title">2.2 Procesos y sockets</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.3-servicios-de-transporte.html"><span class="tree-item-title">2.3 Servicios de transporte</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4-protocolos.html"><span class="tree-item-title">2.4 Protocolos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.1-la-web-y-http.html"><span class="tree-item-title">2.4.1 La Web y HTTP</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.2-dns.html"><span class="tree-item-title">2.4.2 DNS</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.3-correo-electronico.html"><span class="tree-item-title">2.4.3 Correo electronico</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.4-ftp.html"><span class="tree-item-title">2.4.4 FTP</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/2-capa-de-aplicación/2.4.5-p2p-y-bitorrent.html"><span class="tree-item-title">2.4.5 P2P y Bitorrent</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte"><span class="tree-item-title">3 - Capa de Transporte</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3-capa-de-transporte.html"><span class="tree-item-title">3. Capa de Transporte</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.1-multiplexación-y-demultiplexación.html"><span class="tree-item-title">3.1 Multiplexación y demultiplexación</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.2-principios-de-udp.html"><span class="tree-item-title">3.2 Principios de UDP</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.3-rdt,-un-servicio-de-transferencia-de-datos-fiable.html"><span class="tree-item-title">3.3 RDT, un servicio de transferencia de datos fiable</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.4-principios-de-pipelining-gbn-y-sr.html"><span class="tree-item-title">3.4 Principios de pipelining GBN y SR</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.5-principios-de-control-de-congestión.html"><span class="tree-item-title">3.5 Principios de Control de Congestión</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.6.1-principios-de-tcp.html"><span class="tree-item-title">3.6.1 Principios de TCP</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.6.2-tcp,-control-de-flujo.html"><span class="tree-item-title">3.6.2 TCP, control de flujo</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/3-capa-de-transporte/3.6.3-tcp,-control-de-congestión.html"><span class="tree-item-title">3.6.3 TCP, control de congestión</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos"><span class="tree-item-title">4 - Capa de Red, plano de datos</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4-capa-de-red,-plano-de-datos.html"><span class="tree-item-title">4. Capa de Red, plano de datos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.1-intro.html"><span class="tree-item-title">4.1 Intro</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.2-redes-de-circuitos-virtuales-y-de-datagramas.html"><span class="tree-item-title">4.2 Redes de circuitos virtuales y de datagramas</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.3-el-interior-de-un-router.html"><span class="tree-item-title">4.3 El interior de un Router</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.1-protocolo-de-internet-(ip).html"><span class="tree-item-title">4.4.1 Protocolo de Internet (IP)</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.2-direccionamiento-ipv4.html"><span class="tree-item-title">4.4.2 Direccionamiento IPv4</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.5-traduccion-de-direcciones-de-red,-nat.html"><span class="tree-item-title">4.5 Traduccion de direcciones de red, NAT</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.6-icmp,-protocolo-de-mensajes-de-control-de-internet.html"><span class="tree-item-title">4.6 ICMP, protocolo de mensajes de control de Internet</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.7-ipv6.html"><span class="tree-item-title">4.7 IPv6</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control"><span class="tree-item-title">5 - Capa de Red, plano de control</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5-capa-de-red,-plano-de-control.html"><span class="tree-item-title">5. Capa de Red, plano de control</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1-algoritmos-de-enrutamiento.html"><span class="tree-item-title">5.1 Algoritmos de enrutamiento</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.1-algoritmo-de-enrutamiento-de-estado-de-enlaces-(ls).html"><span class="tree-item-title">5.1.1 Algoritmo de enrutamiento de estado de enlaces (LS)</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.2-algoritmo-de-enrutamiento-por-vector-de-distancias-(dv).html"><span class="tree-item-title">5.1.2 Algoritmo de enrutamiento por vector de distancias (DV)</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.2-enrutamiento-jerárquico-y-sistemas-autónomos.html"><span class="tree-item-title">5.2 Enrutamiento jerárquico y sistemas autónomos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/5-capa-de-red,-plano-de-control/5.3-broadcast-y-multicast.html"><span class="tree-item-title">5.3 Broadcast y multicast</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace"><span class="tree-item-title">6 - Capa de enlace</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6-capa-de-enlace.html"><span class="tree-item-title">6. Capa de Enlace</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.1-técnicas-de-detección-y-corrección-de-errores.html"><span class="tree-item-title">6.1 Técnicas de detección y corrección de errores</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.2-protocolo-de-acceso-múltiple.html"><span class="tree-item-title">6.2 Protocolo de acceso múltiple</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.3-direccionamiento-de-la-capa-de-enlace.html"><span class="tree-item-title">6.3 Direccionamiento de la capa de enlace</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.4-ethernet.html"><span class="tree-item-title">6.4 Ethernet</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.5-dominios-de-colisión-y-de-broadcast.html"><span class="tree-item-title">6.5 Dominios de colisión y de broadcast</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.6-hub-y-switch.html"><span class="tree-item-title">6.6 Hub y Switch</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.6.1-switch-vs-router.html"><span class="tree-item-title">6.6.1 Switch vs Router</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.7-vlan,-redes-de-área-local-virtuales.html"><span class="tree-item-title">6.7 VLAN, redes de área local virtuales</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/6-capa-de-enlace/6.8-ppp,-protocolo-punto-a-punto.html"><span class="tree-item-title">6.8 PPP, Protocolo punto a punto</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/99-otros"><span class="tree-item-title">99 - Otros</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="redes-de-computadoras/99-otros/practicos"><span class="tree-item-title">Practicos</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/practicos/practico-5.html"><span class="tree-item-title">Practico 5</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/practicos/practico-6.html"><span class="tree-item-title">Practico 6</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/practicos/practico-7.html"><span class="tree-item-title">Practico 7</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/99-otros.html"><span class="tree-item-title">99. Otros</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/99.1-puertos-bien-conocidos.html"><span class="tree-item-title">99.1 Puertos bien conocidos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/99.2-protocolos-sobre-protocolos.html"><span class="tree-item-title">99.2 Protocolos sobre protocolos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-file" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/99-otros/99.3-tips-problemas-prácticos.html"><span class="tree-item-title">99.3 Tips problemas prácticos</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="redes-de-computadoras/media"><span class="tree-item-title">media</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="3">
+                      <div class="tree-item-contents">
+                        <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                            <path d="M3 8L12 17L21 8"></path>
+                          </svg></div><a class="tree-item-link" href="redes-de-computadoras/media/excalidraw"><span class="tree-item-title">Excalidraw</span></a>
+                      </div>
+                      <div class="tree-item-children">
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/media/excalidraw/drawing-2022-10-26-17.49.49.excalidraw.html"><span class="tree-item-title">Drawing 2022-10-26 17.49.49.excalidraw</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                        <div class="tree-item mod-tree-file" data-depth="4">
+                          <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/media/excalidraw/drawing-2022-10-26-18.15.54.excalidraw.html"><span class="tree-item-title">Drawing 2022-10-26 18.15.54.excalidraw</span></a></div>
+                          <div class="tree-item-children"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="redes-de-computadoras/indice.html"><span class="tree-item-title">Indice</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-file" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="index.html"><span class="tree-item-title">index</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles">
+          mjx-c.mjx-c1D43B.TEX-I::before {
+            padding: 0.683em 0.888em 0px 0px;
+            content: "H";
+          }
+
+          mjx-c.mjx-c394::before {
+            padding: 0.716em 0.833em 0px 0px;
+            content: "Δ";
+          }
+
+          mjx-c.mjx-c39::before {
+            padding: 0.666em 0.5em 0.022em 0px;
+            content: "9";
+          }
+
+          mjx-c.mjx-c1D434.TEX-I::before {
+            padding: 0.716em 0.75em 0px 0px;
+            content: "A";
+          }
+
+          mjx-c.mjx-c1D716.TEX-I::before {
+            padding: 0.431em 0.406em 0.011em 0px;
+            content: "ϵ";
+          }
+
+          mjx-mtext {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-munder {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-over {
+            text-align: left;
+          }
+
+          mjx-munder:not([limits="false"]) {
+            display: inline-table;
+          }
+
+          mjx-munder>mjx-row {
+            text-align: left;
+          }
+
+          mjx-under {
+            padding-bottom: 0.1em;
+          }
+
+          mjx-c.mjx-c1D44B.TEX-I::before {
+            padding: 0.683em 0.852em 0px 0px;
+            content: "X";
+          }
+
+          mjx-c.mjx-c1D44C.TEX-I::before {
+            padding: 0.683em 0.763em 0px 0px;
+            content: "Y";
+          }
+
+          mjx-c.mjx-c1D44A.TEX-I::before {
+            padding: 0.683em 1.048em 0.022em 0px;
+            content: "W";
+          }
+
+          mjx-c.mjx-c1D464.TEX-I::before {
+            padding: 0.443em 0.716em 0.011em 0px;
+            content: "w";
+          }
+
+          mjx-c.mjx-c6E::before {
+            padding: 0.442em 0.556em 0px 0px;
+            content: "n";
+          }
+
+          mjx-c.mjx-c6F::before {
+            padding: 0.448em 0.5em 0.01em 0px;
+            content: "o";
+          }
+
+          mjx-c.mjx-c20::before {
+            padding: 0px 0.25em 0px 0px;
+            content: " ";
+          }
+
+          mjx-c.mjx-c65::before {
+            padding: 0.448em 0.444em 0.011em 0px;
+            content: "e";
+          }
+
+          mjx-c.mjx-c73::before {
+            padding: 0.448em 0.394em 0.011em 0px;
+            content: "s";
+          }
+
+          mjx-c.mjx-c63::before {
+            padding: 0.448em 0.444em 0.011em 0px;
+            content: "c";
+          }
+
+          mjx-c.mjx-c6A::before {
+            padding: 0.669em 0.306em 0.205em 0px;
+            content: "j";
+          }
+
+          mjx-c.mjx-c75::before {
+            padding: 0.442em 0.556em 0.011em 0px;
+            content: "u";
+          }
+
+          mjx-c.mjx-c74::before {
+            padding: 0.615em 0.389em 0.01em 0px;
+            content: "t";
+          }
+
+          mjx-c.mjx-c61::before {
+            padding: 0.448em 0.5em 0.011em 0px;
+            content: "a";
+          }
+
+          mjx-c.mjx-c6D::before {
+            padding: 0.442em 0.833em 0px 0px;
+            content: "m";
+          }
+
+          mjx-c.mjx-c62::before {
+            padding: 0.694em 0.556em 0.011em 0px;
+            content: "b";
+          }
+
+          mjx-c.mjx-c69::before {
+            padding: 0.669em 0.278em 0px 0px;
+            content: "i";
+          }
+
+          mjx-c.mjx-c72::before {
+            padding: 0.442em 0.392em 0px 0px;
+            content: "r";
+          }
+
+          mjx-c.mjx-c222A::before {
+            padding: 0.598em 0.667em 0.022em 0px;
+            content: "∪";
+          }
+
+          mjx-c.mjx-c22C3.TEX-S2::before {
+            padding: 0.95em 1.111em 0.449em 0px;
+            content: "⋃";
+          }
+
+          mjx-c.mjx-c21::before {
+            padding: 0.716em 0.278em 0px 0px;
+            content: "!";
+          }
+
+          mjx-c.mjx-c2211.TEX-S2::before {
+            padding: 0.95em 1.444em 0.45em 0px;
+            content: "∑";
+          }
+
+          mjx-c.mjx-c3B::before {
+            padding: 0.43em 0.278em 0.194em 0px;
+            content: ";";
+          }
+
+          mjx-c.mjx-c3E::before {
+            padding: 0.54em 0.778em 0.04em 0px;
+            content: ">";
+          }
+
+          mjx-c.mjx-c3C::before {
+            padding: 0.54em 0.778em 0.04em 0px;
+            content: "<";
+          }
+
+          mjx-mspace {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-c.mjx-c1D6FC.TEX-I::before {
+            padding: 0.442em 0.64em 0.011em 0px;
+            content: "α";
+          }
+
+          mjx-c.mjx-c1D6FD.TEX-I::before {
+            padding: 0.705em 0.566em 0.194em 0px;
+            content: "β";
+          }
+
+          mjx-c.mjx-c7C::before {
+            padding: 0.75em 0.278em 0.249em 0px;
+            content: "|";
+          }
+
+          mjx-c.mjx-c1D439.TEX-I::before {
+            padding: 0.68em 0.749em 0px 0px;
+            content: "F";
+          }
+
+          mjx-c.mjx-c1D448.TEX-I::before {
+            padding: 0.683em 0.767em 0.022em 0px;
+            content: "U";
+          }
+
+          mjx-c.mjx-c1D449.TEX-I::before {
+            padding: 0.683em 0.769em 0.022em 0px;
+            content: "V";
+          }
+
+          mjx-c.mjx-c1D435.TEX-I::before {
+            padding: 0.683em 0.759em 0px 0px;
+            content: "B";
+          }
+
+          mjx-c.mjx-c1D43F.TEX-I::before {
+            padding: 0.683em 0.681em 0px 0px;
+            content: "L";
+          }
+
+          mjx-c.mjx-c2264::before {
+            padding: 0.636em 0.778em 0.138em 0px;
+            content: "≤";
+          }
+
+          mjx-c.mjx-c1D446.TEX-I::before {
+            padding: 0.705em 0.645em 0.022em 0px;
+            content: "S";
+          }
+
+          mjx-msqrt {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-root {
+            display: inline-block;
+            white-space: nowrap;
+          }
+
+          mjx-surd {
+            display: inline-block;
+            vertical-align: top;
+          }
+
+          mjx-sqrt {
+            display: inline-block;
+            padding-top: 0.07em;
+          }
+
+          mjx-sqrt>mjx-box {
+            border-top: 0.07em solid;
+          }
+
+          mjx-sqrt.mjx-tall>mjx-box {
+            padding-left: 0.3em;
+            margin-left: -0.3em;
+          }
+
+          mjx-c.mjx-c221A::before {
+            padding: 0.8em 0.853em 0.2em 0px;
+            content: "√";
+          }
+
+          mjx-c.mjx-c2013::before {
+            padding: 0.285em 0.5em 0px 0px;
+            content: "–";
+          }
+
+          mjx-c.mjx-c5B::before {
+            padding: 0.75em 0.278em 0.25em 0px;
+            content: "[";
+          }
+
+          mjx-c.mjx-c5D::before {
+            padding: 0.75em 0.278em 0.25em 0px;
+            content: "]";
+          }
+
+          mjx-c.mjx-c34::before {
+            padding: 0.677em 0.5em 0px 0px;
+            content: "4";
+          }
+
+          mjx-c.mjx-c38::before {
+            padding: 0.666em 0.5em 0.022em 0px;
+            content: "8";
+          }
+
+          mjx-c.mjx-c1D43E.TEX-I::before {
+            padding: 0.683em 0.889em 0px 0px;
+            content: "K";
+          }
+
+          mjx-c.mjx-c2026::before {
+            padding: 0.12em 1.172em 0px 0px;
+            content: "…";
+          }
+
+          mjx-c.mjx-c2E::before {
+            padding: 0.12em 0.278em 0px 0px;
+            content: ".";
+          }
+
+          mjx-c.mjx-c1D440.TEX-I::before {
+            padding: 0.683em 1.051em 0px 0px;
+            content: "M";
+          }
+
+          mjx-c.mjx-c33::before {
+            padding: 0.665em 0.5em 0.022em 0px;
+            content: "3";
+          }
+
+          mjx-c.mjx-c1D436.TEX-I::before {
+            padding: 0.705em 0.76em 0.022em 0px;
+            content: "C";
+          }
+
+          mjx-c.mjx-c1D443.TEX-I::before {
+            padding: 0.683em 0.751em 0px 0px;
+            content: "P";
+          }
+
+          mjx-c.mjx-c1D45E.TEX-I::before {
+            padding: 0.442em 0.46em 0.194em 0px;
+            content: "q";
+          }
+
+          mjx-c.mjx-c1D462.TEX-I::before {
+            padding: 0.442em 0.572em 0.011em 0px;
+            content: "u";
+          }
+
+          mjx-c.mjx-c1D447.TEX-I::before {
+            padding: 0.677em 0.704em 0px 0px;
+            content: "T";
+          }
+
+          mjx-c.mjx-c1D43C.TEX-I::before {
+            padding: 0.683em 0.504em 0px 0px;
+            content: "I";
+          }
+
+          mjx-msubsup {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-script {
+            display: inline-block;
+            padding-right: 0.05em;
+            padding-left: 0.033em;
+          }
+
+          mjx-script>mjx-spacer {
+            display: block;
+          }
+
+          mjx-c.mjx-c1D44E.TEX-I::before {
+            padding: 0.441em 0.529em 0.01em 0px;
+            content: "a";
+          }
+
+          mjx-c.mjx-c1D45F.TEX-I::before {
+            padding: 0.442em 0.451em 0.011em 0px;
+            content: "r";
+          }
+
+          mjx-c.mjx-c1D460.TEX-I::before {
+            padding: 0.442em 0.469em 0.01em 0px;
+            content: "s";
+          }
+
+          mjx-c.mjx-c2212::before {
+            padding: 0.583em 0.778em 0.082em 0px;
+            content: "−";
+          }
+
+          mjx-c.mjx-c1D44F.TEX-I::before {
+            padding: 0.694em 0.429em 0.011em 0px;
+            content: "b";
+          }
+
+          mjx-c.mjx-c1D453.TEX-I::before {
+            padding: 0.705em 0.55em 0.205em 0px;
+            content: "f";
+          }
+
+          mjx-c.mjx-c2F::before {
+            padding: 0.75em 0.5em 0.25em 0px;
+            content: "/";
+          }
+
+          mjx-c.mjx-c1D444.TEX-I::before {
+            padding: 0.704em 0.791em 0.194em 0px;
+            content: "Q";
+          }
+
+          mjx-c.mjx-c1D445.TEX-I::before {
+            padding: 0.683em 0.759em 0.021em 0px;
+            content: "R";
+          }
+
+          mjx-c.mjx-c1D441.TEX-I::before {
+            padding: 0.683em 0.888em 0px 0px;
+            content: "N";
+          }
+
+          mjx-c.mjx-c2217::before {
+            padding: 0.465em 0.5em 0px 0px;
+            content: "∗";
+          }
+
+          mjx-c.mjx-c1D438.TEX-I::before {
+            padding: 0.68em 0.764em 0px 0px;
+            content: "E";
+          }
+
+          mjx-mfrac {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-frac {
+            display: inline-block;
+            vertical-align: 0.17em;
+            padding: 0px 0.22em;
+          }
+
+          mjx-frac[type="d"] {
+            vertical-align: 0.04em;
+          }
+
+          mjx-frac[delims] {
+            padding: 0px 0.1em;
+          }
+
+          mjx-frac[atop] {
+            padding: 0px 0.12em;
+          }
+
+          mjx-frac[atop][delims] {
+            padding: 0px;
+          }
+
+          mjx-dtable {
+            display: inline-table;
+            width: 100%;
+          }
+
+          mjx-dtable>* {
+            font-size: 2000%;
+          }
+
+          mjx-dbox {
+            display: block;
+            font-size: 5%;
+          }
+
+          mjx-num {
+            display: block;
+            text-align: center;
+          }
+
+          mjx-den {
+            display: block;
+            text-align: center;
+          }
+
+          mjx-mfrac[bevelled]>mjx-num {
+            display: inline-block;
+          }
+
+          mjx-mfrac[bevelled]>mjx-den {
+            display: inline-block;
+          }
+
+          mjx-den[align="right"],
+          mjx-num[align="right"] {
+            text-align: right;
+          }
+
+          mjx-den[align="left"],
+          mjx-num[align="left"] {
+            text-align: left;
+          }
+
+          mjx-nstrut {
+            display: inline-block;
+            height: 0.054em;
+            width: 0px;
+            vertical-align: -0.054em;
+          }
+
+          mjx-nstrut[type="d"] {
+            height: 0.217em;
+            vertical-align: -0.217em;
+          }
+
+          mjx-dstrut {
+            display: inline-block;
+            height: 0.505em;
+            width: 0px;
+          }
+
+          mjx-dstrut[type="d"] {
+            height: 0.726em;
+          }
+
+          mjx-line {
+            display: block;
+            box-sizing: border-box;
+            min-height: 1px;
+            height: 0.06em;
+            border-top: 0.06em solid;
+            margin: 0.06em -0.1em;
+            overflow: hidden;
+          }
+
+          mjx-line[type="d"] {
+            margin: 0.18em -0.1em;
+          }
+
+          mjx-mrow {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-msup {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-c.mjx-c1D442.TEX-I::before {
+            padding: 0.704em 0.763em 0.022em 0px;
+            content: "O";
+          }
+
+          mjx-c.mjx-cD7::before {
+            padding: 0.491em 0.778em 0px 0px;
+            content: "×";
+          }
+
+          mjx-c.mjx-c1D459.TEX-I::before {
+            padding: 0.694em 0.298em 0.011em 0px;
+            content: "l";
+          }
+
+          mjx-c.mjx-c1D454.TEX-I::before {
+            padding: 0.442em 0.477em 0.205em 0px;
+            content: "g";
+          }
+
+          mjx-container[jax="CHTML"] {
+            line-height: 0;
+          }
+
+          mjx-container [space="1"] {
+            margin-left: 0.111em;
+          }
+
+          mjx-container [space="2"] {
+            margin-left: 0.167em;
+          }
+
+          mjx-container [space="3"] {
+            margin-left: 0.222em;
+          }
+
+          mjx-container [space="4"] {
+            margin-left: 0.278em;
+          }
+
+          mjx-container [space="5"] {
+            margin-left: 0.333em;
+          }
+
+          mjx-container [rspace="1"] {
+            margin-right: 0.111em;
+          }
+
+          mjx-container [rspace="2"] {
+            margin-right: 0.167em;
+          }
+
+          mjx-container [rspace="3"] {
+            margin-right: 0.222em;
+          }
+
+          mjx-container [rspace="4"] {
+            margin-right: 0.278em;
+          }
+
+          mjx-container [rspace="5"] {
+            margin-right: 0.333em;
+          }
+
+          mjx-container [size="s"] {
+            font-size: 70.7%;
+          }
+
+          mjx-container [size="ss"] {
+            font-size: 50%;
+          }
+
+          mjx-container [size="Tn"] {
+            font-size: 60%;
+          }
+
+          mjx-container [size="sm"] {
+            font-size: 85%;
+          }
+
+          mjx-container [size="lg"] {
+            font-size: 120%;
+          }
+
+          mjx-container [size="Lg"] {
+            font-size: 144%;
+          }
+
+          mjx-container [size="LG"] {
+            font-size: 173%;
+          }
+
+          mjx-container [size="hg"] {
+            font-size: 207%;
+          }
+
+          mjx-container [size="HG"] {
+            font-size: 249%;
+          }
+
+          mjx-container [width="full"] {
+            width: 100%;
+          }
+
+          mjx-box {
+            display: inline-block;
+          }
+
+          mjx-block {
+            display: block;
+          }
+
+          mjx-itable {
+            display: inline-table;
+          }
+
+          mjx-row {
+            display: table-row;
+          }
+
+          mjx-row>* {
+            display: table-cell;
+          }
+
+          mjx-mtext {
+            display: inline-block;
+          }
+
+          mjx-mstyle {
+            display: inline-block;
+          }
+
+          mjx-merror {
+            display: inline-block;
+            color: red;
+            background-color: yellow;
+          }
+
+          mjx-mphantom {
+            visibility: hidden;
+          }
+
+          mjx-assistive-mml {
+            top: 0px;
+            left: 0px;
+            clip: rect(1px, 1px, 1px, 1px);
+            user-select: none;
+            position: absolute !important;
+            padding: 1px 0px 0px !important;
+            border: 0px !important;
+            display: block !important;
+            width: auto !important;
+            overflow: hidden !important;
+          }
+
+          mjx-assistive-mml[display="block"] {
+            width: 100% !important;
+          }
+
+          mjx-math {
+            display: inline-block;
+            text-align: left;
+            line-height: 0;
+            text-indent: 0px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 100%;
+            letter-spacing: normal;
+            border-collapse: collapse;
+            overflow-wrap: normal;
+            word-spacing: normal;
+            white-space: nowrap;
+            direction: ltr;
+            padding: 1px 0px;
+          }
+
+          mjx-container[jax="CHTML"][display="true"] {
+            display: block;
+            text-align: center;
+            margin: 1em 0px;
+          }
+
+          mjx-container[jax="CHTML"][display="true"][width="full"] {
+            display: flex;
+          }
+
+          mjx-container[jax="CHTML"][display="true"] mjx-math {
+            padding: 0px;
+          }
+
+          mjx-container[jax="CHTML"][justify="left"] {
+            text-align: left;
+          }
+
+          mjx-container[jax="CHTML"][justify="right"] {
+            text-align: right;
+          }
+
+          mjx-msub {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-mi {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-c {
+            display: inline-block;
+          }
+
+          mjx-utext {
+            display: inline-block;
+            padding: 0.75em 0px 0.2em;
+          }
+
+          mjx-mo {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-stretchy-h {
+            display: inline-table;
+            width: 100%;
+          }
+
+          mjx-stretchy-h>* {
+            display: table-cell;
+            width: 0px;
+          }
+
+          mjx-stretchy-h>*>mjx-c {
+            display: inline-block;
+            transform: scaleX(1);
+          }
+
+          mjx-stretchy-h>*>mjx-c::before {
+            display: inline-block;
+            width: initial;
+          }
+
+          mjx-stretchy-h>mjx-ext {
+            overflow: clip visible;
+            width: 100%;
+          }
+
+          mjx-stretchy-h>mjx-ext>mjx-c::before {
+            transform: scaleX(500);
+          }
+
+          mjx-stretchy-h>mjx-ext>mjx-c {
+            width: 0px;
+          }
+
+          mjx-stretchy-h>mjx-beg>mjx-c {
+            margin-right: -0.1em;
+          }
+
+          mjx-stretchy-h>mjx-end>mjx-c {
+            margin-left: -0.1em;
+          }
+
+          mjx-stretchy-v {
+            display: inline-block;
+          }
+
+          mjx-stretchy-v>* {
+            display: block;
+          }
+
+          mjx-stretchy-v>mjx-beg {
+            height: 0px;
+          }
+
+          mjx-stretchy-v>mjx-end>mjx-c {
+            display: block;
+          }
+
+          mjx-stretchy-v>*>mjx-c {
+            transform: scaleY(1);
+            transform-origin: left center;
+            overflow: hidden;
+          }
+
+          mjx-stretchy-v>mjx-ext {
+            display: block;
+            height: 100%;
+            box-sizing: border-box;
+            border: 0px solid transparent;
+            overflow: visible clip;
+          }
+
+          mjx-stretchy-v>mjx-ext>mjx-c::before {
+            width: initial;
+            box-sizing: border-box;
+          }
+
+          mjx-stretchy-v>mjx-ext>mjx-c {
+            transform: scaleY(500) translateY(0.075em);
+            overflow: visible;
+          }
+
+          mjx-mark {
+            display: inline-block;
+            height: 0px;
+          }
+
+          mjx-texatom {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-mn {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-c::before {
+            display: block;
+            width: 0px;
+          }
+
+          .MJX-TEX {
+            font-family: MJXZERO, MJXTEX;
+          }
+
+          .TEX-B {
+            font-family: MJXZERO, MJXTEX-B;
+          }
+
+          .TEX-I {
+            font-family: MJXZERO, MJXTEX-I;
+          }
+
+          .TEX-MI {
+            font-family: MJXZERO, MJXTEX-MI;
+          }
+
+          .TEX-BI {
+            font-family: MJXZERO, MJXTEX-BI;
+          }
+
+          .TEX-S1 {
+            font-family: MJXZERO, MJXTEX-S1;
+          }
+
+          .TEX-S2 {
+            font-family: MJXZERO, MJXTEX-S2;
+          }
+
+          .TEX-S3 {
+            font-family: MJXZERO, MJXTEX-S3;
+          }
+
+          .TEX-S4 {
+            font-family: MJXZERO, MJXTEX-S4;
+          }
+
+          .TEX-A {
+            font-family: MJXZERO, MJXTEX-A;
+          }
+
+          .TEX-C {
+            font-family: MJXZERO, MJXTEX-C;
+          }
+
+          .TEX-CB {
+            font-family: MJXZERO, MJXTEX-CB;
+          }
+
+          .TEX-FR {
+            font-family: MJXZERO, MJXTEX-FR;
+          }
+
+          .TEX-FRB {
+            font-family: MJXZERO, MJXTEX-FRB;
+          }
+
+          .TEX-SS {
+            font-family: MJXZERO, MJXTEX-SS;
+          }
+
+          .TEX-SSB {
+            font-family: MJXZERO, MJXTEX-SSB;
+          }
+
+          .TEX-SSI {
+            font-family: MJXZERO, MJXTEX-SSI;
+          }
+
+          .TEX-SC {
+            font-family: MJXZERO, MJXTEX-SC;
+          }
+
+          .TEX-T {
+            font-family: MJXZERO, MJXTEX-T;
+          }
+
+          .TEX-V {
+            font-family: MJXZERO, MJXTEX-V;
+          }
+
+          .TEX-VB {
+            font-family: MJXZERO, MJXTEX-VB;
+          }
+
+          mjx-stretchy-v mjx-c,
+          mjx-stretchy-h mjx-c {
+            font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A !important;
+          }
+
+          @font-face {
+            font-family: MJXZERO;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-B;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-I;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-MI;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-BI;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-S1;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-S2;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-S3;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-S4;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-A;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-C;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-CB;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-FR;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-FRB;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-SS;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-SSB;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-SSI;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-SC;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-T;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-V;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+          }
+
+          @font-face {
+            font-family: MJXTEX-VB;
+            src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+          }
+
+          mjx-c.mjx-c1D451.TEX-I::before {
+            padding: 0.694em 0.52em 0.01em 0px;
+            content: "d";
+          }
+
+          mjx-c.mjx-c1D465.TEX-I::before {
+            padding: 0.442em 0.572em 0.011em 0px;
+            content: "x";
+          }
+
+          mjx-c.mjx-c28::before {
+            padding: 0.75em 0.389em 0.25em 0px;
+            content: "(";
+          }
+
+          mjx-c.mjx-c1D466.TEX-I::before {
+            padding: 0.442em 0.49em 0.205em 0px;
+            content: "y";
+          }
+
+          mjx-c.mjx-c29::before {
+            padding: 0.75em 0.389em 0.25em 0px;
+            content: ")";
+          }
+
+          mjx-c.mjx-c3D::before {
+            padding: 0.583em 0.778em 0.082em 0px;
+            content: "=";
+          }
+
+          mjx-c.mjx-c1D45A.TEX-I::before {
+            padding: 0.442em 0.878em 0.011em 0px;
+            content: "m";
+          }
+
+          mjx-c.mjx-c1D456.TEX-I::before {
+            padding: 0.661em 0.345em 0.011em 0px;
+            content: "i";
+          }
+
+          mjx-c.mjx-c1D45B.TEX-I::before {
+            padding: 0.442em 0.6em 0.011em 0px;
+            content: "n";
+          }
+
+          mjx-c.mjx-c1D463.TEX-I::before {
+            padding: 0.443em 0.485em 0.011em 0px;
+            content: "v";
+          }
+
+          mjx-c.mjx-c7B::before {
+            padding: 0.75em 0.5em 0.25em 0px;
+            content: "{";
+          }
+
+          mjx-c.mjx-c1D450.TEX-I::before {
+            padding: 0.442em 0.433em 0.011em 0px;
+            content: "c";
+          }
+
+          mjx-c.mjx-c2C::before {
+            padding: 0.121em 0.278em 0.194em 0px;
+            content: ",";
+          }
+
+          mjx-c.mjx-c2B::before {
+            padding: 0.583em 0.778em 0.082em 0px;
+            content: "+";
+          }
+
+          mjx-c.mjx-c7D::before {
+            padding: 0.75em 0.5em 0.25em 0px;
+            content: "}";
+          }
+
+          mjx-c.mjx-c1D461.TEX-I::before {
+            padding: 0.626em 0.361em 0.011em 0px;
+            content: "t";
+          }
+
+          mjx-c.mjx-c30::before {
+            padding: 0.666em 0.5em 0.022em 0px;
+            content: "0";
+          }
+
+          mjx-c.mjx-c31::before {
+            padding: 0.666em 0.5em 0px 0px;
+            content: "1";
+          }
+
+          mjx-c.mjx-c1D467.TEX-I::before {
+            padding: 0.442em 0.465em 0.011em 0px;
+            content: "z";
+          }
+
+          mjx-c.mjx-c1D437.TEX-I::before {
+            padding: 0.683em 0.828em 0px 0px;
+            content: "D";
+          }
+
+          mjx-c.mjx-c35::before {
+            padding: 0.666em 0.5em 0.022em 0px;
+            content: "5";
+          }
+
+          mjx-c.mjx-c32::before {
+            padding: 0.666em 0.5em 0px 0px;
+            content: "2";
+          }
+
+          mjx-c.mjx-c36::before {
+            padding: 0.666em 0.5em 0.022em 0px;
+            content: "6";
+          }
+
+          mjx-c.mjx-c37::before {
+            padding: 0.676em 0.5em 0.022em 0px;
+            content: "7";
+          }
+
+          mjx-c.mjx-c1D452.TEX-I::before {
+            padding: 0.442em 0.466em 0.011em 0px;
+            content: "e";
+          }
+
+          mjx-c.mjx-c5F::before {
+            padding: 0px 0.5em 0.062em 0px;
+            content: "_";
+          }
+
+          mjx-c.mjx-c210E.TEX-I::before {
+            padding: 0.694em 0.576em 0.011em 0px;
+            content: "h";
+          }
+
+          mjx-c.mjx-c1D45C.TEX-I::before {
+            padding: 0.441em 0.485em 0.011em 0px;
+            content: "o";
+          }
+
+          mjx-c.mjx-c1D45D.TEX-I::before {
+            padding: 0.442em 0.503em 0.194em 0px;
+            content: "p";
+          }
+
+          mjx-c.mjx-c27F9::before {
+            padding: 0.525em 1.638em 0.024em 0px;
+            content: "⟹";
+          }
+
+          mjx-c.mjx-c221E::before {
+            padding: 0.442em 1em 0.011em 0px;
+            content: "∞";
+          }
+        </style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header">
+            <div class="inline-title" data-heading="Tema 6 - Entropía diferencial" id="Tema_6_-_Entropía_diferencial" style="display: block;">Tema 6 - Entropía diferencial</div>
+          </div>
+          <div>
+            <h2 data-heading="Definición" id="Definición" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Definición
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143213.png" src="Pasted image 20230531143213.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143213.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143213.png"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Ejemplos" id="Ejemplos" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ejemplos
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143315.png" src="Pasted image 20230531143315.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143315.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143315.png"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143325.png" src="Pasted image 20230531143325.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143325.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143325.png"></span></p>
+          </div>
+          <div class="admonition-parent admonition-example-parent">
+            <div class="callout admonition admonition-example admonition-plugin is-collapsible is-collapsed" style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Desarrollo</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20230531144655.png" src="Pasted image 20230531144655.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531144655.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531144655.png"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 data-heading="AEP" id="AEP">AEP</h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143351.png" src="Pasted image 20230531143351.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143351.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143351.png"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143402.png" src="Pasted image 20230531143402.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143402.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143402.png"></span></p>
+          </div>
+          <div class="admonition-parent admonition-example-parent">
+            <div class="callout admonition admonition-example admonition-plugin is-collapsible is-collapsed" style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Desarrollo</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20230531151936.png" src="Pasted image 20230531151936.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531151936.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531151936.png"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 data-heading="Algunas observaciones" id="Algunas_observaciones" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Algunas observaciones
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143423.png" src="Pasted image 20230531143423.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143423.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143423.png"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Entropía diferencial y discreta" id="Entropía_diferencial_y_discreta">Entropía diferencial y discreta</h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143449.png" src="Pasted image 20230531143449.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143449.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143449.png"></span><br>
+              <span alt="Pasted image 20230531143457.png" src="Pasted image 20230531143457.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143457.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143457.png"></span>
+            </p>
+          </div>
+          <div>
+            <h2 data-heading="Teorema ($h(X)$ vs $H(X^\Delta)$)" id="Teorema_(_vs_)" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Teorema (<span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> vs <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.051em;"><mjx-mi class="mjx-n" size="s"><mjx-c class="mjx-c394"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>)
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143620.png" src="Pasted image 20230531143620.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143620.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143620.png"></span></p>
+          </div>
+          <div>
+            <h3 data-heading="Ejemplo" id="Ejemplo" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Ejemplo
+            </h3>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143635.png" src="Pasted image 20230531143635.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143635.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143635.png"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Entropía diferencial conjunta y condicional" id="Entropía_diferencial_conjunta_y_condicional">Entropía diferencial conjunta y condicional</h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143701.png" src="Pasted image 20230531143701.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143701.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143701.png"></span><br>
+              (soporte conjunto, de x e y)</p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143709.png" src="Pasted image 20230531143709.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143709.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143709.png"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143719.png" src="Pasted image 20230531143719.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143719.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143719.png"></span></p>
+          </div>
+          <div>
+            <h1 data-heading="Entropía dif. relativa e Información mutua" id="Entropía_dif._relativa_e_Información_mutua">Entropía dif. relativa e Información mutua</h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143743.png" src="Pasted image 20230531143743.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143743.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143743.png"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143758.png" src="Pasted image 20230531143758.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143758.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143758.png"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Definición general de información mutua" id="Definición_general_de_información_mutua" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Definición general de información mutua
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143904.png" src="Pasted image 20230531143904.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143904.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143904.png"></span></p>
+          </div>
+          <div class="admonition-parent admonition-example-parent">
+            <div class="callout admonition admonition-example admonition-plugin is-collapsible is-collapsed" style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Representación</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20230531155608.png" src="Pasted image 20230531155608.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531155608.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531155608.png"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143915.png" src="Pasted image 20230531143915.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143915.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143915.png"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143924.png" src="Pasted image 20230531143924.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143924.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143924.png"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143936.png" src="Pasted image 20230531143936.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143936.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143936.png"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531143946.png" src="Pasted image 20230531143946.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531143946.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531143946.png"></span></p>
+          </div>
+          <div>
+            <h2 data-heading="Propiedades" id="Propiedades" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Propiedades
+            </h2>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531154643.png" src="Pasted image 20230531154643.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531154643.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531154643.png"></span></p>
+          </div>
+          <div class="admonition-parent admonition-example-parent">
+            <div class="callout admonition admonition-example admonition-plugin is-collapsible is-collapsed" style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="+">
+              <div class="callout-title admonition-title ">
+                <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M61.77 401l17.5-20.15a19.92 19.92 0 0 0 5.07-14.19v-3.31C84.34 356 80.5 352 73 352H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8h22.83a157.41 157.41 0 0 0-11 12.31l-5.61 7c-4 5.07-5.25 10.13-2.8 14.88l1.05 1.93c3 5.76 6.29 7.88 12.25 7.88h4.73c10.33 0 15.94 2.44 15.94 9.09 0 4.72-4.2 8.22-14.36 8.22a41.54 41.54 0 0 1-15.47-3.12c-6.49-3.88-11.74-3.5-15.6 3.12l-5.59 9.31c-3.72 6.13-3.19 11.72 2.63 15.94 7.71 4.69 20.38 9.44 37 9.44 34.16 0 48.5-22.75 48.5-44.12-.03-14.38-9.12-29.76-28.73-34.88zM496 224H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM16 160h64a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H64V40a8 8 0 0 0-8-8H32a8 8 0 0 0-7.14 4.42l-8 16A8 8 0 0 0 24 64h8v64H16a8 8 0 0 0-8 8v16a8 8 0 0 0 8 8zm-3.91 160H80a8 8 0 0 0 8-8v-16a8 8 0 0 0-8-8H41.32c3.29-10.29 48.34-18.68 48.34-56.44 0-29.06-25-39.56-44.47-39.56-21.36 0-33.8 10-40.46 18.75-4.37 5.59-3 10.84 2.8 15.37l8.58 6.88c5.61 4.56 11 2.47 16.12-2.44a13.44 13.44 0 0 1 9.46-3.84c3.33 0 9.28 1.56 9.28 8.75C51 248.19 0 257.31 0 304.59v4C0 316 5.08 320 12.09 320z"></path>
+                  </svg></div>
+                <div class="callout-title-inner admonition-title-content">Desarrollo de 1</div>
+                <div class="callout-fold"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content admonition-content" style="height: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">
+                <p><span alt="Pasted image 20230531154757.png" src="Pasted image 20230531154757.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531154757.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531154757.png"></span></p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 data-heading="La distribución normal maximiza h para varianza dada" id="La_distribución_normal_maximiza_h_para_varianza_dada">La distribución normal maximiza h para varianza dada</h1>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531162953.png" src="Pasted image 20230531162953.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531162953.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531162953.png"></span></p>
+          </div>
+          <div>
+            <p><span alt="Pasted image 20230531163001.png" src="Pasted image 20230531163001.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230531163001.png" src="introducción-a-la-teoría-de-la-información\media\pasted-image-20230531163001.png"></span></p>
+          </div>
+          <div class="mod-footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Tema_6_-_Entropía_diferencial"><span class="tree-item-title">Tema 6 - Entropía diferencial</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Definición"><span class="tree-item-title">Definición</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Ejemplos"><span class="tree-item-title">Ejemplos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#AEP"><span class="tree-item-title">AEP</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="3">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Algunas_observaciones"><span class="tree-item-title">Algunas observaciones</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Entropía_diferencial_y_discreta"><span class="tree-item-title">Entropía diferencial y discreta</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#Teorema_($h(X)$_vs_$H(X^\Delta)$)"><span class="tree-item-title">Teorema ($h(X)$ vs $H(X^\Delta)$)</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Ejemplo"><span class="tree-item-title">Ejemplo</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Entropía_diferencial_conjunta_y_condicional"><span class="tree-item-title">Entropía diferencial conjunta y condicional</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Entropía_dif._relativa_e_Información_mutua"><span class="tree-item-title">Entropía dif. relativa e Información mutua</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Definición_general_de_información_mutua"><span class="tree-item-title">Definición general de información mutua</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Propiedades"><span class="tree-item-title">Propiedades</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#La_distribución_normal_maximiza_h_para_varianza_dada"><span class="tree-item-title">La distribución normal maximiza h para varianza dada</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
