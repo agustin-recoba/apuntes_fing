@@ -586,14 +586,6 @@ It is important to check the quality of data in systems that use a database or l
 Because of the complex test environment. 
 At the beginning of the system test, only half of the testing and quality control work has been done.
 
-#### 
-
-#### 
-
-#### 
-
-
-
 ### 3.4.3 Test Objectives
 To validate whether the complete system meets the specified functional and nonfunctional requirements and how well it does that.
 
@@ -611,7 +603,6 @@ This collection of information may be very costly and time consuming. Test compl
 #### Project fail
 If the requirements are not specified, of course the developers do not Project fail have clear objectives either. Thus, it is very unlikely that the developed system will meet the implicit requirements of the customer.
 In such projects, execution of the system test can probably only announce the collapse of the project.
-
 
 ## 3.5 Acceptance Test
 

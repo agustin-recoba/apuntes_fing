@@ -38,7 +38,11 @@
 [[Capítulo 9 - Evolución del Software]]
 [[Deuda técnica]]
 
+# Gestión de proyectos
 
+[[Capítulo 22 - Gestión de proyectos]]
+[[Gestión de proyectos - notas de las clases]]
+[[Capítulo 23 - Planeación de proyectos]]
 
 
 

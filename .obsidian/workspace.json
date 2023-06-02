@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "45939b71f10628d7",
+        "id": "e1ea550e3e40ca37",
         "type": "tabs",
         "children": [
           {
-            "id": "aed876c49dc1867a",
+            "id": "bace1b0890a770f2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "40b34a3ff216c69f",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf"
+                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Estimación - Clase2.pdf"
               }
             }
           }
@@ -46,7 +58,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf"
+                "file": "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md"
               }
             }
           },
@@ -56,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "exca",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +100,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 263.5,
+    "width": 492.5,
     "collapsed": true
   },
   "right": {
@@ -105,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
+                "file": "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
+                "file": "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,45 +169,46 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "aed876c49dc1867a",
+  "active": "bace1b0890a770f2",
   "lastOpenFiles": [
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230602001035.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230602000839.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230602000655.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230602000555.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230602000127.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230602000041.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230601235813.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230601235805.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230601235659.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230601235558.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230601235543.png",
+    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Estimación - Clase2.pdf",
     "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
-    "Introducción a la Ingeniería de Software/Extras/Untitled.md",
-    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
-    "Introducción a la Ingeniería de Software/Capítulo 23 - Planeación de proyectos.md",
     "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
-    "Introducción a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230530163301.png",
-    "Introducción a la Ingeniería de Software/Capítulo 22 - Gestión de proyectos.md",
-    "Introducción a la Ingeniería de Software/Capítulo 9 - Evolución del Software.md",
-    "Introducción a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
-    "Introducción a la Teoría de la Información/Tema 5 - Codificación de canal.md",
-    "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230528195055.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525212533.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525210417.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525210403.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525210355.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525210343.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525210302.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525210233.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230525204908.png",
-    "Bases de datos/Resumen práctico completo.md",
+    "Introducción a la Ingeniería de Software/Indice.md",
+    "Introducción a la Ingeniería de Software/Extras/User Stories.md",
+    "Introducción a la Ingeniería de Software/Extras/Testing basado en la experiencia.md",
+    "Introducción a la Ingeniería de Software/Extras/MUM.md",
+    "Introducción a la Ingeniería de Software/Extras/Guía para la generación de CP a partir de HU.md",
+    "Introducción a la Ingeniería de Software/Extras/Generating Test Cases From Use Cases.md",
+    "Introducción a la Teoría de la Información/Tema 6 - Entropía diferencial.md",
+    "Administración General para Ingenieros/Capítulo 16 - La motivación de los empleados.md",
+    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
+    "index.md",
     "Bases de datos/Resumen 2009.md",
     "Bases de datos/Resumen diapos.md",
     "Bases de datos/Índice.md",
-    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
+    "Bases de datos/Resumen práctico completo.md",
     "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
     "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
+    "Administración General para Ingenieros/Capítulo 11 - Comunicación y tecnología de la información.md",
+    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
+    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
+    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
     "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
     "Administración General para Ingenieros/Capítulo 5 - Responsabilidad social y ética administrativa.md",
-    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
-    "Administración General para Ingenieros/Capítulo 11 - Comunicación y tecnología de la información.md",
-    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
     "Administración General para Ingenieros/Capítulo 6 - Toma de decisiones.md",
     "Administración General para Ingenieros/Índice.md",
-    "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
-    "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
     "Introducción a la Ingeniería de Software/media",
     "Introducción a la Ingeniería de Software/Extras",
     "Introducción a la Ingeniería de Software",
@@ -204,7 +217,6 @@
     "Intro. a la Ingeniería de Software - copia",
     "Introducción a la Teoría de la Información/media",
     "Introducción a la Teoría de la Información",
-    "web-export/bases-de-datos/resumen-2009.html",
     "Untitled.canvas"
   ]
 }
