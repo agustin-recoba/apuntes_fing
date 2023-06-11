@@ -43,6 +43,6 @@
 [[Capítulo 22 - Gestión de proyectos]]
 [[Gestión de proyectos - notas de las clases]]
 [[Capítulo 23 - Planeación de proyectos]]
-
+[[Valor Ganado]]
 
 

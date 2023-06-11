@@ -207,15 +207,87 @@ Esta combinación se encuentra en países angloamericanos, y ausente en países 
 
 ## Cómo motivar a grupos exclusivos de trabajadores
 
+Los empleados llegan a las organizaciones con diferentes necesidades, personalidades, destrezas, habilidades, intereses y aptitudes. Tienen diversas expectativas de sus empleadores y distintos puntos de vista de lo que creen que su empleador tiene derecho a esperar de ello. Además, difieren mucho en lo que desean de sus empleos.
 
+Algo que deben hacer los gerentes es entender las necesidades de motivación de estos grupos diversos que incluyen a empleados, profesionales, trabajadores eventuales y empleados poco capacitados que ganan el salario mínimo.
 
+### Motivación de una fuerza laboral diversa
+Para maximizar la motivación entre la fuerza laboral de hoy, los gerentes necesitan pensar en términos de flexibilidad.
+- Los hombres dan más importancia a tener autonomía en sus trabajos que las mujeres.
+- La oportunidad de aprender, los horarios de trabajo flexibles y las buenas relaciones interpersonales son más importantes para las mujeres.
+
+Se requiere una gama diversa de recompensas para motivar a empleados con necesidades tan distintas. Programas de trabajo flexibles que motivan a los empleados:
+- Semana laboral comprimida.
+	Se trabajan más horas al día, menos días a la semana. (Común 4 días de 10 horas).
+- Horario de trabajo flexible. (Flextime). 
+	Los empleados trabajan determinado número de horas a la semana, pero con la libertad, dentro de ciertos límites, de variar las horas de trabajo. 
+	Hay horas clave en las que los empleados deben de estar en el trabajo, pero hay flexibilidad en horas de llegada, salida y para ir a comer.
+- Participación del empleo.
+	Dos o más personas comparten un empleo de tiempo completo. 
+- Trabajo a distancia. 
+	Los empleados trabajan en el hogar y están vinculados al lugar de trabajo vía computadora y módem. 
+	Depende a un empleado u a otro le servirá o no, dado que hay algunos empleados que si prefieren no tener que movilizarse, y estar en su casa vestidos como quieran, mientras que a otros les entusiasma la idea de tener que ir a un lugar de trabajo satisfaciendo así las necesidades sociales.
+
+### Motivación de profesionales
+En contraste con la generación pasada, el empleado típico de hoy es más probable que sea un profesional muy capacitado con un grado universitario que un obrero. ¿De qué inquietudes especiales deben estar al tanto los gerentes al tratar de motivar a un equipo de estas características?
+Los profesionales:
+- Tienen un compromiso fuerte y duradero con su campo de destreza.
+- Su lealtad se dirige más hacia su profesión que a su empleador.
+- Para mantenerse al día en su área, necesitan actualizar sus conocimientos, y debido a su compromiso con su profesión trabajan más que de 8 a 5.
+
+¿Qué los motiva?
+- El desafío laboral: les gusta enfrentar problemas y encontrar soluciones.
+- El apoyo: desean que los demás piensen que el trabajo que están realizando es importante.
+
+### Motivación de trabajadores eventuales/indepentientes
+Los trabajadores eventuales no tienen la seguridad ni la estabilidad de los empleados permanentes y no se identifican con la organización ni tienen el mismo compromiso que los demás empleados. Además, las prestaciones que obtienen, como atención médica o pensiones, son escasas o nulas.
+
+¿Qué los motiva?
+- Oportunidad de convertirse en empleados permanentes.
+- Oportunidad de capacitación.
+- Plan de remuneración variable o basado en destrezas para equipararlos con los empleados permanentes.
+
+### Motivación de empleados poco capacitados que ganan el salario mínimo
+Ofrecer un salario mayor a estos empleados por lograr niveles más altos de desempeño está fuera de duda: su empresa no puede pagarlo. Además, estos empleados tienen capacitación y destrezas limitadas.
+Una trampa en la que caemos a menudo es pensar que las personas se sienten motivadas sólo por el dinero.
+Los gerentes podrían recurrir al uso de programas de reconocimiento para los empleados. También hay que reconocer el poder de los elogios.
 
 ## Diseño de programas apropiados de remuneración
 
+Los programas de recompensa para los empleados desempeñan un rol importante en la motivación del comportamiento correcto de los empleados. En esta sección revisaremos cómo los gerentes pueden diseñar programas de recompensa adecuados.
 
+### Administración a libro abierto
+Enfoque motivador en el que los estados financieros de una organización (los libros) se comparte con todos los empleados. Se les debe enseñar a leer y entender los estados financieros de la organización. Una vez que tienen este conocimiento, los gerentes deben compartir lasa cifras con ellos en forma regular, con el objetivo de lograr que los empleados piensen como un propietario al observar el impacto que sus decisiones y acciones tienen en los resultados financieros.
+Este método se denomina **administración a libro abierto**.
 
+### Programas de reconocimiento para los empleados
+Atención personal y expresión de interés, aprobación y apreciación hacia un trabajo bien hecho.
+Congruente con la teoría del reforzamiento, es probable que se fomente la repetición de un comportamiento si se recibe un reconocimiento inmediatamente después de que se presenta. El reconocimiento puede tener muchas formas:
+- Felicitarlo personalmente en privado por el buen trabajo realizado.
+- Enviar nota escrita a mano o correo electrónico por algo positivo que haya hecho el empleado.
+- Reconocer logros públicamente.
+- Celebrar éxitos de los equipos de trabajo, etc.
+
+### Programas de pago por desempeño
+Planes de compensación variable que pagan a los empleados en base a alguna medida de desempeño: Pago por producción, incentivos salariales, reparto de utilidades y bonos de suma fija. 
+Lo que distingue a estas formas de pago de planes de compensación más tradicionales es que en vez de pagar a una persona por el tiempo de trabajo, el pago se ajusta para que refleje alguna medida de desempeño. 
+El pago por desempeño tal vez sea más compatible con la teoría de las expectativas. De manera específica los individuos deben percibir una fuerte relación entre su desempeño y las recompensas que reciben para que la motivación aumente al máximo. Así existe un incentivo para que los esfuerzos y la motivación se mantengan fuertes.
+
+### Programas de opción de compra de acciones
+Instrumentos financieros que otorgan a los empleados el derecho de comprar acciones a un precio establecido.
+Convierte a los empleados en “propietarios” con el fin de proporcionarles incentivos fuertes para trabajar con empeño y lograr que la empresa sea exitosa. Fuerte relación desempeño-recompensa, pero grandes riesgos.
+
+![[Pasted image 20230603194223.png]]
 
 # DE LA TEORÍA A LA PRÁCTICA: SUGERENCIAS PARA MOTIVAR A LOS EMPLEADOS
 
-
-
+¿Qué recomendaciones específicas puede extraer de las teorías y temas presentados en este capítulo?
+- Reconocer las diferencias individuales. Casi todas las teorías contemporáneas de la motivación reconocen que los empleados no son idénticos. Tienen diferentes necesidades, actitudes, personalidades y otras variables individuales importantes.
+- Hacer que las personas tengan empleos acordes a ellas. Existe una gran cantidad de evidencias que muestran los beneficios motivadores de lograr que las personas tengan empleos acordes a ellas. Por ejemplo, las personas con una gran necesidad de logro deben tener empleos que les permitan participar en la fijación de metas moderadamente desafiantes y que incluyan autonomía y retroalimentación. Además, recuérdese que no todas las personas se sienten motivadas por empleos con mucha autonomía, variedad y responsabilidad.
+- Usar metas. La literatura sobre la teoría de la fijación de metas sugiere que los gerentes deben asegurarse de que los empleados tengan metas difíciles y específicas, así como retroalimentación sobre el logro de esas metas. ¿Debe el gerente asignar las metas o deben los empleados participar en su establecimiento? La respuesta depende de su percepción en cuanto a la aceptación de las metas y de la cultura de la organización. Si usted espera resistencia a las metas, la participación debe aumentar la aceptación. Si la participación no es aceptada en la cultura, asigne metas.
+- Tener la seguridad de que las metas se perciben como alcanzables. Sin importar si las metas son alcanzables en realidad, los empleados que ven las metas como inalcanzables reducirán su esfuerzo porque pensarán, “¿por qué debo molestarme?”. Por lo tanto, los gerentes deben asegurarse de que los empleados confían en que el aumento del esfuerzo puede conducir al logro de las metas de desempeño.
+- Individualizar las recompensas. Como los empleados tienen diferentes necesidades, lo que actúa como reforzador para uno puede no serlo para el otro. Los gerentes deben usar su conocimiento sobre las diferencias de los empleados para individualizar las recompensas que pueden controlar, como la remuneración, las promociones, el reconocimiento, las asignaciones laborales deseables, la autonomía y la participación.
+- Vincular las recompensas con el desempeño. Los gerentes deben hacer que las recompensas dependan del desempeño. Recompensar factores distintos al desempeño sólo reforzará esos otros factores. Las recompensas importantes, como los aumentos de sueldo y las promociones, se deben otorgar por el logro de metas específicas. Los gerentes también deben buscar formas de aumentar la visibilidad de las recompensas, volviéndolas potencialmente más motivadoras.
+- Verifique el sistema en busca de equidad. Los empleados deben percibir que las recompensas o las salidas son iguales a las entradas. Dicho de manera sencilla, la experiencia, la habilidad, el esfuerzo y otras entradas obvias deben explicar las diferencias en el pago, la responsabilidad y otras salidas evidentes. Y recuerde que la equidad para una persona es inequidad para otra, así que un sistema ideal de recompensas debe probablemente sopesar las entradas de manera diferente para otorgar las recompensas apropiadas para cada empleo.
+- Use el reconocimiento. Reconozca el poder del reconocimiento. En una economía estancada donde la disminución de costos es muy frecuente (como ocurrió de 2001 a 2003), usar el reconocimiento es un medio de costo bajo para recompensar a los empleados. Y es una recompensa que la mayoría de los empleados considera valiosa.
+- No ignore el dinero. Es fácil quedar tan absorto en fijar metas, crear trabajos interesantes y proporcionar oportunidades de participación que uno olvida que el dinero es una razón importante por la cual trabaja la mayoría de las personas. Por lo tanto, la asignación de aumentos salariales basados en el desempeño, los bonos por el trabajo a destajo y otros incentivos de pago son importantes para influir en la motivación de los empleados. No estamos diciendo que los empleados deban centrarse únicamente en el dinero como una herramienta motivadora. Más bien, simplemente estamos declarando lo que es obvio, es decir, si el dinero se eliminara como un incentivo, las personas no se presentarían a trabajar. No se puede decir lo mismo de eliminar las metas, un trabajo enriquecido o la participación.

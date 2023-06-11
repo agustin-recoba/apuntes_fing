@@ -125,3 +125,87 @@ Qué sucede si es necesario acortar el cronograma?
 - Puede generar retrabajo y aumento en riegos.
 - Solo funciona si la paralelización de tareas es viable.
 
+
+# Clase 3
+
+![[IIS Notas -Gestion de proyectos - Riesgos - Clase3.pdf]]
+
+
+## Riesgos
+
+Posible categorización:
+- De proyecto: afectan cronograma, recursos. Ejemplo: perder un miembro experimentado del equipo.
+- De producto: afectan calidad o performance. Ejemplo: falla en un componente clave del producto.
+- De negocio: afectan el negocio de lo que se está construyendo. Ejemplo: un competidor introduce un nuevo producto.
+
+## Monitoreo de riesgos
+
+- Seguimiento periódico para detectar:
+	- Riegos nuevos
+	- Riesgos que cambian
+	- Riesgos que se tornan obsoletos
+- Seguimiento de condiciones que disparan planes de contingencia
+- Revisar la ejecución de respuesta a riesgos y efectividad
+- Ejecución de planes de contingencia
+- Modificación del plan
+
+### Seguimiento - técnicas de medición
+<u>De fórmula fija:</u>
+- Tareas no empezadas 0
+- Tareas comenzadas, se asigna % fijo al final del primer período y el resto al completar. Por ej 50/50, 25/75 o 0/100
+- Apropiadas para tareas cortas
+
+<u>Hitos con peso</u>
+- Valor a cada hito
+- Apropiado para tareas más largas, con entregables intermedios
+
+<u>Porcentaje de completitud</u>
+- El responsable de la tarea estima % completado
+- Ojo con el síndrome del 90%
+
+## Valor ganado
+Modelo en el que unifican todas la actividades planificados llevándolos a $ por su costo planificado.
+Es posible controlar si se logró el avance previsto y si costó lo previsto.
+Se puede obtener: % de avance, días de atraso, desviación de costos.
+
+### Tres valores principales
+- Valor Planificado (PV): Lo que tendría que tener hecho hoy, al valor que estimé. 
+	Por ejemplo, al día de hoy tenía planificado terminar un componente de 100 horas a 40 USD la hora -> PV= 4.000
+- Valor Ganado (EV): Lo que hice hasta ahora, al valor que estimé.
+	Hasta el momento tengo el 80 % del componente desarrollado considerando el presupuesto acordado -> EV = 3.200
+- Costo Real (AC): Lo que llevo gastado para el trabajo que hice.
+	Llevo 90 horas dedicadas = 3600
+
+Se pueden expresar en porcentajes, dividiéndolos por el Presupuesto hasta la Conclusión (Budget at Completion, BAC):
+- $PV\% = PV / BAC$
+- $EV\% = EV / BAC$
+- $AC\% = AC / BAC$
+
+### Variaciones
+- Varianza de costos, estamos por encima o debajo del presupuesto?
+	$CV = EV – AC$
+	Siguiendo el ejemplo CV = 3.200 - 3600 = -400
+- Variación de cronograma, estamos adelantados o atrasados?
+	$SV = EV – PV$
+	Siguiendo el ejemplo, SV = 3200 - 4000 = -800
+
+### Índices de Rendimiento
+- Índice de Rendimiento del Cronograma (Schedule Performance Index, SPI).
+	$SPI = \frac{EV}{PV}$
+- Índice de Rendimiento del Costo (Cost Performance Index, CPI).
+	$CPI = \frac{EV}{AC}$
+- Índice del Rendimiento hasta Concluir (To Complete Performance Index, TCPI).
+	$TCPI = \frac{BAC – EV}{BAC – AC}$
+
+### Pronósticos:
+- Estimado a la Conclusión (Estimate at Completion, EAC). ¿Cuánto costará finalmente el proyecto?
+	$EAC = \frac{BAC}{CPI}$
+	$BAC$ = presupuesto planificado
+	Se supone variación típica y manteniendo el mismo índice de desempeño del costo (CPI) que se registra hoy.
+
+- ¿Cuándo terminará el proyecto?
+	$EAC(t) = \frac{FP}{SPI}$
+	$FP$ = final planificado
+	Se supone variación típica y manteniendo el mismo índice de desempeño de cronograma (SPI) que se registra hoy.
+
+![[Pasted image 20230607203049.jpg]]
