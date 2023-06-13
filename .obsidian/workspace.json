@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "c180cb8d2f06bf63",
+        "id": "af602de53ab113e0",
         "type": "tabs",
         "children": [
           {
-            "id": "91b42caf7598728c",
+            "id": "45ba2e33e843915f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -160,8 +160,12 @@
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "91b42caf7598728c",
+  "active": "45ba2e33e843915f",
   "lastOpenFiles": [
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613194553.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613194543.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613194523.png",
+    "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
     "Introducción a la Ingeniería de Software/media/Pasted image 20230613182753.png",
     "Introducción a la Ingeniería de Software/media/Pasted image 20230613175652.png",
     "Introducción a la Ingeniería de Software/media/Pasted image 20230613175159.png",
@@ -170,12 +174,8 @@
     "Introducción a la Ingeniería de Software/media/Pasted image 20230613173608.png",
     "Introducción a la Ingeniería de Software/media/Pasted image 20230613173127.png",
     "Introducción a la Ingeniería de Software/media/Pasted image 20230613170953.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613170617.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613170332.png",
-    "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
     "index.md",
     "Administración General para Ingenieros/Capítulo 18 - Fundamentos del control.md",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611211804.png",
     "Administración General para Ingenieros/Índice.md",
     "Administración General para Ingenieros/Capítulo 17 - Liderazgo.md",
     "Home.md",
