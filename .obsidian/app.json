@@ -6,7 +6,12 @@
     "margin": "2",
     "downscalePercent": 94
   },
-  "attachmentFolderPath": "Introducción a la Teoría de la Información/media",
+  "attachmentFolderPath": "Introducción a la Ingeniería de Software/media",
   "alwaysUpdateLinks": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "defaultViewMode": "source",
+  "spellcheckLanguages": [
+    "es-419",
+    "en"
+  ]
 }

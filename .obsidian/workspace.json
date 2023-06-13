@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "66c5b856a4b79d33",
+        "id": "c180cb8d2f06bf63",
         "type": "tabs",
         "children": [
           {
-            "id": "b2b92bf6385e1a77",
+            "id": "91b42caf7598728c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -43,7 +47,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md"
+              }
             }
           },
           {
@@ -84,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377.5
+    "width": 377.5,
+    "collapsed": true
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -100,6 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,6 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,50 +154,52 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "open-gate:ChatGPT": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "homepage:Open homepage": false,
       "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "b2b92bf6385e1a77",
+  "active": "91b42caf7598728c",
   "lastOpenFiles": [
-    "Introducción a la Teoría de la Información/Tema 8 - Canal Gaussiano.md",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153805.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153724.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153651.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153642.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153633.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153608.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153559.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153551.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153517.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230611153459.png",
-    "Introducción a la Teoría de la Información/Tema 7 - Análisis Espectral.md",
-    "Introducción a la Teoría de la Información/Tema 6 - Entropía diferencial.md",
-    "Introducción a la Ingeniería de Software/Capítulo 3 - Metodologías ágiles.md",
-    "Introducción a la Ingeniería de Software/Capítulo 22 - Gestión de proyectos.md",
-    "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
-    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Riesgos - Clase3.pdf",
-    "Introducción a la Ingeniería de Software/Extras/Valor Ganado.md",
-    "Introducción a la Ingeniería de Software/Indice.md",
-    "Administración General para Ingenieros/Capítulo 16 - La motivación de los empleados.md",
-    "Introducción a la Ingeniería de Software/Capítulo 23 - Planeación de proyectos.md",
-    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Estimación - Clase2.pdf",
-    "Bases de datos/Resumen práctico completo.md",
-    "Bases de datos/Resumen 2009.md",
-    "Bases de datos/Índice.md",
-    "Bases de datos/Resumen diapos.md",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613182753.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613175652.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613175159.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613174427.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613173907.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613173608.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613173127.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613170953.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613170617.png",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230613170332.png",
+    "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
+    "index.md",
+    "Administración General para Ingenieros/Capítulo 18 - Fundamentos del control.md",
+    "Introducción a la Teoría de la Información/media/Pasted image 20230611211804.png",
+    "Administración General para Ingenieros/Índice.md",
+    "Administración General para Ingenieros/Capítulo 17 - Liderazgo.md",
+    "Home.md",
+    "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
+    "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
     "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
-    "Introducción a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
     "Introducción a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
-    "Introducción a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md",
     "Introducción a la Teoría de la Información/Tema 5 - Codificación de canal.md",
+    "Introducción a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
+    "Introducción a la Teoría de la Información/Tema 6 - Entropía diferencial.md",
     "Introducción a la Teoría de la Información/Índice.md",
-    "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
-    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
-    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
-    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
-    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
+    "Introducción a la Teoría de la Información/Tema 7 - Análisis Espectral.md",
+    "Introducción a la Teoría de la Información/Tema 8 - Canal Gaussiano.md",
+    "Introducción a la Teoría de la Información/Tema 4 - Propiedad de Equipartición Asintótica.md",
+    "Redes de computadoras/3 - Capa de Transporte/3.6.1 Principios de TCP.md",
+    "Redes de computadoras/3 - Capa de Transporte/3.5 Principios de Control de Congestión.md",
+    "Redes de computadoras/3 - Capa de Transporte/3.6.2 TCP, control de flujo.md",
+    "Redes de computadoras/3 - Capa de Transporte/3.6.3 TCP, control de congestión.md",
+    "Redes de computadoras/2 - Capa de Aplicación/2.1 Arquitecturas.md",
+    "Redes de computadoras/2 - Capa de Aplicación/2. Capa de Aplicación.md",
+    "Redes de computadoras/2 - Capa de Aplicación/2.3 Servicios de transporte.md",
+    "Redes de computadoras/2 - Capa de Aplicación/2.2 Procesos y sockets.md",
+    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Riesgos - Clase3.pdf",
+    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Estimación - Clase2.pdf",
     "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
     "Introducción a la Ingeniería de Software/media",
     "Introducción a la Ingeniería de Software/Extras",

@@ -10,3 +10,7 @@
 
 [[Capítulo 12 - Gerencia de recursos humanos]]
 [[Capítulo 13 - Manejo del cambio y la innovación]]
+[[Capítulo 16 - La motivación de los empleados]]
+[[Capítulo 17 - Liderazgo]]
+[[Capítulo 18 - Fundamentos del control]]
+
