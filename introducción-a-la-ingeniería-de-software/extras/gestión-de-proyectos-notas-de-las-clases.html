@@ -19,37 +19,11 @@
   <style> </style>
 
 
-  <!-- Graph View Data -->
-  <script>
-    let nodes = {
-      "nodeCount": 112,
-      "linkCount": 114,
-      "radii": [7, 6.3530245746691865, 6.166351606805293, 5.956049149338375, 5.956049149338375, 5.72211720226843, 5.464555765595463, 5.464555765595463, 5.18336483931947, 5.18336483931947, 4.878544423440454, 4.878544423440454, 4.550094517958412, 4.550094517958412, 4.198015122873346, 4.198015122873346, 4.198015122873346, 4.198015122873346, 4.198015122873346, 4.198015122873346, 4.198015122873346, 3.822306238185255, 3.822306238185255, 3.822306238185255, 3.822306238185255, 3.822306238185255, 3.822306238185255, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3.42296786389414, 3, 3, 3, 3, 3],
-      "labels": ["Indice", "Índice", "6. Capa de Enlace", "4. Capa de Red, plano de datos", "3. Capa de Transporte", "Indice", "99. Otros", "1. Introducción a las Redes de Computadoras", "2.4 Protocolos", "Índice", "2. Capa de Aplicación", "index", "5. Capa de Red, plano de control", "Índice", "Practico 5", "5.1 Algoritmos de enrutamiento", "Software Testing Foundations", "Capítulo 4 - Ingeniería de requisitos", "Capítulo 2 - Proceso de software", "Resumen práctico completo", "Resumen 2009", "User Stories", "MUM", "Guía para la generación de CP a partir de HU", "Generating Test Cases From Use Cases", "Ejemplos de modelos o SDLC", "Casos de uso", "Drawing 2022-10-26 18.15.54.excalidraw", "Drawing 2022-10-26 17.49.49.excalidraw", "99.3 Tips problemas prácticos", "Practico 6", "Practico 7", "99.2 Protocolos sobre protocolos", "99.1 Puertos bien conocidos", "6.7 VLAN, redes de área local virtuales", "6.8 PPP, Protocolo punto a punto", "6.6.1 Switch vs Router", "6.6 Hub y Switch", "6.3 Direccionamiento de la capa de enlace", "6.5 Dominios de colisión y de broadcast", "6.4 Ethernet", "6.1 Técnicas de detección y corrección de errores", "6.2 Protocolo de acceso múltiple", "5.3 Broadcast y multicast", "5.2 Enrutamiento jerárquico y sistemas autónomos", "5.1.1 Algoritmo de enrutamiento de estado de enlaces (LS)", "5.1.2 Algoritmo de enrutamiento por vector de distancias (DV)", "4.5 Traduccion de direcciones de red, NAT", "4.6 ICMP, protocolo de mensajes de control de Internet", "4.7 IPv6", "4.4.2 Direccionamiento IPv4", "4.4.1 Protocolo de Internet (IP)", "4.2 Redes de circuitos virtuales y de datagramas", "4.1 Intro", "4.3 El interior de un Router", "2.4.1 La Web y HTTP", "2.4.5 P2P y Bitorrent", "2.4.4 FTP", "2.4.2 DNS", "2.4.3 Correo electronico", "2.2 Procesos y sockets", "2.3 Servicios de transporte", "2.1 Arquitecturas", "3.6.3 TCP, control de congestión", "3.6.2 TCP, control de flujo", "3.5 Principios de Control de Congestión", "3.6.1 Principios de TCP", "3.3 RDT, un servicio de transferencia de datos fiable", "3.4 Principios de pipelining GBN y SR", "3.2 Principios de UDP", "3.1 Multiplexación y demultiplexación", "1.6 traceroute", "1.5 Modelo de capas", "1.4 Retardo, pérdidas y “throughput” en redes de conmutación de paquetes", "1.3 Conmutacion de paquetes", "1.2 Conmutacion de circuitos", "1.1 Internet", "Tema 4 - Propiedad de Equipartición Asintótica", "Tema 2 - Procesos estocásticos y cadenas de Markov", "Tema 5 - Codificación de canal", "Tema 3 - Codificación de fuentes", "Tema 1 - Entropía, información conjunta, divergencia", "Capítulo 8 - Administración estratégica", "Capítulo 7 - Fundamentos de la planeación", "Capítulo 6 - Toma de decisiones", "Capítulo 12 - Gerencia de recursos humanos", "Capítulo 5 - Responsabilidad social y ética administrativa", "Capítulo 3 - Ambiente y Cultura Organizacional", "Capítulo 13 - Manejo del cambio y la innovación", "Capitulo 1 - La función gerencial", "1er parcial - PREGUNTOMETRO", "Capítulo 10 - Estructura y diseño organizacional", "SWEBOK 3 - Construcción", "SWEBOK 2 - Diseño", "Testing basado en la experiencia", "Gestión de proyectos - notas de las clases", "Deuda técnica", "Liberación", "Capítulo 6 - Diseño Arquitectonico", "Capítulo 3 - Metodologías ágiles", "Capítulo 9 - Evolución del Software", "Capítulo 23 - Planeación de proyectos", "Capítulo 18 - Ingeniería de Software Distribuido", "Capítulo 22 - Gestión de proyectos", "Capítulo 17 - Ingeniería de software basada en componentes", "Capítulo 1 - Introducción", "Resumen diapos", "Tema 8 - Canal Gaussiano", "Tema 7 - Análisis Espectral", "Tema 6 - Entropía diferencial", "Capítulo 16 - La motivación de los empleados", "Capítulo 11 - Comunicación y tecnología de la información"],
-      "paths": ["introducción-a-la-ingeniería-de-software/indice.html", "administración-general-para-ingenieros/índice.html", "redes-de-computadoras/6-capa-de-enlace/6-capa-de-enlace.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4-capa-de-red,-plano-de-datos.html", "redes-de-computadoras/3-capa-de-transporte/3-capa-de-transporte.html", "redes-de-computadoras/indice.html", "redes-de-computadoras/99-otros/99-otros.html", "redes-de-computadoras/1-introduccion/1-introducción-a-las-redes-de-computadoras.html", "redes-de-computadoras/2-capa-de-aplicación/2.4-protocolos.html", "introducción-a-la-teoría-de-la-información/índice.html", "redes-de-computadoras/2-capa-de-aplicación/2-capa-de-aplicación.html", "index.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5-capa-de-red,-plano-de-control.html", "bases-de-datos/índice.html", "redes-de-computadoras/99-otros/practicos/practico-5.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1-algoritmos-de-enrutamiento.html", "introducción-a-la-ingeniería-de-software/software-testing-foundations.html", "introducción-a-la-ingeniería-de-software/capítulo-4-ingeniería-de-requisitos.html", "introducción-a-la-ingeniería-de-software/capítulo-2-proceso-de-software.html", "bases-de-datos/resumen-práctico-completo.html", "bases-de-datos/resumen-2009.html", "introducción-a-la-ingeniería-de-software/extras/user-stories.html", "introducción-a-la-ingeniería-de-software/extras/mum.html", "introducción-a-la-ingeniería-de-software/extras/guía-para-la-generación-de-cp-a-partir-de-hu.html", "introducción-a-la-ingeniería-de-software/extras/generating-test-cases-from-use-cases.html", "introducción-a-la-ingeniería-de-software/extras/ejemplos-de-modelos-o-sdlc.html", "introducción-a-la-ingeniería-de-software/extras/casos-de-uso.html", "redes-de-computadoras/media/excalidraw/drawing-2022-10-26-18.15.54.excalidraw.html", "redes-de-computadoras/media/excalidraw/drawing-2022-10-26-17.49.49.excalidraw.html", "redes-de-computadoras/99-otros/99.3-tips-problemas-prácticos.html", "redes-de-computadoras/99-otros/practicos/practico-6.html", "redes-de-computadoras/99-otros/practicos/practico-7.html", "redes-de-computadoras/99-otros/99.2-protocolos-sobre-protocolos.html", "redes-de-computadoras/99-otros/99.1-puertos-bien-conocidos.html", "redes-de-computadoras/6-capa-de-enlace/6.7-vlan,-redes-de-área-local-virtuales.html", "redes-de-computadoras/6-capa-de-enlace/6.8-ppp,-protocolo-punto-a-punto.html", "redes-de-computadoras/6-capa-de-enlace/6.6.1-switch-vs-router.html", "redes-de-computadoras/6-capa-de-enlace/6.6-hub-y-switch.html", "redes-de-computadoras/6-capa-de-enlace/6.3-direccionamiento-de-la-capa-de-enlace.html", "redes-de-computadoras/6-capa-de-enlace/6.5-dominios-de-colisión-y-de-broadcast.html", "redes-de-computadoras/6-capa-de-enlace/6.4-ethernet.html", "redes-de-computadoras/6-capa-de-enlace/6.1-técnicas-de-detección-y-corrección-de-errores.html", "redes-de-computadoras/6-capa-de-enlace/6.2-protocolo-de-acceso-múltiple.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.3-broadcast-y-multicast.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.2-enrutamiento-jerárquico-y-sistemas-autónomos.html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.1-algoritmo-de-enrutamiento-de-estado-de-enlaces-(ls).html", "redes-de-computadoras/5-capa-de-red,-plano-de-control/5.1.2-algoritmo-de-enrutamiento-por-vector-de-distancias-(dv).html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.5-traduccion-de-direcciones-de-red,-nat.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.6-icmp,-protocolo-de-mensajes-de-control-de-internet.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.7-ipv6.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.2-direccionamiento-ipv4.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.4.1-protocolo-de-internet-(ip).html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.2-redes-de-circuitos-virtuales-y-de-datagramas.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.1-intro.html", "redes-de-computadoras/4-capa-de-red,-plano-de-datos/4.3-el-interior-de-un-router.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.1-la-web-y-http.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.5-p2p-y-bitorrent.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.4-ftp.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.2-dns.html", "redes-de-computadoras/2-capa-de-aplicación/2.4.3-correo-electronico.html", "redes-de-computadoras/2-capa-de-aplicación/2.2-procesos-y-sockets.html", "redes-de-computadoras/2-capa-de-aplicación/2.3-servicios-de-transporte.html", "redes-de-computadoras/2-capa-de-aplicación/2.1-arquitecturas.html", "redes-de-computadoras/3-capa-de-transporte/3.6.3-tcp,-control-de-congestión.html", "redes-de-computadoras/3-capa-de-transporte/3.6.2-tcp,-control-de-flujo.html", "redes-de-computadoras/3-capa-de-transporte/3.5-principios-de-control-de-congestión.html", "redes-de-computadoras/3-capa-de-transporte/3.6.1-principios-de-tcp.html", "redes-de-computadoras/3-capa-de-transporte/3.3-rdt,-un-servicio-de-transferencia-de-datos-fiable.html", "redes-de-computadoras/3-capa-de-transporte/3.4-principios-de-pipelining-gbn-y-sr.html", "redes-de-computadoras/3-capa-de-transporte/3.2-principios-de-udp.html", "redes-de-computadoras/3-capa-de-transporte/3.1-multiplexación-y-demultiplexación.html", "redes-de-computadoras/1-introduccion/1.6-traceroute.html", "redes-de-computadoras/1-introduccion/1.5-modelo-de-capas.html", "redes-de-computadoras/1-introduccion/1.4-retardo,-pérdidas-y-“throughput”-en-redes-de-conmutación-de-paquetes.html", "redes-de-computadoras/1-introduccion/1.3-conmutacion-de-paquetes.html", "redes-de-computadoras/1-introduccion/1.2-conmutacion-de-circuitos.html", "redes-de-computadoras/1-introduccion/1.1-internet.html", "introducción-a-la-teoría-de-la-información/tema-4-propiedad-de-equipartición-asintótica.html", "introducción-a-la-teoría-de-la-información/tema-2-procesos-estocásticos-y-cadenas-de-markov.html", "introducción-a-la-teoría-de-la-información/tema-5-codificación-de-canal.html", "introducción-a-la-teoría-de-la-información/tema-3-codificación-de-fuentes.html", "introducción-a-la-teoría-de-la-información/tema-1-entropía,-información-conjunta,-divergencia.html", "administración-general-para-ingenieros/capítulo-8-administración-estratégica.html", "administración-general-para-ingenieros/capítulo-7-fundamentos-de-la-planeación.html", "administración-general-para-ingenieros/capítulo-6-toma-de-decisiones.html", "administración-general-para-ingenieros/capítulo-12-gerencia-de-recursos-humanos.html", "administración-general-para-ingenieros/capítulo-5-responsabilidad-social-y-ética-administrativa.html", "administración-general-para-ingenieros/capítulo-3-ambiente-y-cultura-organizacional.html", "administración-general-para-ingenieros/capítulo-13-manejo-del-cambio-y-la-innovación.html", "administración-general-para-ingenieros/capitulo-1-la-función-gerencial.html", "administración-general-para-ingenieros/1er-parcial-preguntometro.html", "administración-general-para-ingenieros/capítulo-10-estructura-y-diseño-organizacional.html", "introducción-a-la-ingeniería-de-software/swebok-3-construcción.html", "introducción-a-la-ingeniería-de-software/swebok-2-diseño.html", "introducción-a-la-ingeniería-de-software/extras/testing-basado-en-la-experiencia.html", "introducción-a-la-ingeniería-de-software/extras/gestión-de-proyectos-notas-de-las-clases.html", "introducción-a-la-ingeniería-de-software/extras/deuda-técnica.html", "introducción-a-la-ingeniería-de-software/liberación.html", "introducción-a-la-ingeniería-de-software/capítulo-6-diseño-arquitectonico.html", "introducción-a-la-ingeniería-de-software/capítulo-3-metodologías-ágiles.html", "introducción-a-la-ingeniería-de-software/capítulo-9-evolución-del-software.html", "introducción-a-la-ingeniería-de-software/capítulo-23-planeación-de-proyectos.html", "introducción-a-la-ingeniería-de-software/capítulo-18-ingeniería-de-software-distribuido.html", "introducción-a-la-ingeniería-de-software/capítulo-22-gestión-de-proyectos.html", "introducción-a-la-ingeniería-de-software/capítulo-17-ingeniería-de-software-basada-en-componentes.html", "introducción-a-la-ingeniería-de-software/capítulo-1-introducción.html", "bases-de-datos/resumen-diapos.html", "introducción-a-la-teoría-de-la-información/tema-8-canal-gaussiano.html", "introducción-a-la-teoría-de-la-información/tema-7-análisis-espectral.html", "introducción-a-la-teoría-de-la-información/tema-6-entropía-diferencial.html", "administración-general-para-ingenieros/capítulo-16-la-motivación-de-los-empleados.html", "administración-general-para-ingenieros/capítulo-11-comunicación-y-tecnología-de-la-información.html"],
-      "linkSources": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 20, 19, 13, 13, 13, 18, 18, 17, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 16, 9, 9, 9, 9, 9, 7, 7, 7, 7, 7, 7, 10, 10, 10, 10, 8, 8, 8, 8, 8, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 3, 3, 12, 12, 12, 15, 15, 2, 2, 2, 2, 2, 2, 2, 2, 2, 6, 6, 6, 6, 6, 6, 14, 14, 5, 5, 5, 5, 5, 5, 5, 11, 11, 11, 11, 11],
-      "linkTargets": [89, 87, 86, 84, 83, 82, 91, 90, 85, 88, 20, 19, 20, 106, 19, 25, 22, 21, 26, 105, 18, 25, 22, 99, 17, 21, 26, 98, 93, 104, 102, 92, 16, 24, 23, 94, 97, 100, 96, 103, 95, 101, 24, 23, 81, 78, 80, 77, 79, 76, 75, 74, 73, 72, 71, 62, 60, 61, 8, 55, 58, 59, 57, 56, 70, 69, 67, 68, 65, 66, 64, 63, 53, 52, 54, 51, 50, 47, 48, 49, 15, 44, 43, 45, 46, 41, 42, 38, 40, 39, 37, 36, 34, 35, 33, 32, 29, 14, 30, 31, 28, 27, 7, 10, 4, 3, 12, 2, 6, 1, 13, 0, 5, 9]
-    };
-    let attractionForce = 1;
-    let linkLength = 10;
-    let repulsionForce = 150;
-    let centralForce = 3;
-    let edgePruning = 100;
-  </script>
-
-  <script type="module" src="lib/scripts/graph_view.js"></script>
-
-  <script src="lib/scripts/graph_wasm.js"></script>
-
-  <script src="lib/scripts/tinycolor.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
   <script src="lib/scripts/webpage.js"></script>
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized is-focused" style="--zoom-factor:1; --font-text-size:17px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:17px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -68,6 +42,10 @@
               <div class="tree-item-children">
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/1er-parcial-preguntometro.html"><span class="tree-item-title">1er parcial - PREGUNTOMETRO</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/admin-de-pymes.html"><span class="tree-item-title">Admin. de PYMEs</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
@@ -92,6 +70,14 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-16-la-motivación-de-los-empleados.html"><span class="tree-item-title">Capítulo 16 - La motivación de los empleados</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-17-liderazgo.html"><span class="tree-item-title">Capítulo 17 - Liderazgo</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="administración-general-para-ingenieros/capítulo-18-fundamentos-del-control.html"><span class="tree-item-title">Capítulo 18 - Fundamentos del control</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
@@ -219,6 +205,10 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-23-planeación-de-proyectos.html"><span class="tree-item-title">Capítulo 23 - Planeación de proyectos</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/capítulo-25-gestión-de-la-configuración.html"><span class="tree-item-title">Capítulo 25 - Gestión de la Configuración</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
@@ -656,7 +646,7 @@
       </div>
     </div>
     <div class="document-container">
-      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;" tabindex="-1">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
         <style id="MJX-CHTML-styles">
           mjx-c.mjx-c25::before {
             padding: 0.75em 0.833em 0.056em 0px;
@@ -668,9 +658,34 @@
             content: "Z";
           }
 
+          mjx-c.mjx-c1D70B.TEX-I::before {
+            padding: 0.431em 0.57em 0.011em 0px;
+            content: "π";
+          }
+
           mjx-c.mjx-c39::before {
             padding: 0.666em 0.5em 0.022em 0px;
             content: "9";
+          }
+
+          mjx-c.mjx-c1D434.TEX-I::before {
+            padding: 0.716em 0.75em 0px 0px;
+            content: "A";
+          }
+
+          mjx-c.mjx-c1D716.TEX-I::before {
+            padding: 0.431em 0.406em 0.011em 0px;
+            content: "ϵ";
+          }
+
+          mjx-c.mjx-c1D43B.TEX-I::before {
+            padding: 0.683em 0.888em 0px 0px;
+            content: "H";
+          }
+
+          mjx-c.mjx-c394::before {
+            padding: 0.716em 0.833em 0px 0px;
+            content: "Δ";
           }
 
           mjx-mtext {
@@ -697,6 +712,16 @@
 
           mjx-under {
             padding-bottom: 0.1em;
+          }
+
+          mjx-c.mjx-c1D44B.TEX-I::before {
+            padding: 0.683em 0.852em 0px 0px;
+            content: "X";
+          }
+
+          mjx-c.mjx-c3B::before {
+            padding: 0.43em 0.278em 0.194em 0px;
+            content: ";";
           }
 
           mjx-c.mjx-c1D44C.TEX-I::before {
@@ -804,41 +829,6 @@
             content: "∑";
           }
 
-          mjx-c.mjx-c1D70B.TEX-I::before {
-            padding: 0.431em 0.57em 0.011em 0px;
-            content: "π";
-          }
-
-          mjx-c.mjx-c3B::before {
-            padding: 0.43em 0.278em 0.194em 0px;
-            content: ";";
-          }
-
-          mjx-c.mjx-c1D44B.TEX-I::before {
-            padding: 0.683em 0.852em 0px 0px;
-            content: "X";
-          }
-
-          mjx-c.mjx-c1D43B.TEX-I::before {
-            padding: 0.683em 0.888em 0px 0px;
-            content: "H";
-          }
-
-          mjx-c.mjx-c394::before {
-            padding: 0.716em 0.833em 0px 0px;
-            content: "Δ";
-          }
-
-          mjx-c.mjx-c1D434.TEX-I::before {
-            padding: 0.716em 0.75em 0px 0px;
-            content: "A";
-          }
-
-          mjx-c.mjx-c1D716.TEX-I::before {
-            padding: 0.431em 0.406em 0.011em 0px;
-            content: "ϵ";
-          }
-
           mjx-c.mjx-c3E::before {
             padding: 0.54em 0.778em 0.04em 0px;
             content: ">";
@@ -849,59 +839,9 @@
             content: "<";
           }
 
-          mjx-c.mjx-c1D6FC.TEX-I::before {
-            padding: 0.442em 0.64em 0.011em 0px;
-            content: "α";
-          }
-
-          mjx-c.mjx-c1D6FD.TEX-I::before {
-            padding: 0.705em 0.566em 0.194em 0px;
-            content: "β";
-          }
-
-          mjx-c.mjx-c7C::before {
-            padding: 0.75em 0.278em 0.249em 0px;
-            content: "|";
-          }
-
-          mjx-c.mjx-c1D448.TEX-I::before {
-            padding: 0.683em 0.767em 0.022em 0px;
-            content: "U";
-          }
-
-          mjx-c.mjx-c1D449.TEX-I::before {
-            padding: 0.683em 0.769em 0.022em 0px;
-            content: "V";
-          }
-
-          mjx-c.mjx-c1D435.TEX-I::before {
-            padding: 0.683em 0.759em 0px 0px;
-            content: "B";
-          }
-
-          mjx-c.mjx-c1D43F.TEX-I::before {
-            padding: 0.683em 0.681em 0px 0px;
-            content: "L";
-          }
-
-          mjx-c.mjx-c2264::before {
-            padding: 0.636em 0.778em 0.138em 0px;
-            content: "≤";
-          }
-
-          mjx-c.mjx-c1D446.TEX-I::before {
-            padding: 0.705em 0.645em 0.022em 0px;
-            content: "S";
-          }
-
           mjx-mspace {
             display: inline-block;
             text-align: left;
-          }
-
-          mjx-c.mjx-c1D439.TEX-I::before {
-            padding: 0.68em 0.749em 0px 0px;
-            content: "F";
           }
 
           mjx-msqrt {
@@ -936,6 +876,56 @@
           mjx-c.mjx-c221A::before {
             padding: 0.8em 0.853em 0.2em 0px;
             content: "√";
+          }
+
+          mjx-c.mjx-c1D6FC.TEX-I::before {
+            padding: 0.442em 0.64em 0.011em 0px;
+            content: "α";
+          }
+
+          mjx-c.mjx-c1D6FD.TEX-I::before {
+            padding: 0.705em 0.566em 0.194em 0px;
+            content: "β";
+          }
+
+          mjx-c.mjx-c7C::before {
+            padding: 0.75em 0.278em 0.249em 0px;
+            content: "|";
+          }
+
+          mjx-c.mjx-c1D439.TEX-I::before {
+            padding: 0.68em 0.749em 0px 0px;
+            content: "F";
+          }
+
+          mjx-c.mjx-c1D448.TEX-I::before {
+            padding: 0.683em 0.767em 0.022em 0px;
+            content: "U";
+          }
+
+          mjx-c.mjx-c1D449.TEX-I::before {
+            padding: 0.683em 0.769em 0.022em 0px;
+            content: "V";
+          }
+
+          mjx-c.mjx-c1D435.TEX-I::before {
+            padding: 0.683em 0.759em 0px 0px;
+            content: "B";
+          }
+
+          mjx-c.mjx-c1D43F.TEX-I::before {
+            padding: 0.683em 0.681em 0px 0px;
+            content: "L";
+          }
+
+          mjx-c.mjx-c2264::before {
+            padding: 0.636em 0.778em 0.138em 0px;
+            content: "≤";
+          }
+
+          mjx-c.mjx-c1D446.TEX-I::before {
+            padding: 0.705em 0.645em 0.022em 0px;
+            content: "S";
           }
 
           mjx-c.mjx-c1D438.TEX-I::before {
@@ -1018,56 +1008,6 @@
             content: "]";
           }
 
-          mjx-c.mjx-c1D43E.TEX-I::before {
-            padding: 0.683em 0.889em 0px 0px;
-            content: "K";
-          }
-
-          mjx-c.mjx-c7B::before {
-            padding: 0.75em 0.5em 0.25em 0px;
-            content: "{";
-          }
-
-          mjx-c.mjx-c2C::before {
-            padding: 0.121em 0.278em 0.194em 0px;
-            content: ",";
-          }
-
-          mjx-c.mjx-c2026::before {
-            padding: 0.12em 1.172em 0px 0px;
-            content: "…";
-          }
-
-          mjx-c.mjx-c7D::before {
-            padding: 0.75em 0.5em 0.25em 0px;
-            content: "}";
-          }
-
-          mjx-c.mjx-c35::before {
-            padding: 0.666em 0.5em 0.022em 0px;
-            content: "5";
-          }
-
-          mjx-c.mjx-c2E::before {
-            padding: 0.12em 0.278em 0px 0px;
-            content: ".";
-          }
-
-          mjx-c.mjx-c1D440.TEX-I::before {
-            padding: 0.683em 1.051em 0px 0px;
-            content: "M";
-          }
-
-          mjx-c.mjx-c33::before {
-            padding: 0.665em 0.5em 0.022em 0px;
-            content: "3";
-          }
-
-          mjx-c.mjx-c1D45A.TEX-I::before {
-            padding: 0.442em 0.878em 0.011em 0px;
-            content: "m";
-          }
-
           mjx-c.mjx-c1D436.TEX-I::before {
             padding: 0.705em 0.76em 0.022em 0px;
             content: "C";
@@ -1098,9 +1038,64 @@
             content: "T";
           }
 
+          mjx-c.mjx-c1D43E.TEX-I::before {
+            padding: 0.683em 0.889em 0px 0px;
+            content: "K";
+          }
+
+          mjx-c.mjx-c7B::before {
+            padding: 0.75em 0.5em 0.25em 0px;
+            content: "{";
+          }
+
+          mjx-c.mjx-c2C::before {
+            padding: 0.121em 0.278em 0.194em 0px;
+            content: ",";
+          }
+
+          mjx-c.mjx-c2026::before {
+            padding: 0.12em 1.172em 0px 0px;
+            content: "…";
+          }
+
+          mjx-c.mjx-c7D::before {
+            padding: 0.75em 0.5em 0.25em 0px;
+            content: "}";
+          }
+
+          mjx-c.mjx-c35::before {
+            padding: 0.666em 0.5em 0.022em 0px;
+            content: "5";
+          }
+
           mjx-c.mjx-c2217::before {
             padding: 0.465em 0.5em 0px 0px;
             content: "∗";
+          }
+
+          mjx-c.mjx-c1D456.TEX-I::before {
+            padding: 0.661em 0.345em 0.011em 0px;
+            content: "i";
+          }
+
+          mjx-c.mjx-c1D45A.TEX-I::before {
+            padding: 0.442em 0.878em 0.011em 0px;
+            content: "m";
+          }
+
+          mjx-c.mjx-c2E::before {
+            padding: 0.12em 0.278em 0px 0px;
+            content: ".";
+          }
+
+          mjx-c.mjx-c1D440.TEX-I::before {
+            padding: 0.683em 1.051em 0px 0px;
+            content: "M";
+          }
+
+          mjx-c.mjx-c33::before {
+            padding: 0.665em 0.5em 0.022em 0px;
+            content: "3";
           }
 
           mjx-c.mjx-c34::before {
@@ -1113,300 +1108,9 @@
             content: "8";
           }
 
-          mjx-msubsup {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-script {
-            display: inline-block;
-            padding-right: 0.05em;
-            padding-left: 0.033em;
-          }
-
-          mjx-script>mjx-spacer {
-            display: block;
-          }
-
-          mjx-texatom {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-msup {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-mfrac {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-frac {
-            display: inline-block;
-            vertical-align: 0.17em;
-            padding: 0px 0.22em;
-          }
-
-          mjx-frac[type="d"] {
-            vertical-align: 0.04em;
-          }
-
-          mjx-frac[delims] {
-            padding: 0px 0.1em;
-          }
-
-          mjx-frac[atop] {
-            padding: 0px 0.12em;
-          }
-
-          mjx-frac[atop][delims] {
-            padding: 0px;
-          }
-
-          mjx-dtable {
-            display: inline-table;
-            width: 100%;
-          }
-
-          mjx-dtable>* {
-            font-size: 2000%;
-          }
-
-          mjx-dbox {
-            display: block;
-            font-size: 5%;
-          }
-
-          mjx-num {
-            display: block;
-            text-align: center;
-          }
-
-          mjx-den {
-            display: block;
-            text-align: center;
-          }
-
-          mjx-mfrac[bevelled]>mjx-num {
-            display: inline-block;
-          }
-
-          mjx-mfrac[bevelled]>mjx-den {
-            display: inline-block;
-          }
-
-          mjx-den[align="right"],
-          mjx-num[align="right"] {
-            text-align: right;
-          }
-
-          mjx-den[align="left"],
-          mjx-num[align="left"] {
-            text-align: left;
-          }
-
-          mjx-nstrut {
-            display: inline-block;
-            height: 0.054em;
-            width: 0px;
-            vertical-align: -0.054em;
-          }
-
-          mjx-nstrut[type="d"] {
-            height: 0.217em;
-            vertical-align: -0.217em;
-          }
-
-          mjx-dstrut {
-            display: inline-block;
-            height: 0.505em;
-            width: 0px;
-          }
-
-          mjx-dstrut[type="d"] {
-            height: 0.726em;
-          }
-
-          mjx-line {
-            display: block;
-            box-sizing: border-box;
-            min-height: 1px;
-            height: 0.06em;
-            border-top: 0.06em solid;
-            margin: 0.06em -0.1em;
-            overflow: hidden;
-          }
-
-          mjx-line[type="d"] {
-            margin: 0.18em -0.1em;
-          }
-
-          mjx-mrow {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-c.mjx-c1D45D.TEX-I::before {
-            padding: 0.442em 0.503em 0.194em 0px;
-            content: "p";
-          }
-
-          mjx-c.mjx-c1D45F.TEX-I::before {
-            padding: 0.442em 0.451em 0.011em 0px;
-            content: "r";
-          }
-
-          mjx-c.mjx-cD7::before {
-            padding: 0.491em 0.778em 0px 0px;
-            content: "×";
-          }
-
-          mjx-c.mjx-c28::before {
-            padding: 0.75em 0.389em 0.25em 0px;
-            content: "(";
-          }
-
-          mjx-c.mjx-c2212::before {
-            padding: 0.583em 0.778em 0.082em 0px;
-            content: "−";
-          }
-
-          mjx-c.mjx-c29::before {
-            padding: 0.75em 0.389em 0.25em 0px;
-            content: ")";
-          }
-
-          mjx-c.mjx-c1D452.TEX-I::before {
-            padding: 0.442em 0.466em 0.011em 0px;
-            content: "e";
-          }
-
-          mjx-c.mjx-c1D453.TEX-I::before {
-            padding: 0.705em 0.55em 0.205em 0px;
-            content: "f";
-          }
-
-          mjx-c.mjx-c2B::before {
-            padding: 0.583em 0.778em 0.082em 0px;
-            content: "+";
-          }
-
-          mjx-c.mjx-c2F::before {
-            padding: 0.75em 0.5em 0.25em 0px;
-            content: "/";
-          }
-
-          mjx-c.mjx-c1D441.TEX-I::before {
-            padding: 0.683em 0.888em 0px 0px;
-            content: "N";
-          }
-
-          mjx-c.mjx-c1D45C.TEX-I::before {
-            padding: 0.441em 0.485em 0.011em 0px;
-            content: "o";
-          }
-
-          mjx-c.mjx-c1D444.TEX-I::before {
-            padding: 0.704em 0.791em 0.194em 0px;
-            content: "Q";
-          }
-
-          mjx-c.mjx-c1D445.TEX-I::before {
-            padding: 0.683em 0.759em 0.021em 0px;
-            content: "R";
-          }
-
-          mjx-mo {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-stretchy-h {
-            display: inline-table;
-            width: 100%;
-          }
-
-          mjx-stretchy-h>* {
-            display: table-cell;
-            width: 0px;
-          }
-
-          mjx-stretchy-h>*>mjx-c {
-            display: inline-block;
-            transform: scaleX(1);
-          }
-
-          mjx-stretchy-h>*>mjx-c::before {
-            display: inline-block;
-            width: initial;
-          }
-
-          mjx-stretchy-h>mjx-ext {
-            overflow: clip visible;
-            width: 100%;
-          }
-
-          mjx-stretchy-h>mjx-ext>mjx-c::before {
-            transform: scaleX(500);
-          }
-
-          mjx-stretchy-h>mjx-ext>mjx-c {
-            width: 0px;
-          }
-
-          mjx-stretchy-h>mjx-beg>mjx-c {
-            margin-right: -0.1em;
-          }
-
-          mjx-stretchy-h>mjx-end>mjx-c {
-            margin-left: -0.1em;
-          }
-
-          mjx-stretchy-v {
-            display: inline-block;
-          }
-
-          mjx-stretchy-v>* {
-            display: block;
-          }
-
-          mjx-stretchy-v>mjx-beg {
-            height: 0px;
-          }
-
-          mjx-stretchy-v>mjx-end>mjx-c {
-            display: block;
-          }
-
-          mjx-stretchy-v>*>mjx-c {
-            transform: scaleY(1);
-            transform-origin: left center;
-            overflow: hidden;
-          }
-
-          mjx-stretchy-v>mjx-ext {
-            display: block;
-            height: 100%;
-            box-sizing: border-box;
-            border: 0px solid transparent;
-            overflow: visible clip;
-          }
-
-          mjx-stretchy-v>mjx-ext>mjx-c::before {
-            width: initial;
-            box-sizing: border-box;
-          }
-
-          mjx-stretchy-v>mjx-ext>mjx-c {
-            transform: scaleY(500) translateY(0.075em);
-            overflow: visible;
-          }
-
-          mjx-mark {
-            display: inline-block;
-            height: 0px;
+          mjx-c.mjx-c30::before {
+            padding: 0.666em 0.5em 0.022em 0px;
+            content: "0";
           }
 
           mjx-c.mjx-c221E::before {
@@ -1414,59 +1118,14 @@
             content: "∞";
           }
 
-          mjx-c.mjx-c1D451.TEX-I::before {
-            padding: 0.694em 0.52em 0.01em 0px;
-            content: "d";
-          }
-
-          mjx-c.mjx-c1D44E.TEX-I::before {
-            padding: 0.441em 0.529em 0.01em 0px;
-            content: "a";
+          mjx-c.mjx-c1D450.TEX-I::before {
+            padding: 0.442em 0.433em 0.011em 0px;
+            content: "c";
           }
 
           mjx-c.mjx-c1D43C.TEX-I::before {
             padding: 0.683em 0.504em 0px 0px;
             content: "I";
-          }
-
-          mjx-c.mjx-c1D44F.TEX-I::before {
-            padding: 0.694em 0.429em 0.011em 0px;
-            content: "b";
-          }
-
-          mjx-c.mjx-c3D::before {
-            padding: 0.583em 0.778em 0.082em 0px;
-            content: "=";
-          }
-
-          mjx-msub {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-mn {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-c.mjx-c1D461.TEX-I::before {
-            padding: 0.626em 0.361em 0.011em 0px;
-            content: "t";
-          }
-
-          mjx-c.mjx-c30::before {
-            padding: 0.666em 0.5em 0.022em 0px;
-            content: "0";
-          }
-
-          mjx-c.mjx-c31::before {
-            padding: 0.666em 0.5em 0px 0px;
-            content: "1";
-          }
-
-          mjx-c.mjx-c32::before {
-            padding: 0.666em 0.5em 0px 0px;
-            content: "2";
           }
 
           mjx-container[jax="CHTML"] {
@@ -1647,6 +1306,21 @@
             text-align: right;
           }
 
+          mjx-msubsup {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-script {
+            display: inline-block;
+            padding-right: 0.05em;
+            padding-left: 0.033em;
+          }
+
+          mjx-script>mjx-spacer {
+            display: block;
+          }
+
           mjx-mi {
             display: inline-block;
             text-align: left;
@@ -1659,6 +1333,227 @@
           mjx-utext {
             display: inline-block;
             padding: 0.75em 0px 0.2em;
+          }
+
+          mjx-texatom {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-mo {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-stretchy-h {
+            display: inline-table;
+            width: 100%;
+          }
+
+          mjx-stretchy-h>* {
+            display: table-cell;
+            width: 0px;
+          }
+
+          mjx-stretchy-h>*>mjx-c {
+            display: inline-block;
+            transform: scaleX(1);
+          }
+
+          mjx-stretchy-h>*>mjx-c::before {
+            display: inline-block;
+            width: initial;
+          }
+
+          mjx-stretchy-h>mjx-ext {
+            overflow: clip visible;
+            width: 100%;
+          }
+
+          mjx-stretchy-h>mjx-ext>mjx-c::before {
+            transform: scaleX(500);
+          }
+
+          mjx-stretchy-h>mjx-ext>mjx-c {
+            width: 0px;
+          }
+
+          mjx-stretchy-h>mjx-beg>mjx-c {
+            margin-right: -0.1em;
+          }
+
+          mjx-stretchy-h>mjx-end>mjx-c {
+            margin-left: -0.1em;
+          }
+
+          mjx-stretchy-v {
+            display: inline-block;
+          }
+
+          mjx-stretchy-v>* {
+            display: block;
+          }
+
+          mjx-stretchy-v>mjx-beg {
+            height: 0px;
+          }
+
+          mjx-stretchy-v>mjx-end>mjx-c {
+            display: block;
+          }
+
+          mjx-stretchy-v>*>mjx-c {
+            transform: scaleY(1);
+            transform-origin: left center;
+            overflow: hidden;
+          }
+
+          mjx-stretchy-v>mjx-ext {
+            display: block;
+            height: 100%;
+            box-sizing: border-box;
+            border: 0px solid transparent;
+            overflow: visible clip;
+          }
+
+          mjx-stretchy-v>mjx-ext>mjx-c::before {
+            width: initial;
+            box-sizing: border-box;
+          }
+
+          mjx-stretchy-v>mjx-ext>mjx-c {
+            transform: scaleY(500) translateY(0.075em);
+            overflow: visible;
+          }
+
+          mjx-mark {
+            display: inline-block;
+            height: 0px;
+          }
+
+          mjx-msub {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-mn {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-msup {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-mfrac {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-frac {
+            display: inline-block;
+            vertical-align: 0.17em;
+            padding: 0px 0.22em;
+          }
+
+          mjx-frac[type="d"] {
+            vertical-align: 0.04em;
+          }
+
+          mjx-frac[delims] {
+            padding: 0px 0.1em;
+          }
+
+          mjx-frac[atop] {
+            padding: 0px 0.12em;
+          }
+
+          mjx-frac[atop][delims] {
+            padding: 0px;
+          }
+
+          mjx-dtable {
+            display: inline-table;
+            width: 100%;
+          }
+
+          mjx-dtable>* {
+            font-size: 2000%;
+          }
+
+          mjx-dbox {
+            display: block;
+            font-size: 5%;
+          }
+
+          mjx-num {
+            display: block;
+            text-align: center;
+          }
+
+          mjx-den {
+            display: block;
+            text-align: center;
+          }
+
+          mjx-mfrac[bevelled]>mjx-num {
+            display: inline-block;
+          }
+
+          mjx-mfrac[bevelled]>mjx-den {
+            display: inline-block;
+          }
+
+          mjx-den[align="right"],
+          mjx-num[align="right"] {
+            text-align: right;
+          }
+
+          mjx-den[align="left"],
+          mjx-num[align="left"] {
+            text-align: left;
+          }
+
+          mjx-nstrut {
+            display: inline-block;
+            height: 0.054em;
+            width: 0px;
+            vertical-align: -0.054em;
+          }
+
+          mjx-nstrut[type="d"] {
+            height: 0.217em;
+            vertical-align: -0.217em;
+          }
+
+          mjx-dstrut {
+            display: inline-block;
+            height: 0.505em;
+            width: 0px;
+          }
+
+          mjx-dstrut[type="d"] {
+            height: 0.726em;
+          }
+
+          mjx-line {
+            display: block;
+            box-sizing: border-box;
+            min-height: 1px;
+            height: 0.06em;
+            border-top: 0.06em solid;
+            margin: 0.06em -0.1em;
+            overflow: hidden;
+          }
+
+          mjx-line[type="d"] {
+            margin: 0.18em -0.1em;
+          }
+
+          mjx-mrow {
+            display: inline-block;
+            text-align: left;
           }
 
           mjx-c::before {
@@ -1865,14 +1760,24 @@
             src: url("app://obsidian.md/lib/mathjax/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
           }
 
-          mjx-c.mjx-c1D460.TEX-I::before {
-            padding: 0.442em 0.469em 0.01em 0px;
-            content: "s";
+          mjx-c.mjx-c1D45D.TEX-I::before {
+            padding: 0.442em 0.503em 0.194em 0px;
+            content: "p";
           }
 
-          mjx-c.mjx-c1D456.TEX-I::before {
-            padding: 0.661em 0.345em 0.011em 0px;
-            content: "i";
+          mjx-c.mjx-c1D44E.TEX-I::before {
+            padding: 0.441em 0.529em 0.01em 0px;
+            content: "a";
+          }
+
+          mjx-c.mjx-c1D461.TEX-I::before {
+            padding: 0.626em 0.361em 0.011em 0px;
+            content: "t";
+          }
+
+          mjx-c.mjx-c1D45F.TEX-I::before {
+            padding: 0.442em 0.451em 0.011em 0px;
+            content: "r";
           }
 
           mjx-c.mjx-c1D45B.TEX-I::before {
@@ -1880,9 +1785,94 @@
             content: "n";
           }
 
-          mjx-c.mjx-c1D450.TEX-I::before {
-            padding: 0.442em 0.433em 0.011em 0px;
-            content: "c";
+          mjx-c.mjx-c1D460.TEX-I::before {
+            padding: 0.442em 0.469em 0.01em 0px;
+            content: "s";
+          }
+
+          mjx-c.mjx-c3D::before {
+            padding: 0.583em 0.778em 0.082em 0px;
+            content: "=";
+          }
+
+          mjx-c.mjx-cD7::before {
+            padding: 0.491em 0.778em 0px 0px;
+            content: "×";
+          }
+
+          mjx-c.mjx-c28::before {
+            padding: 0.75em 0.389em 0.25em 0px;
+            content: "(";
+          }
+
+          mjx-c.mjx-c31::before {
+            padding: 0.666em 0.5em 0px 0px;
+            content: "1";
+          }
+
+          mjx-c.mjx-c2212::before {
+            padding: 0.583em 0.778em 0.082em 0px;
+            content: "−";
+          }
+
+          mjx-c.mjx-c1D44F.TEX-I::before {
+            padding: 0.694em 0.429em 0.011em 0px;
+            content: "b";
+          }
+
+          mjx-c.mjx-c29::before {
+            padding: 0.75em 0.389em 0.25em 0px;
+            content: ")";
+          }
+
+          mjx-c.mjx-c1D452.TEX-I::before {
+            padding: 0.442em 0.466em 0.011em 0px;
+            content: "e";
+          }
+
+          mjx-c.mjx-c1D453.TEX-I::before {
+            padding: 0.705em 0.55em 0.205em 0px;
+            content: "f";
+          }
+
+          mjx-c.mjx-c2B::before {
+            padding: 0.583em 0.778em 0.082em 0px;
+            content: "+";
+          }
+
+          mjx-c.mjx-c32::before {
+            padding: 0.666em 0.5em 0px 0px;
+            content: "2";
+          }
+
+          mjx-c.mjx-c2F::before {
+            padding: 0.75em 0.5em 0.25em 0px;
+            content: "/";
+          }
+
+          mjx-c.mjx-c1D441.TEX-I::before {
+            padding: 0.683em 0.888em 0px 0px;
+            content: "N";
+          }
+
+          mjx-c.mjx-c1D45C.TEX-I::before {
+            padding: 0.441em 0.485em 0.011em 0px;
+            content: "o";
+          }
+
+          mjx-c.mjx-c1D451.TEX-I::before {
+            padding: 0.694em 0.52em 0.01em 0px;
+            content: "d";
+          }
+
+          mjx-c.mjx-c1D444.TEX-I::before {
+            padding: 0.704em 0.791em 0.194em 0px;
+            content: "Q";
+          }
+
+          mjx-c.mjx-c1D445.TEX-I::before {
+            padding: 0.683em 0.759em 0.021em 0px;
+            content: "R";
           }
         </style>
         <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
@@ -2768,18 +2758,9 @@
       </div>
     </div>
     <div class="sidebar-right sidebar">
-      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
-        <div class="graph-view-placeholder">
-          <div class="graph-view-container">
-            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
-                <line x1="7" y1="17" x2="17" y2="7"></line>
-                <polyline points="7 7 17 7 17 17"></polyline>
-              </svg></div>
-            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
-          </div>
-        </div>
+      <div class="sidebar-content">
         <div class="tree-container outline-tree" data-depth="0">
-          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
           <div class="tree-scroll-area">
             <div class="tree-item mod-tree-heading" data-depth="1">
               <div class="tree-item-contents"><a class="tree-item-link" href="#Clase_1"><span class="tree-item-title">Clase 1</span></a></div>
@@ -2792,14 +2773,14 @@
                   <div class="tree-item-contents"><a class="tree-item-link" href="#Identificar_actividades"><span class="tree-item-title">Identificar actividades</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
-                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="2">
                   <div class="tree-item-contents">
                     <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                         <path d="M3 8L12 17L21 8"></path>
                       </svg></div><a class="tree-item-link" href="#Estimaciones"><span class="tree-item-title">Estimaciones</span></a>
                   </div>
                   <div class="tree-item-children">
-                    <div class="tree-item mod-tree-heading mod-collapsible" data-depth="3">
+                    <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="3">
                       <div class="tree-item-contents">
                         <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                             <path d="M3 8L12 17L21 8"></path>
@@ -2814,7 +2795,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="2">
                   <div class="tree-item-contents">
                     <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                         <path d="M3 8L12 17L21 8"></path>
@@ -2829,14 +2810,14 @@
                       <div class="tree-item-contents"><a class="tree-item-link" href="#Grafo_de_precedencias"><span class="tree-item-title">Grafo de precedencias</span></a></div>
                       <div class="tree-item-children"></div>
                     </div>
-                    <div class="tree-item mod-tree-heading mod-collapsible" data-depth="3">
+                    <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="3">
                       <div class="tree-item-contents">
                         <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                             <path d="M3 8L12 17L21 8"></path>
                           </svg></div><a class="tree-item-link" href="#Camino_crítico"><span class="tree-item-title">Camino crítico</span></a>
                       </div>
                       <div class="tree-item-children">
-                        <div class="tree-item mod-tree-heading mod-collapsible" data-depth="4">
+                        <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="4">
                           <div class="tree-item-contents">
                             <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                                 <path d="M3 8L12 17L21 8"></path>
@@ -2853,7 +2834,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="2">
                   <div class="tree-item-contents">
                     <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                         <path d="M3 8L12 17L21 8"></path>
@@ -2864,7 +2845,7 @@
                       <div class="tree-item-contents"><a class="tree-item-link" href="#Nivelación_de_recursos"><span class="tree-item-title">Nivelación de recursos</span></a></div>
                       <div class="tree-item-children"></div>
                     </div>
-                    <div class="tree-item mod-tree-heading mod-collapsible" data-depth="3">
+                    <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="3">
                       <div class="tree-item-contents">
                         <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                             <path d="M3 8L12 17L21 8"></path>
@@ -2892,7 +2873,7 @@
                   <div class="tree-item-contents"><a class="tree-item-link" href="#Riesgos"><span class="tree-item-title">Riesgos</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
-                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="2">
                   <div class="tree-item-contents">
                     <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                         <path d="M3 8L12 17L21 8"></path>
@@ -2905,7 +2886,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tree-item mod-tree-heading mod-collapsible" data-depth="2">
+                <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="2">
                   <div class="tree-item-contents">
                     <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                         <path d="M3 8L12 17L21 8"></path>
