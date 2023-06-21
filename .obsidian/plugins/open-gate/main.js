@@ -146,6 +146,11 @@ var ModalEditGate = class extends import_obsidian2.Modal {
   }
 };
 
+// src/fns/getDefaultUserAgent.ts
+function getDefaultUserAgent() {
+  return `Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36`;
+}
+
 // src/fns/createEmptyGateOption.ts
 var createEmptyGateOption = () => {
   return {
@@ -157,7 +162,7 @@ var createEmptyGateOption = () => {
     profileKey: "open-gate",
     url: "",
     zoomFactor: 1,
-    userAgent: ""
+    userAgent: getDefaultUserAgent()
   };
 };
 
@@ -246,7 +251,10 @@ var createWebviewTag = (params) => {
   if (params.userAgent && params.userAgent !== "") {
     webviewTag.setAttribute("useragent", params.userAgent);
   }
-  webviewTag.addEventListener("did-attach", () => {
+  webviewTag.addEventListener("dom-ready", async () => {
+    if (params.css) {
+      await webviewTag.insertCSS(params.css);
+    }
     if (params.zoomFactor) {
       webviewTag.setZoomFactor(params.zoomFactor);
     }
@@ -264,7 +272,8 @@ var createIframe = (params) => {
   iframe.setAttribute("allowpopups", "");
   iframe.setAttribute("credentialless", "true");
   iframe.setAttribute("src", (_a = params.url) != null ? _a : "about:blank");
-  iframe.setAttribute("sandbox", "allow-scripts allow-same-origin allow-popups allow-forms");
+  iframe.setAttribute("sandbox", "allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation");
+  iframe.setAttribute("allow", "encrypted-media; fullscreen; oversized-images; picture-in-picture; sync-xhr; geolocation");
   iframe.addClass("open-gate-iframe");
   return iframe;
 };
@@ -519,23 +528,25 @@ function registerCodeBlockProcessor(plugin) {
     if (lines.length === 0) {
       return;
     }
-    let src = "";
-    let height = "fit-content";
-    let profileKey = "open-gate";
+    const options = createEmptyGateOption();
+    let height = "300px";
     for (const line of lines) {
       if (line.startsWith("http")) {
-        src = line.trim();
+        options.url = line.trim();
       } else if (line.startsWith("height:")) {
         height = line.replace("height:", "").trim();
+        if (!isNaN(Number(height))) {
+          height = height + "px";
+        }
       } else if (line.startsWith("profile:")) {
-        profileKey = line.replace("profile:", "").trim();
+        options.profileKey = line.replace("profile:", "").trim();
+      } else if (line.startsWith("useragent:")) {
+        options.userAgent = line.replace("useragent:", "").trim();
+      } else if (line.startsWith("zoom:")) {
+        options.zoomFactor = parseFloat(line.replace("zoom:", "").trim());
       }
     }
     let frame;
-    const options = {
-      profileKey,
-      url: src
-    };
     if (import_obsidian9.Platform.isMobileApp) {
       frame = createIframe(options);
     } else {
@@ -552,19 +563,23 @@ var registerLinkProcessor = (plugin) => {
   plugin.registerMarkdownPostProcessor((element, context) => {
     const imgElements = element.querySelectorAll("img");
     imgElements.forEach((el) => {
-      var _a, _b, _c;
+      var _a, _b, _c, _d, _e, _f;
       const src = el.getAttribute("src");
       const alt = el.getAttribute("alt");
       const altArr = alt == null ? void 0 : alt.split(";");
-      const height = altArr ? (_b = (_a = altArr[0].replace("height:", "")) == null ? void 0 : _a.trim()) != null ? _b : "400px" : "400px";
-      const profileKey = altArr ? (_c = altArr[1]) == null ? void 0 : _c.replace("profile:", "") : "open-gate";
+      let height = altArr ? (_b = (_a = altArr[0].replace("height:", "")) == null ? void 0 : _a.trim()) != null ? _b : "400px" : "400px";
+      if (!isNaN(Number(height))) {
+        height = height + "px";
+      }
       if (!src || isImageExt(src)) {
         return;
       }
       let frame;
       const options = {
-        profileKey,
-        url: src
+        profileKey: altArr ? (_c = altArr[1]) == null ? void 0 : _c.replace("profile:", "") : "open-gate",
+        url: src,
+        userAgent: altArr ? (_d = altArr[2]) == null ? void 0 : _d.replace("useragent:", "") : getDefaultUserAgent(),
+        zoomFactor: altArr ? parseFloat((_f = (_e = altArr[3]) == null ? void 0 : _e.replace("zoom:", "")) != null ? _f : "1") : 1
       };
       if (import_obsidian10.Platform.isMobileApp) {
         frame = createIframe(options);
@@ -583,6 +598,22 @@ var isImageExt = (url) => {
   return exts.includes(ext);
 };
 
+// src/MCPlugin.ts
+var import_view = require("@codemirror/view");
+var ExamplePlugin = class {
+  constructor(view) {
+    this.dom = null;
+    console.log(view.dom.getElementsByTagName("img"));
+  }
+  update(update) {
+  }
+  destroy() {
+    var _a;
+    (_a = this.dom) == null ? void 0 : _a.remove();
+  }
+};
+var examplePlugin = import_view.ViewPlugin.fromClass(ExamplePlugin);
+
 // src/main.ts
 var DEFAULT_SETTINGS = {
   uuid: "",
@@ -600,6 +631,7 @@ var OpenGatePlugin = class extends import_obsidian11.Plugin {
     this.registerCommands();
     registerCodeBlockProcessor(this);
     registerLinkProcessor(this);
+    this.registerEditorExtension([examplePlugin]);
   }
   async initFrames() {
     if (this.settings.uuid === "") {

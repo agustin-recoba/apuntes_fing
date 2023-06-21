@@ -40,9 +40,11 @@
 
 # Gestión de proyectos
 
-[[Capítulo 22 - Gestión de proyectos]]
 [[Gestión de proyectos - notas de las clases]]
+[[Capítulo 22 - Gestión de proyectos]]
 [[Capítulo 23 - Planeación de proyectos]]
-[[Valor Ganado]]
 
+# Gestión de la Configuración
+
+[[Capítulo 25 - Gestión de la Configuración]]
 

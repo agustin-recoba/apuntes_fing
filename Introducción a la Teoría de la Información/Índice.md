@@ -3,3 +3,6 @@
 [[Tema 3 - Codificación de fuentes]]
 [[Tema 4 - Propiedad de Equipartición Asintótica]]
 [[Tema 5 - Codificación de canal]]
+[[Tema 6 - Entropía diferencial]]
+[[Tema 7 - Análisis Espectral]]
+[[Tema 8 - Canal Gaussiano]]
