@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "4d516eb4eaedcaef",
+        "id": "c4a204eae1e31e11",
         "type": "tabs",
         "children": [
           {
-            "id": "f115f1860b7008b9",
+            "id": "c7a1ceef784a6b7b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Programación Funcional/Tema 1 - Tipos en Haskell.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -47,9 +43,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Programación Funcional/Tema 1 - Tipos en Haskell.md"
-              }
+              "state": {}
             }
           },
           {
@@ -90,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377.5,
+    "width": 200,
     "collapsed": true
   },
   "right": {
@@ -107,7 +101,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programación Funcional/Tema 1 - Tipos en Haskell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +117,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programación Funcional/Tema 1 - Tipos en Haskell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,11 +152,24 @@
       "open-gate:ChatGPT": false
     }
   },
-  "active": "f115f1860b7008b9",
+  "active": "c7a1ceef784a6b7b",
   "lastOpenFiles": [
-    "Programación Funcional/media/Pasted image 20230621170056.png",
-    "Programación Funcional/media/Pasted image 20230621170048.png",
+    "Programación Funcional/Tema 5 - Mónadas.md",
+    "Programación Funcional/media/Pasted image 20230622235659.png",
+    "Programación Funcional/media/Pasted image 20230622235651.png",
+    "Programación Funcional/media/Pasted image 20230622234905.png",
+    "Programación Funcional/Tema 4 - Evaluación Perezosa.md",
     "Programación Funcional/Índice.md",
+    "Programación Funcional/media/Pasted image 20230622232609.png",
+    "Programación Funcional/media/Pasted image 20230622232318.png",
+    "Programación Funcional/media/Pasted image 20230622231139.png",
+    "Programación Funcional/media/Pasted image 20230622230834.png",
+    "Programación Funcional/media/Pasted image 20230622230815.png",
+    "Programación Funcional/media/Pasted image 20230622230754.png",
+    "Programación Funcional/media/Pasted image 20230622230547.png",
+    "Programación Funcional/Tema 3 - Tipos de Datos Algebraicos.md",
+    "Programación Funcional/Tema 2 - Definiciones.md",
+    "Programación Funcional/Tema 1 - Tipos en Haskell.md",
     "index.md",
     "Administración General para Ingenieros/Índice.md",
     "Bases de datos/Índice.md",
@@ -172,11 +177,6 @@
     "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
     "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
     "Introducción a la Teoría de la Información/Índice.md",
-    "Programación Funcional/Tema 3 - Tipos de Datos Algebraicos.md",
-    "Programación Funcional/Tema 5 - Mónadas.md",
-    "Programación Funcional/Tema 4 - Evaluación Perezosa.md",
-    "Programación Funcional/Tema 2 - Definiciones.md",
-    "Programación Funcional/Tema 1 - Tipos en Haskell.md",
     "Programación Funcional/media",
     "Administración General para Ingenieros/Admin. de PYMEs.md",
     "Programación Funcional",
@@ -194,15 +194,6 @@
     "Introducción a la Ingeniería de Software/media/Teórico - PYMES.pdf",
     "Administración General para Ingenieros/media/Teórico - PYMES.pdf",
     "Administración General para Ingenieros/media/INGENIERIA PYMES.pdf",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613194553.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613194543.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613194523.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613182753.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613175652.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613175159.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613174427.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613173907.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230613173608.png",
     "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Riesgos - Clase3.pdf",
     "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Estimación - Clase2.pdf",
     "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
