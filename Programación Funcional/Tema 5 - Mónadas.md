@@ -1,21 +1,3 @@
-
-```haskell
-type ReadS a = String -> [(a, String)]
-class Read a where
-	readsPrec :: Int -> ReadS a
-	readList :: ReadS [a]
-```
-
-``````ad-example
-title: Ejemplo
-```haskell
-class Eq a where
-	(==),(/=) :: a → a → Bool -- funciones que se deben implementar
-	x /= y = not (x == y)     -- funciones definidas por defecto
-	x == y = not (x /= y)
-```
-``````
-
 # Entrada y Salida
 
 Haskell es un **Lenguaje Puro**.
@@ -239,6 +221,3 @@ eval (Let v e b) = do
 			local ((v, a):) (eval b)
 ```
 ``````
-
-
-

@@ -6,12 +6,13 @@
     "margin": "2",
     "downscalePercent": 94
   },
-  "attachmentFolderPath": "Programación Funcional/media",
+  "attachmentFolderPath": "Introducción a la Teoría de la Información/media",
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "defaultViewMode": "source",
   "spellcheckLanguages": [
     "es-419",
     "en"
-  ]
+  ],
+  "readableLineLength": true
 }
