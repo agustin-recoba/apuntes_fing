@@ -42,7 +42,7 @@ toEnum   :: Int -> Char
 
 #### Strings
 El tipo String se define como una lista de caracteres
-Constantes de tipo String se escriben entre comillas dobles: `”Funcional”`, `"\tHaskell\n"`.
+Constantes de tipo String se escriben entre comillas dobles: `"Funcional"`, `"\tHaskell\n"`.
 
 Las funciones show y read permiten convertir entre valores de otros tipos y String.
 
@@ -96,8 +96,8 @@ nombre (n, e, s) = n
 ```
 Se pueden ignorar componentes.
 ```haskell
-edad   ( , e, ) = e
-sueldo ( , ,s)  = s
+edad   (_, e, _) = e
+sueldo (_, _, s) = s
 ```
 Se pueden forzar componentes usando literales.
 ```haskell
@@ -149,7 +149,7 @@ Notación que permite construir una lista a partir de una descripción de la mis
 
 En Haskell podemos dar nombres a los tipos.
 
-Al usar un sinónimo se tiene el mismo efecto que al usar el tipo que representa.
+Al usar un sinónimo se tiene el <u>mismo</u> efecto que al usar el tipo que representa.
 
 ``````ad-example
 title: Ejemplos
@@ -200,11 +200,6 @@ cuadrado x = Rectangulo x x
 
 # Polimorfismo, Sobrecarga y Alto Orden
 
-```haskell
-data Empleado = Empleado String Int Int
-	deriving (Show, Eq)
-```
-
 ## Polimorfismo paramétrico
 
 El polimorfismo paramétrico es un mecanismo de tipado que permite definir funciones y tipos de datos de forma paramétrica de forma tal que puedan manipular valores de distintos tipos de forma totalmente uniforme.
@@ -221,7 +216,6 @@ head [’a’, ’b’, ’c’, ’d’]  ----> ’a’
 ``````
 
 El tipo de head es entonces: `head :: [a] -> a` , donde a es una variable de tipo.
-
 
 ### Tipo Más General
 `head :: [a] -> a`  es el tipo más general de head.
@@ -316,7 +310,7 @@ zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
 ```
 
 Pero también `take :: Int -> [a] -> [a]` es de alto orden debido a que su tipo equivale a:
-`take :: Int -> ([a] -> [a])` dado que → asocia a la derecha.
+`take :: Int -> ([a] -> [a])` dado que <u>→ asocia a la derecha</u>.
  
 ### Funciones Currificadas
 Las funciones en Haskell se representan en forma currificada: 
@@ -352,11 +346,8 @@ multc x y z = x ∗ y ∗ z
 ```
 
 #### Currificación
-Se puede pasar de representaci´on currificada a no currificada, y viceversa, usando las siguientes funciones:
+Se puede pasar de representación currificada a no currificada, y viceversa, usando las siguientes funciones:
 ```haskell
-multc :: Num a => a -> a -> a -> a
-multc x y z = x ∗ y ∗ z
-
 curry :: ((a, b) -> c) -> (a -> b -> c) 
 curry f x y = f (x, y)
 
@@ -371,7 +362,4 @@ addc = curry add
 add = uncurry addc
 ```
 ``````
-
-
-
 

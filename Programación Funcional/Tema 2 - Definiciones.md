@@ -168,6 +168,9 @@ mcd x y      = maximum [d | d <- divisores x, d `divide` y]
 - si n <= 0 retorna la lista vacía
 
 ### `drop n xs`
+```haskell
+drop :: Int -> [a] -> [a]
+```
 - retorna la lista luego de quitar los primeros n elementos de xs
 - si el largo de xs es menor que n retorna la lista vacía 
 - si n <= 0 retorna la lista xs
@@ -214,6 +217,9 @@ span p xs = (takeWhile p xs, dropWhile p xs)
 - juntar dos listas en una lista de pares hasta que una de ellas se acabe
 ```haskell
 zip :: [a] -> [b] -> [(a, b)]
+zip []     _      = []
+zip _      []     = []
+zip (x:xs) (y:ys) = (x, y) : zip xs ys
 ```
 
 ### `zipWith f ys xs`
@@ -223,6 +229,12 @@ zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
 zipWith f xs ys = map (uncurry f) (zip xs ys)
 ```
 
+### `iterate f ini`
+- genera la lista infinita `[ini, f ini, f f ini, ...]`
+```haskell
+iterate :: (a -> a) -> a -> [a]
+iterate f ini = ini:iterate f (f ini)
+```
 
 # Funciones Recursivas
 

@@ -157,16 +157,16 @@ foldM :: Monad m => (b -> a -> m b) -> b -> [a] -> m b
 Computaciones que mantienen un estado.
 
 ```haskell
-data State s a = State (s → (a,s))
+data State s a = State (s -> (a,s))
 runState (State f ) = f
 
 instance Monad (State s) where
-	return a = State $ \s → (a,s)
-	m >>= f  = State $ \s → let (a, s2) = runState m s
+	return a = State $ \s -> (a,s)
+	m >>= f  = State $ \s -> let (a, s2) = runState m s
 							in runState (f a) s2
  
- get = State $ \s → (s,s)
- put s = State $ \_ → ((),s)
+get = State $ \s -> (s,s)
+put s = State $ \_ -> ((),s)
 ```
 
 ``````ad-example

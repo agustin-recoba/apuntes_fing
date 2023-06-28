@@ -4,28 +4,64 @@
     "type": "split",
     "children": [
       {
-        "id": "a01f75904d7483c3",
+        "id": "8e6bef3a827e3554",
         "type": "tabs",
         "children": [
           {
-            "id": "92dc396aaea447d9",
+            "id": "ef2628e598d81c33",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 9 - Rate Distortion.md",
+                "file": "Programación Funcional/Tema 1 - Tipos en Haskell.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "3ae4b194513c05ef",
+            "id": "c52ab14502083a90",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+                "file": "Programación Funcional/Tema 2 - Definiciones.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d28a49292990cc47",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programación Funcional/Tema 3 - Tipos de Datos Algebraicos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "08c47d79d8cc9686",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programación Funcional/Tema 4 - Evaluación Perezosa.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e0005fd44b3e1993",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Programación Funcional/Tema 5 - Mónadas.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +96,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 9 - Rate Distortion.md"
+                "file": "Programación Funcional/Tema 1 - Tipos en Haskell.md"
               }
             }
           },
@@ -70,7 +106,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "curry",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -119,7 +155,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 9 - Rate Distortion.md",
+                "file": "Programación Funcional/Tema 1 - Tipos en Haskell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -136,7 +172,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 9 - Rate Distortion.md",
+                "file": "Programación Funcional/Tema 1 - Tipos en Haskell.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,18 +202,42 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "webpage-html-export:Export Vault to HTML": false,
       "homepage:Open homepage": false,
-      "open-gate:ChatGPT": false
+      "open-gate:ChatGPT": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "92dc396aaea447d9",
+  "active": "ef2628e598d81c33",
   "lastOpenFiles": [
+    "Programación Funcional/Tema 5 - Mónadas.md",
+    "Programación Funcional/Tema 2 - Definiciones.md",
+    "Programación Funcional/Tema 1 - Tipos en Haskell.md",
+    "Programación Funcional/Tema 3 - Tipos de Datos Algebraicos.md",
+    "Programación Funcional/Tema 4 - Evaluación Perezosa.md",
+    "Introducción a la Teoría de la Información/Tema 9 - Rate Distortion.md",
+    "Programación Funcional/Parciales.md",
+    "Bases de datos/Resumen práctico completo.md",
+    "Bases de datos/Resumen diapos.md",
+    "Bases de datos/Resumen 2009.md",
+    "Bases de datos/Índice.md",
+    "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
+    "Introducción a la Teoría de la Información/Tema 6 - Entropía diferencial.md",
+    "Introducción a la Teoría de la Información/Tema 8 - Canal Gaussiano.md",
+    "Introducción a la Teoría de la Información/Tema 7 - Análisis Espectral.md",
+    "Introducción a la Teoría de la Información/Índice.md",
+    "index.md",
+    "Administración General para Ingenieros/Admin. de PYMEs.md",
+    "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
+    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
+    "Administración General para Ingenieros/Capítulo 11 - Comunicación y tecnología de la información.md",
+    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
+    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
+    "Administración General para Ingenieros/Capítulo 18 - Fundamentos del control.md",
+    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
+    "Administración General para Ingenieros/Capítulo 17 - Liderazgo.md",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626204126.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626204116.png",
-    "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
-    "Introducción a la Teoría de la Información/Tema 9 - Rate Distortion.md",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626171944.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626171920.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626171458.png",
@@ -186,32 +246,8 @@
     "Introducción a la Teoría de la Información/media/Pasted image 20230626170733.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626170554.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626170537.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230626170525.png",
-    "index.md",
-    "Introducción a la Teoría de la Información/Tema 8 - Canal Gaussiano.md",
-    "Introducción a la Teoría de la Información/Índice.md",
-    "Programación Funcional/Tema 2 - Definiciones.md",
-    "Programación Funcional/Tema 3 - Tipos de Datos Algebraicos.md",
-    "Programación Funcional/Índice.md",
-    "Programación Funcional/Parciales.md",
     "Programación Funcional/media/propuesta.pdf",
     "Programación Funcional/media/prueba.pdf",
-    "Introducción a la Teoría de la Información/Tema 6 - Entropía diferencial.md",
-    "Programación Funcional/Tema 5 - Mónadas.md",
-    "Programación Funcional/Tema 4 - Evaluación Perezosa.md",
-    "Administración General para Ingenieros/Admin. de PYMEs.md",
-    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
-    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
-    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
-    "Administración General para Ingenieros/Capítulo 11 - Comunicación y tecnología de la información.md",
-    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
-    "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
-    "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
-    "Administración General para Ingenieros/Capítulo 5 - Responsabilidad social y ética administrativa.md",
-    "Administración General para Ingenieros/Capítulo 17 - Liderazgo.md",
-    "Administración General para Ingenieros/Capítulo 16 - La motivación de los empleados.md",
-    "Administración General para Ingenieros/Capítulo 18 - Fundamentos del control.md",
-    "Administración General para Ingenieros/Capítulo 6 - Toma de decisiones.md",
     "Programación Funcional/media",
     "Programación Funcional",
     "Introducción a la Ingeniería de Software/media/Teórico - PYMES.pdf",

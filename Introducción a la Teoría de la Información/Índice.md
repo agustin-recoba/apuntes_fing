@@ -6,3 +6,4 @@
 [[Tema 6 - Entropía diferencial]]
 [[Tema 7 - Análisis Espectral]]
 [[Tema 8 - Canal Gaussiano]]
+[[Tema 9 - Rate Distortion]]
