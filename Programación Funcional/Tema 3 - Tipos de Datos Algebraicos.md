@@ -51,7 +51,7 @@ data T a1 ... am = C1 t11 ... t1k1
 			     ...
 			     | Cn tn1 ... tnkn
 ```
-Donde las variables ai pueden ser usadas en la definición de los constructores.
+Donde las variables `ai` pueden ser usadas en la definición de los constructores.
 
 ``````ad-example
 title: Ejemplo
@@ -101,6 +101,7 @@ sumOrd (Cons x xs) = ord x + sumOrd xs
 ## Opciones
 
 ### Función Parcial
+Se define solo para el caso feliz.
 ```haskell
 myDiv1 :: Int -> Int -> Int
 myDiv1 x y | y /= 0 = div x y
@@ -128,6 +129,7 @@ myDiv4 x y z | y /= 0    = div x y
 ```
 
 ### Tipo de Error: Maybe
+Ver más: [[Tema 5 - Mónadas#Mónada Maybe]]
 ```haskell
 data Maybe a = Nothing | Just a
 
@@ -146,9 +148,13 @@ data Either a b = Left a | Right b
 
 myDiv6 :: Int -> Int -> Either String Int
 myDiv6 x y | y /= 0 = Right (div x y)
-           | otherwise = Left "Division por Cero"
-           
+           | otherwise = Left "Division por Cero"           
+
+-- Evaluar el tipo y obtener el valor
 either :: (a -> c) -> (b -> c) -> Either a b -> c
+
+-- Ejemplo: infinito en la div por 0
+resDiv x y = either (const 9999) id (myDiv x y)
 ```
 
 # Type Classes

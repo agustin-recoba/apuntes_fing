@@ -4,7 +4,7 @@
 
 Es posible definir funciones a través de ecuaciones con condiciones.
 ```haskell
-abs x | x >= 0     = x 
+abs x | x >= 0    = x 
       | otherwise = - x
 ```
 Donde otherwise es una condición que siempre es verdadera.
@@ -32,9 +32,9 @@ Los patrones satisfacen la siguiente gramática:
 ```haskell
 pat ::= _                -- wildcard
 	| variable
-	| litera
+	| literal
 	| (pat_1 , ..., pat_m)
-	| pat : pat
+	| (pat_x : pat_xs)
 	| C pat_1 ... pat_n  -- C denota un constructor
 	| var@pat            -- as pattern
 ```
@@ -80,7 +80,7 @@ f x y = let a = (x + y) / 2
 ```
 
 El alcance de las definiciones locales es la expresión en el **in**.
-A diferencia del where un let es una expresión
+A diferencia del where un let es una expresión.
 
 ## Operadores
 
@@ -124,7 +124,7 @@ map (+1)
 
 ## Definiciones anónimas
 
-Es posible definir funciones anónimas (o sea, sin nombre) mediante el uso de las llamadas expresiones lambda.
+Es posible definir funciones anónimas (o sea, sin nombre) mediante el uso de las llamadas expresiones <u>lambda</u>.
 En Haskell se escribe: `\x -> x + 1`
 
 La aplicación de una función anónima a sus argumentos se realiza de la misma forma que con las otras funciones: `(\x -> x + 1) 2`
@@ -146,9 +146,9 @@ Constructores:
 
 ## Generador de listas
 
-La expresión `[m . . n]` denota la lista de valores entre m y n.
-	Por ejemplo, `[1 . . 4]` denota la lista `[1, 2, 3, 4]`.
-	Si m > n denota la lista vacía `[ ]`.
+La expresión `[m..n]` denota la lista de valores entre m y n.
+	Por ejemplo, `[1..4]` denota la lista `[1, 2, 3, 4]`.
+	Si m > n denota la lista vacía `[]`.
 
 ``````ad-example
 title: Ejemplo
