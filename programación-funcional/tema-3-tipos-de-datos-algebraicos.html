@@ -692,12 +692,12 @@
         <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
           <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
           <div class="mod-header"></div>
-          <div class="is-collapsed">
+          <div>
             <h1 data-heading="Tipos Algebráicos Recursivos" id="Tipos_Algebráicos_Recursivos">Tipos Algebráicos Recursivos</h1>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Tipos Algebraicos" id="Tipos_Algebraicos" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Tipos Algebraicos
             </h2>
@@ -722,9 +722,9 @@
             <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token constant">C_i</span> <span class="token operator">::</span> <span class="token hvariable">t_i1</span> <span class="token operator">-&gt;</span> <span class="token operator">...</span> <span class="token operator">-&gt;</span> <span class="token hvariable">t_ik_i</span> <span class="token operator">-&gt;</span> <span class="token constant">T</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Tipos Algebráicos Recursivos" id="Tipos_Algebráicos_Recursivos" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Tipos Algebráicos Recursivos
             </h2>
@@ -768,7 +768,7 @@
 		  <span class="token comment">-- los constructores tienen que empezar con ’:’.</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h1 data-heading="Tipos Algebráicos Polimórficos" id="Tipos_Algebráicos_Polimórficos">Tipos Algebráicos Polimórficos</h1>
           </div>
           <div>
@@ -781,7 +781,7 @@
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
-            <p>Donde las variables ai pueden ser usadas en la definición de los constructores.</p>
+            <p>Donde las variables <code>ai</code> pueden ser usadas en la definición de los constructores.</p>
           </div>
           <div class="admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin " style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="">
@@ -814,9 +814,9 @@
               </div>
             </div>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Definición de Funciones" id="Definición_de_Funciones" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Definición de Funciones
             </h2>
@@ -860,7 +860,7 @@
 <span class="token hvariable">sumOrd</span> <span class="token punctuation">(</span><span class="token constant">Cons</span> <span class="token hvariable">x</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token builtin">ord</span> <span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token hvariable">sumOrd</span> <span class="token hvariable">xs</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h1 data-heading="Tratamiento de Errores" id="Tratamiento_de_Errores">Tratamiento de Errores</h1>
           </div>
           <div>
@@ -876,6 +876,9 @@
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Función Parcial
             </h3>
+          </div>
+          <div>
+            <p>Se define solo para el caso feliz.</p>
           </div>
           <div>
             <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">myDiv1</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span>
@@ -929,6 +932,9 @@
             </h3>
           </div>
           <div>
+            <p>Ver más: <a data-href="Tema 5 - Mónadas#Mónada Maybe" href="programación-funcional/tema-5-mónadas.html#Mónada_Maybe" class="internal-link" target="_self" rel="noopener">Tema 5 - Mónadas &gt; Mónada Maybe</a></p>
+          </div>
+          <div>
             <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token keyword">data</span> <span class="token constant">Maybe</span> <span class="token hvariable">a</span> <span class="token operator">=</span> <span class="token constant">Nothing</span> <span class="token operator">|</span> <span class="token constant">Just</span> <span class="token hvariable">a</span>
 
 <span class="token hvariable">myDiv5</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Maybe</span> <span class="token constant">Int</span>
@@ -952,12 +958,16 @@
 
 <span class="token hvariable">myDiv6</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token constant">Either</span> <span class="token constant">String</span> <span class="token constant">Int</span>
 <span class="token hvariable">myDiv6</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span> <span class="token operator">|</span> <span class="token hvariable">y</span> <span class="token operator">/=</span> <span class="token number">0</span> <span class="token operator">=</span> <span class="token constant">Right</span> <span class="token punctuation">(</span><span class="token builtin">div</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span><span class="token punctuation">)</span>
-           <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token constant">Left</span> <span class="token string">"Division por Cero"</span>
-           
+           <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token constant">Left</span> <span class="token string">"Division por Cero"</span>           
+
+<span class="token comment">-- Evaluar el tipo y obtener el valor</span>
 <span class="token builtin">either</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">c</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">(</span><span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token hvariable">c</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token constant">Either</span> <span class="token hvariable">a</span> <span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token hvariable">c</span>
+
+<span class="token comment">-- Ejemplo: infinito en la div por 0</span>
+<span class="token hvariable">resDiv</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span> <span class="token operator">=</span> <span class="token builtin">either</span> <span class="token punctuation">(</span><span class="token builtin">const</span> <span class="token number">9999</span><span class="token punctuation">)</span> <span class="token builtin">id</span> <span class="token punctuation">(</span><span class="token hvariable">myDiv</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span><span class="token punctuation">)</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h1 data-heading="Type Classes" id="Type_Classes">Type Classes</h1>
           </div>
           <div>

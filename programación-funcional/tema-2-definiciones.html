@@ -695,9 +695,9 @@
           <div>
             <h1 data-heading="Definiciones de funciones" id="Definiciones_de_funciones">Definiciones de funciones</h1>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Ecuaciones condicionales" id="Ecuaciones_condicionales" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Ecuaciones condicionales
             </h2>
@@ -706,7 +706,7 @@
             <p>Es posible definir funciones a través de ecuaciones con condiciones.</p>
           </div>
           <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">abs</span> <span class="token hvariable">x</span> <span class="token operator">|</span> <span class="token hvariable">x</span> <span class="token operator">&gt;=</span> <span class="token number">0</span>     <span class="token operator">=</span> <span class="token hvariable">x</span> 
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">abs</span> <span class="token hvariable">x</span> <span class="token operator">|</span> <span class="token hvariable">x</span> <span class="token operator">&gt;=</span> <span class="token number">0</span>    <span class="token operator">=</span> <span class="token hvariable">x</span> 
       <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token operator">-</span> <span class="token hvariable">x</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
@@ -724,9 +724,9 @@
             <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">abs</span> <span class="token hvariable">x</span> <span class="token operator">=</span> <span class="token keyword">if</span> <span class="token hvariable">x</span> <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token keyword">then</span> <span class="token hvariable">x</span> <span class="token keyword">else</span> <span class="token operator">-</span> <span class="token hvariable">x</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Pattern matching" id="Pattern_matching" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Pattern matching
             </h2>
@@ -748,9 +748,9 @@
           <div>
             <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">pat</span> <span class="token operator">::=</span> <span class="token hvariable">_</span>                <span class="token comment">-- wildcard</span>
 	<span class="token operator">|</span> <span class="token hvariable">variable</span>
-	<span class="token operator">|</span> <span class="token hvariable">litera</span>
+	<span class="token operator">|</span> <span class="token hvariable">literal</span>
 	<span class="token operator">|</span> <span class="token punctuation">(</span><span class="token hvariable">pat_1</span> <span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">,</span> <span class="token hvariable">pat_m</span><span class="token punctuation">)</span>
-	<span class="token operator">|</span> <span class="token hvariable">pat</span> <span class="token operator">:</span> <span class="token hvariable">pat</span>
+	<span class="token operator">|</span> <span class="token punctuation">(</span><span class="token hvariable">pat_x</span> <span class="token operator">:</span> <span class="token hvariable">pat_xs</span><span class="token punctuation">)</span>
 	<span class="token operator">|</span> <span class="token constant">C</span> <span class="token hvariable">pat_1</span> <span class="token operator">...</span> <span class="token hvariable">pat_n</span>  <span class="token comment">-- C denota un constructor</span>
 	<span class="token operator">|</span> <span class="token hvariable">var</span><span class="token operator">@</span><span class="token hvariable">pat</span>            <span class="token comment">-- as pattern</span>
 </code><button class="copy-code-button">Copy</button></pre>
@@ -783,9 +783,9 @@
               </div>
             </div>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Definiciones locales (where)" id="Definiciones_locales_(where)" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Definiciones locales (where)
             </h2>
@@ -804,9 +804,9 @@
           <div>
             <p>Pueden haber múltiples definiciones locales.</p>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Definiciones locales (let)" id="Definiciones_locales_(let)" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Definiciones locales (let)
             </h2>
@@ -821,11 +821,11 @@
           </div>
           <div>
             <p>El alcance de las definiciones locales es la expresión en el <strong>in</strong>.<br>
-              A diferencia del where un let es una expresión</p>
+              A diferencia del where un let es una expresión.</p>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Operadores" id="Operadores" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Operadores
             </h2>
@@ -883,15 +883,15 @@
 <span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span><span class="token punctuation">)</span> <span class="token operator">.</span> <span class="token builtin">abs</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Definiciones anónimas" id="Definiciones_anónimas" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Definiciones anónimas
             </h2>
           </div>
           <div>
-            <p>Es posible definir funciones anónimas (o sea, sin nombre) mediante el uso de las llamadas expresiones lambda.<br>
+            <p>Es posible definir funciones anónimas (o sea, sin nombre) mediante el uso de las llamadas expresiones <u>lambda</u>.<br>
               En Haskell se escribe: <code>\x -&gt; x + 1</code></p>
           </div>
           <div>
@@ -917,17 +917,17 @@
 <span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token hvariable">a</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Generador de listas" id="Generador_de_listas" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Generador de listas
             </h2>
           </div>
           <div>
-            <p>La expresión <code>[m . . n]</code> denota la lista de valores entre m y n.<br>
-              Por ejemplo, <code>[1 . . 4]</code> denota la lista <code>[1, 2, 3, 4]</code>.<br>
-              Si m &gt; n denota la lista vacía <code>[ ]</code>.</p>
+            <p>La expresión <code>[m..n]</code> denota la lista de valores entre m y n.<br>
+              Por ejemplo, <code>[1..4]</code> denota la lista <code>[1, 2, 3, 4]</code>.<br>
+              Si m &gt; n denota la lista vacía <code>[]</code>.</p>
           </div>
           <div class="admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin " style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="">
@@ -945,9 +945,9 @@
               </div>
             </div>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Funciones de Prelude" id="Funciones_de_Prelude" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Funciones de Prelude
             </h2>
@@ -978,6 +978,10 @@
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div><code>drop n xs</code>
             </h3>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">drop</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+</code><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <ul class="has-list-bullet">
@@ -1112,6 +1116,9 @@
           </div>
           <div>
             <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">zip</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">b</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token hvariable">a</span><span class="token punctuation">,</span> <span class="token hvariable">b</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token builtin">zip</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>     <span class="token hvariable">_</span>      <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token builtin">zip</span> <span class="token hvariable">_</span>      <span class="token punctuation">[</span><span class="token punctuation">]</span>     <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token builtin">zip</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token operator">:</span><span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token hvariable">y</span><span class="token operator">:</span><span class="token hvariable">ys</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token builtin">zip</span> <span class="token hvariable">xs</span> <span class="token hvariable">ys</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
@@ -1134,6 +1141,25 @@
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
+            <h3 data-heading="`iterate f ini`" id="iterate_f_ini" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div><code>iterate f ini</code>
+            </h3>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>genera la lista infinita <code>[ini, f ini, f f ini, ...]</code>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">iterate</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+<span class="token builtin">iterate</span> <span class="token hvariable">f</span> <span class="token hvariable">ini</span> <span class="token operator">=</span> <span class="token hvariable">ini</span><span class="token operator">:</span><span class="token builtin">iterate</span> <span class="token hvariable">f</span> <span class="token punctuation">(</span><span class="token hvariable">f</span> <span class="token hvariable">ini</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
             <h1 data-heading="Funciones Recursivas" id="Funciones_Recursivas">Funciones Recursivas</h1>
           </div>
           <div>
@@ -1143,9 +1169,9 @@
               Es entonces que aparece la recursión como el mecanismo natural para definir las funciones en programación funcional.<br>
               En esta clase veremos definiciones recursivas sobre enteros y listas. Más adelante veremos definiciones recursivas para tipos de datos algebraicos en general.</p>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="Ejemplos de recursión sobre listas" id="Ejemplos_de_recursión_sobre_listas" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div>Ejemplos de recursión sobre listas
             </h2>
@@ -1255,9 +1281,9 @@
 <span class="token builtin">reverse</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token builtin">reverse</span> <span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token punctuation">[</span><span class="token hvariable">x</span><span class="token punctuation">]</span>
 </code><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="is-collapsed">
+          <div>
             <h2 data-heading="`foldr`" id="foldr" style="display: flex;">
-              <div class="heading-collapse-indicator collapse-indicator collapse-icon is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                   <path d="M3 8L12 17L21 8"></path>
                 </svg></div><code>foldr</code>
             </h2>
@@ -1457,6 +1483,10 @@
                     </div>
                     <div class="tree-item mod-tree-heading" data-depth="3">
                       <div class="tree-item-contents"><a class="tree-item-link" href="#`zipWith_f_ys_xs`"><span class="tree-item-title">`zipWith f ys xs`</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#`iterate_f_ini`"><span class="tree-item-title">`iterate f ini`</span></a></div>
                       <div class="tree-item-children"></div>
                     </div>
                   </div>
