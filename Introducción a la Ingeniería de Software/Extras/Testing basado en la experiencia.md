@@ -5,9 +5,9 @@ Si no existe documentación para utilizar como bases del testing (requisitos, ca
 # Testing exploratorio
 
 3 actividades de forma simultánea:
-- Aprendizaje/exploración de la aplicación
-- Diseño de casos de prueba
-- Ejecución de casos de prueba
+- **Aprendizaje/exploración** de la aplicación
+- **Diseño** de casos de prueba
+- **Ejecución** de casos de prueba
 
 Si bien no hay actividades explícitas de planificación:
 - Se puede utilizar el enfoque basado en sesiones, 
@@ -36,30 +36,3 @@ Esta técnica es altamente dependiente de las habilidades del tester
 - Los resultados de los CP ejecutados influencian el diseño y ejecución de los CP que siguen a continuación
 - Durante las pruebas se construye un modelo mental del SW
 - Las pruebas se ejecutan contra ese “modelo” mental
-
-# Resumen sobre técnicas de testing
-
-Vimos una amplia variedad de técnicas de prueba... ahora bien, ¿cuáles debería usar?
-
-Factores que influencian: 
-- El tipo de objeto de prueba
-- Documentación formal y/o disponibilidad de herramientas
-- Cumplimiento de estándares
-- Experiencia de los testers
-- Necesidades/deseos del cliente
-- Evaluación de riesgos
-
-
-## Proceso para un módulo (sugerencia)
-
-![[Pasted image 20230520205824.png]]
-
-
-## Comparación de técnicas
-
-![[Pasted image 20230520205845.png]]
-![[Pasted image 20230520205852.png]]
-
-
-
-

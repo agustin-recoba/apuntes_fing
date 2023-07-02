@@ -1,37 +1,48 @@
 # ¿QUÉ ES LA MOTIVACIÓN?
 
-_Es el resultado de la interacción entre una persona y una situación, el nivel de motivación varía tanto entre individuos como en un mismo individuo en diferentes momentos._
+```ad-info
+title: Motivación
+_Es el resultado de la interacción entre una persona y una situación. El nivel de motivación varía tanto entre individuos como en un mismo individuo en diferentes momentos._
+```
 
 <u>Motivación</u> se refiere a los procesos responsables del **deseo de un individuo** de realizar un gran esfuerzo para lograr los **objetivos organizacionales**, condicionado por la capacidad del esfuerzo de satisfacer alguna **necesidad individual**.
-El elemento ***esfuerzo*** es una medida de la intensidad o impulso. Una persona motivada se esfuerza mucho, pero es poco probable que los niveles altos de esfuerzo conduzcan a un desempeño laboral favorable, a menos que el esfuerzo se canalice en una dirección que beneficie a la organización. Por lo tanto hay que considerar la calidad del esfuerzo así como la intensidad. El esfuerzo que se dirige hacia los objetivos organizacionales y es congruente con estos es la clase de esfuerzo que debemos buscar.
+
+El elemento ***esfuerzo*** es una medida de la <u>intensidad</u> o <u>impulso</u>. Una persona motivada se esfuerza mucho, pero es poco probable que los niveles altos de esfuerzo conduzcan a un desempeño laboral favorable, a menos que el esfuerzo se canalice en una dirección que beneficie a la organización. 
+Por lo tanto hay que considerar la calidad del esfuerzo así como la intensidad. El esfuerzo que se dirige hacia los objetivos organizacionales y es congruente con estos es la clase de esfuerzo que debemos buscar.
+
 La motivación es un **proceso** de satisfacción de necesidades. Necesidad es un estado interno que hace que ciertos resultados parezcan atractivos. En la definición de motivación está inherente el requisito de que las necesidades del individuo deben ser compatibles con los objetivos de la organización.
 
 ![[Pasted image 20230530234315.png]]
 
 # PRIMERAS TEORÍAS SOBRE LA MOTIVACIÓN
 
-Analizaremos las tres teorías que fundaron las bases de la motivación, las mismas son; teoría de las necesidades de Maslow, las teorías X e Y de Macregor y la teoría de la motivación e higiene de Herzberg.
+Analizaremos las tres teorías que fundaron las bases de la motivación, las mismas son: teoría de las <u>necesidades de Maslow</u>, las <u>teorías X e Y de Macregor</u> y la teoría de la <u>motivación e higiene de Herzberg</u>.
 
 ## Jerarquía de las necesidades de Maslow
 
-Teoría de Maslow afirma que existe una jerarquía de 5 necesidades humanas: fisiológicas, de seguridad, sociales y de autorrealización.
+Teoría de Maslow afirma que existe una jerarquía de <u>5</u> necesidades humanas: fisiológicas, de seguridad, sociales y de autorrealización.
 
 - **Necesidades fisiológicas:** Necesidades que tiene una persona de alimento, bebida, vivienda, satisfacción sexual y otras necesidades físicas.
-- **Necesidades de seguridad:** Necesidad de una persona de sentir seguridad y protección al daño físico y emocional, así como la certeza de que se seguirán satisfaciendo las necesidades físicas.
+- **Necesidades de seguridad:** Necesidad de una persona de sentir seguridad y protección al <u>daño físico y emocional</u>, así como la certeza de que se seguirán satisfaciendo las necesidades físicas.
 - **Necesidades sociales:** Necesidad que tiene una persona de afecto, pertenencia, aceptación y amistad.
 - **Necesidades de estima:** Necesidad que tiene una persona de factores de estima internos, como respeto a uno mismo, autonomía y logros, y factores de estima externos, como estatus, reconocimiento y atención.
 - **Necesidades de autorrealización:** Necesidad de una persona de crecimiento, logro del propio potencial y autosatisfacción, el impulso para convertirse en lo que uno es capaz de llegar a ser.
 
 En cuanto a la motivación Maslow argumentó que cada nivel de la jerarquía de necesidades debe ser satisfecho antes de que se active el siguiente, y planteó que aunque ninguna necesidad es satisfecha por completo, una necesidad muy satisfecha ya no motivará a un individuo. 
+
 Si se desea motivar a alguien según Maslow hay que entender en qué nivel de la jerarquía está esa persona y centrarse en satisfacer las necesidades en ese nivel o por arriba del mismo. 
 
-Maslow separó las 5 necesidades en; <u>nivel inferior</u> (fisiológicas o de seguridad) y en <u>nivel superior</u> (sociales, de estima y de autorrealización). La diferencia radicaba en que las de nivel superior son satisfechas internamente, en tanto que las de nivel inferior son satisfechas sobre todo en forma externa.
+Maslow separó las 5 necesidades en: 
+- <u>nivel inferior</u> (fisiológicas o de seguridad) y en 
+- <u>nivel superior</u> (sociales, de estima y de autorrealización). 
+
+La diferencia radicaba en que las de nivel superior son satisfechas internamente, en tanto que las de nivel inferior son satisfechas sobre todo en forma externa.
 
 ![[Pasted image 20230530234614.png]]
 
-## Teoría X y teoría Y de McGregor
+## Teoría X e Y de McGregor
 
-Douglas Mc Gregor propuso 2 series de supuestos sobre la naturaleza humana: La Teoría X y la Teoría Y.
+Douglas Mc Gregor propuso 2 series de supuestos sobre la naturaleza humana: la Teoría X y la Teoría Y.
 
 - <u>Teoría X:</u> Supuesto de que a los empleados les disgusta el trabajo, son perezosos, evitan la responsabilidad y deben ser presionados para que trabajen.
 - <u>Teoría Y:</u> Supuesto de que los empleados son creativos, disfrutan el trabajo, buscan responsabilidad y pueden dirigirse a sí mismos.
@@ -46,7 +57,7 @@ La teoría de la motivación e higiene de Frederick Herzberg propone que la sati
 Herzberg propuso que sus hallazgos indicaron la existencia de un continuo dual: lo opuesto a la satisfacción es la no satisfacción, y lo opuesto a la insatisfacción es la no insatisfacción.
 Según el, los factores que generaban satisfacción en el trabajo eran independientes y distintos de los que generaban insatisfacción. Los gerentes que trataban de eliminar los factores que generaban insatisfacción en el trabajo podían crear armonía en el sitio de trabajo pero no necesariamente motivación.
 
-- **Factores de higiene:** Factores extrínsecos que generan insatisfacción el trabajo. Cuando estos son adecuados las personas no estarán insatisfechas pero tampoco estarán satisfechas (o motivadas). Eliminan la insatisfacción laboral pero no motivan.
+- **Factores de higiene:** Factores extrínsecos que generan insatisfacción con el trabajo. Cuando estos son adecuados las personas no estarán insatisfechas pero tampoco estarán satisfechas (o motivadas). Eliminan la insatisfacción laboral pero no motivan.
 - **Motivadores:** Factores intrínsecos que aumentan la satisfacción en el trabajo y la motivación.
 
 ![[Pasted image 20230530234728.png]]
@@ -65,7 +76,7 @@ Propuesta por David McClelland y otros, afirma que tres necesidades adquiridas (
 El estímulo para sobresalir, obtener logros con relación a una serie de normas y luchar para tener éxito. 
 Las personas con esta necesidad: 
 - Lucha por obtener logros personales más que por los símbolos y recompensas del éxito.
-- Tienen el deseo de hacer algo mejor o de manera más eficiente que como se ha hecho antes.
+- Tienen el deseo de hacer algo mejor.
 - Prefieren trabajos que ofrecen responsabilidad personal para encontrar soluciones a problemas en los que puedan recibir una retroalimentación rápida e inequívoca sobre su desempeño.
 
 Las personas con gran necesidad de logros:
@@ -88,8 +99,11 @@ Las 3 se miden comúnmente con una prueba proyectiva (TAT) en la que los evaluad
 ## Teoría de la fijación de metas
 
 Existe un apoyo importante para la proposición de que las metas específicas aumentan el desempeño y que los objetivos difíciles, cuando se aceptan, dan como resultado un desempeño más alto que los objetivos fáciles.
+
 La intención de trabajar hacia el logro de una meta es una fuente importante de motivación laboral. Las metas específicas y desafiantes son fuerzas motivadoras superiores. Las metas difíciles y específicas producen un nivel de rendimiento más alto que la meta general de “haz tu mejor esfuerzo”. La especificidad del objetivo actúa como un estímulo interno.
-túa como un estímulo interno. Por que no es una contradicción que esta Teoría afirme que la motivación se maximiza por medio de metas difíciles, en tanto que la motivación hacia el logro es estimulada por metas moderadamente desafiantes. La Teoría de la fijación de metas se aplica a personas en general, en tanto que las conclusiones sobre la motivación hacia el logro se basan en personas que tienen un nivel alto de necesidad de logros, y como éstas no representan una gran cifra, las metas difíciles son todavía recomendables para la mayoría de los empelados.
+
+La teoría de la fijación de metas se aplica a personas en general, en tanto que las conclusiones sobre la motivación hacia el logro se basan en personas que tienen un nivel alto de necesidad de logros, y como éstas no representan una gran cifra, las metas difíciles son todavía recomendables para la mayoría de los empelados.
+
 Sus conclusiones, a los que aceptan y están comprometidos con las metas. Las metas difíciles darán como resultado un desempeño más alto solo si se aceptan. La participación de los empleados en la fijación de metas es preferible cuando uno espera resistencia a aceptar retos difíciles.
 
 Las personas se desempeñan mejor cuando obtienen retroalimentación sobre su progreso hacia sus metas. 
@@ -105,7 +119,7 @@ El compromiso ocurre con mayor probabilidad, cuando las metas se hacen públicas
 
 Autoeficacia refiere a la creencia de un individuo de que es capaz de realizar una tarea. En situaciones difíciles aquellos con autoeficacia baja tienen más probabilidades de reducir su esfuerzo o renunciar por completo (también ante la retroalimentación negativa), mientras aquellos con alta, se esforzarán más para superar el reto (también ante la retroalimentación negativa).
 
-Se relaciona con la cultura. Está bien adaptada a países como Estados Unidos o Canadá porque sus ideas principales se identifican bien con las culturas norteamericanas. Esta Teoría supone que los subordinados son muy independientes. Que los gerentes y empleados buscarán metas desafiantes y que tanto gerentes como empleados consideran que el desempeño es importante.
+Se relaciona con la cultura. Está bien adaptada a países como Estados Unidos o Canadá porque sus ideas principales se identifican bien con las culturas norteamericanas. Esta teoría supone que los subordinados son muy independientes. Que los gerentes y empleados buscarán metas desafiantes y que tanto gerentes como empleados consideran que el desempeño es importante.
 
 ## Teoría del reforzamiento
 
@@ -116,7 +130,9 @@ Cualquier consecuencia que sigue inmediatamente a una respuesta y que aumenta la
 
 Ignora factores como los objetivos, las expectativas y las necesidades, centrándose únicamente en lo que le sucede a una persona cuando lleva a cabo alguna acción. Es más probable que las personas participen en los comportamientos deseados si reciben una recompensa por hacerlo. Estas recompensas son más eficaces si se proporcionan inmediatamente después de un comportamiento deseado.
 
-El comportamiento que no es recompensado o castigado tiene menos probabilidades de que se repita. Como el énfasis es en el reforzamiento positivo, no en el castigo, los gerentes deben ignorar, no castigar, el comportamiento desfavorable. Aunque el castigo elimina el comportamiento indeseable más rápido que la ausencia de reforzamiento, su efecto es solo temporal y puede producir después efectos secundarios desagradables, como comportamientos disfuncionales, conflictos en el trabajo, ausentismo y rotación.
+El comportamiento que no es recompensado tiene menos probabilidades de que se repita. 
+
+Como el énfasis es en el reforzamiento positivo, no en el castigo, los gerentes deben ignorar, no castigar, el comportamiento desfavorable. Aunque el castigo elimina el comportamiento indeseable más rápido que la ausencia de reforzamiento, su efecto es solo temporal y puede producir después efectos secundarios desagradables, como comportamientos disfuncionales, conflictos en el trabajo, ausentismo y rotación.
 
 ## Diseño de puestos motivadores
 
@@ -127,11 +143,11 @@ Forma en que se combinan las tareas para formar empleos completos. Los gerentes 
 La expansión horizontal de un empleo aumentando su alcance.
 La mayoría de los esfuerzos de ampliación del empleo proporcionaron pocos retos y escaso significado a las actividades de los trabajadores, aunque si abordaron la falta de variedad en los empleos muy especializados.
 
+_“antes tenía un trabajo pésimo. Ahora, gracias a la ampliación de empleos, ¡tengo tres trabajos pésimos!”_
+
 #### Alcance del empleo
 Número de las diferentes tareas que se requieren en un empleo y la frecuencia con que estas tareas se repiten. 
 Uno de los esfuerzos iniciales para superar los inconvenientes de la especialización de los empleos fue la expansión horizontal de un empleo mediante aumento del alcance del empleo. 
-
-_“antes tenía un trabajo pésimo. Ahora, gracias a la ampliación de empleos, ¡tengo tres trabajos pésimos!”_
 
 ### Enriquecimiento del empleo
 Expansión vertical de un empleo agregando responsabilidades de planificación y evaluación. Este aumenta la profundidad del empleo.
@@ -185,7 +201,6 @@ La clave de la teoría es comprender el objetivo de un individuo y el vínculo e
 
 ## Integración de las teorías contemporáneas de la motivación
 
-
 La teoría de las expectativas predice que un empleado ejercerá un nivel importante de esfuerzo si percibe que existe una fuerte relación entre el esfuerzo y el desempeño, el desempeño y las recompensas, y las recompensas y la satisfacción de metas personales. Cada una de las relaciones recibe, a se vez, la influencia de otros factores. Usted puede ver en el modelo que el nivel de desempeño individual lo determina no solo el nivel de esfuerzo individua, sino también la habilidad que tiene el individuo para desempeñarse y si la organización cuenta con un sistema justo y objetivo de evaluación de desempeño. La relación entre el desempeño y la recompensa será fuerte si el individuo percibe que el desempeño es lo que se recompensa. El vinculo final en la teoría de las expectativas es la relación entre las recompensas y las metas. La teoría de la necesidad entra en juego en ese momento. La motivación sería alta según el grado en que las recompensas que un individuo recibiera por su desempeño satisficieran las necesidades dominantes congruentes con sus metas individuales.
 
 ![[Pasted image 20230531002124.png]]
@@ -200,7 +215,7 @@ La teoría de las necesidades de Maslow concuerda con la cultura estadounidense.
 El trabajo en grupo motivará más a los empleados cuando en la cultura del país sea importante el criterio de la calidad de vida.
 
 El logro como motivador interno presupone dos características culturales:
-- Deseo de aceptar un grado de riesgo moderado
+- Deseo de aceptar un grado de riesgo moderado.
 - Interés en el desempeño. 
 
 Esta combinación se encuentra en países angloamericanos, y ausente en países como Chile o Portugal. La equidad puede no significar sistema de recompensas por desempeño, para ciertas culturas, sino por necesidades. Requiere una modificación en países como Rusia.
@@ -217,14 +232,14 @@ Para maximizar la motivación entre la fuerza laboral de hoy, los gerentes neces
 - La oportunidad de aprender, los horarios de trabajo flexibles y las buenas relaciones interpersonales son más importantes para las mujeres.
 
 Se requiere una gama diversa de recompensas para motivar a empleados con necesidades tan distintas. Programas de trabajo flexibles que motivan a los empleados:
-- Semana laboral comprimida.
+- **Semana laboral comprimida.**
 	Se trabajan más horas al día, menos días a la semana. (Común 4 días de 10 horas).
-- Horario de trabajo flexible. (Flextime). 
+- **Horario de trabajo flexible.** (Flextime). 
 	Los empleados trabajan determinado número de horas a la semana, pero con la libertad, dentro de ciertos límites, de variar las horas de trabajo. 
 	Hay horas clave en las que los empleados deben de estar en el trabajo, pero hay flexibilidad en horas de llegada, salida y para ir a comer.
-- Participación del empleo.
+- **Participación del empleo.**
 	Dos o más personas comparten un empleo de tiempo completo. 
-- Trabajo a distancia. 
+- **Trabajo a distancia.**
 	Los empleados trabajan en el hogar y están vinculados al lugar de trabajo vía computadora y módem. 
 	Depende a un empleado u a otro le servirá o no, dado que hay algunos empleados que si prefieren no tener que movilizarse, y estar en su casa vestidos como quieran, mientras que a otros les entusiasma la idea de tener que ir a un lugar de trabajo satisfaciendo así las necesidades sociales.
 
@@ -258,19 +273,22 @@ Los programas de recompensa para los empleados desempeñan un rol importante en 
 
 ### Administración a libro abierto
 Enfoque motivador en el que los estados financieros de una organización (los libros) se comparte con todos los empleados. Se les debe enseñar a leer y entender los estados financieros de la organización. Una vez que tienen este conocimiento, los gerentes deben compartir lasa cifras con ellos en forma regular, con el objetivo de lograr que los empleados piensen como un propietario al observar el impacto que sus decisiones y acciones tienen en los resultados financieros.
-Este método se denomina **administración a libro abierto**.
 
 ### Programas de reconocimiento para los empleados
 Atención personal y expresión de interés, aprobación y apreciación hacia un trabajo bien hecho.
-Congruente con la teoría del reforzamiento, es probable que se fomente la repetición de un comportamiento si se recibe un reconocimiento inmediatamente después de que se presenta. El reconocimiento puede tener muchas formas:
+Congruente con la teoría del reforzamiento, es probable que se fomente la repetición de un comportamiento si se recibe un reconocimiento inmediatamente después de que se presenta.
+
+El reconocimiento puede tener muchas formas:
 - Felicitarlo personalmente en privado por el buen trabajo realizado.
 - Enviar nota escrita a mano o correo electrónico por algo positivo que haya hecho el empleado.
 - Reconocer logros públicamente.
 - Celebrar éxitos de los equipos de trabajo, etc.
 
 ### Programas de pago por desempeño
-Planes de compensación variable que pagan a los empleados en base a alguna medida de desempeño: Pago por producción, incentivos salariales, reparto de utilidades y bonos de suma fija. 
-Lo que distingue a estas formas de pago de planes de compensación más tradicionales es que en vez de pagar a una persona por el tiempo de trabajo, el pago se ajusta para que refleje alguna medida de desempeño. 
+Planes de compensación variable que pagan a los empleados en base a alguna medida de desempeño: pago por producción, incentivos salariales, reparto de utilidades y bonos de suma fija.
+
+Lo que distingue a estas formas de pago de planes de compensación más tradicionales es que en vez de pagar a una persona por el tiempo de trabajo, el pago se ajusta para que refleje alguna medida de desempeño.
+
 El pago por desempeño tal vez sea más compatible con la teoría de las expectativas. De manera específica los individuos deben percibir una fuerte relación entre su desempeño y las recompensas que reciben para que la motivación aumente al máximo. Así existe un incentivo para que los esfuerzos y la motivación se mantengan fuertes.
 
 ### Programas de opción de compra de acciones
@@ -282,12 +300,12 @@ Convierte a los empleados en “propietarios” con el fin de proporcionarles in
 # DE LA TEORÍA A LA PRÁCTICA: SUGERENCIAS PARA MOTIVAR A LOS EMPLEADOS
 
 ¿Qué recomendaciones específicas puede extraer de las teorías y temas presentados en este capítulo?
-- Reconocer las diferencias individuales. Casi todas las teorías contemporáneas de la motivación reconocen que los empleados no son idénticos. Tienen diferentes necesidades, actitudes, personalidades y otras variables individuales importantes.
-- Hacer que las personas tengan empleos acordes a ellas. Existe una gran cantidad de evidencias que muestran los beneficios motivadores de lograr que las personas tengan empleos acordes a ellas. Por ejemplo, las personas con una gran necesidad de logro deben tener empleos que les permitan participar en la fijación de metas moderadamente desafiantes y que incluyan autonomía y retroalimentación. Además, recuérdese que no todas las personas se sienten motivadas por empleos con mucha autonomía, variedad y responsabilidad.
-- Usar metas. La literatura sobre la teoría de la fijación de metas sugiere que los gerentes deben asegurarse de que los empleados tengan metas difíciles y específicas, así como retroalimentación sobre el logro de esas metas. ¿Debe el gerente asignar las metas o deben los empleados participar en su establecimiento? La respuesta depende de su percepción en cuanto a la aceptación de las metas y de la cultura de la organización. Si usted espera resistencia a las metas, la participación debe aumentar la aceptación. Si la participación no es aceptada en la cultura, asigne metas.
-- Tener la seguridad de que las metas se perciben como alcanzables. Sin importar si las metas son alcanzables en realidad, los empleados que ven las metas como inalcanzables reducirán su esfuerzo porque pensarán, “¿por qué debo molestarme?”. Por lo tanto, los gerentes deben asegurarse de que los empleados confían en que el aumento del esfuerzo puede conducir al logro de las metas de desempeño.
-- Individualizar las recompensas. Como los empleados tienen diferentes necesidades, lo que actúa como reforzador para uno puede no serlo para el otro. Los gerentes deben usar su conocimiento sobre las diferencias de los empleados para individualizar las recompensas que pueden controlar, como la remuneración, las promociones, el reconocimiento, las asignaciones laborales deseables, la autonomía y la participación.
-- Vincular las recompensas con el desempeño. Los gerentes deben hacer que las recompensas dependan del desempeño. Recompensar factores distintos al desempeño sólo reforzará esos otros factores. Las recompensas importantes, como los aumentos de sueldo y las promociones, se deben otorgar por el logro de metas específicas. Los gerentes también deben buscar formas de aumentar la visibilidad de las recompensas, volviéndolas potencialmente más motivadoras.
-- Verifique el sistema en busca de equidad. Los empleados deben percibir que las recompensas o las salidas son iguales a las entradas. Dicho de manera sencilla, la experiencia, la habilidad, el esfuerzo y otras entradas obvias deben explicar las diferencias en el pago, la responsabilidad y otras salidas evidentes. Y recuerde que la equidad para una persona es inequidad para otra, así que un sistema ideal de recompensas debe probablemente sopesar las entradas de manera diferente para otorgar las recompensas apropiadas para cada empleo.
-- Use el reconocimiento. Reconozca el poder del reconocimiento. En una economía estancada donde la disminución de costos es muy frecuente (como ocurrió de 2001 a 2003), usar el reconocimiento es un medio de costo bajo para recompensar a los empleados. Y es una recompensa que la mayoría de los empleados considera valiosa.
-- No ignore el dinero. Es fácil quedar tan absorto en fijar metas, crear trabajos interesantes y proporcionar oportunidades de participación que uno olvida que el dinero es una razón importante por la cual trabaja la mayoría de las personas. Por lo tanto, la asignación de aumentos salariales basados en el desempeño, los bonos por el trabajo a destajo y otros incentivos de pago son importantes para influir en la motivación de los empleados. No estamos diciendo que los empleados deban centrarse únicamente en el dinero como una herramienta motivadora. Más bien, simplemente estamos declarando lo que es obvio, es decir, si el dinero se eliminara como un incentivo, las personas no se presentarían a trabajar. No se puede decir lo mismo de eliminar las metas, un trabajo enriquecido o la participación.
+- <u>Reconocer las diferencias individuales.</u> Casi todas las teorías contemporáneas de la motivación reconocen que los empleados no son idénticos. Tienen diferentes <u>necesidades</u>, <u>actitudes</u>, <u>personalidades</u> y otras variables individuales importantes.
+- Hacer que las <u>personas tengan empleos acordes a ellas</u>. Existe una gran cantidad de evidencias que muestran los beneficios motivadores de lograr que las personas tengan empleos acordes a ellas. Por ejemplo, las personas con una gran necesidad de logro deben tener empleos que les permitan participar en la fijación de metas moderadamente desafiantes y que incluyan autonomía y retroalimentación. Además, recuérdese que no todas las personas se sienten motivadas por empleos con mucha autonomía, variedad y responsabilidad.
+- Usar <u>metas</u>. La literatura sobre la teoría de la fijación de metas sugiere que los gerentes deben asegurarse de que los empleados tengan metas difíciles y específicas, así como retroalimentación sobre el logro de esas metas. ¿Debe el gerente asignar las metas o deben los empleados participar en su establecimiento? La respuesta depende de su percepción en cuanto a la aceptación de las metas y de la cultura de la organización. Si usted espera resistencia a las metas, la participación debe aumentar la aceptación. Si la participación no es aceptada en la cultura, asigne metas.
+- Tener la seguridad de que <u>las metas se perciben como alcanzables</u>. Sin importar si las metas son alcanzables en realidad, los empleados que ven las metas como inalcanzables reducirán su esfuerzo porque pensarán, _“¿por qué debo molestarme?”_. Por lo tanto, los gerentes deben asegurarse de que los empleados confían en que el aumento del esfuerzo puede conducir al logro de las metas de desempeño.
+- <u>Individualizar las recompensas.</u> Como los empleados tienen diferentes necesidades, lo que actúa como reforzador para uno puede no serlo para el otro. Los gerentes deben usar su conocimiento sobre las diferencias de los empleados para individualizar las recompensas que pueden controlar, como la remuneración, las promociones, el reconocimiento, las asignaciones laborales deseables, la autonomía y la participación.
+- <u>Vincular las recompensas con el desempeño.</u> Los gerentes deben hacer que las recompensas dependan del desempeño. Recompensar factores distintos al desempeño sólo reforzará esos otros factores. Las recompensas importantes, como los aumentos de sueldo y las promociones, se deben otorgar por el logro de metas específicas. Los gerentes también deben buscar formas de aumentar la visibilidad de las recompensas, volviéndolas potencialmente más motivadoras.
+- Verifique el sistema en <u>busca de equidad</u>. Los empleados deben percibir que las recompensas o las salidas son iguales a las entradas. Dicho de manera sencilla, la experiencia, la habilidad, el esfuerzo y otras entradas obvias deben explicar las diferencias en el pago, la responsabilidad y otras salidas evidentes. Y recuerde que la equidad para una persona es inequidad para otra, así que un sistema ideal de recompensas debe probablemente sopesar las entradas de manera diferente para otorgar las recompensas apropiadas para cada empleo.
+- Use el <u>reconocimiento</u>. Reconozca el poder del reconocimiento. En una economía estancada donde la disminución de costos es muy frecuente (como ocurrió de 2001 a 2003), usar el reconocimiento es un medio de costo bajo para recompensar a los empleados. Y es una recompensa que la mayoría de los empleados considera valiosa.
+- <u>No ignore el dinero.</u> Es fácil quedar tan absorto en fijar metas, crear trabajos interesantes y proporcionar oportunidades de participación que uno olvida que el dinero es una razón importante por la cual trabaja la mayoría de las personas. Por lo tanto, la asignación de aumentos salariales basados en el desempeño, los bonos por el trabajo a destajo y otros incentivos de pago son importantes para influir en la motivación de los empleados. No estamos diciendo que los empleados deban centrarse únicamente en el dinero como una herramienta motivadora. Más bien, simplemente estamos declarando lo que es obvio, es decir, si el dinero se eliminara como un incentivo, las personas no se presentarían a trabajar. No se puede decir lo mismo de eliminar las metas, un trabajo enriquecido o la participación.

@@ -167,3 +167,15 @@ Si B = 1.17 y PM = 60, entonces TDEV = 3 * $(60)^{0.36}$ = 13 meses
 Sin embargo, no necesariamente son lo mismo el calendario de proyecto nominal predicho por el modelo COCOMO y el calendario requerido por el plan del proyecto.
 
 [LEER DEL LIBRO]
+
+# Resumen
+
+Para calcular el costo de un proyecto, se usan tres parámetros: costo de esfuerzo (salarios), costo de hardware y software y costos de entrenamiento y viajes. El primero suele ser el mayor. El proyecto siempre cambia durante el desarrollo. Si se usa un método ágil, igual se necesita un plan para comenzar, pero no es tan detallado. Para determinar el precio, se puede hacer en base a un precio que la compañía supone que el cliente espera pagar.
+
+Un plan de proyecto incluye la organización del mismo, análisis de riesgo, recursos, división del trabajo y tiempos, entre otros. Al hacer el plan, hay que tener en cuenta restricciones de tiempo y recursos. Las estimaciones deben ser realistas, considerando que siempre surgen problemas, y tener planes de contingencia. Hay que ir revisando el progreso con las metas logradas. Si hay problemas serios que pueden provocar muchos retrasos, hay que replanificar el proyecto, que puede implicar una nueva negociación con el cliente, e incluso una cancelación del proyecto si no se logra un acuerdo.
+
+Al aumentar la complejidad del software, aumentan los costos. Los puntos de aplicación en COCOMO se calculan a partir de la cantidad de pantallas separadas que se muestran, la cantidad de reportes producidos, la cantidad de módulos en lenguajes imperativos y la cantidad de líneas de lenguaje de scripting o programación de base de datos. En cuanto al reuso, se consideran elementos de caja negra (se puede usar sin entender cómo se implementa) y blanca (hay que hacer cambios). Se mide el esfuerzo de decidir si un componente puede ser reusado, entender el código y modificarlo. En el post-arquitectura, se vuelven a evaluar las líneas de código.
+
+Las categorías de los riesgos pueden superponerse. Los riesgos dependen del tipo de proyecto y del entorno. Algunos ejemplos comunes de riesgos son cambios de personal o de administradores, de requerimientos, de tecnología o retrasos en la especificación. La gestión de administración de riesgos debe ser documentada en grandes proyectos. El proceso es menos formal en desarrollo ágil. La probabilidad e impacto de un riesgo pueden cambiar. Lo preferible sería evitar el riesgo, pero como no siempre es posible, se tiene que recurrir a una de las otras estrategias.
+
+En la jerarquía de Maslow, los administradores deben satisfacer las necesidades superiores de sus empleados: sociales (dar oportunidad de conocer a sus colegas), estima (mostrar que su trabajo se valora) y autorrealización (responsabilidades de trabajo para que puedan mejorar sus habilidades). Las personas orientadas a la interacción prefieren trabajar en equipo, a diferencia de las orientadas a tareas o sí mismas, que prefieren trabajar solas. Se puede tener varias de estas motivaciones, pero siempre hay una dominante.

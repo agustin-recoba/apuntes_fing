@@ -129,11 +129,12 @@ Los gerentes tienen la obligación de hacer que la integración del nuevo emplea
 Conforme los empleos exigen cambios, las destrezas de los empleados se deben modificar y actualizar. Los gerentes, por supuesto, tienen la responsabilidad de decidir qué tipo de capacitación necesitan los empleados, cuándo la requieren y cómo debe de ser esa capacitación.
 
 ## Tipos de capacitación
+
 ![[Pasted image 20230517154613.png]]
 
 ## Métodos de capacitación
-![[Pasted image 20230517154639.png]]
 
+![[Pasted image 20230517154639.png]]
 
 # ADMINISTRACION DEL DESEMPEÑO DE LOS EMPLEADOS
 
@@ -145,7 +146,7 @@ Evaluar el desempeño de los empleados forma parte de un ***sistema de administr
 ### Ensayos escritos
 Técnica de evaluación del desempeño en la que un evaluador redacta una descripción de las fortalezas, las debilidades, el desempeño pasado y el potencial de un empleado.
 
-### incidentes críticos
+### Incidentes críticos
 Técnica de evaluación del desempeño en la que el evaluador se centra en los comportamientos críticos o clave que distinguen al desempeño laboral eficaz del ineficaz.
 
 ### Escalas de calificación gráfica
@@ -158,15 +159,17 @@ Técnica de evaluación del desempeño que evalúa a un empleado con ejemplos de
 Técnicas de evaluación del desempeño que comparan el desempeño de un individuo con el de otros.
 
 ### Retroalimentación de 360 grados
-Método de evaluación que utiliza la retroalimentación proporcionada por el círculo completo de personas con quienes interactúa la gente.
+Método de evaluación que utiliza la retroalimentación proporcionada por el círculo completo de personas con quienes interactúa.
 
-### Comparativs de métodos
+### Comparativas de métodos
 ![[Pasted image 20230517155143.png]]
 
 # COMPENSACIÓN Y PRESTACIONES
 
-Desarrollar un sistema de compensación eficaz y adecuado es una parte importante del proceso de la GRH. Ya que puede ayudar a atraer y retener a individuos competentes y talentosos. El sistema de compensación de una organización ejerce un impacto en el desempeño estratégico de la misma. Los gerentes deben desarrollar un sistema de compensación adecuado, para mantener motivado al personal. Diversos factores influyen en las diferencias que existen en los paquetes de compensación y prestaciones para distintos empleados. Esos factores se basan tanto en el empleo como en el negocio o la industria. 
-Muchas organizaciones usan un ***sistema de pago basado en las destrezas***, en el cual se recompensa a los empleados por las destrezas y capacidades laborales que demuestran. 
+Desarrollar un sistema de compensación eficaz y adecuado es una parte importante del proceso de la GRH. Ya que puede ayudar a atraer y retener a individuos competentes y talentosos. El sistema de compensación de una organización ejerce un impacto en el desempeño estratégico de la misma. Los gerentes deben desarrollar un sistema de compensación adecuado, para mantener motivado al personal. 
+Diversos factores influyen en las diferencias que existen en los paquetes de compensación y prestaciones para distintos empleados. Esos factores se basan tanto en el empleo como en el negocio o la industria. 
+Muchas organizaciones usan un ***sistema de pago basado en las destrezas,*** en el cual se recompensa a los empleados por las destrezas y capacidades laborales que demuestran. 
+
 Muchos factores influyen en el diseño del sistema de compensación de una organización pero la flexibilidad es un factor clave para tener en cuenta dados los ambientes dinámicos que enfrentan las organizaciones.
 
 ![[Pasted image 20230517155238.png]]
@@ -178,7 +181,7 @@ title: Def. Carrera
 Secuencia de los puestos que tiene una persona durante su vida.
 ```
 
-Más aún, el concepto es tan importante para los trabajadores no capacitados como para los diseñadores de software o médicos. Pero ¡el desarrollo de carreras no es lo que solía ser!
+Más aún, el concepto es tan importante para los trabajadores no capacitados como para los diseñadores de software o médicos. Pero ¡el desarrollo de carreras no es lo que solía ser!.
 
 ## Cómo era (desarrollo de carreras organizacionales)
 
@@ -191,4 +194,5 @@ El recorte de personal, la reestructuración y otros ajustes organizacionales no
 Los individuos, más que las organizaciones definen el progreso de sus carreras, la lealtad organizacional, las destrezas importantes y el valor del mercado.
 
 # TEMAS ACTUALES DE LA GERENCIA DE RECURSOS HUMANOS
- Por lo que dice el eva, creo que no va.
+
+Por lo que dice el eva, creo que no va.

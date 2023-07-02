@@ -5,8 +5,13 @@ Software systems are constantly changing during development and use:
 - New versions of hardware and system platforms are released, and you have to adapt your systems to work with them.
 - Competitors introduce new features in their system that you have to match.
 
+```ad-summary
+title: GSM
 La gestión de la configuración comprende políticas, procesos y herramientas para gestionar los cambios en los sistemas de software.
-Propósito: Evitar perder tiempo en modificar versiones incorrectas del sistema, entregar la versión incorrecta a los clientes o perder el código fuente de una versión del sistema o de un componente.
+
+
+<u>Propósito:</u> Evitar perder tiempo en modificar versiones incorrectas del sistema, entregar la versión incorrecta a los clientes o perder el código fuente de una versión del sistema o de un componente.
+```
 
 The configuration management of a software system product involves:
 1. <u>Gestión de versiones.</u> Llevar el registro de las múltiples versiones de los componentes del sistema y asegurarse que los cambios realizados en los componentes por diferentes desarrolladores no interfieran entre si.
@@ -16,25 +21,25 @@ The configuration management of a software system product involves:
 
 ![[Pasted image 20230613170332.png]]
 
-Agile development, where components and systems are changed several times a day, is impossible without using CM tools.
+Agile development, where components and systems are changed several times a day, is <u>impossible</u> without using CM tools.
 
 The development of a software product or custom software system takes place in three distinct phases:
-1. A <u>development phase</u> where the development team is responsible for managing the software configuration and new functionality is being added to the software. The development team decides on the changes to be made to the system.
-2. A <u>system testing phase</u> where a version of the system is released internally for testing. This may be the responsibility of a quality management team or an individual or group within the development team. At this stage, no new functionality is added to the system. The changes made at this stage are bug fixes, performance improvements, and security vulnerability repairs. There may be some customer involvement as beta testers during this phase.
-3. A <u>release phase</u> where the software is released to customers for use. After the release has been distributed, customers may submit bug reports and change requests. New versions of the released system may be developed to repair bugs and vulnerabilities and to include new features suggested by customers.
+1. A <u>development phase</u> where the development team is **responsible** for managing the software configuration and new functionality is being added to the software.
+2. A <u>system testing phase</u>. This may be the responsibility of a quality management team or an individual or group within the development team. The changes made at this stage are bug fixes, performance improvements, and security vulnerability repairs.
+3. A <u>release phase</u>. New versions of the released system may be developed to repair bugs and vulnerabilities and to include new features suggested by customers.
 
 ## Terminology 
 
 ![[Pasted image 20230613170617.png]]
 
-## Principio de Inmutabilidad
+## Principio de <u>Inmutabilidad</u>
 
 La gestión de la configuración se basa en el **principio de inmutabilidad** (por ejemplo, la información congelada no se puede modificar más), lo cual implica la existencia de versiones, y provee mecanismo y técnicas para que un equipo de personas pueda trabajar de forma coordinada.
 
 # 25.1 Gestión de versiones
 
 Es el proceso de realizar el seguimiento de las diferentes versiones de los componentes de software o ítems de configuración y los sistemas de los cuales forman parte. Y de asegurar que los cambios realizados por distintos desarrolladores a estas versiones no interfieran entre sí.
-Puede verse como el proceso de gestión de líneas de código (codelines) y líneas base (baselines).
+Puede verse como el **proceso de gestión de líneas de código (codelines) y líneas base (baselines).**
 
 ```ad-summary
 title: Baseline y Codeline
@@ -59,14 +64,14 @@ La línea principal es una secuencia de versiones del sistema desarrolladas a pa
 ## Control de Versiones
 
 Los sistemas de control de versiones identifican, almacenan y controlan el acceso a diferentes versiones de los componentes. There are two types of modern version control system:
-1. <u>Sistema centralizado,</u> existe un repositorio único que contiene todas las versiones de los componentes de software. Subversion is a widely used example of a centralized VC system.
-2. <u>Sistema distribuido,</u> múltiples versiones del repositorio de componentes existen al mismo tiempo. Git, is a widely used example of a distributed VC system.
+1. <u>Sistema centralizado,</u> existe un repositorio único que contiene todas las versiones de los componentes de software. _"Subversion"_ is a widely used example.
+2. <u>Sistema distribuido,</u> múltiples versiones del repositorio de componentes existen al mismo tiempo. _"Git"_, is a widely used example.
 
 Key features of these systems include:
 1. <u>Version and release identification.</u> Managed versions of a component are assigned unique identifiers when they are submitted to the system.
 2. <u>Change history recording.</u> The VC system keeps records of the changes that have been made to create a new version of a component from an earlier version.
 3. <u>Independent development.</u> Different developers may be working on the same component at the same time. The version control system keeps track of components that have been checked out for editing and ensures that changes made to a component by different developers do not interfere.
-4. <u>Project support.</u> A version control system may support the development of several projects, which share components. It is usually possible to check in and check out all of the files associated with a project rather than having to work with one file or directory at a time.
+4. <u>Project support.</u> A version control system may support the development of several projects, which share components.
 5. <u>Storage management.</u> Rather than maintain separate copies of all versions of a component, the version control system may use efficient mechanisms to ensure that duplicate copies of identical files are not maintained.
 
 ### Centralizado
@@ -77,10 +82,9 @@ Se basa en: File locking y Version Merging.
 #### File Locking
 Se basa en la reserva de recursos de forma explícita cuando sabemos que vamos a modificarlos.
 Existen operaciones para reservar un archivo en modo escritura (check out) y liberarlo luego (check in).
-El resto de los desarrolladores solo acceden en modo lectura
+El resto de los desarrolladores **solo** acceden en modo lectura
 
 ### Distribuido
-
 Tienen un enfoque de manejo de versiones entre pares (peer-to-peer).
 En lugar de existir un repositorio en el cual sincronizan clientes, aquí las computadoras sincronizan entre sí.
 No hay una copia canónica del código.
@@ -187,6 +191,7 @@ For valid change requests, the next stage of the process is change assessment an
 Following this analysis, a separate group decides if it is cost-effective for the business to make the change to the software.
 	A group should review and approve all change requests, unless the changes simply involve correcting minor errors on screen displays, web pages, or documents.
 	These small requests should be passed to the development team for immediate implementation.
+
 El comité de control de cambios debe analizar cada cambio teniendo en cuenta:
 - Las consecuencias de no realizarlo.
 - Los beneficios del cambio.
@@ -255,7 +260,7 @@ El desarrollador del sistema es responsable de remplazar la versión actual con 
 ## Puntos clave
 
 - La gestión de la configuración es la gestión de un sistema de software en evolución.
-	- Al mantener un sistema, se crea un equipo de CM para asegurar que los cambios se incorporen al sistema de manera controlada y que se lleva registro de los cambios que se han implementado
+	Al mantener un sistema, se crea un equipo de CM para asegurar que los cambios se incorporen al sistema de manera controlada y que se lleva registro de los cambios que se han implementado
 - Los principales procesos de gestión de configuración son la gestión de cambios, la gestión de versiones, el armado de sistemas y la gestión de liberaciones.
 - La gestión de versiones implica el seguimiento de las diferentes versiones de componentes de software a medida que se realizan cambios en ellas.
 - El armado de un sistema es el proceso de ensamblar los componentes del sistema en un programa ejecutable para operar en un sistema de computación determinado.
@@ -290,8 +295,18 @@ Producto / Proyecto / Organización
 
 ![[Pasted image 20230613194553.png]]
 
+# Resumen
 
+## Primer resumen
 
+La gestión de versiones es fundamental en los equipos de desarrollo distribuidos y en desarrollo ágil. Para esto se usan herramientas de diversos tipos. En los sistemas grandes, siempre hay varias versiones en desarrollo, y la gestión de configuración es parte de la gestión de calidad. Uno de los términos usados es repositorio, una base de datos de versiones y metadata. El control de versiones buscar controlar lo que sucede cuando los desarrolladores toman componentes del repositorio común, los modifican en su workspace privado y luego los vuelven a poner.
 
+Un sistema VC distribuido es Git. Este modelo tiene ciertas ventajas: provee un respaldo, permite trabajar offline y cada uno puede probar el sistema entero en su máquina. Este tipo de sistema es fundamental cuando varias personas trabajan sobre un mismo sistema. Se pueden crear varias ramas a partir del mismo código, luego hay que hacer merge. Para ahorrar espacio y no tener que almacenar varias copias de lo mismo, se pueden guardar deltas, que son las diferencias entre una versión y otra.
 
+El tamaño y tipo de software influyen en el proceso de gestión de cambios (por ejemplo: quién sugiere los cambios, el cliente en software particular), pero todos tienen que comprobar, calcular costo y verificar los cambios. Hay que verificar que una solicitud de cambio sea válida (no puede hacerse si ya existe o es inválida). Luego se evalúa el impacto en el resto del sistema y el costo para ver si vale la pena. Esto lo hace el comité.
 
+Por el tema de las diferentes versiones y de dónde provienen sus componentes, es importante que haya documentación para poder recrear el sistema. Hay que guardar la versión de todo lo usado.
+
+## Otro resumen:
+
+![[Gestion de la configuracion - Segundo Parcial IIS.pdf]]

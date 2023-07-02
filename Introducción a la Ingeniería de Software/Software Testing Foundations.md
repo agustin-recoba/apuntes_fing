@@ -36,9 +36,7 @@ Las pruebas pueden hacerse para obtener información del producto, permitiendo t
 El objetivo del testing es la verificación y validación. En ambas se puede hacer inspección y revisión de código. Las inspecciones pueden encontrar varios errores, temas de calidad y hacerse sobre versiones incompletas. La confianza que se debe tener para el sistema depende de su propósito (cuanto más crítico, más seguro debe ser), las expectativas de los usuarios y el mercado.
 
 ### 2.1.1 Error, Defect, and Bug Terminology
-
-
-Falló -> no hace lo requerido (o hace algo que no debería)
+**Fallo** -> no hace lo requerido (o hace algo que no debería)
 
 <u>Motivos:</u>
 - Las especificaciones no estipulan exactamente lo que el cliente precisa o quiere (reqs. faltantes o incorrectos).
@@ -49,7 +47,7 @@ Falló -> no hace lo requerido (o hace algo que no debería)
 <u>Objetivo:</u> detectar y corregir estos defectos antes de liberar el producto.
 
 **Testing (probar)**: no es debugging.
-- testing es una simple revisión del comportamiento del software mediante su ejecución.
+- Testing es una simple revisión del comportamiento del software mediante su ejecución.
 - Debugging es la actividad de localizar el defecto en el código y corregirlo.
 
 #### Clasificación de defectos
@@ -81,9 +79,9 @@ La idea es registrar los tipos de defectos.
 - **Caso de prueba**
 
 - **Risk (riesgo)**: 
-- failure = actual result != expected result
-- faults = bugs
-- defect making: a fault is hidden by one or more other faults in other parts of the program
+- failure: actual result != expected result
+- faults: bugs
+- defect masking: a fault is hidden by one or more other faults in other parts of the program
 - cause of bug/fault: error or mistake by a person
 
 - test: a sample examination
@@ -106,22 +104,22 @@ Nombrando tests:
 - software quality: functionality, reliability, usability, efficiency, maintainability, and portability
 
 #### quality characteristics / quality attributes:
-- functionality: all of the Functionality required capabilities of a system.  capabilities are usually described by a specific input/output behavior and/or an appropriate reaction to an input.
-- reliability: the ability of a system to keep functioning under specific use over a specific period. 
+- <u>functionality:</u> all of the functional required capabilities of a system.  capabilities are usually described by a specific input/output behavior and/or an appropriate reaction to an input.
+- <u>reliability:</u> the ability of a system to **keep functioning** under specific use over a specific period. 
 	the reliability characteristic is split into:
 	- maturity: how often a failure of the software occurs as a result of defects in the software.
 	- fault tolerance: capability of the software product to maintain a specified level of performance or to recover from faults such as software faults, environment failures, wrong use of interface, or incorrect input.
 	- recoverability: capability of the software product to reestablish a specified level of performance (fast and easily) and recover the data directly affected in case of failure.
-- usability: Understandability, ease of learning, operability, and attractiveness as well as compliance to standards, conventions, style guides, and user interface regulations are aspects of usability.
-- efficiency: measures the required time and consumption of resources for the execution of tasks
-- maintainability and portability
+- <u>usability:</u> understandability, ease of learning, operability, and attractiveness as well as compliance to standards, conventions, style guides, and user interface regulations are aspects of usability.
+- <u>efficiency:</u> measures the required time and consumption of resources for the execution of tasks
+- <u>maintainability</u> and <u>portability</u>
 
 A software system cannot fulfill every quality characteristic equally well. Quality characteristics must therefore be prioritized.
 
 ### 2.1.4 Test effort
-a complete or exhaustive test is not feasible.
+a complete or exhaustive test is <u>not</u> feasible.
 
-- For some major projects with more than 10 person-years’ effort, coding and testing together used 40%, and a further 8% was used for the integration. At test-intensive projects (for example, ➞safety-critical systems), the testing effort increased to as much as 80% of the total budget.
+- For some major projects with more than 10 person-years’ effort, coding and testing together used 40%, and a further 8% was used for the integration. At test-intensive projects (for example, safety-critical systems), the testing effort increased to as much as 80% of the total budget.
 - In one project, the testing effort was 1.2 times as high as the coding effort, with two-thirds of the test effort used for component testing.
 - For another project at the same software development company, the system test cost was 51.9% of the project.
 
@@ -129,30 +127,30 @@ Test effort is often shown as the proportion between the number of testers and t
 
 But is this high testing effort affordable and justifiable? The counter question from Jerry Weinberg is “Compared to what?”. When safety-critical systems fail, the lives and health of people may be in danger.
 
-“Testing should continue as long as costs of finding and correcting a defect are lower than the costs of failure” (the cost must include all aspects of a failure, even the possible cost of bad publicity, litigation, etc., and not just the cost of correction, retesting, and distribution.)
+***“Testing should continue as long as costs of finding and correcting a defect are lower than the costs of failure”*** (the cost must include all aspects of a failure, even the possible cost of bad publicity, litigation, etc., and not just the cost of correction, retesting, and distribution.)
 Thus, for every software program it must be decided how intensively and thoroughly it shall be tested. This decision must be made based upon the expected risk of failure of the program.
 
 There exist many different methods and techniques for testing software. Every technique especially focuses on and checks particular aspects of the test object. A combination of different test techniques is always necessary.
 
 #### ¿Quién verifica? depende del proceso y el equipo
-- Pruebas unitarias:
-	- Normalmente las realiza el equipo de desarrollo. En general la misma persona que lo implementó.
+- **Pruebas unitarias:**
+	- Normalmente las realiza el equipo de desarrollo. En general *la misma persona* que lo implementó.
 	- Es positivo el conocimiento detallado del módulo a probar.
-- Pruebas de Integración:
+- **Pruebas de Integración:**
 	- Normalmente las realiza el equipo de desarrollo.
 	- Es necesario el conocimiento de las interfaces y funciones en general.
 - Resto de las pruebas 
-	- En general un equipo especializado (verificadores).
+	- En general un equipo especializado (verificadores, *testers*).
 	- Es necesario conocer los requerimientos y tener una visión global.
-- ¿Por qué un equipo especializado?
-	- Maneja mejor las técnicas de pruebas.
-	- Conoce los errores más comunes realizados por el equipo de programadores.
-	- Conoce el modelo de negocio.
-	- Problemas de psicología de pruebas.
-	- El autor de un programa tiende a cometer los mismos errores al probarlo.
-	- Debido a que es “SU” programa inconscientemente tiende a hacer casos de prueba que no hagan fallar al mismo.
-	- Puede llegar a comparar mal el resultado esperado con el resultado obtenido debido al deseo de que el programa pase las pruebas.
 
+##### ¿Por qué un equipo especializado?
+- Maneja mejor las técnicas de pruebas.
+- Conoce los errores más comunes realizados por el equipo de programadores.
+- Conoce el modelo de negocio.
+- Problemas de psicología de pruebas.
+- El autor de un programa tiende a cometer los mismos errores al probarlo.
+- Debido a que es “SU” programa inconscientemente tiende a hacer casos de prueba que no hagan fallar al mismo.
+- Puede llegar a comparar mal el resultado esperado con el resultado obtenido debido al deseo de que el programa pase las pruebas.
 
 ## 2.2 The Fundamental Test Process
 
@@ -166,14 +164,14 @@ The mission and objectives of testing must be defined and agreed upon as well as
 Test control is the monitoring of the test activities and comparing what actually happens during the project with the plan. It includes reporting the status of deviations from the plan and taking any actions necessary to meet the planned goals in the new situation.
 
 #### Determination of the test strategy
-The main task of planning is to determine the test strategy or approach.
-Priorities must be set based on risk assessment.
+The main task of planning is to **determine the test strategy** or approach.
+Priorities must be set based on **risk** assessment.
 The test activities must be distributed to the individual subsystems, depending on the expected risk and the severity of failure effects. Critical subsystems must get greater attention, thus be tested more intensively.
 
 The goal of the test strategy is the optimal distribution of the tests to the “right” parts of the software system.
 
 #### Tool support
-If the necessary tool support does not exist, selection Tool support and acquisition of tools must be initiated early. Existing tools must be evaluated if they are updated. If parts of the test infrastructure have to be developed, this can be prepared. **Test harnesses** (or **test beds**), where subsystems can be executed in isolation, must often be programmed.
+If the necessary tool support does not exist, selection and acquisition of tools must be initiated early. Existing tools must be evaluated if they are updated. If parts of the test infrastructure have to be developed, this can be prepared. **Test harnesses** (or **test beds**), where subsystems can be executed in isolation, must often be programmed.
 
 ### 2.2.2 Test Analysis and Design
 
@@ -203,7 +201,8 @@ To define the expected results, the tester must obtain the information from some
 - First are test cases for examining the specified behavior, output, and reaction. Included here are test cases that examine specified handling of exception and error cases (negative test). But it is often difficult to create the necessary preconditions for the execution of these test cases (for example, capacity overload of a network connection).
 - Next are test cases for examining the reaction of test objects to invalid and unexpected inputs or conditions, which have no specified exception handling
 
-[[Tecnicas de generación de casos de prueba]]
+[[Generating Test Cases From Use Cases]]
+[[Guía para la generación de CP a partir de HU]]
 
 ### 2.2.3 Test Implementation and Execution
 
@@ -217,7 +216,7 @@ Specific test harnesses (drivers, simulators, etc.), must be programmed, built, 
 #### Checking for completeness
 
 #### Examination of the main functions
-Start test execution with the examination of the test object’s main functionality (**smoke test**).
+Start test execution with the examination of the test object’s main functionality (smoke test).
 If **failures** or **deviations** from the expected result show up at this time, it is foolish to continue testing.
 
 #### Tests without a log are of no value
@@ -231,7 +230,7 @@ The testing done must be comprehensible to people not directly involved (for exa
 #### Failure found?
 If a difference shows up, it must be decided when evaluating the test logs if the difference really indicates a failure. If so, the failure must be documented.
 
-Nothing is more detrimental to the credibility of a tester than reporting a supposed failure whose cause is actually a test problem.
+Nothing is more detrimental to the **credibility of a tester** than reporting a supposed failure whose cause is actually a test problem.
 
 #### Correction may lead to new faults
 A decision must be made about how to prioritize fault corrections.
@@ -259,7 +258,7 @@ A further case of not meeting test exit criteria may occur if the specified crit
 The failures found during the test should be repaired, after which a new test becomes necessary. This repeats and creates the **test cycle**.
 If this cycle is ignored while planning, then the project will be delayed.
 
-#### End criteria in practice: Time and cost
+#### End criteria in practice: time and cost
 In practice, the end of a test is often defined by factors that have no direct connection to the test: time and costs.
 
 #### Successful testing saves costs
@@ -311,11 +310,10 @@ An independent testing team is beneficial for test quality and comprehensiveness
 ### Mutual comprehension
 Developers should know the basics of testing and testers should have a basic knowledge of software development.
 
-
 ## 2.4 General Principles of Testing
 
 ### Principios
-1. El testing muestra la presencia de defectos, no la ausencia de ellos .
+1. El testing muestra la presencia de defectos, **no la ausencia** de ellos .
 2. Testing exhaustivo no es posible.
 3. Las actividades de verificación deberían comenzar lo antes posible.
 4. Agrupamiento/aglomeración de defectos (defect clustering).
@@ -330,21 +328,21 @@ Developers should know the basics of testing and testers should have a basic kno
 ### Dealing with critical information
 Such data or documents must be handled appropriately and must not get into the wrong hands or be misused.
 
-- PUBLIC »Certified software testers shall act consistently with the public interest.«
-- CLIENT AND EMPLOYER »Certified software testers shall act in a manner that is in the best interest of their client and employer, consistent with the public interest.«
-- PRODUCT »Certified software testers shall ensure that the deliverables they provide (on the products and systems they test) meet the highest professional standards possible.«
-- JUDGMENT »Certified software testers shall maintain integrity and independence in their professional judgment.«
-- MANAGEMENT »Certified software test managers and leaders shall subscribe to and promote an ethical approach to the management of software testing.«
-- PROFESSION »Certified software testers shall advance the integrity and reputation of the profession consistent with the public interest.«
-- COLLEAGUES »Certified software testers shall be fair to and supportive of their colleagues, and promote cooperation with software developers.«
-- SELF »Certified software testers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.«
+- PUBLIC _»Certified software testers shall act consistently with the public interest.«_
+- CLIENT AND EMPLOYER _»Certified software testers shall act in a manner that is in the best interest of their client and employer, consistent with the public interest.«_
+- PRODUCT _»Certified software testers shall ensure that the deliverables they provide (on the products and systems they test) meet the highest professional standards possible.«_
+- JUDGMENT _»Certified software testers shall maintain integrity and independence in their professional judgment.«_
+- MANAGEMENT _»Certified software test managers and leaders shall subscribe to and promote an ethical approach to the management of software testing.«_
+- PROFESSION _»Certified software testers shall advance the integrity and reputation of the profession consistent with the public interest.«_
+- COLLEAGUES _»Certified software testers shall be fair to and supportive of their colleagues, and promote cooperation with software developers.«_
+- SELF _»Certified software testers shall participate in lifelong learning regarding the practice of their profession and shall promote an ethical approach to the practice of the profession.«_
 
 ## 2.6 Summary
 
-- Technical terms in the domain of software testing are often defined and used very differently, which can result in misunderstanding. Knowledge of the standards (e.g., [BS 7925-1], [IEEE 610.12], [ISO 9126]) and terminology associated with software testing is therefore an important part of the education of the Certified Tester. This book’s glossary compiles the relevant terms.
-- Tests are important tasks for ➞quality assurance in software development. The international standard ISO 9126-1 [ISO 9126] defines appropriate quality characteristics.
+- Technical terms in the domain of software testing are often defined and used very differently, which can result in misunderstanding. Knowledge of the standards (e.g., BS, IEEE, ISO) and terminology associated with software testing is therefore an important part of the education of the tester. This book’s glossary compiles the relevant terms.
+- Tests are important tasks for **quality assurance** in software development. 
 - The fundamental test process consists of the following phases: planning and control, analysis and design, implementation and execution, evaluation of exit criteria and reporting, and test closure activities. A test can be finished when previously defined exit criteria are fulfilled.
-- A test case consists of input, expected results, and the list of defined preconditions under which the test case must run as well as the specified ➞postconditions. When the test case is executed, the test object shows a certain behavior. If the expected result and actual result differ, there is a failure. The expected results should be defined before test execution and during test specification (using a test oracle).
+- A test case consists of input, expected results, and the list of defined preconditions under which the test case must run as well as the specified postconditions. When the test case is executed, the test object shows a certain behavior. If the expected result and actual result differ, there is a failure. The expected results should be defined **before** test execution and during test specification (using a test oracle).
 - People make mistakes, but they do not like to admit them! Because of this, psychological aspects play an important role in testing.
 - The seven principles for testing must always be kept in mind during testing.
 - Certified testers should know the ISTQB’s ethical guidelines, which are helpful in the course of their daily work.
@@ -365,14 +363,13 @@ Se ven los niveles de prueba:
 - The V illustrates the testing aspects of verification and validation.
 - We distinguish between different test levels, where each test level is testing “against” its corresponding development level.
 
-
 ## 3.2 Component Test
 
-Primer nivel de prueba: verificación unitaria o de componentes
+Primer nivel de prueba: verificación unitaria o de componentes.
 
 - **Objetos de prueba:** clases, módulos, scripts, etc.
 - **Entorno de prueba:** los objetos de prueba vienen directamente del “escritorio del programador”, por lo tanto requiere un alto nivel de cooperación con desarrollo.
-- **Objetivos de prueba:** comprobar que toda la funcionalidad del objeto de pruebas es completa, se desempeña y funciona adecuadamente de acuerdo a su especificación
+- **Objetivos de prueba:** comprobar que toda la funcionalidad del objeto de pruebas es completa, se desempeña y funciona adecuadamente de acuerdo a su especificación.
 
 Es importante probar: 
 - La robustez de los componentes (tests negativos)
@@ -384,9 +381,9 @@ Es importante probar:
 #### Stub
 Simula la actividad del componente omitido.
 
-- Es una pieza de código con los mismos parámetros de entrada y salida que el módulo faltante pero con una alta simplificación del comportamiento.
+- Es una pieza de código con los mismos parámetros de entrada y salida que el módulo faltante pero con una **alta simplificación** del comportamiento.
 	- De todas formas, tiene un costo de realización
-- Por ejemplo puede producir los resultados esperados leyendo de un archivo, o pidiéndole de forma interactiva a un testeador humano, o no hacer nada (siempre y cuando esto sea aceptable para el módulo bajo test) 
+- Por ejemplo puede producir los resultados esperados leyendo de un archivo, o pidiéndole de forma interactiva a un testeador humano, o no hacer nada (siempre y cuando esto sea aceptable para el módulo bajo test).
 - Si el stub devuelve siempre los mismos valores al módulo que lo llama es probable que esté módulo no sea testeado adecuadamente.
 
 #### Driver
@@ -402,11 +399,13 @@ Components are tested individually and isolated from all other software componen
 If testing detects a problem, it is definitely a problem originating from the component under test itself.
 
 ### 3.2.3 Test Environment
+Los objetos de prueba vienen directamente del “escritorio del programador”, por lo tanto requiere un alto nivel de cooperación con desarrollo.
+
 ### 3.2.4 Test Objectives
 The most important task is to check that the entire functionality of the test object works correctly and completely as required by its specification.
 Typical software defects found during functional component testing are incorrect calculations or missing or wrongly chosen program paths.
 
-Testing for robustness is another very important aspect of component testing. Rrongly used component should not just suspend its service or cause the whole system to crash. Rather, it should be able to handle the situation in a reasonable and robust way.
+Testing for robustness is another very important aspect of component testing. A strongly used component should not just suspend its service or cause the whole system to crash. Rather, it should be able to handle the situation in a reasonable and robust way.
 Such test cases are also called negative tests.
 - There are at least as many reasonable negative tests as positive ones.
 - The test driver must be extended in order to be able to evaluate the test object’s exception handling.
@@ -426,12 +425,12 @@ Aspects:
 - understandability,
 - currency of the documentation.
 
-Analysis of the program text and the specifications is necessary. ***Static testing***, and especially reviews are the correct means for that purpose.
+Analysis of the program text and the specifications is necessary. ***Static testing,*** and especially reviews are the correct means for that purpose.
 
 ### 3.2.5 Test Strategy
 
-- Técnicas estáticas (analíticas): analizar el producto (p.e. programa) para deducir su correcta operación.
-- Técnicas dinámicas: experimentar con el comportamiento de un producto para ver si el producto actúa como es esperado.
+- <u>Técnicas estáticas</u> (analíticas): analizar el producto (p.e. programa) para deducir su correcta operación.
+- <u>Técnicas dinámicas:</u> experimentar con el comportamiento de un producto para ver si el producto actúa como es esperado.
 	- Testing **de caja blanca**: basado en el código fuente del programa, el cual se utiliza para diseñar los casos de prueba.
 	- Testing **de caja negra**: basado en la especificación del programa.
 - “Test first” development.
@@ -448,7 +447,7 @@ Analysis of the program text and the specifications is necessary. ***Static test
 
 ## 3.3 Integration Test
 
-Segundo nivel de prueba: testing de integración de unidades o componentes.
+**Segundo nivel de prueba:** testing de integración de unidades o componentes.
 
 Las pruebas de integración suelen tener problemas con las interfaces, ya sea porque no se usan bien, no se entienden o hay diferencias en la velocidad de operación. La arquitectura de sistema determina los componentes y cómo se relacionan entre sí, y el plan de proyecto determina en qué momento se desarrollan las partes del sistema y cuándo están listas para ser probadas. Las pruebas top-down y bottom-up tienen ventajas y desventajas opuestas con respecto al uso y complejidad de stubs y drivers. Ad hoc requiere ambas cosas, lo cual es un problema, si bien ahorra tiempo.
 
@@ -540,7 +539,7 @@ title: Cuidado
 Bottom-Up y Top-Down solo pueden usarse en sistemas estructurados de forma estrictamente jerárquica.
 ```
 
-- El objetivo es lograr combinar módulos o componentes individuales para que trabajen correctamente de forma conjunta
+El objetivo es lograr combinar módulos o componentes individuales para que trabajen correctamente de forma conjunta
 
 #### Consideraciones
 - Restricciones:
@@ -601,12 +600,12 @@ The consequences for those responsible for system testing are less desirable:
 This collection of information may be very costly and time consuming. Test completion and release of the completed system will surely be delayed.
 
 #### Project fail
-If the requirements are not specified, of course the developers do not Project fail have clear objectives either. Thus, it is very unlikely that the developed system will meet the implicit requirements of the customer.
+If the requirements are not specified, of course the developers do not have clear objectives either. Thus, it is very unlikely that the developed system will meet the implicit requirements of the customer.
 In such projects, execution of the system test can probably only announce the collapse of the project.
 
 ## 3.5 Acceptance Test
 
-Cuarto nivel de prueba: testing de aceptación, en donde se comprueba que el sistema es adecuado al uso y necesidades del cliente (puede realizarse como parte de las pruebas de niveles inferiores o distribuido en varios niveles de pruebas).
+Cuarto nivel de prueba: testing de aceptación, en donde se comprueba que el sistema es **adecuado al uso y necesidades del cliente** (puede realizarse como parte de las pruebas de niveles inferiores o distribuido en varios niveles de pruebas).
 The acceptance test may be the only test that the customers are actually involved in or that they can understand.
 
 - **Objetos de prueba:** el sistema (o parte de este) bajo la perspectiva del usuario/cliente.
@@ -619,10 +618,10 @@ For customer-specific systems, the risk is high and a comprehensive acceptance t
 At the other extreme, if a piece of standard software is introduced, it may be sufficient to install the package and test a few representative usage scenarios.
 
 #### Test basis
-The test basis for acceptance testing can be any document describing the system from the user or customer viewpoint.
+The test basis for acceptance testing can be any document describing the system from the <u>user or customer viewpoint</u>.
 
 ### 3.5.1 Contract Acceptance Testing
-Las **pruebas de aceptación contractuales** se basan en contratos donde se definen los criterios de aceptación, que se usan para las pruebas. Se hace en software específico para el cliente. 
+Las **pruebas de aceptación contractuales** se basan en contratos donde se definen los criterios de aceptación, que se usan para las pruebas. 
 
 Se hace cuando el producto es específico para un cliente. Si es un producto interno, el contrato es menos formal pero igualmente existe.
 
@@ -635,7 +634,7 @@ Because the supplier may have misunderstood the acceptance criteria, it is very 
 In contrast to system testing, which takes place in the producer environment, acceptance testing is run in the customer’s actual operational environment.
 The acceptance test also checks the delivery and installation procedures.
 
-### 3.5.2 Testing for User Acceptance
+### 3.5.2 Testing for <u>User</u> Acceptance
 Las **pruebas de aceptación del usuario** se hacen porque el cliente y el usuario final pueden ser diferentes.
 
 #### Get acceptance of every user group
@@ -653,7 +652,7 @@ It may include testing of backup/restore cycles (including restoration of copied
 Las **pruebas de campo** se hacen cuando el software debe correr en muchos entornos diferentes y no se puede probar en todos. De este modo se pueden buscar problemas con ciertos entornos. 
 
 - El **alpha/beta** testing consiste en enviar versiones previas y estables a clientes para que las prueben y reporten problemas. 
-	Alpha tests are carried out at the producer’s location,.
+	Alpha tests are carried out at the producer’s location.
 	Beta tests are carried out at the customer’s site.
 - El **dogfood testing** consiste en que otros miembros de la compañía desarrolladora lo prueben.
 	**_"if you make dogfood, try it yourself first”_**
@@ -821,13 +820,13 @@ Eliminating defects and inconsistencies leads to improved document quality and p
 - During operation of the system, a reduced failure rate can be expected.
 - As the examinations are done using a team of people, reviews lead to mutual learning.
 - Because several persons are involved in a review, a clear and understandable description of the facts is required. The necessity to formulate a clear document helps the author find forgotten issues.
-- The whole team feels responsible for the quality of the examined object. The group will gain a common understanding of it
+- The whole team feels responsible for the quality of the examined object. The group will gain a common understanding of it.
 
 #### Potential problem
-In a badly moderated review session, the Potential problem author may get into a psychologically difficult situation, **feeling** that he as a person and not the document is subject to critical scrutiny.
+In a badly moderated review session, the author may get into a psychologically difficult situation, **feeling** that he as a person and not the document is subject to critical scrutiny.
 
 #### Reviews costs and savings
-The costs caused by reviews are estimated to be 10–15% of the devel- Reviews costs and savings opment budget.
+The costs caused by reviews are estimated to be 10–15% of the development budget.
 Savings are estimated to be about 14–25% (the extra effort for the reviews themselves is included in this calculation.).
 It is plausible that defect cost in development is reduced by 75% and more.
 
@@ -847,7 +846,6 @@ A review requires six work steps: planning, kick-off, individual preparation, re
 - During planning of the individual review, the review leader selects technically competent staff and assembles a review team.
 - In formal reviews, entry criteria (and the corresponding exit criteria) may be set. A review should continue only after any available entry criteria has been checked.
 
-
 #### Kick-Off
 The kick-off (or overview) serves to provide those involved in the review with all of the necessary information.
 It may include:
@@ -863,7 +861,7 @@ Those involved must have access to documents that help to decide if a particular
 The members of the review team must prepare individually for the review meeting.
 
 #### Review Meeting
-A review leader or **moderator** leads the review meeting. Moderator and participants should behave diplomatically (not be aggressive with each other) and contribute to the review in the best possible way.
+A review leader or **moderator** leads the review meeting. Moderator and participants should behave diplomatically (**not be aggressive** with each other) and contribute to the review in the best possible way.
 
 #### Rework
 The manager decides whether to follow the recommendation or do something else.
@@ -882,7 +880,7 @@ The moderator is responsible for executing the review. Planning, preparation, ex
 The moderator is responsible for collecting review data and issuing the review report.
 
 #### Author (autor)
-The author is the creator of the document that is the subject of a Author review. If several people have been involved in the creation, one person should be appointed to be responsible.
+The author is the creator of the document that is the subject of a review. If several people have been involved in the creation, one person should be appointed to be responsible.
 The author is responsible for the review object meeting its review entry criteria and for performing any rework required for meeting the review exit criteria.
 
 #### Reviewer (revisores)
@@ -892,7 +890,7 @@ They should represent different viewpoints (for example, sponsor, requirements, 
 #### Recorder (secretario)
 The recorder (or scribe) shall document the issues (problems, action items, decisions, and recommendations) found by the review team.
 
-### 4.1.5 Types of Reviews
+### 4.1.5 <u>Types</u> of Reviews
 1. Reviews pertaining to products or intermediate products that have been created during the development process.
 2. Reviews that analyze the **project itself** or the **development process**.
 
@@ -912,9 +910,9 @@ Goals:
 ##### Suitable for small development teams
 
 #### <u>Inspection</u>
-The inspection is the most formal review. It follows a formal, prescribed process. Every person involved, usually people who work directly with the author, has a defined role. Rules define the process. 
+The inspection is the **most formal** review. It follows a formal, prescribed process. Every person involved, usually people who work directly with the author, has a defined role. Rules define the process. 
 
-The reviewers use checklists containing criteria for checking the different aspects.Estas listas dependen del lenguaje de programación y de la organización.  Por ejemplo revisan: 
+The reviewers use checklists containing criteria for checking the different aspects. Estas listas dependen del lenguaje de programación y de la organización.  Por ejemplo revisan: 
 - Uso de variables no inicializadas.
 - Asignaciones de tipos no compatibles.
 
@@ -949,7 +947,7 @@ Goals:
 - generate a discussion and exchange information between colleagues
 
 #### Selection Criteria
-The type of review that should be used depends very much on how thor- Selecting the type of review ough the review needs to be and the effort that can be spent. It also depends on the project environment.
+The type of review that should be used depends very much on how thorough the review needs to be and the effort that can be spent. It also depends on the project environment.
 It makes sense to use testers as reviewers. The reviewed documents are usually used as the test basis to design test cases
 
 ## 4.2 Static Analysis
@@ -979,21 +977,20 @@ The following defects and dangerous constructions can be detected by static anal
 ### 4.2.5 Determining Metrics
 
 ## 4.3 Summary
-- Several pairs of eyes see more than a single pair of eyes. This is also true in software development. This is the main principle for the reviews that are performed for checking and for improving quality. Several people inspect the documents and discuss them in a meeting and the results are recorded.
-- A fundamental review process consists of the following activities: planning, kick-off, preparation, review meeting, rework, and follow-up. The roles of the participants are manager, moderator, author, reviewer, and recorder.
+- **Several** pairs of eyes see more than a single pair of eyes. This is also true in software development. This is the main principle for the reviews that are performed for checking and for improving quality. Several people inspect the documents and discuss them in a meeting and the results are recorded.
+- A fundamental review process consists of the following activities: <u>planning</u>, <u>kick-off</u>, <u>preparation</u>, <u>review meeting</u>, <u>rework</u>, and <u>follow-up</u>. The roles of the participants are <u>manager</u>, <u>moderator</u>, <u>author</u>, <u>reviewer</u>, and <u>recorder</u>.
 - There are several types of reviews. Unfortunately, the terminology is defined differently in all literature and standards.
-- The walkthrough is an informal procedure where the author presents her document to the reviewers in the meeting. There is little preparation for the meeting. The walkthrough is especially suitable for small development teams, for discussing alternatives, and for educating people in the team.
-- The inspection is the most formal review type. Preparation is done using checklists, there are defined entry and exit criteria, and a trained moderator chairs the meeting. The objective of inspections is checking the quality of the document and improvement of development, the development process, and the inspection process itself.
-- In the technical review, the individual reviewers’ results must be given to the review leader prior to the meeting. The meeting is then prioritized by assumed importance of the individual issues. The evaluators usually have access to the specifications and other documentation only. The author can remain anonymous.
-- The informal review is not based on a formal procedure. The form in which the results have to be presented is not prescribed. Because this type of review can be performed with minimal effort, its acceptance is very high, and in practice it is commonly used.
+- The <u>walkthrough</u> is an informal procedure where the author presents her document to the reviewers in the meeting. There is little preparation for the meeting. The walkthrough is especially suitable for small development teams, for discussing alternatives, and for educating people in the team.
+- The <u>inspection</u> is the most formal review type. Preparation is done using checklists, there are defined entry and exit criteria, and a trained moderator chairs the meeting. The objective of inspections is checking the quality of the document and improvement of development, the development process, and the inspection process itself.
+- In the <u>technical review</u>, the individual reviewers’ results must be given to the review leader prior to the meeting. The meeting is then prioritized by assumed importance of the individual issues. The evaluators usually have access to the specifications and other documentation only. The author can remain anonymous.
+- The <u>informal review</u> is not based on a formal procedure. The form in which the results have to be presented is not prescribed. Because this type of review can be performed with minimal effort, its acceptance is very high, and in practice it is commonly used.
 - Generally, the specific environment, i.e., the organization and project for which the review is used, determines the type of review to be used. Reviews are tailored to meet specific needs and requirements, which increases their efficiency. It is important to establish a cooperative and collaborative atmosphere among the people involved in the development of the software.
 - In addition to the reviews, a lot of checks can be done for documents that have a formalized structure. These checks are called static analyses. The test object is not executed during a static analysis.
 - The compiler is the most common analysis tool and reveals syntax errors in the program code. Usually, compilers provide even more checking and information.
 - Analysis tools that are dependent on programming language can also show violation of standards and other conventions.
 - Tools are available for detecting anomalies in the data and control flows of the program. Useful information about control and data flows is generated, which often points to parts that could contain defects.
 - Metrics are used to measure quality. One such metric is the cyclomatic number, which calculates the number of independent paths in the checked program. It is possible to gain information on the structure and the testing effort.
-- Generally, static analyses should be performed first, before a document is subjected to review. Static analyses provide a relatively inexpensive means to detect defects and thus make the reviews less expensive.
-
+- Generally, <u>static analyses should be performed first</u>, before a document is subjected to review. Static analyses provide a relatively inexpensive means to detect defects and thus make the reviews less expensive.
 
 # Chapter 5 - Dynamic Analysis – Test Design Techniques
 
@@ -1002,7 +999,7 @@ The following defects and dangerous constructions can be detected by static anal
 Tres categorías generales (refieren al diseño de los CP): 
 - Pruebas de caja negra (también llamadas pruebas basadas en la especificación)
 - Pruebas de caja blanca (también llamadas pruebas estructurales)
-- Pruebas basadas en la experiencia
+- [[Testing basado en la experiencia|Pruebas basadas en la experiencia]]
 
 ![[Pasted image 20230518212454.png]]
 
@@ -1023,7 +1020,7 @@ Algunas técnicas:
 - Particiones en clases de equivalencia
 - Análisis de valores límites
 - Pruebas de transición de estados
-- Pruebas basadas en la lógica (grafos causa efecto, tablas de decisión y pairwise testing)
+- Pruebas basadas en la lógica (grafos causa-efecto, tablas de decisión y pairwise testing)
 - Pruebas basadas en casos de uso
 
 ### 5.1.1 Equivalence Class Partitioning
@@ -1082,7 +1079,7 @@ Ejemplos:
 ### 5.1.3 State Transition Testing
 In many systems, not only the current input but also the history of execution or events or inputs influences computation of the outputs and how the system will behave.
 To illustrate the dependence on history, **state diagrams** are used. They are the basis for designing the test (state transition testing).
-Finite state machines, state diagrams, and state transition tables model this behavior
+Finite state machines, state diagrams, and state transition tables model this behavior.
 
 In state transition testing, the test object can be a complete system with different system states as well as a class in an object-oriented system with different states.
 
@@ -1352,7 +1349,7 @@ When the same team that developed the components also performs integration and i
 Depending on the size of the development project and the number of components, models 3, 4, and 5 should be considered here.
 
 #### System Testing
-The final product shall be considered from the point of view of the customer and the end user. Therefore, independence from the development team is crucial. This leaves only models 3, 4, and 5.
+The final product shall be considered from the point of view of the customer and the end user. Therefore, **independence** from the development team is crucial. This leaves **only** models 3, 4, and 5.
 
 ### 6.1.2 Tasks and Qualifications
 Specialists with knowledge covering the full scope of activities in the test process should be available.
@@ -1366,9 +1363,9 @@ The following roles should be assigned, ideally to specifically qualified employ
 - <b><u>Test administrator:</u></b> Expert(s) for installing and operating the test environment.
 - <b><u>Tester:</u></b> Expert(s) for executing tests and reporting failures.
 
-#### Social competence is important
+#### <u>Social competence</u> is important
 #### Multidisciplinary team
-Especially in system testing, it is often necessary to extend the test team by adding IT specialists, at least temporarily, to perform work for the test team. For example, these might be database administrators, database designers, or network specialists.
+Especially in system testing, it is often necessary to extend the test team by adding **IT specialists**, at least temporarily, to perform work for the test team. For example, these might be database administrators, database designers, or network specialists.
 
 #### Specialized software test service providers
 If appropriate resources are not available within the company, test activities can be given to external software testing service providers. This is similar to letting an external software house develop software.
@@ -1401,17 +1398,17 @@ Contents of a Software Quality Assurance Plan as defined in IEEE 730-2002:
 
 ### 6.2.2 Test Plan
 A task as extensive as testing requires careful planning. This planning and test preparation starts as early as possible in the software project.
-La V&V es un proceso caro se requiere llevar una planificación cuidadosa para obtener el máximo provecho de las revisiones y las pruebas para controlar los costos del proceso de V&V.
+La V&V (verificación y validación) es un proceso caro se requiere llevar una planificación cuidadosa para obtener el máximo provecho de las revisiones y las pruebas para controlar los costos del proceso de V&V.
 
 #### Test planning activities
-- Defining the overall approach to and strategy for testing
-- Deciding about the test environment and test automation
-- Defining the test levels and their interaction, and integrating the testing activities with other project activities
-- Deciding how to evaluate the test results
-- Selecting metrics for monitoring and controlling test work, as well as defining test exit criteria
+- Defining the <u>overall approach</u> to and strategy for testing
+- Deciding about the <u>test environment</u> and <u>test automation</u>
+- Defining the <u>test levels</u> and their interaction, and <u>integrating the testing activities</u> with other project activities
+- Deciding how to <u>evaluate the test results</u>
+- <u>Selecting metrics</u> for monitoring and controlling test work, as well as <u>defining test exit criteria</u>
 - Determining how much test documentation shall be prepared and determining templates
-- Writing the test plan and deciding on what, who, when, and how much testing
-- Estimating test effort and test costs; (re)estimating and (re)planning the testing tasks during later testing work
+- <u>Writing the test plan</u> and deciding on what, who, when, and how much testing
+- <u>Estimating test effort and test costs</u>; (re)estimating and (re)planning the testing tasks during later testing work
 - Pone en la balanza los enfoques estático y dinámico para la verificación y la validación
 - Utiliza estándares y procedimientos para las revisiones y las pruebas de software
 - Establece listas de verificación para las inspecciones
@@ -1441,7 +1438,7 @@ The different level test plans are optional, depending on the criticality of the
 
 ### 6.2.3 Prioritizing Tests
 Even with good planning and control, it is possible that the time and budget for the total test, or for a certain test level, are not sufficient for executing all planned test cases.
-This means test cases must be prioritized.
+This means <u>test cases must be prioritized</u>.
 
 #### Prioritization rule
 Test cases should be prioritized so that if any test ends prematurely, the best possible test result at that point of time is achieved.
@@ -1450,19 +1447,19 @@ Test cases should be prioritized so that if any test ends prematurely, the best 
 This way important problems can be found early.
 
 #### Criteria for prioritization
-- The **usage frequency** of a function or the **probability** of failure in software use. If certain functions of the system are used often and they contain a fault, then the probability of this fault leading to a failure is high.
-- **Failure risk.** Risk is the combination (mathematical product) of severity and failure probability. The severity is the expected damage. Tests that may find failures with a high risk get higher priority than tests that may find failures with low risks.
-- The **visibility** of a failure for the end user is a further criterion for prioritization of test cases. This is especially important in interactive systems.
+- The **usage frequency** of a function or the **probability** of failure in software use.
+- **Failure risk.** Risk is the combination (mathematical product) of severity and failure probability. The severity is the expected damage.
+- The **visibility** of a failure for the end user is a further criterion for prioritization of test cases. This is especially important in <u>interactive</u> systems.
 - Test cases can be chosen depending on the **priority of the requirements**. The different functions delivered by a system have different importance for the customer.
 - Besides the functional requirements, the **quality characteristics** may have differing importance for the customer. Correct implementation of the important quality characteristics must be tested.
 - Prioritization can also be done from the perspective of development or system architecture. Components that lead to severe consequences when they fail (for example, a crash of the system) should be tested especially intensively.
 - **Complexity** of the individual components and system parts can be used to prioritize test cases. Complex program parts should be tested more intensively because developers probably introduced more faults.
 - Failures having a high project risk should be found early. These are failures that require considerable correction work that in turn requires special resources and leads to considerable delays of the project.
 
-Without prioritizing test cases, it is not possible to adequately allocate limited test resources. Concentration of resources on high-priority test cases is a MUST.
+Without prioritizing test cases, it is **not possible** to adequately allocate limited test resources. Concentration of resources on high-priority test cases is a **MUST**.
 
 ### 6.2.4 Test Entry and Exit Criteria
-Defining clear test entry and exit criteria is an important part of test planning. They define when testing can be started and stopped (totally or within a test level).
+Defining clear test entry and exit criteria is an important part of test planning. They define <u>when testing can be started and stopped</u> (totally or within a test level).
 
 #### Test start criteria
 - The test environment is ready.
@@ -1471,7 +1468,7 @@ Defining clear test entry and exit criteria is an important part of test plannin
 - The necessary test data is available.
 
 #### Exit criteria
-Exit criteria are used to make sure test work is not stopped by chance Exit criteria or prematurely.
+Exit criteria are used to make sure test work is not stopped by chance or prematurely.
 
 - Achieved test coverage: Tests run, covered requirements, code coverage, etc.
 - Product quality: Defect density, defect severity, failure rate, and reliability of the test object
@@ -1487,3 +1484,29 @@ Exit criteria are used to make sure test work is not stopped by chance Exit crit
 
 
 
+
+
+# Resumen
+
+## Resumen sobre técnicas de testing
+
+Vimos una amplia variedad de técnicas de prueba... ahora bien, ¿cuáles debería usar?
+
+Factores que influencian: 
+- El tipo de objeto de prueba
+- Documentación formal y/o disponibilidad de herramientas
+- Cumplimiento de estándares
+- Experiencia de los testers
+- Necesidades/deseos del cliente
+- Evaluación de riesgos
+
+### Proceso para un módulo (sugerencia)
+![[Pasted image 20230520205824.png]]
+
+### Comparación de técnicas
+![[Pasted image 20230520205845.png]]
+![[Pasted image 20230520205852.png]]
+
+## Otro resumen
+
+![[VV-SegundoParcialIIS.pdf]]

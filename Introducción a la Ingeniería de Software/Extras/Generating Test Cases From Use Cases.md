@@ -8,7 +8,7 @@ A significant amount of detail goes into fully specifying a use case. Ideally, t
 
 # Use-Case Scenarios
 
-A use-case scenario is an instance of a use case, or a complete "path" through the use case. End users of the completed system can go down many paths as they execute the functionality specified in the use case.
+A use-case scenario is <u>an instance</u> of a use case, or <u>a complete "path" through the use case</u>. End users of the completed system can go down many paths as they execute the functionality specified in the use case.
 
 ![[Pasted image 20230519180406.png]]
 
@@ -16,24 +16,24 @@ These scenarios will be used as the basis for creating test cases.
 
 # Generating Test Cases
 
-We will describe a three-step process for generating test cases from a fullydetailed use case:
+We will describe a three-step process for generating test cases from a fully detailed use case:
 1. For each use case, generate a full set of use-case scenarios.
 2. For each scenario, identify at least one test case and the conditions that will make it "execute."
 3. For each test case, identify the data values with which to test.
 
 ## Step One: Generate Scenarios
 
-Read the use-case textual description and identify each combination of main and alternate flows -- the scenarios -- and create a scenario matrix.
+Read the use-case textual description and identify each combination of main and alternate flows -- **the scenarios** -- and create a scenario matrix.
 
 ## Step Two: Identify Test Cases
 
-We can do this by analyzing the scenarios and reviewing the use case textual description as well. There should be at least one test case for each scenario, but there will probably be more. 
+We can do this by analyzing the scenarios and reviewing the use case textual description as well. There should be **at least** one test case for each scenario, but there will probably be more. 
 
 For example, if the textual description for an alternate flow is written in a very cursory way, like the description below, 
 	*3A. Unfulfilled Prerequisites, Course Full, or Schedule Conflicts*
 Then additional test cases may be required to test all the possibilities. In addition, we may wish to add test cases to test boundary conditions.
 
-The next step in fleshing out the test cases is to reread the use-case textual description and find the conditions or data elements required to execute the various scenarios. For the Register for Course use case, conditions would be student ID, password, courses selected, etc.
+The next step in fleshing out the test cases is to reread the use-case textual description and find the conditions or data elements required to execute the various scenarios. For the _"Register for Course"_ use case, conditions would be _"student ID"_, _"password"_, _"courses selected"_, etc.
 
 To clearly document the test cases, once again, a matrix format is useful, like the one below.
 

@@ -18,7 +18,7 @@ El procedimiento general que recomendamos para la generación de casos de prueba
 3. Para cada escenario identificado, identificar por lo menos un caso de prueba y las condiciones que lo harán ejecutable. 
 4. Para cada caso de prueba, identificar los datos de prueba a utilizar.
 
-Nota: los puntos 3 y 4 son análogos a la técnica descrita en el artículo Derivación de casos de prueba a partir de casos de uso.
+Nota: los puntos 3 y 4 son análogos a la técnica descrita en el artículo _"Derivación de casos de prueba a partir de casos de uso"_ ([[Generating Test Cases From Use Cases]]).
 
 ### Recomendaciones generales:
 - Para identificar los escenarios utilizar los criterios de aceptación e identificar las condiciones en las cuales esos criterios de aceptación se cumplen.

@@ -12,7 +12,7 @@ Sin él, el trabajo de los gerentes sería relativamente fácil. La planeación 
 # FUERZAS PARA EL CAMBIO
 
 ## Fuerzas externas
-- Las leyes y reglamentaciones gubernamentales son un impulso fuerte para el cambio. (Ley en EEUU que exigió cambiar la presentación de la información financiera)
+- Las leyes y reglamentaciones gubernamentales son un impulso fuerte para el cambio.
 - La tecnología crea también la necesidad de cambio.
 - La fluctuación de los mercados laborales también obliga a cambiar a los gerentes. Las organizaciones que necesitan ciertos tipos de empleados deben cambiar sus actividades de gerencia de RRHH para atraer y retener empleados capacitados en las áreas donde más se necesitan.
 - Los cambios económicos afectan a casi todas las organizaciones. Por ejemplo las presiones de la recesión global, la incertidumbre sobre las tasas de interés, etc.
@@ -66,7 +66,7 @@ Los gerentes deben identificar que áreas organizacionales podrían requerir un 
 ## Tipos de cambio
 
 ¿Qué puede cambiar un gerente? 
-Las opciones de los gerentes corresponden a tres categorías: la estructura, la tecnología y las personas.
+Las opciones de los gerentes corresponden a tres categorías: la <u>estructura</u>, la <u>tecnología</u> y las <u>personas</u>.
 
 ![[Pasted image 20230517170703.png]]
 
@@ -88,7 +88,6 @@ El término ***desarrollo organizacional (DO)***, aunque se refiere en ocasiones
 
 ```ad-seealso
 title: Técnicas de desarrollo organizacional
-collapse: closed
 ![[Pasted image 20230517171146.png]]
 ```
 
@@ -101,7 +100,6 @@ Un individuo se puede resistir al cambio por las siguientes razones:
 2. Otra causa de resistencia es que hacemos las cosas por ***hábito***. Cuando tenemos que hacer frente al cambio, esta tendencia a responder en nuestra forma acostumbrada se convierte en una fuente de resistencia.
 3. La tercera causa de resistencia es el ***temor a perder algo que ya se poseía***. Temen perder prestigio, dinero, autoridad, amistades, conveniencia personal u otros beneficios económicos.
 4. La última causa de resistencia es la **creencia de una persona de que el cambio es incompatible con los objetivos** y los intereses de la organización.
-
 
 ### Técnicas para reducir la resistencia
 Cuando los gerentes ven que la resistencia al cambio es disfuncional, pueden recurrir a cualquiera de seis acciones para manejarlo. 
@@ -151,14 +149,17 @@ Los físicos son los menos importantes para los gerentes. Los psicológicos y de
 
 ### Reduciendo la tensión
 Debido a que no es posible eliminar la tensión de la vida de una persona, los gerentes se preocupan por reducir la tensión que produce un comportamiento laboral disfuncional, controlando ciertos factores organizacionales para reducir la tensión organizacional, y en un grado más limitado ofreciendo ayuda para la tensión personal.
+
 Lo que los gerentes pueden hacer en cuanto a los factores organizacionales comienza con la selección de empleados. Los gerentes necesitan tener la seguridad de que las habilidades de un empleado concuerdan con los requisitos laborales.
+
 El mejoramiento de las comunicaciones organizacionales mantendrá en un nivel mínimo la tensión inducida por la ambigüedad.
 Un programa de planeación de desempeño definirá las responsabilidades laborales, proporcionará objetivos de desempeño definidos y reducirá la ambigüedad.
+
 Si se detecta que la causa de tensión es el aburrimiento o la sobrecarga de trabajo, los trabajos se deben rediseñar para aumentar el reto o reducir la carga laboral. Esta es otra manera de reducir la tensión. 
 
-La tensión en la vida personal de un individuo plantea dos problemas: Es difícil que el gerente lo controle en forma directa y existen consideraciones éticas. ¿Tiene el gerente derecho a inmiscuirse en la vida personal del empleado?
+La tensión en la vida personal de un individuo plantea dos problemas: es difícil que el gerente lo controle en forma directa y existen consideraciones éticas. ¿tiene el gerente derecho a inmiscuirse en la vida personal del empleado?.
 Hay algunos enfoques que el gerente puede tomar en cuenta para aliviar la tensión: 
-- La consejería. (A través de gerentes, consejeros internos o ayuda profesional externa gratuita o de bajo costo). 
+- La consejería (a través de gerentes, consejeros internos o ayuda profesional externa gratuita o de bajo costo). 
 - Programa de administración del tiempo, que puede ayudarlos a ordenar sus prioridades. 
 - Programas de bienestar patrocinados a nivel organizacional.
 
@@ -168,14 +169,13 @@ Hay algunos enfoques que el gerente puede tomar en cuenta para aliviar la tensi�
 
 ## Creatividad e Innovación
 
-Creatividad: La habilidad para combinar ideas de manera única o realizar asociaciones poco usuales entre ellas. Una organización que estimula la creatividad desarrolla formas únicas de trabajar o soluciones novedosas a problemas. 
+<b><u>Creatividad:</u></b> La habilidad para combinar ideas de manera única o realizar asociaciones poco usuales entre ellas. Una organización que estimula la creatividad desarrolla formas únicas de trabajar o soluciones novedosas a problemas. 
 
-Innovación: El proceso que consiste en tomar una idea creativa y convertirla en un producto, servicio o método de operación útil.
+<b><u>Innovación:</u></b> El proceso que consiste en tomar una idea creativa y convertirla en un producto, servicio o método de operación útil.
 
 La organización innovadora se caracteriza por su habilidad para canalizar la creatividad en resultados útiles.
 
 ![[Pasted image 20230517172308.png]]
-
 
 ## Estimulando y cultivando la innovación
 
@@ -184,25 +184,29 @@ Se han identificado 3 series de variables que estimulan la innovación.
 ![[Pasted image 20230517172430.png]]
 
 ### Variables estructurales
-Las estructuras orgánicas influyen de manera positiva facilitando la flexibilidad, la capacidad de adaptación y la fertilización cruzada. La abundancia de recursos permite costear la innovación, pagar el costo de su institución y absorber los fracasos. La comunicación frecuente entre unidades ayuda a derribar las barreras para la innovación. Los equipos interfuncionales, las fuerzas de tarea y otros diseños organizacionales facilitan la interacción entre las líneas departamentales. Minimizar las presiones de tiempo extremadas en actividades creativas. Proporcionar apoyo explícito a la creatividad por medio de fuentes laborales y no laborales mejora el desempeño creativo de un empleado.
+Las estructuras orgánicas influyen de manera positiva facilitando la flexibilidad, la capacidad de adaptación y la fertilización cruzada.
+
+La abundancia de recursos permite costear la innovación, pagar el costo de su institución y absorber los fracasos.
+
+La comunicación frecuente entre unidades ayuda a derribar las barreras para la innovación. Los equipos interfuncionales, las fuerzas de tarea y otros diseños organizacionales facilitan la interacción entre las líneas departamentales.
+
+Minimizar las presiones de tiempo extremadas en actividades creativas. Proporcionar apoyo explícito a la creatividad por medio de fuentes laborales y no laborales mejora el desempeño creativo de un empleado.
 
 ### Variables culturales
 Una cultura innovadora es probable que presente las siguientes características:
-- Aceptación de la ambigüedad. Poco énfasis en la objetividad y especificidad que limitan la creatividad.
-- Tolerancia a lo poco práctico (respuestas poco prácticas), pues pueden conducir a soluciones innovadoras.
-- Controles externos reducidos. Normas, reglamentaciones, políticas y controles a nivel mínimo.
-- Tolerancia a los riesgos. Se alienta a no temer a los errores que se manejan como oportunidades de aprendizaje.
-- Tolerancia a los conflictos. Fomento de diversidad de opiniones.
-- Enfoque en los fines más que en los medios. Considerar rutas alternativas para alcanzar los objetivos, pues pueden así surgir varias respuestas a un mismo problema dado.
-- Enfoque de sistema abierto. Gerentes vigilan de cerca el ambiente.
-- Retroalimentación positiva, haciendo que los empleados sientan que sus ideas creativas recibirán atención.
+- <u>Aceptación de la ambigüedad.</u> Poco énfasis en la objetividad y especificidad que limitan la creatividad.
+- <u>Tolerancia a lo poco práctico</u> (respuestas poco prácticas), pues pueden conducir a soluciones innovadoras.
+- <u>Controles externos reducidos.</u> Normas, reglamentaciones, políticas y controles a nivel mínimo.
+- <u>Tolerancia a los riesgos.</u> Se alienta a no temer a los errores que se manejan como oportunidades de aprendizaje.
+- <u>Tolerancia a los conflictos.</u> Fomento de diversidad de opiniones.
+- Enfoque en los <u>fines más que en los medios</u>. Considerar rutas alternativas para alcanzar los objetivos, pues pueden así surgir varias respuestas a un mismo problema dado.
+- <u>Enfoque de sistema abierto.</u> Gerentes vigilan de cerca el ambiente.
+- <u>Retroalimentación positiva,</u> haciendo que los empleados sientan que sus ideas creativas recibirán atención.
 
 ### Variables de recursos humanos
-- Fomentar activamente la capacitación y el desarrollo de los miembros de tal manera que sus conocimientos permanezcan al día.
-- Ofrecer a los empleados una alta seguridad laboral para reducir el temor de ser despedidos por cometer errores.
-- Animar a los individuos a convertirse en campeones de ideas: individuos que apoyan las nuevas ideas de manera activa y entusiasta, proporcionan apoyo, superan la resistencia y garantizan la implementación de las innovaciones. Presentan características relacionadas con un liderazgo dinámico. Inspiran y estimulan a otros con su visión del potencial de innovación y a través de su fuerte convicción personal en su misión.
-
-
+- Fomentar activamente la capacitación y el desarrollo de los miembros de tal manera que sus <u>conocimientos permanezcan al día</u>.
+- Ofrecer a los empleados una <u>alta seguridad laboral</u> para reducir el temor de ser despedidos por cometer errores.
+- Animar a los individuos a convertirse en campeones de ideas: individuos que apoyan las nuevas ideas de manera activa y entusiasta, proporcionan apoyo, superan la resistencia y garantizan la implementación de las innovaciones. 
 
 
 

@@ -120,7 +120,7 @@ En una organización, los sistemas se remplazan a medida que el negocio cambia.
 Sin embargo, muchos viejos sistemas continúan siendo utilizados, e incluso, tienen un rol crítico en el negocio. Estos son llamados sistemas heredados.
 
 No son solo sistemas de software. Abarcan hardware, software, librerías, software de soporte y procesos de negocio.
-Han tenido mantenimiento por un largo tiempo, por 10 que su estructura puede estar degradada.
+Han tenido mantenimiento por un largo tiempo, por lo que su estructura puede estar degradada.
 Pueden depender de hardware antiguo.
 Es probable que no soporten nuevos procesos de negocio.
 
@@ -129,14 +129,15 @@ Es probable que no soporten nuevos procesos de negocio.
 El mantenimiento de estos sistemas tiene dificultades y es costoso.
 - Falta de habilidades o conocimiento de viejas tecnologías (recursos externos)
 - Dificultades para entender el código debido a que fue modificado por muchas personas con diferentes estilos
-- Sistema degradado por muchos años de mantenimiento Falta documentación o está desactualizada.
+- Sistema degradado por muchos años de mantenimiento 
+- Falta documentación o está desactualizada.
 - Vulnerabilidades de seguridad
 - Problemas para integrarse con sistemas construidos con tecnologías nuevas
 - Ausencia de soporte oficial
 - Hardware obsoleto y costoso de mantener
 - Problemas a nivel de datos: duplicación y baja calidad.
 
-Tomar la decisión de remplazar un sistema heredado puede ser costoso y riesgoso.
+Tomar la decisión de remplazar un sistema heredado puede ser <u>costoso</u> y <u>riesgoso</u>.
 - No existe especificación completa del sistema
 - Los procesos de negocio seguramente tengan que ser modificados
 - Reglas de negocio pueden estar hardcodeadas sin documentación
@@ -161,7 +162,7 @@ La estrategia elegida dependerá de la calidad del sistema y del valor del siste
 - 9,10 → Estos hacen una importante contribución al negocio pero son caros de mantener. Debe ser reestructurado o remplazado por otro sistema comercial que esté disponible.
 
 ### Evaluación del valor para el negocio
-La evaluación debe tomar en cuenta diferentes puntos de vista
+La evaluación debe tomar en cuenta diferentes puntos de vista:
 - Usuarios finales del sistema
 - Clientes de negocios
 - Gerentes de línea
@@ -200,11 +201,11 @@ Los cambios implican modificar componentes existentes y agregar nuevos component
 
 ## Tipos de mantenimiento
 
-- Mantenimiento para reparar defectos o vulnerabilidades del software
+- Mantenimiento para <u>reparar defectos</u> o vulnerabilidades del software
 	- Los errores pueden haber sido introducidos en diferentes etapas, lo que influye en el costo de la corrección.
-- Mantenimiento para adaptar el software a un entorno operativo diferente
+- Mantenimiento para <u>adaptar el software</u> a un entorno operativo diferente
 	- Cambios en el sistema para que este opere en entornos diferentes a los de la implementación inicial.
-- Mantenimiento para agregar o modificar funcionalidades al sistema
+- Mantenimiento para <u>agregar o modificar funcionalidades</u> al sistema
 	- Modificar el sistema para satisfacer nuevos requisitos
 
 ### Distribución del esfuerzo de mantenimiento
@@ -212,22 +213,19 @@ Los cambios implican modificar componentes existentes y agregar nuevos component
 
 ### Otra categorización (Pfleeger, 2010)
 <u>Correctivo</u> (21%)
-Control del funcionamiento diario del sistema a través de la reparación de fallas
-
+	Control del funcionamiento diario del sistema a través de la reparación de fallas
 <u>Adaptativo</u> (25%)
-EI sistema de modifica para adaptarse a cambios en el entorno
-
+	EI sistema de modifica para adaptarse a cambios en el entorno
 <u>Perfectivo</u> (50%)
-Mejorar funcionalidades existentes
-
+	Mejorar funcionalidades existentes
 <u>Preventivo</u> (4%)
-Prevenir que el desempeño del software se degrade
+	Prevenir que el desempeño del software se degrade
 
 ## Costos de mantenimiento
 
-- Por 10 general, mayores que los costos de desarrollo.
+- Por lo general, mayores que los costos de desarrollo.
 	Agregar funcionalidades nuevas es más costoso que haberlo hecho durante el desarrollo inicial
-- EI equipo de mantenimiento tiene que entender el sistema .
+- EI equipo de mantenimiento tiene que entender el sistema.
 - Falta de motivación para que el equipo de desarrollo escriba software mantenible.
 - La tarea de mantenimiento del software no es popular.
 - EI mantenimiento corrompe la estructura del software y así se hace aún más difícil el mantenimiento.
@@ -309,10 +307,10 @@ La reingeniería toma lugar luego de que el sistema ha sido mantenido por algún
 La refactorización es un proceso continuo de mejora en todo el proceso de desarrollo y en la evolución.
 	Se tiene la intención de evitar que se incremente la degradación de la estructura y el código para que así no se dificulte el mantenimiento del sistema.
 
-## "Bad smells" en el código
+## _"Bad smells"_ en el código
 
 Señales de que el código puede ser mejorado.
-¿Qué "bad smell" puede haber en el código?
+¿Qué _"bad smell"_ puede haber en el código?
 
 - <u>Código duplicado.</u>
 	- EI mismo código o muy similar es incluido en diferentes lugares del sistema.

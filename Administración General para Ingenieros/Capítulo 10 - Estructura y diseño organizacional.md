@@ -31,14 +31,14 @@ Los gerentes usan equipos interfuncionales, es decir, grupos de individuos que s
 
 ## Cadena de mando
 
-Es la línea continua de autoridad que se extiende de los niveles organizacionales altos a los más bajos y define quien informa a quien. (¿A quién recurro si tengo un problema? O ¿Ante quien soy responsable?).
+Es la línea continua de autoridad que se extiende de los niveles organizacionales altos a los más bajos y define quien informa a quien. (¿a quién recurro si tengo un problema? o ¿ante quien soy responsable?).
 
 Para analizarla, hay que analizar 3 conceptos:
-- **_Autoridad_**
+- **_Autoridad:_**
 	Se refiere a los derechos inherentes de un puesto gerencial para decir al personal que hacer y esperar que lo haga. A los gerentes se les otorga cierto grado de autoridad para cumplir sus responsabilidades.
-- **_Responsabilidad_**
+- **_Responsabilidad:_**
 	Es la obligación de desempeñar cualquier tarea asignada.
-- **_Unidad de mando_** 
+- **_Unidad de mando:_**
 	Principio de administración que afirma que cada persona debe informar solo a un gerente. Sin unidad de mando, las exigencias y prioridades en conflicto de múltiples jefes pueden crear problemas.
 
 ## Amplitud de control
@@ -106,7 +106,7 @@ La mayor parte de los esquemas estratégicos actuales tienden a centrarse en 3 a
 El tamaño de una organización afecta de manera significativa su estructura, pero más allá de cierto límite el tamaño se vuelve una influencia menos importante para la estructura a medida que una organización crece. No es lo mismo aumentar 500 empleados a una organización que posee 2000 que a una que posee 300. Una vez que la organización posee alrededor de 2000 empleados ya es bastante mecanicista.
 
 ### Tecnología y estructura
-Toda organización tiene por lo menos una forma de tecnología para convertir sus insumos en resultados. Joan Woodward realizó estudios y luego que dividió las empresas en 3 categorías basadas en el tamaño de sus series de producción obtuvo resultados
+Toda organización tiene por lo menos una forma de tecnología para convertir sus insumos en resultados. Joan Woodward realizó estudios y luego que dividió las empresas en 3 categorías basadas en el tamaño de sus series de producción obtuvo resultados:
 
 ![[Pasted image 20230403004057.png]]
 
@@ -126,7 +126,7 @@ La mayor parte de las organizaciones no permanecen como simples estructuras. A m
 Es un diseño organizacional que agrupa especialidades ocupacionales similares o relacionadas. Es el enfoque funcional de la departamentalización aplicado a toda la organización.
 
 ### Estructura de divisiones
-Es una estructura organizacional integrada por unidades o divisiones de negocios separadas y parcialmente autónomas. Cada división tiene un gerente de división responsable del rendimiento y con autoridad estratégica y operativa sobre su unidad. En general la empresa matriz actúa como supervisor externo para coordinar y controlar las diversas divisiones, y frecuentemente proporciona servicios de apoyo, como financieros y legales. Ver ejemplos
+Es una estructura organizacional integrada por unidades o divisiones de negocios separadas y parcialmente autónomas. Cada división tiene un gerente de división responsable del rendimiento y con autoridad estratégica y operativa sobre su unidad. En general la empresa matriz actúa como supervisor externo para coordinar y controlar las diversas divisiones, y frecuentemente proporciona servicios de apoyo, como financieros y legales.
 
 ### Resumen de las 3
 ![[Pasted image 20230403004220.png]]
@@ -142,7 +142,7 @@ Existe en gran **_empowerment_** de los empleados, que es decisivo en esta estru
 Tiene como desventajas que no existe una cadena de mando definida y hay presiones sobre los equipos para que desempeñen su trabajo.
 
 ### Estructura de matriz
-Es una estructura organizacional que asigna especialistas de diferentes departamentos funcionales para trabajar en uno o más proyectos, dirigidos por gerentes de proyectos. En la parte superior de la matriz de ubican las funciones organizacionales conocidas, y verticalmente en el lado izquierdo se ubican los proyectos específicos en los cuales trabaja actualmente la empresa. Cada proyecto es dirigido por un individuo que toma especialistas de cada uno de los departamentos funcionales y los empleados regresan a sus áreas una vez que el proyecto concluye.
+Es una estructura organizacional que asigna especialistas de diferentes departamentos funcionales para trabajar en uno o más proyectos, dirigidos por gerentes de proyectos. En la parte superior de la matriz se ubican las funciones organizacionales conocidas, y verticalmente en el lado izquierdo se ubican los proyectos específicos en los cuales trabaja actualmente la empresa. Cada proyecto es dirigido por un individuo que toma especialistas de cada uno de los departamentos funcionales y los empleados regresan a sus áreas una vez que el proyecto concluye.
 
 También crea una cadena dual de mando y viola el principio de organización clásico de unidad de mando. Los empleados tienen **2 gerentes**: el gerente de su departamento funcional y el gerente de producto o proyecto, quienes comparten la autoridad. La toma de decisiones es rápida, y tiene un diseño fluido y flexible que responde a los cambios ambientales.
 

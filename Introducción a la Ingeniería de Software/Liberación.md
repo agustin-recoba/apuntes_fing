@@ -22,7 +22,7 @@ Muchas veces incluye:
 - Parametrización de procesos
 - Carga de usuarios y asignación de permisos (o roles)
 
-## Adopción (o conversión)
+# Adopción (o conversión)
 
 Sustituir un sistema anterior por uno nuevo. Es manual o automatizado.
 Incluye carga inicial de datos básicos e información histórica (calidad de datos).
@@ -31,16 +31,17 @@ Se define una estrategia de <u>conversión</u> y una de <u>contingencia</u> (qu�
 
 ## Estrategia de adopción
 
-- Big-bang
+- <u>Big-bang</u>
 	En una fecha dada todos los módulos son instalados en la organización.
 	Se debe planificar cuidadosamente.
-- Paulatina
+- <u>Paulatina</u>
 	Segmentación por módulo, por unidad de negocio, por localización.
-	Conviven varios sistemas (-) Ajuste de procedimientos (+)
-- Procesamiento en paralelo
+	Conviven varios sistemas (-) 
+	Ajuste de procedimientos (+)
+- <u>Procesamiento en paralelo</u>
 	- Uno en producción, el otro en prueba/control.
 	- Entrenamiento y validación en operación.
-- Estrategias híbridas
+- <u>Estrategias híbridas</u>
 	Ej, Big-bang en un área de negocio y paulatina en el resto.
 
 # Entrenamiento y apoyo en el uso
@@ -53,12 +54,12 @@ Se define una estrategia de <u>conversión</u> y una de <u>contingencia</u> (qu�
 ## Entrenamiento para cubrir perfiles y necesidades
 
 **Grupos a entrenar (perfiles de uso del sistema):**
-	- <u>Usuarios finales</u>
-		- Qué hace el sistema
-		- Cómo usarlo
-	- <u>Administradores y operadores</u>
-		- Funciones de soporte
-		- Cómo funciona el sistema
+	<u>Usuarios finales</u>
+- Qué hace el sistema
+- Cómo usarlo
+	<u>Administradores y operadores</u>
+- Funciones de soporte
+- Cómo funciona el sistema
 
 **Diferentes necesidades de entrenamiento:**
 	- Usuarios frecuentes / eventuales
@@ -86,7 +87,7 @@ Se define una estrategia de <u>conversión</u> y una de <u>contingencia</u> (qu�
 - Atributos de calidad: 
 	- legibilidad
 	- completitud
-	-  correctitud
+	- correctitud
 - Atender distintos roles: 
 	- manual de usuario → propósito general y funcionalidades
 	- manual de operadores → configuración hw+sw, acceso a usuarios, solución de problemas
@@ -113,3 +114,6 @@ Se define una estrategia de <u>conversión</u> y una de <u>contingencia</u> (qu�
 - Proceso de gestión de incidentes – niveles de servicio
 - Funcionalidades para deshacer y procedimientos de contingencia
 
+# Resumen
+
+![[Liberacion y Mantenimiento - Segundo Parcial IIS.pdf]]

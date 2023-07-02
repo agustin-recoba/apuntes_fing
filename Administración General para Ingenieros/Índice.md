@@ -4,13 +4,14 @@
 [[Capítulo 6 - Toma de decisiones]]
 [[Capítulo 7 - Fundamentos de la planeación]]
 [[Capítulo 8 - Administración estratégica]]
-[[Capítulo 10 - Estructura y diseño organizacional]]
 
 [[1er parcial - PREGUNTOMETRO]]
 
+[[Capítulo 10 - Estructura y diseño organizacional]]
 [[Capítulo 12 - Gerencia de recursos humanos]]
 [[Capítulo 13 - Manejo del cambio y la innovación]]
 [[Capítulo 16 - La motivación de los empleados]]
 [[Capítulo 17 - Liderazgo]]
 [[Capítulo 18 - Fundamentos del control]]
 [[Admin. de PYMEs]]
+[[Admin. de Empresas Familiares]]
