@@ -3,10 +3,10 @@ Los proyectos necesitan administrarse porque la ingeniería de software profesio
 La buena gestión no puede garantizar el éxito del proyecto. Sin embargo, la mala gestión, por lo general, da como resultado una falla del proyecto.
 
 Metas importantes en un proyecto:
-1. Entregar el software al cliente en el tiempo acordado.
-2. Mantener costos dentro del presupuesto general.
-3. Entregar software que cumpla con las expectativas del cliente.
-4. Mantener un equipo de desarrollo óptimo y con buen funcionamiento.
+1. <u>Entregar</u> el software al cliente en el tiempo acordado.
+2. Mantener <u>costos dentro del presupuesto</u> general.
+3. Entregar software que <u>cumpla con las expectativas</u> del cliente.
+4. <u>Mantener un equipo</u> de desarrollo óptimo y con buen funcionamiento.
 
 ## Diferencias con la ingeniería tradicional
 
@@ -51,14 +51,13 @@ Los riesgos pueden amenazar el proyecto, el software que se desarrolla o a la or
 
 ```ad-example
 title: Ejemplos
-collapse: closed
-Un ejemplo de riesgo de proyecto es la renuncia de un diseñador experimentado. Encontrar un diseñador de reemplazo con habilidades y experiencia adecuadas puede demorar mucho tiempo y, en consecuencia, el diseño del software tardará más tiempo en completarse.
+Un ejemplo de <u>riesgo de proyecto</u> es la renuncia de un diseñador experimentado. Encontrar un diseñador de reemplazo con habilidades y experiencia adecuadas puede demorar mucho tiempo y, en consecuencia, el diseño del software tardará más tiempo en completarse.
 
 
-Un ejemplo de riesgo de producto es la falla que presenta un componente que se adquirió al no desempeñarse como se esperaba. Esto puede afectar el rendimiento global del sistema, de modo que es más lento de lo previsto.
+Un ejemplo de <u>riesgo de producto</u> es la falla que presenta un componente que se adquirió al no desempeñarse como se esperaba. Esto puede afectar el rendimiento global del sistema, de modo que es más lento de lo previsto.
 
 
-Un competidor que introduce un nuevo producto es un riesgo empresarial. La introducción de un producto competitivo puede significar que las suposiciones hechas sobre las ventas de los productos de software existentes sean excesivamente optimistas.
+Un competidor que introduce un nuevo producto es un <u>riesgo empresarial</u>. La introducción de un producto competitivo puede significar que las suposiciones hechas sobre las ventas de los productos de software existentes sean excesivamente optimistas.
 ```
 
 Las categorías de los riesgos pueden superponerse. 
@@ -89,12 +88,13 @@ El proceso de gestión del riesgo es un proceso iterativo que continúa a lo lar
 
 ## 22.1.1 Identificación del riesgo
 
-Se ocupa de identificar los riesgos que pudieran plantear una mayor amenaza al proceso de ingeniería de software, al software a desarrollar, o a la organización que lo desarrolla. La identificación del riesgo puede ser un proceso de equipo en el que este último se reúne para pensar en posibles riesgos. O bien, el administrador del proyecto, con base en su experiencia, identifica los riesgos más probables o críticos. 
+Se ocupa de identificar los riesgos que pudieran plantear una mayor amenaza al proceso de ingeniería de software, al software a desarrollar, o a la organización que lo desarrolla.
+La identificación del riesgo puede ser un proceso de equipo en el que este se reúne para pensar en posibles riesgos. O bien, el administrador del proyecto, con base en su experiencia, identifica los riesgos más probables o críticos. 
 
 Como punto de partida para la identificación del riesgo, se recomienda utilizar una lista de verificación de diferentes tipos de riesgo. Existen al menos seis tipos de riesgos que pueden incluirse en una lista de verificación:
 1. <u>Riesgos tecnológicos:</u> Se derivan de las tecnologías de software o hardware usadas para desarrollar el sistema.
 2. <u>Riesgos personales:</u> Se asocian con las personas en el equipo de desarrollo.
-3. Riesgos organizacionales Se derivan del entorno organizacional donde se desarrolla el software.
+3. <u>Riesgos organizacionales:</u> Se derivan del entorno organizacional donde se desarrolla el software.
 4. <u>Riesgos de herramientas:</u> Resultan de las herramientas de software y otro software de soporte que se usa para desarrollar el sistema.
 5. <u>Riesgos de requerimientos:</u> Proceden de cambios a los requerimientos del cliente y del proceso de gestionarlos.
 6. <u>Riesgos de estimación:</u> Surgen de las estimaciones administrativas de los recursos requeridos para construir el sistema.
@@ -105,11 +105,11 @@ collapse: closed
 ![[Pasted image 20230605174520.png]]
 ```
 
-Entonces se necesita reducir esta lista a un tamaño razonable. Si existen demasiados riesgos, será prácticamente imposible seguir la huella de todos ellos.
+Entonces se necesita **_reducir_ esta lista** a un tamaño razonable. Si existen demasiados riesgos, será prácticamente imposible seguir la huella de todos ellos.
 
 ## 22.1.2 Análisis de riesgo
 
-Durante el proceso de análisis de riesgos, hay que considerar cada riesgo identificado y realizar un juicio acerca de la probabilidad y gravedad de dicho riesgo. Usted debe apoyarse en su propio juicio y en la experiencia obtenida en los proyectos anteriores y los problemas que surgieron en ellos.
+Durante el proceso de análisis de riesgos, hay que considerar cada riesgo identificado y realizar un juicio acerca de la <u>probabilidad</u> y <u>gravedad</u> de dicho riesgo. Usted debe apoyarse en su propio juicio y en la experiencia obtenida en los proyectos anteriores y los problemas que surgieron en ellos.
 
 No es posible hacer valoraciones precisas y numéricas de la probabilidad y gravedad de cada riesgo. En vez de ello, habrá que asignar el riesgo a una de ciertas bandas:
 1. La probabilidad del riesgo puede valorarse como muy baja (< 10%), baja (del 10 al 25%), moderada (del 25 al 50%), alta (del 50 al 75%) o muy alta (> 75%).
@@ -124,13 +124,15 @@ collapse: closed
 ```
 
 Para hacer esta valoración, se necesita información detallada del proyecto, el proceso, el equipo de desarrollo y la organización. Desde luego, tanto la probabilidad como la valoración de los efectos de un riesgo pueden cambiar conforme se disponga de más información acerca del riesgo y a medida que se implementen planes de gestión del riesgo.
-Por lo tanto, esta tabla se debe actualizar durante cada iteración del proceso de riesgo. Una vez analizados y clasificados los riesgos, valore cuáles son los más significativos. Su juicio debe depender de una combinación de la probabilidad de que el riesgo surja junto con los efectos de dicho riesgo.
+Por lo tanto, esta tabla se debe actualizar durante cada iteración del proceso de riesgo. 
+
+Una vez analizados y clasificados los riesgos, valore cuáles son los más significativos. Su juicio debe depender de una combinación de la probabilidad de que el riesgo surja junto con los efectos de dicho riesgo.
 
 El número correcto de riesgos a monitorizar debe depender del proyecto.
 
 ## 22.1.3 Planeación del riesgo
 
-Considera cada uno de los riesgos clave identificados y desarrolla estrategias para manejarlos. Para cada uno de los riesgos, usted debe considerar las acciones que puede tomar para minimizar la perturbación del proyecto si se produce el problema identificado en el riesgo. También debe pensar en la información que tal vez necesite recopilar mientras observa el proyecto para que pueda anticipar los problemas.
+Considera cada uno de los riesgos clave identificados y <u>desarrolla estrategias</u> para manejarlos. Para cada uno de los riesgos, usted debe considerar las acciones que puede tomar para minimizar la perturbación del proyecto si se produce el problema identificado en el riesgo. También debe pensar en la información que tal vez necesite recopilar mientras observa el proyecto para que pueda anticipar los problemas.
 
 Las estrategias se establecen en tres categorías:
 1. <u>Estrategias de evitación:</u> Seguir estas estrategias significa que se reducirá la probabilidad de que surja el riesgo.
@@ -162,7 +164,7 @@ Cuatro factores críticos en la gestión de personal:
 3. ***Inclusión:*** las personas contribuyen efectivamente cuando sienten que otros las escuchan y que sus propuestas se toman en cuenta. 
 4. ***Honestidad:*** como administrador, siempre debe ser honesto acerca de lo que está bien y lo que está mal en el equipo.
 
-La gestión de personal es algo que debe basarse en la experiencia, en lugar de aprenderse en un libro.
+La gestión de personal es algo que debe <u>basarse en la experiencia</u>, en lugar de aprenderse en un libro.
 
 ¿Por qué desarrollar el equipo?
 - Mejorar el conocimiento y las habilidades de los miembros del equipo para aumentar su capacidad de completar los entregables a la vez que se disminuyen los costos, se reduce el cronograma y se mejora la calidad.
@@ -183,7 +185,7 @@ Si las personas no están motivadas, no estarán interesadas en la actividad que
 ### Jerarquía de Maslow
 ![[Pasted image 20230610172937.png]]
 
-sugiere que las personas se sienten motivadas para cubrir sus necesidades, las cuales se ordenan en una serie de niveles. 
+Sugiere que las personas se sienten motivadas para cubrir sus necesidades, las cuales se ordenan en una serie de niveles. 
 Los niveles más bajos de esta jerarquía representan necesidades fundamentales de alimentación, sueño, etcétera, y la necesidad de sentirse seguro en un ambiente. 
 Las **necesidades sociales** se relacionan con el hecho de sentirse parte de un grupo social. Las **necesidades de estima** representan la necesidad de sentirse respetado por otros, y las **necesidades de autorrealización** tienen que ver con el desarrollo personal.
 
@@ -198,14 +200,14 @@ Clasifican a los profesionales en tres tipos:
 2. Personas <u>orientadas hacia sí mismas</u>, quienes están motivadas principalmente por el éxito y el reconocimiento personales. Están interesadas en el desarrollo del software como un medio para lograr sus propias metas. Esto no significa que esos individuos sean egoístas y sólo piensen en sus propios intereses. En vez de ello, suelen tener metas a plazos más largos, como el avance profesional; de esta manera, se sienten motivados a tener éxito en su trabajo para conseguir dichas metas.
 3. Personas <u>orientadas a la interacción</u>, quienes están motivadas por la presencia y las acciones de los compañeros de trabajo. Conforme el desarrollo de software se vuelve más centrado en el usuario, los individuos orientados a la interacción se involucran más en la ingeniería de software.
 
-### Teoría de Herzberg
+### Teoría de los factores de higiene de Herzberg
 ![[Pasted image 20230610173359.png]]
 
 Factores de higiene:
 - Pueden destruir la motivación, pero mejorarlos, en la mayoría de los casos, no mejorará la motivación.
 - Algunos ejemplos de factores de higiene son: Condiciones de trabajo, Salario, Vida personal, Relaciones en el trabajo, Seguridad.
 
-### Teoría X y teoría Y de McGregor
+### Teoría X e Y de McGregor
 Dos supuestos opuestos que hacen los gerentes en cuanto a la naturaleza humana.
 ![[Pasted image 20230610173513.png]]
 ![[Pasted image 20230610173503.png]]
@@ -233,7 +235,7 @@ Grupo cohesivo: una unidad, motivados por el éxito del equipo y no el personal.
 
 ![[Pasted image 20230610173911.png]]
 
-La cantidad de posibles canales de comunicación en un equipo de proyecto está dada por la fórmula $n (n-1) / 2$ donde “$n$” es el número de integrantes.
+La cantidad de posibles canales de comunicación en un equipo de proyecto está dada por la fórmula $n(n-1)/2$ donde “$n$” es el número de integrantes.
 
 #### Habilidades importantes:
 - Hacer preguntas
@@ -288,7 +290,7 @@ Algunas fuentes:
 - Cronograma
 - Choques personalidad
 - Costos
-- Opiniones técnicas, etc.
+- Opiniones técnicas, etc
 
 Una actitud de apertura ayuda a resolverlos, su resolución debe **centrarse en el problema**, no en las personas y a la vez **centrarse en el presente** y no en el pasado.
 
@@ -301,7 +303,7 @@ Una actitud de apertura ayuda a resolverlos, su resolución debe **centrarse en 
 
 ## Desarrollo ágil
 
-SW entregado en incrementos 
+SW entregado en incrementos .
 No se hace un plan exhaustivo, se va decidiendo según el avance y las prioridades del cliente.
 
 Manifiesto ágil 2001:
@@ -320,7 +322,7 @@ Manifiesto ágil 2001:
 
 ```ad-important
 title:SCRUM
-Un marco de trabajo mediante el cual las personas pueden hacer frente a problemas adaptativos complejos, mientras entregan, creativa y productivamente, productos del mayor valor posible
+Un marco de trabajo mediante el cual las personas pueden hacer frente a problemas adaptativos complejos, mientras entregan, creativa y productivamente, productos del mayor valor posible.
 
 --La guía Scrum - Julio 2013--
 ```

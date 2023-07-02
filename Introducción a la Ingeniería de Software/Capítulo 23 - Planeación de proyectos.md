@@ -7,8 +7,6 @@ La planeación se presenta durante tres etapas en un ciclo de vida del proyecto:
 2. <u>Durante la fase de inicio,</u> cuando debe determinar quién trabajará en el proyecto, cómo se dividirá el proyecto en incrementos, cómo se asignarán los recursos a través de su compañía, etcétera. Aquí, se cuenta con más información que en la etapa de la propuesta y, por lo tanto, se pueden afinar las estimaciones iniciales.
 3. <u>Periódicamente a lo largo del proyecto,</u> cuando el plan se modifica a la luz de la experiencia obtenida y la información del monitoreo del avance del trabajo. Se aprende más acerca del sistema a implementar y de las capacidades del equipo de desarrollo. Esta información permite hacer estimaciones más precisas sobre cuánto tardará el trabajo. Más aún, es probable que los requerimientos del software cambien y esto, por lo general, significa que debe modificarse la división del trabajo y extenderse el plazo.
 
-
-
 # 23.1 Fijación de precio al software
 
 Cuando se presenta una licitación para obtener un contrato, hay que calcular el precio que se propondrá al cliente para el desarrollo del software.
@@ -28,7 +26,19 @@ En principio, el precio de un producto de software a un cliente es simplemente e
 Dadas las precisiones organizacionales implicadas, decidir sobre un precio de proyecto debe ser una actividad <u>grupal</u> que incluya al personal de marketing y ventas, así como altos ejecutivos y administradores de proyecto.
 
 ## “cotizar para ganar”
-... leer ...
+
+Como el costo de un proyecto sólo está débilmente relacionado con el precio cotizado a un cliente, “cotizar para ganar” es una estrategia usada comúnmente. Cotizar para ganar significa que una compañía tiene alguna idea del precio que el cliente espera pagar y hace una apuesta por el contrato con base en el precio esperado por el cliente. Esto puede parecer no ético y poco práctico en los negocios, pero tiene ventajas tanto para el cliente como para el proveedor del sistema.
+
+Un costo de proyecto se acuerda sobre la base de un borrador de propuesta. Entonces las negociaciones tienen lugar entre cliente y consumidor para establecer la especificación detallada del proyecto. A esta especificación la restringe el costo acordado. El comprador y el vendedor deben convenir cuál es la funcionalidad aceptable del sistema. En muchos proyectos el factor fijo no está constituido por los requerimientos del proyecto, sino por el costo. Los requerimientos pueden cambiar para que el costo no se supere.
+
+```ad-example
+title: Ejemplo
+Por ejemplo, suponga que una compañía (OilSoft) licita por un contrato con el propósito de desarrollar un sistema de reparto de combustible para una compañía petrolera que programa entregas de gasolina a sus estaciones de servicio.
+
+Para este sistema no hay documento de requerimientos detallado, de manera que OilSoft estima que un precio de $900.000 (dólares estadounidenses) probablemente sea competitivo y esté dentro del presupuesto de la compañía petrolera.
+
+Después de que se le otorga el contrato, OilSoft negocia los requerimientos detallados del sistema, de manera que se entrega la funcionalidad básica. Entonces se estiman los costos adicionales para otros requerimientos. La compañía petrolera no necesariamente pierde aquí, pues otorga el contrato a una compañía en la que puede confiar. Los requerimientos adicionales podrán financiarse a partir de un presupuesto futuro, así que el presupuesto de la compañía petrolera no resulta alterado por un alto costo inicial del software.
+```
 
 # 23.2 Desarrollo dirigido por un plan
 
@@ -39,7 +49,7 @@ El mejor enfoque a la planeación del proyecto incluye una mezcla juiciosa de de
 
 ## 23.2.1 Planes de proyecto
 
-En el plan de proyecto se establecen los recursos disponibles para el proyecto, la división del trabajo y un calendario para realizar el trabajo. El plan debe identificar los riesgos para el proyecto y el software en desarrollo, así como el enfoque que se toma para la gestión del riesgo.
+En el plan de proyecto se establecen los <u>recursos disponibles</u> para el proyecto, la <u>división del trabajo</u> y un <u>calendario</u> para realizar el trabajo. El plan debe identificar los riesgos para el proyecto y el software en desarrollo, así como el enfoque que se toma para la gestión del riesgo.
 
 Incluyen:
 1. <u>Introducción.</u> Ésta describe brevemente los objetivos del proyecto y establece las restricciones que afectan la administración del proyecto.
@@ -132,12 +142,13 @@ En ambos casos es necesario usar el juicio para evaluar el esfuerzo directamente
 Las técnicas basadas en la experiencia dependen de la experiencia del administrador de proyectos anteriores y el esfuerzo real empleado en dichos proyectos en actividades que se relacionan con el desarrollo del software. Por lo general, se identifican los entregables que hay que producir en un proyecto y los diferentes componentes de software o sistemas a desarrollar. Esto se documenta en una hoja de cálculo, se les estima de manera individual y se calcula el esfuerzo total requerido. Por lo general, ayuda a que un grupo de personas se involucre en la estimación del esfuerzo y a pedir a cada miembro del grupo que explique sus estimaciones. Con frecuencia, esto revela factores que otros no consideraron y entonces se itera hacia una estimación grupal consensuada.
 
 ## 23.5.1 Modelado algorítmico de costos
+[[Gestión de proyectos - notas de las clases#Algoritmos]]
 
 El modelado algorítmico de costos utiliza una fórmula matemática para predecir los costos del proyecto con base en estimaciones del tamaño del proyecto, el tipo de software a desarrollar, y otros factores de equipo, proceso y producto. Un modelo algorítmico de costo puede elaborarse al analizar los costos y atributos de los proyectos completados, y encontrar la fórmula de ajuste más cercana a la experiencia real.
 
 Los modelos algorítmicos para estimar el esfuerzo en un proyecto de software se basan principalmente en una fórmula sencilla:
 $$Esfuerzo = A \times Tamaño^B \times M$$
-A es un factor constante que depende de las prácticas locales de la organización y el tipo de software que se desarrolla. El tamaño puede ser una valoración del tamaño del código del software o una estimación de la funcionalidad expresada en puntos de función o de aplicación. El valor del exponente B se encuentra por lo general entre 1 y 1.5. M es un multiplicador que se integra al combinar atributos de procesos, producto y desarrollo, tales como los requerimientos de confiabilidad para el software y la experiencia del equipo de desarrollo.
+<u>A</u> es un factor constante que depende de las prácticas locales de la organización y el tipo de software que se desarrolla. El <u>tamaño</u> puede ser una valoración del tamaño del código del software o una estimación de la funcionalidad expresada en puntos de función o de aplicación. El valor del <u>exponente B</u> se encuentra por lo general entre 1 y 1.5. <u>M</u> es un multiplicador que se integra al combinar atributos de procesos, producto y desarrollo, tales como los requerimientos de confiabilidad para el software y la experiencia del equipo de desarrollo.
 
 El número de líneas de código fuente (SLOC) en el sistema entregado es la métrica de tamaño fundamental que se utiliza en muchos modelos algorítmicos de costo.
 
@@ -147,6 +158,7 @@ Técnicas de descomposición:
 - Basadas en el proceso: Se descompone en base al proceso (análisis, diseño, etc)
 
 ## 23.5.2 El modelo COCOMO II
+[[Gestión de proyectos - notas de las clases#COCOMO II]]
 
 El modelo de costos COCOMO II es un modelo de costos algorítmico maduro que toma en cuenta atributos de proyecto, producto, hardware y personal cuando se formula una estimación del costo.
 
@@ -160,9 +172,9 @@ El modelo COCOMO incluye una fórmula para estimar el tiempo calendario requerid
 $$TDEV = 3 \times (PM)^{0.33 + 0.2(B-1.01)} $$
 - TDEV es el calendario nominal para el proyecto, en meses calendario, que ignora cualquier multiplicador relacionado con el calendario del proyecto. 
 - PM es el esfuerzo calculado por el modelo COCOMO. 
-- B es el exponente relacionado con la complejidad, como se estudió en la sección 23.5.2. 
+- B es el exponente relacionado con la complejidad, como se estudió en la sección [[Capítulo 23 - Planeación de proyectos#23.5.2 El modelo COCOMO II|23.5.2]]. 
 
-Si B = 1.17 y PM = 60, entonces TDEV = 3 * $(60)^{0.36}$ = 13 meses
+Si $B = 1.17$ y $PM = 60$, entonces $TDEV = 3 * (60)^{0.36} = 13$ meses.
 
 Sin embargo, no necesariamente son lo mismo el calendario de proyecto nominal predicho por el modelo COCOMO y el calendario requerido por el plan del proyecto.
 

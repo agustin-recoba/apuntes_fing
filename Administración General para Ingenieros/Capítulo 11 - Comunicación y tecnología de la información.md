@@ -27,11 +27,13 @@ La comunicación proporciona la información que los individuos y grupos necesit
 
 # COMUNICACIÓN INTERPERSONAL
 
-Antes de que se lleve a cabo la comunicación debe haber un => Mensaje; Un propósito que se transmite. Este pasa entre una fuente (el transmisor) y un receptor. El transmisor lo debe => Codificar; Convertir un mensaje en símbolos donde intervienen cuatro características; destrezas, las actitudes, el conocimiento del transmisor y el sistemas sociocultural. Que pasa al receptor a través de un => Canal: el medio a través del cual viaja un mensaje. El receptor debe =>Decodificar; traducir de nuevo el mensaje del transmisor.
+Antes de que se lleve a cabo la comunicación debe haber un => <u>Mensaje</u>; Un propósito que se transmite. Este pasa entre una fuente (el transmisor) y un receptor. El transmisor lo debe => Codificar; Convertir un mensaje en símbolos donde intervienen cuatro características; destrezas, las actitudes, el conocimiento del transmisor y el sistemas sociocultural. Que pasa al receptor a través de un => Canal: el medio a través del cual viaja un mensaje. El receptor debe =>Decodificar; traducir de nuevo el mensaje del transmisor.
 
 ![[Pasted image 20230523152657.png]]
 
 Todo el proceso de comunicación es susceptible al <b><u>ruido</u></b> que es cualquier alteración que interfiere con la transmisión, la recepción o la retroalimentación de un mensaje. Algunos ejemplos de ruido; impresión ilegible, la estática telefónica, la falta de atención del receptor o los sonidos de fondo de la maquinaria o los colegas.
+
+[[Tema 3 - Codificación de fuentes|Punto de vista de la teoría de la información.]]
 
 ## Métodos de comunicación interpersonal
 
@@ -45,7 +47,7 @@ Todo el proceso de comunicación es susceptible al <b><u>ruido</u></b> que es cu
 - **Facilidad de decodificación oportuna.** ¿Puede el receptor decodificar los mensajes fácil y rápidamente?
 - **Limitación en tiempo y espacio.** ¿Necesitan los transmisores y receptores comunicarse al mismo tiempo y espacio?
 - **Costo.** ¿Cuánto cuesta usar este método?
-- **Calidez personal.** ¿Este método que tan bien transmite la calidez interpersonal?
+- **Calidez personal.** Este método, ¿qué tan bien transmite la calidez interpersonal?
 - **Formalidad.** ¿Tiene éste método el nivel necesario de formalidad?
 - **Capacidad de detección.** ¿Permite éste método buscar o detectar fácilmente el mensaje para obtener información importante?
 - **Tiempo de consumo.** ¿Ejerce el transmisor o el receptor el máximo control al tratar con el mensaje?
@@ -53,9 +55,11 @@ Todo el proceso de comunicación es susceptible al <b><u>ruido</u></b> que es cu
 ### Comunicación no verbal
 Comunicación transmitida sin palabras. Algunas comunicaciones con mayor significado no son orales ni escritas: sonidos, imágenes, actitudes, comportamientos, ropa, etc. Los 2 tipos mejor conocidos son: 
 
-_**Lenguaje corporal:**_ gestos, configuración facial y otros movimientos del cuerpo que transmiten un significado. Los movimientos de manos, las expresiones faciales y otros gestos comunican emocione so temperamentos. 
+- _**Lenguaje corporal:**_ gestos, configuración facial y otros movimientos del cuerpo que transmiten un significado.
+	Los movimientos de manos, las expresiones faciales y otros gestos comunican emociones o temperamentos. 
 
-_**Entonación verbal:**_ énfasis dado a las palabras o frases, que transmiten significado. Las personas responden a como se dijo algo y a lo que se dijo.
+- _**Entonación verbal:**_ énfasis dado a las palabras o frases, que transmiten significado.
+	Las personas responden a <u>cómo</u> se dijo algo y a <u>qué</u> se dijo.
 
 ## Barreras a la comunicación interpersonal eficaz
 
@@ -67,13 +71,15 @@ _**Entonación verbal:**_ énfasis dado a las palabras o frases, que transmiten 
 
 **Defensa:** Cuando las personas sienten que están siendo amenazadas tienden a reaccionar en ciertas formas que reducen su habilidad para lograr una comprensión mutua. Toman una actitud defensiva, atacan verbalmente a otros, hacen comentarios sarcásticos o son demasiado críticos y cuestionan los motivos de los demás.
 
-**Lenguaje:** Las palabras tienen distintos significados para diferentes personas. La edad, la educación y los antecedentes culturales son tres de las variables que influyen en el lenguaje, y las definiciones que le da a las palabras. Jerga: Terminología especializada o lenguaje técnico que los miembros de un grupo usan para comunicarse entre si. Los transmisores tienden a suponer que el vocabulario que ellos usan significa lo mismo para el receptor y para ellos.
+**Lenguaje:** Las palabras tienen distintos significados para diferentes personas. La edad, la educación y los antecedentes culturales son tres de las variables que influyen en el lenguaje, y las definiciones que le da a las palabras. 
+
+**Jerga:** Terminología especializada o lenguaje técnico que los miembros de un grupo usan para comunicarse entre si. Los transmisores tienden a suponer que el vocabulario que ellos usan significa lo mismo para el receptor y para ellos.
 
 **Cultura nacional:** Las diferencias culturales pueden afectar la manera en la que un gerente decide comunicarse y estas diferencias pueden ser una barrera para la comunicación eficaz si no se toman en cuenta.
 
 ## Venciendo las barreras
 
-**Utilice la retroalimentación:** Es menos probable que problemas de malos entendidos e inexactitudes ocurran, si el gerente utiliza la retroalimentación, en el proceso de comunicación. Plantear serie de preguntas sobre un mensaje para determinar si se recibió y entendió o no. Puede pedirse que se repita el mensaje con sus propias palabras. No necesariamente tiene que ser verbal. Las acciones pueden hablar más fuerte que las palabras.
+**Utilice la retroalimentación:** Es menos probable que problemas de malos entendidos e inexactitudes ocurran, si el gerente utiliza la retroalimentación en el proceso de comunicación. Plantear series de preguntas sobre un mensaje para determinar si se recibió y entendió o no. Puede pedirse que se repita el mensaje con sus propias palabras. No necesariamente tiene que ser verbal. Las acciones pueden hablar más fuerte que las palabras.
 
 **Simplifique su lenguaje:** La comprensión del mensaje mejora al simplificar el lenguaje usado en relación a la audiencia deseada.
 
@@ -105,14 +111,16 @@ _**Entonación verbal:**_ énfasis dado a las palabras o frases, que transmiten 
 
 ## Redes de comunicación organizacional
 
-Variedad de patrones de los flujos verticales y horizontales de la comunicación organizacional. (Los flujos se combinan en patrones que se denominan redes de comunicación).
+Variedad de patrones de los flujos verticales y horizontales de la comunicación organizacional (los flujos se combinan en patrones que se denominan redes de comunicación).
 
 ### Tipos de redes de comunicación
 **De cadena;** la comunicación fluye de acuerdo con la cadena formal de mando, tanto hacia arriba como hacia abajo. Velocidad moderada, alta exactitud, surgimiento de un líder moderado y satisfacción de los miembros moderada.
 
 **De rueda;** la comunicación fluye entre un líder (centro) claramente identificable y fuerte y el resto del grupo o equipo de trabajo. Rápida velocidad, alta exactitud, surgimiento de un líder alto y baja satisfacción de los miembros.
 
-**De todos los canales;** la comunicación fluye libremente entre todos los miembros de un equipo de trabajo. Velocidad rápida, moderada exactitud, surgimiento de un líder nulo y alta satisfacción de los miembros. La red a usar depende del objetivo, pues no existe una mejor red para todas las situaciones.
+**De todos los canales;** la comunicación fluye libremente entre todos los miembros de un equipo de trabajo. Velocidad rápida, moderada exactitud, surgimiento de un líder nulo y alta satisfacción de los miembros. 
+
+La red a usar depende del objetivo, pues <u>no existe una mejor red</u> para todas las situaciones.
 
 ### Comunicación informal
 La red de comunicación informal está activa en casi todas las organizaciones. Al estar al tanto del flujo y los patrones de comunicación informal, los gerentes pueden tener conocimiento de los asuntos que interesan a los empleados y puede usar la comunicación informal para diseminar información importante. Como la comunicación informal no se puede eliminar, sino manejarla, tampoco los rumores pueden eliminarse por completo, pero se puede minimizar su impacto comunicándose abierta, completa y honestamente con los empleados.
@@ -150,20 +158,30 @@ Ser un comunicador eficaz en las organizaciones de hoy significa estar conectado
 
 ## Manejo de los sitios de quejas por Internet
 
-a primera reacción de un gerente ante estas quejas en foros públicos sobre decisiones o acciones organizacionales es probable que sea el enojo o la negación. No obstante, los gerentes no deben tener tanta prisa para condenar estos sitios de quejas. En vez de eso, deben verlos como una fuente de información. ¿Qué se puede aprender de la información (exacta o inexacta) que se envía a estos sitios?
+La primera reacción de un gerente ante estas quejas en foros públicos sobre decisiones o acciones organizacionales es probable que sea el enojo o la negación. 
+No obstante, los gerentes no deben tener tanta prisa para condenar estos sitios de quejas. En vez de eso, deben verlos como una fuente de información. ¿Qué se puede aprender de la información (exacta o inexacta) que se envía a estos sitios?
 Algunas respuestas posibles podrían incluir enviar mensajes al sitio de quejas para aclarar la información errónea o tomar acciones para corregir cualquier problema mencionado. Además, los gerentes podrían establecer un foro interno anónimo, como una comunicación por red interna, y animar a los empleados a enviar sus quejas ahí, más que al Internet público. Por último, los gerentes deben continuar vigilando los sitios Web. Al mantener sus dedos “tomando el pulso” de asuntos importantes para los empleados, pueden elegir el mejor curso de acción.
 
 ## Gestión de los recursos de conocimiento de la organización
 
-[FALTA]
+Los gerentes de hoy necesitan hacer que sea más fácil para los empleados comunicarse y compartir el conocimiento de tal manera que puedan aprender, de unos y otros, formas para realizar sus trabajos de manera más eficiente y eficaz.
+Las organizaciones pueden hacerlo construyendo <u>bases de datos de información</u> en línea a las que los empleados puedan tener acceso.
+
+Además de las bases de datos, expertos sugieren que las organizaciones creen <u>comunidades de práctica</u>, _“grupos de personas que comparten una inquietud, una serie de problemas o una pasión por un tema y que profundizan sus conocimientos y habilidades en esa área interactuando de manera continua”._
 
 ## El papel de la comunicación en el servicio al cliente
 
-[FALTA]
+Los gerentes que trabajan en organizaciones de servicio deben asegurarse de que los empleados que interactúan con los clientes se comunican con ellos de manera adecuada y eficaz.
+
+Una organización con una cultura de servicio sólida valora el cuidado de los clientes (descubrir cuáles son sus necesidades, satisfacerlas y realizar un seguimiento para tener la seguridad de que fueron cubiertas satisfactoriamente). Cada una de estas actividades incluye la comunicación, ya sea frente a frente, por teléfono o correo electrónico o a través de otros canales.
+
+La comunicación también es importante para el proveedor de servicio individual o el empleado de contacto. La calidad de la interacción interpersonal entre el cliente y ese empleado de contacto influye en la satisfacción del primero.
 
 ## Comunicación políticamente correcta
 
-[FALTA]
+Por ejemplo, la mayoría evitamos usar palabras como minusválido, ciego y anciano, y en su lugar usamos términos como discapacitado físicamente, débil visual o persona mayor. Debemos ser sensibles a los sentimientos de los demás. Ciertas palabras pueden estereotipar, intimidar e insultar a los individuos. Con una fuerza laboral cada vez más diversa, debemos ser sensibles a la manera en que las palabras podrían ofender a otros. Aunque esto complica nuestro vocabulario y hace más difícil que las personas se comuniquen, es algo que los gerentes no pueden ignorar.
+
+Debemos ser sensibles a la forma en que nuestra selección de las palabras podría ofender a otros. Pero debemos reconocer que el lenguaje políticamente correcto **restringe la claridad de la comunicación**. Nada sugiere que este aumento de la ambigüedad de la comunicación se reduzca pronto, en cualquier momento. Éste es sólo otro reto de comunicación para los gerentes.
 
 
 

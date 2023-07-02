@@ -3,4 +3,4 @@
 [[Tema 3 - Tipos de Datos Algebraicos]]
 [[Tema 4 - Evaluación Perezosa]]
 [[Tema 5 - Mónadas]]
-
+[[Parciales]]

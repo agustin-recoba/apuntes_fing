@@ -19,9 +19,12 @@ Luego es necesario identificar precedencia entre las actividades:
 ![[IIS Notas -Gestion de proyectos - Estimación - Clase2.pdf]]
 
 ### Algoritmos
+[[Capítulo 23 - Planeación de proyectos#23.5.1 Modelado algorítmico de costos]]
+
 ![[Pasted image 20230601235518.png]]
 
 #### COCOMO II
+[[Capítulo 23 - Planeación de proyectos#23.5.2 El modelo COCOMO II]]
 ![[Pasted image 20230601235558.png]]
 
 ## Precedencias
@@ -48,7 +51,7 @@ Y ahora?
 ### Camino crítico
 El grafo creado con las actividades tiene varios caminos.
 ¿Qué es el camino crítico?
-- Camino que si se retrasa, retrasa todo el proyecto, A ese camino, lo denominamos camino crítico.
+- Camino que si se retrasa, retrasa todo el proyecto.
 - Es el camino más largo en duración.
 - Puede haber más de uno.
 - Puede cambiar durante el ciclo de vida.
@@ -57,7 +60,7 @@ El grafo creado con las actividades tiene varios caminos.
 #### Algoritmo
 **Definiciones:**
 - <u>Comienzo temprano (ES):</u> lo antes posible que puede comenzar una actividad respetando las precedencias y duraciones.
-- <u>Fin Temprano (EF):</u> la fecha de fin si la actividad comienza lo antes posible y dura lo previsto.
+- <u>Fin Temprano (EF):</u> la fecha de fin si la actividad comienza lo antes posible y dura lo previsto ($EF_i = ES_i + est_i$).
 - <u>Comienzo tardío (LS):</u> lo más tarde que puede comenzar la actividad sin afectar la duración del proyecto.
 - <u>Fin tardío (FT):</u> lo más tarde que puede terminar la actividad sin afectar la duración del proyecto.
 - <u>Holgura total:</u> cuánto se puede retrasar el comienzo de un actividad sin afectar la fecha de fin del proyecto.
@@ -66,8 +69,7 @@ El grafo creado con las actividades tiene varios caminos.
 
 **Método:**
 - Consiste en hacer una recorrida hacia adelante en el grafo calculando ES y EF y luego una recorrida del final al inicio calculando LS y LF.
-- La primera actividad, tiene ES=0
-- El EF = ES + Duración de tarea
+- La primera actividad, tiene $ES=0$
 
 Vamos a usar la siguiente nomenclatura:
 ![[Pasted image 20230602000041.png]]
@@ -75,13 +77,16 @@ Vamos a usar la siguiente nomenclatura:
 ##### Ejemplo
 ![[Pasted image 20230602000127.png]]
 
-Si una actividad tiene más de una actividad precedente, como por ejemplo T4. ES = MAX( EF_Tareas_predentes). En este caso, máximo (5,6) = 6
+Si una actividad tiene más de una actividad precedente, como por ejemplo T4.
+$ES = max(EF_{tareas\space precedentes})$
+En este caso, $max(5,6) = 6$
 
 ![[Pasted image 20230602000555.png]]
 
 Luego comienza la recorrida hacia atrás donde calcularemos LS y LF.
-Para la última actividad LF=EF y LS=LF- Duración
-Para las actividades que tengan más de un actividad siguiente, en nuestro ejemplo T2: LF=min(LS_tareas_siguientes)
+Para la última actividad: $LF=EF$ y $LS=LF- Duración$
+Para las actividades que tengan más de un actividad siguiente, en nuestro ejemplo T2:
+$LF=min(LS_{tareas \space siguientes})$
 
 ![[Pasted image 20230602000655.png]]
 
@@ -93,12 +98,10 @@ En nuestro ejercicio son las actividades: T1, T2, T5, T6 y T7 -> Si alguna se at
 Armemos el cronograma del ejemplo:
 ![[Pasted image 20230602000839.png]]
 
-Si tenemos solo una persona, qué ocurre en las semanas S3, S4, S5, S6 y S7? 
--> Debería trabajar 16 horas.
+Si tenemos solo una persona, qué ocurre en las semanas S3, S4, S5, S6 y S7? -> Debería trabajar 16 horas.
 Qué hacemos? -> Nivelación de recursos
 
 ### Nivelación de recursos
-
 - Se ajustan fechas de inicio y/o fin cuando hay restricciones de recursos.
 - Se usa luego de determinar el camino crítico y cuando hay recursos:
 	- Compartidos o críticos durante ciertos momentos.
@@ -115,7 +118,7 @@ Qué sucede si es necesario acortar el cronograma?
 - Dos técnicas, Crashing (compresión) y Fasttracking (ejecución rápida).
 
 #### Crashing
-- Objetivo: acortar el cronograma con el menor incremento de costo posible .
+- Objetivo: acortar el cronograma con el menor incremento de costo posible.
 - Ejemplos: horas extra, más recursos, pago adicional por acelerar la entrega, etc.
 - Sólo funciona para actividades del camino crítico.
 - No siempre es viable, ojo con el incremento de costos y riesgos.

@@ -8,6 +8,7 @@
 [[1er parcial - PREGUNTOMETRO]]
 
 [[Capítulo 10 - Estructura y diseño organizacional]]
+[[Capítulo 11 - Comunicación y tecnología de la información]]
 [[Capítulo 12 - Gerencia de recursos humanos]]
 [[Capítulo 13 - Manejo del cambio y la innovación]]
 [[Capítulo 16 - La motivación de los empleados]]
