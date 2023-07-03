@@ -1,4 +1,4 @@
-# TEMA: ESTRUCTURA Y DISEÑO ORGANIZACIONAL 
+# TEMA: Estructura y diseño organizacional 
 
 1. La distribución formal de los empleados dentro de una organización se conoce como:
 	a. Proceso de organización
@@ -11,6 +11,7 @@
 title: Respuesta
 collapse: closed
 b) Estructura organizacional
+[[Capítulo 10 - Estructura y diseño organizacional#DEFINICIÓN DE LA ESTRUCTURA ORGANIZACIONAL|ref]]
 ```
 
 2. Entre los propósitos de la función de organizar se encuentran los siguientes, EXCEPTO:
@@ -24,6 +25,7 @@ b) Estructura organizacional
 title: Respuesta
 collapse: closed
 c) Definir el número de empleados que un gerente puede supervisar de manera adecuada
+[[Capítulo 10 - Estructura y diseño organizacional#Amplitud de control|ref]]
 ```
 
 3. Determinar cuál es la estructura adecuada depende de cuatro factores, llamados variables de contingencia. Los mismos son:
@@ -37,6 +39,7 @@ c) Definir el número de empleados que un gerente puede supervisar de manera ade
 title: Respuesta
 collapse: closed
 c) El tamaño de la organización, la tecnología usada, la estrategia a aplicar y el grado de incertidumbre ambiental.
+[[Capítulo 10 - Estructura y diseño organizacional#Factores de contingencia|ref]]
 ```
 
 4. La eficiencia en reunir especialistas similares y personal con destrezas, conocimientos y orientaciones comunes es un aspecto positivo que tiene la departamentalización:
@@ -49,6 +52,7 @@ c) El tamaño de la organización, la tecnología usada, la estrategia a aplicar
 title: Respuesta
 collapse: closed
 b) Funcional
+[[Capítulo 10 - Estructura y diseño organizacional#Departamentalización|ref]]
 ```
 
 5. A continuación, se indican algunos factores que influyen en el grado de <u>centralización</u> o <u>descentralización</u> que tiene una organización. Marque cuál es en cada caso:
@@ -64,6 +68,7 @@ a. El ambiente es estable -> CENTRALIZACIÓN
 b. La empresa está dispersa geográficamente -> <u>DES</u>CENTRALIZACIÓN
 c. Las decisiones son muy importantes -> CENTRALIZACIÓN
 d. La empresa es grande -> CENTRALIZACIÓN
+[[Capítulo 10 - Estructura y diseño organizacional#Centralización y descentralización|ref]]
 ```
 
 6. El flujo eficiente de las actividades de trabajo es un aspecto positivo que tiene la departamentalización:
@@ -77,6 +82,7 @@ d. La empresa es grande -> CENTRALIZACIÓN
 title: Respuesta
 collapse: closed
 e) Por procesos
+[[Capítulo 10 - Estructura y diseño organizacional#Departamentalización|ref]]
 ```
 
 7. La cadena de mando no se puede analizar sin tener en consideración otros tres conceptos que son:
@@ -90,6 +96,7 @@ e) Por procesos
 title: Respuesta
 collapse: closed
 c) Autoridad, unidad de mando y responsabilidad
+[[Capítulo 10 - Estructura y diseño organizacional#Cadena de mando|ref]]
 ```
 
 8. Determinar cuál es la estructura adecuada depende de cuatro factores, llamados variables de contingencia. Los mismos son:
@@ -103,34 +110,24 @@ c) Autoridad, unidad de mando y responsabilidad
 title: Respuesta
 collapse: closed
 c. El tamaño de la organización, la tecnología usada, la estrategia a aplicar y el grado de incertidumbre ambiental.
+[[Capítulo 10 - Estructura y diseño organizacional#Factores de contingencia|ref]]
 ```
 
-9. Determinar cuál es la estructura adecuada depende de cuatro factores, llamados variables de contingencia. Los mismos son:
-	a. La especialización del trabajo a emplear, la forma de departamentalización elegida, el grado de centralización usado y el tamaño de la organización.
-	b. La estrategia a aplicar, la tecnología usada, la forma de departamentalización, y la especialización a emplear.
-	c. El tamaño de la organización, la tecnología usada, la estrategia a aplicar y el grado de incertidumbre ambiental.
-	d. El grado de incertidumbre ambiental, el grado de centralización usado, la estrategia a aplicar y el tamaño de la organización.
-	e. Ninguna de las anteriores.
 
-```ad-question
-title: Respuesta
-collapse: closed
-c. El tamaño de la organización, la tecnología usada, la estrategia a aplicar y el grado de incertidumbre ambiental.
-```
+# TEMA: Admin. de recursos humanos, cambio e inovación
 
-# TEMA: ADMINISTRACIÓN DE RECURSOS HUMANOS, CAMBIO E INNOVACIÓN
-
-1. El proceso que consiste en analizar los candidatos a un empleo para garantizar la contratacion de los mas adecuados se conoce como:
-	a. seleccion
+1. El proceso que consiste en analizar los candidatos a un empleo para garantizar la contratación de los mas adecuados se conoce como:
+	a. selección
 	b. reclutamiento
-	c. orientacion
+	c. orientación
 	d. entrevista
-	e. investigacion de antecedentes
+	e. investigación de antecedentes
 
 ```ad-question
 title: Respuesta
 collapse: closed
 a. seleccion
+[[Capítulo 12 - Gerencia de recursos humanos#SELECCIÓN|ref]]
 ```
 
 2. La declaración por escrito de lo que realiza un empleado, cómo y porqué lo realiza, se conoce como:
@@ -144,6 +141,7 @@ a. seleccion
 title: Respuesta
 collapse: closed
 b. Descripción de empleo
+[[Capítulo 12 - Gerencia de recursos humanos#Descripción de puestos|ref]]
 ```
 
 3. Las calificaciones mínimas que una persona debe poseer para desempeñar con éxito un empleo determinado se conoce como:
@@ -157,6 +155,7 @@ b. Descripción de empleo
 title: Respuesta
 collapse: closed
 a. Especificación de empleo
+[[Capítulo 12 - Gerencia de recursos humanos#Descripción de puestos|ref]]
 ```
 
 4. Existen tres categorías de elementos que un gerente puede intentar cambiar en una organización:
@@ -169,6 +168,7 @@ a. Especificación de empleo
 title: Respuesta
 collapse: closed
 b. Tecnología, personas y estructura
+[[Capítulo 13 - Manejo del cambio y la innovación#Tipos de cambio|ref]]
 ```
 
 5. Entre las acciones gerenciales que se pueden efectuar para reducir las resistencias al cambio se encuentran las siguientes, EXCEPTO:
@@ -182,6 +182,7 @@ b. Tecnología, personas y estructura
 title: Respuesta
 collapse: closed
 d. Liderazgo y motivación
+[[Capítulo 13 - Manejo del cambio y la innovación#Técnicas para reducir la resistencia|ref]]
 ```
 
 6. La evaluación del desempeño de los funcionarios mediante la opinión de superiores, empleados a su cargo y pares del funcionario se conoce como:
@@ -195,6 +196,7 @@ d. Liderazgo y motivación
 title: Respuesta
 collapse: closed
 a. Retroalimentación 360°
+[[Capítulo 12 - Gerencia de recursos humanos#Retroalimentación de 360 grados|ref]]
 ```
 
 7. En toda organización hay tres variables que estimulan o fomentan la innovación. Las mismas están vinculadas a:
@@ -208,6 +210,7 @@ a. Retroalimentación 360°
 title: Respuesta
 collapse: closed
 b. Recursos humanos, cultura organizacional y estructura
+[[Capítulo 13 - Manejo del cambio y la innovación#Estimulando y cultivando la innovación|ref]]
 ```
 
 8. En toda organización hay variables culturales que estimulan o fomentan la innovación, entre las que se destacan las siguientes, EXCEPTO:
@@ -221,9 +224,10 @@ b. Recursos humanos, cultura organizacional y estructura
 title: Respuesta
 collapse: closed
 b. Enfoque de sistema cerrado
+[[Capítulo 13 - Manejo del cambio y la innovación#Estimulando y cultivando la innovación|ref]]
 ```
 
-# TEMA: ADMINISTRACIÓN DE RECURSOS HUMANOS, CAMBIO E INNOVACIÓN
+# TEMA: Comunicación, motivación y liderazgo
 
 1. La comunicación cumple varias funciones. A continuación se indican las mismas, EXCEPTO una:
 	a. Sirve para controlar el comportamiento de las personas
@@ -236,6 +240,7 @@ b. Enfoque de sistema cerrado
 title: Respuesta
 collapse: closed
 e. Fomenta el surgimiento de líderes en la organización
+[[Capítulo 11 - Comunicación y tecnología de la información#Funciones de la comunicación|ref]]
 ```
 
 2. De acuerdo a la Teoría de Motivación e Higiene de Herzberg, dentro de los factores motivadores se encuentran los siguientes EXCEPTO:
@@ -249,6 +254,7 @@ e. Fomenta el surgimiento de líderes en la organización
 title: Respuesta
 collapse: closed
 c. Salario
+[[Capítulo 16 - La motivación de los empleados#Teoría de la motivación e higiene de Herzberg|ref]]
 ```
 
 3. De acuerdo a la Teoría de Motivación e Higiene de Herzberg, dentro de los factores de higiene se encuentran los siguientes EXCEPTO. Indique cual NO es un factor de higiene:
@@ -262,6 +268,7 @@ c. Salario
 title: Respuesta
 collapse: closed
 c. Crecimiento
+[[Capítulo 16 - La motivación de los empleados#Teoría de la motivación e higiene de Herzberg|ref]]
 ```
 
 4. Dentro de las barreras de la comunicación interpersonal eficaz se encuentran las siguientes, EXCEPTO:
@@ -275,6 +282,7 @@ c. Crecimiento
 title: Respuesta
 collapse: closed
 c. Lenguaje corporal
+[[Capítulo 11 - Comunicación y tecnología de la información#Barreras a la comunicación interpersonal eficaz|ref]]
 ```
 
 5. El correcto diseño de los puestos de trabajo se considera un elemento que motiva al empleado. Entre los elementos a considerar se encuentra la expansión horizontal de un trabajo, aumentando su alcance. Esto se denomina:
@@ -288,6 +296,7 @@ c. Lenguaje corporal
 title: Respuesta
 collapse: closed
 b. Ampliación del empleo
+[[Capítulo 16 - La motivación de los empleados#Ampliación del empleo|ref]]
 ```
 
 6. El correcto diseño de los puestos de trabajo se considera un elemento que motiva al empleado. Entre los elementos a considerar se encuentra la expansión vertical de un trabajo, agregando responsabilidades de planificación y evaluación. Esto se denomina:
@@ -301,6 +310,7 @@ b. Ampliación del empleo
 title: Respuesta
 collapse: closed
 a. Enriquecimiento del empleo
+[[Capítulo 16 - La motivación de los empleados#Enriquecimiento del empleo|ref]]
 ```
 
 7. En materia de liderazgo, la llamada “parrilla gerencial” indica cinco tipologías básicas de estilos de liderazgo. Una de ellas es la llamada “gerencia de tareas” que se ubica en el cuadrante:
@@ -314,6 +324,7 @@ a. Enriquecimiento del empleo
 title: Respuesta
 collapse: closed
 d. 9.1
+[[Capítulo 17 - Liderazgo#Parilla Gerencial|ref]]
 ```
 
 8. En materia de liderazgo, la llamada "parrilla gerencial" indica cinco tipologías básicas de estilos de liderazgo. Una de ellas es la llamada “gerencia de club campestre”, que se ubica en el cuadrante:
@@ -327,6 +338,7 @@ d. 9.1
 title: Respuesta
 collapse: closed
 a. 1.9
+[[Capítulo 17 - Liderazgo#Parilla Gerencial|ref]]
 ```
 
 9. En relación al liderazgo, el Modelo de Trayectoria-Meta identificó cuatro comportamientos de liderazgo. El que permite a los subordinados saber lo que se espera de ellos, programa el trabajo a realizar y los proporciona dirección específica sobre cómo realizar las tareas se conoce con el nombre de:
@@ -340,6 +352,7 @@ a. 1.9
 title: Respuesta
 collapse: closed
 b. Líder directivo
+[[Capítulo 17 - Liderazgo#Modelo de la Trayectoria a la meta|ref]]
 ```
 
 10. De acuerdo a la Teoría del Liderazgo Situacional de Hersey y Blanchard, el estilo de liderazgo se basa en los siguientes conceptos:
@@ -353,9 +366,10 @@ b. Líder directivo
 title: Respuesta
 collapse: closed
 e. Disposición, comportamiento vinculado a las tareas y comportamiento vinculado a las relaciones
+[[Capítulo 17 - Liderazgo#Teoría del liderazgo situacional de Hersey y Blanchard|ref]]
 ```
 
-# TEMA: CONTROL
+# TEMA: Control
 
 1. Existen cuatro fuentes de información para efectuar controles. Uno de ellos tiene como ventaja que es fácil de visualizar y muy eficaz para mostrar relaciones, pero presenta la desventaja que proporciona información limitada y además ignora los factores subjetivos. Esa fuente de información se llama:
 	a. Observación personal
@@ -368,6 +382,7 @@ e. Disposición, comportamiento vinculado a las tareas y comportamiento vinculad
 title: Respuesta
 collapse: closed
 b. Informe estadístico
+[[Capítulo 18 - Fundamentos del control#Etapa 1 medición|ref]]
 ```
 
 2. Existen varias fuentes de información para efectuar controles. Una de ellas tiene como ventaja que se obtiene información de primera mano, pero presenta la desventaja que requiere mucho tiempo del gerente que debe efectuar el control. Esta fuente de información se llama:
@@ -381,19 +396,21 @@ b. Informe estadístico
 title: Respuesta
 collapse: closed
 a. Observación personal
+[[Capítulo 18 - Fundamentos del control#Etapa 1 medición|ref]]
 ```
 
 3. La tercera etapa del proceso de control llamada “tomar medidas administrativas” implica hacer alguno de los tres cursos de acción siguientes:
-	a. No hacer nada, corregir el desempeño real, revisar los estándares
-	b. Identificar la causa de la variación, corregir el desempeño real, revisar los estándares
-	c. Evaluar si la desviación es significativa, identificar la causa de la variación, corregir el desempeño real
-	d. Evaluar si la desviación es significativa, revisar los estándares, corregir el desempeño
-	e. Revisar los estándares, corregir el desempeño real, comparar el desempeño real con los nuevos estándares
+	a. No hacer nada, corregir el desempeño real, revisar los estándares.
+	b. Identificar la causa de la variación, corregir el desempeño real, revisar los estándares.
+	c. Evaluar si la desviación es significativa, identificar la causa de la variación, corregir el desempeño real.
+	d. Evaluar si la desviación es significativa, revisar los estándares, corregir el desempeño.
+	e. Revisar los estándares, corregir el desempeño real, comparar el desempeño real con los nuevos estándares.
 
 ```ad-question
 title: Respuesta
 collapse: closed
 a. No hacer nada, corregir el desempeño real, revisar los estándares
+[[Capítulo 18 - Fundamentos del control#Etapa 3 medidas administrativas (para corregir desviaciones)|ref]]
 ```
 
 4. El tipo de control que utiliza mecanismos externos como la competencia de precios o la participación relativa en el mercado, responde a un enfoque:
@@ -407,6 +424,7 @@ a. No hacer nada, corregir el desempeño real, revisar los estándares
 title: Respuesta
 collapse: closed
 d. De mercado
+[[Capítulo 18 - Fundamentos del control#¿QUÉ ES EL CONTROL?|ref]]
 ```
 
 5. Si consideramos el momento en que se realiza el control, el tipo de control más deseable es:
@@ -420,6 +438,7 @@ d. De mercado
 title: Respuesta
 collapse: closed
 a. de alimentación anticipada
+[[Capítulo 18 - Fundamentos del control#HERRAMIENTAS PARA CONTROLAR EL DESEMPEÑO DE LA ORGANIZACIÓN|ref]]
 ```
 
 6. Se han identificado tres enfoques diferentes para diseñar los sistemas de control. De ellos, hay dos que se refieren a controlar el comportamiento de los empleados. Ellos son:
@@ -433,6 +452,7 @@ a. de alimentación anticipada
 title: Respuesta
 collapse: closed
 c. Burocrático y de clan
+[[Capítulo 18 - Fundamentos del control#¿QUÉ ES EL CONTROL?|ref]]
 ```
 
 7. Si un gerente tuviera que corregir el desempeño real, puede tomar dos tipos de medidas:
@@ -446,9 +466,10 @@ c. Burocrático y de clan
 title: Respuesta
 collapse: closed
 b. La medida correctiva básica y la medida correctiva inmediata
+[[Capítulo 18 - Fundamentos del control#Corregir el desempeño real|ref]]
 ```
 
-# TEMA: PYMES Y EMPRESAS FAMILIARES
+# TEMA: PYMEs y Empresas Familiares
 
 1. Entre las razones por las cuales los emprendedores abren negocios propios se encuentran las siguientes, EXCEPTO una:
 	a. Ganancias financieras en proporción a los logros personales
@@ -461,9 +482,10 @@ b. La medida correctiva básica y la medida correctiva inmediata
 title: Respuesta
 collapse: closed
 b. Disposición para la resolución de problemas como forma de sobreponerse a las contrariedades
+[[Teórico - PYMES.pdf|ref]]
 ```
 
-2. Una empresa ha facturado en el año $ 6.300.000 IVA incluido. ¿Si tomamos 1 UI = $ 3 y no consideramos la cantidad de empleados, que tipo de empresa sería?
+2. Una empresa ha facturado en el año $6.300.000 IVA incluido. ¿Si tomamos 1 UI = $ 3 y no consideramos la cantidad de empleados, qué tipo de empresa sería?
 	a. Micro empresa
 	b. Pequeña empresa
 	c. Mediana empresa
@@ -474,6 +496,11 @@ b. Disposición para la resolución de problemas como forma de sobreponerse a la
 title: Respuesta
 collapse: closed
 a. Micro empresa
+
+
+$6.300.000 -> $4.914.000 sin IVA -> UI 1.638.000
+
+[[Teórico - PYMES.pdf|ref]]
 ```
 
 3. Si Ud. desea enfrentar el desafío de tener éxito o fracasar por cuenta propia, basado en un nuevo servicio innovador desarrollado por Ud. mismo, entonces lo más aconsejable es:
@@ -487,6 +514,7 @@ a. Micro empresa
 title: Respuesta
 collapse: closed
 a. crear una empresa desde cero
+[[Teórico - PYMES.pdf|ref]]
 ```
 
 4. Si ud. Desea un sistema de comercialización que gire en torno a un acuerdo legal entre dos partes, por la cual se le concede a una de ellas el privilegio de vender un producto o servicio, pero se le limita a que opere de acuerdo a los métodos o condiciones que especifica la otra parte, entonces nos referimos a:
@@ -500,6 +528,7 @@ a. crear una empresa desde cero
 title: Respuesta
 collapse: closed
 c. adquirir una franquicia
+[[Teórico - PYMES.pdf|ref]]
 ```
 
 5. Una de las armas estratégicas de las pequeñas empresas es la flexibilidad. Existen tres tipos de flexibilidad. Aquella que implica disponer de gran movilidad, mediante una acción ofensiva permanente así como la capacidad para abandonar rápidamente productos y mercados cuya defensa signifique costos elevados y en función de objetivos, emprender acciones de corta duración en segmentos bien precisos, se conoce como:
@@ -513,6 +542,7 @@ c. adquirir una franquicia
 title: Respuesta
 collapse: closed
 c. flexibilidad operativa
+[[Teórico - PYMES.pdf|ref]]
 ```
 
 6. Una de las armas estratégicas de las pequeñas empresas es la flexibilidad. Existen tres tipos de flexibilidad. Aquella que implica un profundo conocimiento del segmento del mercado a atender, así como la capacidad de tomar decisiones bajo presión se conoce como:
@@ -526,6 +556,7 @@ c. flexibilidad operativa
 title: Respuesta
 collapse: closed
 b. flexibilidad estructural
+[[Teórico - PYMES.pdf|ref]]
 ```
 
 7. Las grandes empresas pueden encarar la distribución de sus productos a nivel nacional, regional o mundial, lo que le da ventajas competitivas frente a las pequeñas empresas. Sin embargo, las pequeñas empresas pueden contrarrestar esa situación debido a que cuenta principalmente con:
@@ -539,6 +570,7 @@ b. flexibilidad estructural
 title: Respuesta
 collapse: closed
 a. contacto directo con el cliente
+[[Teórico - PYMES.pdf|ref]]
 ```
 
 8. Si una empresa familiar enfrenta el reto de definir la función de los propietarios no empleados y controlar la orientación de las ramas familiares, entonces esa empresa, en la dimensión evolutiva de la propiedad se encuentra en:
@@ -552,6 +584,7 @@ a. contacto directo con el cliente
 title: Respuesta
 collapse: closed
 b. etapa de sociedad de hermanos
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
 9. Si una empresa familiar enfrenta el reto de fomentar la cooperación y la comunicación entre generaciones y alentar el manejo constructivo de los conflictos, entonces esa empresa, en la dimensión evolutiva de la familia, se encuentra en:
@@ -565,6 +598,7 @@ b. etapa de sociedad de hermanos
 title: Respuesta
 collapse: closed
 c. etapa de trabajo conjunto
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
 10. Si una empresa familiar enfrenta el reto de crear una empresa conyugal funcional y crear relaciones con la familia extendida, entonces esa empresa, en la dimensión evolutiva de la familia, se encuentra en:
@@ -578,9 +612,10 @@ c. etapa de trabajo conjunto
 title: Respuesta
 collapse: closed
 a. etapa de familia joven de negocios
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
-11. Si una empresa familiar enfrenta el reto de la reinversión y entre sus características se encuentra el contar con procedimientos organizacionales adecuadamente establecidos, entonces esa empresa, en la dimensión evolutiva de la empresa se encuentra en:
+11. Si una empresa familiar enfrenta el reto de la reinversión, entonces esa empresa, en la dimensión evolutiva de la empresa se encuentra en:
 	a. etapa de arranque
 	b. etapa de expansión
 	c. etapa de madurez
@@ -591,9 +626,10 @@ a. etapa de familia joven de negocios
 title: Respuesta
 collapse: closed
 c. etapa de madurez
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
-12. Si una empresa familiar enfrenta el reto de la reinversión, entonces esa empresa, en la dimensión evolutiva de la empresa se encuentra en:
+12. Si una empresa familiar enfrenta el reto de la reinversión y entre sus características se encuentra el contar con procedimientos organizacionales adecuadamente establecidos, entonces esa empresa, en la dimensión evolutiva de la empresa se encuentra en:
 	a. etapa de arranque
 	b. etapa de expansión
 	c. etapa de madurez
@@ -604,6 +640,7 @@ c. etapa de madurez
 title: Respuesta
 collapse: closed
 c. etapa de madurez
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
 13. Si una empresa familiar enfrenta el reto de la supervivencia y entre sus características se encuentra una estructura informal de la organización con el propietario como centro de todo, entonces esa empresa, en la dimensión evolutiva de la empresa, se encuentra en:
@@ -617,6 +654,7 @@ c. etapa de madurez
 title: Respuesta
 collapse: closed
 d. etapa de arranque
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
 14. Si en una empresa familiar el Padre fundador le paga un sueldo a su único hijo (casado y con hijos) en función de las necesidades financieras de la familia del hijo más que del trabajo efectivamente realizado, esto se visualiza como un problema. Utilizando el Modelo de los 5 Círculos de Amat, estamos ante una:
@@ -630,6 +668,7 @@ d. etapa de arranque
 title: Respuesta
 collapse: closed
 c. problemática ligada a la propiedad
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
 15. Si una empresa familiar enfrenta el reto de elegir una estructura de propiedad para la siguiente generación entonces esa empresa, en la dimensión evolutiva de la propiedad se encuentra en:
@@ -643,6 +682,7 @@ c. problemática ligada a la propiedad
 title: Respuesta
 collapse: closed
 a. Etapa de empresario controlador
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
 16. Si una empresa familiar enfrenta el reto de manejar la transición de la edad madura, entonces esa empresa, en la dimensión evolutiva de la familia, se encuentra en:
@@ -656,6 +696,7 @@ a. Etapa de empresario controlador
 title: Respuesta
 collapse: closed
 b. Etapa de ingreso en el negocio
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
 17. Si el Sr. Pedro Rodríguez es accionista de la empresa familiar “Rodriguez S.A”, siendo uno de los hijos del fundador, pero no trabaja en la misma ya que hace años emigró a España donde vive y trabaja. Dentro de los grupos de interés en la empresa familiar podemos de decir que Pedro es:
@@ -667,6 +708,7 @@ b. Etapa de ingreso en el negocio
 title: Respuesta
 collapse: closed
 b. FT\*P
+[[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
 
 18. Las empresas emprendedoras pasan por varias etapas de crecimiento en las cuales requieren diferentes habilidades. Cuando una empresa es viable, cuenta con bastantes clientes y sus principales problemas son financieros, se encuentra en la etapa de:
@@ -680,6 +722,7 @@ b. FT\*P
 title: Respuesta
 collapse: closed
 c. Supervivencia
+[[Teórico - PYMES.pdf|ref]]
 ```
 
 

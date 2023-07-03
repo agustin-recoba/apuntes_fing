@@ -39,7 +39,9 @@ Otra parte de la evaluación actual, es el _**análisis de empleos**_, que es un
 
 ### Descripción de puestos
 Con la información obtenida del análisis de puestos, los gerentes desarrollan las descripciones y especificaciones de los puestos. 
+
 Una _**descripción de puestos**_ es una declaración por escrito de lo que realiza un empleado, cómo y por qué lo realiza. Generalmente describe el contenido, el ambiente y las condiciones del empleo.
+
 Una **_especificación de puestos_** es una declaración de las calificaciones mínimas que una persona debe poseer para desempeñar con éxito un trabajo determinado. Identifica los conocimientos, las destrezas y las actitudes necesarias para realizar el trabajo de manera eficaz.
 
 ## Satisfacción de las necesidades futuras de recursos humanos

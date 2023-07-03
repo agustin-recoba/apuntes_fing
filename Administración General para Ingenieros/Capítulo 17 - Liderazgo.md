@@ -94,7 +94,7 @@ title: Disposición
 La **_disposición_**, según la definición de Hersey y Blanchard, se refiere al grado en el que las personas tienen la habilidad y el deseo de realizar una tarea específica. 
 ```
 
-Esta teoría usa los mismos dos aspectos del liderazgo que Fiedler identificó: los comportamientos relacionados con las tareas y con las relaciones.
+Esta teoría usa los mismos dos aspectos del liderazgo que Fiedler identificó: los comportamientos relacionados con <u>las tareas</u> y con <u>las relaciones</u>.
 Pero éstos dieron un paso más al considerar cada aspecto como alto o bajo y combinarlos después en cuatro estilos de liderazgo específicos, descritos de la manera siguiente:
 - **Información:** (alto en tareas y bajo en relaciones): El líder define los roles y dice a las personas qué, cómo cuando y dónde harán diversas tareas.
 - **Venta:** (alto en tareas y relaciones): El líder tiene un comportamiento tanto de dirección como de apoyo.

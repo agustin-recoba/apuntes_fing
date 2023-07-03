@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1af6069be0e2f374",
+        "id": "4fb19957b8142503",
         "type": "tabs",
         "children": [
           {
-            "id": "2d0a325a94484ac5",
+            "id": "e99ae6d202604843",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -90,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 420.5
+    "width": 420.5,
+    "collapsed": true
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -137,8 +138,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -153,49 +153,50 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "webpage-html-export:Export Vault to HTML": false,
       "open-gate:ChatGPT": false,
       "obsidian-excalidraw-plugin:Create new drawing": false,
-      "homepage:Open homepage": false
+      "homepage:Open homepage": false,
+      "webpage-html-export:Export Vault to HTML": false
     }
   },
-  "active": "eed73acbec0572df",
+  "active": "e99ae6d202604843",
   "lastOpenFiles": [
-    "Administración General para Ingenieros/Capítulo 17 - Liderazgo.md",
-    "Administración General para Ingenieros/2do parcial - PREGUNTOMETRO.md",
-    "Administración General para Ingenieros/Índice.md",
-    "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
+    "Administración General para Ingenieros/media/Teórico - PYMES.pdf",
+    "Administración General para Ingenieros/media/Teórico - EMPRESAS FAMILIARES.pdf",
     "Administración General para Ingenieros/Admin. de Empresas Familiares.md",
-    "Introducción a la Teoría de la Información/Índice.md",
     "Administración General para Ingenieros/Admin. de PYMEs.md",
+    "Administración General para Ingenieros/2do parcial - PREGUNTOMETRO.md",
     "Administración General para Ingenieros/Capítulo 18 - Fundamentos del control.md",
+    "Administración General para Ingenieros/media/Pasted image 20230703154544.png",
+    "Administración General para Ingenieros/Capítulo 17 - Liderazgo.md",
     "Administración General para Ingenieros/Capítulo 11 - Comunicación y tecnología de la información.md",
-    "Introducción a la Teoría de la Información/Tema 3 - Codificación de fuentes.md",
-    "Introducción a la Ingeniería de Software/Capítulo 23 - Planeación de proyectos.md",
-    "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
-    "Introducción a la Ingeniería de Software/Capítulo 22 - Gestión de proyectos.md",
-    "Introducción a la Ingeniería de Software/Indice.md",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230317155946.png",
-    "Programación Funcional/Índice.md",
+    "Administración General para Ingenieros/Capítulo 16 - La motivación de los empleados.md",
+    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
+    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
+    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
+    "Administración General para Ingenieros/Índice.md",
     "index.md",
+    "Administración General para Ingenieros/1er parcial - PREGUNTOMETRO.md",
+    "Administración General para Ingenieros/Capitulo 1 - La función gerencial.md",
+    "Administración General para Ingenieros/Capítulo 3 - Ambiente y Cultura Organizacional.md",
+    "Administración General para Ingenieros/Capítulo 7 - Fundamentos de la planeación.md",
+    "Administración General para Ingenieros/Capítulo 8 - Administración estratégica.md",
+    "Administración General para Ingenieros/Capítulo 5 - Responsabilidad social y ética administrativa.md",
+    "Administración General para Ingenieros/Capítulo 6 - Toma de decisiones.md",
+    "Introducción a la Ingeniería de Software/Capítulo 17 - Ingeniería de software basada en componentes.md",
+    "Introducción a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
+    "Introducción a la Ingeniería de Software/Capítulo 1 - Introducción.md",
+    "Introducción a la Ingeniería de Software/Capítulo 22 - Gestión de proyectos.md",
+    "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
+    "Introducción a la Ingeniería de Software/Capítulo 18 - Ingeniería de Software Distribuido.md",
+    "Introducción a la Ingeniería de Software/media/Pasted image 20230317155946.png",
     "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Riesgos - Clase3.pdf",
     "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Estimación - Clase2.pdf",
-    "Introducción a la Ingeniería de Software/Capítulo 25 - Gestión de la Configuración.md",
     "Introducción a la Ingeniería de Software/media/Gestion de la configuracion - Segundo Parcial IIS.pdf",
-    "Administración General para Ingenieros/Capítulo 16 - La motivación de los empleados.md",
-    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
-    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
-    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
     "Introducción a la Ingeniería de Software/media/Liberacion y Mantenimiento - Segundo Parcial IIS.pdf",
-    "Introducción a la Ingeniería de Software/Liberación.md",
-    "Introducción a la Ingeniería de Software/Extras/Deuda técnica.md",
-    "Introducción a la Ingeniería de Software/Capítulo 9 - Evolución del Software.md",
-    "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
-    "Introducción a la Ingeniería de Software/Extras/Testing basado en la experiencia.md",
     "Introducción a la Ingeniería de Software/media/VV-SegundoParcialIIS.pdf",
     "Administración General para Ingenieros/media/INGENIERIA EMPRESAS FAMILIARES 1.pdf",
     "Administración General para Ingenieros/media/INGENIERIA EMPRESAS FAMILIARES.pdf",
-    "Administración General para Ingenieros/media/Teórico - EMPRESAS FAMILIARES.pdf",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626204126.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626204116.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626171944.png",
@@ -204,9 +205,7 @@
     "Introducción a la Teoría de la Información/media/Pasted image 20230626170808.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626170747.png",
     "Introducción a la Teoría de la Información/media/Pasted image 20230626170733.png",
-    "Introducción a la Teoría de la Información/media/Pasted image 20230626170554.png",
     "Programación Funcional/media/propuesta.pdf",
-    "Programación Funcional/media/prueba.pdf",
     "Untitled.canvas"
   ]
 }

@@ -39,6 +39,8 @@ Otra razón, es el **empowerment** (darle poder a los empleados). Muchos gerente
 
 Para determinar el desempeño, el gerente debe obtener información mediante: la observación personal, informes estadísticos, informes orales e informes escritos. En cualquier situación gerencial es posible medir criterios como la satisfacción de los empleados, tasas de rotación o ausentismo. También los gerentes tienen presupuestos establecidos según su área de responsabilidad, por lo tanto mantener los costos dentro del presupuesto es una medida de control.
 
+![[Pasted image 20230703154544.png]]
+
 ## Etapa 2: comparación con estándares
 
 Ésta etapa determina el grado de variación entre el desempeño real y el estándar. En todas las actividades es fundamental determinar el margen de variación aceptable. Las desviaciones que exceden este margen se vuelven importantes y requieren la atención del gerente.
