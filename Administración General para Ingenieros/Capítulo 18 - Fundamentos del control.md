@@ -23,7 +23,7 @@ La mayoría de las organizaciones eligen destacar los 2 últimos controles, adem
 
 # ¿POR QUÉ ES IMPORTANTE EL CONTROL?
 
-Es importante porque es el vínculo final en las funciones de la gerencia. Es la única forma que tienen los gerentes de saber si los objetivos planteados se están cumpliendo. Sólo establecer objetivos y hacer que los empleados los acepten no es garantía de que se han llevado a cabo las acciones necesarias para lograrlos. Por ello, los gerentes eficaces deben efectuar un seguimiento para asegurarse que se está haciendo lo que se debía hacer y que se están logrando los objetivos.
+Es importante porque es el vínculo final en las funciones de la gerencia. Es la única forma que tienen los gerentes de saber si los objetivos planteados se están cumpliendo. 
 
 Si los gerentes no ejercieran control, no tendrían forma de saber si sus objetivos y planes van de acuerdo con lo previsto ni que acciones deben tomar en el futuro.
 
@@ -39,21 +39,20 @@ Otra razón, es el **empowerment** (darle poder a los empleados). Muchos gerente
 
 Para determinar el desempeño, el gerente debe obtener información mediante: la observación personal, informes estadísticos, informes orales e informes escritos. En cualquier situación gerencial es posible medir criterios como la satisfacción de los empleados, tasas de rotación o ausentismo. También los gerentes tienen presupuestos establecidos según su área de responsabilidad, por lo tanto mantener los costos dentro del presupuesto es una medida de control.
 
-La mayor parte de los trabajos y actividades se pueden expresar en términos medibles, pero cuando un indicador del desempeño no se puede medir, los gerentes solamente pueden utilizar medidas subjetivas.
-
 ## Etapa 2: comparación con estándares
 
 Ésta etapa determina el grado de variación entre el desempeño real y el estándar. En todas las actividades es fundamental determinar el margen de variación aceptable. Las desviaciones que exceden este margen se vuelven importantes y requieren la atención del gerente.
 
 ## Etapa 3: medidas administrativas (para corregir desviaciones)
 
-En ésta etapa, los gerentes pueden elegir 3 cursos de acción posibles: no hacer nada, corregir el desempeño real ó revisar los estándares. (" no hacer nada" no tiene explicación)
+En ésta etapa, los gerentes pueden elegir 3 cursos de acción posibles: no hacer nada, corregir el desempeño real o revisar los estándares.
 
 ### Corregir el desempeño real
-Podría ser mediante el cambio de la estrategia, la estructura, rediseño de empleos, etc. El gerente puede tomar una ***medida correctiva inmediata ó básica***. Las medidas correctivas inmediatas resuelven los problemas al instante para que el desempeño retome su curso. Y la básica analiza cómo y por qué se desvió el desempeño y después corrige la causa que lo produjo. Por lo general los gerentes no tienen tiempo para tomar medidas correctivas básicas. Sin embargo, los gerentes eficaces analizan las desviaciones y se toman su tiempo para corregir las causas de la desviación.
+Podría ser mediante el cambio de la estrategia, la estructura, rediseño de empleos, etc. 
+El gerente puede tomar una ***medida correctiva inmediata ó básica***. Las medidas correctivas <u>inmediatas</u> resuelven los problemas al instante para que el desempeño retome su curso. Y la <u>básica</u> analiza cómo y por qué se desvió el desempeño y después corrige la causa que lo produjo.
 
 ### Revisar los estándares
-Es posible que la variación sea resultado se una estándar poco realista. El problema es más difícil es revisar un estándar de desempeño hacia abajo. (Cuando el estándar está por encima de los resultados obtenidos).
+Es posible que la variación sea resultado se una estándar poco realista. El problema es más difícil es revisar un estándar de desempeño hacia abajo (cuando el estándar está por encima de los resultados obtenidos).
 
 # CONTROL DEL DESEMPEÑO DE LA ORGANIZACIÓN
 
@@ -67,7 +66,7 @@ Los gerentes deben encontrar que medidas de desempeño de la organización les p
 
 Es la relación entre la producción de bienes y servicios, y los insumos necesarios para generarla. 
 
-La producción se mide por el ingreso de las ventas (ventas) insumos por los costos de adquisición y transformación de recursos (costo de ventas). El trabajo de la gerencia es aumentar ésta relación y la única acción viable para hacerlo es disminuyendo los gastos.
+La producción se mide por el ingreso de las ventas, insumos por los costos de adquisición y transformación de recursos (costo de ventas). El trabajo de la gerencia es aumentar ésta relación y la única acción viable para hacerlo es disminuyendo los gastos.
 
 ## Eficacia
 
@@ -75,7 +74,11 @@ Es una medida de qué tan adecuados son los objetivos organizacionales y qué ta
 
 ## Clasificaciones de la industria
 
-Están determinadas por medidas de desempeño especificas. Empresas con Mejor Rendimiento, determinadas por resultados financieros incluyendo las utilidades, rendimiento sobre ingresos, etc. Mejores Empresas para Trabajar, que son elegidas por las respuestas que dan miles de empleados elegidos al azar, a materiales contestados por gerentes y a cuestionarios de RR.HH. Las Fábricas Mejor Dirigidas, El Índice de Satisfacción del Cliente Estadounidense, etc.
+Están determinadas por medidas de desempeño especificas. 
+- Empresas con Mejor Rendimiento, determinadas por resultados financieros incluyendo las utilidades, rendimiento sobre ingresos, etc. 
+- Mejores Empresas para Trabajar, que son elegidas por las respuestas que dan miles de empleados elegidos al azar, a materiales contestados por gerentes y a cuestionarios de RR.HH. 
+- Las Fábricas Mejor Dirigidas, 
+- El Índice de Satisfacción del Cliente Estadounidense, etc.
 
 # HERRAMIENTAS PARA CONTROLAR EL DESEMPEÑO DE LA ORGANIZACIÓN
 
@@ -83,7 +86,7 @@ Los gerentes necesitan herramientas para supervisar y medir el desempeño. Los g
 
 El <b><u>control de alimentación anticipada</u></b>, es el más deseable ya que evita los posibles problemas. La clave para éste tipo de control es tomar medidas antes de que ocurran los problemas. Estos controles requieren información oportuna y exacta que a veces es difícil de obtener.
 
-El <b><u>control concurrente</u></b> se ejerce mientras se lleva a cabo una actividad. La forma mas conocida, es la supervisión directa que consiste en la interacción del gerente con sus empleados. El mismo se encuentra en el área de trabajo, a ésta actividad se le llama " administración caminando”. De ésta forma, puede corregir los problemas conforme ocurren.
+El <b><u>control concurrente</u></b> se ejerce mientras se lleva a cabo una actividad. La forma mas conocida, es la supervisión directa que consiste en la interacción del gerente con sus empleados. De ésta forma, puede corregir los problemas conforme ocurren.
 
 El <b><u>control de retroalimentación:</u></b> es el tipo de control más popular. La desventaja es que cuando el gerente recibe la información, los problemas ya ocurrieron. 
 No obstante, presenta 2 ventajas:
@@ -114,7 +117,7 @@ El concepto fundamental de estas herramientas financieras es que se supone que l
 ![[Pasted image 20230611205912.png]]
 
 ### Tarjeta de puntaje equilibrada
-Divide la organización en 4 grandes áreas de desempeño (clientes, Financiera, Procesos internos y empleados, Innovación y Crecimiento.
+Divide la organización en 4 grandes áreas de desempeño (<u>clientes</u>, <u>financiera</u>, <u>procesos internos y empleados</u>, <u>innovación y crecimiento</u>.
 
 Está enfocada hacia la medición del desempeño de la organización más allá de la perspectiva financiera. Los gerentes deben desarrollar metas en cada una de las 4 áreas y medidas para determinar si esas metas se cumplen.
 

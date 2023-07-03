@@ -16,3 +16,5 @@
 [[Capítulo 18 - Fundamentos del control]]
 [[Admin. de PYMEs]]
 [[Admin. de Empresas Familiares]]
+
+[[2do parcial - PREGUNTOMETRO]]
