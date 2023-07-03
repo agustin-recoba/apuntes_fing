@@ -58,7 +58,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Hersey",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,13 +86,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 420.5,
-    "collapsed": true
+    "width": 420.5
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -161,7 +159,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "2d0a325a94484ac5",
+  "active": "eed73acbec0572df",
   "lastOpenFiles": [
     "Administración General para Ingenieros/Capítulo 17 - Liderazgo.md",
     "Administración General para Ingenieros/2do parcial - PREGUNTOMETRO.md",

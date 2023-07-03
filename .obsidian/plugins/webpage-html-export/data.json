@@ -2,7 +2,7 @@
   "inlineCSS": false,
   "inlineJS": false,
   "inlineImages": false,
-  "includePluginCSS": "code-block-copy",
+  "includePluginCSS": "code-block-copy\nobsidian-admonition",
   "includeSvelteCSS": true,
   "makeNamesWebStyle": true,
   "allowFoldingHeadings": true,
