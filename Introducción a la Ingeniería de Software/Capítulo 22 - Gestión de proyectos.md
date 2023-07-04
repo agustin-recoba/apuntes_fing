@@ -114,13 +114,13 @@ Durante el proceso de análisis de riesgos, hay que considerar cada riesgo ident
 No es posible hacer valoraciones precisas y numéricas de la probabilidad y gravedad de cada riesgo. En vez de ello, habrá que asignar el riesgo a una de ciertas bandas:
 1. La probabilidad del riesgo puede valorarse como muy baja (< 10%), baja (del 10 al 25%), moderada (del 25 al 50%), alta (del 50 al 75%) o muy alta (> 75%).
 2. Los efectos del riesgo pueden estimarse como catastróficos (amenazan la supervivencia del proyecto), graves (causarían grandes demoras), tolerables (demoras dentro de la contingencia permitida) o insignificantes.
-
 Luego hay que tabular los resultados de este proceso de análisis mediante una tabla clasificada de acuerdo con la gravedad del riesgo.
 
 ```ad-example
 title: Ejemplo
 collapse: closed
 ![[Pasted image 20230605175035.png]]
+![[Pasted image 20230704170825.png]]
 ```
 
 Para hacer esta valoración, se necesita información detallada del proyecto, el proceso, el equipo de desarrollo y la organización. Desde luego, tanto la probabilidad como la valoración de los efectos de un riesgo pueden cambiar conforme se disponga de más información acerca del riesgo y a medida que se implementen planes de gestión del riesgo.

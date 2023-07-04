@@ -128,7 +128,6 @@ Qué sucede si es necesario acortar el cronograma?
 - Puede generar retrabajo y aumento en riegos.
 - Solo funciona si la paralelización de tareas es viable.
 
-
 # Clase 3
 
 ![[IIS Notas -Gestion de proyectos - Riesgos - Clase3.pdf]]
@@ -141,8 +140,7 @@ Posible categorización:
 - De producto: afectan calidad o performance. Ejemplo: falla en un componente clave del producto.
 - De negocio: afectan el negocio de lo que se está construyendo. Ejemplo: un competidor introduce un nuevo producto.
 
-## Monitoreo de riesgos
-
+### Monitoreo de riesgos
 - Seguimiento periódico para detectar:
 	- Riegos nuevos
 	- Riesgos que cambian
@@ -152,7 +150,7 @@ Posible categorización:
 - Ejecución de planes de contingencia
 - Modificación del plan
 
-### Seguimiento - técnicas de medición
+## Seguimiento - técnicas de medición
 <u>De fórmula fija:</u>
 - Tareas no empezadas 0
 - Tareas comenzadas, se asigna % fijo al final del primer período y el resto al completar. Por ej 50/50, 25/75 o 0/100
@@ -167,7 +165,7 @@ Posible categorización:
 - Ojo con el síndrome del 90%
 
 ## Valor ganado
-Modelo en el que unifican todas la actividades planificados llevándolos a $ por su costo planificado.
+Modelo en el que unifican todas la actividades planificadas llevándolos a $ por su costo planificado.
 Es posible controlar si se logró el avance previsto y si costó lo previsto.
 Se puede obtener: % de avance, días de atraso, desviación de costos.
 
@@ -176,7 +174,7 @@ Se puede obtener: % de avance, días de atraso, desviación de costos.
 	Por ejemplo, al día de hoy tenía planificado terminar un componente de 100 horas a 40 USD la hora -> PV= 4.000
 - Valor Ganado (EV): Lo que hice hasta ahora, al valor que estimé.
 	Hasta el momento tengo el 80 % del componente desarrollado considerando el presupuesto acordado -> EV = 3.200
-- Costo Real (AC): Lo que llevo gastado para el trabajo que hice.
+- Costo actual (AC): Lo que llevo gastado para el trabajo que hice.
 	Llevo 90 horas dedicadas = 3600
 
 Se pueden expresar en porcentajes, dividiéndolos por el Presupuesto hasta la Conclusión (Budget at Completion, BAC):
