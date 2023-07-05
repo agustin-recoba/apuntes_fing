@@ -107,7 +107,7 @@ Se define una estrategia de <u>conversión</u> y una de <u>contingencia</u> (qu�
 
 ## Apoyo durante el uso del sistema
 
-- Guía de mensajes de erorr
+- Guía de mensajes de error
 - Guía rápida
 - Ayuda en línea – Mesa de ayuda
 	- Llamadas telefónicas, sms, whatsapp, etc.

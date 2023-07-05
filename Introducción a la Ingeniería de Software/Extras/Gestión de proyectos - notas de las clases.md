@@ -136,9 +136,9 @@ Qué sucede si es necesario acortar el cronograma?
 ## Riesgos
 
 Posible categorización:
-- De proyecto: afectan cronograma, recursos. Ejemplo: perder un miembro experimentado del equipo.
-- De producto: afectan calidad o performance. Ejemplo: falla en un componente clave del producto.
-- De negocio: afectan el negocio de lo que se está construyendo. Ejemplo: un competidor introduce un nuevo producto.
+- <u>De proyecto:</u> afectan cronograma, recursos. Ejemplo: perder un miembro experimentado del equipo.
+- <u>De producto:</u> afectan calidad o performance. Ejemplo: falla en un componente clave del producto.
+- <u>De negocio:</u> afectan el negocio de lo que se está construyendo. Ejemplo: un competidor introduce un nuevo producto.
 
 ### Monitoreo de riesgos
 - Seguimiento periódico para detectar:
@@ -151,18 +151,19 @@ Posible categorización:
 - Modificación del plan
 
 ## Seguimiento - técnicas de medición
+
 <u>De fórmula fija:</u>
-- Tareas no empezadas 0
-- Tareas comenzadas, se asigna % fijo al final del primer período y el resto al completar. Por ej 50/50, 25/75 o 0/100
-- Apropiadas para tareas cortas
+- Tareas no empezadas: 0
+- Tareas comenzadas: se asigna % fijo al final del primer período y el resto al completar. Por ej 50/50, 25/75 o 0/100
+- Apropiadas para tareas cortas.
 
 <u>Hitos con peso</u>
-- Valor a cada hito
-- Apropiado para tareas más largas, con entregables intermedios
+- Valor a cada hito.
+- Apropiado para tareas más largas, con entregables intermedios.
 
 <u>Porcentaje de completitud</u>
-- El responsable de la tarea estima % completado
-- Ojo con el síndrome del 90%
+- El responsable de la tarea estima % completado.
+- Ojo con el síndrome del 90%.
 
 ## Valor ganado
 Modelo en el que unifican todas la actividades planificadas llevándolos a $ por su costo planificado.
@@ -171,7 +172,7 @@ Se puede obtener: % de avance, días de atraso, desviación de costos.
 
 ### Tres valores principales
 - Valor Planificado (PV): Lo que tendría que tener hecho hoy, al valor que estimé. 
-	Por ejemplo, al día de hoy tenía planificado terminar un componente de 100 horas a 40 USD la hora -> PV= 4.000
+	Por ejemplo, al día de hoy tenía planificado terminar un componente de 100 horas a 40 usd la hora -> PV= 4.000 usd
 - Valor Ganado (EV): Lo que hice hasta ahora, al valor que estimé.
 	Hasta el momento tengo el 80 % del componente desarrollado considerando el presupuesto acordado -> EV = 3.200
 - Costo actual (AC): Lo que llevo gastado para el trabajo que hice.
@@ -183,9 +184,9 @@ Se pueden expresar en porcentajes, dividiéndolos por el Presupuesto hasta la Co
 - $AC\% = AC / BAC$
 
 ### Variaciones
-- Varianza de costos, estamos por encima o debajo del presupuesto?
+- Varianza de costos, ¿estamos por encima o debajo del presupuesto?
 	$CV = EV – AC$
-	Siguiendo el ejemplo CV = 3.200 - 3600 = -400
+	Siguiendo el ejemplo, CV = 3.200 - 3600 = -400
 - Variación de cronograma, estamos adelantados o atrasados?
 	$SV = EV – PV$
 	Siguiendo el ejemplo, SV = 3200 - 4000 = -800

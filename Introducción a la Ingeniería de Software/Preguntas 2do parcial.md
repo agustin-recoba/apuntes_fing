@@ -56,16 +56,59 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > La opción 2 es incorrecta porque las pruebas de regresión pueden ser en cualquier nivel (integración, de sistema, etc) y no solamente unitario. 
 > La opción 4 es incorrecta porque su objetivo es probar la nueva versión del software, por más que lo que se está probando sean funcionalidades existentes en versiones anteriores (justamente su objetivo es verificar que lo que antes funcionaba no se haya roto).
 
-##### ¿Cuál de las siguientes afirmaciones es INCORRECTA sobre verificación y validación (V&V)?:
-1. Un objetivo de V&V es analizar la documentación para detectar defectos.
-2. La validación busca comprobar que el software hace lo que el usuario espera.
-3. No es razonable detener el proceso de prueba sabiendo que no se cubre todo el código.
-4. Es necesario priorizar los casos de prueba para asignar los recursos necesarios para las pruebas.
+##### Sobre drivers y stubs, seleccione la respuesta correcta:
+1. Son piezas de software que contienen validaciones y errores respectivamente.
+2. Representan el éxito y el fracaso en un caso de prueba respectivamente.
+3. Viabilizan ciertas pruebas de piezas de software.
+4. Son niveles de pruebas.
 
 > [!question]- Respuesta
-> _3. No es razonable detener el proceso de prueba sabiendo que no se cubre todo el código._
-> 
-> La opción 3 es correcta ya que un posible criterio para finalizar las pruebas es la tasa de fallos (failure rate). Si esta tasa cae por debajo de cierto umbral (ej.: menor a un fallo por hora de pruebas) puede asumirse que realizar más pruebas no está económicamente justificado y las pruebas podrían llegar a finalizar.
+> _3. Viabilizan ciertas pruebas de piezas de software._
+
+##### Sobre las pruebas de integración, seleccione la respuesta correcta:
+1. Una ventaja si aplico la estrategia bottom up es que no tendré stubs.
+2. Los drivers indican dónde automatizar una prueba.
+3. Al ser del primer nivel, detectan errores de forma temprana
+4. Priorizan el core del sistema, lo cual es lo más crítico.
+
+> [!question]- Respuesta
+> _1. Una ventaja si aplico la estrategia bottom up es que no tendré stubs._
+
+##### Sobre el proceso en V, seleccione la respuesta correcta:
+1. Sirve para certificar procesos de desarrollo.
+2. Viabiliza Test Driven Development.
+3. Las metodologías ágiles son una mejor opción porque las actividades de testing no quedan para el final.
+4. Incorpora actividades de Verificación y Validación desde el inicio del proceso de desarrollo.
+
+> [!question]- Respuesta
+> _4. Incorpora actividades de Verificación y Validación desde el inicio del proceso de desarrollo._
+
+##### Sobre las pruebas de regresión, seleccione la respuesta correcta:
+1. Son pruebas automatizadas.
+2. Es el nombre que se le asigna a las pruebas repetitivas.
+3. Son pruebas que se ejecutan cuando el software cambia.
+4. Son pruebas especificas para Machine Learning.
+
+> [!question]- Respuesta
+> _3. Son pruebas que se ejecutan cuando el software cambia._
+
+##### Seleccione la opción <u>incorrecta</u> al completar la frase: “Un equipo especializado en pruebas...
+1. ... si se basa en las especificaciones, tiende a cometer los mismos errores que el programador.”
+2. ... en general, manejan mejor las técnicas de pruebas del sistema que el equipo de desarrollo.”
+3. ... conoce los errores más comunes en los que incurre el equipo de desarrollo.”
+4. ... conoce el negocio.”
+
+> [!question]- Respuesta
+> _1. ... si se basa en las especificaciones, tiende a cometer los mismos errores que el programador.”_
+
+##### Complete la frase, “El testing de sistema...
+1. ... es en donde se intenta comprobar que cada componente cumple con los requisitos especificados.”
+2. ... es en donde se intenta comprobar que el sistema cumple con los requisitos especificados.”
+3. ... es sobre un entorno de pruebas lo más parecido posible al ambiente de desarrollo.”
+4. ... es exploratorio, evitando recurrir a la documentación.”
+
+> [!question]- Respuesta
+> _2. ... es en donde se intenta comprobar que el sistema cumple con los requisitos especificados.”_
 
 ### Tema: Liberación y Evolución
 
@@ -135,6 +178,33 @@ ACME lo contrata a Ud. como consultor para diagnosticar la situación. Al entrev
 > La opción 2 es incorrecta porque la verificación no es parte de las actividades incluidas en la liberación.
 > La opción 3 es incorrecta porque la metodología utilizada no tiene por qué influir en las etapas de liberación. Bajo cualquier tipo de metodología, si el proyecto y/o usuarios lo requieren, es posible realizar tareas de entrenamiento y apoyo en el uso.
 > La opción 4 es incorrecta porque una estrategia “Big bang”, si bien puede permitir un mejor “time to market” del producto completo (lo que no implica que sea “mas eficiente”), suele introducir riesgos adicionales.
+
+##### Sobre el modelo en espiral de evolución del software, seleccione la respuesta correcta:
+1. Este modelo es aplicable en cualquier escenario de evolución del software.
+2. Este modelo de evolución del software es aplicable cuando la misma empresa es responsable del software a lo largo de su vida.
+3. Este modelo es aplicable cuando la empresa responsable de la evolución del software es otra diferente de la que lo desarrolló.
+4. Este modelo es aplicable cuando se pasa de una metodología tradicional en el desarrollo a una metodología ágil en la evolución.
+
+> [!question]- Respuesta
+> _2. Este modelo de evolución del software es aplicable cuando la misma empresa es responsable del software a lo largo de su vida.._
+
+##### Sobre las estrategias de adopción de software se pueden mencionar:
+1. Big-bang y estrategias ágiles.
+2. Estrategia por capas y estrategias híbridas
+3. Procesamiento en paralelo y estrategias híbridas.
+4. Estrategias híbridas, estrategias ágiles y estrategia paulatina.
+
+> [!question]- Respuesta
+> _3. Procesamiento en paralelo y estrategias híbridas._
+
+##### Seleccione la afirmación <u>incorrecta</u>:
+1. Entre los “bad smells” en el código pueden mencionarse el código duplicado y los enunciados switch.
+2. Se recomienda rediseñar los métodos demasiado largos para obtener métodos más cortos.
+3. La generalidad especulativa es considerada como un “bad smell” en el código.
+4. Para que el programa sea más legible se recomienda que el mismo grupo de ítems aparezca en varios lugares del código.
+
+> [!question]- Respuesta
+> _4. Para que el programa sea más legible se recomienda que el mismo grupo de ítems aparezca en varios lugares del código._
 
 ### Tema: Gestión de proyectos
 
@@ -236,6 +306,77 @@ Dada la siguiente gráfica de valor ganado y costo actual y un $SPI = 1,12$ en l
 > La opción 3 es incorrecta porque el WBS NO está basada en dependencias de secuencia o tiempo entre sus componentes.
 > La opción 4 es incorrecta porque se completa cuando se cubre el total de paquetes de trabajo para el nivel de abstracción elegido. Además, no deben existir nodos con un solo hijo.
 
+##### Si se cuenta con la siguiente estimación de las tareas de un proyecto y sus respectivas dependencias, ¿cuál es la duración del camino crítico?
+
+![[Pasted image 20230704222740.png]]
+
+1. 31
+2. 37
+3. 53
+4. 31 y 37, ya que existen dos caminos críticos.
+
+> [!question]- Respuesta
+> _2. 37_
+
+##### El equipo de desarrollo utilizó la técnica de planning poker para estimar las historias de usuario. Seleccione la opción correcta:
+1. Se realiza una reunión, en la que cada integrante, por turnos, va mostrando su tarjeta y explicando el porqué de su estimación.
+2. Uno de los objetivos del product owner en el proceso de estimación es aclarar dudas que surjan de las historias de usuario.
+3. El product owner puede aceptar o rechazar la estimación dada por el equipo de desarrollo, ya que es la persona que más conoce del producto a construir y el esfuerzo necesario.
+4. Cuando no se llega a un acuerdo respecto a la estimación de una historia de usuario entre los integrantes de un equipo en la primera ronda de estimación, se realiza un promedio entre las estimaciones realizadas para dicha historia de usuario.
+
+> [!question]- Respuesta
+> _2. Uno de los objetivos del product owner en el proceso de estimación es aclarar dudas que surjan de las historias de usuario._
+
+##### Con respecto a la gestión de riesgos en los proyectos de software, ¿cuáles afirmaciones son correctas?
+1. El proceso de gestión de riesgos es un proceso iterativo que se realiza únicamente en las etapas iniciales del proyecto.
+2. La gestión de los riesgos tiene como objetivo aumentar la probabilidad y el impacto de los eventos positivos y disminuir los de los adversos.
+3. Se puede realizar tanto un análisis cuantitativo como uno cualitativo de los riesgos.
+4. Aceptar una amenaza implica identificar el riesgo y decidir no tomar medidas a menos que el riesgo se materialice.
+5. Si se agregan actividades al proyecto para reducir los riesgos, estas actividades deberían ser consideradas en el WBS.
+
+> [!question]- Respuesta
+> _2, 3, 4 y 5 son correctas_
+
+##### Un equipo está trabajando en un proyecto de 25 semanas de duración y un costo previsto de USD 30.000. Está aplicando la técnica del valor ganado. En la semana 12, calculan el SPI y el valor obtenido es 1,2. Seleccione la opción correcta:
+1. El proyecto está yendo más rápido que lo planificado.
+2. (1) y, de seguir con la misma tendencia, el proyecto terminaría antes de la semana 20.
+3. El proyecto está costando menos de lo planificado.
+4. (3) y, de seguir con la misma tendencia, el proyecto va a costar menos de USD 27.000.
+
+> [!question]- Respuesta
+> _1. El proyecto está yendo más rápido que lo planificado._
+> 
+> Porque SPI > 1.
+> No es la 2 porque con este SPI, el valor ganado a la semana 20 sería 28.800 usd (casi pero no llega).
+> $SPI_{12} = EV_{12} / PV_{12}$ -> $EV_{12} = PV_{12} * SPI_{12} = 12*(30k/25) * 1.2 = 17280$
+> -> $EV_{20} = EV_{12} / 12 * 20 = 28800$ 
+
+##### Dado un sprint de 10 días en el que se planifican completar 11 historias de usuario, y el siguiente % de avance:
+
+![[Pasted image 20230704230329.png]]
+
+Los puntos pendientes aún por concretar (para dibujar la gráfica de burn-down) al finalizar el día 4 son:
+1. 23
+2. 19,5
+3. 40
+4. 20,5
+
+> [!question]- Respuesta
+> _1. 23_
+> 
+> Contamos puntos de historias sin terminar:
+> 3+5+2+5+5+3=23
+
+##### Respecto al cronograma:
+1. La duración del proyecto siempre puede acortarse con las técnicas de fast tracking o crashing, sin incrementar los costos.
+2. La nivelación de recursos consiste en nivelar todos los caminos a la extensión del camino crítico.
+3. Solo se puede nivelar recursos moviendo actividades sin alterar la duración del camino crítico.
+4. Puede no ser posible acortar la duración del proyecto mediante la técnica de fast tracking si hay dependencias «duras» que, debido a su naturaleza, no se pueden violar.
+
+> [!question]- Respuesta
+> _4. Puede no ser posible acortar la duración del proyecto mediante la técnica de fast tracking si hay dependencias «duras» que, debido a su naturaleza, no se pueden violar._
+
+
 ### Tema: Gestión de la Configuración
 
 ##### Una de las actividades del la Gestión de la configuración es la gestión del cambio. Indique las características principales de un proceso de gestión de cambios exitoso.
@@ -265,6 +406,31 @@ _En un proyecto crítico para una organización se pone mucho énfasis en manten
 > La opción 1 es incorrecta porque en sistemas grandes este proceso puede llevar mucho tiempo.
 > La opción 2 es incorrecta porque las actividades no corresponden a la gestión de la configuración.
 > La opción 3 es incorrecta porque el control de cambios entre versiones, corresponde a la gestión de versiones y no al armado del sistema.
+
+##### En un sistema de control de versiones centralizado
+
+1. los usuarios deben copiar en su espacio de trabajo cada uno de los componentes que quieren modificar.
+2. no se permite que dos usuarios copien el mismo componente y trabajen cada uno en una versión distinta de aquel.
+3. el sistema crea siempre en el espacio de trabajo de cada usuario una copia del repositorio master del proyecto.
+4. si dos usuarios descargan y trabajan sobre el mismo componente, cuando cada uno termina y sube el componente modificado al repositorio, el último en subirse puede sobrescribir la versión del otro.
+
+> [!question]- Respuesta
+> _los usuarios deben copiar en su espacio de trabajo cada uno de los componentes que quieren modificar._
+
+##### El proceso de gestión de cambios descripto en la siguiente imagen, es apropiado en el contexto de:
+
+![[Pasted image 20230704232722.png]]
+
+1. una metodología ágil
+2. un cambio durante el desarrollo sobre un artefacto que aún no ha entrado en línea base
+3. un cambio durante el desarrollo sobre un artefacto que ya está en línea base
+4. todos los anteriores
+
+> [!question]- Respuesta
+> _un cambio durante el desarrollo sobre un artefacto que ya está en línea base_
+
+
+
 
 
 

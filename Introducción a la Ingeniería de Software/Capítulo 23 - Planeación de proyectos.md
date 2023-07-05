@@ -129,6 +129,19 @@ title: Figura planeación en XP
 
 Una gran dificultad en la planeación ágil es que depende del involucramiento y la disponibilidad del cliente. Suele ser difícil de organizar, pues los representantes del cliente en ocasiones deben dar prioridad a otros trabajos. Los clientes tal vez estén más familiarizados con planes de proyecto tradicionales y encuentren difícil participar en un proyecto de planeación ágil.
 
+## Planning Poker
+
+Variante de Wideband Delphi. Comúnmente usado en desarrollo ágil.
+Reunión:
+1. Cada participante tiene un mazo de cartas con escala de la [sucesión de Fibonacci](https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Fibonacci "Sucesión de Fibonacci") incluyendo el 0. 
+2. Se explica la historia / requisitos.
+3. Todos votan simultáneamente mostrando su carta.
+4. Los que tuvieron estimación más alta y más baja justifican.
+5. Se discute.
+6. Se itera hasta alcanzar consenso.
+
+Las cartas están numeradas de esta manera para explicar el que, cuanto mayor sea una estimación, mayor será la incertidumbre. Así, si un jugador quiere jugar un 6 se ve obligado a reconsiderar y aceptar que parte de la incertidumbre percibida no existe y jugar un 5, o aceptar una estimación más conservadora de la incertidumbre y jugar un 8.
+
 # 23.5 Técnicas de estimación
 
 Existe tanta incertidumbre que es imposible estimar con precisión los costos de desarrollo del sistema durante las primeras etapas de un proyecto. Incluso existe una dificultad fundamental en la valoración de la precisión de diferentes enfoques a la estimación del costo y esfuerzo. Con frecuencia, las estimaciones del proyecto se autosatisfacen. La estimación se utiliza para definir el presupuesto del proyecto, y el producto se ajusta para que se cumpla la cifra del presupuesto. Un proyecto que está dentro de presupuesto puede lograr esto a expensas de las características en el software a desarrollar.

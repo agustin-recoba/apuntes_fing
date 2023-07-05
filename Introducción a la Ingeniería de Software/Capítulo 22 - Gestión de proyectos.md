@@ -204,7 +204,7 @@ Clasifican a los profesionales en tres tipos:
 ![[Pasted image 20230610173359.png]]
 
 Factores de higiene:
-- Pueden destruir la motivación, pero mejorarlos, en la mayoría de los casos, no mejorará la motivación.
+- Pueden destruir la motivación, pero mejorarlos (en la mayoría de los casos) no mejorará la motivación.
 - Algunos ejemplos de factores de higiene son: Condiciones de trabajo, Salario, Vida personal, Relaciones en el trabajo, Seguridad.
 
 ### Teoría X e Y de McGregor
@@ -245,10 +245,10 @@ La cantidad de posibles canales de comunicación en un equipo de proyecto está 
 - Comprender la real intención del mensaje
 - Escucha activa
 
-### Etapas del desarrollo de un equipo
+### 5 etapas del desarrollo de un equipo
 Según Tuckman & Jensen, 1977
 
-- Un equipo puede estancarse en una de las etapas o retroceder
+- Un equipo puede estancarse en una de las etapas **o retroceder**
 - En equipos que ya trabajan juntos se puede saltear alguna de las etapas
 - La duración de una etapa depende del tamaño y liderazgo del equipo
 - 5 etapas:
