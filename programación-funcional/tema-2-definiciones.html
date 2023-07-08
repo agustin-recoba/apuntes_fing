@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:21px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:19px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -241,6 +241,10 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/liberación.html"><span class="tree-item-title">Liberación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/preguntas-2do-parcial.html"><span class="tree-item-title">Preguntas 2do parcial</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
@@ -713,10 +717,10 @@
           <div>
             <p>Es posible definir funciones a través de ecuaciones con condiciones.</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">abs</span> <span class="token hvariable">x</span> <span class="token operator">|</span> <span class="token hvariable">x</span> <span class="token operator">&gt;=</span> <span class="token number">0</span>    <span class="token operator">=</span> <span class="token hvariable">x</span> 
-      <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token operator">-</span> <span class="token hvariable">x</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">abs</span> <span class="token hvariable">x</span> <span class="token operator">|</span> <span class="token hvariable">x</span> <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token operator">=</span> <span class="token hvariable">x</span>
+              <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token operator">-</span> <span class="token hvariable">x</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>Donde otherwise es una condición que siempre es verdadera.</p>
@@ -728,9 +732,9 @@
           <div>
             <p>Una forma alternativa de definición es mediante el uso de if.</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">abs</span> <span class="token hvariable">x</span> <span class="token operator">=</span> <span class="token keyword">if</span> <span class="token hvariable">x</span> <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token keyword">then</span> <span class="token hvariable">x</span> <span class="token keyword">else</span> <span class="token operator">-</span> <span class="token hvariable">x</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">abs</span> <span class="token hvariable">x</span> <span class="token operator">=</span> <span class="token keyword">if</span> <span class="token hvariable">x</span> <span class="token operator">&gt;=</span> <span class="token number">0</span> <span class="token keyword">then</span> <span class="token hvariable">x</span> <span class="token keyword">else</span> <span class="token operator">-</span> <span class="token hvariable">x</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h2 data-heading="Pattern matching" id="Pattern_matching" style="display: flex;">
@@ -742,28 +746,28 @@
           <div>
             <p>Las funciones pueden ser definidas por casos a través del uso de patrones.</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">not</span> <span class="token constant">True</span> <span class="token operator">=</span> <span class="token constant">False</span>
-<span class="token builtin">not</span> <span class="token constant">False</span> <span class="token operator">=</span> <span class="token constant">True</span>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">not</span> <span class="token constant">True</span> <span class="token operator">=</span> <span class="token constant">False</span>
+              <span class="token builtin">not</span> <span class="token constant">False</span> <span class="token operator">=</span> <span class="token constant">True</span>
 
-<span class="token constant">True</span>  <span class="token operator">&amp;&amp;</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token hvariable">b</span>
-<span class="token constant">False</span> <span class="token operator">&amp;&amp;</span> <span class="token hvariable">_</span> <span class="token operator">=</span> <span class="token constant">False</span>
-</code><button class="copy-code-button">Copy</button></pre>
+              <span class="token constant">True</span> <span class="token operator">&amp;&amp;</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token hvariable">b</span>
+              <span class="token constant">False</span> <span class="token operator">&amp;&amp;</span> <span class="token hvariable">_</span> <span class="token operator">=</span> <span class="token constant">False</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>Los patrones satisfacen la siguiente gramática:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">pat</span> <span class="token operator">::=</span> <span class="token hvariable">_</span>                <span class="token comment">-- wildcard</span>
-	<span class="token operator">|</span> <span class="token hvariable">variable</span>
-	<span class="token operator">|</span> <span class="token hvariable">literal</span>
-	<span class="token operator">|</span> <span class="token punctuation">(</span><span class="token hvariable">pat_1</span> <span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">,</span> <span class="token hvariable">pat_m</span><span class="token punctuation">)</span>
-	<span class="token operator">|</span> <span class="token punctuation">(</span><span class="token hvariable">pat_x</span> <span class="token operator">:</span> <span class="token hvariable">pat_xs</span><span class="token punctuation">)</span>
-	<span class="token operator">|</span> <span class="token constant">C</span> <span class="token hvariable">pat_1</span> <span class="token operator">...</span> <span class="token hvariable">pat_n</span>  <span class="token comment">-- C denota un constructor</span>
-	<span class="token operator">|</span> <span class="token hvariable">var</span><span class="token operator">@</span><span class="token hvariable">pat</span>            <span class="token comment">-- as pattern</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">pat</span> <span class="token operator">::=</span> <span class="token hvariable">_</span> <span class="token comment">-- wildcard</span>
+              <span class="token operator">|</span> <span class="token hvariable">variable</span>
+              <span class="token operator">|</span> <span class="token hvariable">literal</span>
+              <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token hvariable">pat_1</span> <span class="token punctuation">,</span> <span class="token operator">...</span><span class="token punctuation">,</span> <span class="token hvariable">pat_m</span><span class="token punctuation">)</span>
+              <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token hvariable">pat_x</span> <span class="token operator">:</span> <span class="token hvariable">pat_xs</span><span class="token punctuation">)</span>
+              <span class="token operator">|</span> <span class="token constant">C</span> <span class="token hvariable">pat_1</span> <span class="token operator">...</span> <span class="token hvariable">pat_n</span> <span class="token comment">-- C denota un constructor</span>
+              <span class="token operator">|</span> <span class="token hvariable">var</span><span class="token operator">@</span><span class="token hvariable">pat</span> <span class="token comment">-- as pattern</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="admonition-parent admonition-example-parent">
+          <div class="code-block-wrap admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin " style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -771,27 +775,27 @@
                   </svg></div>
                 <div class="callout-title-inner admonition-title-content">Ejemplos</div>
               </div>
-              <div class="callout-content admonition-content">
+              <div class="callout-content admonition-content code-block-wrap">
                 <div class="admonition-content-copy"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy">
                     <rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect>
                     <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                   </svg></div>
-                <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">fst</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span>
-<span class="token builtin">fst</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">_</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span>
-<span class="token builtin">snd</span> <span class="token punctuation">(</span><span class="token hvariable">_</span><span class="token punctuation">,</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">y</span>
+                <pre class="language-haskell code-block-pre__has-linenum" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">fst</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span>
+                  <span class="token builtin">fst</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">_</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span>
+                  <span class="token builtin">snd</span> <span class="token punctuation">(</span><span class="token hvariable">_</span><span class="token punctuation">,</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">y</span>
 
-<span class="token builtin">head</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token operator">:</span><span class="token hvariable">_</span><span class="token punctuation">)</span>   <span class="token operator">=</span> <span class="token hvariable">x</span>
-<span class="token builtin">tail</span> <span class="token punctuation">(</span><span class="token hvariable">_</span><span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">xs</span>
+                  <span class="token builtin">head</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token operator">:</span><span class="token hvariable">_</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span>
+                  <span class="token builtin">tail</span> <span class="token punctuation">(</span><span class="token hvariable">_</span><span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">xs</span>
 
-<span class="token hvariable">duplica</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>   <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span>
-<span class="token hvariable">duplica</span> <span class="token hvariable">s</span><span class="token operator">@</span><span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">s</span> 
+                  <span class="token hvariable">duplica</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span>
+                  <span class="token hvariable">duplica</span> <span class="token hvariable">s</span><span class="token operator">@</span><span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">s</span>
 
-<span class="token keyword">data</span> <span class="token constant">AoB</span> <span class="token operator">=</span> <span class="token constant">A</span> <span class="token constant">Int</span> <span class="token operator">|</span> <span class="token constant">B</span>
-<span class="token hvariable">g</span> <span class="token operator">::</span> <span class="token constant">AoB</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span> 
-<span class="token hvariable">g</span> <span class="token punctuation">(</span><span class="token constant">A</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">8</span> 
-<span class="token hvariable">g</span> <span class="token punctuation">(</span><span class="token constant">A</span> <span class="token hvariable">x</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span> 
-<span class="token hvariable">g</span> <span class="token constant">B</span>     <span class="token operator">=</span> <span class="token number">0</span>
-</code><button class="copy-code-button">Copy</button></pre>
+                  <span class="token keyword">data</span> <span class="token constant">AoB</span> <span class="token operator">=</span> <span class="token constant">A</span> <span class="token constant">Int</span> <span class="token operator">|</span> <span class="token constant">B</span>
+                  <span class="token hvariable">g</span> <span class="token operator">::</span> <span class="token constant">AoB</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span>
+                  <span class="token hvariable">g</span> <span class="token punctuation">(</span><span class="token constant">A</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">8</span>
+                  <span class="token hvariable">g</span> <span class="token punctuation">(</span><span class="token constant">A</span> <span class="token hvariable">x</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span>
+                  <span class="token hvariable">g</span> <span class="token constant">B</span> <span class="token operator">=</span> <span class="token number">0</span>
+                </code><button class="copy-code-button">Copy</button><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span></pre>
               </div>
             </div>
           </div>
@@ -805,10 +809,10 @@
           <div>
             <p><strong>Definiciones locales</strong> pueden ser introducidas por el uso de la palabra reservada where.</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span>
-	<span class="token keyword">where</span> <span class="token hvariable">a</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span>
+              <span class="token keyword">where</span> <span class="token hvariable">a</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>El <strong>alcance</strong> de dicha definición local es la expresión en la parte derecha de la definición de<code>f</code>.</p>
@@ -826,10 +830,10 @@
           <div>
             <p>Una forma alternativa de escribir definiciones locales es mediante el uso de <strong>let</strong>:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span> <span class="token operator">=</span> <span class="token keyword">let</span> <span class="token hvariable">a</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span> 
-		<span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span> <span class="token operator">=</span> <span class="token keyword">let</span> <span class="token hvariable">a</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span>
+              <span class="token keyword">in</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>El alcance de las definiciones locales es la expresión en el <strong>in</strong>.<br>
@@ -846,30 +850,30 @@
             <p>A las funciones definidas en forma infija se le suele llamar operadores.<br>
               Al escribir un operador entre paréntesis lo convertimos en una función prefija currificada:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span> <span class="token number">3</span> <span class="token number">4</span>
-<span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token number">7</span> <span class="token number">8</span>
-<span class="token punctuation">(</span><span class="token operator">&lt;=</span><span class="token punctuation">)</span> <span class="token number">2</span> <span class="token number">3</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span> <span class="token number">3</span> <span class="token number">4</span>
+              <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token number">7</span> <span class="token number">8</span>
+              <span class="token punctuation">(</span><span class="token operator">&lt;=</span><span class="token punctuation">)</span> <span class="token number">2</span> <span class="token number">3</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>De esta forma el operador puede ser pasado como argumento a funciones:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">suma</span> <span class="token operator">=</span> <span class="token builtin">uncurry</span> <span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span>
-<span class="token hvariable">leq</span>  <span class="token operator">=</span> <span class="token builtin">uncurry</span> <span class="token punctuation">(</span><span class="token operator">&lt;=</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">suma</span> <span class="token operator">=</span> <span class="token builtin">uncurry</span> <span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span>
+              <span class="token hvariable">leq</span> <span class="token operator">=</span> <span class="token builtin">uncurry</span> <span class="token punctuation">(</span><span class="token operator">&lt;=</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>La aplicación de un operador en forma infija requiere que el mismo esté saturado, esto es, que se le pasen todos sus argumentos.<br>
               La expresión 3 + 4 es correcta, mientras que 3+ no lo es.<br>
               En cambio, al escribir un operador entre paréntesis es posible parametrizarlo parcialmente:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span> <span class="token number">3</span>
-<span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token number">7</span>
-<span class="token punctuation">(</span><span class="token operator">&lt;=</span><span class="token punctuation">)</span> <span class="token number">2</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token operator">+</span><span class="token punctuation">)</span> <span class="token number">3</span>
+              <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token number">7</span>
+              <span class="token punctuation">(</span><span class="token operator">&lt;=</span><span class="token punctuation">)</span> <span class="token number">2</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="Secciones" id="Secciones" style="display: flex;">
@@ -882,18 +886,18 @@
             <p>Las secciones son una sintaxis especial para expresar la parametrización parcial de un operador infijo.<br>
               Se encierra entre paréntesis el operador junto a uno de sus argumentos.</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token number">7</span><span class="token operator">*</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">&lt;=</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token operator">*</span><span class="token number">4</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span><span class="token punctuation">)</span>
+              <span class="token punctuation">(</span><span class="token number">7</span><span class="token operator">*</span><span class="token punctuation">)</span>
+              <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">&lt;=</span><span class="token punctuation">)</span>
+              <span class="token punctuation">(</span><span class="token operator">*</span><span class="token number">4</span><span class="token punctuation">)</span>
+              <span class="token punctuation">(</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
 
-<span class="token comment">-- Ejemplos</span>
-<span class="token builtin">filter</span> <span class="token punctuation">(</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
-<span class="token builtin">map</span> <span class="token punctuation">(</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
-<span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span><span class="token punctuation">)</span> <span class="token operator">.</span> <span class="token builtin">abs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+              <span class="token comment">-- Ejemplos</span>
+              <span class="token builtin">filter</span> <span class="token punctuation">(</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">)</span>
+              <span class="token builtin">map</span> <span class="token punctuation">(</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+              <span class="token punctuation">(</span><span class="token number">3</span><span class="token operator">+</span><span class="token punctuation">)</span> <span class="token operator">.</span> <span class="token builtin">abs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h2 data-heading="Definiciones anónimas" id="Definiciones_anónimas" style="display: flex;">
@@ -912,10 +916,10 @@
           <div>
             <p>Las definiciones de funciones con nombre también pueden ser vistas como definiciones en términos de expresiones lambda:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">suma1</span> <span class="token operator">=</span> <span class="token operator">\</span><span class="token hvariable">x</span> <span class="token operator">-&gt;</span> <span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token number">1</span>
-<span class="token hvariable">add</span>   <span class="token operator">=</span> <span class="token operator">\</span><span class="token hvariable">x</span> <span class="token operator">-&gt;</span> <span class="token punctuation">(</span><span class="token operator">\</span><span class="token hvariable">y</span> <span class="token operator">-&gt;</span> <span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token hvariable">y</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">suma1</span> <span class="token operator">=</span> <span class="token operator">\</span><span class="token hvariable">x</span> <span class="token operator">-&gt;</span> <span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token number">1</span>
+              <span class="token hvariable">add</span> <span class="token operator">=</span> <span class="token operator">\</span><span class="token hvariable">x</span> <span class="token operator">-&gt;</span> <span class="token punctuation">(</span><span class="token operator">\</span><span class="token hvariable">y</span> <span class="token operator">-&gt;</span> <span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token hvariable">y</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h1 data-heading="Operaciones sobre listas" id="Operaciones_sobre_listas">Operaciones sobre listas</h1>
@@ -924,10 +928,10 @@
             <p>Las listas son un tipo polimórfico.<br>
               Constructores:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-<span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token hvariable">a</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+              <span class="token punctuation">(</span><span class="token operator">:</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token hvariable">a</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h2 data-heading="Generador de listas" id="Generador_de_listas" style="display: flex;">
@@ -941,7 +945,7 @@
               Por ejemplo, <code>[1..4]</code> denota la lista <code>[1, 2, 3, 4]</code>.<br>
               Si m &gt; n denota la lista vacía <code>[]</code>.</p>
           </div>
-          <div class="admonition-parent admonition-example-parent">
+          <div class="code-block-wrap admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin " style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -949,15 +953,15 @@
                   </svg></div>
                 <div class="callout-title-inner admonition-title-content">Ejemplo</div>
               </div>
-              <div class="callout-content admonition-content">
+              <div class="callout-content admonition-content code-block-wrap">
                 <div class="admonition-content-copy"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy">
                     <rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect>
                     <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                   </svg></div>
-                <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">m</span> <span class="token operator">`divide`</span> <span class="token hvariable">n</span> <span class="token operator">=</span> <span class="token hvariable">n</span> <span class="token operator">`mod`</span> <span class="token hvariable">m</span> <span class="token operator">==</span> <span class="token number">0</span>
-<span class="token hvariable">divisores</span> <span class="token hvariable">n</span>  <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token hvariable">d</span> <span class="token operator">|</span> <span class="token hvariable">d</span> <span class="token operator">&lt;-</span> <span class="token punctuation">[</span><span class="token number">1</span> <span class="token operator">.</span> <span class="token operator">.</span> <span class="token hvariable">n</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token hvariable">d</span> <span class="token operator">`divide`</span> <span class="token hvariable">n</span><span class="token punctuation">]</span>
-<span class="token hvariable">mcd</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span>      <span class="token operator">=</span> <span class="token builtin">maximum</span> <span class="token punctuation">[</span><span class="token hvariable">d</span> <span class="token operator">|</span> <span class="token hvariable">d</span> <span class="token operator">&lt;-</span> <span class="token hvariable">divisores</span> <span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">d</span> <span class="token operator">`divide`</span> <span class="token hvariable">y</span><span class="token punctuation">]</span>
-</code><button class="copy-code-button">Copy</button></pre>
+                <pre class="language-haskell code-block-pre__has-linenum" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">m</span> <span class="token operator">`divide`</span> <span class="token hvariable">n</span> <span class="token operator">=</span> <span class="token hvariable">n</span> <span class="token operator">`mod`</span> <span class="token hvariable">m</span> <span class="token operator">==</span> <span class="token number">0</span>
+                  <span class="token hvariable">divisores</span> <span class="token hvariable">n</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token hvariable">d</span> <span class="token operator">|</span> <span class="token hvariable">d</span> <span class="token operator">&lt;-</span> <span class="token punctuation">[</span><span class="token number">1</span> <span class="token operator">.</span> <span class="token operator">.</span> <span class="token hvariable">n</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token hvariable">d</span> <span class="token operator">`divide`</span> <span class="token hvariable">n</span><span class="token punctuation">]</span>
+                  <span class="token hvariable">mcd</span> <span class="token hvariable">x</span> <span class="token hvariable">y</span> <span class="token operator">=</span> <span class="token builtin">maximum</span> <span class="token punctuation">[</span><span class="token hvariable">d</span> <span class="token operator">|</span> <span class="token hvariable">d</span> <span class="token operator">&lt;-</span> <span class="token hvariable">divisores</span> <span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">d</span> <span class="token operator">`divide`</span> <span class="token hvariable">y</span><span class="token punctuation">]</span>
+                </code><button class="copy-code-button">Copy</button><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span></pre>
               </div>
             </div>
           </div>
@@ -995,9 +999,9 @@
                 </svg></div><code>drop n xs</code>
             </h3>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">drop</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">drop</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <ul class="has-list-bullet">
@@ -1019,9 +1023,9 @@
                 </svg></div>Propiedad:
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token builtin">take</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token builtin">drop</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token builtin">take</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token builtin">drop</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="`last xs`" id="last_xs" style="display: flex;">
@@ -1037,10 +1041,10 @@
               </li>
             </ul>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">last</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token hvariable">a</span>
-<span class="token builtin">last</span> <span class="token hvariable">xs</span> <span class="token operator">=</span> <span class="token builtin">head</span> <span class="token operator">$</span> <span class="token builtin">drop</span> <span class="token punctuation">(</span><span class="token builtin">length</span> <span class="token hvariable">xs</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">last</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token hvariable">a</span>
+              <span class="token builtin">last</span> <span class="token hvariable">xs</span> <span class="token operator">=</span> <span class="token builtin">head</span> <span class="token operator">$</span> <span class="token builtin">drop</span> <span class="token punctuation">(</span><span class="token builtin">length</span> <span class="token hvariable">xs</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="`splitAt n xs`" id="splitAt_n_xs" style="display: flex;">
@@ -1056,10 +1060,10 @@
               </li>
             </ul>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">splitAt</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token builtin">splitAt</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token builtin">take</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span><span class="token punctuation">,</span> <span class="token builtin">drop</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">splitAt</span> <span class="token operator">::</span> <span class="token constant">Int</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+              <span class="token builtin">splitAt</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token builtin">take</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span><span class="token punctuation">,</span> <span class="token builtin">drop</span> <span class="token hvariable">n</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="`takeWhile p xs`" id="takeWhile_p_xs" style="display: flex;">
@@ -1075,9 +1079,9 @@
               </li>
             </ul>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">takeWhile</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">takeWhile</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="`dropWhile p xs`" id="dropWhile_p_xs" style="display: flex;">
@@ -1093,9 +1097,9 @@
               </li>
             </ul>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">takeWhile</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">takeWhile</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="`span p xs`" id="span_p_xs" style="display: flex;">
@@ -1111,10 +1115,10 @@
               </li>
             </ul>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">span</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-<span class="token builtin">span</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token builtin">takeWhile</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span><span class="token punctuation">,</span> <span class="token builtin">dropWhile</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">span</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+              <span class="token builtin">span</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token builtin">takeWhile</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span><span class="token punctuation">,</span> <span class="token builtin">dropWhile</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="`zip ys xs`" id="zip_ys_xs" style="display: flex;">
@@ -1130,12 +1134,12 @@
               </li>
             </ul>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">zip</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">b</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token hvariable">a</span><span class="token punctuation">,</span> <span class="token hvariable">b</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-<span class="token builtin">zip</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>     <span class="token hvariable">_</span>      <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token builtin">zip</span> <span class="token hvariable">_</span>      <span class="token punctuation">[</span><span class="token punctuation">]</span>     <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token builtin">zip</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token operator">:</span><span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token hvariable">y</span><span class="token operator">:</span><span class="token hvariable">ys</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token builtin">zip</span> <span class="token hvariable">xs</span> <span class="token hvariable">ys</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">zip</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">b</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token hvariable">a</span><span class="token punctuation">,</span> <span class="token hvariable">b</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+              <span class="token builtin">zip</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token hvariable">_</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token builtin">zip</span> <span class="token hvariable">_</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token builtin">zip</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token operator">:</span><span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token hvariable">y</span><span class="token operator">:</span><span class="token hvariable">ys</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span><span class="token punctuation">,</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token builtin">zip</span> <span class="token hvariable">xs</span> <span class="token hvariable">ys</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="`zipWith f ys xs`" id="zipWith_f_ys_xs" style="display: flex;">
@@ -1151,10 +1155,10 @@
               </li>
             </ul>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">zipWith</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token hvariable">c</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">b</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">c</span><span class="token punctuation">]</span>
-<span class="token builtin">zipWith</span> <span class="token hvariable">f</span> <span class="token hvariable">xs</span> <span class="token hvariable">ys</span> <span class="token operator">=</span> <span class="token builtin">map</span> <span class="token punctuation">(</span><span class="token builtin">uncurry</span> <span class="token hvariable">f</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token builtin">zip</span> <span class="token hvariable">xs</span> <span class="token hvariable">ys</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">zipWith</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token hvariable">c</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">b</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">c</span><span class="token punctuation">]</span>
+              <span class="token builtin">zipWith</span> <span class="token hvariable">f</span> <span class="token hvariable">xs</span> <span class="token hvariable">ys</span> <span class="token operator">=</span> <span class="token builtin">map</span> <span class="token punctuation">(</span><span class="token builtin">uncurry</span> <span class="token hvariable">f</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token builtin">zip</span> <span class="token hvariable">xs</span> <span class="token hvariable">ys</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="`iterate f ini`" id="iterate_f_ini" style="display: flex;">
@@ -1170,10 +1174,10 @@
               </li>
             </ul>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">iterate</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-<span class="token builtin">iterate</span> <span class="token hvariable">f</span> <span class="token hvariable">ini</span> <span class="token operator">=</span> <span class="token hvariable">ini</span><span class="token operator">:</span><span class="token builtin">iterate</span> <span class="token hvariable">f</span> <span class="token punctuation">(</span><span class="token hvariable">f</span> <span class="token hvariable">ini</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">iterate</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+              <span class="token builtin">iterate</span> <span class="token hvariable">f</span> <span class="token hvariable">ini</span> <span class="token operator">=</span> <span class="token hvariable">ini</span><span class="token operator">:</span><span class="token builtin">iterate</span> <span class="token hvariable">f</span> <span class="token punctuation">(</span><span class="token hvariable">f</span> <span class="token hvariable">ini</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h1 data-heading="Funciones Recursivas" id="Funciones_Recursivas">Funciones Recursivas</h1>
@@ -1199,11 +1203,11 @@
                 </svg></div><code>length xs</code>
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">length</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span>
-<span class="token builtin">length</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token number">0</span>
-<span class="token builtin">length</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token builtin">length</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">length</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token constant">Int</span>
+              <span class="token builtin">length</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+              <span class="token builtin">length</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token builtin">length</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="`sum xs`" id="sum_xs" style="display: flex;">
@@ -1212,11 +1216,11 @@
                 </svg></div><code>sum xs</code>
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">sum</span> <span class="token operator">::</span> <span class="token constant">Num</span> <span class="token hvariable">a</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span>
-<span class="token builtin">sum</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token number">0</span>
-<span class="token builtin">sum</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token builtin">sum</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">sum</span> <span class="token operator">::</span> <span class="token constant">Num</span> <span class="token hvariable">a</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span>
+              <span class="token builtin">sum</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+              <span class="token builtin">sum</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">+</span> <span class="token builtin">sum</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="`all p xs`" id="all_p_xs" style="display: flex;">
@@ -1225,11 +1229,11 @@
                 </svg></div><code>all p xs</code>
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">all</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span>
-<span class="token builtin">all</span> <span class="token hvariable">p</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token constant">True</span>
-<span class="token builtin">all</span> <span class="token hvariable">p</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">p</span> <span class="token hvariable">x</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin">all</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">all</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span>
+              <span class="token builtin">all</span> <span class="token hvariable">p</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token constant">True</span>
+              <span class="token builtin">all</span> <span class="token hvariable">p</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">p</span> <span class="token hvariable">x</span> <span class="token operator">&amp;&amp;</span> <span class="token builtin">all</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="`map f xs`" id="map_f_xs" style="display: flex;">
@@ -1238,11 +1242,11 @@
                 </svg></div><code>map f xs</code>
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">map</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">b</span><span class="token punctuation">]</span>
-<span class="token builtin">map</span> <span class="token hvariable">f</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token builtin">map</span> <span class="token hvariable">f</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token builtin">map</span> <span class="token hvariable">f</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">map</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">b</span><span class="token punctuation">]</span>
+              <span class="token builtin">map</span> <span class="token hvariable">f</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token builtin">map</span> <span class="token hvariable">f</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token builtin">map</span> <span class="token hvariable">f</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="`filter p xs`" id="filter_p_xs" style="display: flex;">
@@ -1251,12 +1255,12 @@
                 </svg></div><code>filter p xs</code>
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">filter</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> → <span class="token constant">Bool</span><span class="token punctuation">)</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-<span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token punctuation">[</span> <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token punctuation">]</span>
-<span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token hvariable">p</span> <span class="token hvariable">x</span>       <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span>
-				  <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">filter</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> → <span class="token constant">Bool</span><span class="token punctuation">)</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+              <span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token punctuation">[</span> <span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span> <span class="token punctuation">]</span>
+              <span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token hvariable">p</span> <span class="token hvariable">x</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span>
+              <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="`xs ++ ys` (append)" id="xs_++_ys_(append)" style="display: flex;">
@@ -1265,11 +1269,11 @@
                 </svg></div><code>xs ++ ys</code> (append)
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">++</span> <span class="token hvariable">ys</span>       <span class="token operator">=</span> <span class="token hvariable">ys</span>
-<span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">++</span> <span class="token hvariable">ys</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token punctuation">(</span><span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token hvariable">ys</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token punctuation">(</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+              <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">++</span> <span class="token hvariable">ys</span> <span class="token operator">=</span> <span class="token hvariable">ys</span>
+              <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">++</span> <span class="token hvariable">ys</span> <span class="token operator">=</span> <span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token punctuation">(</span><span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token hvariable">ys</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="`concat xss`" id="concat_xss" style="display: flex;">
@@ -1278,11 +1282,11 @@
                 </svg></div><code>concat xss</code>
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">concat</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-<span class="token builtin">concat</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>         <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token builtin">concat</span> <span class="token punctuation">(</span><span class="token hvariable">xs</span> <span class="token operator">:</span> <span class="token hvariable">xss</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token builtin">concat</span> <span class="token hvariable">xss</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">concat</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+              <span class="token builtin">concat</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token builtin">concat</span> <span class="token punctuation">(</span><span class="token hvariable">xs</span> <span class="token operator">:</span> <span class="token hvariable">xss</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token builtin">concat</span> <span class="token hvariable">xss</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div class="is-collapsed">
             <h4 data-heading="`reverse xs`" id="reverse_xs" style="display: flex;">
@@ -1291,11 +1295,11 @@
                 </svg></div><code>reverse xs</code>
             </h4>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">reverse</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-<span class="token builtin">reverse</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-<span class="token builtin">reverse</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token builtin">reverse</span> <span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token punctuation">[</span><span class="token hvariable">x</span><span class="token punctuation">]</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">reverse</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+              <span class="token builtin">reverse</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token builtin">reverse</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token builtin">reverse</span> <span class="token hvariable">xs</span> <span class="token operator">++</span> <span class="token punctuation">[</span><span class="token hvariable">x</span><span class="token punctuation">]</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h2 data-heading="`foldr`" id="foldr" style="display: flex;">
@@ -1304,21 +1308,21 @@
                 </svg></div><code>foldr</code>
             </h2>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">foldr</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> → <span class="token hvariable">b</span> → <span class="token hvariable">b</span><span class="token punctuation">)</span> → <span class="token hvariable">b</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token hvariable">b</span>
-<span class="token builtin">foldr</span> <span class="token hvariable">f</span> <span class="token hvariable">e</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token hvariable">e</span>
-<span class="token builtin">foldr</span> <span class="token hvariable">f</span> <span class="token hvariable">e</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token punctuation">(</span><span class="token builtin">foldr</span> <span class="token hvariable">f</span> <span class="token hvariable">e</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">foldr</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> → <span class="token hvariable">b</span> → <span class="token hvariable">b</span><span class="token punctuation">)</span> → <span class="token hvariable">b</span> → <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token hvariable">b</span>
+              <span class="token builtin">foldr</span> <span class="token hvariable">f</span> <span class="token hvariable">e</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token hvariable">e</span>
+              <span class="token builtin">foldr</span> <span class="token hvariable">f</span> <span class="token hvariable">e</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token punctuation">(</span><span class="token builtin">foldr</span> <span class="token hvariable">f</span> <span class="token hvariable">e</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>Es un esquema o patrón de recursión que captura definiciones por recursión estructural.<br>
               Cualquier definición recursiva estructural de la forma:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">h</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token hvariable">b</span> 
-<span class="token hvariable">h</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token hvariable">e</span> 
-<span class="token hvariable">h</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token punctuation">(</span><span class="token hvariable">h</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">h</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> → <span class="token hvariable">b</span>
+              <span class="token hvariable">h</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token hvariable">e</span>
+              <span class="token hvariable">h</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">f</span> <span class="token hvariable">x</span> <span class="token punctuation">(</span><span class="token hvariable">h</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>Se puede escribir como <code>h = foldr f e</code>.</p>
@@ -1326,12 +1330,12 @@
           <div>
             <p>Dada una función f y un valor e:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">foldr</span> <span class="token hvariable">f</span> <span class="token hvariable">e</span> <span class="token punctuation">(</span><span class="token hvariable">x1</span> <span class="token operator">:</span> <span class="token hvariable">x2</span> <span class="token operator">:</span> <span class="token operator">...</span> <span class="token operator">:</span> <span class="token hvariable">xn</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-	<span class="token operator">=</span> <span class="token hvariable">x1</span> <span class="token operator">`f`</span> <span class="token punctuation">(</span><span class="token hvariable">x2</span> <span class="token operator">`f`</span> <span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">(</span><span class="token hvariable">xn</span> <span class="token operator">`f`</span> <span class="token hvariable">e</span><span class="token punctuation">)</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">foldr</span> <span class="token hvariable">f</span> <span class="token hvariable">e</span> <span class="token punctuation">(</span><span class="token hvariable">x1</span> <span class="token operator">:</span> <span class="token hvariable">x2</span> <span class="token operator">:</span> <span class="token operator">...</span> <span class="token operator">:</span> <span class="token hvariable">xn</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+              <span class="token operator">=</span> <span class="token hvariable">x1</span> <span class="token operator">`f`</span> <span class="token punctuation">(</span><span class="token hvariable">x2</span> <span class="token operator">`f`</span> <span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">(</span><span class="token hvariable">xn</span> <span class="token operator">`f`</span> <span class="token hvariable">e</span><span class="token punctuation">)</span><span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="admonition-parent admonition-example-parent">
+          <div class="code-block-wrap admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin is-collapsible is-collapsed" style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="+">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -1360,20 +1364,20 @@
                 </svg></div><code>foldl</code>
             </h2>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">foldl</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span>
-<span class="token builtin">foldl</span> <span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token hvariable">v</span>
-<span class="token builtin">foldl</span> <span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token builtin">foldl</span> <span class="token hvariable">f</span> <span class="token punctuation">(</span><span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token hvariable">x</span><span class="token punctuation">)</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">foldl</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span>
+              <span class="token builtin">foldl</span> <span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token hvariable">v</span>
+              <span class="token builtin">foldl</span> <span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token builtin">foldl</span> <span class="token hvariable">f</span> <span class="token punctuation">(</span><span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token hvariable">x</span><span class="token punctuation">)</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>Estamos ante un nuevo esquema de recursión que ahora captura definiciones recursivas de la forma:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">h</span> <span class="token operator">::</span> <span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span>
-<span class="token hvariable">h</span> <span class="token hvariable">v</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token hvariable">v</span>
-<span class="token hvariable">h</span> <span class="token hvariable">v</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">h</span> <span class="token punctuation">(</span><span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token hvariable">x</span><span class="token punctuation">)</span> <span class="token hvariable">xs</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">h</span> <span class="token operator">::</span> <span class="token hvariable">b</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token hvariable">b</span>
+              <span class="token hvariable">h</span> <span class="token hvariable">v</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token hvariable">v</span>
+              <span class="token hvariable">h</span> <span class="token hvariable">v</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">h</span> <span class="token punctuation">(</span><span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token hvariable">x</span><span class="token punctuation">)</span> <span class="token hvariable">xs</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>Notar que el valor v juega el rol de acumulador, al que hay que darle un valor inicial.</p>
@@ -1381,12 +1385,12 @@
           <div>
             <p>Dada una función f y un valor v:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">foldl</span> <span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token punctuation">(</span><span class="token hvariable">x1</span> <span class="token operator">:</span> <span class="token hvariable">x2</span> <span class="token operator">:</span> <span class="token operator">...</span> <span class="token operator">:</span> <span class="token hvariable">xn</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-	<span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token hvariable">v</span> <span class="token operator">`f`</span> <span class="token hvariable">x1</span><span class="token punctuation">)</span> <span class="token operator">`f`</span> <span class="token hvariable">x2</span><span class="token punctuation">)</span><span class="token operator">...</span><span class="token punctuation">)</span> <span class="token operator">`f`</span> <span class="token hvariable">xn</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">foldl</span> <span class="token hvariable">f</span> <span class="token hvariable">v</span> <span class="token punctuation">(</span><span class="token hvariable">x1</span> <span class="token operator">:</span> <span class="token hvariable">x2</span> <span class="token operator">:</span> <span class="token operator">...</span> <span class="token operator">:</span> <span class="token hvariable">xn</span> <span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+              <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token hvariable">v</span> <span class="token operator">`f`</span> <span class="token hvariable">x1</span><span class="token punctuation">)</span> <span class="token operator">`f`</span> <span class="token hvariable">x2</span><span class="token punctuation">)</span><span class="token operator">...</span><span class="token punctuation">)</span> <span class="token operator">`f`</span> <span class="token hvariable">xn</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
-          <div class="admonition-parent admonition-example-parent">
+          <div class="code-block-wrap admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin " style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

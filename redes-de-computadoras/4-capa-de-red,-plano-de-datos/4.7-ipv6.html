@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:21px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:19px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -241,6 +241,10 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/liberación.html"><span class="tree-item-title">Liberación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/preguntas-2do-parcial.html"><span class="tree-item-title">Preguntas 2do parcial</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
@@ -824,7 +828,7 @@
               </li>
             </ul>
           </div>
-          <div class="admonition-parent admonition-example-parent">
+          <div class="code-block-wrap admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin is-collapsible is-collapsed" style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="+">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -964,7 +968,7 @@
           <div>
             <p>Los mensajes que se utilizan para descubrir y anunciar las direcciones MAC de un vecino asociadas a cierta dirección IPv6 son <strong>Neighbor Solicitation</strong> y <strong>Neighbor Advertisement</strong>. Cuando un host desea conocer la direccion MAC asociada a un vecino HOST-A envía un mensaje ND, con destino IPv6 la dirección de multicast asociada a todos los hosts (ff02::1) y con dirección de destino a nivel mac, la asociada a dicho grupo de multicast (que no es broadcast). En el payload de ICMPv6, el mensaje ND contiene la dirección objetivo de la consulta. La eventual respuesta (si existe y es alcanzable en ese momento el destino) será enviado en un mensaje de tipo unicast con las direcciones origen y destino esperadas a nivel de cabezales MAC e IPv6. En el payload ICMPv6 viene la respuesta a la consulta donde se indica la dirección MAC solicitada.</p>
           </div>
-          <div class="admonition-parent admonition-info-parent">
+          <div class="code-block-wrap admonition-parent admonition-info-parent">
             <div class="callout admonition admonition-info admonition-plugin " style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -993,28 +997,28 @@
           <div>
             <p>Pseudocódigo del algoritmo por bipartición. Asumo que dispongo de una función para el envío de un mensaje ICMP echo request.</p>
           </div>
-          <div>
-            <pre class="language-c" tabindex="0"><code class="language-c is-loaded"><span class="token keyword">int</span> <span class="token function">pathMTUDiscovery</span><span class="token punctuation">(</span>IPv6_address IP_O<span class="token punctuation">,</span> IP_D<span class="token punctuation">)</span>
-	<span class="token keyword">int</span> max_mtu <span class="token operator">=</span> link<span class="token punctuation">.</span><span class="token function">getMTU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// el valor máximo lo define el enlace </span>
-	<span class="token keyword">int</span> min_mtu<span class="token operator">=</span> <span class="token number">1280</span><span class="token punctuation">;</span>  <span class="token comment">//según RFC 2460 </span>
-	<span class="token keyword">int</span> cant_fallos<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> 
-	<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>max_mtu – min_mtu<span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">1</span><span class="token punctuation">)</span> 
-		mtu_candidato <span class="token operator">=</span> <span class="token punctuation">(</span>max_mtu <span class="token operator">+</span> min_mtu<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span> 
-		<span class="token function">envio_ICMP_ER</span><span class="token punctuation">(</span>IP_O<span class="token punctuation">,</span>IP_D<span class="token punctuation">,</span>mtu_candidato<span class="token punctuation">)</span><span class="token punctuation">;</span> 
-		<span class="token keyword">switch</span> event<span class="token operator">:</span> 
-			timeout<span class="token operator">:</span> <span class="token comment">//no se lo que pasó: hubo retardo o se perdió el mensaje </span>
-				<span class="token keyword">if</span> <span class="token punctuation">(</span>cant_fallos <span class="token operator">&lt;</span> MAX_FALLOS_ADMITIDOS<span class="token punctuation">)</span> 
-					cant_fallos<span class="token operator">++</span><span class="token punctuation">;</span> 
-				<span class="token keyword">else</span> 
-					<span class="token keyword">return</span> <span class="token number">1280</span><span class="token punctuation">;</span>  <span class="token comment">// no pude determinar el MTU, pero </span>
-								 <span class="token comment">// devuelvo un MTU válido </span>
-			ICMP_echo_reply<span class="token operator">:</span> <span class="token comment">// mtu_candidato es un MTU válido </span>
-				min_mtu <span class="token operator">=</span> mtu_candidato<span class="token punctuation">;</span> 
-			ICMP_packet_too_big<span class="token operator">:</span> <span class="token comment">//mtu_candidato excede el pathMTU </span>
-				max_mtu <span class="token operator">=</span> mtu_candidato<span class="token punctuation">;</span> 
-	end<span class="token punctuation">;</span> <span class="token comment">//while</span>
-	<span class="token keyword">return</span> min_mtu<span class="token punctuation">;</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-c" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">C</div></pre><code class="language-c is-loaded"><span class="token keyword">int</span> <span class="token function">pathMTUDiscovery</span><span class="token punctuation">(</span>IPv6_address IP_O<span class="token punctuation">,</span> IP_D<span class="token punctuation">)</span>
+              <span class="token keyword">int</span> max_mtu <span class="token operator">=</span> link<span class="token punctuation">.</span><span class="token function">getMTU</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// el valor máximo lo define el enlace </span>
+              <span class="token keyword">int</span> min_mtu<span class="token operator">=</span> <span class="token number">1280</span><span class="token punctuation">;</span> <span class="token comment">//según RFC 2460 </span>
+              <span class="token keyword">int</span> cant_fallos<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+              <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>max_mtu – min_mtu<span class="token punctuation">)</span><span class="token operator">&gt;</span><span class="token number">1</span><span class="token punctuation">)</span>
+              mtu_candidato <span class="token operator">=</span> <span class="token punctuation">(</span>max_mtu <span class="token operator">+</span> min_mtu<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+              <span class="token function">envio_ICMP_ER</span><span class="token punctuation">(</span>IP_O<span class="token punctuation">,</span>IP_D<span class="token punctuation">,</span>mtu_candidato<span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token keyword">switch</span> event<span class="token operator">:</span>
+              timeout<span class="token operator">:</span> <span class="token comment">//no se lo que pasó: hubo retardo o se perdió el mensaje </span>
+              <span class="token keyword">if</span> <span class="token punctuation">(</span>cant_fallos <span class="token operator">&lt;</span> MAX_FALLOS_ADMITIDOS<span class="token punctuation">)</span>
+              cant_fallos<span class="token operator">++</span><span class="token punctuation">;</span>
+              <span class="token keyword">else</span>
+              <span class="token keyword">return</span> <span class="token number">1280</span><span class="token punctuation">;</span> <span class="token comment">// no pude determinar el MTU, pero </span>
+              <span class="token comment">// devuelvo un MTU válido </span>
+              ICMP_echo_reply<span class="token operator">:</span> <span class="token comment">// mtu_candidato es un MTU válido </span>
+              min_mtu <span class="token operator">=</span> mtu_candidato<span class="token punctuation">;</span>
+              ICMP_packet_too_big<span class="token operator">:</span> <span class="token comment">//mtu_candidato excede el pathMTU </span>
+              max_mtu <span class="token operator">=</span> mtu_candidato<span class="token punctuation">;</span>
+              end<span class="token punctuation">;</span> <span class="token comment">//while</span>
+              <span class="token keyword">return</span> min_mtu<span class="token punctuation">;</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div class="mod-footer"></div>
         </div>

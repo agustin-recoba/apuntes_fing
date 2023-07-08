@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:21px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:19px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -241,6 +241,10 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/liberación.html"><span class="tree-item-title">Liberación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/preguntas-2do-parcial.html"><span class="tree-item-title">Preguntas 2do parcial</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
@@ -700,7 +704,7 @@
         <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
           <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
           <div class="mod-header"></div>
-          <div class="is-collapsed">
+          <div class="">
             <h1 data-heading="Modelo de computación" id="Modelo_de_computación">Modelo de computación</h1>
           </div>
           <div>
@@ -713,7 +717,7 @@
           <div>
             <p>Un redex (reducible expression) es una expresión formada por una función aplicada a argumentos, la cual está en condiciones de ser reducida.</p>
           </div>
-          <div class="is-collapsed">
+          <div class="">
             <h1 data-heading="Estrategias de evaluación" id="Estrategias_de_evaluación">Estrategias de evaluación</h1>
           </div>
           <div>
@@ -749,7 +753,7 @@
           <div>
             <p>Corresponde a pasaje por nombre (call-by-name).</p>
           </div>
-          <div class="is-collapsed">
+          <div class="">
             <h1 data-heading="Terminación" id="Terminación">Terminación</h1>
           </div>
           <div>
@@ -765,7 +769,7 @@
               </li>
             </ul>
           </div>
-          <div class="admonition-parent admonition-hint-parent">
+          <div class="code-block-wrap admonition-parent admonition-hint-parent">
             <div class="callout admonition admonition-hint admonition-plugin " style="--callout-color: 0, 191, 165;" data-callout="hint" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire" class="svg-inline--fa fa-fire fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -802,10 +806,10 @@
           <div>
             <p>Consideremos la siguiente definición:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">inf</span> <span class="token operator">::</span> <span class="token constant">Int</span>
-<span class="token hvariable">inf</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token hvariable">inf</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">inf</span> <span class="token operator">::</span> <span class="token constant">Int</span>
+              <span class="token hvariable">inf</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token hvariable">inf</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>La evaluación de inf no termina independiente de la estrategia de evaluación</p>
@@ -896,7 +900,7 @@
               </li>
             </ul>
           </div>
-          <div class="is-collapsed">
+          <div class="">
             <h1 data-heading="Problema de call-by-name" id="Problema_de_call-by-name">Problema de call-by-name</h1>
           </div>
           <div>
@@ -907,7 +911,7 @@
               <span alt="Pasted image 20230622231139.png" src="Pasted image 20230622231139.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230622231139.png" src="programación-funcional\media\pasted-image-20230622231139.png"></span>
             </p>
           </div>
-          <div class="admonition-parent admonition-hint-parent">
+          <div class="code-block-wrap admonition-parent admonition-hint-parent">
             <div class="callout admonition admonition-hint admonition-plugin " style="--callout-color: 0, 191, 165;" data-callout="hint" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire" class="svg-inline--fa fa-fire fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -954,7 +958,7 @@
           <div>
             <p>Notar que este es un <strong>mecanismo de evaluación</strong> que posee la máquina abstracta que reduce las expresiones y no algo en lo que interviene el programador.</p>
           </div>
-          <div class="admonition-parent admonition-example-parent">
+          <div class="code-block-wrap admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin " style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -962,20 +966,20 @@
                   </svg></div>
                 <div class="callout-title-inner admonition-title-content">Ejemplo</div>
               </div>
-              <div class="callout-content admonition-content">
+              <div class="callout-content admonition-content code-block-wrap">
                 <div class="admonition-content-copy"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy">
                     <rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect>
                     <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                   </svg></div>
-                <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">square</span> <span class="token hvariable">x</span> <span class="token operator">=</span> <span class="token hvariable">x</span> ∗ <span class="token hvariable">x</span>
+                <pre class="language-haskell code-block-pre__has-linenum" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">square</span> <span class="token hvariable">x</span> <span class="token operator">=</span> <span class="token hvariable">x</span> ∗ <span class="token hvariable">x</span>
 
-<span class="token hvariable">square</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span>
-	−→ <span class="token keyword">let</span> <span class="token hvariable">p</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span> 
-		<span class="token keyword">in</span> <span class="token hvariable">p</span> ∗ <span class="token hvariable">p</span>
-	−→ <span class="token keyword">let</span> <span class="token hvariable">p</span> <span class="token operator">=</span> <span class="token number">3</span> 
-		<span class="token keyword">in</span> <span class="token hvariable">p</span> ∗ <span class="token hvariable">p</span>
-	−→ <span class="token number">9</span>
-</code><button class="copy-code-button">Copy</button></pre>
+                  <span class="token hvariable">square</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span>
+                  −→ <span class="token keyword">let</span> <span class="token hvariable">p</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">+</span> <span class="token number">2</span>
+                  <span class="token keyword">in</span> <span class="token hvariable">p</span> ∗ <span class="token hvariable">p</span>
+                  −→ <span class="token keyword">let</span> <span class="token hvariable">p</span> <span class="token operator">=</span> <span class="token number">3</span>
+                  <span class="token keyword">in</span> <span class="token hvariable">p</span> ∗ <span class="token hvariable">p</span>
+                  −→ <span class="token number">9</span>
+                </code><button class="copy-code-button">Copy</button><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span><span class="code-block-linenum" style="height: 28.5px;"></span></span></pre>
               </div>
             </div>
           </div>
@@ -989,16 +993,16 @@
                 </svg></div>Operaciones no estrictas sobre booleanos
             </h2>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token constant">True</span>  <span class="token operator">&amp;&amp;</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token hvariable">b</span>
-<span class="token constant">False</span> <span class="token operator">&amp;&amp;</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token constant">False</span>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token constant">True</span> <span class="token operator">&amp;&amp;</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token hvariable">b</span>
+              <span class="token constant">False</span> <span class="token operator">&amp;&amp;</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token constant">False</span>
 
-<span class="token constant">True</span>  <span class="token operator">||</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token constant">True</span> 
-<span class="token constant">False</span> <span class="token operator">||</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token hvariable">b</span>
+              <span class="token constant">True</span> <span class="token operator">||</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token constant">True</span>
+              <span class="token constant">False</span> <span class="token operator">||</span> <span class="token hvariable">b</span> <span class="token operator">=</span> <span class="token hvariable">b</span>
 
-<span class="token keyword">if</span> <span class="token constant">True</span>  <span class="token keyword">then</span> <span class="token hvariable">e</span> <span class="token keyword">else</span> <span class="token hvariable">_</span> <span class="token operator">=</span> <span class="token hvariable">e</span>
-<span class="token keyword">if</span> <span class="token constant">False</span> <span class="token keyword">then</span> <span class="token hvariable">_</span> <span class="token keyword">else</span> <span class="token hvariable">e</span> <span class="token operator">=</span> <span class="token hvariable">e</span>
-</code><button class="copy-code-button">Copy</button></pre>
+              <span class="token keyword">if</span> <span class="token constant">True</span> <span class="token keyword">then</span> <span class="token hvariable">e</span> <span class="token keyword">else</span> <span class="token hvariable">_</span> <span class="token operator">=</span> <span class="token hvariable">e</span>
+              <span class="token keyword">if</span> <span class="token constant">False</span> <span class="token keyword">then</span> <span class="token hvariable">_</span> <span class="token keyword">else</span> <span class="token hvariable">e</span> <span class="token operator">=</span> <span class="token hvariable">e</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>El if es estricto en la condición, pero no en las ramas.<br>
@@ -1019,16 +1023,16 @@
                 </svg></div>Igualdad de listas.
             </h3>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token constant">True</span> 
-<span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">==</span> <span class="token punctuation">(</span><span class="token hvariable">_</span><span class="token operator">:</span><span class="token hvariable">_</span><span class="token punctuation">)</span>    <span class="token operator">=</span> <span class="token constant">False</span>
-<span class="token punctuation">(</span><span class="token hvariable">_</span><span class="token operator">:</span><span class="token hvariable">_</span><span class="token punctuation">)</span>    <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>       <span class="token operator">=</span> <span class="token constant">False</span>
-<span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token punctuation">(</span><span class="token hvariable">y</span> <span class="token operator">:</span> <span class="token hvariable">ys</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">==</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span><span class="token hvariable">xs</span> <span class="token operator">==</span> <span class="token hvariable">ys</span><span class="token punctuation">)</span>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token constant">True</span>
+              <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token punctuation">(</span><span class="token hvariable">_</span><span class="token operator">:</span><span class="token hvariable">_</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token constant">False</span>
+              <span class="token punctuation">(</span><span class="token hvariable">_</span><span class="token operator">:</span><span class="token hvariable">_</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token constant">False</span>
+              <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token punctuation">(</span><span class="token hvariable">y</span> <span class="token operator">:</span> <span class="token hvariable">ys</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">==</span> <span class="token hvariable">y</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span><span class="token hvariable">xs</span> <span class="token operator">==</span> <span class="token hvariable">ys</span><span class="token punctuation">)</span>
 
-<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>      <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>     −−→ <span class="token constant">True</span>
-<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token hvariable">inf</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>     −−→ <span class="token constant">False</span>
-<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token hvariable">inf</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>  −−→ ⊥
-</code><button class="copy-code-button">Copy</button></pre>
+              <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span> −−→ <span class="token constant">True</span>
+              <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token hvariable">inf</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span> −−→ <span class="token constant">False</span>
+              <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token hvariable">inf</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span> −−→ ⊥
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <h3 data-heading="Determinar si dos árboles contienen los mismos valores en las hojas y en el mismo orden." id="Determinar_si_dos_árboles_contienen_los_mismos_valores_en_las_hojas_y_en_el_mismo_orden." style="display: flex;">
@@ -1037,15 +1041,15 @@
                 </svg></div>Determinar si dos árboles contienen los mismos valores en las hojas y en el mismo orden.
             </h3>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token keyword">data</span> <span class="token constant">Btree</span> <span class="token hvariable">a</span> <span class="token operator">=</span> <span class="token constant">Leaf</span> <span class="token hvariable">a</span> <span class="token operator">|</span> <span class="token constant">Fork</span> <span class="token punctuation">(</span><span class="token constant">Btree</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token constant">Btree</span> <span class="token hvariable">a</span><span class="token punctuation">)</span>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token keyword">data</span> <span class="token constant">Btree</span> <span class="token hvariable">a</span> <span class="token operator">=</span> <span class="token constant">Leaf</span> <span class="token hvariable">a</span> <span class="token operator">|</span> <span class="token constant">Fork</span> <span class="token punctuation">(</span><span class="token constant">Btree</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token constant">Btree</span> <span class="token hvariable">a</span><span class="token punctuation">)</span>
 
-<span class="token hvariable">eqleaves</span> <span class="token operator">::</span> <span class="token constant">Ord</span> <span class="token hvariable">a</span> <span class="token operator">=&gt;</span> <span class="token constant">Btree</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Btree</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span>
-<span class="token hvariable">eqleaves</span> <span class="token hvariable">t</span> <span class="token hvariable">t0</span> <span class="token operator">=</span> <span class="token hvariable">leaves</span> <span class="token hvariable">t</span> <span class="token operator">==</span> <span class="token hvariable">leaves</span> <span class="token hvariable">t0</span>
+              <span class="token hvariable">eqleaves</span> <span class="token operator">::</span> <span class="token constant">Ord</span> <span class="token hvariable">a</span> <span class="token operator">=&gt;</span> <span class="token constant">Btree</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Btree</span> <span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span>
+              <span class="token hvariable">eqleaves</span> <span class="token hvariable">t</span> <span class="token hvariable">t0</span> <span class="token operator">=</span> <span class="token hvariable">leaves</span> <span class="token hvariable">t</span> <span class="token operator">==</span> <span class="token hvariable">leaves</span> <span class="token hvariable">t0</span>
 
-<span class="token hvariable">leaves</span> <span class="token punctuation">(</span><span class="token constant">Leaf</span> <span class="token hvariable">a</span><span class="token punctuation">)</span>   <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
-<span class="token hvariable">leaves</span> <span class="token punctuation">(</span><span class="token constant">Fork</span> <span class="token hvariable">l</span> <span class="token hvariable">r</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">leaves</span> <span class="token hvariable">l</span> <span class="token operator">++</span> <span class="token hvariable">leaves</span> <span class="token hvariable">r</span>
-</code><button class="copy-code-button">Copy</button></pre>
+              <span class="token hvariable">leaves</span> <span class="token punctuation">(</span><span class="token constant">Leaf</span> <span class="token hvariable">a</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span>
+              <span class="token hvariable">leaves</span> <span class="token punctuation">(</span><span class="token constant">Fork</span> <span class="token hvariable">l</span> <span class="token hvariable">r</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token hvariable">leaves</span> <span class="token hvariable">l</span> <span class="token operator">++</span> <span class="token hvariable">leaves</span> <span class="token hvariable">r</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>Las listas leaves t y leaves t0 se van construyendo a demanda y tanto como sea requerido por el operador de igualdad <code>(==)</code>.</p>
@@ -1060,14 +1064,14 @@
                 </svg></div>Determinar si algún elemento de una lista cumple un predicado.
             </h3>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token builtin">any</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span>
-<span class="token builtin">any</span> <span class="token hvariable">p</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token constant">False</span>
-<span class="token builtin">any</span> <span class="token hvariable">p</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token hvariable">p</span> <span class="token hvariable">x</span> <span class="token operator">=</span> <span class="token constant">True</span>
-			   <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token builtin">any</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token builtin">any</span> <span class="token operator">::</span> <span class="token punctuation">(</span><span class="token hvariable">a</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span><span class="token punctuation">)</span> <span class="token operator">-&gt;</span> <span class="token punctuation">[</span><span class="token hvariable">a</span><span class="token punctuation">]</span> <span class="token operator">-&gt;</span> <span class="token constant">Bool</span>
+              <span class="token builtin">any</span> <span class="token hvariable">p</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token constant">False</span>
+              <span class="token builtin">any</span> <span class="token hvariable">p</span> <span class="token punctuation">(</span><span class="token hvariable">x</span> <span class="token operator">:</span> <span class="token hvariable">xs</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token hvariable">p</span> <span class="token hvariable">x</span> <span class="token operator">=</span> <span class="token constant">True</span>
+              <span class="token operator">|</span> <span class="token builtin">otherwise</span> <span class="token operator">=</span> <span class="token builtin">any</span> <span class="token hvariable">p</span> <span class="token hvariable">xs</span>
 
-<span class="token hvariable">any2</span> <span class="token hvariable">p</span> <span class="token operator">=</span> <span class="token builtin">not</span> <span class="token operator">.</span> <span class="token builtin">null</span> <span class="token operator">.</span> <span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token comment">-- alternativamente</span>
-</code><button class="copy-code-button">Copy</button></pre>
+              <span class="token hvariable">any2</span> <span class="token hvariable">p</span> <span class="token operator">=</span> <span class="token builtin">not</span> <span class="token operator">.</span> <span class="token builtin">null</span> <span class="token operator">.</span> <span class="token builtin">filter</span> <span class="token hvariable">p</span> <span class="token comment">-- alternativamente</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>El procesamiento termina en cuanto un elemento pase el filter.</p>
@@ -1085,10 +1089,10 @@
           <div>
             <p>Un ejemplo clásico de listas infinitas es la lista ones:</p>
           </div>
-          <div>
-            <pre class="language-haskell" tabindex="0"><code class="language-haskell is-loaded"><span class="token hvariable">ones</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token constant">Int</span><span class="token punctuation">]</span>
-<span class="token hvariable">ones</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">:</span> <span class="token hvariable">ones</span>
-</code><button class="copy-code-button">Copy</button></pre>
+          <div class="code-block-wrap">
+            <pre class="code-block-pre__has-linenum language-haskell" tabindex="0" style="position: relative !important; padding-top: 35px !important;"><pre class="obsidian-embedded-code-title__code-block-title" style="background-color: rgba(0, 0, 0, 0.125);"><div class="collapser"><div class="handle"></div></div><div class="title"></div><div class="langName">Haskell</div></pre><code class="language-haskell is-loaded"><span class="token hvariable">ones</span> <span class="token operator">::</span> <span class="token punctuation">[</span><span class="token constant">Int</span><span class="token punctuation">]</span>
+              <span class="token hvariable">ones</span> <span class="token operator">=</span> <span class="token number">1</span> <span class="token operator">:</span> <span class="token hvariable">ones</span>
+            </code><span class="code-block-linenum-wrap" style="top: 35px;"><span class="code-block-linenum"></span><span class="code-block-linenum"></span></span><button class="copy-code-button">Copy</button></pre>
           </div>
           <div>
             <p>Evaluar ones produce una lista infinita de unos.<br>
@@ -1097,7 +1101,7 @@
           <div>
             <p><span alt="Pasted image 20230622232609.png" src="Pasted image 20230622232609.png" class="internal-embed media-embed image-embed is-loaded"><img alt="Pasted image 20230622232609.png" src="programación-funcional\media\pasted-image-20230622232609.png"></span></p>
           </div>
-          <div class="admonition-parent admonition-hint-parent">
+          <div class="code-block-wrap admonition-parent admonition-hint-parent">
             <div class="callout admonition admonition-hint admonition-plugin " style="--callout-color: 0, 191, 165;" data-callout="hint" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire" class="svg-inline--fa fa-fire fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">

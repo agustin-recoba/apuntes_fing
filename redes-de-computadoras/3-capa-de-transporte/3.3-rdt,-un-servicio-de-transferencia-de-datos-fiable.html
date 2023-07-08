@@ -23,7 +23,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:21px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:19px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -241,6 +241,10 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/liberación.html"><span class="tree-item-title">Liberación</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="introducción-a-la-ingeniería-de-software/preguntas-2do-parcial.html"><span class="tree-item-title">Preguntas 2do parcial</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
@@ -714,7 +718,7 @@
             <p>El canal subyacente es <strong>perfectamente confiable</strong>, sin errores en bits y sin pérdida de paquetes.<br>
               Separamos en dos máquinas de estado finitas, una para el emisor y la otra para el receptor. Por un lado, el emisor envía datos al canal subyacente, mientras que el receptor lee los datos de dicho canal.</p>
           </div>
-          <div class="admonition-parent admonition-info-parent">
+          <div class="code-block-wrap admonition-parent admonition-info-parent">
             <div class="callout admonition admonition-info admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="+">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -756,7 +760,7 @@
           <div>
             <p>Cuando el emisor recibe un NAK, retransmite el paquete. De esta forma, se añade en RDT 2.0 la posibilidad de detectar errores, además de que el receptor tiene la posibilidad de realizar un feedback utilizando los mensajes de control (ACKs y NAKs).</p>
           </div>
-          <div class="admonition-parent admonition-tip-parent">
+          <div class="code-block-wrap admonition-parent admonition-tip-parent">
             <div class="callout admonition admonition-tip admonition-plugin " style="--callout-color: 0, 191, 165;" data-callout="tip" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire" class="svg-inline--fa fa-fire fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -773,7 +777,7 @@
               </div>
             </div>
           </div>
-          <div class="admonition-parent admonition-info-parent">
+          <div class="code-block-wrap admonition-parent admonition-info-parent">
             <div class="callout admonition admonition-info admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="+">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -796,7 +800,7 @@
           <div>
             <p>Cuando el emisor está en el estado “Esperar ACK o NAK”, no puede obtener más datos de la capa superior. Debido a esto, a estos protocolos se los conoce como protocolos de <strong>parada y espera</strong> (<em>stop-and-wait</em> protocol).</p>
           </div>
-          <div class="admonition-parent admonition-warning-parent">
+          <div class="code-block-wrap admonition-parent admonition-warning-parent">
             <div class="callout admonition admonition-warning admonition-plugin " style="--callout-color: 255, 145, 0;" data-callout="warning" data-callout-fold="">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="exclamation-triangle" class="svg-inline--fa fa-exclamation-triangle fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -823,7 +827,7 @@
           <div>
             <p>Una solución sencilla consiste en añadir un nuevo campo al paquete de datos, y hacer que el emisor numere sus paquetes de datos colocando un <strong>número de secuencia</strong> en este campo.</p>
           </div>
-          <div class="admonition-parent admonition-info-parent">
+          <div class="code-block-wrap admonition-parent admonition-info-parent">
             <div class="callout admonition admonition-info admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="+">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -854,7 +858,7 @@
           <div>
             <p>Tiene la misma funcionalidad que el rdt 2.1, pero <strong>utilizando únicamente ACKs</strong>. En lugar de un NAK, el receptor envía un ACK para el último para el último paquete recibido correctamente, por lo que se debe indicar explícitamente el número de secuencia del paquete al cual corresponde el ACK. Un ACK duplicado en el emisor resulta en la misma acción de un NAK, retransmitir el paquete actual.</p>
           </div>
-          <div class="admonition-parent admonition-info-parent">
+          <div class="code-block-wrap admonition-parent admonition-info-parent">
             <div class="callout admonition admonition-info admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="+">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -911,7 +915,7 @@
           <div>
             <p>Dado que los números de secuencia de los paquetes alternan entre 0 y 1, este protocolo se denomina en ocasiones <strong>protocolo de bit alternante</strong>.</p>
           </div>
-          <div class="admonition-parent admonition-info-parent">
+          <div class="code-block-wrap admonition-parent admonition-info-parent">
             <div class="callout admonition admonition-info admonition-plugin is-collapsible is-collapsed" style="--callout-color: 0, 184, 212;" data-callout="info" data-callout-fold="+">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -932,7 +936,7 @@
               </div>
             </div>
           </div>
-          <div class="admonition-parent admonition-example-parent">
+          <div class="code-block-wrap admonition-parent admonition-example-parent">
             <div class="callout admonition admonition-example admonition-plugin is-collapsible is-collapsed" style="--callout-color: 124, 77, 255;" data-callout="example" data-callout-fold="+">
               <div class="callout-title admonition-title ">
                 <div class="callout-icon admonition-title-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ol" class="svg-inline--fa fa-list-ol fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
