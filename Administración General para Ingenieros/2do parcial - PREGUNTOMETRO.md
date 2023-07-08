@@ -503,7 +503,7 @@ $6.300.000 -> $4.914.000 sin IVA -> UI 1.638.000
 [[Teórico - PYMES.pdf|ref]]
 ```
 
-3. Si Ud. desea enfrentar el desafío de tener éxito o fracasar por cuenta propia, basado en un nuevo servicio innovador desarrollado por Ud. mismo, entonces lo más aconsejable es:
+3. Si ud. desea enfrentar el desafío de tener éxito o fracasar por cuenta propia, basado en un nuevo servicio innovador desarrollado por ud. mismo, entonces lo más aconsejable es:
 	a. crear una empresa desde cero
 	b. adquirir una franquicia
 	c. adquirir una empresa existente
@@ -517,7 +517,7 @@ a. crear una empresa desde cero
 [[Teórico - PYMES.pdf|ref]]
 ```
 
-4. Si ud. Desea un sistema de comercialización que gire en torno a un acuerdo legal entre dos partes, por la cual se le concede a una de ellas el privilegio de vender un producto o servicio, pero se le limita a que opere de acuerdo a los métodos o condiciones que especifica la otra parte, entonces nos referimos a:
+4. Si ud. desea un sistema de comercialización que gire en torno a un acuerdo legal entre dos partes, por la cual se le concede a una de ellas el privilegio de vender un producto o servicio, pero se le limita a que opere de acuerdo a los métodos o condiciones que especifica la otra parte, entonces nos referimos a:
 	a. asociarse a una empresa ya existente
 	b. adquirir una licencia
 	c. adquirir una franquicia
@@ -570,6 +570,20 @@ b. flexibilidad estructural
 title: Respuesta
 collapse: closed
 a. contacto directo con el cliente
+[[Teórico - PYMES.pdf|ref]]
+```
+
+18. Las empresas emprendedoras pasan por varias etapas de crecimiento en las cuales requieren diferentes habilidades. Cuando una empresa es viable, cuenta con bastantes clientes y sus principales problemas son financieros, se encuentra en la etapa de:
+	a. Madurez
+	b. Éxito
+	c. Supervivencia
+	d. Arranque
+	e. Expansión
+
+```ad-question
+title: Respuesta
+collapse: closed
+c. Supervivencia
 [[Teórico - PYMES.pdf|ref]]
 ```
 
@@ -710,24 +724,3 @@ collapse: closed
 b. FT\*P
 [[Teórico - EMPRESAS FAMILIARES.pdf|ref]]
 ```
-
-18. Las empresas emprendedoras pasan por varias etapas de crecimiento en las cuales requieren diferentes habilidades. Cuando una empresa es viable, cuenta con bastantes clientes y sus principales problemas son financieros, se encuentra en la etapa de:
-	a. Madurez
-	b. Éxito
-	c. Supervivencia
-	d. Arranque
-	e. Expansión
-
-```ad-question
-title: Respuesta
-collapse: closed
-c. Supervivencia
-[[Teórico - PYMES.pdf|ref]]
-```
-
-
-
-
-
-
-

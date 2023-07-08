@@ -103,7 +103,7 @@ Qué hacemos? -> Nivelación de recursos
 
 ### Nivelación de recursos
 - Se ajustan fechas de inicio y/o fin cuando hay restricciones de recursos.
-- Se usa luego de determinar el camino crítico y cuando hay recursos:
+- Se usa <u>luego de determinar el camino crítico</u> y cuando hay recursos:
 	- Compartidos o críticos durante ciertos momentos.
 	- Disponibles en cantidades limitadas.
 	- Que se desean utilizar con un nivel constante de ocupación en un período de tiempo.
@@ -136,9 +136,12 @@ Qué sucede si es necesario acortar el cronograma?
 ## Riesgos
 
 Posible categorización:
-- <u>De proyecto:</u> afectan cronograma, recursos. Ejemplo: perder un miembro experimentado del equipo.
-- <u>De producto:</u> afectan calidad o performance. Ejemplo: falla en un componente clave del producto.
-- <u>De negocio:</u> afectan el negocio de lo que se está construyendo. Ejemplo: un competidor introduce un nuevo producto.
+- <u>De proyecto:</u> afectan cronograma, recursos.
+	Ejemplo: perder un miembro experimentado del equipo.
+- <u>De producto:</u> afectan calidad o performance.
+	Ejemplo: falla en un componente clave del producto.
+- <u>De negocio:</u> afectan el negocio de lo que se está construyendo.
+	Ejemplo: un competidor introduce un nuevo producto.
 
 ### Monitoreo de riesgos
 - Seguimiento periódico para detectar:
@@ -171,12 +174,12 @@ Es posible controlar si se logró el avance previsto y si costó lo previsto.
 Se puede obtener: % de avance, días de atraso, desviación de costos.
 
 ### Tres valores principales
-- Valor Planificado (PV): Lo que tendría que tener hecho hoy, al valor que estimé. 
+- Valor Planificado (**PV**): Lo que tendría que tener hecho hoy, al valor que estimé. 
 	Por ejemplo, al día de hoy tenía planificado terminar un componente de 100 horas a 40 usd la hora -> PV= 4.000 usd
-- Valor Ganado (EV): Lo que hice hasta ahora, al valor que estimé.
+- Valor Ganado (**EV**): Lo que hice hasta ahora, al valor que estimé.
 	Hasta el momento tengo el 80 % del componente desarrollado considerando el presupuesto acordado -> EV = 3.200
-- Costo actual (AC): Lo que llevo gastado para el trabajo que hice.
-	Llevo 90 horas dedicadas = 3600
+- Costo actual (**AC**): Lo que llevo gastado para el trabajo que hice.
+	Llevo 90 horas dedicadas = 3.600
 
 Se pueden expresar en porcentajes, dividiéndolos por el Presupuesto hasta la Conclusión (Budget at Completion, BAC):
 - $PV\% = PV / BAC$

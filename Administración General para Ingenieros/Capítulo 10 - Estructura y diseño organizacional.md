@@ -2,7 +2,7 @@
 
 **_Organización_** se define como el proceso de crear la estructura de una organización. El desafío para los gerentes es diseñar una estructura organizacional que permita a los empleados realizar su trabajo con eficiencia y eficacia y que además tenga flexibilidad para adaptarse al dinamismo actual. 
 
-**_Estructura organizacional_** es la distribución formal de los empleos dentro de una organización. **_Diseño organizacional_** es el desarrollo o cambio de esta estructura. Este proceso involucra decisiones sobre seis elementos clave: especialización del trabajo, departamentalización, cadena de mando, amplitud de control, centralización y descentralización y formalización.
+<u>Estructura organizacional</u> es la distribución formal de los empleos dentro de una organización. **_Diseño organizacional_** es el desarrollo o cambio de esta estructura. Este proceso involucra decisiones sobre seis elementos clave: especialización del trabajo, departamentalización, cadena de mando, amplitud de control, centralización y descentralización y formalización.
 
 ## Especialización del trabajo
 

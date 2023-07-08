@@ -19,12 +19,12 @@
 ### Definición
 <u>Verificación:</u> *¿estamos construyendo el producto correctamente?*
 - Busca comprobar que el sistema cumple con los requerimientos especificados (funcionales y no funcionales).
-- ¿El software está de acuerdo con su especificación?
+- ¿El software está de acuerdo con su <u>especificación</u>?
 - Testing de defectos.
 
 <u>Validación:</u> *¿estamos construyendo el producto correcto?*
 - Busca comprobar que el software hace lo que el usuario espera.
-- ¿El software cumple las expectativas del cliente?
+- ¿El software cumple las <u>expectativas del cliente</u>?
 - Testing de validación.
 
 # Chapter 2 - Fundamentals of Testing
@@ -43,6 +43,8 @@ El objetivo del testing es la verificación y validación. En ambas se puede hac
 - Requerimiento no se puede implementar.
 - Defectos en el diseño.
 - Defectos en el código.
+
+O sea, los _defectos_ en los req., diseño o código causan _fallos_. Por lo tanto, no puede decirse que el código tiene fallos, pero sí defectos.
 
 <u>Objetivo:</u> detectar y corregir estos defectos antes de liberar el producto.
 
@@ -91,20 +93,12 @@ La idea es registrar los tipos de defectos.
 - test run / test suite: includes execution of one or more test cases
 - test scenarios: several test cases combined whereby the result of one test case is used as the starting point for the next test case
 
-Nombrando tests:
-- Test objective or test type: A test is named according to its purpose (for example, load test).
-- Test technique: A test is named according to the technique used for specifying or executing the test (for example, business-process-based test). 
-- Test object: The name of a test reflects the kind of the test object to be tested (for example, a GUI test or DB test). 
-- Test level: A test is named after the level of the underlying life cycle model (for example, system test). 
-- Test person: A test is named after the personnel group executing the tests (for example, developer test, user acceptance test). 
-- Test extent: A test is named after the level of extent (for example, partial regression test, full test).
-
 ### 2.1.3 Software Quality
 
 - software quality: functionality, reliability, usability, efficiency, maintainability, and portability
 
 #### quality characteristics / quality attributes:
-- <u>functionality:</u> all of the functional required capabilities of a system.  capabilities are usually described by a specific input/output behavior and/or an appropriate reaction to an input.
+- <u>functionality:</u> all of the functional required capabilities of a system. capabilities are usually described by a specific input/output behavior and/or an appropriate reaction to an input.
 - <u>reliability:</u> the ability of a system to **keep functioning** under specific use over a specific period. 
 	the reliability characteristic is split into:
 	- maturity: how often a failure of the software occurs as a result of defects in the software.
@@ -119,13 +113,9 @@ A software system cannot fulfill every quality characteristic equally well. Qual
 ### 2.1.4 Test effort
 a complete or exhaustive test is <u>not</u> feasible.
 
-- For some major projects with more than 10 person-years’ effort, coding and testing together used 40%, and a further 8% was used for the integration. At test-intensive projects (for example, safety-critical systems), the testing effort increased to as much as 80% of the total budget.
-- In one project, the testing effort was 1.2 times as high as the coding effort, with two-thirds of the test effort used for component testing.
-- For another project at the same software development company, the system test cost was 51.9% of the project.
-
 Test effort is often shown as the proportion between the number of testers and the number of developers.
 
-But is this high testing effort affordable and justifiable? The counter question from Jerry Weinberg is “Compared to what?”. When safety-critical systems fail, the lives and health of people may be in danger.
+But, is this high testing effort affordable and justifiable? The counter question is “Compared to what?”. When safety-critical systems fail, the lives and health of people may be in danger.
 
 ***“Testing should continue as long as costs of finding and correcting a defect are lower than the costs of failure”*** (the cost must include all aspects of a failure, even the possible cost of bad publicity, litigation, etc., and not just the cost of correction, retesting, and distribution.)
 Thus, for every software program it must be decided how intensively and thoroughly it shall be tested. This decision must be made based upon the expected risk of failure of the program.
@@ -139,7 +129,7 @@ There exist many different methods and techniques for testing software. Every te
 - **Pruebas de Integración:**
 	- Normalmente las realiza el equipo de desarrollo.
 	- Es necesario el conocimiento de las interfaces y funciones en general.
-- Resto de las pruebas 
+- Resto de las pruebas:
 	- En general un equipo especializado (verificadores, *testers*).
 	- Es necesario conocer los requerimientos y tener una visión global.
 
@@ -154,7 +144,7 @@ There exist many different methods and techniques for testing software. Every te
 
 ## 2.2 The Fundamental Test Process
 
-###  2.2.1 Test Planning and Control
+### 2.2.1 Test Planning and Control
 Execution of such a substantial task as testing must not take place without a plan. Planning of the test process starts at the beginning of the software development project.
 
 #### Resource planning
@@ -189,7 +179,7 @@ It is important to ensure traceability between the specifications to be tested a
 It must be clear which test cases test which requirements and vice versa.
 
 #### Logical and concrete test cases
-Logical test cases have to be defined first. After that, the logical test cases can be translated into concrete, physical test cases, meaning the actual inputs are selected.
+Logical test cases have to be defined <u>first</u>. After that, the logical test cases can be translated into concrete, physical test cases, meaning the actual inputs are selected.
 
 #### Test cases comprise more than just the test data
 For each test case, the initial situation (precondition) must be described. It must be clear which environmental conditions must be fulfilled for the test. Furthermore, before test execution, it must be defined which results and behaviors are expected. The results include outputs, changes to global (persistent) data and states, and any other consequences of the test case.
@@ -219,7 +209,7 @@ Specific test harnesses (drivers, simulators, etc.), must be programmed, built, 
 Start test execution with the examination of the test object’s main functionality (smoke test).
 If **failures** or **deviations** from the expected result show up at this time, it is foolish to continue testing.
 
-#### Tests without a log are of no value
+#### Tests without a log are of <u>no value</u>
 Execution must be exactly and completely logged.
 - which test runs
 - which results (pass or failure)
@@ -241,11 +231,12 @@ In many projects, there is not enough time to execute all specified test cases.
 This is called **risk-based testing**.
 
 ### 2.2.4 Test Evaluation and Reporting
+
 #### End of test?
-During test evaluation and reporting, the test object is assessed against the set test exit criteria specified during planning. 
+During test evaluation and reporting, the test object is <u>assessed against the set test exit criteria</u> specified during planning. 
 This may result in normal termination of the tests if all criteria are met, or it may be decided that additional test cases should be run or that the criteria were too hard.
 
-Considering the risk, an adequate exit criterion must be determined for each test technique used.
+Considering the risk, an adequate exit criterion must be determined **for each test technique** used.
 
 #### Is further effort justifiable?
 Analysis of the problem can also show that the necessary effort to fulfill the exit criteria is not appropriate. 
@@ -314,8 +305,8 @@ Developers should know the basics of testing and testers should have a basic kno
 
 ### Principios
 1. El testing muestra la presencia de defectos, **no la ausencia** de ellos .
-2. Testing exhaustivo no es posible.
-3. Las actividades de verificación deberían comenzar lo antes posible.
+2. Testing exhaustivo **no es posible**.
+3. Las actividades de verificación deberían comenzar lo **antes posible**.
 4. Agrupamiento/aglomeración de defectos (defect clustering).
 	Defects are not evenly distributed; they cluster together.
 5. La paradoja del pesticida.
@@ -348,6 +339,7 @@ Such data or documents must be handled appropriately and must not get into the w
 - Certified testers should know the ISTQB’s ethical guidelines, which are helpful in the course of their daily work.
 
 # Chapter 3 - Testing in the Software Life Cycle
+
 ## 3.1 The General V-Model
 
 ![[Pasted image 20230515165242.png]]
@@ -382,7 +374,7 @@ Es importante probar:
 Simula la actividad del componente omitido.
 
 - Es una pieza de código con los mismos parámetros de entrada y salida que el módulo faltante pero con una **alta simplificación** del comportamiento.
-	- De todas formas, tiene un costo de realización
+	- De todas formas, tiene un costo de realización.
 - Por ejemplo puede producir los resultados esperados leyendo de un archivo, o pidiéndole de forma interactiva a un testeador humano, o no hacer nada (siempre y cuando esto sea aceptable para el módulo bajo test).
 - Si el stub devuelve siempre los mismos valores al módulo que lo llama es probable que esté módulo no sea testeado adecuadamente.
 
@@ -429,8 +421,8 @@ Analysis of the program text and the specifications is necessary. ***Static test
 
 ### 3.2.5 Test Strategy
 
-- <u>Técnicas estáticas</u> (analíticas): analizar el producto (p.e. programa) para deducir su correcta operación.
-- <u>Técnicas dinámicas:</u> experimentar con el comportamiento de un producto para ver si el producto actúa como es esperado.
+- [[#4.2 Static Analysis|Técnicas estáticas]]: analizar el producto para deducir su correcta operación (sin ejecutar).
+- [[#Chapter 5 - Dynamic Analysis – Test Design Techniques|Técnicas dinámicas]]: experimentar con el comportamiento de un producto para ver si el producto actúa como es esperado.
 	- Testing **de caja blanca**: basado en el código fuente del programa, el cual se utiliza para diseñar los casos de prueba.
 	- Testing **de caja negra**: basado en la especificación del programa.
 - “Test first” development.
@@ -496,7 +488,6 @@ During integration testing in a much later stage of the project, the tester will
 
 #### Monitors are necessary
 During integration testing, additional tools, called monitors, are required. Monitors are programs that read and log data traffic between components. Monitors for standard protocols (e.g., network protocols) are commercially available. Special monitors must be developed for the observation of project-specific component interfaces.
-
 
 ### 3.3.4 Test Objectives
 The test objectives of the test level integration test are clear: to reveal interface problems as well as conflicts between integrated parts.
@@ -564,13 +555,13 @@ Es importante verificar:
 
 ### 3.4.1 Explanation of Terms
 #### Reasons for system test
-Las pruebas de sistema se ejecutan desde el punto de vista del usuario final, y consideran interacciones de todos los componentes (que pueden no haber sido contempladas en las pruebas de integración).
+Las pruebas de sistema se ejecutan desde el <u>punto de vista del usuario final</u>, y consideran interacciones de todos los componentes (que pueden no haber sido contempladas en las pruebas de integración).
 Many functions and system characteristics result from the interaction of all system components; consequently, they are visible only when the entire system is present and can be observed and tested only there.
 
 ### 3.4.2 Test Objects and Test Environment
-The system test tests the system as a whole in an environment as similar as possible to the intended **production environment**.
+The system test tests the system as a whole in an environment as similar as possible to the intended <u>production environment</u>.
 
-Instead of test drivers and stubs, the hardware and software products that will be used later should be installed on the test platform (hardware, system software, device driver software, networks, external systems, etc.).
+Instead of test drivers and stubs, the hardware and software products that will be used later should be installed on the test platform (hardware, system software, device driver software, networks, external systems, etc.). *-> No drivers or stubs*.
 
 System test also checks system and user documentation, like system manuals, user manuals, training material, etc.
 
@@ -637,18 +628,18 @@ The acceptance test also checks the delivery and installation procedures.
 ### 3.5.2 Testing for <u>User</u> Acceptance
 Las **pruebas de aceptación del usuario** se hacen porque el cliente y el usuario final pueden ser diferentes.
 
-#### Get acceptance of every user group
+#### Get acceptance of <u>every user group</u>
 Different user groups usually have completely different expectations of a new system. Users may reject a system because they find it “awkward” in some sense.
 This may happen even if the system is completely OK from a functional point of view.
 
 #### Present prototypes to the users early
 If major user acceptance problems are detected during acceptance testing, it is often too late to implement more than cosmetic countermeasures.
 
-### 3.5.3 Operational [Acceptance] Testing
-Las **pruebas de aceptación operacionales** se hacen con los administradores del sistema.
+### 3.5.3 Operational Acceptance Testing
+Las **pruebas de aceptación operacionales** se hacen con los <u>administradores</u> del sistema.
 It may include testing of backup/restore cycles (including restoration of copied data), disaster recovery, user management, and checks of security vulnerabilities.
 
-### 3.5.4 Field Testing (alpha/beta testing y dogfood tests)
+### 3.5.4 Field Testing (<u>alpha</u>/<u>beta</u> testing y dogfood tests)
 Las **pruebas de campo** se hacen cuando el software debe correr en muchos entornos diferentes y no se puede probar en todos. De este modo se pueden buscar problemas con ciertos entornos. 
 
 - El **alpha/beta** testing consiste en enviar versiones previas y estables a clientes para que las prueben y reporten problemas. 
@@ -699,15 +690,13 @@ Incremental development means system functionality and reliability will grow ove
 This danger can be reduced by running several V-models in sequence, one for each increment, where every next “V” reuses existing test material and adds the tests necessary for new development or for higher reliability requirements.
 ![[Pasted image 20230516145036.png]]
 
-
-
 ## 3.7 <u>Generic Types of Testing</u>
 
 ![[Pasted image 20230518202729.png]]
 
 ### 3.7.1 Functional Testing
 Functional testing includes all kind of tests that verify a system’s input/output behavior.
-Black box testing methods are used, and the test bases are the functional requirements.
+<u>Black box</u> testing methods are used, and the test bases are the functional requirements.
 
 #### Requirements-based testing
 Uses the final requirements as the basis for testing. For each requirement, at least one test case is designed and documented in the test specification.
@@ -723,10 +712,10 @@ It focuses on the whole process consisting of many steps (e.g., the sales conver
 Nonfunctional requirements do not describe the functions; they describe the attributes of the functional behavior or the attributes of the system as a whole.
 
 The following nonfunctional system characteristics should be considered in the tests (usually in system testing):
-- **Load test (prueba de carga):** Measuring of the system behavior for increasing system loads.
-- **Performance test (prueba de rendimiento):** Measuring the processing speed and response time for particular use cases, usually dependent on increasing load.
-- **Volume test (prueba de volumen):** Observation of the system behavior dependent on the amount of data.
-- **Stress test (prueba de estrés):** Observation of the system behavior when the system is overloaded.
+- **Load test (prueba de carga):** Measuring of the system behavior for **increasing system loads**.
+- **Performance test (prueba de rendimiento):** Measuring the processing **speed and response time for particular use cases**, usually dependent on increasing load.
+- **Volume test (prueba de volumen):** Observation of the system behavior dependent on the **amount of data**.
+- **Stress test (prueba de estrés):** Observation of the system behavior when the system is **overloaded**.
 - **Testing of security (seguridad)** against unauthorized access to the system or data, denial of service attacks, etc.
 - **Stability or reliability test (prueba de confiabilidad):** Performed during permanent operation (e.g., mean time between failures or failure rate with a given user profile) .
 - **Robustness test (prueba de robustez):** Measuring the system’s response to operating errors, bad programming, hardware failure, etc. as well as examination of exception handling and recovery.
@@ -745,7 +734,6 @@ Lo esencial es definir:
 - <u>Características del ambiente:</u>
 	Definir las características del ambiente de producción ya que estas hacen grandes diferencias en los requerimientos no funcionales.
 
-
 ### 3.7.3 Testing of Software Structure
 Structural techniques (**structure-based testing**, white box testing) use information about the test object’s internal code structure or architecture.
 Includes:
@@ -755,10 +743,10 @@ Includes:
 
 Structural techniques are most used in component and integration testing, but they can also be applied at higher levels of testing.
 
-### 3.7.4 Testing Related to Changes and Regression Testing
+### 3.7.4 Testing Related to Changes and <u>Regression Testing</u>
 Tanto en el mantenimiento como en procesos iterativos incrementales, es necesario realizar **pruebas de regresión**: verificar que los cambios o agregados realizados a la nueva versión no hayan degradado o “roto” el funcionamiento del sistema.
 
-Thus, regression testing may be performed at all test levels and applies to functional, nonfunctional, and **structural test**. Test cases to be used in regression testing must be well documented and reusable. Therefore, they are strong candidates for **test automation**.
+Thus, regression testing may be performed at <u>all test levels</u> and applies to <u>functional, nonfunctional, and structural test</u>. Test cases to be used in regression testing must be well documented and reusable. Therefore, they are **strong** candidates for **test automation**.
 
 Simple local code changes can create side effects in any other, arbitrarily distant, system parts. If the test covers only altered or new code parts, it neglects the consequences these alterations can have on unaltered parts.
 
@@ -806,14 +794,14 @@ There are different techniques for checking documents. They differ regarding the
 ***Review*** is a common generic term for all the different static analysis techniques people perform as well as the term for a specific document examination technique.
 Reviews rely on the colleagues of the author to provide mutual feedback. Because of this, they are also called ***peer reviews***.
 
-However, ***inspection*** is usually defined as a special, formal review using data collection and special rules.
+However, ***inspection*** is usually defined as a special, <u>formal</u> review using data collection and special rules.
 
 #### A means for quality assurance
 Reviews are an efficient means to assure the quality of the examined documents. They should be performed as soon as possible to find mistakes and inconsistencies early.
 Eliminating defects and inconsistencies leads to improved document quality and positively influences the whole development process.
 
 #### Positive effects
-- Cheaper defect elimination. If defects are found and eliminated early, fewer resources are needed for defect identification and elimination later.
+- <u>Cheaper</u> defect elimination. If defects are found and eliminated early, fewer resources are needed for defect identification and elimination later.
 - Shortened development time.
 - If defects are recognized and corrected early, costs and time needed for executing the dynamic tests decrease because there are fewer defects in the test object.
 - Because of the smaller number of defects, cost reduction can be expected during the whole product life.
@@ -840,8 +828,7 @@ It is plausible that defect cost in development is reduced by 75% and more.
 
 A review requires six work steps: planning, kick-off, individual preparation, review meeting, rework, and follow-up.
 
-#### Planning
-##### Reviews need planning
+#### Planning: reviews need planning
 - Early, during overall planning, management must decide ***which documents*** in the software development process shall be subject to ***which review technique***.
 - During planning of the individual review, the review leader selects technically competent staff and assembles a review team.
 - In formal reviews, entry criteria (and the corresponding exit criteria) may be set. A review should continue only after any available entry criteria has been checked.
@@ -856,8 +843,7 @@ It may include:
 ##### Higher-level documents are necessary
 Those involved must have access to documents that help to decide if a particular statement is wrong or correct. Such documents are also called base documents or baselines.
 
-#### Individual Preparation
-##### Intensive study of the review object
+#### Individual Preparation: intensive study of the review object
 The members of the review team must prepare individually for the review meeting.
 
 #### Review Meeting
@@ -885,7 +871,7 @@ The author is responsible for the review object meeting its review entry criteri
 
 #### Reviewer (revisores)
 The reviewers, sometimes also called inspectors, are several technical experts that participate in the review meeting after necessary individual preparation.
-They should represent different viewpoints (for example, sponsor, requirements, design, code, safety, test).
+They should represent <u>different viewpoints</u> (for example, sponsor, requirements, design, code, safety, test).
 
 #### Recorder (secretario)
 The recorder (or scribe) shall document the issues (problems, action items, decisions, and recommendations) found by the review team.
@@ -894,8 +880,8 @@ The recorder (or scribe) shall document the issues (problems, action items, deci
 1. Reviews pertaining to products or intermediate products that have been created during the development process.
 2. Reviews that analyze the **project itself** or the **development process**.
 
-#### <u>Walkthrough</u>
-A walkthrough is a ***manual***, ***informal review*** method with the purpose of finding defects, ambiguities, and problems in written documents. The author presents the document to the reviewers in a review meeting.
+#### <u>Walkthrough</u> (o recorrida)
+A walkthrough is a <u>informal</u> review method with the purpose of finding defects, ambiguities, and problems in written documents. The author presents the document to the reviewers in a review meeting.
 
 Se “recorre” el producto (o se simula su comportamiento en caso de ser código) en busca de defectos. Es bastante más informal que otros tipos de revisiones (inspecciones por ejemplo).
 
@@ -910,7 +896,7 @@ Goals:
 ##### Suitable for small development teams
 
 #### <u>Inspection</u>
-The inspection is the **most formal** review. It follows a formal, prescribed process. Every person involved, usually people who work directly with the author, has a defined role. Rules define the process. 
+The inspection is the most <u>formal</u> review. It follows a formal, prescribed process. Every person involved, usually people who work directly with the author, has a defined role. Rules define the process. 
 
 The reviewers use checklists containing criteria for checking the different aspects. Estas listas dependen del lenguaje de programación y de la organización.  Por ejemplo revisan: 
 - Uso de variables no inicializadas.
@@ -1023,11 +1009,11 @@ Algunas técnicas:
 - Pruebas basadas en la lógica (grafos causa-efecto, tablas de decisión y pairwise testing)
 - Pruebas basadas en casos de uso
 
-### 5.1.1 Equivalence Class Partitioning
+### 5.1.1 <u>Equivalence Class Partitioning</u>
 ***Clase de equivalencia:*** conjunto de entradas para las cuales suponemos que el software se comporta igual.
 
 #### Proceso de partición de equivalencia: 
-1. Identificar el dominio de entrada y de salida
+1. Identificar el dominio de <u>entrada</u> y de <u>salida</u>
 2. Identificar las clases de equivalencia del dominio de entrada
 3. Definir los casos de prueba
 
@@ -1046,15 +1032,15 @@ Algunas técnicas:
 #### Proceso de definición de los casos de prueba:
 1. Asignar un número único a cada clase de equivalencia. 
 2. Hasta cubrir todas las clases de eq. con casos de prueba:
-	Escribir un nuevo caso de prueba que cubra tantas clases de eq. válidas, no cubiertas, como sea posible.
-3. Escribir un caso de prueba para cubrir una y solo una clase de equivalencia para cada **clase de equivalencia inválida** (evita cubrimiento de errores por otro error).
+	Escribir un nuevo caso de prueba que cubra tantas clases de eq. <u>válidas</u>, no cubiertas, como sea posible.
+3. Escribir un caso de prueba para cubrir una y solo una clase de equivalencia para cada clase de equivalencia <u>inválida</u> (evita cubrimiento de errores por otro error).
 
-### 5.1.2 Boundary Value Analysis
+### 5.1.2 <u>Boundary Value Analysis</u>
 La experiencia muestra que los casos de prueba que exploran las condiciones límite producen mejor resultado que aquellas que no lo hacen.
 Las condiciones límite son aquellas que se hallan “arriba” y “debajo” de los márgenes de las clases de equivalencia de entrada y de salida.
 
 Diferencias con partición de equivalencia:
-- Elegir casos tal que los márgenes de las clases de eq. sean probados (el límite y los adyacentes a ambos lados).
+- Elegir casos tal que los márgenes de las clases de eq. sean probados (<u>el límite</u> y los <u>adyacentes</u> a ambos lados).
 - Se debe tener muy en cuenta las clases de eq. de la salida (esto también se puede considerar en particiones de equivalencia).
 
 Ejemplos:
@@ -1251,67 +1237,6 @@ Todas las combinaciones posibles de resultados de condición dentro de una decis
 #### Criterio de cubrimiento de caminos
 Se ejecutan al menos una vez todos los caminos posibles (combinaciones de trayectorias).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Chapter 6 - Test Management
 
 ## 6.1 Test Organization
@@ -1474,17 +1399,6 @@ Exit criteria are used to make sure test work is not stopped by chance or premat
 - Product quality: Defect density, defect severity, failure rate, and reliability of the test object
 - Residual risk: Tests not executed, defects not repaired, incomplete coverage of requirements or code, etc.
 - Economic constraints: Allowed cost, project risks, release deadlines, and market chances
-
-
-
-
-
-
-
-
-
-
-
 
 # Resumen
 

@@ -76,9 +76,6 @@ var formEditGate = (contentEl, gateOptions, onSubmit) => {
   new import_obsidian.Setting(contentEl).setName("Name").setClass("open-gate--form-field").addText((text) => text.setValue(gateOptions.title).onChange(async (value) => {
     gateOptions.title = value;
   }));
-  new import_obsidian.Setting(contentEl).setName("Icon").setClass("open-gate--form-field").setDesc("Leave it blank to enable auto-detect").addText((text) => text.setValue(gateOptions.icon).onChange(async (value) => {
-    gateOptions.icon = value;
-  }));
   new import_obsidian.Setting(contentEl).setName("Pin to menu").setClass("open-gate--form-field").setDesc("If enabled, the gate will be pinned to the left bar").addToggle((text) => text.setValue(gateOptions.hasRibbon === true).onChange(async (value) => {
     gateOptions.hasRibbon = value;
   }));
@@ -88,9 +85,6 @@ var formEditGate = (contentEl, gateOptions, onSubmit) => {
       gateOptions.position = value;
     });
   });
-  const advancedOptions = contentEl.createDiv({
-    cls: "open-gate--advanced-options"
-  });
   new import_obsidian.Setting(contentEl).setName("Advanced Options").setClass("open-gate--form-field").addToggle((text) => text.setValue(false).onChange(async (value) => {
     if (value) {
       advancedOptions.addClass("open-gate--advanced-options--show");
@@ -98,10 +92,22 @@ var formEditGate = (contentEl, gateOptions, onSubmit) => {
       advancedOptions.removeClass("open-gate--advanced-options--show");
     }
   }));
-  new import_obsidian.Setting(advancedOptions).setName("User Agent").setClass("open-gate--form-field").setDesc("Leave it blank if you are not sure").addText((text) => {
+  const advancedOptions = contentEl.createDiv({
+    cls: "open-gate--advanced-options"
+  });
+  new import_obsidian.Setting(advancedOptions).setName("Icon").setClass("open-gate--form-field--column").setDesc("Leave it blank to enable auto-detect").addTextArea((text) => text.setValue(gateOptions.icon).onChange(async (value) => {
+    gateOptions.icon = value;
+  }));
+  new import_obsidian.Setting(advancedOptions).setName("User Agent").setClass("open-gate--form-field--column").setDesc("Leave it blank if you are not sure").addTextArea((text) => {
     var _a;
     return text.setValue((_a = gateOptions.userAgent) != null ? _a : "").onChange(async (value) => {
       gateOptions.userAgent = value;
+    });
+  });
+  new import_obsidian.Setting(advancedOptions).setName("CSS").setClass("open-gate--form-field--column").setDesc("Leave it blank if you are not sure").addTextArea((text) => {
+    var _a;
+    return text.setValue((_a = gateOptions.css) != null ? _a : "").onChange(async (value) => {
+      gateOptions.css = value;
     });
   });
   new import_obsidian.Setting(advancedOptions).setName("Profile Key").setClass("open-gate--form-field").setDesc("It's like profiles in Chrome, gates with the same profile can share storage").addText((text) => {
@@ -242,19 +248,19 @@ var import_obsidian4 = require("obsidian");
 
 // src/fns/createWebviewTag.ts
 var createWebviewTag = (params) => {
-  var _a;
+  var _a, _b;
   const webviewTag = document.createElement("webview");
-  webviewTag.setAttribute("allowpopups", "true");
   webviewTag.setAttribute("partition", "persist:" + params.profileKey);
   webviewTag.setAttribute("src", (_a = params.url) != null ? _a : "about:blank");
+  webviewTag.setAttribute("httpreferrer", (_b = params.url) != null ? _b : "https://google.com");
+  webviewTag.setAttribute("crossorigin", "anonymous");
+  webviewTag.setAttribute("allowpopups", "true");
+  webviewTag.setAttribute("disablewebsecurity", "true");
   webviewTag.addClass("open-gate-webview");
   if (params.userAgent && params.userAgent !== "") {
     webviewTag.setAttribute("useragent", params.userAgent);
   }
   webviewTag.addEventListener("dom-ready", async () => {
-    if (params.css) {
-      await webviewTag.insertCSS(params.css);
-    }
     if (params.zoomFactor) {
       webviewTag.setZoomFactor(params.zoomFactor);
     }
@@ -271,6 +277,7 @@ var createIframe = (params) => {
   const iframe = document.createElement("iframe");
   iframe.setAttribute("allowpopups", "");
   iframe.setAttribute("credentialless", "true");
+  iframe.setAttribute("crossorigin", "anonymous");
   iframe.setAttribute("src", (_a = params.url) != null ? _a : "about:blank");
   iframe.setAttribute("sandbox", "allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation");
   iframe.setAttribute("allow", "encrypted-media; fullscreen; oversized-images; picture-in-picture; sync-xhr; geolocation");
@@ -328,6 +335,7 @@ var GateView = class extends import_obsidian4.ItemView {
         }
       });
       this.frame.addEventListener("dom-ready", async () => {
+        var _a;
         const frame = this.frame;
         await frame.executeJavaScript(`
                 document.addEventListener('click', (e) => {
@@ -336,6 +344,9 @@ var GateView = class extends import_obsidian4.ItemView {
                         console.log('open-gate-open:'+e.target.href);
                     }
                 });`);
+        if ((_a = this.options) == null ? void 0 : _a.css) {
+          await frame.insertCSS(this.options.css);
+        }
       });
     }
   }

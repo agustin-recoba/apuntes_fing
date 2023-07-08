@@ -1,16 +1,16 @@
 ### Tema: Verificación y Validación
 
-##### Complete los espacios numerados con el término que corresponda para que la frase sea correcta.
+#### Complete los espacios numerados con el término que corresponda para que la frase sea correcta.
 
-*"A través de la actividad de __(1)__, localizamos un __(2)__ en el código que fue identificado a través de la ejecución de casos de prueba, que evidenciaron __(3)__ en el software. Para su identificación, se utilizó una técnica del tipo __(4),__ ya que solo se consideró la especificación del módulo a verificar."*
+"A través de la actividad de __(1)__, localizamos un __(2)__ en el código que fue identificado a través de la ejecución de casos de prueba, que evidenciaron __(3)__ en el software. Para su identificación, se utilizó una técnica del tipo __(4),__ ya que solo se consideró la especificación del módulo a verificar."
 
 > [!question]- Respuesta
 > A través de la actividad de *"debugging"*, localizamos un *"defecto"* en el código que fue identificado a través de la ejecución de casos de prueba que evidenciaron *"fallas"* en el software . Para su identificación, se utilizó una técnica del tipo *"caja negra" (o "basada en la especificación")*, ya que solo se consideró la especificación del módulo a verificar.
 
-##### Escriba dos escenarios de prueba para la siguiente historia de usuario “Solicitar recolección de residuos grandes” y su criterio de aceptación correspondiente.
+#### Escriba dos escenarios de prueba para la siguiente historia de usuario “Solicitar recolección de residuos grandes” y su criterio de aceptación correspondiente.
 
-_“Como residente de Montevideo quiero solicitar el servicio de recolección de residuos grandes para no dejar el residuo en la calle sin avisar y evitar posibles multas y para que no me ocupe lugar en mi casa.”_
-**Criterio de aceptación:** *Dado que el usuario completa los datos para solicitar el servicio y no se tiene conexión con el sistema de la Intendencia de Montevideo, o no se tiene internet, o bien no hay disponibilidad en la Intendencia para la fecha seleccionada, cuando selecciona la funcionalidad correspondiente a visualizar disponibilidad, entonces se muestra un mensaje de error indicando el problema.*
+“Como residente de Montevideo quiero solicitar el servicio de recolección de residuos grandes para no dejar el residuo en la calle sin avisar y evitar posibles multas y para que no me ocupe lugar en mi casa.”_
+**Criterio de aceptación:** Dado que el usuario completa los datos para solicitar el servicio y no se tiene conexión con el sistema de la Intendencia de Montevideo, o no se tiene internet, o bien no hay disponibilidad en la Intendencia para la fecha seleccionada, cuando selecciona la funcionalidad correspondiente a visualizar disponibilidad, entonces se muestra un mensaje de error indicando el problema.
 
 > [!question]- Respuesta
 > ### E1: 
@@ -30,7 +30,7 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > **Evento/Acción del usuario:** El usuario selecciona una fecha y presiona el botón “Ver Disponibilidad”, elige un horario de los ofrecidos por la IM y confirma la solicitud
 > **Resultado esperado:** El sistema confirma a la IM una fecha y horario de recolección de residuos para la dirección del usuario y le muestra al usuario un aviso de confirmación de la solicitud de recolección de residuos con el día y hora seleccionados.
 
-##### Sobre las técnicas de verificación de software, seleccione la opción correcta:
+#### Sobre las técnicas de verificación de software, seleccione la opción correcta:
 1. El testing exploratorio es una técnica de verificación de caja blanca.
 2. El Test Driven Development es una técnica de verificación de caja negra, ya que consiste en generar los casos de prueba antes de que el código esté implementado.
 3. La generación de casos de prueba a partir de casos de uso es una técnica de caja blanca, ya que se basa en la estructura del caso de uso.
@@ -43,7 +43,7 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > La opción 2 es incorrecta ya que TDD es una técnica de desarrollo de software, no de verificación.
 > La opción 3 es incorrecta ya que la generación de CP a partir de CU se basa en la especificación del software y no en cómo este está construido.
 
-##### Dadas las siguientes afirmaciones sobre las pruebas de <u>regresión</u>, ¿cuáles afirmaciones son correctas?:
+#### Dadas las siguientes afirmaciones sobre las pruebas de <u>regresión</u>, ¿cuáles afirmaciones son correctas?:
 1. Pueden ser tanto de caja blanca como de caja negra
 2. Se realizan únicamente a nivel de componentes y es deseable que estén automatizadas
 3. Su objetivo no se enfoca en las funcionalidades o artefactos nuevos del software
@@ -56,7 +56,7 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > La opción 2 es incorrecta porque las pruebas de regresión pueden ser en cualquier nivel (integración, de sistema, etc) y no solamente unitario. 
 > La opción 4 es incorrecta porque su objetivo es probar la nueva versión del software, por más que lo que se está probando sean funcionalidades existentes en versiones anteriores (justamente su objetivo es verificar que lo que antes funcionaba no se haya roto).
 
-##### Sobre drivers y stubs, seleccione la respuesta correcta:
+#### Sobre drivers y stubs, seleccione la respuesta correcta:
 1. Son piezas de software que contienen validaciones y errores respectivamente.
 2. Representan el éxito y el fracaso en un caso de prueba respectivamente.
 3. Viabilizan ciertas pruebas de piezas de software.
@@ -65,7 +65,7 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > [!question]- Respuesta
 > _3. Viabilizan ciertas pruebas de piezas de software._
 
-##### Sobre las pruebas de integración, seleccione la respuesta correcta:
+#### Sobre las pruebas de integración, seleccione la respuesta correcta:
 1. Una ventaja si aplico la estrategia bottom up es que no tendré stubs.
 2. Los drivers indican dónde automatizar una prueba.
 3. Al ser del primer nivel, detectan errores de forma temprana
@@ -74,7 +74,7 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > [!question]- Respuesta
 > _1. Una ventaja si aplico la estrategia bottom up es que no tendré stubs._
 
-##### Sobre el proceso en V, seleccione la respuesta correcta:
+#### Sobre el proceso en V, seleccione la respuesta correcta:
 1. Sirve para certificar procesos de desarrollo.
 2. Viabiliza Test Driven Development.
 3. Las metodologías ágiles son una mejor opción porque las actividades de testing no quedan para el final.
@@ -83,7 +83,7 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > [!question]- Respuesta
 > _4. Incorpora actividades de Verificación y Validación desde el inicio del proceso de desarrollo._
 
-##### Sobre las pruebas de regresión, seleccione la respuesta correcta:
+#### Sobre las pruebas de regresión, seleccione la respuesta correcta:
 1. Son pruebas automatizadas.
 2. Es el nombre que se le asigna a las pruebas repetitivas.
 3. Son pruebas que se ejecutan cuando el software cambia.
@@ -92,7 +92,7 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > [!question]- Respuesta
 > _3. Son pruebas que se ejecutan cuando el software cambia._
 
-##### Seleccione la opción <u>incorrecta</u> al completar la frase: “Un equipo especializado en pruebas...
+#### Seleccione la opción <u>incorrecta</u> al completar la frase: “Un equipo especializado en pruebas...
 1. ... si se basa en las especificaciones, tiende a cometer los mismos errores que el programador.”
 2. ... en general, manejan mejor las técnicas de pruebas del sistema que el equipo de desarrollo.”
 3. ... conoce los errores más comunes en los que incurre el equipo de desarrollo.”
@@ -101,7 +101,7 @@ _“Como residente de Montevideo quiero solicitar el servicio de recolección de
 > [!question]- Respuesta
 > _1. ... si se basa en las especificaciones, tiende a cometer los mismos errores que el programador.”_
 
-##### Complete la frase, “El testing de sistema...
+#### Complete la frase, “El testing de sistema...
 1. ... es en donde se intenta comprobar que cada componente cumple con los requisitos especificados.”
 2. ... es en donde se intenta comprobar que el sistema cumple con los requisitos especificados.”
 3. ... es sobre un entorno de pruebas lo más parecido posible al ambiente de desarrollo.”
@@ -205,6 +205,15 @@ ACME lo contrata a Ud. como consultor para diagnosticar la situación. Al entrev
 
 > [!question]- Respuesta
 > _4. Para que el programa sea más legible se recomienda que el mismo grupo de ítems aparezca en varios lugares del código._
+
+##### Respecto al proceso de evolución del software:
+1. Las etapas del proceso de evolución de software generalmente varían dependiendo de si el cambio a implementar es urgente o no.
+2. (1) y en el caso de un cambio urgente lo más común es que el proceso no pase por todas las etapas de ingeniería de software.
+3. Las etapas del proceso de evolución prácticamente no varían dependiendo de si el cambio a implementar es urgente o no.
+4. (3) y la única diferencia es que cuando los cambios son urgentes las etapas de ingeniería de software se cumplen siguiendo un enfoque ágil sin importar el enfoque (tradicional o ágil) aplicado durante el desarrollo.
+
+> [!question]- Respuesta
+> _2. (1) y en el caso de un cambio urgente lo más común es que el proceso no pase por todas las etapas de ingeniería de software._
 
 ### Tema: Gestión de proyectos
 
@@ -376,6 +385,25 @@ Los puntos pendientes aún por concretar (para dibujar la gráfica de burn-down)
 > [!question]- Respuesta
 > _4. Puede no ser posible acortar la duración del proyecto mediante la técnica de fast tracking si hay dependencias «duras» que, debido a su naturaleza, no se pueden violar._
 
+##### Respecto a la gestión de conflictos:
+1. La técnica “Suavizar/Reconciliar” hace hincapié en los puntos de acuerdo más que en las diferencias,
+2. (1) pero no resuelve el problema.
+3. La técnica “Suavizar/Reconciliar” incorpora múltiples puntos de vista y visiones a partir de perspectivas diversas; conduce al consenso y al compromiso,
+4. (3) por lo que resuelve el problema.
+
+> [!question]- Respuesta
+> _2. (1) pero no resuelve el problema._
+
+##### Respecto a la predicción de cambios en el software, ¿cuáles afirmaciones son correctas?
+1. Resulta muy difícil determinar si una aplicación que está en uso va a requerir cambios en el futuro.
+2. Si un sistema es mantenible, es muy probable que sin importar cuántos y qué cambios se realicen, éste no va a resultar degradado.
+3. La cantidad y complejidad de las interfaces del sistema influye en su mantenibilidad y por lo tanto es un aspecto a tener en cuenta en la predicción de cambios en el sistema.
+4. La refactorización del código de un sistema se utiliza para mejorar el código y solamente se aplica cuando se decide realizar una reingeniería del sistema.
+5. En general, la reingeniería de un sistema reduce riesgos (como por ejemplo: atraso en el cronograma y errores en la especificación de requisitos) en comparación con desarrollar el sistema desde cero. Cuando no existe documentación actualizada del sistema original, la ingeniería inversa es un mecanismo útil para generarla.
+
+> [!question]- Respuesta
+> _Solo (3) y (5) son correctas._
+
 
 ### Tema: Gestión de la Configuración
 
@@ -428,6 +456,16 @@ _En un proyecto crítico para una organización se pone mucho énfasis en manten
 
 > [!question]- Respuesta
 > _un cambio durante el desarrollo sobre un artefacto que ya está en línea base_
+
+##### La línea base de un proyecto:
+
+1. Debe involucrar todos los artefactos generados y aprobados durante el proyecto de desarrollo.
+2. Debe ir evolucionando conforme a los procedimientos de gestión de la configuración definido.
+3. 2), donde cada cambio de versión corresponde a cada cambio aceptado.
+4. 1) y un elemento de configuración se convierte en línea base cuando fue revisado y aprobado por el Jefe de Proyecto
+
+> [!question]- Respuesta
+> _2. Debe ir evolucionando conforme a los procedimientos de gestión de la configuración definido._
 
 
 

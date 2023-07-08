@@ -6,7 +6,7 @@
     "margin": "2",
     "downscalePercent": 94
   },
-  "attachmentFolderPath": "Introducción a la Ingeniería de Software/media",
+  "attachmentFolderPath": "Administración General para Ingenieros/media",
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "defaultViewMode": "source",
@@ -14,5 +14,5 @@
     "es-419",
     "en"
   ],
-  "readableLineLength": false
+  "readableLineLength": true
 }
