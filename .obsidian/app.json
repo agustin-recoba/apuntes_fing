@@ -1,18 +1,17 @@
 {
   "pdfExportSettings": {
-    "includeName": false,
+    "includeName": true,
     "pageSize": "A4",
     "landscape": false,
     "margin": "2",
-    "downscalePercent": 94
+    "downscalePercent": 99
   },
-  "attachmentFolderPath": "Administración General para Ingenieros/media",
+  "attachmentFolderPath": "Análisis y Diseño de Algoritmos Distribuidos en Redes/media",
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "defaultViewMode": "source",
-  "spellcheckLanguages": [
-    "es-419",
-    "en"
-  ],
-  "readableLineLength": true
+  "spellcheckLanguages": null,
+  "readableLineLength": true,
+  "showUnsupportedFiles": false,
+  "spellcheck": true
 }
