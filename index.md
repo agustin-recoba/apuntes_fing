@@ -6,4 +6,7 @@
 [[Introducción a la Teoría de la Información/Índice|ITI - Introducción a la Teoría de la Información]]
 [[Programación Funcional/Índice|pFunc - Programación Funcional]]
 
+[[Análisis y Diseño de Algoritmos Distribuidos en Redes/Índice|Análisis y Diseño de Algoritmos Distribuidos en Redes]]
+[[Aprendizaje Automático/Índice|Aprendizaje Automático]]
 
+[[Fundamentos de Seguridad Informatica/Índice|Fundamentos de Seguridad Informática]]

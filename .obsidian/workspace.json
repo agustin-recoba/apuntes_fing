@@ -4,20 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e8ced40c325c8389",
+        "id": "3a9ac8d47401fffe",
         "type": "tabs",
         "children": [
           {
-            "id": "8fe17cdffac529d7",
+            "id": "78e50805d4e39888",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -48,9 +43,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md"
-              }
+              "state": {}
             }
           },
           {
@@ -79,12 +72,11 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 212.50260543823242
+    "width": 463.5
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -100,7 +92,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,9 +114,7 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -146,54 +135,54 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8fe17cdffac529d7",
+  "active": "78e50805d4e39888",
   "lastOpenFiles": [
-    "Archivados/Introducción a la Ingeniería de Software/Preguntas 2do parcial.md",
-    "Archivados/Introducción a la Ingeniería de Software/Indice.md",
-    "Archivados/Introducción a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
-    "Archivados/Introducción a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
-    "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md",
-    "Archivados/Fundamentos de Seguridad Informatica/Índice.md",
+    "Programación Funcional/Índice.md",
     "index.md",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240706094103.png",
-    "Archivados/Fundamentos de Seguridad Informatica/5. Sistemas Operativos.md",
-    "Archivados/Fundamentos de Seguridad Informatica/6. Redes.md",
-    "Archivados/Fundamentos de Seguridad Informatica/7. Aplicaciones.md",
-    "Archivados/Fundamentos de Seguridad Informatica/2. Criptografía Aplicada.md",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240706094632.png",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240706094551.png",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/redes_mitigacion_VLAN_VPN.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_sesiones_web.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/redes_mitigacion_sensores.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701203613.png",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_owasp_top_ten.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701211821.png",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701210745.png",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701210658.png",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701210645.png",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701210604.png",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_diseno_seguro.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701205906.png",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_introduccion.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_autenticacion.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_modelado_amenzas.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_riesgos.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/pdfs/redes_problemas.pdf",
-    "Archivados/Fundamentos de Seguridad Informatica/1. Introducción.md",
-    "Archivados/Redes de computadoras/1 - Introduccion/1. Introducción a las Redes de Computadoras.md",
-    "Archivados/Redes de computadoras/Indice.md",
-    "Archivados/Fundamentos de Seguridad Informatica/4. Bases de datos.md",
-    "Archivados/Fundamentos de Seguridad Informatica/3. Identificación, Autenticación y Autorización.md",
-    "Archivados/Redes de computadoras/media/Excalidraw/Drawing 2022-10-26 18.15.54.excalidraw.md",
-    "Archivados/Redes de computadoras/media/Excalidraw/Drawing 2022-10-26 17.49.49.excalidraw.md",
-    "Archivados/Redes de computadoras/99 - Otros/99.3 Tips problemas prácticos.md",
-    "Archivados/Redes de computadoras/99 - Otros/99.2 Protocolos sobre protocolos.md",
-    "Archivados/Redes de computadoras/99 - Otros/99.1 Puertos bien conocidos.md",
-    "Archivados/Redes de computadoras/99 - Otros/Practicos/Practico 7.md",
-    "Archivados/Redes de computadoras/99 - Otros/Practicos/Practico 6.md",
-    "Archivados/Redes de computadoras/99 - Otros/Practicos/Practico 5.md",
-    "Archivados/Redes de computadoras/6 - Capa de enlace/6.8 PPP, Protocolo punto a punto.md",
-    "Archivados/Redes de computadoras/6 - Capa de enlace/6.7 VLAN, redes de área local virtuales.md",
+    "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
+    "Introducción a la Ingeniería de Software/Preguntas 2do parcial.md",
+    "Introducción a la Ingeniería de Software/Indice.md",
+    "Introducción a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
+    "Introducción a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
+    "Fundamentos de Seguridad Informatica/Índice.md",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240706094103.png",
+    "Fundamentos de Seguridad Informatica/5. Sistemas Operativos.md",
+    "Fundamentos de Seguridad Informatica/6. Redes.md",
+    "Fundamentos de Seguridad Informatica/7. Aplicaciones.md",
+    "Fundamentos de Seguridad Informatica/2. Criptografía Aplicada.md",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240706094632.png",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240706094551.png",
+    "Fundamentos de Seguridad Informatica/pdfs/redes_mitigacion_VLAN_VPN.pdf",
+    "Fundamentos de Seguridad Informatica/pdfs/aplicaciones_sesiones_web.pdf",
+    "Fundamentos de Seguridad Informatica/pdfs/redes_mitigacion_sensores.pdf",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240701203613.png",
+    "Fundamentos de Seguridad Informatica/pdfs/aplicaciones_owasp_top_ten.pdf",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240701211821.png",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240701210745.png",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240701210658.png",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240701210645.png",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240701210604.png",
+    "Fundamentos de Seguridad Informatica/pdfs/aplicaciones_diseno_seguro.pdf",
+    "Fundamentos de Seguridad Informatica/media/Pasted image 20240701205906.png",
+    "Fundamentos de Seguridad Informatica/pdfs/aplicaciones_introduccion.pdf",
+    "Fundamentos de Seguridad Informatica/pdfs/aplicaciones_autenticacion.pdf",
+    "Fundamentos de Seguridad Informatica/pdfs/aplicaciones_modelado_amenzas.pdf",
+    "Fundamentos de Seguridad Informatica/pdfs/aplicaciones_riesgos.pdf",
+    "Fundamentos de Seguridad Informatica/pdfs/redes_problemas.pdf",
+    "Fundamentos de Seguridad Informatica/1. Introducción.md",
+    "Redes de computadoras/1 - Introduccion/1. Introducción a las Redes de Computadoras.md",
+    "Redes de computadoras/Indice.md",
+    "Fundamentos de Seguridad Informatica/4. Bases de datos.md",
+    "Fundamentos de Seguridad Informatica/3. Identificación, Autenticación y Autorización.md",
+    "Redes de computadoras/media/Excalidraw/Drawing 2022-10-26 18.15.54.excalidraw.md",
+    "Redes de computadoras/media/Excalidraw/Drawing 2022-10-26 17.49.49.excalidraw.md",
+    "Redes de computadoras/99 - Otros/99.3 Tips problemas prácticos.md",
+    "Redes de computadoras/99 - Otros/99.2 Protocolos sobre protocolos.md",
+    "Redes de computadoras/99 - Otros/99.1 Puertos bien conocidos.md",
+    "Redes de computadoras/99 - Otros/Practicos/Practico 7.md",
+    "Redes de computadoras/99 - Otros/Practicos/Practico 6.md",
+    "Redes de computadoras/99 - Otros/Practicos/Practico 5.md",
+    "Redes de computadoras/6 - Capa de enlace/6.8 PPP, Protocolo punto a punto.md",
     "Untitled.canvas"
   ]
 }
