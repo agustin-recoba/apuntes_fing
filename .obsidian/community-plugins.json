@@ -1,15 +1,14 @@
 [
-  "obsidian-git",
   "obsidian-admonition",
-  "obsidian-annotator",
-  "quick-latex",
+  "obsidian-code-preview",
+  "cm-editor-syntax-highlight-obsidian",
   "obsidian-excalidraw-plugin",
-  "code-block-copy",
   "lapel",
-  "open-gate",
+  "quick-latex",
+  "slide-note",
   "obsidian-underline",
   "webpage-html-export",
-  "cm-editor-syntax-highlight-obsidian",
-  "homepage",
-  "obsidian-better-codeblock"
+  "omnisearch",
+  "obsidian-linter",
+  "text-extractor"
 ]

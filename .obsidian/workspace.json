@@ -4,29 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "24c910743c281a9f",
+        "id": "e8ced40c325c8389",
         "type": "tabs",
         "children": [
           {
-            "id": "6f3c8a7bc9299d42",
+            "id": "8fe17cdffac529d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Índice.md",
+                "file": "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bcb7a8101bc5c320",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
-                "mode": "preview",
+                "backlinks": false,
                 "source": false
               }
             }
@@ -60,7 +49,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Índice.md"
+                "file": "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md"
               }
             }
           },
@@ -70,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "valores limit",
+                "query": "Validación",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,21 +78,13 @@
                 "useHierarchy": true
               }
             }
-          },
-          {
-            "id": "816b52b3113ec8ce",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
-            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 479.5,
-    "collapsed": true
+    "width": 212.50260543823242
   },
   "right": {
     "id": "737c6d117bda8763",
@@ -114,112 +95,105 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8dd7e96700781314",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Introducción a la Teoría de la Información/Índice.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "fc11d2520b232161",
+            "id": "0cd7a4e5cc835e95",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Introducción a la Teoría de la Información/Índice.md",
-                "linksCollapsed": true,
-                "unlinkedCollapsed": false
+                "file": "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "67202b0b8f17f481",
+            "id": "cdda01d8ba377682",
             "type": "leaf",
             "state": {
-              "type": "aHR0cHM6Ly9jaGF0Lm9wZW5haS5jb20v",
-              "state": {}
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "3eaddbaee5b941c3",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md"
+              }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 297.5,
+    "width": 767.5,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "homepage:Open homepage": false,
+      "slide-note:Slide Note Block Generator": false,
       "webpage-html-export:Export Vault to HTML": false,
-      "open-gate:ChatGPT": false
+      "omnisearch:Omnisearch": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6f3c8a7bc9299d42",
+  "active": "8fe17cdffac529d7",
   "lastOpenFiles": [
-    "Introducción a la Teoría de la Información/Tema 1 - Entropía, información conjunta, divergencia.md",
-    "Introducción a la Teoría de la Información/Índice.md",
-    "Introducción a la Teoría de la Información/Tema 2 - Procesos estocásticos y cadenas de Markov.md",
+    "Archivados/Introducción a la Ingeniería de Software/Preguntas 2do parcial.md",
+    "Archivados/Introducción a la Ingeniería de Software/Indice.md",
+    "Archivados/Introducción a la Ingeniería de Software/Capítulo 4 - Ingeniería de requisitos.md",
+    "Archivados/Introducción a la Ingeniería de Software/Capítulo 2 - Proceso de software.md",
+    "Archivados/Introducción a la Ingeniería de Software/Software Testing Foundations.md",
+    "Archivados/Fundamentos de Seguridad Informatica/Índice.md",
     "index.md",
-    "Administración General para Ingenieros/Capítulo 13 - Manejo del cambio y la innovación.md",
-    "Administración General para Ingenieros/2do parcial - PREGUNTOMETRO.md",
-    "Administración General para Ingenieros/Capítulo 10 - Estructura y diseño organizacional.md",
-    "Administración General para Ingenieros/Índice.md",
-    "Administración General para Ingenieros/media/Teórico - PYMES.pdf",
-    "Administración General para Ingenieros/Admin. de PYMEs.md",
-    "Untitled.canvas",
-    "Introducción a la Ingeniería de Software/Indice.md",
-    "Administración General para Ingenieros/media/Teórico - EMPRESAS FAMILIARES.pdf",
-    "Administración General para Ingenieros/Admin. de Empresas Familiares.md",
-    "Introducción a la Ingeniería de Software/Software Testing Foundations.md",
-    "Introducción a la Ingeniería de Software/Capítulo 22 - Gestión de proyectos.md",
-    "Introducción a la Ingeniería de Software/Capítulo 23 - Planeación de proyectos.md",
-    "Introducción a la Ingeniería de Software/Extras/Gestión de proyectos - notas de las clases.md",
-    "Introducción a la Ingeniería de Software/Preguntas 2do parcial.md",
-    "Introducción a la Ingeniería de Software/Liberación.md",
-    "Administración General para Ingenieros/Capítulo 6 - Toma de decisiones.md",
-    "Introducción a la Ingeniería de Software/Extras/Testing basado en la experiencia.md",
-    "Introducción a la Ingeniería de Software/Extras/Guía para la generación de CP a partir de HU.md",
-    "Introducción a la Ingeniería de Software/Extras/Generating Test Cases From Use Cases.md",
-    "Administración General para Ingenieros/media/INGENIERIA PYMES.pdf",
-    "Administración General para Ingenieros/Capítulo 16 - La motivación de los empleados.md",
-    "Administración General para Ingenieros/Capítulo 18 - Fundamentos del control.md",
-    "Administración General para Ingenieros/Capítulo 17 - Liderazgo.md",
-    "Administración General para Ingenieros/Capítulo 11 - Comunicación y tecnología de la información.md",
-    "Administración General para Ingenieros/Capítulo 12 - Gerencia de recursos humanos.md",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230704232722.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230704230329.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230704222740.png",
-    "Introducción a la Ingeniería de Software/media/Liberacion y Mantenimiento - Segundo Parcial IIS.pdf",
-    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Riesgos - Clase3.pdf",
-    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos - Estimación - Clase2.pdf",
-    "Introducción a la Ingeniería de Software/media/IIS Notas -Gestion de proyectos.pdf",
-    "Introducción a la Ingeniería de Software/media/Gestion de la configuracion - Segundo Parcial IIS.pdf",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230704170825.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230703230516.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230703212819.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230703212115.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230703212108.png",
-    "Introducción a la Ingeniería de Software/media/VV-SegundoParcialIIS.pdf",
-    "Administración General para Ingenieros/media/Pasted image 20230703154544.png",
-    "Introducción a la Ingeniería de Software/media/Pasted image 20230317155946.png",
-    "Administración General para Ingenieros/media/INGENIERIA EMPRESAS FAMILIARES 1.pdf"
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240706094103.png",
+    "Archivados/Fundamentos de Seguridad Informatica/5. Sistemas Operativos.md",
+    "Archivados/Fundamentos de Seguridad Informatica/6. Redes.md",
+    "Archivados/Fundamentos de Seguridad Informatica/7. Aplicaciones.md",
+    "Archivados/Fundamentos de Seguridad Informatica/2. Criptografía Aplicada.md",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240706094632.png",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240706094551.png",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/redes_mitigacion_VLAN_VPN.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_sesiones_web.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/redes_mitigacion_sensores.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701203613.png",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_owasp_top_ten.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701211821.png",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701210745.png",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701210658.png",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701210645.png",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701210604.png",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_diseno_seguro.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/media/Pasted image 20240701205906.png",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_introduccion.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_autenticacion.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_modelado_amenzas.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/aplicaciones_riesgos.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/pdfs/redes_problemas.pdf",
+    "Archivados/Fundamentos de Seguridad Informatica/1. Introducción.md",
+    "Archivados/Redes de computadoras/1 - Introduccion/1. Introducción a las Redes de Computadoras.md",
+    "Archivados/Redes de computadoras/Indice.md",
+    "Archivados/Fundamentos de Seguridad Informatica/4. Bases de datos.md",
+    "Archivados/Fundamentos de Seguridad Informatica/3. Identificación, Autenticación y Autorización.md",
+    "Archivados/Redes de computadoras/media/Excalidraw/Drawing 2022-10-26 18.15.54.excalidraw.md",
+    "Archivados/Redes de computadoras/media/Excalidraw/Drawing 2022-10-26 17.49.49.excalidraw.md",
+    "Archivados/Redes de computadoras/99 - Otros/99.3 Tips problemas prácticos.md",
+    "Archivados/Redes de computadoras/99 - Otros/99.2 Protocolos sobre protocolos.md",
+    "Archivados/Redes de computadoras/99 - Otros/99.1 Puertos bien conocidos.md",
+    "Archivados/Redes de computadoras/99 - Otros/Practicos/Practico 7.md",
+    "Archivados/Redes de computadoras/99 - Otros/Practicos/Practico 6.md",
+    "Archivados/Redes de computadoras/99 - Otros/Practicos/Practico 5.md",
+    "Archivados/Redes de computadoras/6 - Capa de enlace/6.8 PPP, Protocolo punto a punto.md",
+    "Archivados/Redes de computadoras/6 - Capa de enlace/6.7 VLAN, redes de área local virtuales.md",
+    "Untitled.canvas"
   ]
 }
